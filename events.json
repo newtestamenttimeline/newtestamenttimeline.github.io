@@ -1,21 +1,30 @@
+
 [
     {
-        "year": 1,
+        "year": 0.1,
         "title": "Birth of Jesus of Nazareth",
         "position": "above-1",
-        "percentage": 1
+        "percentage": 1,
+        "eventType": "historical"
     },
+ 
+ 
+
     {
         "year": 550,
         "title": "Papyrus 2",
         "position": "below-1",
         "percentage": 55
-    }
+        "eventType": "manuscript"
+    },
+
+    
   {
         "year": 250,
         "title": "Papyrus 1",
         "position": "above-1",
-        "percentage": 25
+        "percentage": 25,
+        "eventType": "manuscript"    
     },
     
     
