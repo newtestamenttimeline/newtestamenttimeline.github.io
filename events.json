@@ -1,0 +1,18 @@
+[
+    {
+        "title": "The birth of Jesus",
+        "date": "circa 4 BC",
+        "description": "The birth of Jesus in Bethlehem."
+    },
+    {
+        "title": "Jesus baptized by John the Baptist",
+        "date": "circa AD 26",
+        "description": "Jesus is baptized by John the Baptist in the River Jordan."
+    },
+    {
+        "title": "First miracle at Cana",
+        "date": "circa AD 27",
+        "description": "Jesus performs his first miracle, turning water into wine at the wedding in Cana."
+    }
+    // Continue adding more events here
+]
