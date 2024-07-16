@@ -339,33 +339,58 @@
     <button id="delete-event-btn">Delete Event</button>
 
     <script>
-        const timeline = document.getElementById('timeline');
-        const timelineContainer = document.getElementById('timeline-container');
-        const content = document.getElementById('event-content');
-        const addEventForm = document.getElementById('add-event-form');
-        const deleteEventBtn = document.getElementById('delete-event-btn');
-        const historicalCheckbox = document.getElementById('historical-checkbox');
-        const manuscriptCheckbox = document.getElementById('manuscript-checkbox');
-        let scale = 1;
-        let selectedEvent = null;
+    async function loadEvents() {
+        try {
+            const response = await fetch('events.json');
+            const events = await response.json();
 
-        function updateEvents() {
-            const events = document.querySelectorAll('.event');
             events.forEach(event => {
-                event.addEventListener('click', () => {
-                    if (selectedEvent) {
-                        selectedEvent.classList.remove('selected');
-                    }
-                    selectedEvent = event;
-                    event.classList.add('selected');
-                    deleteEventBtn.style.display = 'block';
+                const newEvent = document.createElement('div');
+                newEvent.className = 'event';
+                newEvent.style.left = `${event.percentage}%`;
+                newEvent.setAttribute('data-year', event.year);
+                newEvent.setAttribute('title', event.title);
 
-                    const year = event.getAttribute('data-year');
-                    const title = event.getAttribute('title');
-                    content.innerHTML = `<h2>${title} (Year ${year})</h2><p>Details about the ${title} event that occurred in the year ${year}. This text is editable and can be formatted using the toolbar above.</p>`;
-                });
+                if (event.position) {
+                    newEvent.classList.add(event.position);
+                }
+                timeline.appendChild(newEvent);
             });
+
+            updateEvents();
+        } catch (error) {
+            console.error('Error loading events:', error);
         }
+    }
+
+    const timeline = document.getElementById('timeline');
+    const timelineContainer = document.getElementById('timeline-container');
+    const content = document.getElementById('event-content');
+    const addEventForm = document.getElementById('add-event-form');
+    const deleteEventBtn = document.getElementById('delete-event-btn');
+    const historicalCheckbox = document.getElementById('historical-checkbox');
+    const manuscriptCheckbox = document.getElementById('manuscript-checkbox');
+    let scale = 1;
+    let selectedEvent = null;
+
+    function updateEvents() {
+        const events = document.querySelectorAll('.event');
+        events.forEach(event => {
+            event.addEventListener('click', () => {
+                if (selectedEvent) {
+                    selectedEvent.classList.remove('selected');
+                }
+                selectedEvent = event;
+                event.classList.add('selected');
+                deleteEventBtn.style.display = 'block';
+
+                const year = event.getAttribute('data-year');
+                const title = event.getAttribute('title');
+                content.innerHTML = `<h2>${title} (Year ${year})</h2><p>Details about the ${title} event that occurred in the year ${year}. This text is editable and can be formatted using the toolbar above.</p>`;
+            });
+        });
+    }
+
 
         updateEvents();
 
@@ -484,23 +509,11 @@
         manuscriptCheckbox.addEventListener('change', (e) => {
             toggleEvents('.papyrus', e.target.checked);
         });
-    </script>
-<script>
-    fetch('events.json')
-        .then(response => response.json()) // Fetch and parse the JSON data
-        .then(data => {
-            const timeline = document.getElementById('timeline');
-            data.forEach(event => {
-                const eventDiv = document.createElement('div'); // Create a new div for each event
-                eventDiv.className = `event ${event.position}`;
-                eventDiv.style.left = `${event.percentage}%`;
-                eventDiv.setAttribute('data-year', event.year);
-                eventDiv.setAttribute('title', event.title);
-                timeline.appendChild(eventDiv); // Append the div to the timeline
-            });
-        })
-        .catch(error => console.error('Error fetching data:', error));
+    loadEvents(); // Call the function to load events when the page loads
 </script>
+
+    </script>
+
 
     
 </body>
