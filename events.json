@@ -6,16 +6,19 @@
         "percentage": 0.1
     },
     {
-        "year": 30,
-        "title": "Ministry of Jesus shabadabadoo",
-        "position": "above-1",
-        "percentage": 3
-    },
-    {
-        "year": 40,
-        "title": "Conversion of Paul poops poops",
+        "year": 550,
+        "title": "Papyrus 2",
         "position": "below-1",
-        "percentage": 4
+        "percentage": 55
     }
+  {
+        "year": 250,
+        "title": "Papyrus 1",
+        "position": "above-1",
+        "percentage": 25
+    },
+    
+    
+    
     // Add more events as needed
 ]
