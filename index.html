@@ -45,7 +45,7 @@
     }
 
     .timeline {
-        width: 4000px;
+        width: 10000px;
         height: 4px;
         background-color: var(--primary-color);
         position: relative;
@@ -254,72 +254,6 @@
         margin-right: 5px;
     }
 </style>
-    <!DOCTYPE html>
-<html>
-<head>
-    <!-- Your existing head content -->
-    <script>
-        async function fetchGoogleSheetData() {
-            const url = 'https://spreadsheets.google.com/feeds/list/2PACX-1vSqYfnzUXnlELFJDDfuS5HUok-WTCrCG7LIGMmkKoam9wl14Ybz_2rl1BloVup-mavrfOVw7-FP1cB7/od6/public/values?alt=json';
-            
-            try {
-                const response = await fetch(url);
-                const data = await response.json();
-                const events = data.feed.entry.map(entry => [
-                    entry.gsx$year.$t,
-                    entry.gsx$title.$t,
-                    entry.gsx$type.$t
-                ]);
-                addEventsToTimeline(events);
-            } catch (error) {
-                console.error('Error fetching Google Sheet data:', error);
-            }
-        }
-
-        function addEventsToTimeline(events) {
-            const timeline = document.getElementById('timeline');
-
-            events.forEach(event => {
-                const [year, title, type] = event;
-
-                const newEvent = document.createElement('div');
-                newEvent.className = 'event';
-                if (type === 'manuscript') {
-                    newEvent.classList.add('papyrus');
-                }
-                newEvent.style.left = `${(year / 1000) * 100}%`;
-                newEvent.setAttribute('data-year', year);
-                newEvent.setAttribute('title', title);
-
-                const aboveCount = document.querySelectorAll(`.event[data-year="${year}"].above-1, .event[data-year="${year}"].above-2, .event[data-year="${year}"].above-3`).length;
-                const belowCount = document.querySelectorAll(`.event[data-year="${year}"].below-1, .event[data-year="${year}"].below-2, .event[data-year="${year}"].below-3`).length;
-
-                if (aboveCount <= belowCount && aboveCount < 3) {
-                    newEvent.classList.add(`above-${aboveCount + 1}`);
-                } else if (belowCount < 3) {
-                    newEvent.classList.add(`below-${belowCount + 1}`);
-                } else {
-                    alert('Maximum number of events for this year reached.');
-                    return;
-                }
-
-                timeline.appendChild(newEvent);
-            });
-
-            updateEvents();
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            fetchGoogleSheetData();
-        });
-    </script>
-</head>
-<body>
-    <div id="timeline"></div>
-    <!-- Your existing body content -->
-</body>
-</html>
-
 </head>
 <body>
     <header>New Testament Timeline</header>
@@ -338,20 +272,30 @@
         </div>
         <div class="timeline" id="timeline">
             <span class="year-label" style="left: 0%;">0</span>
+            <span class="year-label" style="left: 25%;">250</span>
+            <span class="year-label" style="left: 50%;">500</span>
+            <span class="year-label" style="left: 75%;">750</span>
             <span class="year-label" style="left: 100%;">1000</span>
-            <div class="event above-1" style="left: 10%;" data-year="30" title="Ministry of Jesus"></div>
-            <div class="event below-1" style="left: 13.33%" data-year="40" title="Conversion of Paul"></div>
-            <div class="event above-1" style="left: 20%" data-year="60" title="Paul's Letters"></div>
-            <div class="event below-1" style="left: 30%" data-year="90" title="Gospel of John"></div>
-            <div class="event above-1" style="left: 33.33%" data-year="100" title="Death of John"></div>
-            <div class="event below-1 papyrus" style="left: 50%" data-year="150" title="P52 - John's Gospel Fragment"></div>
-            <div class="event above-1 papyrus" style="left: 66.67%" data-year="200" title="P46 - Pauline Epistles"></div>
-            <div class="event above-2 papyrus" style="left: 66.67%" data-year="200" title="P66 - John's Gospel"></div>
-            <div class="event below-1 papyrus" style="left: 73.33%" data-year="220" title="P45 - Four Gospels and Acts"></div>
-            <div class="event above-1 papyrus" style="left: 80%" data-year="240" title="P75 - Luke and John"></div>
-            <div class="event below-1 papyrus" style="left: 83.33%" data-year="250" title="P47 - Book of Revelation"></div>
-            <div class="event above-1 papyrus" style="left: 86.67%" data-year="260" title="P72 - 1-2 Peter, Jude"></div>
-            <div class="event below-1" style="left: 100%" data-year="300" title="Constantine's Conversion"></div>
+            <div class="event above-1" style="left: 3%;" data-year="30" title="Ministry of Jesus"></div>
+            <div class="event below-1" style="left: 4%" data-year="40" title="Conversion of Paul"></div>
+            <div class="event above-1" style="left: 6%" data-year="60" title="Paul's Letters"></div>
+            <div class="event below-1" style="left: 9%" data-year="90" title="Gospel of John"></div>
+            <div class="event above-1" style="left: 10%" data-year="100" title="Death of John"></div>
+            <div class="event below-1 papyrus" style="left: 15%" data-year="150" title="P52 - John's Gospel Fragment"></div>
+            <div class="event above-1 papyrus" style="left: 20%" data-year="200" title="P46 - Pauline Epistles"></div>
+            <div class="event above-2 papyrus" style="left: 20%" data-year="200" title="P66 - John's Gospel"></div>
+            <div class="event below-1 papyrus" style="left: 22%" data-year="220" title="P45 - Four Gospels and Acts"></div>
+            <div class="event above-1 papyrus" style="left: 24%" data-year="240" title="P75 - Luke and John"></div>
+            <div class="event below-1 papyrus" style="left: 25%" data-year="250" title="P47 - Book of Revelation"></div>
+            <div class="event above-1 papyrus" style="left: 26%" data-year="260" title="P72 - 1-2 Peter, Jude"></div>
+            <div class="event below-1" style="left: 30%" data-year="300" title="Constantine's Conversion"></div>
+            <div class="event above-1" style="left: 32.5%" data-year="325" title="Council of Nicaea"></div>
+            <div class="event below-1" style="left: 36.7%" data-year="367" title="Athanasius's Easter Letter"></div>
+            <div class="event above-1 papyrus" style="left: 40%" data-year="400" title="Codex Sinaiticus"></div>
+            <div class="event below-1" style="left: 47%" data-year="470" title="Fall of Western Roman Empire"></div>
+            <div class="event above-1" style="left: 61%" data-year="610" title="Rise of Islam"></div>
+            <div class="event below-1" style="left: 80%" data-year="800" title="Charlemagne Crowned Emperor"></div>
+            <div class="event above-1" style="left: 98.8%" data-year="988" title="Baptism of Kievan Rus'"></div>
         </div>
         <div class="timeline-controls">
             <button id="zoom-in">+</button>
@@ -439,7 +383,7 @@
         document.getElementById('underline-btn').addEventListener('click', () => document.execCommand('underline', false, null));
         document.getElementById('font-size').addEventListener('change', (e) => document.execCommand('fontSize', false, e.target.value));
         document.getElementById('h1-btn').addEventListener('click', () => document.execCommand('formatBlock', false, '<h1>'));
-        document.getElementById('h2-btn').addEventListener('click', () => document.execCommand('formatBlock', false, '<h2>'));
+        document.getElementById('h2-btn').addEventListener('click', () => document.execCommand('formatBlock', false,'<h2>'));
         document.getElementById('h3-btn').addEventListener('click', () => document.execCommand('formatBlock', false, '<h3>'));
 
         // Zoom functionality
@@ -468,7 +412,7 @@
                 if (eventType === 'manuscript') {
                     newEvent.classList.add('papyrus');
                 }
-                newEvent.style.left = `${(year /1000) * 100}%`;
+                newEvent.style.left = `${(year / 1000) * 100}%`;
                 newEvent.setAttribute('data-year', year);
                 newEvent.setAttribute('title', title);
 
