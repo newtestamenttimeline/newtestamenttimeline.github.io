@@ -1,21 +1,21 @@
 [
     {
-        "year": "1",
-        "title": "The birth of Jesus",
-        "description": "The birth of Jesus in Bethlehem.",
-        "type": "historical event"
+        "year": 1,
+        "title": "Birth of Jesus of Nazareth",
+        "position": "above-1",
+        "percentage": 1
     },
     {
-        "year": "AD 26",
-        "title": "Jesus baptized by John the Baptist",
-        "description": "Jesus is baptized by John the Baptist in the River Jordan.",
-        "type": "historical event"
+        "year": 30,
+        "title": "Ministry of Jesus",
+        "position": "above-1",
+        "percentage": 3
     },
     {
-        "year": "AD 27",
-        "title": "First miracle at Cana",
-        "description": "Jesus performs his first miracle, turning water into wine at the wedding in Cana.",
-        "type": "historical event"
+        "year": 40,
+        "title": "Conversion of Paul",
+        "position": "below-1",
+        "percentage": 4
     }
-    // Add more events here following this structure
+    // Add more events as needed
 ]
