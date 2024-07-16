@@ -484,6 +484,36 @@
         manuscriptCheckbox.addEventListener('change', (e) => {
             toggleEvents('.papyrus', e.target.checked);
         });
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <style>
+        .event { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div id="timeline"></div>
+    <script>
+        fetch('events.json')
+          .then(response => response.json()) // Fetch and parse the JSON data
+          .then(data => {
+              const timeline = document.getElementById('timeline');
+              data.forEach(event => {
+                  const eventDiv = document.createElement('div'); // Create a new div for each event
+                  eventDiv.className = 'event';
+                  eventDiv.innerHTML = `<h3>${event.title}</h3><p>${event.year}</p><p>${event.description}</p><p>Type: ${event.type}</p>`; // Set the inner HTML
+                  timeline.appendChild(eventDiv); // Append the div to the timeline
+              });
+          })
+          .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html>
+
     </script>
 </body>
 </html>
