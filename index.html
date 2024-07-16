@@ -1,259 +1,261 @@
-<html><head><base href="https://websim.ai/c/website-designer?site_name=newtestamenttimeline.com">
-<title>New Testament Timeline - Interactive</title>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Testament Timeline - Interactive</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-    :root {
-        --primary-color: #3498db;
-        --secondary-color: #2ecc71;
-        --background-color: #1a1a1a;
-        --text-color: #f0f0f0;
-        --papyrus-color: #ffd700;
-        --delete-color: #e74c3c;
-    }
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --background-color: #1a1a1a;
+            --text-color: #f0f0f0;
+            --papyrus-color: #ffd700;
+            --delete-color: #e74c3c;
+        }
 
-    body {
-        font-family: 'Roboto', sans-serif;
-        background-color: var(--background-color);
-        color: var(--text-color);
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        overflow: hidden;
-    }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
 
-    header {
-        background-color: var(--primary-color);
-        color: var(--text-color);
-        text-align: center;
-        padding: 10px 0;
-        font-size: 24px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
 
-    .timeline-container {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        padding: 20px;
-        position: relative;
-        overflow-x: scroll;
-    }
+        .timeline-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: scroll;
+        }
 
-    .timeline {
-        width: 10000px;
-        height: 4px;
-        background-color: var(--primary-color);
-        position: relative;
-    }
+        .timeline {
+            width: 10000px;
+            height: 4px;
+            background-color: var(--primary-color);
+            position: relative;
+        }
 
-    .timeline::before,
-    .timeline::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        width: 0;
-        height: 0;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-    }
+        .timeline::before,
+        .timeline::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
 
-    .timeline::before {
-        left: -10px;
-        border-right: 10px solid var(--primary-color);
-    }
+        .timeline::before {
+            left: -10px;
+            border-right: 10px solid var(--primary-color);
+        }
 
-    .timeline::after {
-        right: -10px;
-        border-left: 10px solid var(--primary-color);
-    }
+        .timeline::after {
+            right: -10px;
+            border-left: 10px solid var(--primary-color);
+        }
 
-    .event {
-        width: 12px;
-        height: 12px;
-        background-color: var(--secondary-color);
-        border-radius: 50%;
-        position: absolute;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
+        .event {
+            width: 12px;
+            height: 12px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-    .event::before {
-        content: '';
-        position: absolute;
-        width: 2px;
-        background-color: var(--secondary-color);
-        left: 50%;
-        transform: translateX(-50%);
-    }
+        .event::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: var(--secondary-color);
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
-    .event.above-1 { top: -30px; }
-    .event.above-2 { top: -50px; }
-    .event.above-3 { top: -70px; }
-    .event.below-1 { bottom: -30px; }
-    .event.below-2 { bottom: -50px; }
-    .event.below-3 { bottom: -70px; }
+        .event.above-1 { top: -30px; }
+        .event.above-2 { top: -50px; }
+        .event.above-3 { top: -70px; }
+        .event.below-1 { bottom: -30px; }
+        .event.below-2 { bottom: -50px; }
+        .event.below-3 { bottom: -70px; }
 
-    .event.above-1::before, .event.above-2::before, .event.above-3::before { 
-        top: 100%;
-        height: 20px;
-    }
-    .event.above-2::before { height: 40px; }
-    .event.above-3::before { height: 60px; }
+        .event.above-1::before, .event.above-2::before, .event.above-3::before { 
+            top: 100%;
+            height: 20px;
+        }
+        .event.above-2::before { height: 40px; }
+        .event.above-3::before { height: 60px; }
 
-    .event.below-1::before, .event.below-2::before, .event.below-3::before { 
-        bottom: 100%;
-        height: 20px;
-    }
-    .event.below-2::before { height: 40px; }
-    .event.below-3::before { height: 60px; }
+        .event.below-1::before, .event.below-2::before, .event.below-3::before { 
+            bottom: 100%;
+            height: 20px;
+        }
+        .event.below-2::before { height: 40px; }
+        .event.below-3::before { height: 60px; }
 
-    .event:hover {
-        transform: scale(1.5);
-    }
+        .event:hover {
+            transform: scale(1.5);
+        }
 
-    .event.selected {
-        box-shadow: 0 0 0 2px #fff;
-    }
+        .event.selected {
+            box-shadow: 0 0 0 2px #fff;
+        }
 
-    .event.papyrus {
-        background-color: var(--papyrus-color);
-    }
+        .event.papyrus {
+            background-color: var(--papyrus-color);
+        }
 
-    .event.papyrus::before {
-        background-color: var(--papyrus-color);
-    }
+        .event.papyrus::before {
+            background-color: var(--papyrus-color);
+        }
 
-    .year-label {
-        position: absolute;
-        top: -25px;
-        transform: translateX(-50%);
-        font-size: 12px;
-    }
+        .year-label {
+            position: absolute;
+            top: -25px;
+            transform: translateX(-50%);
+            font-size: 12px;
+        }
 
-    .content-container {
-        flex: 1;
-        padding: 20px;
-        overflow-y: auto;
-    }
+        .content-container {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
 
-    #event-content {
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 5px;
-        padding: 20px;
-        min-height: 200px;
-    }
+        #event-content {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+            min-height: 200px;
+        }
 
-    .toolbar {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 10px;
-    }
+        .toolbar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
 
-    .toolbar button, .timeline-controls button {
-        background-color: var(--primary-color);
-        color: var(--text-color);
-        border: none;
-        padding: 5px 10px;
-        cursor: pointer;
-        border-radius: 3px;
-    }
+        .toolbar button, .timeline-controls button {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
 
-    .toolbar button:hover, .timeline-controls button:hover {
-        background-color: #2980b9;
-    }
+        .toolbar button:hover, .timeline-controls button:hover {
+            background-color: #2980b9;
+        }
 
-    .toolbar select {
-        background-color: var(--background-color);
-        color: var(--text-color);
-        border: 1px solid var(--primary-color);
-        padding: 5px;
-    }
+        .toolbar select {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+        }
 
-    .timeline-controls {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        display: flex;
-        gap: 10px;
-    }
+        .timeline-controls {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
 
-    #add-event-form {
-        display: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: var(--background-color);
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
+        #add-event-form {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--background-color);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
 
-    #add-event-form input, #add-event-form select {
-        margin-bottom: 10px;
-        padding: 5px;
-        width: 100%;
-    }
+        #add-event-form input, #add-event-form select {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 100%;
+        }
 
-    #delete-event-btn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: var(--delete-color);
-        color: var(--text-color);
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        border-radius: 3px;
-        font-size: 16px;
-    }
+        #delete-event-btn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--delete-color);
+            color: var(--text-color);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 16px;
+        }
 
-    #delete-event-btn:hover {
-        background-color: #c0392b;
-    }
+        #delete-event-btn:hover {
+            background-color: #c0392b;
+        }
 
-    .legend {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 14px;
-    }
+        .legend {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
 
-    .legend-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 5px;
-    }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
 
-    .legend-color {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        margin-right: 8px;
-    }
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
 
-    .legend-color.historical {
-        background-color: var(--secondary-color);
-    }
+        .legend-color.historical {
+            background-color: var(--secondary-color);
+        }
 
-    .legend-color.manuscript {
-        background-color: var(--papyrus-color);
-    }
+        .legend-color.manuscript {
+            background-color: var(--papyrus-color);
+        }
 
-    .legend-checkbox {
-        margin-right: 5px;
-    }
-</style>
+        .legend-checkbox {
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>New Testament Timeline</header>
@@ -276,26 +278,6 @@
             <span class="year-label" style="left: 50%;">500</span>
             <span class="year-label" style="left: 75%;">750</span>
             <span class="year-label" style="left: 100%;">1000</span>
-            <div class="event above-1" style="left: 3%;" data-year="30" title="Ministry of Jesus"></div>
-            <div class="event below-1" style="left: 4%" data-year="40" title="Conversion of Paul"></div>
-            <div class="event above-1" style="left: 6%" data-year="60" title="Paul's Letters"></div>
-            <div class="event below-1" style="left: 9%" data-year="90" title="Gospel of John"></div>
-            <div class="event above-1" style="left: 10%" data-year="100" title="Death of John"></div>
-            <div class="event below-1 papyrus" style="left: 15%" data-year="150" title="P52 - John's Gospel Fragment"></div>
-            <div class="event above-1 papyrus" style="left: 20%" data-year="200" title="P46 - Pauline Epistles"></div>
-            <div class="event above-2 papyrus" style="left: 20%" data-year="200" title="P66 - John's Gospel"></div>
-            <div class="event below-1 papyrus" style="left: 22%" data-year="220" title="P45 - Four Gospels and Acts"></div>
-            <div class="event above-1 papyrus" style="left: 24%" data-year="240" title="P75 - Luke and John"></div>
-            <div class="event below-1 papyrus" style="left: 25%" data-year="250" title="P47 - Book of Revelation"></div>
-            <div class="event above-1 papyrus" style="left: 26%" data-year="260" title="P72 - 1-2 Peter, Jude"></div>
-            <div class="event below-1" style="left: 30%" data-year="300" title="Constantine's Conversion"></div>
-            <div class="event above-1" style="left: 32.5%" data-year="325" title="Council of Nicaea"></div>
-            <div class="event below-1" style="left: 36.7%" data-year="367" title="Athanasius's Easter Letter"></div>
-            <div class="event above-1 papyrus" style="left: 40%" data-year="400" title="Codex Sinaiticus"></div>
-            <div class="event below-1" style="left: 47%" data-year="470" title="Fall of Western Roman Empire"></div>
-            <div class="event above-1" style="left: 61%" data-year="610" title="Rise of Islam"></div>
-            <div class="event below-1" style="left: 80%" data-year="800" title="Charlemagne Crowned Emperor"></div>
-            <div class="event above-1" style="left: 98.8%" data-year="988" title="Baptism of Kievan Rus'"></div>
         </div>
         <div class="timeline-controls">
             <button id="zoom-in">+</button>
@@ -349,6 +331,50 @@
         let scale = 1;
         let selectedEvent = null;
 
+        async function loadEvents() {
+            try {
+                const response = await fetch('events.json');
+                const events = await response.json();
+
+                events.forEach(event => {
+                    const newEvent = document.createElement('div');
+                    newEvent.className = 'event';
+                    newEvent.style.left = `${event.percentage}%`;
+                    newEvent.setAttribute('data-year', event.year);
+                    newEvent.setAttribute('title', event.title);
+
+                    if (event.position) {
+                        newEvent.classList.add(event.position);
+                    }
+                    if (event.eventType === 'manuscript') {
+                        newEvent.classList.add('papyrus');
+                    }
+
+                    // Check if there are already events in the same year
+                    const existingEvents = document.querySelectorAll(`.event[data-year="${event.year}"]`);
+                    const aboveCount = document.querySelectorAll(`.event[data-year="${event.year}"].above-1, .event[data-year="${event.year}"].above-2, .event[data-year="${event.year}"].above-3`).length;
+                    const belowCount = document.querySelectorAll(`.event[data-year="${event.year}"].below-1, .event[data-year="${event.year}"].below-2, .event[data-year="${event.year}"].below-3`).length;
+
+                    if (existingEvents.length === 0) {
+                        newEvent.classList.add('above-1');
+                    } else if (aboveCount <= belowCount && aboveCount < 3) {
+                        newEvent.classList.add(`above-${aboveCount + 1}`);
+                    } else if (belowCount < 3) {
+                        newEvent.classList.add(`below-${belowCount + 1}`);
+                    } else {
+                        alert('Maximum number of events for this year reached.');
+                        return;
+                    }
+
+                    timeline.appendChild(newEvent);
+                });
+
+                updateEvents();
+            } catch (error) {
+                console.error('Error loading events:', error);
+            }
+        }
+
         function updateEvents() {
             const events = document.querySelectorAll('.event');
             events.forEach(event => {
@@ -367,7 +393,7 @@
             });
         }
 
-        updateEvents();
+        loadEvents(); // Call the function to load events when the page loads
 
         deleteEventBtn.addEventListener('click', () => {
             if (selectedEvent) {
