@@ -84,35 +84,12 @@
             transition: all 0.3s ease;
         }
 
-        .event::before {
-            content: '';
-            position: absolute;
-            width: 2px;
-            background-color: var(--secondary-color);
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
         .event.above-1 { top: -30px; }
         .event.above-2 { top: -50px; }
         .event.above-3 { top: -70px; }
         .event.below-1 { bottom: -30px; }
         .event.below-2 { bottom: -50px; }
         .event.below-3 { bottom: -70px; }
-
-        .event.above-1::before, .event.above-2::before, .event.above-3::before { 
-            top: 100%;
-            height: 20px;
-        }
-        .event.above-2::before { height: 40px; }
-        .event.above-3::before { height: 60px; }
-
-        .event.below-1::before, .event.below-2::before, .event.below-3::before { 
-            bottom: 100%;
-            height: 20px;
-        }
-        .event.below-2::before { height: 40px; }
-        .event.below-3::before { height: 60px; }
 
         .event:hover {
             transform: scale(1.5);
@@ -123,10 +100,6 @@
         }
 
         .event.papyrus {
-            background-color: var(--papyrus-color);
-        }
-
-        .event.papyrus::before {
             background-color: var(--papyrus-color);
         }
 
@@ -150,56 +123,12 @@
             min-height: 200px;
         }
 
-        .toolbar {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-
-        .toolbar button, .timeline-controls button {
-            background-color: var(--primary-color);
-            color: var(--text-color);
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            border-radius: 3px;
-        }
-
-        .toolbar button:hover, .timeline-controls button:hover {
-            background-color: #2980b9;
-        }
-
-        .toolbar select {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            border: 1px solid var(--primary-color);
-            padding: 5px;
-        }
-
         .timeline-controls {
             position: absolute;
             top: 10px;
             right: 10px;
             display: flex;
             gap: 10px;
-        }
-
-        #add-event-form {
-            display: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: var(--background-color);
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        #add-event-form input, #add-event-form select {
-            margin-bottom: 10px;
-            padding: 5px;
-            width: 100%;
         }
 
         #delete-event-btn {
@@ -282,41 +211,14 @@
         <div class="timeline-controls">
             <button id="zoom-in">+</button>
             <button id="zoom-out">-</button>
-            <button id="add-event">Add Event</button>
         </div>
     </div>
     <div class="content-container">
-        <div class="toolbar">
-            <button id="bold-btn">B</button>
-            <button id="italic-btn">I</button>
-            <button id="underline-btn">U</button>
-            <select id="font-size">
-                <option value="1">Small</option>
-                <option value="3" selected>Normal</option>
-                <option value="5">Large</option>
-                <option value="7">Extra Large</option>
-            </select>
-            <button id="h1-btn">H1</button>
-            <button id="h2-btn">H2</button>
-            <button id="h3-btn">H3</button>
-        </div>
-        <div id="event-content" contenteditable="true">
+        <div id="event-content">
             <h2>New Testament Timeline</h2>
-            <p>Click on an event in the timeline to view details here. You can edit and format this text.</p>
+            <p>Click on an event in the timeline to view details here.</p>
             <p>Green dots represent historical events, while yellow dots represent important New Testament manuscript discoveries.</p>
         </div>
-    </div>
-
-    <div id="add-event-form">
-        <input type="number" id="event-year" placeholder="Year">
-        <input type="text" id="event-title" placeholder="Event Title">
-        <select id="event-type">
-            <option value="historical">Historical Event</option>
-            <option value="manuscript">Biblical Manuscript</option>
-        </select>
-        <textarea id="event-description" placeholder="Event Description"></textarea>
-        <button id="save-event">Save</button>
-        <button id="cancel-event">Cancel</button>
     </div>
 
     <button id="delete-event-btn">Delete Event</button>
@@ -325,7 +227,6 @@
         const timeline = document.getElementById('timeline');
         const timelineContainer = document.getElementById('timeline-container');
         const content = document.getElementById('event-content');
-        const addEventForm = document.getElementById('add-event-form');
         const deleteEventBtn = document.getElementById('delete-event-btn');
         const historicalCheckbox = document.getElementById('historical-checkbox');
         const manuscriptCheckbox = document.getElementById('manuscript-checkbox');
@@ -406,14 +307,6 @@
             }
         });
 
-        document.getElementById('bold-btn').addEventListener('click', () => document.execCommand('bold', false, null));
-        document.getElementById('italic-btn').addEventListener('click', () => document.execCommand('italic', false, null));
-        document.getElementById('underline-btn').addEventListener('click', () => document.execCommand('underline', false, null));
-        document.getElementById('font-size').addEventListener('change', (e) => document.execCommand('fontSize', false, e.target.value));
-        document.getElementById('h1-btn').addEventListener('click', () => document.execCommand('formatBlock', false, '<h1>'));
-        document.getElementById('h2-btn').addEventListener('click', () => document.execCommand('formatBlock', false,'<h2>'));
-        document.getElementById('h3-btn').addEventListener('click', () => document.execCommand('formatBlock', false, '<h3>'));
-
         // Zoom functionality
         document.getElementById('zoom-in').addEventListener('click', () => {
             scale *= 1.2;
@@ -423,34 +316,6 @@
         document.getElementById('zoom-out').addEventListener('click', () => {
             scale /= 1.2;
             timeline.style.transform = `scale(${scale})`;
-        });
-
-        // Add event functionality
-        document.getElementById('add-event').addEventListener('click', () => {
-            addEventForm.style.display = 'block';
-        });
-
-        document.getElementById('save-event').addEventListener('click', () => {
-            const year = document.getElementById('event-year').value;
-            const title = document.getElementById('event-title').value;
-            const eventType = document.getElementById('event-type').value;
-            const description = document.getElementById('event-description').value;
-            if (year && title) {
-                const newEvent = {
-                    year,
-                    title,
-                    eventType,
-                    percentage: (year / 1000) * 100,
-                    description
-                };
-                addEventToTimeline(newEvent);
-                addEventForm.style.display = 'none';
-                updateEvents();
-            }
-        });
-
-        document.getElementById('cancel-event').addEventListener('click', () => {
-            addEventForm.style.display = 'none';
         });
 
         // Scroll functionality
