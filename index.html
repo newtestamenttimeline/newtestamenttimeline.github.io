@@ -169,8 +169,8 @@
 
         .sidebar {
             position: absolute;
-            left: 10px;
-            top: 100px;
+            right: 10px;
+            bottom: 10px;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 10px;
             border-radius: 5px;
@@ -256,8 +256,12 @@
 
                 events.forEach(event => {
                     addEventToTimeline(event);
-                    event.texts.forEach(text => texts.add(text));
-                    families.add(event.family);
+                    if (event.texts) {
+                        event.texts.forEach(text => texts.add(text));
+                    }
+                    if (event.family) {
+                        families.add(event.family);
+                    }
                 });
 
                 updateEvents();
@@ -275,8 +279,8 @@
             newEvent.setAttribute('data-year', event.year);
             newEvent.setAttribute('title', event.title);
             newEvent.setAttribute('data-description', event.description);
-            newEvent.setAttribute('data-texts', JSON.stringify(event.texts));
-            newEvent.setAttribute('data-family', event.family);
+            newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
+            newEvent.setAttribute('data-family', event.family || '');
 
             if (event.eventType === 'manuscript') {
                 newEvent.classList.add('papyrus');
