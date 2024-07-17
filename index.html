@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>New Testament Timeline - Interactive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
@@ -188,9 +189,6 @@
             padding: 5px;
             position: absolute;
             z-index: 1;
-            bottom: 125%;
-            left: 50%;
-            margin-left: -60px;
             opacity: 0;
             transition: opacity 0.3s;
             width: 120px;
@@ -218,9 +216,14 @@
             margin-bottom: 10px;
         }
 
+        .sidebar-section h3 {
+            cursor: pointer;
+        }
+
         .sidebar ul {
             list-style-type: none;
             padding: 0;
+            display: none;
         }
 
         .sidebar li {
@@ -234,6 +237,30 @@
 
         .sidebar input[type="checkbox"] {
             margin-right: 5px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                font-size: 18px;
+            }
+
+            .legend {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            .timeline-container {
+                padding: 10px;
+            }
+
+            .sidebar {
+                font-size: 12px;
+                padding: 8px;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                box-sizing: border-box;
+            }
         }
     </style>
 </head>
@@ -279,7 +306,7 @@
     </div>
     <div class="sidebar" id="sidebar">
         <div class="sidebar-section">
-            <h3>Texts <span class="question-mark">?
+            <h3 onclick="toggleSection(this)">Texts <span class="question-mark">?
                 <span class="tooltip">Filter events by specific texts.</span>
             </span></h3>
             <ul id="text-list">
@@ -287,7 +314,7 @@
             </ul>
         </div>
         <div class="sidebar-section">
-            <h3>Manuscript Families <span class="question-mark">?
+            <h3 onclick="toggleSection(this)">Manuscript Families <span class="question-mark">?
                 <span class="tooltip">Filter events by manuscript families.</span>
             </span></h3>
             <ul id="family-list">
@@ -417,6 +444,11 @@
                     event.classList.add('greyed-out');
                 }
             });
+        }
+
+        function toggleSection(header) {
+            const ul = header.nextElementSibling;
+            ul.style.display = ul.style.display === 'none' ? 'block' : 'none';
         }
 
         loadEvents(); // Ensure this is called when the page loads
