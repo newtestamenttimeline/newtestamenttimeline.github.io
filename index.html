@@ -12,6 +12,7 @@
             --text-color: #f0f0f0;
             --papyrus-color: #ffd700;
             --delete-color: #e74c3c;
+            --grey-out-color: #808080;
         }
 
         body {
@@ -102,6 +103,10 @@
 
         .event.papyrus {
             background-color: var(--papyrus-color);
+        }
+
+        .event.greyed-out {
+            background-color: var(--grey-out-color);
         }
 
         .year-label {
@@ -227,8 +232,8 @@
             text-decoration: underline;
         }
 
-        .sidebar button {
-            margin-top: 5px;
+        .sidebar input[type="checkbox"] {
+            margin-right: 5px;
         }
     </style>
 </head>
@@ -280,7 +285,6 @@
             <ul id="text-list">
                 <!-- Texts will be dynamically added here -->
             </ul>
-            <button id="clear-text-filter">Clear Text Filter</button>
         </div>
         <div class="sidebar-section">
             <h3>Manuscript Families <span class="question-mark">?
@@ -289,7 +293,6 @@
             <ul id="family-list">
                 <!-- Families will be dynamically added here -->
             </ul>
-            <button id="clear-family-filter">Clear Family Filter</button>
         </div>
     </div>
 
@@ -299,8 +302,6 @@
         const content = document.getElementById('event-content');
         const historicalCheckbox = document.getElementById('historical-checkbox');
         const manuscriptCheckbox = document.getElementById('manuscript-checkbox');
-        const clearTextFilterButton = document.getElementById('clear-text-filter');
-        const clearFamilyFilterButton = document.getElementById('clear-family-filter');
         let scale = 1;
         let selectedEvent = null;
         const texts = new Set();
@@ -379,8 +380,8 @@
             const textList = document.getElementById('text-list');
             texts.forEach(text => {
                 const listItem = document.createElement('li');
-                listItem.textContent = text;
-                listItem.addEventListener('click', () => filterEventsByText(text));
+                listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
+                listItem.querySelector('input').addEventListener('change', (e) => filterEventsByText(text, e.target.checked));
                 textList.appendChild(listItem);
             });
         }
@@ -389,48 +390,34 @@
             const familyList = document.getElementById('family-list');
             families.forEach(family => {
                 const listItem = document.createElement('li');
-                listItem.textContent = family;
-                listItem.addEventListener('click', () => filterEventsByFamily(family));
+                listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
+                listItem.querySelector('input').addEventListener('change', (e) => filterEventsByFamily(family, e.target.checked));
                 familyList.appendChild(listItem);
             });
         }
 
-        function filterEventsByText(text) {
+        function filterEventsByText(text, isChecked) {
             const events = document.querySelectorAll('.event');
             events.forEach(event => {
                 const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-                if (eventTexts.includes(text)) {
-                    event.style.opacity = '1';
-                } else {
-                    event.style.opacity = '0.5';
+                if (isChecked && eventTexts.includes(text)) {
+                    event.classList.remove('greyed-out');
+                } else if (!isChecked && eventTexts.includes(text)) {
+                    event.classList.add('greyed-out');
                 }
             });
         }
 
-        function filterEventsByFamily(family) {
+        function filterEventsByFamily(family, isChecked) {
             const events = document.querySelectorAll('.event');
             events.forEach(event => {
-                if (event.getAttribute('data-family') === family) {
-                    event.style.opacity = '1';
-                } else {
-                    event.style.opacity = '0.5';
+                if (isChecked && event.getAttribute('data-family') === family) {
+                    event.classList.remove('greyed-out');
+                } else if (!isChecked && event.getAttribute('data-family') === family) {
+                    event.classList.add('greyed-out');
                 }
             });
         }
-
-        clearTextFilterButton.addEventListener('click', () => {
-            const events = document.querySelectorAll('.event');
-            events.forEach(event => {
-                event.style.opacity = '1';
-            });
-        });
-
-        clearFamilyFilterButton.addEventListener('click', () => {
-            const events = document.querySelectorAll('.event');
-            events.forEach(event => {
-                event.style.opacity = '1';
-            });
-        });
 
         loadEvents(); // Ensure this is called when the page loads
 
