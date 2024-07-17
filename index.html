@@ -41,17 +41,15 @@
 
         .main-content {
             display: flex;
+            flex-direction: column;
             flex: 1;
-            flex-direction: row;
-            overflow: hidden;
         }
 
-        .timeline-container {
-            flex: 3;
+        .top-half {
+            flex: 1;
             display: flex;
             align-items: center;
             padding: 20px;
-            position: relative;
             overflow-x: scroll;
         }
 
@@ -124,8 +122,14 @@
             font-size: 12px;
         }
 
+        .bottom-half {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
         .content-container {
-            flex: 4;
+            flex: 2;
             padding: 20px;
             overflow-y: auto;
         }
@@ -137,12 +141,50 @@
             min-height: 200px;
         }
 
-        .timeline-controls {
+        .sidebar {
+            flex: 1;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .sidebar-section {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            cursor: pointer;
+            padding: 5px 0;
+        }
+
+        .sidebar li:hover {
+            text-decoration: underline;
+        }
+
+        .sidebar input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .toggle-sidebar {
             position: absolute;
             top: 10px;
             right: 10px;
-            display: flex;
-            gap: 10px;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
         }
 
         .legend {
@@ -209,60 +251,13 @@
             opacity: 1;
         }
 
-        .sidebar {
-            position: relative;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 14px;
-            color: var(--text-color);
-            display: flex;
-            flex-direction: column;
-            max-width: 300px;
-            overflow-y: auto;
-        }
-
-        .sidebar-section {
-            margin-bottom: 10px;
-        }
-
-        .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .sidebar li {
-            cursor: pointer;
-            padding: 5px 0;
-        }
-
-        .sidebar li:hover {
-            text-decoration: underline;
-        }
-
-        .sidebar input[type="checkbox"] {
-            margin-right: 5px;
-        }
-
-        .toggle-sidebar {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: var(--primary-color);
-            color: var(--text-color);
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
         @media (max-width: 768px) {
             header {
                 font-size: 20px;
                 padding: 8px 0;
             }
 
-            .timeline-container {
+            .top-half {
                 padding: 10px;
             }
 
@@ -271,21 +266,20 @@
             }
 
             .sidebar {
-                position: fixed;
-                top: 0;
-                left: -100%;
-                height: 100%;
-                width: 300px;
-                transition: left 0.3s ease;
+                flex: none;
+                width: 100%;
+                max-height: 200px;
+                transition: max-height 0.3s ease;
             }
 
-            .sidebar.open {
-                left: 0;
+            .sidebar.collapsed {
+                max-height: 30px;
+                overflow: hidden;
             }
 
             .toggle-sidebar {
                 top: 10px;
-                left: 10px;
+                right: 10px;
             }
 
             .legend {
@@ -305,9 +299,8 @@
 </head>
 <body>
     <header>New Testament Timeline</header>
-    <button class="toggle-sidebar">Filters</button>
     <div class="main-content">
-        <div class="timeline-container" id="timeline-container">
+        <div class="top-half" id="timeline-container">
             <div class="legend">
                 <div class="legend-item">
                     <input type="checkbox" class="legend-checkbox" id="historical-checkbox" checked>
@@ -338,29 +331,32 @@
                 <button id="zoom-out">-</button>
             </div>
         </div>
-        <div class="content-container">
-            <div id="event-content">
-                <h2>New Testament Timeline</h2>
-                <p>Click on an event in the timeline to view details here.</p>
-                <p>Green dots represent historical events, while yellow dots represent important New Testament manuscript discoveries.</p>
+        <div class="bottom-half">
+            <div class="content-container">
+                <div id="event-content">
+                    <h2>New Testament Timeline</h2>
+                    <p>Click on an event in the timeline to view details here.</p>
+                    <p>Green dots represent historical events, while yellow dots represent important New Testament manuscript discoveries.</p>
+                </div>
             </div>
-        </div>
-        <div class="sidebar" id="sidebar">
-            <div class="sidebar-section">
-                <h3>Texts <span class="question-mark">?
-                    <span class="tooltip">Filter events by specific texts.</span>
-                </span></h3>
-                <ul id="text-list">
-                    <!-- Texts will be dynamically added here -->
-                </ul>
-            </div>
-            <div class="sidebar-section">
-                <h3>Manuscript Families <span class="question-mark">?
-                    <span class="tooltip">Filter events by manuscript families.</span>
-                </span></h3>
-                <ul id="family-list">
-                    <!-- Families will be dynamically added here -->
-                </ul>
+            <div class="sidebar" id="sidebar">
+                <button class="toggle-sidebar" onclick="toggleSidebar()">Filters</button>
+                <div class="sidebar-section">
+                    <h3>Texts <span class="question-mark">?
+                        <span class="tooltip">Filter events by specific texts.</span>
+                    </span></h3>
+                    <ul id="text-list">
+                        <!-- Texts will be dynamically added here -->
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h3>Manuscript Families <span class="question-mark">?
+                        <span class="tooltip">Filter events by manuscript families.</span>
+                    </span></h3>
+                    <ul id="family-list">
+                        <!-- Families will be dynamically added here -->
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -372,7 +368,6 @@
         const historicalCheckbox = document.getElementById('historical-checkbox');
         const manuscriptCheckbox = document.getElementById('manuscript-checkbox');
         const sidebar = document.getElementById('sidebar');
-        const toggleSidebarButton = document.querySelector('.toggle-sidebar');
         let scale = 1;
         let selectedEvent = null;
         const texts = new Set();
@@ -490,9 +485,9 @@
             });
         }
 
-        toggleSidebarButton.addEventListener('click', () => {
-            sidebar.classList.toggle('open');
-        });
+        function toggleSidebar() {
+            sidebar.classList.toggle('collapsed');
+        }
 
         loadEvents(); // Ensure this is called when the page loads
 
