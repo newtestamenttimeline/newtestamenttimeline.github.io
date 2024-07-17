@@ -10,7 +10,7 @@
  
 
     {
-        "year": 250,
+        "year": 251,
         "title": "Papyrus1",
         "position": "above-1",
         "percentage": 25,
@@ -31,14 +31,14 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 249,
         "title": "Papyrus4",
         "position": "above-2",
         "percentage": 25,
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 251,
         "title": "Papyrus5",
         "position": "below-2",
         "percentage": 25,
@@ -66,7 +66,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 252,
         "title": "Papyrus9",
         "position": "below-1",
         "percentage": 25,
@@ -80,7 +80,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 550,
+        "year": 551,
         "title": "Papyrus11",
         "position": "below-2",
         "percentage": 55,
@@ -94,14 +94,14 @@
         "eventType": "manuscript"
     },
     {
-        "year": 300,
+        "year": 301,
         "title": "Papyrus13",
         "position": "below-3",
         "percentage": 30,
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 253,
         "title": "Papyrus15",
         "position": "above-1",
         "percentage": 25,
@@ -136,7 +136,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 255,
         "title": "Papyrus20",
         "position": "below-3",
         "percentage": 25,
@@ -150,7 +150,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 248,
         "title": "Papyrus22",
         "position": "below-1",
         "percentage": 25,
@@ -164,7 +164,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 350,
+        "year": 351,
         "title": "Papyrus24",
         "position": "below-2",
         "percentage": 35,
@@ -185,28 +185,28 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 254,
         "title": "Papyrus27",
         "position": "above-1",
         "percentage": 25,
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 245,
         "title": "Papyrus28",
         "position": "below-1",
         "percentage": 25,
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 252,
         "title": "Papyrus29",
         "position": "above-2",
         "percentage": 25,
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 249,
         "title": "Papyrus30",
         "position": "below-2",
         "percentage": 25,
@@ -269,14 +269,14 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 254,
         "title": "Papyrus39",
         "position": "above-1",
         "percentage": 25,
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 249,
         "title": "Papyrus40",
         "position": "below-1",
         "percentage": 25,
@@ -311,7 +311,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 248,
         "title": "Papyrus45",
         "position": "above-1",
         "percentage": 25,
@@ -325,14 +325,14 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 247,
         "title": "Papyrus47",
         "position": "above-2",
         "percentage": 25,
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 253,
         "title": "Papyrus48",
         "position": "below-2",
         "percentage": 25,
@@ -367,7 +367,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 247,
         "title": "Papyrus53",
         "position": "above-2",
         "percentage": 25,
@@ -444,7 +444,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 245,
         "title": "Papyrus65",
         "position": "below-1",
         "percentage": 25,
@@ -465,14 +465,14 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 246,
         "title": "Papyrus69",
         "position": "above-3",
         "percentage": 25,
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 246,
         "title": "Papyrus70",
         "position": "below-3",
         "percentage": 25,
@@ -542,7 +542,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 246,
         "title": "Papyrus80",
         "position": "below-2",
         "percentage": 25,
@@ -591,7 +591,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 247,
         "title": "Papyrus87",
         "position": "above-3",
         "percentage": 25,
@@ -619,7 +619,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 247,
         "title": "Papyrus91",
         "position": "above-2",
         "percentage": 25,
@@ -647,7 +647,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 254,
         "title": "Papyrus95",
         "position": "above-1",
         "percentage": 25,
@@ -689,7 +689,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 254,
         "title": "Papyrus101",
         "position": "above-1",
         "percentage": 25,
@@ -710,7 +710,7 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 254,
         "title": "Papyrus104",
         "position": "below-2",
         "percentage": 25,
@@ -724,21 +724,21 @@
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 255,
         "title": "Papyrus106",
         "position": "below-3",
         "percentage": 25,
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 245,
         "title": "Papyrus107",
         "position": "above-1",
         "percentage": 25,
         "eventType": "manuscript"
     },
     {
-        "year": 250,
+        "year": 245,
         "title": "Papyrus108",
         "position": "below-1",
         "percentage": 25,
