@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>New Testament Timeline - Interactive</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
@@ -189,6 +188,9 @@
             padding: 5px;
             position: absolute;
             z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
             opacity: 0;
             transition: opacity 0.3s;
             width: 120px;
@@ -216,14 +218,9 @@
             margin-bottom: 10px;
         }
 
-        .sidebar-section h3 {
-            cursor: pointer;
-        }
-
         .sidebar ul {
             list-style-type: none;
             padding: 0;
-            display: block; /* Set to block initially */
         }
 
         .sidebar li {
@@ -237,41 +234,6 @@
 
         .sidebar input[type="checkbox"] {
             margin-right: 5px;
-        }
-
-        .collapsible {
-            cursor: pointer;
-            user-select: none;
-        }
-
-        .collapsible-content {
-            display: none;
-            overflow: hidden;
-            padding: 0 18px;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                font-size: 18px;
-            }
-
-            .legend {
-                font-size: 12px;
-                padding: 8px;
-            }
-
-            .timeline-container {
-                padding: 10px;
-            }
-
-            .sidebar {
-                font-size: 12px;
-                padding: 8px;
-                bottom: 0;
-                right: 0;
-                width: 100%;
-                box-sizing: border-box;
-            }
         }
     </style>
 </head>
@@ -317,24 +279,20 @@
     </div>
     <div class="sidebar" id="sidebar">
         <div class="sidebar-section">
-            <h3 class="collapsible">Texts! <span class="question-mark">?
+            <h3>Texts <span class="question-mark">?
                 <span class="tooltip">Filter events by specific texts.</span>
             </span></h3>
-            <div class="collapsible-content" id="text-collapsible">
-                <ul id="text-list">
-                    <!-- Texts will be dynamically added here -->
-                </ul>
-            </div>
+            <ul id="text-list">
+                <!-- Texts will be dynamically added here -->
+            </ul>
         </div>
         <div class="sidebar-section">
-            <h3 class="collapsible">Manuscript Families <span class="question-mark">?
+            <h3>Manuscript Families <span class="question-mark">?
                 <span class="tooltip">Filter events by manuscript families.</span>
             </span></h3>
-            <div class="collapsible-content" id="family-collapsible">
-                <ul id="family-list">
-                    <!-- Families will be dynamically added here -->
-                </ul>
-            </div>
+            <ul id="family-list">
+                <!-- Families will be dynamically added here -->
+            </ul>
         </div>
     </div>
 
@@ -344,7 +302,6 @@
         const content = document.getElementById('event-content');
         const historicalCheckbox = document.getElementById('historical-checkbox');
         const manuscriptCheckbox = document.getElementById('manuscript-checkbox');
-        const collapsibles = document.getElementsByClassName('collapsible');
         let scale = 1;
         let selectedEvent = null;
         const texts = new Set();
@@ -462,21 +419,7 @@
             });
         }
 
-        function toggleSection(event) {
-            const content = event.nextElementSibling;
-            if (content.style.display === 'block') {
-                content.style.display = 'none';
-            } else {
-                content.style.display = 'block';
-            }
-        }
-
         loadEvents(); // Ensure this is called when the page loads
-
-        // Add event listeners to collapsibles
-        Array.from(collapsibles).forEach(collapsible => {
-            collapsible.addEventListener('click', toggleSection);
-        });
 
         // Zoom functionality
         document.getElementById('zoom-in').addEventListener('click', () => {
