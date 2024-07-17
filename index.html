@@ -213,8 +213,6 @@
             color: var(--text-color);
             display: flex;
             flex-direction: column;
-            max-height: 40%;
-            overflow-y: auto;
         }
 
         .sidebar-section {
@@ -240,6 +238,11 @@
         }
 
         @media (max-width: 768px) {
+            header {
+                font-size: 20px;
+                padding: 8px 0;
+            }
+
             .timeline-container {
                 padding: 10px;
             }
@@ -249,9 +252,23 @@
             }
 
             .sidebar {
-                position: relative;
-                max-height: none;
+                right: 5px;
+                bottom: 5px;
                 padding: 5px;
+                font-size: 12px;
+            }
+
+            .legend {
+                top: 5px;
+                left: 5px;
+                padding: 5px;
+                font-size: 12px;
+            }
+
+            .timeline-controls {
+                top: 5px;
+                right: 5px;
+                gap: 5px;
             }
         }
     </style>
