@@ -51,6 +51,7 @@
             align-items: center;
             padding: 20px;
             overflow-x: scroll;
+            position: relative;
         }
 
         .timeline {
@@ -151,6 +152,13 @@
             display: flex;
             flex-direction: column;
             overflow-y: auto;
+            transition: max-height 0.3s ease;
+            max-height: 100%;
+        }
+
+        .sidebar.collapsed {
+            max-height: 40px;
+            overflow: hidden;
         }
 
         .sidebar-section {
@@ -176,15 +184,13 @@
         }
 
         .toggle-sidebar {
-            position: absolute;
-            top: 10px;
-            right: 10px;
             background-color: var(--primary-color);
             color: var(--text-color);
             border: none;
             padding: 5px 10px;
             cursor: pointer;
             border-radius: 5px;
+            margin-bottom: 10px;
         }
 
         .legend {
@@ -251,6 +257,14 @@
             opacity: 1;
         }
 
+        .timeline-controls {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
         @media (max-width: 768px) {
             header {
                 font-size: 20px;
@@ -268,12 +282,12 @@
             .sidebar {
                 flex: none;
                 width: 100%;
-                max-height: 200px;
                 transition: max-height 0.3s ease;
+                max-height: 200px;
             }
 
             .sidebar.collapsed {
-                max-height: 30px;
+                max-height: 40px;
                 overflow: hidden;
             }
 
