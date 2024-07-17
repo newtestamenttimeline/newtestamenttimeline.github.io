@@ -171,7 +171,7 @@
 
         .toolbar select {
             background-color: var(--background-color);
-            color: var (--text-color);
+            color: var(--text-color);
             border: 1px solid var(--primary-color);
             padding: 5px;
         }
@@ -359,11 +359,17 @@
 
             // Determine the number of events already in the same year
             const existingEvents = document.querySelectorAll(`.event[data-year="${event.year}"]`);
-            const offset = existingEvents.length * 20;
+            const count = existingEvents.length;
+            const isAbove = count % 2 === 0;
+            const position = Math.floor(count / 2) + 1;
+            const offset = position * 20;
 
-            // Stack events above or below the timeline
-            newEvent.style.top = offset % 2 === 0 ? `-${30 + offset}px` : '';
-            newEvent.style.bottom = offset % 2 !== 0 ? `-${30 + offset}px` : '';
+            // Stack events equally above and below the timeline
+            if (isAbove) {
+                newEvent.classList.add(`above-${position}`);
+            } else {
+                newEvent.classList.add(`below-${position}`);
+            }
 
             timeline.appendChild(newEvent);
         }
