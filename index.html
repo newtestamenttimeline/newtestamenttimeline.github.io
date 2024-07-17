@@ -314,6 +314,7 @@
             <option value="historical">Historical Event</option>
             <option value="manuscript">Biblical Manuscript</option>
         </select>
+        <textarea id="event-description" placeholder="Event Description"></textarea>
         <button id="save-event">Save</button>
         <button id="cancel-event">Cancel</button>
     </div>
@@ -352,6 +353,7 @@
             newEvent.style.left = `${event.percentage}%`;
             newEvent.setAttribute('data-year', event.year);
             newEvent.setAttribute('title', event.title);
+            newEvent.setAttribute('data-description', event.description);
 
             if (event.eventType === 'manuscript') {
                 newEvent.classList.add('papyrus');
@@ -387,7 +389,8 @@
 
                     const year = event.getAttribute('data-year');
                     const title = event.getAttribute('title');
-                    content.innerHTML = `<h2>${title} (Year ${year})</h2><p>Details about the ${title} event that occurred in the year ${year}. This text is editable and can be formatted using the toolbar above.</p>`;
+                    const description = event.getAttribute('data-description');
+                    content.innerHTML = `<h2>${title} (Year ${year})</h2><p>${description}</p>`;
                 });
             });
         }
@@ -431,12 +434,14 @@
             const year = document.getElementById('event-year').value;
             const title = document.getElementById('event-title').value;
             const eventType = document.getElementById('event-type').value;
+            const description = document.getElementById('event-description').value;
             if (year && title) {
                 const newEvent = {
                     year,
                     title,
                     eventType,
-                    percentage: (year / 1000) * 100
+                    percentage: (year / 1000) * 100,
+                    description
                 };
                 addEventToTimeline(newEvent);
                 addEventForm.style.display = 'none';
