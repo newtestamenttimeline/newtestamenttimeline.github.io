@@ -5,18 +5,26 @@
         "eventType": "turds",
         "percentage": 5,
         "description": "The Council of Jerusalem was a conference of the Christian Apostles that decreed that Gentile Christians did not have to observe Mosaic Law.",
-        "texts": ["Matthew"],
+        "texts": ["none"],
         "family": "none"
     },
- 
+  {
+        "year": 325,
+        "title": "Council of Nicea",
+        "eventType": "historical",
+        "percentage": 32.5,
+        "description": "The Council of Nicea was ecumenical council of almost all Christian churches.",
+        "texts": ["none"],
+        "family": "none"
+    },
     {
         "year": 1,
         "title": "Birth of Jesus of Nazareth",
         "percentage": 1,
         "eventType": "historical",
         "description": "The birth of Jesus of Nazareth, who is later recognized as the central figure of Christianity.",
-        "texts": ["Matthew", "Luke"],
-        "family": "Byzantine"
+        "texts": ["none"],
+        "family": "none"
     },
     {
         "year": 251,
