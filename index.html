@@ -415,7 +415,7 @@
 
     // Dynamically distribute events within a range around their actual year
     const eventYear = event.year;
-    const range = 5; // ±5 years around the actual year
+    const range = 14; // ±14 years around the actual year
     const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
         year: parseInt(e.getAttribute('data-year')),
         percentage: parseFloat(e.style.left)
