@@ -223,7 +223,6 @@
         .sidebar ul {
             list-style-type: none;
             padding: 0;
-            display: none;
         }
 
         .sidebar li {
@@ -237,6 +236,17 @@
 
         .sidebar input[type="checkbox"] {
             margin-right: 5px;
+        }
+
+        .collapsible {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .collapsible-content {
+            display: none;
+            overflow: hidden;
+            padding: 0 18px;
         }
 
         @media (max-width: 600px) {
@@ -306,20 +316,24 @@
     </div>
     <div class="sidebar" id="sidebar">
         <div class="sidebar-section">
-            <h3 onclick="toggleSection(this)">Texts <span class="question-mark">?
+            <h3 class="collapsible">Texts <span class="question-mark">?
                 <span class="tooltip">Filter events by specific texts.</span>
             </span></h3>
-            <ul id="text-list">
-                <!-- Texts will be dynamically added here -->
-            </ul>
+            <div class="collapsible-content">
+                <ul id="text-list">
+                    <!-- Texts will be dynamically added here -->
+                </ul>
+            </div>
         </div>
         <div class="sidebar-section">
-            <h3 onclick="toggleSection(this)">Manuscript Families <span class="question-mark">?
+            <h3 class="collapsible">Manuscript Families <span class="question-mark">?
                 <span class="tooltip">Filter events by manuscript families.</span>
             </span></h3>
-            <ul id="family-list">
-                <!-- Families will be dynamically added here -->
-            </ul>
+            <div class="collapsible-content">
+                <ul id="family-list">
+                    <!-- Families will be dynamically added here -->
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -447,8 +461,8 @@
         }
 
         function toggleSection(header) {
-            const ul = header.nextElementSibling;
-            ul.style.display = ul.style.display === 'none' ? 'block' : 'none';
+            const content = header.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
         }
 
         loadEvents(); // Ensure this is called when the page loads
