@@ -171,7 +171,7 @@
 
         .toolbar select {
             background-color: var(--background-color);
-            color: var(--text-color);
+            color: var (--text-color);
             border: 1px solid var(--primary-color);
             padding: 5px;
         }
@@ -337,42 +337,35 @@
                 const events = await response.json();
 
                 events.forEach(event => {
-                    const newEvent = document.createElement('div');
-                    newEvent.className = 'event';
-                    newEvent.style.left = `${event.percentage}%`;
-                    newEvent.setAttribute('data-year', event.year);
-                    newEvent.setAttribute('title', event.title);
-
-                    if (event.position) {
-                        newEvent.classList.add(event.position);
-                    }
-                    if (event.eventType === 'manuscript') {
-                        newEvent.classList.add('papyrus');
-                    }
-
-                    // Check if there are already events in the same year
-                    const existingEvents = document.querySelectorAll(`.event[data-year="${event.year}"]`);
-                    const aboveCount = document.querySelectorAll(`.event[data-year="${event.year}"].above-1, .event[data-year="${event.year}"].above-2, .event[data-year="${event.year}"].above-3`).length;
-                    const belowCount = document.querySelectorAll(`.event[data-year="${event.year}"].below-1, .event[data-year="${event.year}"].below-2, .event[data-year="${event.year}"].below-3`).length;
-
-                    if (existingEvents.length === 0) {
-                        newEvent.classList.add('above-1');
-                    } else if (aboveCount <= belowCount && aboveCount < 3) {
-                        newEvent.classList.add(`above-${aboveCount + 1}`);
-                    } else if (belowCount < 3) {
-                        newEvent.classList.add(`below-${belowCount + 1}`);
-                    } else {
-                        alert('Maximum number of events for this year reached.');
-                        return;
-                    }
-
-                    timeline.appendChild(newEvent);
+                    addEventToTimeline(event);
                 });
 
                 updateEvents();
             } catch (error) {
                 console.error('Error loading events:', error);
             }
+        }
+
+        function addEventToTimeline(event) {
+            const newEvent = document.createElement('div');
+            newEvent.className = 'event';
+            newEvent.style.left = `${event.percentage}%`;
+            newEvent.setAttribute('data-year', event.year);
+            newEvent.setAttribute('title', event.title);
+
+            if (event.eventType === 'manuscript') {
+                newEvent.classList.add('papyrus');
+            }
+
+            // Determine the number of events already in the same year
+            const existingEvents = document.querySelectorAll(`.event[data-year="${event.year}"]`);
+            const offset = existingEvents.length * 20;
+
+            // Stack events above or below the timeline
+            newEvent.style.top = offset % 2 === 0 ? `-${30 + offset}px` : '';
+            newEvent.style.bottom = offset % 2 !== 0 ? `-${30 + offset}px` : '';
+
+            timeline.appendChild(newEvent);
         }
 
         function updateEvents() {
@@ -433,32 +426,13 @@
             const title = document.getElementById('event-title').value;
             const eventType = document.getElementById('event-type').value;
             if (year && title) {
-                const newEvent = document.createElement('div');
-                newEvent.className = 'event';
-                if (eventType === 'manuscript') {
-                    newEvent.classList.add('papyrus');
-                }
-                newEvent.style.left = `${(year / 1000) * 100}%`;
-                newEvent.setAttribute('data-year', year);
-                newEvent.setAttribute('title', title);
-
-                // Check if there are already events in the same year
-                const existingEvents = document.querySelectorAll(`.event[data-year="${year}"]`);
-                const aboveCount = document.querySelectorAll(`.event[data-year="${year}"].above-1, .event[data-year="${year}"].above-2, .event[data-year="${year}"].above-3`).length;
-                const belowCount = document.querySelectorAll(`.event[data-year="${year}"].below-1, .event[data-year="${year}"].below-2, .event[data-year="${year}"].below-3`).length;
-
-                if (existingEvents.length === 0) {
-                    newEvent.classList.add('above-1');
-                } else if (aboveCount <= belowCount && aboveCount < 3) {
-                    newEvent.classList.add(`above-${aboveCount + 1}`);
-                } else if (belowCount < 3) {
-                    newEvent.classList.add(`below-${belowCount + 1}`);
-                } else {
-                    alert('Maximum number of events for this year reached.');
-                    return;
-                }
-
-                timeline.appendChild(newEvent);
+                const newEvent = {
+                    year,
+                    title,
+                    eventType,
+                    percentage: (year / 1000) * 100
+                };
+                addEventToTimeline(newEvent);
                 addEventForm.style.display = 'none';
                 updateEvents();
             }
