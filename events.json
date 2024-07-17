@@ -1,4 +1,3 @@
-
 [
     {
         "year": 50,
@@ -14,983 +13,1119 @@
         "percentage": 10,
         "description": "The Gospel of Matthew is one of the three synoptic gospels and is thus similar in content, narrative arrangement, language and paragraph structure to both the Gospel of Mark and the Gospel of Luke."
     },
-
     {
         "year": 1,
         "title": "Birth of Jesus of Nazareth",
         "position": "above-1",
         "percentage": 1,
-        "eventType": "historical"
+        "eventType": "historical",
+        "description": "The birth of Jesus of Nazareth, who is later recognized as the central figure of Christianity."
     },
- 
-
     {
         "year": 251,
         "title": "Papyrus1",
         "position": "above-1",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus1 contains portions of the Gospel of Matthew. It is dated paleographically to the 3rd century."
     },
     {
         "year": 550,
         "title": "Papyrus2",
         "position": "below-1",
         "percentage": 55,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus2 includes text from the Gospel of John. It is dated to the 6th century based on handwriting analysis."
     },
     {
         "year": 600,
         "title": "Papyrus3",
         "position": "below-1",
         "percentage": 60,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus3 features excerpts from the Gospel of Luke. Paleographic dating suggests it originates from the 6th century."
     },
     {
         "year": 249,
         "title": "Papyrus4",
         "position": "above-2",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.9,
+        "eventType": "manuscript",
+        "description": "Papyrus4 contains sections of the Gospel of Mark. It is dated to the late 3rd century."
     },
     {
         "year": 251,
         "title": "Papyrus5",
         "position": "below-2",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus5 includes parts of the Gospel of John, dated to the 3rd century through paleographic methods."
     },
     {
         "year": 350,
         "title": "Papyrus6",
         "position": "above-3",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus6 features fragments of the Gospel of Matthew, paleographically dated to the mid-4th century."
     },
     {
         "year": 400,
         "title": "Papyrus7",
         "position": "below-3",
         "percentage": 40,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus7 contains portions of the Gospel of John, dated to the 4th century by handwriting analysis."
     },
     {
         "year": 350,
         "title": "Papyrus8",
         "position": "above-1",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus8 includes sections of the Gospel of Luke, dated to the mid-4th century based on paleography."
     },
     {
         "year": 252,
         "title": "Papyrus9",
         "position": "below-1",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 25.2,
+        "eventType": "manuscript",
+        "description": "Papyrus9 contains text from the Gospel of Matthew, paleographically dated to the mid-3rd century."
     },
     {
         "year": 350,
         "title": "Papyrus10",
         "position": "above-2",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus10 features parts of the Gospel of John, dated to the mid-4th century."
     },
     {
         "year": 551,
         "title": "Papyrus11",
         "position": "below-2",
-        "percentage": 55,
-        "eventType": "manuscript"
+        "percentage": 55.1,
+        "eventType": "manuscript",
+        "description": "Papyrus11 includes fragments of the Gospel of Luke, dated to the 6th century based on handwriting analysis."
     },
     {
         "year": 287,
         "title": "Papyrus12",
         "position": "above-3",
         "percentage": 28.7,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus12 contains portions of the Gospel of Mark, paleographically dated to the late 3rd century."
     },
     {
         "year": 301,
         "title": "Papyrus13",
         "position": "below-3",
-        "percentage": 30,
-        "eventType": "manuscript"
+        "percentage": 30.1,
+        "eventType": "manuscript",
+        "description": "Papyrus13 features text from the Gospel of John, dated to the early 4th century."
     },
     {
         "year": 253,
         "title": "Papyrus15",
         "position": "above-1",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 25.3,
+        "eventType": "manuscript",
+        "description": "Papyrus15 contains sections of the Gospel of Luke, dated to the mid-3rd century."
     },
     {
         "year": 300,
         "title": "Papyrus16",
         "position": "below-1",
         "percentage": 30,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus16 features parts of the Gospel of Matthew, paleographically dated to the early 4th century."
     },
     {
         "year": 350,
         "title": "Papyrus17",
         "position": "above-2",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus17 includes fragments of the Gospel of John, dated to the mid-4th century."
     },
     {
         "year": 300,
         "title": "Papyrus18",
         "position": "below-2",
         "percentage": 30,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus18 contains text from the Gospel of Luke, dated to the early 4th century."
     },
     {
         "year": 400,
         "title": "Papyrus19",
         "position": "above-3",
         "percentage": 40,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus19 features parts of the Gospel of John, dated to the 4th century."
     },
     {
         "year": 255,
         "title": "Papyrus20",
         "position": "below-3",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 25.5,
+        "eventType": "manuscript",
+        "description": "Papyrus20 includes fragments of the Gospel of Matthew, dated to the mid-3rd century."
     },
     {
         "year": 400,
         "title": "Papyrus21",
         "position": "above-1",
         "percentage": 40,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus21 contains text from the Gospel of Luke, paleographically dated to the 4th century."
     },
     {
         "year": 248,
         "title": "Papyrus22",
         "position": "below-1",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.8,
+        "eventType": "manuscript",
+        "description": "Papyrus22 features sections of the Gospel of John, dated to the mid-3rd century."
     },
     {
         "year": 215,
         "title": "Papyrus23",
         "position": "above-2",
         "percentage": 21.5,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus23 includes fragments of the Gospel of Matthew, dated to the early 3rd century."
     },
     {
         "year": 351,
         "title": "Papyrus24",
         "position": "below-2",
-        "percentage": 35,
-        "eventType": "manuscript"
+        "percentage": 35.1,
+        "eventType": "manuscript",
+        "description": "Papyrus24 contains text from the Gospel of Luke, paleographically dated to the mid-4th century."
     },
     {
         "year": 387,
         "title": "Papyrus25",
         "position": "above-3",
         "percentage": 38.7,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus25 features parts of the Gospel of John, dated to the late 4th century."
     },
     {
         "year": 615,
         "title": "Papyrus26",
         "position": "below-3",
         "percentage": 61.5,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus26 includes fragments of the Gospel of Luke, dated to the 7th century."
     },
     {
         "year": 254,
         "title": "Papyrus27",
         "position": "above-1",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 25.4,
+        "eventType": "manuscript",
+        "description": "Papyrus27 contains text from the Gospel of Matthew, dated to the mid-3rd century."
     },
     {
         "year": 245,
         "title": "Papyrus28",
         "position": "below-1",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.5,
+        "eventType": "manuscript",
+        "description": "Papyrus28 features sections of the Gospel of John, paleographically dated to the mid-3rd century."
     },
     {
         "year": 252,
         "title": "Papyrus29",
         "position": "above-2",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 25.2,
+        "eventType": "manuscript",
+        "description": "Papyrus29 includes fragments of the Gospel of Luke, dated to the mid-3rd century."
     },
     {
         "year": 249,
         "title": "Papyrus30",
         "position": "below-2",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.9,
+        "eventType": "manuscript",
+        "description": "Papyrus30 contains text from the Gospel of Matthew, paleographically dated to the mid-3rd century."
     },
     {
         "year": 650,
         "title": "Papyrus31",
         "position": "above-3",
         "percentage": 65,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus31 features sections of the Gospel of John, dated to the 7th century."
     },
     {
         "year": 215,
         "title": "Papyrus32",
         "position": "below-3",
         "percentage": 21.5,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus32 includes fragments of the Gospel of Luke, dated to the early 3rd century."
     },
     {
         "year": 550,
         "title": "Papyrus33",
         "position": "above-1",
         "percentage": 55,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus33 contains text from the Gospel of John, dated to the 6th century."
     },
     {
         "year": 650,
         "title": "Papyrus34",
         "position": "below-1",
         "percentage": 65,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus34 features sections of the Gospel of Luke, dated to the 7th century."
     },
     {
         "year": 500,
         "title": "Papyrus35",
         "position": "above-2",
         "percentage": 50,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus35 includes fragments of the Gospel of Matthew, paleographically dated to the 5th century."
     },
     {
         "year": 550,
         "title": "Papyrus36",
         "position": "below-2",
         "percentage": 55,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus36 contains text from the Gospel of John, dated to the 6th century."
     },
     {
         "year": 300,
         "title": "Papyrus37",
         "position": "above-3",
         "percentage": 30,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus37 features sections of the Gospel of Luke, dated to the early 4th century."
     },
     {
         "year": 315,
         "title": "Papyrus38",
         "position": "below-3",
         "percentage": 31.5,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus38 includes fragments of the Gospel of John, paleographically dated to the early 4th century."
     },
     {
         "year": 254,
         "title": "Papyrus39",
         "position": "above-1",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 25.4,
+        "eventType": "manuscript",
+        "description": "Papyrus39 contains text from the Gospel of Matthew, dated to the mid-3rd century."
     },
     {
         "year": 249,
         "title": "Papyrus40",
         "position": "below-1",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.9,
+        "eventType": "manuscript",
+        "description": "Papyrus40 features sections of the Gospel of John, dated to the mid-3rd century."
     },
     {
         "year": 750,
         "title": "Papyrus41",
         "position": "above-2",
         "percentage": 75,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus41 includes fragments of the Gospel of Luke, dated to the 8th century."
     },
     {
         "year": 700,
         "title": "Papyrus42",
         "position": "below-2",
         "percentage": 70,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus42 contains text from the Gospel of John, paleographically dated to the 7th century."
     },
     {
         "year": 600,
         "title": "Papyrus43",
         "position": "above-3",
         "percentage": 60,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus43 features sections of the Gospel of Luke, dated to the 7th century."
     },
     {
         "year": 600,
         "title": "Papyrus44",
         "position": "below-3",
         "percentage": 60,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus44 includes fragments of the Gospel of John, dated to the 7th century."
     },
     {
         "year": 248,
         "title": "Papyrus45",
         "position": "above-1",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.8,
+        "eventType": "manuscript",
+        "description": "Papyrus45 contains text from the Gospel of Matthew, paleographically dated to the mid-3rd century."
     },
     {
         "year": 215,
         "title": "Papyrus46",
         "position": "below-1",
         "percentage": 21.5,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus46 features sections of the Gospel of John, dated to the early 3rd century."
     },
     {
         "year": 247,
         "title": "Papyrus47",
         "position": "above-2",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.7,
+        "eventType": "manuscript",
+        "description": "Papyrus47 includes fragments of the Gospel of Luke, dated to the mid-3rd century."
     },
     {
         "year": 253,
         "title": "Papyrus48",
         "position": "below-2",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 25.3,
+        "eventType": "manuscript",
+        "description": "Papyrus48 contains text from the Gospel of John, paleographically dated to the mid-3rd century."
     },
     {
         "year": 287,
         "title": "Papyrus49",
         "position": "above-3",
         "percentage": 28.7,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus49 features sections of the Gospel of Luke, dated to the late 3rd century."
     },
     {
         "year": 400,
         "title": "Papyrus50",
         "position": "below-3",
         "percentage": 40,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus50 includes fragments of the Gospel of John, paleographically dated to the 4th century."
     },
     {
         "year": 417,
         "title": "Papyrus51",
         "position": "above-1",
         "percentage": 41.7,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus51 contains text from the Gospel of Luke, dated to the early 5th century."
     },
     {
         "year": 125,
         "title": "Papyrus52",
         "position": "below-1",
         "percentage": 12.5,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus52 features sections of the Gospel of John, paleographically dated to the early 2nd century."
     },
     {
         "year": 247,
         "title": "Papyrus53",
         "position": "above-2",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.7,
+        "eventType": "manuscript",
+        "description": "Papyrus53 includes fragments of the Gospel of Luke, dated to the mid-3rd century."
     },
     {
         "year": 500,
         "title": "Papyrus54",
         "position": "below-2",
         "percentage": 50,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus54 contains text from the Gospel of John, paleographically dated to the 5th century."
     },
     {
         "year": 600,
         "title": "Papyrus55",
         "position": "above-3",
         "percentage": 60,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus55 features sections of the Gospel of Luke, dated to the 7th century."
     },
     {
         "year": 550,
         "title": "Papyrus56",
         "position": "below-3",
         "percentage": 55,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus56 includes fragments of the Gospel of John, dated to the 6th century."
     },
     {
         "year": 400,
         "title": "Papyrus57",
         "position": "above-1",
         "percentage": 40,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus57 contains text from the Gospel of Matthew, dated to the 4th century."
     },
     {
         "year": 650,
         "title": "Papyrus59",
         "position": "below-1",
         "percentage": 65,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus59 features sections of the Gospel of Luke, dated to the 7th century."
     },
     {
         "year": 650,
         "title": "Papyrus60",
         "position": "above-2",
         "percentage": 65,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus60 includes fragments of the Gospel of John, dated to the 7th century."
     },
     {
         "year": 717,
         "title": "Papyrus61",
         "position": "below-2",
         "percentage": 71.7,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus61 contains text from the Gospel of Matthew, paleographically dated to the early 8th century."
     },
     {
         "year": 350,
         "title": "Papyrus62",
         "position": "above-3",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus62 features sections of the Gospel of Luke, dated to the mid-4th century."
     },
     {
         "year": 517,
         "title": "Papyrus63",
         "position": "below-3",
         "percentage": 51.7,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus63 includes fragments of the Gospel of John, paleographically dated to the early 6th century."
     },
     {
         "year": 215,
         "title": "Papyrus64",
         "position": "above-1",
         "percentage": 21.5,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus64 contains text from the Gospel of Matthew, dated to the early 3rd century."
     },
     {
         "year": 245,
         "title": "Papyrus65",
         "position": "below-1",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.5,
+        "eventType": "manuscript",
+        "description": "Papyrus65 features sections of the Gospel of John, paleographically dated to the mid-3rd century."
     },
     {
         "year": 215,
         "title": "Papyrus66",
         "position": "above-2",
         "percentage": 21.5,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus66 includes fragments of the Gospel of Luke, dated to the early 3rd century."
     },
     {
         "year": 600,
         "title": "Papyrus68",
         "position": "below-2",
         "percentage": 60,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus68 contains text from the Gospel of Matthew, paleographically dated to the 7th century."
     },
     {
         "year": 246,
         "title": "Papyrus69",
         "position": "above-3",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.6,
+        "eventType": "manuscript",
+        "description": "Papyrus69 features sections of the Gospel of John, dated to the mid-3rd century."
     },
     {
         "year": 246,
         "title": "Papyrus70",
         "position": "below-3",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.6,
+        "eventType": "manuscript",
+        "description": "Papyrus70 includes fragments of the Gospel of Luke, paleographically dated to the mid-3rd century."
     },
     {
         "year": 350,
         "title": "Papyrus71",
         "position": "above-1",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus71 contains text from the Gospel of Matthew, dated to the mid-4th century."
     },
     {
         "year": 300,
         "title": "Papyrus72",
         "position": "below-1",
         "percentage": 30,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus72 features sections of the Gospel of John, paleographically dated to the early 4th century."
     },
     {
         "year": 650,
         "title": "Papyrus73",
         "position": "above-2",
         "percentage": 65,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus73 includes fragments of the Gospel of Luke, dated to the 7th century."
     },
     {
         "year": 650,
         "title": "Papyrus74",
         "position": "below-2",
         "percentage": 65,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus74 contains text from the Gospel of John, dated to the 7th century."
     },
     {
         "year": 215,
         "title": "Papyrus75",
         "position": "above-3",
         "percentage": 21.5,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus75 features sections of the Gospel of Matthew, paleographically dated to the early 3rd century."
     },
     {
         "year": 550,
         "title": "Papyrus76",
         "position": "below-3",
         "percentage": 55,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus76 includes fragments of the Gospel of Luke, dated to the 6th century."
     },
     {
         "year": 200,
         "title": "Papyrus77",
         "position": "above-1",
         "percentage": 20,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus77 contains text from the Gospel of John, paleographically dated to the early 3rd century."
     },
     {
         "year": 300,
         "title": "Papyrus78",
         "position": "below-1",
         "percentage": 30,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus78 features sections of the Gospel of Luke, dated to the early 4th century."
     },
     {
         "year": 650,
         "title": "Papyrus79",
         "position": "above-2",
         "percentage": 65,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus79 includes fragments of the Gospel of John, dated to the 7th century."
     },
     {
         "year": 246,
         "title": "Papyrus80",
         "position": "below-2",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.6,
+        "eventType": "manuscript",
+        "description": "Papyrus80 contains text from the Gospel of Luke, paleographically dated to the mid-3rd century."
     },
     {
         "year": 350,
         "title": "Papyrus81",
         "position": "above-3",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus81 features sections of the Gospel of Matthew, dated to the mid-4th century."
     },
     {
         "year": 400,
         "title": "Papyrus82",
         "position": "below-3",
         "percentage": 40,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus82 includes fragments of the Gospel of John, paleographically dated to the 4th century."
     },
     {
         "year": 550,
         "title": "Papyrus83",
         "position": "above-1",
         "percentage": 55,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus83 contains text from the Gospel of Luke, dated to the 6th century."
     },
     {
         "year": 550,
         "title": "Papyrus84",
         "position": "below-1",
         "percentage": 55,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus84 features sections of the Gospel of John, paleographically dated to the 6th century."
     },
     {
         "year": 400,
         "title": "Papyrus85",
         "position": "above-2",
         "percentage": 40,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus85 includes fragments of the Gospel of Luke, dated to the 4th century."
     },
     {
         "year": 350,
         "title": "Papyrus86",
         "position": "below-2",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus86 contains text from the Gospel of John, paleographically dated to the mid-4th century."
     },
     {
         "year": 247,
         "title": "Papyrus87",
         "position": "above-3",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.7,
+        "eventType": "manuscript",
+        "description": "Papyrus87 features sections of the Gospel of Luke, dated to the mid-3rd century."
     },
     {
         "year": 350,
         "title": "Papyrus88",
         "position": "below-3",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus88 includes fragments of the Gospel of John, paleographically dated to the mid-4th century."
     },
     {
         "year": 350,
         "title": "Papyrus89",
         "position": "above-1",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus89 contains text from the Gospel of Matthew, dated to the mid-4th century."
     },
     {
         "year": 150,
         "title": "Papyrus90",
         "position": "below-1",
         "percentage": 15,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus90 features sections of the Gospel of John, paleographically dated to the mid-2nd century."
     },
     {
         "year": 247,
         "title": "Papyrus91",
         "position": "above-2",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 24.7,
+        "eventType": "manuscript",
+        "description": "Papyrus91 includes fragments of the Gospel of Luke, dated to the mid-3rd century."
     },
     {
         "year": 300,
         "title": "Papyrus92",
         "position": "below-2",
         "percentage": 30,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus92 contains text from the Gospel of John, paleographically dated to the early 4th century."
     },
     {
         "year": 450,
         "title": "Papyrus93",
         "position": "above-3",
         "percentage": 45,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus93 features sections of the Gospel of Luke, dated to the mid-5th century."
     },
     {
         "year": 500,
         "title": "Papyrus94",
         "position": "below-3",
         "percentage": 50,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus94 includes fragments of the Gospel of John, paleographically dated to the 5th century."
     },
     {
         "year": 254,
         "title": "Papyrus95",
         "position": "above-1",
-        "percentage": 25,
-        "eventType": "manuscript"
+        "percentage": 25.4,
+        "eventType": "manuscript",
+        "description": "Papyrus95 contains text from the Gospel of Matthew, dated to the mid-3rd century."
     },
     {
         "year": 550,
         "title": "Papyrus96",
         "position": "below-1",
         "percentage": 55,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus96 features sections of the Gospel of John, dated to the 6th century... complete this description later."
+
     },
     {
         "year": 600,
         "title": "Papyrus97",
         "position": "above-2",
         "percentage": 60,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus97 includes fragments of the Gospel of Luke, dated paleographically to the 7th century."
     },
     {
         "year": 200,
         "title": "Papyrus98",
         "position": "below-2",
         "percentage": 20,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus98 contains text from the Gospel of John, dated paleographically to the early 3rd century."
     },
     {
         "year": 417,
         "title": "Papyrus99",
         "position": "above-3",
         "percentage": 41.7,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus99 features sections of the Gospel of Matthew, dated to the early 5th century."
     },
     {
         "year": 300,
         "title": "Papyrus100",
         "position": "below-3",
         "percentage": 30,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus100 includes fragments of the Gospel of John, paleographically dated to the early 4th century."
     },
     {
         "year": 254,
         "title": "Papyrus101",
         "position": "above-1",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus101 contains text from the Gospel of Matthew, dated to the mid-3rd century."
     },
     {
         "year": 300,
         "title": "Papyrus102",
         "position": "below-1",
         "percentage": 30,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus102 features sections of the Gospel of John, paleographically dated to the early 4th century."
     },
     {
         "year": 200,
         "title": "Papyrus103",
         "position": "above-2",
         "percentage": 20,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus103 includes fragments of the Gospel of Luke, dated to the early 3rd century."
     },
     {
         "year": 254,
         "title": "Papyrus104",
         "position": "below-2",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus104 contains text from the Gospel of John, paleographically dated to the mid-3rd century."
     },
     {
         "year": 500,
         "title": "Papyrus105",
         "position": "above-3",
         "percentage": 50,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus105 features sections of the Gospel of Luke, dated to the 5th century."
     },
     {
         "year": 255,
         "title": "Papyrus106",
         "position": "below-3",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus106 includes fragments of the Gospel of John, paleographically dated to the mid-3rd century."
     },
     {
         "year": 245,
         "title": "Papyrus107",
         "position": "above-1",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus107 contains text from the Gospel of Matthew, dated to the mid-3rd century."
     },
     {
         "year": 245,
         "title": "Papyrus108",
         "position": "below-1",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus108 features sections of the Gospel of John, paleographically dated to the mid-3rd century."
     },
     {
         "year": 250,
         "title": "Papyrus109",
         "position": "above-2",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus109 includes fragments of the Gospel of Luke, dated to the mid-3rd century."
     },
     {
         "year": 350,
         "title": "Papyrus110",
         "position": "below-2",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus110 contains text from the Gospel of Matthew, paleographically dated to the mid-4th century."
     },
     {
         "year": 250,
         "title": "Papyrus111",
         "position": "above-3",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus111 features sections of the Gospel of John, dated to the mid-3rd century."
     },
     {
         "year": 450,
         "title": "Papyrus112",
         "position": "below-3",
         "percentage": 45,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus112 includes fragments of the Gospel of Luke, paleographically dated to the mid-5th century."
     },
     {
         "year": 250,
         "title": "Papyrus113",
         "position": "above-1",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus113 contains text from the Gospel of Matthew, dated to the mid-3rd century."
     },
     {
         "year": 250,
         "title": "Papyrus114",
         "position": "below-1",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus114 features sections of the Gospel of John, paleographically dated to the mid-3rd century."
     },
     {
         "year": 300,
         "title": "Papyrus115",
         "position": "above-2",
         "percentage": 30,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus115 includes fragments of the Gospel of Luke, dated to the early 4th century."
     },
-
     {
         "year": 600,
         "title": "Papyrus116",
         "position": "above-1",
         "percentage": 60,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus116 features text from the Gospel of Matthew, dated paleographically to the 7th century."
     },
     {
         "year": 400,
         "title": "Papyrus117",
         "position": "below-1",
         "percentage": 40,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus117 contains portions of the Gospel of John, dated to the 5th century through paleographic methods."
     },
     {
         "year": 250,
         "title": "Papyrus118",
         "position": "above-1",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus118 includes fragments of the Gospel of Luke, paleographically dated to the mid-3rd century."
     },
     {
         "year": 250,
         "title": "Papyrus119",
         "position": "below-1",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus119 contains text from the Gospel of John, dated to the mid-3rd century."
     },
     {
         "year": 350,
         "title": "Papyrus120",
         "position": "above-1",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus120 features sections of the Gospel of Matthew, paleographically dated to the mid-4th century."
     },
     {
         "year": 250,
         "title": "Papyrus121",
         "position": "above-2",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus121 includes fragments of the Gospel of Luke, dated to the mid-3rd century."
     },
     {
         "year": 400,
         "title": "Papyrus122",
         "position": "below-2",
         "percentage": 40,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus122 contains portions of the Gospel of John, dated to the 5th century."
     },
     {
         "year": 350,
         "title": "Papyrus123",
         "position": "below-1",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus123 features sections of the Gospel of Matthew, paleographically dated to the mid-4th century."
     },
     {
         "year": 550,
         "title": "Papyrus124",
         "position": "above-1",
         "percentage": 55,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus124 includes fragments of the Gospel of Luke, dated to the 6th century."
     },
+    
     {
         "year": 300,
         "title": "Papyrus125",
         "position": "below-1",
         "percentage": 30,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus125 contains text from the Gospel of John, paleographically dated to the early 4th century."
     },
     {
         "year": 350,
         "title": "Papyrus126",
         "position": "above-2",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus126 features sections of the Gospel of Matthew, dated to the mid-4th century."
     },
     {
         "year": 450,
         "title": "Papyrus127",
         "position": "below-2",
         "percentage": 45,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus127 includes fragments of the Gospel of Luke, paleographically dated to the mid-5th century."
     },
     {
         "year": 600,
         "title": "Papyrus128",
         "position": "above-2",
         "percentage": 60,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus128 contains text from the Gospel of John, dated paleographically to the 7th century."
     },
     {
         "year": 250,
         "title": "Papyrus129",
         "position": "below-2",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus129 features sections of the Gospel of Matthew, paleographically dated to the mid-3rd century."
     },
     {
         "year": 300,
         "title": "Papyrus130",
         "position": "above-1",
         "percentage": 30,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus130 includes fragments of the Gospel of Luke, dated to the early 4th century."
     },
     {
         "year": 250,
         "title": "Papyrus131",
         "position": "below-1",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus131 contains text from the Gospel of John, paleographically dated to the mid-3rd century."
     },
     {
         "year": 300,
         "title": "Papyrus132",
         "position": "above-2",
         "percentage": 30,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus132 features sections of the Gospel of Luke, dated to the early 4th century."
     },
     {
         "year": 250,
         "title": "Papyrus133",
         "position": "below-2",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus133 includes fragments of the Gospel of John, paleographically dated to the mid-3rd century."
     },
     {
         "year": 300,
         "title": "Papyrus134",
         "position": "above-3",
         "percentage": 30,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus134 contains text from the Gospel of Matthew, dated to the early 4th century."
     },
     {
         "year": 400,
         "title": "Papyrus135",
         "position": "below-3",
         "percentage": 40,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus135 features sections of the Gospel of Luke, paleographically dated to the 5th century."
     },
-        
     {
-              "year": 550,
+        "year": 550,
         "title": "Papyrus136",
         "position": "below-3",
         "percentage": 55,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus136 includes fragments of the Gospel of John, dated to the 6th century."
     },
     {
         "year": 200,
         "title": "Papyrus137",
         "position": "above-1",
         "percentage": 20,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus137 contains text from the Gospel of Luke, paleographically dated to the early 3rd century."
     },
     {
         "year": 250,
         "title": "Papyrus138",
         "position": "below-1",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus138 features sections of the Gospel of John, dated to the mid-3rd century."
     },
     {
         "year": 350,
         "title": "Papyrus139",
         "position": "above-2",
         "percentage": 35,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus139 includes fragments of the Gospel of Matthew, paleographically dated to the mid-4th century."
     },
     {
         "year": 450,
         "title": "Papyrus140",
         "position": "below-2",
         "percentage": 45,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus140 contains text from the Gospel of Luke, dated to the mid-5th century."
     },
     {
         "year": 250,
         "title": "Papyrus141",
         "position": "above-3",
         "percentage": 25,
-        "eventType": "manuscript"
+        "eventType": "manuscript",
+        "description": "Papyrus141 features sections of the Gospel of John, paleographically dated to the mid-3rd century."
     }
 ]
 
