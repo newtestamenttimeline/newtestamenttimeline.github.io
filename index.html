@@ -189,6 +189,9 @@
             padding: 5px;
             position: absolute;
             z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
             opacity: 0;
             transition: opacity 0.3s;
             width: 120px;
@@ -210,14 +213,12 @@
             color: var(--text-color);
             display: flex;
             flex-direction: column;
+            max-height: 40%;
+            overflow-y: auto;
         }
 
         .sidebar-section {
             margin-bottom: 10px;
-        }
-
-        .sidebar-section h3 {
-            cursor: pointer;
         }
 
         .sidebar ul {
@@ -238,38 +239,19 @@
             margin-right: 5px;
         }
 
-        .collapsible {
-            cursor: pointer;
-            user-select: none;
-        }
-
-        .collapsible-content {
-            display: none;
-            overflow: hidden;
-            padding: 0 18px;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                font-size: 18px;
-            }
-
-            .legend {
-                font-size: 12px;
-                padding: 8px;
-            }
-
+        @media (max-width: 768px) {
             .timeline-container {
                 padding: 10px;
             }
 
+            .content-container {
+                padding: 10px;
+            }
+
             .sidebar {
-                font-size: 12px;
-                padding: 8px;
-                bottom: 0;
-                right: 0;
-                width: 100%;
-                box-sizing: border-box;
+                position: relative;
+                max-height: none;
+                padding: 5px;
             }
         }
     </style>
@@ -316,24 +298,20 @@
     </div>
     <div class="sidebar" id="sidebar">
         <div class="sidebar-section">
-            <h3 class="collapsible">Texts <span class="question-mark">?
+            <h3>Texts <span class="question-mark">?
                 <span class="tooltip">Filter events by specific texts.</span>
             </span></h3>
-            <div class="collapsible-content" id="text-collapsible">
-                <ul id="text-list">
-                    <!-- Texts will be dynamically added here -->
-                </ul>
-            </div>
+            <ul id="text-list">
+                <!-- Texts will be dynamically added here -->
+            </ul>
         </div>
         <div class="sidebar-section">
-            <h3 class="collapsible">Manuscript Families <span class="question-mark">?
+            <h3>Manuscript Families <span class="question-mark">?
                 <span class="tooltip">Filter events by manuscript families.</span>
             </span></h3>
-            <div class="collapsible-content" id="family-collapsible">
-                <ul id="family-list">
-                    <!-- Families will be dynamically added here -->
-                </ul>
-            </div>
+            <ul id="family-list">
+                <!-- Families will be dynamically added here -->
+            </ul>
         </div>
     </div>
 
@@ -343,7 +321,6 @@
         const content = document.getElementById('event-content');
         const historicalCheckbox = document.getElementById('historical-checkbox');
         const manuscriptCheckbox = document.getElementById('manuscript-checkbox');
-        const collapsibles = document.getElementsByClassName('collapsible');
         let scale = 1;
         let selectedEvent = null;
         const texts = new Set();
@@ -420,26 +397,22 @@
 
         function populateTextList() {
             const textList = document.getElementById('text-list');
-            textList.innerHTML = ''; // Clear the list before populating
             texts.forEach(text => {
                 const listItem = document.createElement('li');
-                listItem.innerHTML = `<input type="checkbox" id="text-${text}" name="text-${text}" checked> ${text}`;
+                listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
                 listItem.querySelector('input').addEventListener('change', (e) => filterEventsByText(text, e.target.checked));
                 textList.appendChild(listItem);
             });
-            console.log("Text List Populated:", textList);
         }
 
         function populateFamilyList() {
             const familyList = document.getElementById('family-list');
-            familyList.innerHTML = ''; // Clear the list before populating
             families.forEach(family => {
                 const listItem = document.createElement('li');
-                listItem.innerHTML = `<input type="checkbox" id="family-${family}" name="family-${family}" checked> ${family}`;
+                listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
                 listItem.querySelector('input').addEventListener('change', (e) => filterEventsByFamily(family, e.target.checked));
                 familyList.appendChild(listItem);
             });
-            console.log("Family List Populated:", familyList);
         }
 
         function filterEventsByText(text, isChecked) {
@@ -465,21 +438,7 @@
             });
         }
 
-        function toggleSection(event) {
-            const content = event.nextElementSibling;
-            if (content.style.display === 'block') {
-                content.style.display = 'none';
-            } else {
-                content.style.display = 'block';
-            }
-        }
-
         loadEvents(); // Ensure this is called when the page loads
-
-        // Add event listeners to collapsibles
-        Array.from(collapsibles).forEach(collapsible => {
-            collapsible.addEventListener('click', toggleSection);
-        });
 
         // Zoom functionality
         document.getElementById('zoom-in').addEventListener('click', () => {
