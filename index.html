@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>New Testament Timeline - Interactive!</title>
+    <title>New Testament Timeline - Interactive</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
@@ -146,6 +146,7 @@
             display: flex;
             align-items: center;
             margin-bottom: 5px;
+            position: relative;
         }
 
         .legend-color {
@@ -167,6 +168,34 @@
             margin-right: 5px;
         }
 
+        .question-mark {
+            cursor: pointer;
+            margin-left: 5px;
+            color: var(--primary-color);
+        }
+
+        .tooltip {
+            visibility: hidden;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            width: 120px;
+        }
+
+        .question-mark:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
         .sidebar {
             position: absolute;
             right: 10px;
@@ -176,6 +205,12 @@
             border-radius: 5px;
             font-size: 14px;
             color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-section {
+            margin-bottom: 10px;
         }
 
         .sidebar ul {
@@ -191,6 +226,10 @@
         .sidebar li:hover {
             text-decoration: underline;
         }
+
+        .sidebar button {
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
@@ -201,11 +240,17 @@
                 <input type="checkbox" class="legend-checkbox" id="historical-checkbox" checked>
                 <div class="legend-color historical"></div>
                 <span>Historical Events</span>
+                <span class="question-mark">?
+                    <span class="tooltip">Toggle historical events on the timeline.</span>
+                </span>
             </div>
             <div class="legend-item">
                 <input type="checkbox" class="legend-checkbox" id="manuscript-checkbox" checked>
                 <div class="legend-color manuscript"></div>
                 <span>Biblical Manuscripts</span>
+                <span class="question-mark">?
+                    <span class="tooltip">Toggle biblical manuscripts on the timeline.</span>
+                </span>
             </div>
         </div>
         <div class="timeline" id="timeline">
@@ -228,14 +273,24 @@
         </div>
     </div>
     <div class="sidebar" id="sidebar">
-        <h3>Texts</h3>
-        <ul id="text-list">
-            <!-- Texts will be dynamically added here -->
-        </ul>
-        <h3>Manuscript Families</h3>
-        <ul id="family-list">
-            <!-- Families will be dynamically added here -->
-        </ul>
+        <div class="sidebar-section">
+            <h3>Texts <span class="question-mark">?
+                <span class="tooltip">Filter events by specific texts.</span>
+            </span></h3>
+            <ul id="text-list">
+                <!-- Texts will be dynamically added here -->
+            </ul>
+            <button id="clear-text-filter">Clear Text Filter</button>
+        </div>
+        <div class="sidebar-section">
+            <h3>Manuscript Families <span class="question-mark">?
+                <span class="tooltip">Filter events by manuscript families.</span>
+            </span></h3>
+            <ul id="family-list">
+                <!-- Families will be dynamically added here -->
+            </ul>
+            <button id="clear-family-filter">Clear Family Filter</button>
+        </div>
     </div>
 
     <script>
@@ -244,6 +299,8 @@
         const content = document.getElementById('event-content');
         const historicalCheckbox = document.getElementById('historical-checkbox');
         const manuscriptCheckbox = document.getElementById('manuscript-checkbox');
+        const clearTextFilterButton = document.getElementById('clear-text-filter');
+        const clearFamilyFilterButton = document.getElementById('clear-family-filter');
         let scale = 1;
         let selectedEvent = null;
         const texts = new Set();
@@ -360,6 +417,20 @@
                 }
             });
         }
+
+        clearTextFilterButton.addEventListener('click', () => {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                event.style.opacity = '1';
+            });
+        });
+
+        clearFamilyFilterButton.addEventListener('click', () => {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                event.style.opacity = '1';
+            });
+        });
 
         loadEvents(); // Ensure this is called when the page loads
 
