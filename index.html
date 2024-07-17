@@ -51,6 +51,7 @@
             height: 4px;
             background-color: var(--primary-color);
             position: relative;
+            transform-origin: left center;
         }
 
         .timeline::before,
@@ -131,25 +132,6 @@
             gap: 10px;
         }
 
-        #delete-event-btn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: var(--delete-color);
-            color: var(--text-color);
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 3px;
-            font-size: 16px;
-        }
-
-        #delete-event-btn:hover {
-            background-color: #c0392b;
-        }
-
         .legend {
             position: absolute;
             top: 10px;
@@ -183,6 +165,31 @@
 
         .legend-checkbox {
             margin-right: 5px;
+        }
+
+        .sidebar {
+            position: absolute;
+            left: 10px;
+            top: 100px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: var(--text-color);
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            cursor: pointer;
+            padding: 5px 0;
+        }
+
+        .sidebar li:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -220,18 +227,27 @@
             <p>Green dots represent historical events, while yellow dots represent important New Testament manuscript discoveries.</p>
         </div>
     </div>
-
-    <button id="delete-event-btn">Delete Event</button>
+    <div class="sidebar" id="sidebar">
+        <h3>Texts</h3>
+        <ul id="text-list">
+            <!-- Texts will be dynamically added here -->
+        </ul>
+        <h3>Manuscript Families</h3>
+        <ul id="family-list">
+            <!-- Families will be dynamically added here -->
+        </ul>
+    </div>
 
     <script>
         const timeline = document.getElementById('timeline');
         const timelineContainer = document.getElementById('timeline-container');
         const content = document.getElementById('event-content');
-        const deleteEventBtn = document.getElementById('delete-event-btn');
         const historicalCheckbox = document.getElementById('historical-checkbox');
         const manuscriptCheckbox = document.getElementById('manuscript-checkbox');
         let scale = 1;
         let selectedEvent = null;
+        const texts = new Set();
+        const families = new Set();
 
         async function loadEvents() {
             try {
@@ -240,9 +256,13 @@
 
                 events.forEach(event => {
                     addEventToTimeline(event);
+                    event.texts.forEach(text => texts.add(text));
+                    families.add(event.family);
                 });
 
                 updateEvents();
+                populateTextList();
+                populateFamilyList();
             } catch (error) {
                 console.error('Error loading events:', error);
             }
@@ -255,19 +275,18 @@
             newEvent.setAttribute('data-year', event.year);
             newEvent.setAttribute('title', event.title);
             newEvent.setAttribute('data-description', event.description);
+            newEvent.setAttribute('data-texts', JSON.stringify(event.texts));
+            newEvent.setAttribute('data-family', event.family);
 
             if (event.eventType === 'manuscript') {
                 newEvent.classList.add('papyrus');
             }
 
-            // Determine the number of events already in the same year
             const existingEvents = document.querySelectorAll(`.event[data-year="${event.year}"]`);
             const count = existingEvents.length;
             const isAbove = count % 2 === 0;
             const position = Math.floor(count / 2) + 1;
-            const offset = position * 20;
 
-            // Stack events equally above and below the timeline
             if (isAbove) {
                 newEvent.classList.add(`above-${position}`);
             } else {
@@ -286,7 +305,6 @@
                     }
                     selectedEvent = event;
                     event.classList.add('selected');
-                    deleteEventBtn.style.display = 'block';
 
                     const year = event.getAttribute('data-year');
                     const title = event.getAttribute('title');
@@ -296,16 +314,50 @@
             });
         }
 
-        loadEvents(); // Call the function to load events when the page loads
+        function populateTextList() {
+            const textList = document.getElementById('text-list');
+            texts.forEach(text => {
+                const listItem = document.createElement('li');
+                listItem.textContent = text;
+                listItem.addEventListener('click', () => filterEventsByText(text));
+                textList.appendChild(listItem);
+            });
+        }
 
-        deleteEventBtn.addEventListener('click', () => {
-            if (selectedEvent) {
-                selectedEvent.remove();
-                selectedEvent = null;
-                deleteEventBtn.style.display = 'none';
-                content.innerHTML = '<h2>New Testament Timeline</h2><p>Click on an event in the timeline to view details here.</p>';
-            }
-        });
+        function populateFamilyList() {
+            const familyList = document.getElementById('family-list');
+            families.forEach(family => {
+                const listItem = document.createElement('li');
+                listItem.textContent = family;
+                listItem.addEventListener('click', () => filterEventsByFamily(family));
+                familyList.appendChild(listItem);
+            });
+        }
+
+        function filterEventsByText(text) {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                const eventTexts = JSON.parse(event.getAttribute('data-texts'));
+                if (eventTexts.includes(text)) {
+                    event.style.opacity = '1';
+                } else {
+                    event.style.opacity = '0.5';
+                }
+            });
+        }
+
+        function filterEventsByFamily(family) {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                if (event.getAttribute('data-family') === family) {
+                    event.style.opacity = '1';
+                } else {
+                    event.style.opacity = '0.5';
+                }
+            });
+        }
+
+        loadEvents(); // Ensure this is called when the page loads
 
         // Zoom functionality
         document.getElementById('zoom-in').addEventListener('click', () => {
@@ -315,6 +367,24 @@
 
         document.getElementById('zoom-out').addEventListener('click', () => {
             scale /= 1.2;
+            timeline.style.transform = `scale(${scale})`;
+        });
+
+        // Double-click to zoom and scroll
+        timelineContainer.addEventListener('dblclick', (e) => {
+            const rect = timelineContainer.getBoundingClientRect();
+            const offsetX = e.clientX - rect.left;
+            const targetPercentage = offsetX / rect.width;
+            const targetScroll = targetPercentage * timeline.scrollWidth * scale - rect.width / 2;
+
+            // Scroll to the clicked position
+            timelineContainer.scrollTo({
+                left: targetScroll,
+                behavior: 'smooth'
+            });
+
+            // Zoom in on double-click
+            scale *= 1.2;
             timeline.style.transform = `scale(${scale})`;
         });
 
@@ -360,6 +430,11 @@
         manuscriptCheckbox.addEventListener('change', (e) => {
             toggleEvents('.papyrus', e.target.checked);
         });
+
+        // Ensure events stay visible during zoom
+        new ResizeObserver(() => {
+            timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
+        }).observe(timelineContainer);
     </script>
 </body>
 </html>
