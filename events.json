@@ -4,7 +4,7 @@
         "title": "Council of Jerusalem",
         "eventType": "historical",
         "percentage": 5,
-        "description": "The Council of Jerusalem was a conference of the Christian Apostles that decreed that Gentile Christians did not have to observe Mosaic Law."
+        "description": "The Council of Jerusalem was a conference of the Christian Apostles that decreed that Gentile Christians did not have to observe Mosaic Law.",
     },
     {
         "year": 1,
@@ -12,7 +12,7 @@
         "position": "above-1",
         "percentage": 1,
         "eventType": "historical",
-        "description": "The birth of Jesus of Nazareth, who is later recognized as the central figure of Christianity."
+        "description": "The birth of Jesus of Nazareth, who is later recognized as the central figure of Christianity.",
     },
     {
         "year": 50,
