@@ -423,7 +423,7 @@
             textList.innerHTML = ''; // Clear the list before populating
             texts.forEach(text => {
                 const listItem = document.createElement('li');
-                listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
+                listItem.innerHTML = `<input type="checkbox" id="text-${text}" name="text-${text}" checked> ${text}`;
                 listItem.querySelector('input').addEventListener('change', (e) => filterEventsByText(text, e.target.checked));
                 textList.appendChild(listItem);
             });
@@ -435,7 +435,7 @@
             familyList.innerHTML = ''; // Clear the list before populating
             families.forEach(family => {
                 const listItem = document.createElement('li');
-                listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
+                listItem.innerHTML = `<input type="checkbox" id="family-${family}" name="family-${family}" checked> ${family}`;
                 listItem.querySelector('input').addEventListener('change', (e) => filterEventsByFamily(family, e.target.checked));
                 familyList.appendChild(listItem);
             });
