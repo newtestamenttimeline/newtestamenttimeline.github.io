@@ -614,27 +614,37 @@
         }
 
         function filterEventsByText(text, isChecked) {
-            const events = document.querySelectorAll('.event');
-            events.forEach(event => {
-                const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-                if (isChecked && eventTexts.includes(text)) {
-                    event.classList.remove('greyed-out');
-                } else if (!isChecked && eventTexts.includes(text)) {
-                    event.classList.add('greyed-out');
-                }
-            });
+    const events = document.querySelectorAll('.event');
+    console.log(`Filtering by text: ${text}, isChecked: ${isChecked}`);
+    events.forEach(event => {
+        const eventTexts = JSON.parse(event.getAttribute('data-texts'));
+        console.log(`Event: ${event.getAttribute('title')}, Event Texts: ${eventTexts}`);
+        if (isChecked && eventTexts.includes(text)) {
+            console.log(`Showing event: ${event.getAttribute('title')}`);
+            event.classList.remove('greyed-out');
+        } else if (!isChecked && eventTexts.includes(text)) {
+            console.log(`Hiding event: ${event.getAttribute('title')}`);
+            event.classList.add('greyed-out');
         }
+    });
+}
 
-        function filterEventsByFamily(family, isChecked) {
-            const events = document.querySelectorAll('.event');
-            events.forEach(event => {
-                if (isChecked && event.getAttribute('data-family') === family) {
-                    event.classList.remove('greyed-out');
-                } else if (!isChecked && event.getAttribute('data-family') === family) {
-                    event.classList.add('greyed-out');
-                }
-            });
+function filterEventsByFamily(family, isChecked) {
+    const events = document.querySelectorAll('.event');
+    console.log(`Filtering by family: ${family}, isChecked: ${isChecked}`);
+    events.forEach(event => {
+        const eventFamily = event.getAttribute('data-family');
+        console.log(`Event: ${event.getAttribute('title')}, Event Family: ${eventFamily}`);
+        if (isChecked && eventFamily === family) {
+            console.log(`Showing event: ${event.getAttribute('title')}`);
+            event.classList.remove('greyed-out');
+        } else if (!isChecked && eventFamily === family) {
+            console.log(`Hiding event: ${event.getAttribute('title')}`);
+            event.classList.add('greyed-out');
         }
+    });
+}
+
 
         function generateLegend() {
             legendContainer.innerHTML = ''; // Clear existing legend items
