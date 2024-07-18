@@ -405,32 +405,28 @@
     newEvent.setAttribute('data-year', event.year);
     newEvent.setAttribute('title', event.title);
     newEvent.setAttribute('data-description', event.description);
+    newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
+    newEvent.setAttribute('data-family', event.family || '');
     newEvent.setAttribute('data-event-type', event.eventType);
-
-    if (event.texts) {
-        newEvent.setAttribute('data-texts', JSON.stringify(event.texts));
-    }
-
-    if (event.family) {
-        newEvent.setAttribute('data-family', event.family);
-    }
 
     if (event.eventType === 'manuscript') {
         newEvent.classList.add('papyrus');
     }
 
-    // Dynamically distribute events within a range around their actual year
     const eventYear = event.year;
     const range = 10; // ±10% around the actual year
+    const verticalStep = 20; // Step in pixels for vertical movement
+
     const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
         year: parseInt(e.getAttribute('data-year')),
-        percentage: parseFloat(e.style.left)
+        percentage: parseFloat(e.style.left),
+        top: parseInt(e.style.top)
     }));
 
     const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
     const positions = nearbyEvents.map(e => e.percentage);
 
-    // Calculate the new position
+    // Calculate the new horizontal position
     let newPosition = event.percentage;
     while (positions.includes(newPosition)) {
         newPosition += (Math.random() - 0.5) * 0.5; // Adjust the position slightly to the left or right
@@ -438,14 +434,21 @@
 
     newEvent.style.left = `${newPosition}%`;
 
-    const count = nearbyEvents.length;
-    const isAbove = count % 2 === 0;
-    const position = Math.floor(count / 2) + 1;
+    // Determine vertical position based on existing events
+    let verticalPosition = 0;
+    const verticalPositions = nearbyEvents.map(e => e.top);
 
-    if (isAbove) {
-        newEvent.classList.add(`above-${position}`);
+    while (verticalPositions.includes(verticalPosition)) {
+        verticalPosition += verticalStep;
+    }
+
+    newEvent.style.top = `${verticalPosition}px`;
+
+    // Ensure historical events are closest to the timeline
+    if (event.eventType === 'historical') {
+        newEvent.style.zIndex = 1; // Higher z-index to be on top
     } else {
-        newEvent.classList.add(`below-${position}`);
+        newEvent.style.zIndex = 0;
     }
 
     timeline.appendChild(newEvent);
