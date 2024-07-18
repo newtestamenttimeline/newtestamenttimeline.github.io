@@ -430,12 +430,15 @@
             const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= (yearRange[1] - yearRange[0]) / 2);
             const positions = nearbyEvents.map(e => e.percentage);
 
-            // Calculate the new horizontal position
+            // Calculate the new horizontal position within the year range
             let newPosition = event.percentage;
-            if (positions.length > 0) {
-                newPosition = Math.min(...positions) - dotDiameter;
-                while (positions.includes(newPosition)) {
-                    newPosition += dotDiameter;
+            const minPercentage = ((eventYear - 12) / 1000) * 100;
+            const maxPercentage = ((eventYear + 12) / 1000) * 100;
+
+            while (positions.includes(newPosition) || newPosition < minPercentage || newPosition > maxPercentage) {
+                newPosition += dotDiameter;
+                if (newPosition > maxPercentage) {
+                    newPosition = minPercentage;
                 }
             }
 
@@ -450,7 +453,7 @@
             // Function to check if the position is available
             const isPositionAvailable = (positions, newPosition) => {
                 for (const pos of positions) {
-                    if (Math.abs(newPosition - pos) < dotDiameter) {
+                    if (Math.abs(newPosition - pos) < verticalStep) {
                         return false;
                     }
                 }
