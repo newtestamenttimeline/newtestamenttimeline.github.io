@@ -403,6 +403,7 @@
                 // Add historical events first
                 historicalEvents.forEach(event => {
                     event.percentage = (event.year / 1400) * 100;
+                    console.log(`Adding historical event: ${event.title}, Year: ${event.year}, Texts: ${event.texts}, Family: ${event.family}`);
                     addEventToTimeline(event);
                     eventTypes.add(event.eventType);
                 });
@@ -415,6 +416,7 @@
                         event.year = eventYear; // Assign the midpoint year
                         event.percentage = (eventYear / 1400) * 100;
                     }
+                    console.log(`Adding manuscript event: ${event.title}, Year: ${event.year}, Texts: ${event.texts}, Family: ${event.family}`);
                     addEventToTimeline(event);
                     if (event.texts) {
                         event.texts.forEach(text => texts.add(text));
@@ -433,6 +435,7 @@
                         event.year = eventYear; // Assign the midpoint year
                         event.percentage = (eventYear / 1400) * 100;
                     }
+                    console.log(`Adding uncial event: ${event.title}, Year: ${event.year}, Texts: ${event.texts}, Family: ${event.family}`);
                     addEventToTimeline(event);
                     if (event.texts) {
                         event.texts.forEach(text => texts.add(text));
@@ -588,7 +591,10 @@
             texts.forEach(text => {
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
-                listItem.querySelector('input').addEventListener('change', (e) => filterEventsByText(text, e.target.checked));
+                listItem.querySelector('input').addEventListener('change', (e) => {
+                    console.log(`Text filter changed: ${text}, Checked: ${e.target.checked}`);
+                    filterEventsByText(text, e.target.checked);
+                });
                 textList.appendChild(listItem);
             });
         }
@@ -599,7 +605,10 @@
             families.forEach(family => {
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
-                listItem.querySelector('input').addEventListener('change', (e) => filterEventsByFamily(family, e.target.checked));
+                listItem.querySelector('input').addEventListener('change', (e) => {
+                    console.log(`Family filter changed: ${family}, Checked: ${e.target.checked}`);
+                    filterEventsByFamily(family, e.target.checked);
+                });
                 familyList.appendChild(listItem);
             });
         }
@@ -670,7 +679,10 @@
                 checkbox.type = 'checkbox';
                 checkbox.className = 'legend-checkbox';
                 checkbox.checked = true;
-                checkbox.addEventListener('change', (e) => toggleEventsByType(eventType, e.target.checked));
+                checkbox.addEventListener('change', (e) => {
+                    console.log(`Legend filter changed: ${eventType}, Checked: ${e.target.checked}`);
+                    toggleEventsByType(eventType, e.target.checked);
+                });
 
                 const label = document.createElement('span');
                 label.textContent = eventType.charAt(0).toUpperCase() + eventType.slice(1) + ' Events';
