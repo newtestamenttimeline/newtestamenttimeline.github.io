@@ -415,9 +415,9 @@
             }
 
             const eventYear = event.year;
-            const yearRange = event.yearRange || [eventYear - 12, eventYear + 12]; // ±12 years around the actual year
+            const yearRange = event.yearRange || [eventYear - 50, eventYear + 50]; // ±12 years around the actual year
             const verticalStep = 12; // Step in pixels for vertical movement
-            const dotDiameter = 1.2; // Dot width in percentage of the timeline
+            const dotDiameter = 12; // Dot width in percentage of the timeline
 
             const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
                 element: e,
