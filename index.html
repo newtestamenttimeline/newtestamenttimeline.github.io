@@ -420,16 +420,7 @@
     }));
 
     // Determine the initial position
-    let newLeft;
-    if (event.year) {
-        newLeft = (event.year / 1000) * 100;
-    } else if (event.yearRange && event.yearRange.length > 0) {
-        const eventYear = (event.yearRange[0] + event.yearRange[1]) / 2;
-        newLeft = (eventYear / 1000) * 100;
-    } else {
-        console.error('Event does not have a valid year or yearRange:', event);
-        return;
-    }
+    let newLeft = event.year ? (event.year / 1000) * 100 : (event.yearRange[0] / 1000) * 100;
     let newTop = 0;
 
     // Function to check if the position is occupied
@@ -438,18 +429,22 @@
     }
 
     // Adjust positions to avoid overlap
-    let step = 5; // Step size for moving the dots
+    let step = 1; // Step size for moving the dots
     let angle = 0;
+    const maxSteps = 100; // Maximum number of steps to avoid infinite loops
+    let stepsTaken = 0;
     const initialLeft = newLeft;
-    while (isPositionOccupied(newLeft, newTop)) {
+
+    while (isPositionOccupied(newLeft, newTop) && stepsTaken < maxSteps) {
         angle += step;
         if (angle >= 360) {
             angle = 0;
-            step += 5; // Increase step size if we complete a full circle
+            step += 1; // Increase step size if we complete a full circle
         }
         let radian = angle * (Math.PI / 180);
         newLeft = initialLeft + Math.cos(radian) * step;
         newTop += Math.sin(radian) * step;
+        stepsTaken++;
     }
 
     console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
@@ -477,6 +472,7 @@
 
     timeline.appendChild(newEvent);
 }
+
 
 
         function updateEvents() {
