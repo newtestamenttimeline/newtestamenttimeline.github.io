@@ -41,20 +41,31 @@
         }
 
         .main-content {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-        }
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh; /* Ensure it takes the full height of the viewport */
+}
 
-        .top-half {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            overflow-x: scroll;
-            overflow-y: hidden;
-            position: relative;
-        }
+.top-half {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    height: 50%; /* Ensure it takes up half of the viewport */
+}
+
+.bottom-half {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    height: 50%; /* Ensure it takes up half of the viewport */
+    position: relative; /* Fixed positioning is removed to make it flexible */
+}
+
 
         .timeline {
             width: 10000px;
@@ -309,13 +320,20 @@
             <div class="legend" id="legend">
                 <!-- Dynamic legend items will be injected here -->
             </div>
-            <div class="timeline" id="timeline">
-                <span class="year-label" style="left: 0%;">0</span>
-                <span class="year-label" style="left: 25%;">250</span>
-                <span class="year-label" style="left: 50%;">500</span>
-                <span class="year-label" style="left: 75%;">750</span>
-                <span class="year-label" style="left: 100%;">1000</span>
-            </div>
+           <div class="timeline" id="timeline">
+    <span class="year-label" style="left: 0%;">0</span>
+    <span class="year-label" style="left: 10%;">140</span>
+    <span class="year-label" style="left: 20%;">280</span>
+    <span class="year-label" style="left: 30%;">420</span>
+    <span class="year-label" style="left: 40%;">560</span>
+    <span class="year-label" style="left: 50%;">700</span>
+    <span class="year-label" style="left: 60%;">840</span>
+    <span class="year-label" style="left: 70%;">980</span>
+    <span class="year-label" style="left: 80%;">1120</span>
+    <span class="year-label" style="left: 90%;">1260</span>
+    <span class="year-label" style="left: 100%;">1400</span>
+</div>
+
             <div class="timeline-controls">
                 <button id="zoom-in">+</button>
                 <button id="zoom-out">-</button>
@@ -452,8 +470,8 @@ function addEventToTimeline(event) {
         left: parseFloat(e.style.left),
         top: parseFloat(e.style.top)
     }));
-
-    let newLeft = (event.year / 1000) * 100;
+// Adjust the newLeft calculation to scale from 0 to 1400 instead of 1000
+    let newLeft = (event.year / 1400) * 100;
     let newTop = 0;
 
     if (existingDots.length === 0) {
