@@ -399,7 +399,10 @@
     }
 }
 
-        function addEventToTimeline(event) {
+        // Track the last two dot placements for each year
+const yearDotPlacements = {};
+
+function addEventToTimeline(event) {
     const newEvent = document.createElement('div');
     newEvent.className = 'event';
     newEvent.setAttribute('data-year', event.year);
@@ -413,6 +416,12 @@
         newEvent.classList.add('papyrus');
     }
 
+    // Initialize year entry if it doesn't exist
+    if (!yearDotPlacements[event.year]) {
+        yearDotPlacements[event.year] = [];
+    }
+
+    const existingDots = yearDotPlacements[event.year];
     const existingEvents = Array.from(document.querySelectorAll('.event'));
     const positions = existingEvents.map(e => ({
         left: parseFloat(e.style.left),
@@ -420,30 +429,46 @@
     }));
 
     // Determine the initial position
-    let newLeft = event.year ? (event.year / 1000) * 100 : (event.yearRange[0] / 1000) * 100;
+    let newLeft = (event.year / 1000) * 100;
     let newTop = 0;
 
-    // Function to check if the position is occupied
-    function isPositionOccupied(left, top) {
-        return positions.some(pos => Math.abs(pos.left - left) < dotDiameter && Math.abs(pos.top - top) < dotDiameter);
-    }
+    // Place the first dot directly on the timeline
+    if (existingDots.length === 0) {
+        newTop = 0;
+    } else if (existingDots.length === 1) {
+        // Place the second dot either above or below at random
+        newTop = Math.random() > 0.5 ? dotDiameter + spacing : -(dotDiameter + spacing);
+    } else {
+        // For subsequent dots, alternate above/below and find a free spot if necessary
+        const [lastTop, secondLastTop] = existingDots.slice(-2);
+        newTop = lastTop > 0 ? -(dotDiameter + spacing) : dotDiameter + spacing;
 
-    // Adjust positions to avoid overlap
-    const step = 1; // Step size for moving the dots
-    const maxTries = 1000; // Maximum number of attempts to find a position
-    let tries = 0;
-    while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
-        newTop += step;
-        if (newTop > 50) {
-            newTop = -50;
-            newLeft += step;
+        // Check if the new position is occupied
+        if (isPositionOccupied(newLeft, newTop)) {
+            // Start with the position of the former dot and search around it
+            const step = 1; // Step size for moving the dots
+            const initialLeft = newLeft;
+            const initialTop = newTop;
+            let angle = 0;
+            const maxTries = 1000; // Maximum number of attempts to find a position
+            let tries = 0;
+            while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
+                angle += step;
+                if (angle >= 360) {
+                    angle = 0;
+                }
+                const radian = angle * (Math.PI / 180);
+                newLeft = initialLeft + Math.cos(radian) * step;
+                newTop = initialTop + Math.sin(radian) * step;
+                tries++;
+            }
         }
-        tries++;
     }
 
-    if (tries === maxTries) {
-        console.error(`Failed to place ${event.title}: too many attempts`);
-        return;
+    // Add the new position to the yearDotPlacements
+    yearDotPlacements[event.year].push(newTop);
+    if (yearDotPlacements[event.year].length > 2) {
+        yearDotPlacements[event.year].shift(); // Keep only the last two placements
     }
 
     console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
@@ -471,6 +496,17 @@
 
     timeline.appendChild(newEvent);
 }
+
+// Function to check if the position is occupied
+function isPositionOccupied(left, top) {
+    const existingEvents = Array.from(document.querySelectorAll('.event'));
+    return existingEvents.some(e => {
+        const eLeft = parseFloat(e.style.left);
+        const eTop = parseFloat(e.style.top);
+        return Math.abs(eLeft - left) < dotDiameter && Math.abs(eTop - top) < dotDiameter;
+    });
+}
+
 
 
 
