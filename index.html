@@ -418,95 +418,96 @@
             }
         }
 
-        function addEventToTimeline(event) {
-            const newEvent = document.createElement('div');
-            newEvent.className = 'event';
-            newEvent.setAttribute('data-year', event.year);
-            newEvent.setAttribute('title', event.title);
-            newEvent.setAttribute('data-description', event.description);
-            newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
-            newEvent.setAttribute('data-family', event.family || '');
-            newEvent.setAttribute('data-event-type', event.eventType);
+       function addEventToTimeline(event) {
+    const newEvent = document.createElement('div');
+    newEvent.className = 'event';
+    newEvent.setAttribute('data-year', event.year);
+    newEvent.setAttribute('title', event.title);
+    newEvent.setAttribute('data-description', event.description);
+    newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
+    newEvent.setAttribute('data-family', event.family || '');
+    newEvent.setAttribute('data-event-type', event.eventType);
 
-            if (event.eventType === 'manuscript') {
-                newEvent.classList.add('papyrus');
+    if (event.eventType === 'manuscript') {
+        newEvent.classList.add('papyrus');
+    }
+
+    const eventYear = event.year;
+    const range = 50; // ±50 years around the actual year
+    const verticalStep = 20; // Step in pixels for vertical movement
+    const maxOverlapPercentage = 0.15; // Max overlap percentage (15%)
+
+    const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
+        element: e,
+        year: parseInt(e.getAttribute('data-year')),
+        percentage: parseFloat(e.style.left),
+        top: parseInt(e.style.top) || 0,
+        bottom: parseInt(e.style.bottom) || 0
+    }));
+
+    const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
+    const positions = nearbyEvents.map(e => e.percentage);
+
+    // Calculate the new horizontal position
+    let newPosition = event.percentage;
+    while (positions.includes(newPosition)) {
+        newPosition += (Math.random() - 0.5) * 0.5; // Adjust the position slightly to the left or right
+    }
+
+    newEvent.style.left = `${newPosition}%`;
+
+    // Determine vertical position based on existing events
+    let verticalPositionAbove = 0;
+    let verticalPositionBelow = 0;
+    const verticalPositionsAbove = nearbyEvents.filter(e => e.bottom === 0).map(e => e.top);
+    const verticalPositionsBelow = nearbyEvents.filter(e => e.top === 0).map(e => e.bottom);
+
+    // Function to check if the position is available
+    const isPositionAvailable = (positions, newPosition) => {
+        for (const pos of positions) {
+            if (Math.abs(newPosition - pos) < verticalStep * maxOverlapPercentage) {
+                return false;
             }
-
-            const eventYear = event.year;
-            const range = 10; // ±10% around the actual year
-            const verticalStep = 20; // Step in pixels for vertical movement
-            const maxOverlapPercentage = 0.15; // Max overlap percentage (15%)
-
-            const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
-                element: e,
-                year: parseInt(e.getAttribute('data-year')),
-                percentage: parseFloat(e.style.left),
-                top: parseInt(e.style.top) || 0,
-                bottom: parseInt(e.style.bottom) || 0
-            }));
-
-            const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
-            const positions = nearbyEvents.map(e => e.percentage);
-
-            // Calculate the new horizontal position
-            let newPosition = event.percentage;
-            while (positions.includes(newPosition)) {
-                newPosition += (Math.random() - 0.5) * 0.5; // Adjust the position slightly to the left or right
-            }
-
-            newEvent.style.left = `${newPosition}%`;
-
-            // Determine vertical position based on existing events
-            let verticalPositionAbove = 0;
-            let verticalPositionBelow = 0;
-            const verticalPositionsAbove = nearbyEvents.filter(e => e.bottom === 0).map(e => e.top);
-            const verticalPositionsBelow = nearbyEvents.filter(e => e.top === 0).map(e => e.bottom);
-
-            // Function to check if the position is available
-            const isPositionAvailable = (positions, newPosition) => {
-                for (const pos of positions) {
-                    if (Math.abs(newPosition - pos) < verticalStep * maxOverlapPercentage) {
-                        return false;
-                    }
-                }
-                return true;
-            };
-
-            // Find the closest available positions above and below
-            while (!isPositionAvailable(verticalPositionsAbove, verticalPositionAbove) && !isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
-                verticalPositionAbove += verticalStep;
-                verticalPositionBelow += verticalStep;
-            }
-
-            // Decide whether to place the event above or below the timeline
-            if (verticalPositionAbove <= verticalPositionBelow && isPositionAvailable(verticalPositionsAbove, verticalPositionAbove)) {
-                newEvent.style.top = `${verticalPositionAbove}px`;
-                newEvent.classList.add('above');
-            } else if (isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
-                newEvent.style.bottom = `${verticalPositionBelow}px`;
-                newEvent.classList.add('below');
-            }
-
-            // Ensure historical events are closest to the timeline
-            if (event.eventType === 'historical') {
-                newEvent.style.zIndex = 1; // Higher z-index to be on top
-            } else {
-                newEvent.style.zIndex = 0;
-            }
-
-            // Assign color based on event type
-            const eventTypeColors = {
-                'historical': 'var(--secondary-color)',
-                'manuscript': 'var(--papyrus-color)',
-                // Add other event types and colors here
-            };
-            if (!eventTypeColors[event.eventType]) {
-                eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-            }
-            newEvent.style.backgroundColor = eventTypeColors[event.eventType];
-
-            timeline.appendChild(newEvent);
         }
+        return true;
+    };
+
+    // Find the closest available positions above and below
+    while (!isPositionAvailable(verticalPositionsAbove, verticalPositionAbove) && !isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
+        verticalPositionAbove += verticalStep;
+        verticalPositionBelow += verticalStep;
+    }
+
+    // Decide whether to place the event above or below the timeline
+    if (verticalPositionAbove <= verticalPositionBelow && isPositionAvailable(verticalPositionsAbove, verticalPositionAbove)) {
+        newEvent.style.top = `${verticalPositionAbove}px`;
+        newEvent.classList.add('above');
+    } else if (isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
+        newEvent.style.bottom = `${verticalPositionBelow}px`;
+        newEvent.classList.add('below');
+    }
+
+    // Ensure historical events are closest to the timeline
+    if (event.eventType === 'historical') {
+        newEvent.style.zIndex = 1; // Higher z-index to be on top
+    } else {
+        newEvent.style.zIndex = 0;
+    }
+
+    // Assign color based on event type
+    const eventTypeColors = {
+        'historical': 'var(--secondary-color)',
+        'manuscript': 'var(--papyrus-color)',
+        // Add other event types and colors here
+    };
+    if (!eventTypeColors[event.eventType]) {
+        eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    }
+    newEvent.style.backgroundColor = eventTypeColors[event.eventType];
+
+    timeline.appendChild(newEvent);
+}
+
 
         function updateEvents() {
             const events = document.querySelectorAll('.event');
