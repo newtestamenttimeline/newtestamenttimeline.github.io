@@ -398,7 +398,7 @@
             }
         }
 
-        function addEventToTimeline(event) {
+       function addEventToTimeline(event) {
     const newEvent = document.createElement('div');
     newEvent.className = 'event';
     newEvent.setAttribute('data-year', event.year);
@@ -415,7 +415,6 @@
     const eventYear = event.year;
     const range = 10; // ±10% around the actual year
     const verticalStep = 20; // Step in pixels for vertical movement
-    const overlapLimit = 15; // Maximum 15% overlap
 
     const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
         year: parseInt(e.getAttribute('data-year')),
@@ -438,8 +437,8 @@
     // Determine vertical position based on existing events
     let verticalPositionAbove = 0;
     let verticalPositionBelow = 0;
-    const verticalPositionsAbove = nearbyEvents.map(e => e.top);
-    const verticalPositionsBelow = nearbyEvents.map(e => e.bottom);
+    const verticalPositionsAbove = nearbyEvents.filter(e => e.bottom === 0).map(e => e.top);
+    const verticalPositionsBelow = nearbyEvents.filter(e => e.top === 0).map(e => e.bottom);
 
     while (verticalPositionsAbove.includes(verticalPositionAbove) || verticalPositionsBelow.includes(verticalPositionBelow)) {
         verticalPositionAbove += verticalStep;
@@ -462,8 +461,20 @@
         newEvent.style.zIndex = 0;
     }
 
+    // Assign color based on event type
+    const eventTypeColors = {
+        'historical': 'var(--secondary-color)',
+        'manuscript': 'var(--papyrus-color)',
+        // Add other event types and colors here
+    };
+    if (!eventTypeColors[event.eventType]) {
+        eventTypeColors[event.eventType] = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+    }
+    newEvent.style.backgroundColor = eventTypeColors[event.eventType];
+
     timeline.appendChild(newEvent);
 }
+
 
 
         function updateEvents() {
@@ -558,8 +569,16 @@
 
         legendContainer.appendChild(legendItem);
     });
-}
 
+    // Update event colors based on legend
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventType = event.getAttribute('data-event-type');
+        if (eventTypeColors[eventType]) {
+            event.style.backgroundColor = eventTypeColors[eventType];
+        }
+    });
+}
 
         function filterEventsByText(text, isChecked) {
             const events = document.querySelectorAll('.event');
