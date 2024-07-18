@@ -433,9 +433,9 @@
     }
 
     const eventYear = event.year;
-    const range = 50; // ±50 years around the actual year
+    const range = 75; // ±75 years around the actual year
     const verticalStep = 20; // Step in pixels for vertical movement
-    const maxOverlapPercentage = 0.15; // Max overlap percentage (15%)
+    const maxOverlapPercentage = 0.50; // Max overlap percentage (50%)
 
     const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
         element: e,
@@ -507,6 +507,7 @@
 
     timeline.appendChild(newEvent);
 }
+
 
 
         function updateEvents() {
