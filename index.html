@@ -433,6 +433,7 @@
     let angle = 0;
     const initialLeft = newLeft;
     const initialTop = newTop;
+    let radian;
 
     while (isPositionOccupied(newLeft, newTop)) {
         angle += step;
@@ -440,7 +441,7 @@
             angle = 0;
             step += 1; // Increase step size if we complete a full circle
         }
-        let radian = angle * (Math.PI / 180);
+        radian = angle * (Math.PI / 180);
         newLeft = initialLeft + Math.cos(radian) * step;
         newTop = initialTop + Math.sin(radian) * step;
     }
@@ -470,6 +471,7 @@
 
     timeline.appendChild(newEvent);
 }
+
 
 
 
