@@ -14,6 +14,7 @@
             --papyrus-color: #ffd700;
             --delete-color: #e74c3c;
             --grey-out-color: #808080;
+            --uncial-color: #ff4500; /* Example color for uncial events */
         }
 
         body {
@@ -103,6 +104,10 @@
 
         .event.papyrus {
             background-color: var(--papyrus-color);
+        }
+
+        .event.uncial {
+            background-color: var(--uncial-color);
         }
 
         .event.greyed-out {
@@ -364,6 +369,7 @@
             try {
                 const historicalEvents = await fetch('historical_events.json').then(response => response.json());
                 const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
+                const uncialEvents = await fetch('uncials.json').then(response => response.json());
 
                 // Add historical events first
                 historicalEvents.forEach(event => {
@@ -381,6 +387,19 @@
                         event.year = eventYear; // Assign a random year within the range
                         event.percentage = (eventYear / 1000) * 100;
                     }
+                    addEventToTimeline(event);
+                    if (event.texts) {
+                        event.texts.forEach(text => texts.add(text));
+                    }
+                    if (event.family) {
+                        families.add(event.family);
+                    }
+                    eventTypes.add(event.eventType);
+                });
+
+                // Add uncial events
+                uncialEvents.forEach(event => {
+                    event.percentage = (event.year / 1000) * 100;
                     addEventToTimeline(event);
                     if (event.texts) {
                         event.texts.forEach(text => texts.add(text));
@@ -415,6 +434,8 @@
 
             if (event.eventType === 'manuscript') {
                 newEvent.classList.add('papyrus');
+            } else if (event.eventType === 'uncial') {
+                newEvent.classList.add('uncial');
             }
 
             if (!yearDotPlacements[event.year]) {
@@ -483,6 +504,7 @@
             const eventTypeColors = {
                 'historical': 'var(--secondary-color)',
                 'manuscript': 'var(--papyrus-color)',
+                'uncial': 'var(--uncial-color)'
             };
             if (!eventTypeColors[event.eventType]) {
                 eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -553,7 +575,7 @@
             const colorPalette = [
                 'var(--secondary-color)',    // Green
                 'var(--papyrus-color)',      // Yellow
-                '#ff6347',                   // Tomato
+                'var(--uncial-color)',       // Orange
                 '#40e0d0',                   // Turquoise
                 '#ffa500',                   // Orange
                 '#9370db',                   // Medium Purple
