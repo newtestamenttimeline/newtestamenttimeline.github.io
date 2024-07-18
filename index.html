@@ -30,7 +30,7 @@
 
         header {
             background-color: var(--primary-color);
-            color: var(--text-color);
+            color: var (--text-color);
             text-align: center;
             padding: 10px 0;
             font-size: 24px;
@@ -415,11 +415,13 @@
             const eventYear = event.year;
             const range = 10; // ±10% around the actual year
             const verticalStep = 20; // Step in pixels for vertical movement
+            const overlapLimit = 15; // Maximum 15% overlap
 
             const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
                 year: parseInt(e.getAttribute('data-year')),
                 percentage: parseFloat(e.style.left),
-                top: parseInt(e.style.top) || 0
+                top: parseInt(e.style.top) || 0,
+                bottom: parseInt(e.style.bottom) || 0
             }));
 
             const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
@@ -434,14 +436,22 @@
             newEvent.style.left = `${newPosition}%`;
 
             // Determine vertical position based on existing events
-            let verticalPosition = 0;
-            const verticalPositions = nearbyEvents.map(e => e.top);
+            let verticalPositionAbove = 0;
+            let verticalPositionBelow = 0;
+            const verticalPositionsAbove = nearbyEvents.map(e => e.top);
+            const verticalPositionsBelow = nearbyEvents.map(e => e.bottom);
 
-            while (verticalPositions.includes(verticalPosition)) {
-                verticalPosition += verticalStep;
+            while (verticalPositionsAbove.includes(verticalPositionAbove) || verticalPositionsBelow.includes(verticalPositionBelow)) {
+                verticalPositionAbove += verticalStep;
+                verticalPositionBelow += verticalStep;
             }
 
-            newEvent.style.top = `${verticalPosition}px`;
+            // Decide whether to place the event above or below the timeline
+            if (verticalPositionAbove <= verticalPositionBelow) {
+                newEvent.style.top = `${verticalPositionAbove}px`;
+            } else {
+                newEvent.style.bottom = `${verticalPositionBelow}px`;
+            }
 
             // Ensure historical events are closest to the timeline
             if (event.eventType === 'historical') {
