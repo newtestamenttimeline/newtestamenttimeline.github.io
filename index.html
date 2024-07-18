@@ -435,8 +435,10 @@
             const eventYear = event.year;
             const range = 10; // ±10% around the actual year
             const verticalStep = 20; // Step in pixels for vertical movement
+            const maxOverlapPercentage = 0.15; // Max overlap percentage (15%)
 
             const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
+                element: e,
                 year: parseInt(e.getAttribute('data-year')),
                 percentage: parseFloat(e.style.left),
                 top: parseInt(e.style.top) || 0,
@@ -460,16 +462,27 @@
             const verticalPositionsAbove = nearbyEvents.filter(e => e.bottom === 0).map(e => e.top);
             const verticalPositionsBelow = nearbyEvents.filter(e => e.top === 0).map(e => e.bottom);
 
-            while (verticalPositionsAbove.includes(verticalPositionAbove) || verticalPositionsBelow.includes(verticalPositionBelow)) {
+            // Function to check if the position is available
+            const isPositionAvailable = (positions, newPosition) => {
+                for (const pos of positions) {
+                    if (Math.abs(newPosition - pos) < verticalStep * maxOverlapPercentage) {
+                        return false;
+                    }
+                }
+                return true;
+            };
+
+            // Find the closest available positions above and below
+            while (!isPositionAvailable(verticalPositionsAbove, verticalPositionAbove) && !isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
                 verticalPositionAbove += verticalStep;
                 verticalPositionBelow += verticalStep;
             }
 
             // Decide whether to place the event above or below the timeline
-            if (verticalPositionAbove <= verticalPositionBelow) {
+            if (verticalPositionAbove <= verticalPositionBelow && isPositionAvailable(verticalPositionsAbove, verticalPositionAbove)) {
                 newEvent.style.top = `${verticalPositionAbove}px`;
                 newEvent.classList.add('above');
-            } else {
+            } else if (isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
                 newEvent.style.bottom = `${verticalPositionBelow}px`;
                 newEvent.classList.add('below');
             }
