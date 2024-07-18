@@ -399,6 +399,9 @@
                 const historicalEvents = await fetch('historical_events.json').then(response => response.json());
                 const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
                 const uncialEvents = await fetch('uncials.json').then(response => response.json());
+                
+                // Clear existing events from the timeline to prevent duplication
+timeline.innerHTML = '';
 
                 // Add historical events first
                 historicalEvents.forEach(event => {
@@ -447,7 +450,7 @@
                 });
 
                 updateEvents();
-                populateTextList();
+                initializeFilters();populateTextList();
                 populateFamilyList();
                 generateLegend();
             } catch (error) {
@@ -459,6 +462,11 @@
         const yearDotPlacements = {};
 
         function addEventToTimeline(event) {
+            // Check if the event is already in the timeline
+if (document.querySelector(`.event[data-title="${event.title}"]`)) {
+console.log(`Event ${event.title} already exists in the timeline. Skipping.`);
+return;
+}
             const newEvent = document.createElement('div');
             newEvent.className = 'event';
             newEvent.setAttribute('data-year', event.year);
