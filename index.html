@@ -41,53 +41,24 @@
         }
 
         .main-content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    height: 100vh; /* Ensure it takes the full height of the viewport */
-}
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            height: 100vh; /* Ensure it takes the full height of the viewport */
+        }
 
-.top-half {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    overflow: auto; /* Allow both horizontal and vertical scrolling */
-    position: relative;
-    height: 50%;
-}
-
-
-.bottom-half {
-    flex: 1;
-    display: flex;
-    overflow: hidden;
-    height: 50%; /* Ensure it takes up half of the viewport */
-    position: relative; /* Fixed positioning is removed to make it flexible */
-}
-/* Custom scrollbar styles */
-::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-}
-
-::-webkit-scrollbar-track {
-    background: #333; /* Dark background for scrollbar track */
-}
-
-::-webkit-scrollbar-thumb {
-    background: #555; /* Slightly lighter thumb */
-    border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #777; /* Lighter on hover */
-}
-
-
+        .top-half {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            overflow: auto; /* Allow both horizontal and vertical scrolling */
+            position: relative;
+            height: 50%; /* Ensure it takes up half of the viewport */
+        }
 
         .timeline {
-            width: 10000px;
+            width: 14000px; /* Adjusted width to accommodate up to 1400 */
             height: 4px;
             background-color: var(--primary-color);
             position: relative;
@@ -153,9 +124,11 @@
         }
 
         .bottom-half {
-            height: 50%;
+            flex: 1;
             display: flex;
             overflow: hidden;
+            height: 50%; /* Ensure it takes up half of the viewport */
+            position: relative; /* Fixed positioning is removed to make it flexible */
         }
 
         .content-container {
@@ -330,6 +303,25 @@
                 gap: 5px;
             }
         }
+
+        /* Custom scrollbar styles */
+        ::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #333; /* Dark background for scrollbar track */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #555; /* Slightly lighter thumb */
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #777; /* Lighter on hover */
+        }
     </style>
 </head>
 <body>
@@ -339,20 +331,19 @@
             <div class="legend" id="legend">
                 <!-- Dynamic legend items will be injected here -->
             </div>
-           <div class="timeline" id="timeline">
-    <span class="year-label" style="left: 0%;">0</span>
-    <span class="year-label" style="left: 10%;">140</span>
-    <span class="year-label" style="left: 20%;">280</span>
-    <span class="year-label" style="left: 30%;">420</span>
-    <span class="year-label" style="left: 40%;">560</span>
-    <span class="year-label" style="left: 50%;">700</span>
-    <span class="year-label" style="left: 60%;">840</span>
-    <span class="year-label" style="left: 70%;">980</span>
-    <span class="year-label" style="left: 80%;">1120</span>
-    <span class="year-label" style="left: 90%;">1260</span>
-    <span class="year-label" style="left: 100%;">1400</span>
-</div>
-
+            <div class="timeline" id="timeline">
+                <span class="year-label" style="left: 0%;">0</span>
+                <span class="year-label" style="left: 10%;">140</span>
+                <span class="year-label" style="left: 20%;">280</span>
+                <span class="year-label" style="left: 30%;">420</span>
+                <span class="year-label" style="left: 40%;">560</span>
+                <span class="year-label" style="left: 50%;">700</span>
+                <span class="year-label" style="left: 60%;">840</span>
+                <span class="year-label" style="left: 70%;">980</span>
+                <span class="year-label" style="left: 80%;">1120</span>
+                <span class="year-label" style="left: 90%;">1260</span>
+                <span class="year-label" style="left: 100%;">1400</span>
+            </div>
             <div class="timeline-controls">
                 <button id="zoom-in">+</button>
                 <button id="zoom-out">-</button>
@@ -404,400 +395,376 @@
         const step = 5; // Increment for searching new positions
 
         async function loadEvents() {
-    try {
-        const historicalEvents = await fetch('historical_events.json').then(response => response.json());
-        const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
-        const uncialEvents = await fetch('uncials.json').then(response => response.json());
+            try {
+                const historicalEvents = await fetch('historical_events.json').then(response => response.json());
+                const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
+                const uncialEvents = await fetch('uncials.json').then(response => response.json());
 
-        // Add historical events first
-        historicalEvents.forEach(event => {
-            event.percentage = (event.year / 1000) * 100;
-            addEventToTimeline(event);
-            eventTypes.add(event.eventType);
-        });
+                // Add historical events first
+                historicalEvents.forEach(event => {
+                    event.percentage = (event.year / 1400) * 100;
+                    addEventToTimeline(event);
+                    eventTypes.add(event.eventType);
+                });
 
-        // Add manuscript events within their year range
-        manuscriptEvents.forEach(event => {
-            if (event.yearRange) {
-                const yearRange = event.yearRange;
-                const eventYear = (yearRange[0] + yearRange[1]) / 2; // Use the midpoint of the range
-                event.year = eventYear; // Assign the midpoint year
-                event.percentage = (eventYear / 1000) * 100;
+                // Add manuscript events within their year range
+                manuscriptEvents.forEach(event => {
+                    if (event.yearRange) {
+                        const yearRange = event.yearRange;
+                        const eventYear = (yearRange[0] + yearRange[1]) / 2; // Use the midpoint of the range
+                        event.year = eventYear; // Assign the midpoint year
+                        event.percentage = (eventYear / 1400) * 100;
+                    }
+                    addEventToTimeline(event);
+                    if (event.texts) {
+                        event.texts.forEach(text => texts.add(text));
+                    }
+                    if (event.family) {
+                        families.add(event.family);
+                    }
+                    eventTypes.add(event.eventType);
+                });
+
+                // Add uncial events
+                uncialEvents.forEach(event => {
+                    if (event.yearRange) {
+                        const yearRange = event.yearRange;
+                        const eventYear = (yearRange[0] + yearRange[1]) / 2; // Use the midpoint of the range
+                        event.year = eventYear; // Assign the midpoint year
+                        event.percentage = (eventYear / 1400) * 100;
+                    }
+                    addEventToTimeline(event);
+                    if (event.texts) {
+                        event.texts.forEach(text => texts.add(text));
+                    }
+                    if (event.family) {
+                        families.add(event.family);
+                    }
+                    eventTypes.add(event.eventType);
+                });
+
+                updateEvents();
+                populateTextList();
+                populateFamilyList();
+                generateLegend();
+            } catch (error) {
+                console.error('Error loading events:', error);
             }
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
+        }
+
+        // Track the last two dot placements for each year
+        const yearDotPlacements = {};
+
+        function addEventToTimeline(event) {
+            const newEvent = document.createElement('div');
+            newEvent.className = 'event';
+            newEvent.setAttribute('data-year', event.year);
+            newEvent.setAttribute('title', event.title);
+            newEvent.setAttribute('data-description', event.description);
+            newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
+            newEvent.setAttribute('data-family', event.family || '');
+            newEvent.setAttribute('data-event-type', event.eventType);
+
+            if (event.eventType === 'manuscript') {
+                newEvent.classList.add('papyrus');
+            } else if (event.eventType === 'uncial') {
+                newEvent.classList.add('uncial');
             }
-            if (event.family) {
-                families.add(event.family);
+
+            if (!yearDotPlacements[event.year]) {
+                yearDotPlacements[event.year] = [];
             }
-            eventTypes.add(event.eventType);
-        });
 
-        // Add uncial events within their year range
-        uncialEvents.forEach(event => {
-            if (event.yearRange) {
-                const yearRange = event.yearRange;
-                const eventYear = (yearRange[0] + yearRange[1]) / 2; // Use the midpoint of the range
-                event.year = eventYear; // Assign the midpoint year
-                event.percentage = (eventYear / 1000) * 100;
-            }
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
-            }
-            if (event.family) {
-                families.add(event.family);
-            }
-            eventTypes.add(event.eventType);
-        });
+            const existingDots = yearDotPlacements[event.year];
+            const positions = Array.from(document.querySelectorAll('.event')).map(e => ({
+                left: parseFloat(e.style.left),
+                top: parseFloat(e.style.top)
+            }));
 
-        updateEvents();
-        populateTextList();
-        populateFamilyList();
-        generateLegend();
-    } catch (error) {
-        console.error('Error loading events:', error);
-    }
-}
+            // Adjust the newLeft calculation to scale from 0 to 1400 instead of 1000
+            let newLeft = (event.year / 1400) * 100;
+            let newTop = 0;
 
-// Track the last two dot placements for each year
-const yearDotPlacements = {};
+            if (existingDots.length === 0) {
+                newTop = 0;
+            } else if (existingDots.length === 1) {
+                newTop = Math.random() > 0.5 ? dotDiameter + spacing : -(dotDiameter + spacing);
+            } else {
+                const [lastTop] = existingDots.slice(-1);
+                newTop = lastTop > 0 ? -(dotDiameter + spacing) : dotDiameter + spacing;
 
-function addEventToTimeline(event) {
-    const newEvent = document.createElement('div');
-    newEvent.className = 'event';
-    newEvent.setAttribute('data-year', event.year);
-    newEvent.setAttribute('title', event.title);
-    newEvent.setAttribute('data-description', event.description);
-    newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
-    newEvent.setAttribute('data-family', event.family || '');
-    newEvent.setAttribute('data-event-type', event.eventType);
+                if (isPositionOccupied(newLeft, newTop)) {
+                    const directions = [[0, -spacing], [0, spacing], [-spacing, 0], [spacing, 0]];
+                    shuffleArray(directions);
+                    let found = false;
 
-    if (event.eventType === 'manuscript') {
-        newEvent.classList.add('papyrus');
-    } else if (event.eventType === 'uncial') {
-        newEvent.classList.add('uncial');
-    }
+                    for (let i = 0; i < directions.length; i++) {
+                        const [dx, dy] = directions[i];
+                        if (!isPositionOccupied(newLeft + dx, newTop + dy)) {
+                            newLeft += dx;
+                            newTop += dy;
+                            found = true;
+                            break;
+                        }
+                    }
 
-    if (!yearDotPlacements[event.year]) {
-        yearDotPlacements[event.year] = [];
-    }
-
-    const existingDots = yearDotPlacements[event.year];
-    const positions = Array.from(document.querySelectorAll('.event')).map(e => ({
-        left: parseFloat(e.style.left),
-        top: parseFloat(e.style.top)
-    }));
-// Adjust the newLeft calculation to scale from 0 to 1400 instead of 1000
-    let newLeft = (event.year / 1400) * 100;
-    let newTop = 0;
-
-    if (existingDots.length === 0) {
-        newTop = 0;
-    } else if (existingDots.length === 1) {
-        newTop = Math.random() > 0.5 ? dotDiameter + spacing : -(dotDiameter + spacing);
-    } else {
-        const [lastTop] = existingDots.slice(-1);
-        newTop = lastTop > 0 ? -(dotDiameter + spacing) : dotDiameter + spacing;
-
-        if (isPositionOccupied(newLeft, newTop)) {
-            const directions = [[0, -spacing], [0, spacing], [-spacing, 0], [spacing, 0]];
-            shuffleArray(directions);
-            let found = false;
-
-            for (let i = 0; i < directions.length; i++) {
-                const [dx, dy] = directions[i];
-                if (!isPositionOccupied(newLeft + dx, newTop + dy)) {
-                    newLeft += dx;
-                    newTop += dy;
-                    found = true;
-                    break;
+                    if (!found) {
+                        let tries = 0;
+                        const maxTries = 1000;
+                        while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
+                            newTop += newTop > 0 ? spacing + step : -(spacing + step);
+                            tries++;
+                        }
+                    }
                 }
             }
 
-            if (!found) {
-                let tries = 0;
-                const maxTries = 1000;
-                while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
-                    newTop += newTop > 0 ? spacing + step : -(spacing + step);
-                    tries++;
+            yearDotPlacements[event.year].push(newTop);
+            if (yearDotPlacements[event.year].length > 2) {
+                yearDotPlacements[event.year].shift();
+            }
+
+            console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
+
+            newEvent.style.left = `${newLeft}%`;
+            newEvent.style.top = `${newTop}px`;
+
+            if (event.eventType === 'historical') {
+                newEvent.style.zIndex = 1;
+            } else {
+                newEvent.style.zIndex = 0;
+            }
+
+            const eventTypeColors = {
+                'historical': 'var(--secondary-color)',
+                'manuscript': 'var(--papyrus-color)',
+                'uncial': 'var(--uncial-color)'
+            };
+            if (!eventTypeColors[event.eventType]) {
+                eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            }
+            newEvent.style.backgroundColor = eventTypeColors[event.eventType];
+
+            timeline.appendChild(newEvent);
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        function isPositionOccupied(left, top) {
+            const existingEvents = Array.from(document.querySelectorAll('.event'));
+            return existingEvents.some(e => {
+                const eLeft = parseFloat(e.style.left);
+                const eTop = parseFloat(e.style.top);
+                return Math.abs(eLeft - left) < dotDiameter && Math.abs(eTop - top) < dotDiameter;
+            });
+        }
+
+        function updateEvents() {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                event.addEventListener('click', () => {
+                    if (selectedEvent) {
+                        selectedEvent.classList.remove('selected');
+                    }
+                    selectedEvent = event;
+                    event.classList.add('selected');
+
+                    const year = event.getAttribute('data-year');
+                    const title = event.getAttribute('title');
+                    const description = event.getAttribute('data-description');
+                    content.innerHTML = `<h2>${title} (Year ${year})</h2><p>${description}</p>`;
+                });
+            });
+        }
+
+        function populateTextList() {
+            const textList = document.getElementById('text-list');
+            textList.innerHTML = ''; // Clear existing list
+            texts.forEach(text => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
+                listItem.querySelector('input').addEventListener('change', (e) => filterEventsByText(text, e.target.checked));
+                textList.appendChild(listItem);
+            });
+        }
+
+        function populateFamilyList() {
+            const familyList = document.getElementById('family-list');
+            familyList.innerHTML = ''; // Clear existing list
+            families.forEach(family => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
+                listItem.querySelector('input').addEventListener('change', (e) => filterEventsByFamily(family, e.target.checked));
+                familyList.appendChild(listItem);
+            });
+        }
+
+        function filterEventsByText(text, isChecked) {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                const eventTexts = JSON.parse(event.getAttribute('data-texts'));
+                if (isChecked && eventTexts.includes(text)) {
+                    event.classList.remove('greyed-out');
+                } else if (!isChecked && eventTexts.includes(text)) {
+                    event.classList.add('greyed-out');
                 }
-            }
+            });
         }
-    }
 
-    yearDotPlacements[event.year].push(newTop);
-    if (yearDotPlacements[event.year].length > 2) {
-        yearDotPlacements[event.year].shift();
-    }
+        function filterEventsByFamily(family, isChecked) {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                if (isChecked && event.getAttribute('data-family') === family) {
+                    event.classList.remove('greyed-out');
+                } else if (!isChecked && event.getAttribute('data-family') === family) {
+                    event.classList.add('greyed-out');
+                }
+            });
+        }
 
-    console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
+        function generateLegend() {
+            legendContainer.innerHTML = ''; // Clear existing legend items
 
-    newEvent.style.left = `${newLeft}%`;
-    newEvent.style.top = `${newTop}px`;
+            // Define a color palette for event types
+            const colorPalette = [
+                'var(--secondary-color)',    // Green
+                'var(--papyrus-color)',      // Yellow
+                'var(--uncial-color)',       // Orange
+                '#40e0d0',                   // Turquoise
+                '#ffa500',                   // Orange
+                '#9370db',                   // Medium Purple
+                '#ff69b4',                   // Hot Pink
+                '#7fff00',                   // Chartreuse
+                '#1e90ff',                   // Dodger Blue
+                '#ff4500',                   // Orange Red
+            ];
 
-    if (event.eventType === 'historical') {
-        newEvent.style.zIndex = 1;
-    } else {
-        newEvent.style.zIndex = 0;
-    }
+            // Assign colors dynamically to event types
+            const eventTypeColors = {};
 
-    const eventTypeColors = {
-        'historical': 'var(--secondary-color)',
-        'manuscript': 'var(--papyrus-color)',
-        'uncial': 'var(--uncial-color)'
-    };
-    if (!eventTypeColors[event.eventType]) {
-        eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-    }
-    newEvent.style.backgroundColor = eventTypeColors[event.eventType];
+            let colorIndex = 0;
+            eventTypes.forEach(eventType => {
+                // If we run out of predefined colors, generate a random color
+                if (colorIndex >= colorPalette.length) {
+                    eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+                } else {
+                    eventTypeColors[eventType] = colorPalette[colorIndex];
+                }
+                colorIndex++;
+            });
 
-    timeline.appendChild(newEvent);
-}
+            eventTypes.forEach(eventType => {
+                const legendItem = document.createElement('div');
+                legendItem.className = 'legend-item';
 
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
+                const legendColor = document.createElement('div');
+                legendColor.className = 'legend-color';
+                legendColor.style.backgroundColor = eventTypeColors[eventType];
 
-function isPositionOccupied(left, top) {
-    const existingEvents = Array.from(document.querySelectorAll('.event'));
-    return existingEvents.some(e => {
-        const eLeft = parseFloat(e.style.left);
-        const eTop = parseFloat(e.style.top);
-        return Math.abs(eLeft - left) < dotDiameter && Math.abs(eTop - top) < dotDiameter;
-    });
-}
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.className = 'legend-checkbox';
+                checkbox.checked = true;
+                checkbox.addEventListener('change', (e) => toggleEventsByType(eventType, e.target.checked));
 
-function updateEvents() {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        event.addEventListener('click', () => {
-            if (selectedEvent) {
-                selectedEvent.classList.remove('selected');
-            }
-            selectedEvent = event;
-            event.classList.add('selected');
+                const label = document.createElement('span');
+                label.textContent = eventType.charAt(0).toUpperCase() + eventType.slice(1) + ' Events';
 
-            const year = event.getAttribute('data-year');
-            const title = event.getAttribute('title');
-            const description = event.getAttribute('data-description');
-            content.innerHTML = `<h2>${title} (Year ${year})</h2><p>${description}</p>`;
+                legendItem.appendChild(checkbox);
+                legendItem.appendChild(legendColor);
+                legendItem.appendChild(label);
+
+                legendContainer.appendChild(legendItem);
+            });
+
+            // Update event colors based on legend
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                const eventType = event.getAttribute('data-event-type');
+                if (eventTypeColors[eventType]) {
+                    event.style.backgroundColor = eventTypeColors[eventType];
+                }
+            });
+        }
+
+        function toggleEventsByType(eventType, isChecked) {
+            const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
+            events.forEach(event => {
+                event.style.display = isChecked ? 'block' : 'none';
+            });
+        }
+
+        function toggleSidebar() {
+            sidebar.classList.toggle('collapsed');
+        }
+
+        loadEvents(); // Ensure this is called when the page loads
+
+        // Zoom functionality
+        document.getElementById('zoom-in').addEventListener('click', () => {
+            scale *= 1.2;
+            timeline.style.transform = `scale(${scale})`;
         });
-    });
-}
 
-function populateTextList() {
-    const textList = document.getElementById('text-list');
-    textList.innerHTML = ''; // Clear existing list
-    texts.forEach(text => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
-        listItem.querySelector('input').addEventListener('change', (e) => filterEventsByText(text, e.target.checked));
-        textList.appendChild(listItem);
-    });
-}
+        document.getElementById('zoom-out').addEventListener('click', () => {
+            scale /= 1.2;
+            timeline.style.transform = `scale(${scale})`;
+        });
 
-function populateFamilyList() {
-    const familyList = document.getElementById('family-list');
-    familyList.innerHTML = ''; // Clear existing list
-    families.forEach(family => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
-        listItem.querySelector('input').addEventListener('change', (e) => filterEventsByFamily(family, e.target.checked));
-        familyList.appendChild(listItem);
-    });
-}
+        // Double-click to zoom and scroll
+        timelineContainer.addEventListener('dblclick', (e) => {
+            const rect = timelineContainer.getBoundingClientRect();
+            const offsetX = e.clientX - rect.left;
+            const targetPercentage = offsetX / rect.width;
+            const targetScroll = targetPercentage * timeline.scrollWidth * scale - rect.width / 2;
 
-function filterEventsByText(text, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-        if (isChecked && eventTexts.includes(text)) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventTexts.includes(text)) {
-            event.classList.add('greyed-out');
-        }
-    });
-}
+            // Scroll to the clicked position
+            timelineContainer.scrollTo({
+                left: targetScroll,
+                behavior: 'smooth'
+            });
 
-function filterEventsByFamily(family, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        if (isChecked && event.getAttribute('data-family') === family) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && event.getAttribute('data-family') === family) {
-            event.classList.add('greyed-out');
-        }
-    });
-}
+            // Zoom in on double-click
+            scale *= 1.2;
+            timeline.style.transform = `scale(${scale})`;
+        });
 
-function generateLegend() {
-    legendContainer.innerHTML = ''; // Clear existing legend items
+        // Scroll functionality
+        let isDown = false;
+        let startX;
+        let scrollLeft;
 
-    // Define a color palette for event types
-    const colorPalette = [
-        'var(--secondary-color)',    // Green
-        'var(--papyrus-color)',      // Yellow
-        'var(--uncial-color)',       // Orange
-        '#40e0d0',                   // Turquoise
-        '#ffa500',                   // Orange
-        '#9370db',                   // Medium Purple
-        '#ff69b4',                   // Hot Pink
-        '#7fff00',                   // Chartreuse
-        '#1e90ff',                   // Dodger Blue
-        '#ff4500',                   // Orange Red
-    ];
+        timelineContainer.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - timelineContainer.offsetLeft;
+            scrollLeft = timelineContainer.scrollLeft;
+        });
 
-    // Assign colors dynamically to event types
-    const eventTypeColors = {};
+        timelineContainer.addEventListener('mouseleave', () => {
+            isDown = false;
+        });
 
-    let colorIndex = 0;
-    eventTypes.forEach(eventType => {
-        // If we run out of predefined colors, generate a random color
-        if (colorIndex >= colorPalette.length) {
-            eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-        } else {
-            eventTypeColors[eventType] = colorPalette[colorIndex];
-        }
-        colorIndex++;
-    });
+        timelineContainer.addEventListener('mouseup', () => {
+            isDown = false;
+        });
 
-    eventTypes.forEach(eventType => {
-        const legendItem = document.createElement('div');
-        legendItem.className = 'legend-item';
+        timelineContainer.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - timelineContainer.offsetLeft;
+            const walk = (x - startX) * 3;
+            timelineContainer.scrollLeft = scrollLeft - walk;
+        });
 
-        const legendColor = document.createElement('div');
-        legendColor.className = 'legend-color';
-        legendColor.style.backgroundColor = eventTypeColors[eventType];
-
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.className = 'legend-checkbox';
-        checkbox.checked = true;
-        checkbox.addEventListener('change', (e) => toggleEventsByType(eventType, e.target.checked));
-
-        const label = document.createElement('span');
-        label.textContent = eventType.charAt(0).toUpperCase() + eventType.slice(1) + ' Events';
-
-        legendItem.appendChild(checkbox);
-        legendItem.appendChild(legendColor);
-        legendItem.appendChild(label);
-
-        legendContainer.appendChild(legendItem);
-    });
-
-    // Update event colors based on legend
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventType = event.getAttribute('data-event-type');
-        if (eventTypeColors[eventType]) {
-            event.style.backgroundColor = eventTypeColors[eventType];
-        }
-    });
-}
-
-
-function filterEventsByText(text, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-        if (isChecked && eventTexts.includes(text)) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventTexts.includes(text)) {
-            event.classList.add('greyed-out');
-        }
-    });
-}
-
-function filterEventsByFamily(family, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        if (isChecked && event.getAttribute('data-family') === family) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && event.getAttribute('data-family') === family) {
-            event.classList.add('greyed-out');
-        }
-    });
-}
-
-function toggleEventsByType(eventType, isChecked) {
-    const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
-    events.forEach(event => {
-        event.style.display = isChecked ? 'block' : 'none';
-    });
-}
-
-function toggleSidebar() {
-    sidebar.classList.toggle('collapsed');
-}
-
-loadEvents(); // Ensure this is called when the page loads
-
-// Zoom functionality
-document.getElementById('zoom-in').addEventListener('click', () => {
-    scale *= 1.2;
-    timeline.style.transform = `scale(${scale})`;
-});
-
-document.getElementById('zoom-out').addEventListener('click', () => {
-    scale /= 1.2;
-    timeline.style.transform = `scale(${scale})`;
-});
-
-// Double-click to zoom and scroll
-timelineContainer.addEventListener('dblclick', (e) => {
-    const rect = timelineContainer.getBoundingClientRect();
-    const offsetX = e.clientX - rect.left;
-    const targetPercentage = offsetX / rect.width;
-    const targetScroll = targetPercentage * timeline.scrollWidth * scale - rect.width / 2;
-
-    // Scroll to the clicked position
-    timelineContainer.scrollTo({
-        left: targetScroll,
-        behavior: 'smooth'
-    });
-
-    // Zoom in on double-click
-    scale *= 1.2;
-    timeline.style.transform = `scale(${scale})`;
-});
-
-// Scroll functionality
-let isDown = false;
-let startX;
-let scrollLeft;
-
-timelineContainer.addEventListener('mousedown', (e) => {
-    isDown = true;
-    startX = e.pageX - timelineContainer.offsetLeft;
-    scrollLeft = timelineContainer.scrollLeft;
-});
-
-timelineContainer.addEventListener('mouseleave', () => {
-    isDown = false;
-});
-
-timelineContainer.addEventListener('mouseup', () => {
-    isDown = false;
-});
-
-timelineContainer.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - timelineContainer.offsetLeft;
-    const walk = (x - startX) * 3;
-    timelineContainer.scrollLeft = scrollLeft - walk;
-});
-
-// Ensure events stay visible during zoom
-new ResizeObserver(() => {
-    timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
-}).observe(timelineContainer);
-
+        // Ensure events stay visible during zoom
+        new ResizeObserver(() => {
+            timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
+        }).observe(timelineContainer);
     </script>
 </body>
 </html>
