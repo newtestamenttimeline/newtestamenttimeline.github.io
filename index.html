@@ -375,10 +375,12 @@
                 // Add manuscript events within their year range
                 manuscriptEvents.forEach(event => {
                     const yearRange = event.yearRange;
-                    const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
-                    const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
-                    event.year = eventYear; // Assign a random year within the range
-                    event.percentage = (eventYear / 1000) * 100;
+                    if (yearRange) {
+                        const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
+                        const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
+                        event.year = eventYear; // Assign a random year within the range
+                    }
+                    event.percentage = (event.year / 1000) * 100;
                     addEventToTimeline(event);
                     if (event.texts) {
                         event.texts.forEach(text => texts.add(text));
@@ -413,23 +415,28 @@
             }
 
             const eventYear = event.year;
-            const range = 12; // ±12% around the actual year
+            const yearRange = event.yearRange || [eventYear - 12, eventYear + 12]; // ±12 years around the actual year
             const verticalStep = 12; // Step in pixels for vertical movement
+            const dotDiameter = 1.2; // Dot width in percentage of the timeline
 
             const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
+                element: e,
                 year: parseInt(e.getAttribute('data-year')),
                 percentage: parseFloat(e.style.left),
                 top: parseInt(e.style.top) || 0,
                 bottom: parseInt(e.style.bottom) || 0
             }));
 
-            const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
+            const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= (yearRange[1] - yearRange[0]) / 2);
             const positions = nearbyEvents.map(e => e.percentage);
 
             // Calculate the new horizontal position
             let newPosition = event.percentage;
-            while (positions.includes(newPosition)) {
-                newPosition += (Math.random() - 0.5) * 0.5; // Adjust the position slightly to the left or right
+            if (positions.length > 0) {
+                newPosition = Math.min(...positions) - dotDiameter;
+                while (positions.includes(newPosition)) {
+                    newPosition += dotDiameter;
+                }
             }
 
             newEvent.style.left = `${newPosition}%`;
@@ -440,16 +447,27 @@
             const verticalPositionsAbove = nearbyEvents.filter(e => e.bottom === 0).map(e => e.top);
             const verticalPositionsBelow = nearbyEvents.filter(e => e.top === 0).map(e => e.bottom);
 
-            while (verticalPositionsAbove.includes(verticalPositionAbove) || verticalPositionsBelow.includes(verticalPositionBelow)) {
+            // Function to check if the position is available
+            const isPositionAvailable = (positions, newPosition) => {
+                for (const pos of positions) {
+                    if (Math.abs(newPosition - pos) < dotDiameter) {
+                        return false;
+                    }
+                }
+                return true;
+            };
+
+            // Find the closest available positions above and below
+            while (!isPositionAvailable(verticalPositionsAbove, verticalPositionAbove) && !isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
                 verticalPositionAbove += verticalStep;
                 verticalPositionBelow += verticalStep;
             }
 
             // Decide whether to place the event above or below the timeline
-            if (verticalPositionAbove <= verticalPositionBelow) {
+            if (verticalPositionAbove <= verticalPositionBelow && isPositionAvailable(verticalPositionsAbove, verticalPositionAbove)) {
                 newEvent.style.top = `${verticalPositionAbove}px`;
                 newEvent.classList.add('above');
-            } else {
+            } else if (isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
                 newEvent.style.bottom = `${verticalPositionBelow}px`;
                 newEvent.classList.add('below');
             }
