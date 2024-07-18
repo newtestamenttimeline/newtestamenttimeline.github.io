@@ -413,7 +413,7 @@
     }
 
     const eventYear = event.year;
-    const range = 25; // ±25% around the actual year
+    const range = 15; // ±10% around the actual year
     const verticalStep = 20; // Step in pixels for vertical movement
 
     const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
