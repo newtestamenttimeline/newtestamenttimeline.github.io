@@ -359,6 +359,7 @@
         const texts = new Set();
         const families = new Set();
         const eventTypes = new Set();
+        const dotDiameter = 12; // 12 pixels
 
         async function loadEvents() {
             try {
@@ -375,12 +376,10 @@
                 // Add manuscript events within their year range
                 manuscriptEvents.forEach(event => {
                     const yearRange = event.yearRange;
-                    if (yearRange) {
-                        const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
-                        const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
-                        event.year = eventYear; // Assign a random year within the range
-                    }
-                    event.percentage = (event.year / 1000) * 100;
+                    const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
+                    const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
+                    event.year = eventYear; // Assign a random year within the range
+                    event.percentage = (eventYear / 1000) * 100;
                     addEventToTimeline(event);
                     if (event.texts) {
                         event.texts.forEach(text => texts.add(text));
@@ -414,63 +413,29 @@
                 newEvent.classList.add('papyrus');
             }
 
-            const eventYear = event.year;
-            const yearRange = event.yearRange || [eventYear - 50, eventYear + 50]; // ±12 years around the actual year
-            const verticalStep = 12; // Step in pixels for vertical movement
-            const dotDiameter = 12; // Dot width in percentage of the timeline
-
-            const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
-                element: e,
-                year: parseInt(e.getAttribute('data-year')),
-                percentage: parseFloat(e.style.left),
-                top: parseInt(e.style.top) || 0,
-                bottom: parseInt(e.style.bottom) || 0
+            const existingEvents = Array.from(document.querySelectorAll('.event'));
+            const positions = existingEvents.map(e => ({
+                left: parseFloat(e.style.left),
+                top: parseFloat(e.style.top)
             }));
 
-            const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= (yearRange[1] - yearRange[0]) / 2);
-            const positions = nearbyEvents.map(e => e.percentage);
+            // Calculate the new position
+            let newLeft = event.percentage;
+            let newTop = 0;
 
-            // Calculate the new horizontal position
-            let newPosition = event.percentage;
-            if (positions.length > 0) {
-                newPosition = Math.min(...positions) - dotDiameter;
-                while (positions.includes(newPosition)) {
-                    newPosition += dotDiameter;
-                }
-            }
-
-            newEvent.style.left = `${newPosition}%`;
-
-            // Determine vertical position based on existing events
-            let verticalPositionAbove = 0;
-            let verticalPositionBelow = 0;
-            const verticalPositionsAbove = nearbyEvents.filter(e => e.bottom === 0).map(e => e.top);
-            const verticalPositionsBelow = nearbyEvents.filter(e => e.top === 0).map(e => e.bottom);
-
-            // Function to check if the position is available
-            const isPositionAvailable = (positions, newPosition) => {
-                for (const pos of positions) {
-                    if (Math.abs(newPosition - pos) < dotDiameter) {
-                        return false;
+            for (let i = 0; i < positions.length; i++) {
+                const pos = positions[i];
+                if (Math.abs(pos.left - newLeft) < dotDiameter) {
+                    if (pos.top === newTop) {
+                        newTop += dotDiameter;
+                    } else {
+                        newTop = Math.max(newTop, pos.top + dotDiameter);
                     }
                 }
-                return true;
-            };
-
-            // Find the closest available positions above and below
-            while (!isPositionAvailable(verticalPositionsAbove, verticalPositionAbove) && !isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
-                verticalPositionAbove += verticalStep;
-                verticalPositionBelow += verticalStep;
             }
 
-            // Decide whether to place the event above or below the timeline
-            if (verticalPositionAbove <= verticalPositionBelow && isPositionAvailable(verticalPositionsAbove, verticalPositionAbove)) {
-                newEvent.style.top = `${verticalPositionAbove}px`;
-                newEvent.classList.add('above');
-            } else if (isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
-                newEvent.style.bottom = `${verticalPositionBelow}px`;
-                newEvent.classList.add('below');
-            }
+            newEvent.style.left = `${newLeft}%`;
+            newEvent.style.top = `${newTop}px`;
 
             // Ensure historical events are closest to the timeline
             if (event.eventType === 'historical') {
