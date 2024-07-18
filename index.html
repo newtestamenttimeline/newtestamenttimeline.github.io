@@ -365,6 +365,9 @@
                 const historicalEvents = await fetch('historical_events.json').then(response => response.json());
                 const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
 
+                console.log('Historical Events:', historicalEvents);
+                console.log('Manuscript Events:', manuscriptEvents);
+
                 // Add historical events first
                 historicalEvents.forEach(event => {
                     event.percentage = (event.year / 1000) * 100;
@@ -375,6 +378,10 @@
                 // Add manuscript events within their year range
                 manuscriptEvents.forEach(event => {
                     const yearRange = event.yearRange;
+                    if (!Array.isArray(yearRange) || yearRange.length !== 2) {
+                        console.error('Invalid yearRange for event:', event);
+                        return;
+                    }
                     const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
                     const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
                     event.year = eventYear; // Assign a random year within the range
@@ -399,6 +406,8 @@
         }
 
         function addEventToTimeline(event) {
+            console.log('Adding event:', event);
+
             const newEvent = document.createElement('div');
             newEvent.className = 'event';
             newEvent.setAttribute('data-year', event.year);
@@ -543,6 +552,8 @@
                 }
                 colorIndex++;
             });
+
+            console.log('Event type colors:', eventTypeColors);
 
             eventTypes.forEach(eventType => {
                 const legendItem = document.createElement('div');
