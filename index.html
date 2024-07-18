@@ -422,26 +422,42 @@
         top: parseFloat(e.style.top)
     }));
 
-    // Calculate the new position
-    let newLeft = event.percentage;
+    // Determine the initial position
+    let newLeft;
+    if (event.year) {
+        newLeft = (event.year / 1000) * 100;
+    } else if (event.yearRange) {
+        const eventYear = event.yearRange[Math.floor(Math.random() * event.yearRange.length)];
+        newLeft = (eventYear / 1000) * 100;
+    }
     let newTop = 0;
+    let minDistance = 999999;
+    let finalLeft = newLeft;
+    let finalTop = newTop;
 
-    console.log(`Initial position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
-
-    // Adjust positions to avoid overlap
     const step = 1; // Adjust this value for the side-step distance
-    while (positions.some(pos => Math.abs(pos.left - newLeft) < dotDiameter && Math.abs(pos.top - newTop) < dotDiameter)) {
-        newLeft += step; // Move right
-        if (newLeft > 100) { // If it goes beyond the timeline, reset and move down
-            newLeft = event.percentage;
-            newTop += dotDiameter + spacing;
+    for (let angle = 0; angle < 360; angle += step) {
+        let radian = angle * (Math.PI / 180);
+        let tempLeft = newLeft + Math.cos(radian) * step;
+        let tempTop = newTop + Math.sin(radian) * step;
+        let isValid = true;
+        let distance = Math.sqrt((newLeft - tempLeft) ** 2 + (newTop - tempTop) ** 2);
+
+        if (positions.some(pos => Math.abs(pos.left - tempLeft) < dotDiameter && Math.abs(pos.top - tempTop) < dotDiameter)) {
+            isValid = false;
+        }
+
+        if (isValid && distance < minDistance) {
+            finalLeft = tempLeft;
+            finalTop = tempTop;
+            minDistance = distance;
         }
     }
 
-    console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
+    console.log(`Adjusted position for ${event.title}: left=${finalLeft}%, top=${finalTop}px`);
 
-    newEvent.style.left = `${newLeft}%`;
-    newEvent.style.top = `${newTop}px`;
+    newEvent.style.left = `${finalLeft}%`;
+    newEvent.style.top = `${finalTop}px`;
 
     // Ensure historical events are closest to the timeline
     if (event.eventType === 'historical') {
@@ -463,6 +479,7 @@
 
     timeline.appendChild(newEvent);
 }
+
 
 
         function updateEvents() {
