@@ -429,20 +429,21 @@
     }
 
     // Adjust positions to avoid overlap
-    let step = 1; // Step size for moving the dots
+    const step = 5; // Step size for moving the dots
     let angle = 0;
     const initialLeft = newLeft;
-    const initialTop = newTop;
+    let direction = 1; // 1 for up, -1 for down
 
     while (isPositionOccupied(newLeft, newTop)) {
         angle += step;
         if (angle >= 360) {
             angle = 0;
-            step += 1; // Increase step size if we complete a full circle
+            newTop += direction * (dotDiameter + spacing); // Move up or down after a full circle
+            direction *= -1; // Change direction
         }
-        const radian = angle * (Math.PI / 180);
+        let radian = angle * (Math.PI / 180);
         newLeft = initialLeft + Math.cos(radian) * step;
-        newTop = initialTop + Math.sin(radian) * step;
+        newTop = newTop + Math.sin(radian) * step;
     }
 
     console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
@@ -470,6 +471,7 @@
 
     timeline.appendChild(newEvent);
 }
+
 
 
 
