@@ -463,102 +463,104 @@ timeline.innerHTML = '';
         const yearDotPlacements = {};
 
         function addEventToTimeline(event) {
-            // Check if the event is already in the timeline
-if (document.querySelector(`.event[data-title="${event.title}"]`)) {
-console.log(`Event ${event.title} already exists in the timeline. Skipping.`);
-return;
-}
-            const newEvent = document.createElement('div');
-            newEvent.className = 'event';
-            newEvent.setAttribute('data-year', event.year);
-            newEvent.setAttribute('title', event.title);
-            newEvent.setAttribute('data-description', event.description);
-            newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
-            newEvent.setAttribute('data-family', event.family || '');
-            newEvent.setAttribute('data-event-type', event.eventType);
+    // Check if the event is already in the timeline
+    if (document.querySelector(`.event[title="${event.title}"]`)) {
+        console.log(`Event ${event.title} already exists in the timeline. Skipping.`);
+        return;
+    }
 
-            if (event.eventType === 'manuscript') {
-                newEvent.classList.add('papyrus');
-            } else if (event.eventType === 'uncial') {
-                newEvent.classList.add('uncial');
-            }
+    const newEvent = document.createElement('div');
+    newEvent.className = 'event';
+    newEvent.setAttribute('data-year', event.year);
+    newEvent.setAttribute('title', event.title);
+    newEvent.setAttribute('data-description', event.description);
+    newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
+    newEvent.setAttribute('data-family', event.family || '');
+    newEvent.setAttribute('data-event-type', event.eventType);
 
-            if (!yearDotPlacements[event.year]) {
-                yearDotPlacements[event.year] = [];
-            }
+    if (event.eventType === 'manuscript') {
+        newEvent.classList.add('papyrus');
+    } else if (event.eventType === 'uncial') {
+        newEvent.classList.add('uncial');
+    }
 
-            const existingDots = yearDotPlacements[event.year];
-            const positions = Array.from(document.querySelectorAll('.event')).map(e => ({
-                left: parseFloat(e.style.left),
-                top: parseFloat(e.style.top)
-            }));
+    if (!yearDotPlacements[event.year]) {
+        yearDotPlacements[event.year] = [];
+    }
 
-            // Adjust the newLeft calculation to scale from 0 to 1400 instead of 1000
-            let newLeft = (event.year / 1400) * 100;
-            let newTop = 0;
+    const existingDots = yearDotPlacements[event.year];
+    const positions = Array.from(document.querySelectorAll('.event')).map(e => ({
+        left: parseFloat(e.style.left),
+        top: parseFloat(e.style.top)
+    }));
 
-            if (existingDots.length === 0) {
-                newTop = 0;
-            } else if (existingDots.length === 1) {
-                newTop = Math.random() > 0.5 ? dotDiameter + spacing : -(dotDiameter + spacing);
-            } else {
-                const [lastTop] = existingDots.slice(-1);
-                newTop = lastTop > 0 ? -(dotDiameter + spacing) : dotDiameter + spacing;
+    // Adjust the newLeft calculation to scale from 0 to 1400 instead of 1000
+    let newLeft = (event.year / 1400) * 100;
+    let newTop = 0;
 
-                if (isPositionOccupied(newLeft, newTop)) {
-                    const directions = [[0, -spacing], [0, spacing], [-spacing, 0], [spacing, 0]];
-                    shuffleArray(directions);
-                    let found = false;
+    if (existingDots.length === 0) {
+        newTop = 0;
+    } else if (existingDots.length === 1) {
+        newTop = Math.random() > 0.5 ? dotDiameter + spacing : -(dotDiameter + spacing);
+    } else {
+        const [lastTop] = existingDots.slice(-1);
+        newTop = lastTop > 0 ? -(dotDiameter + spacing) : dotDiameter + spacing;
 
-                    for (let i = 0; i < directions.length; i++) {
-                        const [dx, dy] = directions[i];
-                        if (!isPositionOccupied(newLeft + dx, newTop + dy)) {
-                            newLeft += dx;
-                            newTop += dy;
-                            found = true;
-                            break;
-                        }
-                    }
+        if (isPositionOccupied(newLeft, newTop)) {
+            const directions = [[0, -spacing], [0, spacing], [-spacing, 0], [spacing, 0]];
+            shuffleArray(directions);
+            let found = false;
 
-                    if (!found) {
-                        let tries = 0;
-                        const maxTries = 1000;
-                        while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
-                            newTop += newTop > 0 ? spacing + step : -(spacing + step);
-                            tries++;
-                        }
-                    }
+            for (let i = 0; i < directions.length; i++) {
+                const [dx, dy] = directions[i];
+                if (!isPositionOccupied(newLeft + dx, newTop + dy)) {
+                    newLeft += dx;
+                    newTop += dy;
+                    found = true;
+                    break;
                 }
             }
 
-            yearDotPlacements[event.year].push(newTop);
-            if (yearDotPlacements[event.year].length > 2) {
-                yearDotPlacements[event.year].shift();
+            if (!found) {
+                let tries = 0;
+                const maxTries = 1000;
+                while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
+                    newTop += newTop > 0 ? spacing + step : -(spacing + step);
+                    tries++;
+                }
             }
-
-            console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
-
-            newEvent.style.left = `${newLeft}%`;
-            newEvent.style.top = `${newTop}px`;
-
-            if (event.eventType === 'historical') {
-                newEvent.style.zIndex = 1;
-            } else {
-                newEvent.style.zIndex = 0;
-            }
-
-            const eventTypeColors = {
-                'historical': 'var(--secondary-color)',
-                'manuscript': 'var(--papyrus-color)',
-                'uncial': 'var(--uncial-color)'
-            };
-            if (!eventTypeColors[event.eventType]) {
-                eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-            }
-            newEvent.style.backgroundColor = eventTypeColors[event.eventType];
-
-            timeline.appendChild(newEvent);
         }
+    }
+
+    yearDotPlacements[event.year].push(newTop);
+    if (yearDotPlacements[event.year].length > 2) {
+        yearDotPlacements[event.year].shift();
+    }
+
+    console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
+
+    newEvent.style.left = `${newLeft}%`;
+    newEvent.style.top = `${newTop}px`;
+
+    if (event.eventType === 'historical') {
+        newEvent.style.zIndex = 1;
+    } else {
+        newEvent.style.zIndex = 0;
+    }
+
+    const eventTypeColors = {
+        'historical': 'var(--secondary-color)',
+        'manuscript': 'var(--papyrus-color)',
+        'uncial': 'var(--uncial-color)'
+    };
+    if (!eventTypeColors[event.eventType]) {
+        eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    }
+    newEvent.style.backgroundColor = eventTypeColors[event.eventType];
+
+    timeline.appendChild(newEvent);
+}
+
 
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
