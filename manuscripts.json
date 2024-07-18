@@ -16,7 +16,7 @@
         "description": "Papyrus2 includes text from the Gospel of John. It is dated to the 6th century based on handwriting analysis.",
         "texts": ["John"],
         "family": "Byzantine"
-    }
+    },
 
     {
         "year": 600,
