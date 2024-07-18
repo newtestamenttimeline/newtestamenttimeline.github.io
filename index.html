@@ -365,128 +365,93 @@
         const eventTypes = new Set();
 
         async function loadEvents() {
-    try {
-        const response = await fetch('events.json');
-        const events = await response.json();
+            try {
+                const response = await fetch('events.json');
+                const events = await response.json();
 
-        // Group events by year
-        const eventsByYear = events.reduce((acc, event) => {
-            acc[event.year] = acc[event.year] || [];
-            acc[event.year].push(event);
-            return acc;
-        }, {});
+                // Group events by year
+                const eventsByYear = events.reduce((acc, event) => {
+                    acc[event.year] = acc[event.year] || [];
+                    acc[event.year].push(event);
+                    return acc;
+                }, {});
 
-        Object.values(eventsByYear).forEach(yearEvents => {
-            yearEvents.forEach(event => {
-                addEventToTimeline(event);
-                if (event.texts) {
-                    event.texts.forEach(text => texts.add(text));
-                }
-                if (event.family) {
-                    families.add(event.family);
-                }
-                eventTypes.add(event.eventType);
-            });
-        });
+                Object.values(eventsByYear).forEach(yearEvents => {
+                    yearEvents.forEach(event => {
+                        addEventToTimeline(event);
+                        if (event.texts) {
+                            event.texts.forEach(text => texts.add(text));
+                        }
+                        if (event.family) {
+                            families.add(event.family);
+                        }
+                        eventTypes.add(event.eventType);
+                    });
+                });
 
-        updateEvents();
-        populateTextList();
-        populateFamilyList();
-        generateLegend();
-    } catch (error) {
-        console.error('Error loading events:', error);
-    }
-}
+                updateEvents();
+                populateTextList();
+                populateFamilyList();
+                generateLegend();
+            } catch (error) {
+                console.error('Error loading events:', error);
+            }
+        }
 
+        function addEventToTimeline(event) {
+            const newEvent = document.createElement('div');
+            newEvent.className = 'event';
+            newEvent.setAttribute('data-year', event.year);
+            newEvent.setAttribute('title', event.title);
+            newEvent.setAttribute('data-description', event.description);
+            newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
+            newEvent.setAttribute('data-family', event.family || '');
+            newEvent.setAttribute('data-event-type', event.eventType);
 
-    function addEventToTimeline(event) {
-    const newEvent = document.createElement('div');
-    newEvent.className = 'event';
-    newEvent.setAttribute('data-year', event.year);
-    newEvent.setAttribute('title', event.title);
-    newEvent.setAttribute('data-description', event.description);
-    newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
-    newEvent.setAttribute('data-family', event.family || '');
-    newEvent.setAttribute('data-event-type', event.eventType);
+            if (event.eventType === 'manuscript') {
+                newEvent.classList.add('papyrus');
+            }
 
-    if (event.eventType === 'manuscript') {
-        newEvent.classList.add('papyrus');
-    }
+            const eventYear = event.year;
+            const range = 10; // ±10% around the actual year
+            const verticalStep = 20; // Step in pixels for vertical movement
 
-    const eventYear = event.year;
-    const range = 10; // ±10% around the actual year
-    const verticalStep = 20; // Step in pixels for vertical movement
+            const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
+                year: parseInt(e.getAttribute('data-year')),
+                percentage: parseFloat(e.style.left),
+                top: parseInt(e.style.top) || 0
+            }));
 
-    const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
-        year: parseInt(e.getAttribute('data-year')),
-        percentage: parseFloat(e.style.left),
-        top: parseInt(e.style.top)
-    }));
+            const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
+            const positions = nearbyEvents.map(e => e.percentage);
 
-    const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
-    const positions = nearbyEvents.map(e => e.percentage);
+            // Calculate the new horizontal position
+            let newPosition = event.percentage;
+            while (positions.includes(newPosition)) {
+                newPosition += (Math.random() - 0.5) * 0.5; // Adjust the position slightly to the left or right
+            }
 
-    // Calculate the new horizontal position
-    let newPosition = event.percentage;
-    while (positions.includes(newPosition)) {
-        newPosition += (Math.random() - 0.5) * 0.5; // Adjust the position slightly to the left or right
-    }
+            newEvent.style.left = `${newPosition}%`;
 
-    newEvent.style.left = `${newPosition}%`;
+            // Determine vertical position based on existing events
+            let verticalPosition = 0;
+            const verticalPositions = nearbyEvents.map(e => e.top);
 
-    // Determine vertical position based on existing events
-    let verticalPosition = 0;
-    const verticalPositions = nearbyEvents.map(e => e.top);
+            while (verticalPositions.includes(verticalPosition)) {
+                verticalPosition += verticalStep;
+            }
 
-    while (verticalPositions.includes(verticalPosition)) {
-        verticalPosition += verticalStep;
-    }
+            newEvent.style.top = `${verticalPosition}px`;
 
-    newEvent.style.top = `${verticalPosition}px`;
+            // Ensure historical events are closest to the timeline
+            if (event.eventType === 'historical') {
+                newEvent.style.zIndex = 1; // Higher z-index to be on top
+            } else {
+                newEvent.style.zIndex = 0;
+            }
 
-    // Ensure historical events are closest to the timeline
-    if (event.eventType === 'historical') {
-        newEvent.style.zIndex = 1; // Higher z-index to be on top
-    } else {
-        newEvent.style.zIndex = 0;
-    }
-
-    timeline.appendChild(newEvent);
-}
-
-
-    // Dynamically distribute events within a range around their actual year
-    const eventYear = event.year;
-    const range = 14; // ±14 years around the actual year
-    const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
-        year: parseInt(e.getAttribute('data-year')),
-        percentage: parseFloat(e.style.left)
-    }));
-
-    const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
-    const positions = nearbyEvents.map(e => e.percentage);
-
-    // Calculate the new position
-    let newPosition = event.percentage;
-    while (positions.includes(newPosition)) {
-        newPosition += (Math.random() - 0.5) * 0.5; // Adjust the position slightly to the left or right
-    }
-
-    newEvent.style.left = `${newPosition}%`;
-
-    const count = nearbyEvents.length;
-    const isAbove = count % 2 === 0;
-    const position = Math.floor(count / 2) + 1;
-
-    if (isAbove) {
-        newEvent.classList.add(`above-${position}`);
-    } else {
-        newEvent.classList.add(`below-${position}`);
-    }
-
-    timeline.appendChild(newEvent);
-}
-
+            timeline.appendChild(newEvent);
+        }
 
         function updateEvents() {
             const events = document.querySelectorAll('.event');
