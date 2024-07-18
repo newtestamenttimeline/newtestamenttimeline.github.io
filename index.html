@@ -435,7 +435,7 @@
     const eventYear = event.year;
     const range = 75; // ±75 years around the actual year
     const verticalStep = 12; // Step in pixels for vertical movement
-    const dotDiameter = 12; // Dot width in percentage of the timeline
+    const dotDiameter = 1.2; // Dot width in percentage of the timeline
 
     const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
         element: e,
@@ -509,6 +509,8 @@
     newEvent.style.backgroundColor = eventTypeColors[event.eventType];
 
     timeline.appendChild(newEvent);
+}
+
 }
         function updateEvents() {
             const events = document.querySelectorAll('.event');
