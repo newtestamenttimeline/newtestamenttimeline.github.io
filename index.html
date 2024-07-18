@@ -227,6 +227,7 @@
             cursor: pointer;
             margin-left: 5px;
             color: var(--primary-color);
+            position: relative;
         }
 
         .tooltip {
@@ -801,10 +802,19 @@ loadEvents(); // Ensure this is called when the page loads
 
                 const label = document.createElement('span');
                 label.textContent = eventType.charAt(0).toUpperCase() + eventType.slice(1) + ' Events';
+                
 
-                legendItem.appendChild(checkbox);
-                legendItem.appendChild(legendColor);
-                legendItem.appendChild(label);
+                const questionMark = document.createElement('span');
+questionMark.className = 'question-mark';
+questionMark.textContent = '?';
+const tooltip = document.createElement('span');
+tooltip.className = 'tooltip';
+tooltip.textContent = `Filter events by ${eventType} type`;
+questionMark.appendChild(tooltip);
+legendItem.appendChild(checkbox);
+legendItem.appendChild(legendColor);
+legendItem.appendChild(label);
+legendItem.appendChild(questionMark);
 
                 legendContainer.appendChild(legendItem);
             });
