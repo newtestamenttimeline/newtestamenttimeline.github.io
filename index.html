@@ -402,6 +402,10 @@
         // Track the last two dot placements for each year
 const yearDotPlacements = {};
 
+const dotDiameter = 12; // 12 pixels
+let spacing = 15; // Space between dots
+const step = 5; // Increment for searching new positions
+
 function addEventToTimeline(event) {
     const newEvent = document.createElement('div');
     newEvent.className = 'event';
@@ -456,7 +460,7 @@ function addEventToTimeline(event) {
                 let tries = 0;
                 const maxTries = 1000;
                 while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
-                    newTop += newTop > 0 ? spacing : -spacing;
+                    newTop += newTop > 0 ? spacing + step : -(spacing + step);
                     tries++;
                 }
             }
@@ -506,6 +510,7 @@ function isPositionOccupied(left, top) {
         return Math.abs(eLeft - left) < dotDiameter && Math.abs(eTop - top) < dotDiameter;
     });
 }
+
 
 
 
