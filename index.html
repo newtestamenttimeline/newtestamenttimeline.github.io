@@ -30,7 +30,7 @@
 
         header {
             background-color: var(--primary-color);
-            color: var (--text-color);
+            color: var(--text-color);
             text-align: center;
             padding: 10px 0;
             font-size: 24px;
@@ -93,12 +93,8 @@
             transition: all 0.3s ease;
         }
 
-        .event.above-1 { top: -30px; }
-        .event.above-2 { top: -50px; }
-        .event.above-3 { top: -70px; }
-        .event.below-1 { bottom: -30px; }
-        .event.below-2 { bottom: -50px; }
-        .event.below-3 { bottom: -70px; }
+        .event.above { transform: translateY(-50%); }
+        .event.below { transform: translateY(50%); }
 
         .event:hover {
             transform: scale(1.5);
@@ -366,27 +362,30 @@
 
         async function loadEvents() {
             try {
-                const response = await fetch('events.json');
-                const events = await response.json();
+                const historicalEvents = await fetch('historical_events.json').then(response => response.json());
+                const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
 
-                // Group events by year
-                const eventsByYear = events.reduce((acc, event) => {
-                    acc[event.year] = acc[event.year] || [];
-                    acc[event.year].push(event);
-                    return acc;
-                }, {});
+                // Add historical events first
+                historicalEvents.forEach(event => {
+                    addEventToTimeline(event);
+                    eventTypes.add(event.eventType);
+                });
 
-                Object.values(eventsByYear).forEach(yearEvents => {
-                    yearEvents.forEach(event => {
-                        addEventToTimeline(event);
-                        if (event.texts) {
-                            event.texts.forEach(text => texts.add(text));
-                        }
-                        if (event.family) {
-                            families.add(event.family);
-                        }
-                        eventTypes.add(event.eventType);
-                    });
+                // Add manuscript events within their year range
+                manuscriptEvents.forEach(event => {
+                    const yearRange = event.yearRange;
+                    const eventYears = Array.from({length: yearRange[1] - yearRange[0] + 1}, (v, k) => yearRange[0] + k);
+                    const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
+                    event.year = eventYear; // Assign a random year within the range
+                    event.percentage = (eventYear / 1000) * 100;
+                    addEventToTimeline(event);
+                    if (event.texts) {
+                        event.texts.forEach(text => texts.add(text));
+                    }
+                    if (event.family) {
+                        families.add(event.family);
+                    }
+                    eventTypes.add(event.eventType);
                 });
 
                 updateEvents();
@@ -398,84 +397,82 @@
             }
         }
 
-       function addEventToTimeline(event) {
-    const newEvent = document.createElement('div');
-    newEvent.className = 'event';
-    newEvent.setAttribute('data-year', event.year);
-    newEvent.setAttribute('title', event.title);
-    newEvent.setAttribute('data-description', event.description);
-    newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
-    newEvent.setAttribute('data-family', event.family || '');
-    newEvent.setAttribute('data-event-type', event.eventType);
+        function addEventToTimeline(event) {
+            const newEvent = document.createElement('div');
+            newEvent.className = 'event';
+            newEvent.setAttribute('data-year', event.year);
+            newEvent.setAttribute('title', event.title);
+            newEvent.setAttribute('data-description', event.description);
+            newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
+            newEvent.setAttribute('data-family', event.family || '');
+            newEvent.setAttribute('data-event-type', event.eventType);
 
-    if (event.eventType === 'manuscript') {
-        newEvent.classList.add('papyrus');
-    }
+            if (event.eventType === 'manuscript') {
+                newEvent.classList.add('papyrus');
+            }
 
-    const eventYear = event.year;
-    const range = 15; // ±10% around the actual year
-    const verticalStep = 20; // Step in pixels for vertical movement
+            const eventYear = event.year;
+            const range = 10; // ±10% around the actual year
+            const verticalStep = 20; // Step in pixels for vertical movement
 
-    const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
-        year: parseInt(e.getAttribute('data-year')),
-        percentage: parseFloat(e.style.left),
-        top: parseInt(e.style.top) || 0,
-        bottom: parseInt(e.style.bottom) || 0
-    }));
+            const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
+                year: parseInt(e.getAttribute('data-year')),
+                percentage: parseFloat(e.style.left),
+                top: parseInt(e.style.top) || 0,
+                bottom: parseInt(e.style.bottom) || 0
+            }));
 
-    const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
-    const positions = nearbyEvents.map(e => e.percentage);
+            const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
+            const positions = nearbyEvents.map(e => e.percentage);
 
-    // Calculate the new horizontal position
-    let newPosition = event.percentage;
-    while (positions.includes(newPosition)) {
-        newPosition += (Math.random() - 0.5) * 0.5; // Adjust the position slightly to the left or right
-    }
+            // Calculate the new horizontal position
+            let newPosition = event.percentage;
+            while (positions.includes(newPosition)) {
+                newPosition += (Math.random() - 0.5) * 0.5; // Adjust the position slightly to the left or right
+            }
 
-    newEvent.style.left = `${newPosition}%`;
+            newEvent.style.left = `${newPosition}%`;
 
-    // Determine vertical position based on existing events
-    let verticalPositionAbove = 0;
-    let verticalPositionBelow = 0;
-    const verticalPositionsAbove = nearbyEvents.filter(e => e.bottom === 0).map(e => e.top);
-    const verticalPositionsBelow = nearbyEvents.filter(e => e.top === 0).map(e => e.bottom);
+            // Determine vertical position based on existing events
+            let verticalPositionAbove = 0;
+            let verticalPositionBelow = 0;
+            const verticalPositionsAbove = nearbyEvents.filter(e => e.bottom === 0).map(e => e.top);
+            const verticalPositionsBelow = nearbyEvents.filter(e => e.top === 0).map(e => e.bottom);
 
-    while (verticalPositionsAbove.includes(verticalPositionAbove) || verticalPositionsBelow.includes(verticalPositionBelow)) {
-        verticalPositionAbove += verticalStep;
-        verticalPositionBelow += verticalStep;
-    }
+            while (verticalPositionsAbove.includes(verticalPositionAbove) || verticalPositionsBelow.includes(verticalPositionBelow)) {
+                verticalPositionAbove += verticalStep;
+                verticalPositionBelow += verticalStep;
+            }
 
-    // Decide whether to place the event above or below the timeline
-    if (verticalPositionAbove <= verticalPositionBelow) {
-        newEvent.style.top = `${verticalPositionAbove}px`;
-        newEvent.classList.add('above');
-    } else {
-        newEvent.style.bottom = `${verticalPositionBelow}px`;
-        newEvent.classList.add('below');
-    }
+            // Decide whether to place the event above or below the timeline
+            if (verticalPositionAbove <= verticalPositionBelow) {
+                newEvent.style.top = `${verticalPositionAbove}px`;
+                newEvent.classList.add('above');
+            } else {
+                newEvent.style.bottom = `${verticalPositionBelow}px`;
+                newEvent.classList.add('below');
+            }
 
-    // Ensure historical events are closest to the timeline
-    if (event.eventType === 'historical') {
-        newEvent.style.zIndex = 1; // Higher z-index to be on top
-    } else {
-        newEvent.style.zIndex = 0;
-    }
+            // Ensure historical events are closest to the timeline
+            if (event.eventType === 'historical') {
+                newEvent.style.zIndex = 1; // Higher z-index to be on top
+            } else {
+                newEvent.style.zIndex = 0;
+            }
 
-    // Assign color based on event type
-    const eventTypeColors = {
-        'historical': 'var(--secondary-color)',
-        'manuscript': 'var(--papyrus-color)',
-        // Add other event types and colors here
-    };
-    if (!eventTypeColors[event.eventType]) {
-        eventTypeColors[event.eventType] = `#${Math.floor(Math.random()*16777215).toString(16)}`;
-    }
-    newEvent.style.backgroundColor = eventTypeColors[event.eventType];
+            // Assign color based on event type
+            const eventTypeColors = {
+                'historical': 'var(--secondary-color)',
+                'manuscript': 'var(--papyrus-color)',
+                // Add other event types and colors here
+            };
+            if (!eventTypeColors[event.eventType]) {
+                eventTypeColors[event.eventType] = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+            }
+            newEvent.style.backgroundColor = eventTypeColors[event.eventType];
 
-    timeline.appendChild(newEvent);
-}
-
-
+            timeline.appendChild(newEvent);
+        }
 
         function updateEvents() {
             const events = document.querySelectorAll('.event');
@@ -516,69 +513,69 @@
         }
 
         function generateLegend() {
-    legendContainer.innerHTML = ''; // Clear existing legend items
+            legendContainer.innerHTML = ''; // Clear existing legend items
 
-    // Define a color palette for event types
-    const colorPalette = [
-        'var(--secondary-color)',    // Green
-        'var(--papyrus-color)',      // Yellow
-        '#ff6347',                   // Tomato
-        '#40e0d0',                   // Turquoise
-        '#ffa500',                   // Orange
-        '#9370db',                   // Medium Purple
-        '#ff69b4',                   // Hot Pink
-        '#7fff00',                   // Chartreuse
-        '#1e90ff',                   // Dodger Blue
-        '#ff4500',                   // Orange Red
-    ];
+            // Define a color palette for event types
+            const colorPalette = [
+                'var(--secondary-color)',    // Green
+                'var(--papyrus-color)',      // Yellow
+                '#ff6347',                   // Tomato
+                '#40e0d0',                   // Turquoise
+                '#ffa500',                   // Orange
+                '#9370db',                   // Medium Purple
+                '#ff69b4',                   // Hot Pink
+                '#7fff00',                   // Chartreuse
+                '#1e90ff',                   // Dodger Blue
+                '#ff4500',                   // Orange Red
+            ];
 
-    // Assign colors dynamically to event types
-    const eventTypeColors = {};
+            // Assign colors dynamically to event types
+            const eventTypeColors = {};
 
-    let colorIndex = 0;
-    eventTypes.forEach(eventType => {
-        // If we run out of predefined colors, generate a random color
-        if (colorIndex >= colorPalette.length) {
-            eventTypeColors[eventType] = `#${Math.floor(Math.random()*16777215).toString(16)}`;
-        } else {
-            eventTypeColors[eventType] = colorPalette[colorIndex];
+            let colorIndex = 0;
+            eventTypes.forEach(eventType => {
+                // If we run out of predefined colors, generate a random color
+                if (colorIndex >= colorPalette.length) {
+                    eventTypeColors[eventType] = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+                } else {
+                    eventTypeColors[eventType] = colorPalette[colorIndex];
+                }
+                colorIndex++;
+            });
+
+            eventTypes.forEach(eventType => {
+                const legendItem = document.createElement('div');
+                legendItem.className = 'legend-item';
+
+                const legendColor = document.createElement('div');
+                legendColor.className = 'legend-color';
+                legendColor.style.backgroundColor = eventTypeColors[eventType];
+
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.className = 'legend-checkbox';
+                checkbox.checked = true;
+                checkbox.addEventListener('change', (e) => toggleEventsByType(eventType, e.target.checked));
+
+                const label = document.createElement('span');
+                label.textContent = eventType.charAt(0).toUpperCase() + eventType.slice(1) + ' Events';
+
+                legendItem.appendChild(checkbox);
+                legendItem.appendChild(legendColor);
+                legendItem.appendChild(label);
+
+                legendContainer.appendChild(legendItem);
+            });
+
+            // Update event colors based on legend
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                const eventType = event.getAttribute('data-event-type');
+                if (eventTypeColors[eventType]) {
+                    event.style.backgroundColor = eventTypeColors[eventType];
+                }
+            });
         }
-        colorIndex++;
-    });
-
-    eventTypes.forEach(eventType => {
-        const legendItem = document.createElement('div');
-        legendItem.className = 'legend-item';
-
-        const legendColor = document.createElement('div');
-        legendColor.className = 'legend-color';
-        legendColor.style.backgroundColor = eventTypeColors[eventType];
-
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.className = 'legend-checkbox';
-        checkbox.checked = true;
-        checkbox.addEventListener('change', (e) => toggleEventsByType(eventType, e.target.checked));
-
-        const label = document.createElement('span');
-        label.textContent = eventType.charAt(0).toUpperCase() + eventType.slice(1) + ' Events';
-
-        legendItem.appendChild(checkbox);
-        legendItem.appendChild(legendColor);
-        legendItem.appendChild(label);
-
-        legendContainer.appendChild(legendItem);
-    });
-
-    // Update event colors based on legend
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventType = event.getAttribute('data-event-type');
-        if (eventTypeColors[eventType]) {
-            event.style.backgroundColor = eventTypeColors[eventType];
-        }
-    });
-}
 
         function filterEventsByText(text, isChecked) {
             const events = document.querySelectorAll('.event');
