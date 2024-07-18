@@ -446,7 +446,7 @@ function addEventToTimeline(event) {
         // Check if the new position is occupied
         if (isPositionOccupied(newLeft, newTop)) {
             // Start with the position of the former dot and search around it
-            const step = 5; // Step size for moving the dots
+            const step = 10; // Step size for moving the dots
             const initialLeft = newLeft;
             const initialTop = newTop;
             let angle = 0;
