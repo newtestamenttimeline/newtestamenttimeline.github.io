@@ -1,7 +1,6 @@
 [
-   
     {
-        "year": 251,
+        "yearRange": [225, 275],
         "title": "Papyrus1",
         "percentage": 25,
         "eventType": "manuscript",
@@ -10,14 +9,15 @@
         "family": "Alexandrian"
     },
     {
-        "year": 550,
+        "yearRange": [525, 575],
         "title": "Papyrus2",
         "percentage": 55,
         "eventType": "manuscript",
         "description": "Papyrus2 includes text from the Gospel of John. It is dated to the 6th century based on handwriting analysis.",
         "texts": ["John"],
         "family": "Byzantine"
-    },
+    }
+
     {
         "year": 600,
         "title": "Papyrus3",
