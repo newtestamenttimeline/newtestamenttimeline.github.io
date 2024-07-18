@@ -403,63 +403,67 @@
 
 
         function addEventToTimeline(event) {
-            const newEvent = document.createElement('div');
-            newEvent.className = 'event';
-            newEvent.setAttribute('data-year', event.year);
-            newEvent.setAttribute('title', event.title);
-            newEvent.setAttribute('data-description', event.description);
-            newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
-            newEvent.setAttribute('data-family', event.family || '');
-            newEvent.setAttribute('data-event-type', event.eventType);
+    const newEvent = document.createElement('div');
+    newEvent.className = 'event';
+    newEvent.setAttribute('data-year', event.year);
+    newEvent.setAttribute('title', event.title);
+    newEvent.setAttribute('data-description', event.description);
+    newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
+    newEvent.setAttribute('data-family', event.family || '');
+    newEvent.setAttribute('data-event-type', event.eventType);
 
-            if (event.eventType === 'manuscript') {
-                newEvent.classList.add('papyrus');
-            }
+    if (event.eventType === 'manuscript') {
+        newEvent.classList.add('papyrus');
+    }
 
-            const existingEvents = Array.from(document.querySelectorAll('.event'));
-            const positions = existingEvents.map(e => ({
-                left: parseFloat(e.style.left),
-                top: parseFloat(e.style.top)
-            }));
+    const existingEvents = Array.from(document.querySelectorAll('.event'));
+    const positions = existingEvents.map(e => ({
+        left: parseFloat(e.style.left),
+        top: parseFloat(e.style.top)
+    }));
 
-            // Calculate the new position
-            let newLeft = event.percentage;
-            let newTop = 0;
+    // Calculate the new position
+    let newLeft = event.percentage;
+    let newTop = 0;
 
-            for (let i = 0; i < positions.length; i++) {
-                const pos = positions[i];
-                if (Math.abs(pos.left - newLeft) < dotDiameter + spacing) {
-                    if (pos.top === newTop) {
-                        newTop += dotDiameter + spacing;
-                    } else {
-                        newTop = Math.max(newTop, pos.top + dotDiameter + spacing);
-                    }
-                }
-            }
+    console.log(`Initial position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
 
-            newEvent.style.left = `${newLeft}%`;
-            newEvent.style.top = `${newTop}px`;
-
-            // Ensure historical events are closest to the timeline
-            if (event.eventType === 'historical') {
-                newEvent.style.zIndex = 1; // Higher z-index to be on top
-            } else {
-                newEvent.style.zIndex = 0;
-            }
-
-            // Assign color based on event type
-            const eventTypeColors = {
-                'historical': 'var(--secondary-color)',
-                'manuscript': 'var(--papyrus-color)',
-                // Add other event types and colors here
-            };
-            if (!eventTypeColors[event.eventType]) {
-                eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-            }
-            newEvent.style.backgroundColor = eventTypeColors[event.eventType];
-
-            timeline.appendChild(newEvent);
+    // Adjust positions to avoid overlap
+    const step = 1; // Adjust this value for the side-step distance
+    while (positions.some(pos => Math.abs(pos.left - newLeft) < dotDiameter && Math.abs(pos.top - newTop) < dotDiameter)) {
+        newLeft += step; // Move right
+        if (newLeft > 100) { // If it goes beyond the timeline, reset and move down
+            newLeft = event.percentage;
+            newTop += dotDiameter + spacing;
         }
+    }
+
+    console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
+
+    newEvent.style.left = `${newLeft}%`;
+    newEvent.style.top = `${newTop}px`;
+
+    // Ensure historical events are closest to the timeline
+    if (event.eventType === 'historical') {
+        newEvent.style.zIndex = 1; // Higher z-index to be on top
+    } else {
+        newEvent.style.zIndex = 0;
+    }
+
+    // Assign color based on event type
+    const eventTypeColors = {
+        'historical': 'var(--secondary-color)',
+        'manuscript': 'var(--papyrus-color)',
+        // Add other event types and colors here
+    };
+    if (!eventTypeColors[event.eventType]) {
+        eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    }
+    newEvent.style.backgroundColor = eventTypeColors[event.eventType];
+
+    timeline.appendChild(newEvent);
+}
+
 
         function updateEvents() {
             const events = document.querySelectorAll('.event');
