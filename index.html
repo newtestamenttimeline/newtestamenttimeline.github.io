@@ -93,9 +93,6 @@
             transition: all 0.3s ease;
         }
 
-        .event.above { transform: translateY(-50%); }
-        .event.below { transform: translateY(50%); }
-
         .event:hover {
             transform: scale(1.5);
         }
@@ -360,6 +357,7 @@
         const families = new Set();
         const eventTypes = new Set();
         const dotDiameter = 12; // 12 pixels
+        const spacing = 5; // Space between dots
 
         async function loadEvents() {
             try {
@@ -425,11 +423,11 @@
 
             for (let i = 0; i < positions.length; i++) {
                 const pos = positions[i];
-                if (Math.abs(pos.left - newLeft) < dotDiameter) {
+                if (Math.abs(pos.left - newLeft) < dotDiameter + spacing) {
                     if (pos.top === newTop) {
-                        newTop += dotDiameter;
+                        newTop += dotDiameter + spacing;
                     } else {
-                        newTop = Math.max(newTop, pos.top + dotDiameter);
+                        newTop = Math.max(newTop, pos.top + dotDiameter + spacing);
                     }
                 }
             }
