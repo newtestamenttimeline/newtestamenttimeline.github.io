@@ -365,40 +365,22 @@
                 const historicalEvents = await fetch('historical_events.json').then(response => response.json());
                 const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
 
-                console.log('Historical Events:', historicalEvents);
-                console.log('Manuscript Events:', manuscriptEvents);
-
                 // Add historical events first
                 historicalEvents.forEach(event => {
-                    if (event.year) {
-                        event.percentage = (event.year / 1000) * 100;
-                        addEventToTimeline(event);
-                        eventTypes.add(event.eventType);
-                    } else {
-                        console.error('Missing year for historical event:', event);
-                    }
+                    event.percentage = (event.year / 1000) * 100;
+                    addEventToTimeline(event);
+                    eventTypes.add(event.eventType);
                 });
 
                 // Add manuscript events within their year range
                 manuscriptEvents.forEach(event => {
-                    if (event.yearRange) {
-                        const yearRange = event.yearRange;
-                        if (Array.isArray(yearRange) && yearRange.length === 2) {
-                            const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
-                            const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
-                            event.year = eventYear; // Assign a random year within the range
-                            event.percentage = (eventYear / 1000) * 100;
-                        } else {
-                            console.error('Invalid yearRange for event:', event);
-                            return;
-                        }
-                    } else if (event.year) {
-                        event.percentage = (event.year / 1000) * 100;
-                    } else {
-                        console.error('Missing year or yearRange for manuscript event:', event);
-                        return;
+                    const yearRange = event.yearRange;
+                    if (yearRange) {
+                        const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
+                        const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
+                        event.year = eventYear; // Assign a random year within the range
                     }
-
+                    event.percentage = (event.year / 1000) * 100;
                     addEventToTimeline(event);
                     if (event.texts) {
                         event.texts.forEach(text => texts.add(text));
@@ -418,100 +400,99 @@
             }
         }
 
-       function addEventToTimeline(event) {
-    const newEvent = document.createElement('div');
-    newEvent.className = 'event';
-    newEvent.setAttribute('data-year', event.year);
-    newEvent.setAttribute('title', event.title);
-    newEvent.setAttribute('data-description', event.description);
-    newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
-    newEvent.setAttribute('data-family', event.family || '');
-    newEvent.setAttribute('data-event-type', event.eventType);
+        function addEventToTimeline(event) {
+            const newEvent = document.createElement('div');
+            newEvent.className = 'event';
+            newEvent.setAttribute('data-year', event.year);
+            newEvent.setAttribute('title', event.title);
+            newEvent.setAttribute('data-description', event.description);
+            newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
+            newEvent.setAttribute('data-family', event.family || '');
+            newEvent.setAttribute('data-event-type', event.eventType);
 
-    if (event.eventType === 'manuscript') {
-        newEvent.classList.add('papyrus');
-    }
-
-    const eventYear = event.year;
-    const range = 75; // ±75 years around the actual year
-    const verticalStep = 12; // Step in pixels for vertical movement
-    const dotDiameter = 1.2; // Dot width in percentage of the timeline
-
-    const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
-        element: e,
-        year: parseInt(e.getAttribute('data-year')),
-        percentage: parseFloat(e.style.left),
-        top: parseInt(e.style.top) || 0,
-        bottom: parseInt(e.style.bottom) || 0
-    }));
-
-    const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
-    const positions = nearbyEvents.map(e => e.percentage);
-
-    // Calculate the new horizontal position
-    let newPosition = event.percentage;
-    if (positions.length > 0) {
-        newPosition = Math.min(...positions) - dotDiameter;
-        while (positions.includes(newPosition)) {
-            newPosition += dotDiameter;
-        }
-    }
-
-    newEvent.style.left = `${newPosition}%`;
-
-    // Determine vertical position based on existing events
-    let verticalPositionAbove = 0;
-    let verticalPositionBelow = 0;
-    const verticalPositionsAbove = nearbyEvents.filter(e => e.bottom === 0).map(e => e.top);
-    const verticalPositionsBelow = nearbyEvents.filter(e => e.top === 0).map(e => e.bottom);
-
-    // Function to check if the position is available
-    const isPositionAvailable = (positions, newPosition) => {
-        for (const pos of positions) {
-            if (Math.abs(newPosition - pos) < dotDiameter) {
-                return false;
+            if (event.eventType === 'manuscript') {
+                newEvent.classList.add('papyrus');
             }
+
+            const eventYear = event.year;
+            const range = 75; // ±75 years around the actual year
+            const verticalStep = 12; // Step in pixels for vertical movement
+            const dotDiameter = 1.2; // Dot width in percentage of the timeline
+
+            const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
+                element: e,
+                year: parseInt(e.getAttribute('data-year')),
+                percentage: parseFloat(e.style.left),
+                top: parseInt(e.style.top) || 0,
+                bottom: parseInt(e.style.bottom) || 0
+            }));
+
+            const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
+            const positions = nearbyEvents.map(e => e.percentage);
+
+            // Calculate the new horizontal position
+            let newPosition = event.percentage;
+            if (positions.length > 0) {
+                newPosition = Math.min(...positions) - dotDiameter;
+                while (positions.includes(newPosition)) {
+                    newPosition += dotDiameter;
+                }
+            }
+
+            newEvent.style.left = `${newPosition}%`;
+
+            // Determine vertical position based on existing events
+            let verticalPositionAbove = 0;
+            let verticalPositionBelow = 0;
+            const verticalPositionsAbove = nearbyEvents.filter(e => e.bottom === 0).map(e => e.top);
+            const verticalPositionsBelow = nearbyEvents.filter(e => e.top === 0).map(e => e.bottom);
+
+            // Function to check if the position is available
+            const isPositionAvailable = (positions, newPosition) => {
+                for (const pos of positions) {
+                    if (Math.abs(newPosition - pos) < dotDiameter) {
+                        return false;
+                    }
+                }
+                return true;
+            };
+
+            // Find the closest available positions above and below
+            while (!isPositionAvailable(verticalPositionsAbove, verticalPositionAbove) && !isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
+                verticalPositionAbove += verticalStep;
+                verticalPositionBelow += verticalStep;
+            }
+
+            // Decide whether to place the event above or below the timeline
+            if (verticalPositionAbove <= verticalPositionBelow && isPositionAvailable(verticalPositionsAbove, verticalPositionAbove)) {
+                newEvent.style.top = `${verticalPositionAbove}px`;
+                newEvent.classList.add('above');
+            } else if (isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
+                newEvent.style.bottom = `${verticalPositionBelow}px`;
+                newEvent.classList.add('below');
+            }
+
+            // Ensure historical events are closest to the timeline
+            if (event.eventType === 'historical') {
+                newEvent.style.zIndex = 1; // Higher z-index to be on top
+            } else {
+                newEvent.style.zIndex = 0;
+            }
+
+            // Assign color based on event type
+            const eventTypeColors = {
+                'historical': 'var(--secondary-color)',
+                'manuscript': 'var(--papyrus-color)',
+                // Add other event types and colors here
+            };
+            if (!eventTypeColors[event.eventType]) {
+                eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            }
+            newEvent.style.backgroundColor = eventTypeColors[event.eventType];
+
+            timeline.appendChild(newEvent);
         }
-        return true;
-    };
 
-    // Find the closest available positions above and below
-    while (!isPositionAvailable(verticalPositionsAbove, verticalPositionAbove) && !isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
-        verticalPositionAbove += verticalStep;
-        verticalPositionBelow += verticalStep;
-    }
-
-    // Decide whether to place the event above or below the timeline
-    if (verticalPositionAbove <= verticalPositionBelow && isPositionAvailable(verticalPositionsAbove, verticalPositionAbove)) {
-        newEvent.style.top = `${verticalPositionAbove}px`;
-        newEvent.classList.add('above');
-    } else if (isPositionAvailable(verticalPositionsBelow, verticalPositionBelow)) {
-        newEvent.style.bottom = `${verticalPositionBelow}px`;
-        newEvent.classList.add('below');
-    }
-
-    // Ensure historical events are closest to the timeline
-    if (event.eventType === 'historical') {
-        newEvent.style.zIndex = 1; // Higher z-index to be on top
-    } else {
-        newEvent.style.zIndex = 0;
-    }
-
-    // Assign color based on event type
-    const eventTypeColors = {
-        'historical': 'var(--secondary-color)',
-        'manuscript': 'var(--papyrus-color)',
-        // Add other event types and colors here
-    };
-    if (!eventTypeColors[event.eventType]) {
-        eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-    }
-    newEvent.style.backgroundColor = eventTypeColors[event.eventType];
-
-    timeline.appendChild(newEvent);
-}
-
-}
         function updateEvents() {
             const events = document.querySelectorAll('.event');
             events.forEach(event => {
