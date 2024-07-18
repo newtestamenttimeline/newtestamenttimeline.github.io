@@ -370,22 +370,35 @@
 
                 // Add historical events first
                 historicalEvents.forEach(event => {
-                    event.percentage = (event.year / 1000) * 100;
-                    addEventToTimeline(event);
-                    eventTypes.add(event.eventType);
+                    if (event.year) {
+                        event.percentage = (event.year / 1000) * 100;
+                        addEventToTimeline(event);
+                        eventTypes.add(event.eventType);
+                    } else {
+                        console.error('Missing year for historical event:', event);
+                    }
                 });
 
                 // Add manuscript events within their year range
                 manuscriptEvents.forEach(event => {
-                    const yearRange = event.yearRange;
-                    if (!Array.isArray(yearRange) || yearRange.length !== 2) {
-                        console.error('Invalid yearRange for event:', event);
+                    if (event.yearRange) {
+                        const yearRange = event.yearRange;
+                        if (Array.isArray(yearRange) && yearRange.length === 2) {
+                            const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
+                            const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
+                            event.year = eventYear; // Assign a random year within the range
+                            event.percentage = (eventYear / 1000) * 100;
+                        } else {
+                            console.error('Invalid yearRange for event:', event);
+                            return;
+                        }
+                    } else if (event.year) {
+                        event.percentage = (event.year / 1000) * 100;
+                    } else {
+                        console.error('Missing year or yearRange for manuscript event:', event);
                         return;
                     }
-                    const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
-                    const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
-                    event.year = eventYear; // Assign a random year within the range
-                    event.percentage = (eventYear / 1000) * 100;
+
                     addEventToTimeline(event);
                     if (event.texts) {
                         event.texts.forEach(text => texts.add(text));
@@ -406,8 +419,6 @@
         }
 
         function addEventToTimeline(event) {
-            console.log('Adding event:', event);
-
             const newEvent = document.createElement('div');
             newEvent.className = 'event';
             newEvent.setAttribute('data-year', event.year);
@@ -552,8 +563,6 @@
                 }
                 colorIndex++;
             });
-
-            console.log('Event type colors:', eventTypeColors);
 
             eventTypes.forEach(eventType => {
                 const legendItem = document.createElement('div');
