@@ -52,11 +52,11 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: auto; /* Allow both horizontal and vertical scrolling */
     position: relative;
-    height: 50%; /* Ensure it takes up half of the viewport */
+    height: 50%;
 }
+
 
 .bottom-half {
     flex: 1;
@@ -65,6 +65,25 @@
     height: 50%; /* Ensure it takes up half of the viewport */
     position: relative; /* Fixed positioning is removed to make it flexible */
 }
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333; /* Dark background for scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555; /* Slightly lighter thumb */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777; /* Lighter on hover */
+}
+
 
 
         .timeline {
@@ -573,6 +592,7 @@ function updateEvents() {
 
 function populateTextList() {
     const textList = document.getElementById('text-list');
+    textList.innerHTML = ''; // Clear existing list
     texts.forEach(text => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
@@ -583,11 +603,35 @@ function populateTextList() {
 
 function populateFamilyList() {
     const familyList = document.getElementById('family-list');
+    familyList.innerHTML = ''; // Clear existing list
     families.forEach(family => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
         listItem.querySelector('input').addEventListener('change', (e) => filterEventsByFamily(family, e.target.checked));
         familyList.appendChild(listItem);
+    });
+}
+
+function filterEventsByText(text, isChecked) {
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventTexts = JSON.parse(event.getAttribute('data-texts'));
+        if (isChecked && eventTexts.includes(text)) {
+            event.classList.remove('greyed-out');
+        } else if (!isChecked && eventTexts.includes(text)) {
+            event.classList.add('greyed-out');
+        }
+    });
+}
+
+function filterEventsByFamily(family, isChecked) {
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        if (isChecked && event.getAttribute('data-family') === family) {
+            event.classList.remove('greyed-out');
+        } else if (!isChecked && event.getAttribute('data-family') === family) {
+            event.classList.add('greyed-out');
+        }
     });
 }
 
@@ -655,6 +699,7 @@ function generateLegend() {
         }
     });
 }
+
 
 function filterEventsByText(text, isChecked) {
     const events = document.querySelectorAll('.event');
