@@ -367,6 +367,685 @@
 
                 // Add historical events first
                 historicalEvents.forEach(event => {
+                    event.percentage = (event.year / 1000) * 100;
+                    addEventToTimeline(event);
+                    eventTypes.add(event.eventType);
+                });
+
+                // Add manuscript events within their year range
+                manuscriptEvents.forEach(event => {
+                    const yearRange = event.yearRange;
+                    const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
+                    const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
+                    event.year = eventYear; // Assign a random year within the range
+                    event.percentage = (eventYear / 1000) * 100;
+                    addEventToTimeline(event);
+                    if (event.texts) {
+                        event.texts.forEach(text => texts.add(text));
+                    }
+                    if (event.family) {
+                        families.add(event.family);
+                    }
+                    eventTypes.add(event.eventType);
+                });
+
+                updateEvents();
+                populateTextList();
+                populateFamilyList();
+                generateLegend();
+            } catch (error) {
+                console.error('Error loading events:', error);
+            }
+        }
+
+        function addEventToTimeline(event) {
+            const newEvent = document.createElement('div');
+            newEvent.className = 'event';
+            newEvent.setAttribute('data-year', event.year);
+            newEvent.setAttribute('title', event.title);
+            newEvent.setAttribute('data-description', event.description);
+            newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
+            newEvent.setAttribute('data-family', event.family || '');
+            newEvent.setAttribute('data-event-type', event.eventType);
+
+            if (event.eventType === 'manuscript') {
+                newEvent.classList.add('papyrus');
+            }
+
+            const eventYear = event.year;
+            const range = 10; // ±10% around the actual year
+            const verticalStep = 20; // Step in pixels for vertical movement
+
+            const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
+                year: parseInt(e.getAttribute('data-year')),
+                percentage: parseFloat(e.style.left),
+                top: parseInt(e.style.top) || 0,
+                bottom: parseInt(e.style.bottom) || 0
+            }));
+
+            const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
+            const positions = nearbyEvents.map(e => e.percentage);
+
+            // Calculate the new horizontal position
+            let newPosition = event.percentage;
+            while (positions.includes(newPosition)) {
+                newPosition += (Math.random() - 0.5) * 0.5; // Adjust the position slightly to the left or right
+            }
+
+            newEvent.style.left = `${newPosition}%`;
+
+            // Determine vertical position based on existing events
+            let verticalPositionAbove = 0;
+            let verticalPositionBelow = 0;
+            const verticalPositionsAbove = nearbyEvents.filter(e => e.bottom === 0).map(e => e.top);
+            const verticalPositionsBelow = nearbyEvents.filter(e => e.top === 0).map(e => e.bottom);
+
+            while (verticalPositionsAbove.includes(verticalPositionAbove) || verticalPositionsBelow.includes(verticalPositionBelow)) {
+                verticalPositionAbove += verticalStep;
+                verticalPositionBelow += verticalStep;
+            }
+
+            // Decide whether to place the event above or below the timeline
+            if (verticalPositionAbove <= verticalPositionBelow) {
+                newEvent.style.top = `${verticalPositionAbove}px`;
+                newEvent.classList.add('above');
+            } else {
+                newEvent.style.bottom = `${verticalPositionBelow}px`;
+                newEvent.classList.add('below');
+            }
+
+            // Ensure historical events are closest to the timeline
+            if (event.eventType === 'historical') {
+                newEvent.style.zIndex = 1; // Higher z-index to be on top
+            } else {
+                newEvent.style.zIndex = 0;
+            }
+
+            // Assign color based on event type
+            const eventTypeColors = {
+                'historical': 'var(--secondary-color)',
+                'manuscript': 'var(--papyrus-color)',
+                // Add other event types and colors here
+            };
+            if (!eventTypeColors[event.eventType]) {
+                eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            }
+            newEvent.style.backgroundColor = eventTypeColors[event.eventType];
+
+            timeline.appendChild(newEvent);
+        }
+
+        function updateEvents() {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                event.addEventListener('click', () => {
+                    if (selectedEvent) {
+                        selectedEvent.classList.remove('selected');
+                    }
+                    selectedEvent = event;
+                    event.classList.add('selected');
+
+                    const year = event.getAttribute('data-year');
+                    const title = event.getAttribute('title');
+                    const description = event.getAttribute('data-description');
+                    content.innerHTML = `<h2>${title} (Year ${year})</h2><p>${description}</p>`;
+                });
+            });
+        }
+
+        function populateTextList() {
+            const textList = document.getElementById('text-list');
+            texts.forEach(text => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
+                listItem.querySelector('input').addEventListener('change', (e) => filterEventsByText(text, e.target.checked));
+                textList.appendChild(listItem);
+            });
+        }
+
+        function populateFamilyList() {
+            const familyList = document.getElementById('family-list');
+            families.forEach(family => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
+                listItem.querySelector('input').addEventListener('change', (e) => filterEventsByFamily(family, e.target.checked));
+                familyList.appendChild(listItem);
+            });
+        }
+
+        function generateLegend() {
+            legendContainer.innerHTML = ''; // Clear existing legend items
+
+            // Define a color palette for event types
+            const colorPalette = [
+                'var(--secondary-color)',    // Green
+                'var(--papyrus-color)',      // Yellow
+                '#ff6347',                   // Tomato
+                '#40e0d0',                   // Turquoise
+                '#ffa500',                   // Orange
+                '#9370db',                   // Medium Purple
+                '#ff69b4',                   // Hot Pink
+                '#7fff00',                   // Chartreuse
+                '#1e90ff',                   // Dodger Blue
+                '#ff4500',                   // Orange Red
+            ];
+
+            // Assign colors dynamically to event types
+            const eventTypeColors = {};
+
+            let colorIndex = 0;
+            eventTypes.forEach(eventType => {
+                // If we run out of predefined colors, generate a random color
+                if (colorIndex >= colorPalette.length) {
+                    eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+                } else {
+                    eventTypeColors[eventType] = colorPalette[colorIndex];
+                }
+                colorIndex++;
+            });
+
+            eventTypes.forEach(eventType => {
+                const legendItem = document.createElement('div');
+                legendItem.className = 'legend-item';
+
+                const legendColor = document.createElement('div');
+                legendColor.className = 'legend-color';
+                legendColor.style.backgroundColor = eventTypeColors[eventType];
+
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.className = 'legend-checkbox';
+                checkbox.checked = true;
+                checkbox.addEventListener('change', (e) => toggleEventsByType(eventType, e.target.checked));
+
+                const label = document.createElement('span');
+                label.textContent = eventType.charAt(0).toUpperCase() + eventType.slice(1) + ' Events';
+
+                legendItem.appendChild(checkbox);
+                legendItem.appendChild(legendColor);
+                legendItem.appendChild(label);
+
+                legendContainer.appendChild(legendItem);
+            });
+
+            // Update event colors based on legend
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                const eventType = event.getAttribute('data-event-type');
+                if (eventTypeColors[eventType]) {
+                    event.style.backgroundColor = eventTypeColors[eventType];
+                }
+            });
+        }
+
+        function filterEventsByText(text, isChecked) {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                const eventTexts = JSON.parse(event.getAttribute('data-texts'));
+                if (isChecked && eventTexts.includes(text)) {
+                    event.classList.remove('greyed-out');
+                } else if (!isChecked && eventTexts.includes(text)) {
+                    event.classList.add('greyed-out');
+                }
+            });
+        }
+
+        function filterEventsByFamily(family, isChecked) {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                if (isChecked && event.getAttribute('data-family') === family) {
+                    event.classList.remove('greyed-out');
+                } else if (!isChecked && event.getAttribute('data-family') === family) {
+                    event.classList.add('greyed-out');
+                }
+            });
+        }
+
+        function toggleEventsByType(eventType, isChecked) {
+            const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
+            events.forEach(event => {
+                event.style.display = isChecked ? 'block' : 'none';
+            });
+        }
+
+        function toggleSidebar() {
+            sidebar.classList.toggle('collapsed');
+        }
+
+        loadEvents(); // Ensure this is called when the page loads
+
+        // Zoom functionality
+        document.getElementById('zoom-in').addEventListener('click', () => {
+            scale *= 1.2;
+            timeline.style.transform = `scale(${scale})`;
+        });
+
+        document.getElementById('zoom-out').addEventListener('click', () => {
+            scale /= 1.2;
+            timeline.style.transform = `scale(${scale})`;
+        });
+
+        // Double-click to zoom and scroll
+        timelineContainer.addEventListener('dblclick', (e) => {
+            const rect = timelineContainer.getBoundingClientRect();
+            const offsetX = e.clientX - rect.left;
+            const targetPercentage = offsetX / rect.width;
+            const targetScroll = targetPercentage * timeline.scrollWidth * scale - rect.width / 2;
+
+            // Scroll to the clicked position
+            timelineContainer.scrollTo({
+                left: targetScroll,
+                behavior: 'smooth'
+            });
+
+            // Zoom in on double-click
+            scale *= 1.2;
+            timeline.style.transform = `scale(${scale})`;
+        });
+
+        // Scroll functionality
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        timelineContainer.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - timelineContainer.offsetLeft;
+            scrollLeft = timelineContainer.scrollLeft;
+        });
+
+        timelineContainer.addEventListener('mouseleave', () => {
+            isDown = false;
+        });
+
+        timelineContainer.addEventListener('mouseup', () => {
+            isDown = false;
+        });
+
+        timelineContainer.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - timelineContainer.offsetLeft;
+            const walk = (x - startX) * 3;
+            timelineContainer.scrollLeft = scrollLeft - walk;
+        });
+
+        // Ensure events stay visible during zoom
+        new ResizeObserver(() => {
+            timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
+        }).observe(timelineContainer);
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Testament Timeline - Interactive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --background-color: #1a1a1a;
+            --text-color: #f0f0f0;
+            --papyrus-color: #ffd700;
+            --delete-color: #e74c3c;
+            --grey-out-color: #808080;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .top-half {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            overflow-x: scroll;
+            position: relative;
+        }
+
+        .timeline {
+            width: 10000px;
+            height: 4px;
+            background-color: var(--primary-color);
+            position: relative;
+            transform-origin: left center;
+        }
+
+        .timeline::before,
+        .timeline::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+
+        .timeline::before {
+            left: -10px;
+            border-right: 10px solid var(--primary-color);
+        }
+
+        .timeline::after {
+            right: -10px;
+            border-left: 10px solid var(--primary-color);
+        }
+
+        .event {
+            width: 12px;
+            height: 12px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .event.above { transform: translateY(-50%); }
+        .event.below { transform: translateY(50%); }
+
+        .event:hover {
+            transform: scale(1.5);
+        }
+
+        .event.selected {
+            box-shadow: 0 0 0 2px #fff;
+        }
+
+        .event.papyrus {
+            background-color: var(--papyrus-color);
+        }
+
+        .event.greyed-out {
+            background-color: var(--grey-out-color);
+        }
+
+        .year-label {
+            position: absolute;
+            top: -25px;
+            transform: translateX(-50%);
+            font-size: 12px;
+        }
+
+        .bottom-half {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .content-container {
+            flex: 2;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        #event-content {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+            min-height: 200px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            transition: max-width 0.3s ease;
+            max-width: 100%;
+        }
+
+        .sidebar.collapsed {
+            max-width: 40px;
+            overflow: hidden;
+        }
+
+        .sidebar-section {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            cursor: pointer;
+            padding: 5px 0;
+        }
+
+        .sidebar li:hover {
+            text-decoration: underline;
+        }
+
+        .sidebar input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .toggle-sidebar {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            align-self: flex-end;
+        }
+
+        .legend {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .legend-checkbox {
+            margin-right: 5px;
+        }
+
+        .question-mark {
+            cursor: pointer;
+            margin-left: 5px;
+            color: var(--primary-color);
+        }
+
+        .tooltip {
+            visibility: hidden;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            width: 120px;
+        }
+
+        .question-mark:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .timeline-controls {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 20px;
+                padding: 8px 0;
+            }
+
+            .top-half {
+                padding: 10px;
+            }
+
+            .content-container {
+                padding: 10px;
+            }
+
+            .sidebar {
+                flex: none;
+                height: 100%;
+                transition: max-width 0.3s ease;
+                max-width: 100%;
+            }
+
+            .sidebar.collapsed {
+                max-width: 40px;
+                overflow: hidden;
+            }
+
+            .toggle-sidebar {
+                top: 10px;
+                right: 10px;
+            }
+
+            .legend {
+                top: 5px;
+                left: 5px;
+                padding: 5px;
+                font-size: 12px;
+            }
+
+            .timeline-controls {
+                top: 5px;
+                right: 5px;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>New Testament Timeline</header>
+    <div class="main-content">
+        <div class="top-half" id="timeline-container">
+            <div class="legend" id="legend">
+                <!-- Dynamic legend items will be injected here -->
+            </div>
+            <div class="timeline" id="timeline">
+                <span class="year-label" style="left: 0%;">0</span>
+                <span class="year-label" style="left: 25%;">250</span>
+                <span class="year-label" style="left: 50%;">500</span>
+                <span class="year-label" style="left: 75%;">750</span>
+                <span class="year-label" style="left: 100%;">1000</span>
+            </div>
+            <div class="timeline-controls">
+                <button id="zoom-in">+</button>
+                <button id="zoom-out">-</button>
+            </div>
+        </div>
+        <div class="bottom-half">
+            <div class="content-container">
+                <div id="event-content">
+                    <h2>New Testament Timeline</h2>
+                    <p>Click on an event in the timeline to view details here.</p>
+                    <p>Green dots represent historical events, while yellow dots represent important New Testament manuscript discoveries.</p>
+                </div>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <button class="toggle-sidebar" onclick="toggleSidebar()">Filters</button>
+                <div class="sidebar-section">
+                    <h3>Texts <span class="question-mark">?
+                        <span class="tooltip">Filter events by specific texts.</span>
+                    </span></h3>
+                    <ul id="text-list">
+                        <!-- Texts will be dynamically added here -->
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h3>Manuscript Families <span class="question-mark">?
+                        <span class="tooltip">Filter events by manuscript families.</span>
+                    </span></h3>
+                    <ul id="family-list">
+                        <!-- Families will be dynamically added here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const timeline = document.getElementById('timeline');
+        const timelineContainer = document.getElementById('timeline-container');
+        const content = document.getElementById('event-content');
+        const sidebar = document.getElementById('sidebar');
+        const legendContainer = document.getElementById('legend');
+        let scale = 1;
+        let selectedEvent = null;
+        const texts = new Set();
+        const families = new Set();
+        const eventTypes = new Set();
+
+        async function loadEvents() {
+            try {
+                const historicalEvents = await fetch('historical_events.json').then(response => response.json());
+                const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
+
+                // Add historical events first
+                historicalEvents.forEach(event => {
                     addEventToTimeline(event);
                     eventTypes.add(event.eventType);
                 });
