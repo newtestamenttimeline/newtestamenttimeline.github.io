@@ -405,13 +405,52 @@
     newEvent.setAttribute('data-year', event.year);
     newEvent.setAttribute('title', event.title);
     newEvent.setAttribute('data-description', event.description);
-    newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
-    newEvent.setAttribute('data-family', event.family || '');
     newEvent.setAttribute('data-event-type', event.eventType);
+
+    if (event.texts) {
+        newEvent.setAttribute('data-texts', JSON.stringify(event.texts));
+    }
+
+    if (event.family) {
+        newEvent.setAttribute('data-family', event.family);
+    }
 
     if (event.eventType === 'manuscript') {
         newEvent.classList.add('papyrus');
     }
+
+    // Dynamically distribute events within a range around their actual year
+    const eventYear = event.year;
+    const range = 10; // ±10% around the actual year
+    const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
+        year: parseInt(e.getAttribute('data-year')),
+        percentage: parseFloat(e.style.left)
+    }));
+
+    const nearbyEvents = existingEvents.filter(e => Math.abs(e.year - eventYear) <= range);
+    const positions = nearbyEvents.map(e => e.percentage);
+
+    // Calculate the new position
+    let newPosition = event.percentage;
+    while (positions.includes(newPosition)) {
+        newPosition += (Math.random() - 0.5) * 0.5; // Adjust the position slightly to the left or right
+    }
+
+    newEvent.style.left = `${newPosition}%`;
+
+    const count = nearbyEvents.length;
+    const isAbove = count % 2 === 0;
+    const position = Math.floor(count / 2) + 1;
+
+    if (isAbove) {
+        newEvent.classList.add(`above-${position}`);
+    } else {
+        newEvent.classList.add(`below-${position}`);
+    }
+
+    timeline.appendChild(newEvent);
+}
+
 
     // Dynamically distribute events within a range around their actual year
     const eventYear = event.year;
