@@ -360,42 +360,47 @@
         const spacing = 5; // Space between dots
 
         async function loadEvents() {
-            try {
-                const historicalEvents = await fetch('historical_events.json').then(response => response.json());
-                const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
+    try {
+        const historicalEvents = await fetch('historical_events.json').then(response => response.json());
+        const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
 
-                // Add historical events first
-                historicalEvents.forEach(event => {
-                    event.percentage = (event.year / 1000) * 100;
-                    addEventToTimeline(event);
-                    eventTypes.add(event.eventType);
-                });
+        // Add historical events first
+        historicalEvents.forEach(event => {
+            event.percentage = (event.year / 1000) * 100;
+            addEventToTimeline(event);
+            eventTypes.add(event.eventType);
+        });
 
-                // Add manuscript events within their year range
-                manuscriptEvents.forEach(event => {
-                    const yearRange = event.yearRange;
-                    const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
-                    const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
-                    event.year = eventYear; // Assign a random year within the range
-                    event.percentage = (eventYear / 1000) * 100;
-                    addEventToTimeline(event);
-                    if (event.texts) {
-                        event.texts.forEach(text => texts.add(text));
-                    }
-                    if (event.family) {
-                        families.add(event.family);
-                    }
-                    eventTypes.add(event.eventType);
-                });
-
-                updateEvents();
-                populateTextList();
-                populateFamilyList();
-                generateLegend();
-            } catch (error) {
-                console.error('Error loading events:', error);
+        // Add manuscript events within their year range
+        manuscriptEvents.forEach(event => {
+            if (event.yearRange) {
+                const yearRange = event.yearRange;
+                const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
+                const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
+                event.year = eventYear; // Assign a random year within the range
+                event.percentage = (eventYear / 1000) * 100;
+            } else if (event.year) {
+                event.percentage = (event.year / 1000) * 100;
             }
-        }
+            addEventToTimeline(event);
+            if (event.texts) {
+                event.texts.forEach(text => texts.add(text));
+            }
+            if (event.family) {
+                families.add(event.family);
+            }
+            eventTypes.add(event.eventType);
+        });
+
+        updateEvents();
+        populateTextList();
+        populateFamilyList();
+        generateLegend();
+    } catch (error) {
+        console.error('Error loading events:', error);
+    }
+}
+
 
         function addEventToTimeline(event) {
             const newEvent = document.createElement('div');
