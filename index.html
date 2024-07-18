@@ -435,7 +435,7 @@
     const eventYear = event.year;
     const range = 75; // ±75 years around the actual year
     const verticalStep = 14; // Step in pixels for vertical movement
-    const dotDiameter = 12; // Diameter of the dot
+    const dotDiameter = 1; // Dot width in percentage of the timeline
 
     const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
         element: e,
@@ -450,8 +450,11 @@
 
     // Calculate the new horizontal position
     let newPosition = event.percentage;
-    while (positions.includes(newPosition)) {
-        newPosition += (Math.random() - 0.5) * 0.5; // Adjust the position slightly to the left or right
+    if (positions.length > 0) {
+        newPosition = Math.min(...positions) - dotDiameter;
+        while (positions.includes(newPosition)) {
+            newPosition += dotDiameter;
+        }
     }
 
     newEvent.style.left = `${newPosition}%`;
@@ -507,10 +510,6 @@
 
     timeline.appendChild(newEvent);
 }
-
-
-
-
         function updateEvents() {
             const events = document.querySelectorAll('.event');
             events.forEach(event => {
