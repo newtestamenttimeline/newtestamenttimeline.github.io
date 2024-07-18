@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Event Editor</h1>
+<select id="fileSelector">
+    <option value="historical_events.json">Historical Events</option>
+    <option value="manuscripts.json">Manuscripts</option>
+    <option value="uncials.json">Uncials</option>
+    <!-- Add more options here for any additional JSON files -->
+</select>
+<input type="file" id="fileInput" class="hidden" />
+<button onclick="loadSelectedFile()">Load Selected File</button>
+<button onclick="exportJSON()">Export JSON</button>
+
+<table id="eventTable">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Texts</th>
+            <th>Family</th>
+            <th>Left (%)</th>
+            <th>Top (px)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Rows will be added here dynamically -->
+    </tbody>
+</table>
+
+<script>
+let eventData = [];
+let currentFile = '';
+
+function loadSelectedFile() {
+    const fileSelector = document.getElementById('fileSelector');
+    currentFile = fileSelector.value;
+    fetch(currentFile)
+        .then(response => response.json())
+        .then(data => {
+            eventData = data;
+            loadTable();
+        })
+        .catch(error => console.error('Error loading file:', error));
+}
+
+function loadTable() {
+    const tableBody = document.getElementById('eventTable').getElementsByTagName('tbody')[0];
+    tableBody.innerHTML = '';
+    eventData.forEach((event, index) => {
+        const row = tableBody.insertRow();
+        row.innerHTML = `
+            <td><input type="number" value="${event.year}" onchange="updateEvent(${index}, 'year', this.value)" /></td>
+            <td><input type="text" value="${event.title}" onchange="updateEvent(${index}, 'title', this.value)" /></td>
+            <td><input type="text" value="${event.description}" onchange="updateEvent(${index}, 'description', this.value)" /></td>
+            <td><input type="text" value="${event.texts.join(', ')}" onchange="updateEvent(${index}, 'texts', this.value.split(', '))" /></td>
+            <td><input type="text" value="${event.family}" onchange="updateEvent(${index}, 'family', this.value)" /></td>
+            <td><input type="number" value="${event.left}" onchange="updateEvent(${index}, 'left', this.value)" /></td>
+            <td><input type="number" value="${event.top}" onchange="updateEvent(${index}, 'top', this.value)" /></td>
+        `;
+    });
+}
+
+function updateEvent(index, key, value) {
+    eventData[index][key] = value;
+}
+
+function exportJSON() {
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(eventData, null, 2));
+    const downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href", dataStr);
+    downloadAnchorNode.setAttribute("download", currentFile);
+    document.body.appendChild(downloadAnchorNode);
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+}
+</script>
+
+</body>
+</html>
