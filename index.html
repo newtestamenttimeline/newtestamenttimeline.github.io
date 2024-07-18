@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>New Testament Timeline - Interactive!</title>
+    <title>New Testament Timeline - Interactive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
@@ -502,31 +502,61 @@
         }
 
         function generateLegend() {
-            legendContainer.innerHTML = ''; // Clear existing legend items
-            eventTypes.forEach(eventType => {
-                const legendItem = document.createElement('div');
-                legendItem.className = 'legend-item';
+    legendContainer.innerHTML = ''; // Clear existing legend items
 
-                const legendColor = document.createElement('div');
-                legendColor.className = 'legend-color';
-                legendColor.style.backgroundColor = eventType === 'manuscript' ? 'var(--papyrus-color)' : 'var(--secondary-color)';
+    // Define a color palette for event types
+    const colorPalette = [
+        'var(--secondary-color)',    // Green
+        'var(--papyrus-color)',      // Yellow
+        '#ff6347',                   // Tomato
+        '#40e0d0',                   // Turquoise
+        '#ffa500',                   // Orange
+        '#9370db',                   // Medium Purple
+        '#ff69b4',                   // Hot Pink
+        '#7fff00',                   // Chartreuse
+        '#1e90ff',                   // Dodger Blue
+        '#ff4500',                   // Orange Red
+    ];
 
-                const checkbox = document.createElement('input');
-                checkbox.type = 'checkbox';
-                checkbox.className = 'legend-checkbox';
-                checkbox.checked = true;
-                checkbox.addEventListener('change', (e) => toggleEventsByType(eventType, e.target.checked));
+    // Assign colors dynamically to event types
+    const eventTypeColors = {};
 
-                const label = document.createElement('span');
-                label.textContent = eventType.charAt(0).toUpperCase() + eventType.slice(1) + ' Events';
-
-                legendItem.appendChild(checkbox);
-                legendItem.appendChild(legendColor);
-                legendItem.appendChild(label);
-
-                legendContainer.appendChild(legendItem);
-            });
+    let colorIndex = 0;
+    eventTypes.forEach(eventType => {
+        // If we run out of predefined colors, generate a random color
+        if (colorIndex >= colorPalette.length) {
+            eventTypeColors[eventType] = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+        } else {
+            eventTypeColors[eventType] = colorPalette[colorIndex];
         }
+        colorIndex++;
+    });
+
+    eventTypes.forEach(eventType => {
+        const legendItem = document.createElement('div');
+        legendItem.className = 'legend-item';
+
+        const legendColor = document.createElement('div');
+        legendColor.className = 'legend-color';
+        legendColor.style.backgroundColor = eventTypeColors[eventType];
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.className = 'legend-checkbox';
+        checkbox.checked = true;
+        checkbox.addEventListener('change', (e) => toggleEventsByType(eventType, e.target.checked));
+
+        const label = document.createElement('span');
+        label.textContent = eventType.charAt(0).toUpperCase() + eventType.slice(1) + ' Events';
+
+        legendItem.appendChild(checkbox);
+        legendItem.appendChild(legendColor);
+        legendItem.appendChild(label);
+
+        legendContainer.appendChild(legendItem);
+    });
+}
+
 
         function filterEventsByText(text, isChecked) {
             const events = document.querySelectorAll('.event');
