@@ -434,8 +434,8 @@
 
     const eventYear = event.year;
     const range = 75; // ±75 years around the actual year
-    const verticalStep = 20; // Step in pixels for vertical movement
-    const maxOverlapPercentage = 0.50; // Max overlap percentage (50%)
+    const verticalStep = 14; // Step in pixels for vertical movement
+    const dotDiameter = 12; // Diameter of the dot
 
     const existingEvents = Array.from(document.querySelectorAll('.event')).map(e => ({
         element: e,
@@ -465,7 +465,7 @@
     // Function to check if the position is available
     const isPositionAvailable = (positions, newPosition) => {
         for (const pos of positions) {
-            if (Math.abs(newPosition - pos) < verticalStep * maxOverlapPercentage) {
+            if (Math.abs(newPosition - pos) < dotDiameter) {
                 return false;
             }
         }
@@ -507,6 +507,7 @@
 
     timeline.appendChild(newEvent);
 }
+
 
 
 
