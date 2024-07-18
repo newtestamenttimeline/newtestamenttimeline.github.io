@@ -429,21 +429,21 @@
     }
 
     // Adjust positions to avoid overlap
-    const step = 5; // Step size for moving the dots
-    let angle = 0;
-    const initialLeft = newLeft;
-    let direction = 1; // 1 for up, -1 for down
-
-    while (isPositionOccupied(newLeft, newTop)) {
-        angle += step;
-        if (angle >= 360) {
-            angle = 0;
-            newTop += direction * (dotDiameter + spacing); // Move up or down after a full circle
-            direction *= -1; // Change direction
+    const step = 1; // Step size for moving the dots
+    const maxTries = 1000; // Maximum number of attempts to find a position
+    let tries = 0;
+    while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
+        newTop += step;
+        if (newTop > 50) {
+            newTop = -50;
+            newLeft += step;
         }
-        let radian = angle * (Math.PI / 180);
-        newLeft = initialLeft + Math.cos(radian) * step;
-        newTop = newTop + Math.sin(radian) * step;
+        tries++;
+    }
+
+    if (tries === maxTries) {
+        console.error(`Failed to place ${event.title}: too many attempts`);
+        return;
     }
 
     console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
@@ -471,6 +471,7 @@
 
     timeline.appendChild(newEvent);
 }
+
 
 
 
