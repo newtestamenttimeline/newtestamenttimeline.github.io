@@ -3,7 +3,7 @@
         "yearRange": [300, 350],
         "title": "Uncial 1",
         "percentage": 33,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 1 contains parts of the Gospel of Matthew and is dated paleographically to the early 4th century.",
         "texts": ["Matthew"],
         "family": "Alexandrian"
@@ -12,7 +12,7 @@
         "yearRange": [325, 375],
         "title": "Uncial 2",
         "percentage": 35,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 2 features sections of the Gospel of Mark. It is dated to the mid-4th century based on handwriting analysis.",
         "texts": ["Mark"],
         "family": "Byzantine"
@@ -21,7 +21,7 @@
         "yearRange": [350, 400],
         "title": "Uncial 3",
         "percentage": 38,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 3 includes passages from the Gospel of Luke. Paleographic analysis suggests it originates from the late 4th century.",
         "texts": ["Luke"],
         "family": "Western"
@@ -30,7 +30,7 @@
         "yearRange": [375, 425],
         "title": "Uncial 4",
         "percentage": 40,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 4 contains excerpts from the Gospel of John, dated paleographically to the late 4th or early 5th century.",
         "texts": ["John"],
         "family": "Alexandrian"
@@ -39,7 +39,7 @@
         "yearRange": [400, 450],
         "title": "Uncial 5",
         "percentage": 43,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 5 features parts of the Acts of the Apostles. Handwriting analysis dates it to the early 5th century.",
         "texts": ["Acts"],
         "family": "Byzantine"
@@ -48,7 +48,7 @@
         "yearRange": [425, 475],
         "title": "Uncial 6",
         "percentage": 45,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 6 includes portions of the Epistle to the Romans, dated paleographically to the mid-5th century.",
         "texts": ["Romans"],
         "family": "Western"
@@ -57,7 +57,7 @@
         "yearRange": [450, 500],
         "title": "Uncial 7",
         "percentage": 48,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 7 contains text from the First Epistle to the Corinthians. Paleographic dating places it in the late 5th century.",
         "texts": ["1 Corinthians"],
         "family": "Alexandrian"
@@ -66,7 +66,7 @@
         "yearRange": [475, 525],
         "title": "Uncial 8",
         "percentage": 50,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 8 features sections of the Epistle to the Galatians. It is dated to the late 5th or early 6th century based on handwriting analysis.",
         "texts": ["Galatians"],
         "family": "Byzantine"
@@ -75,7 +75,7 @@
         "yearRange": [500, 550],
         "title": "Uncial 9",
         "percentage": 53,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 9 includes passages from the Epistle to the Ephesians, paleographically dated to the early 6th century.",
         "texts": ["Ephesians"],
         "family": "Western"
@@ -84,7 +84,7 @@
         "yearRange": [525, 575],
         "title": "Uncial 10",
         "percentage": 55,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 10 contains parts of the Epistle to the Philippians, dated by handwriting analysis to the mid-6th century.",
         "texts": ["Philippians"],
         "family": "Alexandrian"
@@ -94,7 +94,7 @@
         "yearRange": [550, 600],
         "title": "Uncial 11",
         "percentage": 58,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 11 features portions of the Epistle to the Colossians, dated paleographically to the late 6th century.",
         "texts": ["Colossians"],
         "family": "Byzantine"
@@ -103,7 +103,7 @@
         "yearRange": [575, 625],
         "title": "Uncial 12",
         "percentage": 60,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 12 includes text from the First Epistle to the Thessalonians, dated to the early 7th century based on handwriting analysis.",
         "texts": ["1 Thessalonians"],
         "family": "Western"
@@ -112,7 +112,7 @@
         "yearRange": [600, 650],
         "title": "Uncial 13",
         "percentage": 63,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 13 contains parts of the Second Epistle to the Thessalonians, paleographically dated to the mid-7th century.",
         "texts": ["2 Thessalonians"],
         "family": "Alexandrian"
@@ -121,7 +121,7 @@
         "yearRange": [625, 675],
         "title": "Uncial 14",
         "percentage": 65,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 14 features sections of the First Epistle to Timothy, dated to the mid-7th century based on handwriting analysis.",
         "texts": ["1 Timothy"],
         "family": "Byzantine"
@@ -130,7 +130,7 @@
         "yearRange": [650, 700],
         "title": "Uncial 15",
         "percentage": 68,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 15 includes passages from the Second Epistle to Timothy, paleographically dated to the late 7th century.",
         "texts": ["2 Timothy"],
         "family": "Western"
@@ -139,7 +139,7 @@
         "yearRange": [675, 725],
         "title": "Uncial 16",
         "percentage": 70,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 16 contains text from the Epistle to Titus, dated by handwriting analysis to the early 8th century.",
         "texts": ["Titus"],
         "family": "Alexandrian"
@@ -148,7 +148,7 @@
         "yearRange": [700, 750],
         "title": "Uncial 17",
         "percentage": 73,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 17 features parts of the Epistle to Philemon, paleographically dated to the mid-8th century.",
         "texts": ["Philemon"],
         "family": "Byzantine"
@@ -157,7 +157,7 @@
         "yearRange": [725, 775],
         "title": "Uncial 18",
         "percentage": 75,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 18 includes portions of the Epistle to the Hebrews, dated to the mid-8th century based on handwriting analysis.",
         "texts": ["Hebrews"],
         "family": "Western"
@@ -166,7 +166,7 @@
         "yearRange": [750, 800],
         "title": "Uncial 19",
         "percentage": 78,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 19 contains text from the Epistle of James, paleographically dated to the late 8th century.",
         "texts": ["James"],
         "family": "Alexandrian"
@@ -175,7 +175,7 @@
         "yearRange": [775, 825],
         "title": "Uncial 20",
         "percentage": 80,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 20 features sections of the First Epistle of Peter, dated by handwriting analysis to the early 9th century.",
         "texts": ["1 Peter"],
         "family": "Byzantine"
@@ -185,7 +185,7 @@
         "yearRange": [800, 850],
         "title": "Uncial 21",
         "percentage": 83,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 21 includes passages from the Second Epistle of Peter, paleographically dated to the mid-9th century.",
         "texts": ["2 Peter"],
         "family": "Western"
@@ -194,7 +194,7 @@
         "yearRange": [825, 875],
         "title": "Uncial 22",
         "percentage": 85,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 22 contains text from the First Epistle of John, dated by handwriting analysis to the late 9th century.",
         "texts": ["1 John"],
         "family": "Alexandrian"
@@ -203,7 +203,7 @@
         "yearRange": [850, 900],
         "title": "Uncial 23",
         "percentage": 88,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 23 features sections of the Second Epistle of John, paleographically dated to the early 10th century.",
         "texts": ["2 John"],
         "family": "Byzantine"
@@ -212,7 +212,7 @@
         "yearRange": [875, 925],
         "title": "Uncial 24",
         "percentage": 90,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 24 includes portions of the Third Epistle of John, dated to the mid-10th century based on handwriting analysis.",
         "texts": ["3 John"],
         "family": "Western"
@@ -221,7 +221,7 @@
         "yearRange": [900, 950],
         "title": "Uncial 25",
         "percentage": 93,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 25 contains text from the Epistle of Jude, paleographically dated to the late 10th century.",
         "texts": ["Jude"],
         "family": "Alexandrian"
@@ -230,7 +230,7 @@
         "yearRange": [925, 975],
         "title": "Uncial 26",
         "percentage": 95,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 26 features parts of the Book of Revelation, dated by handwriting analysis to the early 11th century.",
         "texts": ["Revelation"],
         "family": "Byzantine"
@@ -239,7 +239,7 @@
         "yearRange": [950, 1000],
         "title": "Uncial 27",
         "percentage": 98,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 27 includes passages from the Gospel of Matthew, paleographically dated to the mid-11th century.",
         "texts": ["Matthew"],
         "family": "Western"
@@ -248,7 +248,7 @@
         "yearRange": [975, 1025],
         "title": "Uncial 28",
         "percentage": 100,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 28 contains text from the Gospel of Mark, dated by handwriting analysis to the late 11th century.",
         "texts": ["Mark"],
         "family": "Alexandrian"
@@ -257,7 +257,7 @@
         "yearRange": [1000, 1050],
         "title": "Uncial 29",
         "percentage": 103,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 29 features sections of the Gospel of Luke, paleographically dated to the early 12th century.",
         "texts": ["Luke"],
         "family": "Byzantine"
@@ -266,7 +266,7 @@
         "yearRange": [1025, 1075],
         "title": "Uncial 30",
         "percentage": 105,
-        "eventType": "manuscript",
+        "eventType": "uncial",
         "description": "Uncial 30 includes portions of the Gospel of John, dated to the mid-12th century based on handwriting analysis.",
         "texts": ["John"],
         "family": "Western"
