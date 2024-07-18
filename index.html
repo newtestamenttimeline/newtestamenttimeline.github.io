@@ -356,170 +356,157 @@
         const texts = new Set();
         const families = new Set();
         const eventTypes = new Set();
-        const spacing = 12; // Space between dots
+        const dotDiameter = 12; // 12 pixels
+        const spacing = 15; // Space between dots
+        const step = 5; // Increment for searching new positions
 
         async function loadEvents() {
-    try {
-        const historicalEvents = await fetch('historical_events.json').then(response => response.json());
-        const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
+            try {
+                const historicalEvents = await fetch('historical_events.json').then(response => response.json());
+                const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
 
-        // Add historical events first
-        historicalEvents.forEach(event => {
-            event.percentage = (event.year / 1000) * 100;
-            addEventToTimeline(event);
-            eventTypes.add(event.eventType);
-        });
+                // Add historical events first
+                historicalEvents.forEach(event => {
+                    event.percentage = (event.year / 1000) * 100;
+                    addEventToTimeline(event);
+                    eventTypes.add(event.eventType);
+                });
 
-        // Add manuscript events within their year range
-        manuscriptEvents.forEach(event => {
-            if (event.yearRange) {
-                const yearRange = event.yearRange;
-                const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
-                const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
-                event.year = eventYear; // Assign a random year within the range
-                event.percentage = (eventYear / 1000) * 100;
-            }
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
-            }
-            if (event.family) {
-                families.add(event.family);
-            }
-            eventTypes.add(event.eventType);
-        });
+                // Add manuscript events within their year range
+                manuscriptEvents.forEach(event => {
+                    if (event.yearRange) {
+                        const yearRange = event.yearRange;
+                        const eventYears = Array.from({ length: yearRange[1] - yearRange[0] + 1 }, (v, k) => yearRange[0] + k);
+                        const eventYear = eventYears[Math.floor(Math.random() * eventYears.length)];
+                        event.year = eventYear; // Assign a random year within the range
+                        event.percentage = (eventYear / 1000) * 100;
+                    }
+                    addEventToTimeline(event);
+                    if (event.texts) {
+                        event.texts.forEach(text => texts.add(text));
+                    }
+                    if (event.family) {
+                        families.add(event.family);
+                    }
+                    eventTypes.add(event.eventType);
+                });
 
-        updateEvents();
-        populateTextList();
-        populateFamilyList();
-        generateLegend();
-    } catch (error) {
-        console.error('Error loading events:', error);
-    }
-}
-
-        // Track the last two dot placements for each year
-const yearDotPlacements = {};
-
-const dotDiameter = 12; // 12 pixels
-let spacing = 15; // Space between dots
-const step = 5; // Increment for searching new positions
-
-function addEventToTimeline(event) {
-    const newEvent = document.createElement('div');
-    newEvent.className = 'event';
-    newEvent.setAttribute('data-year', event.year);
-    newEvent.setAttribute('title', event.title);
-    newEvent.setAttribute('data-description', event.description);
-    newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
-    newEvent.setAttribute('data-family', event.family || '');
-    newEvent.setAttribute('data-event-type', event.eventType);
-
-    if (event.eventType === 'manuscript') {
-        newEvent.classList.add('papyrus');
-    }
-
-    if (!yearDotPlacements[event.year]) {
-        yearDotPlacements[event.year] = [];
-    }
-
-    const existingDots = yearDotPlacements[event.year];
-    const positions = Array.from(document.querySelectorAll('.event')).map(e => ({
-        left: parseFloat(e.style.left),
-        top: parseFloat(e.style.top)
-    }));
-
-    let newLeft = (event.year / 1000) * 100;
-    let newTop = 0;
-
-    if (existingDots.length === 0) {
-        newTop = 0;
-    } else if (existingDots.length === 1) {
-        newTop = Math.random() > 0.5 ? dotDiameter + spacing : -(dotDiameter + spacing);
-    } else {
-        const [lastTop] = existingDots.slice(-1);
-        newTop = lastTop > 0 ? -(dotDiameter + spacing) : dotDiameter + spacing;
-
-        if (isPositionOccupied(newLeft, newTop)) {
-            const directions = [[0, -spacing], [0, spacing], [-spacing, 0], [spacing, 0]];
-            shuffleArray(directions);
-            let found = false;
-
-            for (let i = 0; i < directions.length; i++) {
-                const [dx, dy] = directions[i];
-                if (!isPositionOccupied(newLeft + dx, newTop + dy)) {
-                    newLeft += dx;
-                    newTop += dy;
-                    found = true;
-                    break;
-                }
-            }
-
-            if (!found) {
-                let tries = 0;
-                const maxTries = 1000;
-                while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
-                    newTop += newTop > 0 ? spacing + step : -(spacing + step);
-                    tries++;
-                }
+                updateEvents();
+                populateTextList();
+                populateFamilyList();
+                generateLegend();
+            } catch (error) {
+                console.error('Error loading events:', error);
             }
         }
-    }
 
-    yearDotPlacements[event.year].push(newTop);
-    if (yearDotPlacements[event.year].length > 2) {
-        yearDotPlacements[event.year].shift();
-    }
+        // Track the last two dot placements for each year
+        const yearDotPlacements = {};
 
-    console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
+        function addEventToTimeline(event) {
+            const newEvent = document.createElement('div');
+            newEvent.className = 'event';
+            newEvent.setAttribute('data-year', event.year);
+            newEvent.setAttribute('title', event.title);
+            newEvent.setAttribute('data-description', event.description);
+            newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
+            newEvent.setAttribute('data-family', event.family || '');
+            newEvent.setAttribute('data-event-type', event.eventType);
 
-    newEvent.style.left = `${newLeft}%`;
-    newEvent.style.top = `${newTop}px`;
+            if (event.eventType === 'manuscript') {
+                newEvent.classList.add('papyrus');
+            }
 
-    if (event.eventType === 'historical') {
-        newEvent.style.zIndex = 1;
-    } else {
-        newEvent.style.zIndex = 0;
-    }
+            if (!yearDotPlacements[event.year]) {
+                yearDotPlacements[event.year] = [];
+            }
 
-    const eventTypeColors = {
-        'historical': 'var(--secondary-color)',
-        'manuscript': 'var(--papyrus-color)',
-    };
-    if (!eventTypeColors[event.eventType]) {
-        eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-    }
-    newEvent.style.backgroundColor = eventTypeColors[event.eventType];
+            const existingDots = yearDotPlacements[event.year];
+            const positions = Array.from(document.querySelectorAll('.event')).map(e => ({
+                left: parseFloat(e.style.left),
+                top: parseFloat(e.style.top)
+            }));
 
-    timeline.appendChild(newEvent);
-}
+            let newLeft = (event.year / 1000) * 100;
+            let newTop = 0;
 
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
+            if (existingDots.length === 0) {
+                newTop = 0;
+            } else if (existingDots.length === 1) {
+                newTop = Math.random() > 0.5 ? dotDiameter + spacing : -(dotDiameter + spacing);
+            } else {
+                const [lastTop] = existingDots.slice(-1);
+                newTop = lastTop > 0 ? -(dotDiameter + spacing) : dotDiameter + spacing;
 
-function isPositionOccupied(left, top) {
-    const existingEvents = Array.from(document.querySelectorAll('.event'));
-    return existingEvents.some(e => {
-        const eLeft = parseFloat(e.style.left);
-        const eTop = parseFloat(e.style.top);
-        return Math.abs(eLeft - left) < dotDiameter && Math.abs(eTop - top) < dotDiameter;
-    });
-}
+                if (isPositionOccupied(newLeft, newTop)) {
+                    const directions = [[0, -spacing], [0, spacing], [-spacing, 0], [spacing, 0]];
+                    shuffleArray(directions);
+                    let found = false;
 
+                    for (let i = 0; i < directions.length; i++) {
+                        const [dx, dy] = directions[i];
+                        if (!isPositionOccupied(newLeft + dx, newTop + dy)) {
+                            newLeft += dx;
+                            newTop += dy;
+                            found = true;
+                            break;
+                        }
+                    }
 
+                    if (!found) {
+                        let tries = 0;
+                        const maxTries = 1000;
+                        while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
+                            newTop += newTop > 0 ? spacing + step : -(spacing + step);
+                            tries++;
+                        }
+                    }
+                }
+            }
 
+            yearDotPlacements[event.year].push(newTop);
+            if (yearDotPlacements[event.year].length > 2) {
+                yearDotPlacements[event.year].shift();
+            }
 
+            console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
 
+            newEvent.style.left = `${newLeft}%`;
+            newEvent.style.top = `${newTop}px`;
 
+            if (event.eventType === 'historical') {
+                newEvent.style.zIndex = 1;
+            } else {
+                newEvent.style.zIndex = 0;
+            }
 
+            const eventTypeColors = {
+                'historical': 'var(--secondary-color)',
+                'manuscript': 'var(--papyrus-color)',
+            };
+            if (!eventTypeColors[event.eventType]) {
+                eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            }
+            newEvent.style.backgroundColor = eventTypeColors[event.eventType];
 
+            timeline.appendChild(newEvent);
+        }
 
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
 
-
+        function isPositionOccupied(left, top) {
+            const existingEvents = Array.from(document.querySelectorAll('.event'));
+            return existingEvents.some(e => {
+                const eLeft = parseFloat(e.style.left);
+                const eTop = parseFloat(e.style.top);
+                return Math.abs(eLeft - left) < dotDiameter && Math.abs(eTop - top) < dotDiameter;
+            });
+        }
 
         function updateEvents() {
             const events = document.querySelectorAll('.event');
