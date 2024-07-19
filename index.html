@@ -224,8 +224,9 @@
         }
 
         .legend.collapsed {
-            width: 40px;
+            max-width: 40px;
     overflow: hidden;
+    padding: 10px 0;
         }
 
         .toggle-legend {
@@ -351,19 +352,16 @@
             </div>
             <script>
     // JavaScript to toggle the legend visibility
+    <script>
+    // JavaScript to toggle the legend visibility
     document.getElementById('toggle-legend').addEventListener('click', () => {
         const legend = document.getElementById('legend');
+        legend.classList.toggle('collapsed');
         const toggleButton = document.getElementById('toggle-legend');
-        
-        if (legend.classList.contains('collapsed')) {
-            legend.classList.remove('collapsed');
-            toggleButton.textContent = 'Hide Legend';
-        } else {
-            legend.classList.add('collapsed');
-            toggleButton.textContent = 'Show Legend';
-        }
+        toggleButton.textContent = legend.classList.contains('collapsed') ? 'Show Legend' : 'Hide Legend';
     });
 </script>
+
             <div class="timeline" id="timeline">
                 <span class="year-label" style="left: 0%;">0</span>
                 <span class="year-label" style="left: 10%;">140</span>
