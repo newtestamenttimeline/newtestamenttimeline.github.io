@@ -113,7 +113,7 @@
         }
 
         .event.greyed-out {
-            background-color: var (--grey-out-color);
+            background-color: var(--grey-out-color);
         }
 
         .year-label {
@@ -203,13 +203,24 @@
             padding: 10px;
             border-radius: 5px;
             font-size: 14px;
+            max-width: 300px;
+            transition: max-width 0.3s ease;
+        }
+
+        .legend.collapsed {
+            max-width: 40px;
+            overflow: hidden;
+            padding: 10px 0;
+        }
+
+        .legend .icon {
+            cursor: pointer;
         }
 
         .legend-item {
             display: flex;
             align-items: center;
             margin-bottom: 5px;
-            position: relative;
         }
 
         .legend-color {
@@ -217,56 +228,6 @@
             height: 12px;
             border-radius: 50%;
             margin-right: 8px;
-        }
-
-        .legend-checkbox {
-            margin-right: 5px;
-        }
-
-        .legend.collapsed {
-            max-width: 40px;
-    overflow: hidden;
-    padding: 10px 0;
-        }
-
-        .toggle-legend {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    align-self: flex-start;
-    margin-bottom: 5px;
-}
-
-        .question-mark {
-            cursor: pointer;
-            margin-left: 5px;
-            color: var(--primary-color);
-            position: relative;
-        }
-
-        .tooltip {
-            visibility: hidden;
-            background-color: #555;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%;
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: opacity 0.3s;
-            width: 120px;
-        }
-
-        .question-mark:hover .tooltip {
-            visibility: visible;
-            opacity: 1;
         }
 
         .timeline-controls {
@@ -346,22 +307,22 @@
     <header>New Testament Timeline</header>
     <div class="main-content">
         <div class="top-half" id="timeline-container">
-            <div class="legend" id="legend">
-                <button id="toggle-legend" class="toggle-legend">Hide Legend</button>
+            <div class="legend collapsed" id="legend">
+                <button id="collapse-legend" aria-label="Toggle legend">
+                    <span class="icon">✕</span>
+                </button>
                 <!-- Dynamic legend items will be injected here -->
+                <div class="legend-item">
+                    <input type="checkbox" class="legend-checkbox" id="historical-checkbox" checked>
+                    <div class="legend-color historical"></div>
+                    <span>Historical Events</span>
+                </div>
+                <div class="legend-item">
+                    <input type="checkbox" class="legend-checkbox" id="manuscript-checkbox" checked>
+                    <div class="legend-color manuscript"></div>
+                    <span>Biblical Manuscripts</span>
+                </div>
             </div>
-            <script>
-    // JavaScript to toggle the legend visibility
-    <script>
-    // JavaScript to toggle the legend visibility
-    document.getElementById('toggle-legend').addEventListener('click', () => {
-        const legend = document.getElementById('legend');
-        legend.classList.toggle('collapsed');
-        const toggleButton = document.getElementById('toggle-legend');
-        toggleButton.textContent = legend.classList.contains('collapsed') ? 'Show Legend' : 'Hide Legend';
-    });
-</script>
-
             <div class="timeline" id="timeline">
                 <span class="year-label" style="left: 0%;">0</span>
                 <span class="year-label" style="left: 10%;">140</span>
@@ -425,12 +386,11 @@
         const spacing = 15; // Space between dots
         const step = 5; // Increment for searching new positions
        
-        // JavaScript to toggle the legend visibility
-        document.getElementById('toggle-legend').addEventListener('click', () => {
+        document.getElementById('collapse-legend').addEventListener('click', () => {
             const legend = document.getElementById('legend');
             legend.classList.toggle('collapsed');
-            const toggleButton = document.getElementById('toggle-legend');
-            toggleButton.textContent = legend.classList.contains('collapsed') ? 'Show Legend' : 'Hide Legend';
+            const toggleButton = document.getElementById('collapse-legend').querySelector('.icon');
+            toggleButton.textContent = legend.classList.contains('collapsed') ? '➤' : '✕';
         });
 
         async function loadEvents() {
