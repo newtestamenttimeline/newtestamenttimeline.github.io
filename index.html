@@ -113,7 +113,7 @@
         }
 
         .event.greyed-out {
-            background-color: var(--grey-out-color);
+            background-color: var (--grey-out-color);
         }
 
         .year-label {
@@ -224,9 +224,9 @@
         }
 
         .legend.collapsed {
-    display: none;
-}
-        
+            display: none;
+        }
+
         .question-mark {
             cursor: pointer;
             margin-left: 5px;
@@ -333,10 +333,10 @@
     <header>New Testament Timeline</header>
     <div class="main-content">
         <div class="top-half" id="timeline-container">
-           <div class="legend" id="legend">
-    <!-- Dynamic legend items will be injected here -->
-    <button id="toggle-legend" class="toggle-legend">Toggle Legend</button>
-</div>
+            <div class="legend" id="legend">
+                <!-- Dynamic legend items will be injected here -->
+                <button id="toggle-legend" class="toggle-legend">Hide Legend</button>
+            </div>
             <div class="timeline" id="timeline">
                 <span class="year-label" style="left: 0%;">0</span>
                 <span class="year-label" style="left: 10%;">140</span>
@@ -400,13 +400,13 @@
         const spacing = 15; // Space between dots
         const step = 5; // Increment for searching new positions
        
-// JavaScript to toggle the legend visibility
-document.getElementById('toggle-legend').addEventListener('click', () => {
-    const legend = document.getElementById('legend');
-    legend.classList.toggle('collapsed');
-    const toggleButton = document.getElementById('toggle-legend');
-    toggleButton.textContent = legend.classList.contains('collapsed') ? 'Show Legend' : 'Hide Legend';
-});
+        // JavaScript to toggle the legend visibility
+        document.getElementById('toggle-legend').addEventListener('click', () => {
+            const legend = document.getElementById('legend');
+            legend.classList.toggle('collapsed');
+            const toggleButton = document.getElementById('toggle-legend');
+            toggleButton.textContent = legend.classList.contains('collapsed') ? 'Show Legend' : 'Hide Legend';
+        });
 
         async function loadEvents() {
             try {
@@ -415,7 +415,7 @@ document.getElementById('toggle-legend').addEventListener('click', () => {
                 const uncialEvents = await fetch('uncials.json').then(response => response.json());
                 
                 // Clear existing events from the timeline to prevent duplication
-timeline.innerHTML = '';
+                timeline.innerHTML = '';
 
                 // Add historical events first
                 historicalEvents.forEach(event => {
@@ -464,7 +464,8 @@ timeline.innerHTML = '';
                 });
 
                 updateEvents();
-                initializeFilters();populateTextList();
+                initializeFilters();
+                populateTextList();
                 populateFamilyList();
                 generateLegend();
             } catch (error) {
@@ -476,104 +477,103 @@ timeline.innerHTML = '';
         const yearDotPlacements = {};
 
         function addEventToTimeline(event) {
-    // Check if the event is already in the timeline
-    if (document.querySelector(`.event[title="${event.title}"]`)) {
-        console.log(`Event ${event.title} already exists in the timeline. Skipping.`);
-        return;
-    }
+            // Check if the event is already in the timeline
+            if (document.querySelector(`.event[title="${event.title}"]`)) {
+                console.log(`Event ${event.title} already exists in the timeline. Skipping.`);
+                return;
+            }
 
-    const newEvent = document.createElement('div');
-    newEvent.className = 'event';
-    newEvent.setAttribute('data-year', event.year);
-    newEvent.setAttribute('title', event.title);
-    newEvent.setAttribute('data-description', event.description);
-    newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
-    newEvent.setAttribute('data-family', event.family || '');
-    newEvent.setAttribute('data-event-type', event.eventType);
+            const newEvent = document.createElement('div');
+            newEvent.className = 'event';
+            newEvent.setAttribute('data-year', event.year);
+            newEvent.setAttribute('title', event.title);
+            newEvent.setAttribute('data-description', event.description);
+            newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
+            newEvent.setAttribute('data-family', event.family || '');
+            newEvent.setAttribute('data-event-type', event.eventType);
 
-    if (event.eventType === 'manuscript') {
-        newEvent.classList.add('papyrus');
-    } else if (event.eventType === 'uncial') {
-        newEvent.classList.add('uncial');
-    }
+            if (event.eventType === 'manuscript') {
+                newEvent.classList.add('papyrus');
+            } else if (event.eventType === 'uncial') {
+                newEvent.classList.add('uncial');
+            }
 
-    if (!yearDotPlacements[event.year]) {
-        yearDotPlacements[event.year] = [];
-    }
+            if (!yearDotPlacements[event.year]) {
+                yearDotPlacements[event.year] = [];
+            }
 
-    const existingDots = yearDotPlacements[event.year];
-    const positions = Array.from(document.querySelectorAll('.event')).map(e => ({
-        left: parseFloat(e.style.left),
-        top: parseFloat(e.style.top)
-    }));
+            const existingDots = yearDotPlacements[event.year];
+            const positions = Array.from(document.querySelectorAll('.event')).map(e => ({
+                left: parseFloat(e.style.left),
+                top: parseFloat(e.style.top)
+            }));
 
-    // Adjust the newLeft calculation to scale from 0 to 1400 instead of 1000
-    let newLeft = (event.year / 1400) * 100;
-    let newTop = 0;
+            // Adjust the newLeft calculation to scale from 0 to 1400 instead of 1000
+            let newLeft = (event.year / 1400) * 100;
+            let newTop = 0;
 
-    if (existingDots.length === 0) {
-        newTop = 0;
-    } else if (existingDots.length === 1) {
-        newTop = Math.random() > 0.5 ? dotDiameter + spacing : -(dotDiameter + spacing);
-    } else {
-        const [lastTop] = existingDots.slice(-1);
-        newTop = lastTop > 0 ? -(dotDiameter + spacing) : dotDiameter + spacing;
+            if (existingDots.length === 0) {
+                newTop = 0;
+            } else if (existingDots.length === 1) {
+                newTop = Math.random() > 0.5 ? dotDiameter + spacing : -(dotDiameter + spacing);
+            } else {
+                const [lastTop] = existingDots.slice(-1);
+                newTop = lastTop > 0 ? -(dotDiameter + spacing) : dotDiameter + spacing;
 
-        if (isPositionOccupied(newLeft, newTop)) {
-            const directions = [[0, -spacing], [0, spacing], [-spacing, 0], [spacing, 0]];
-            shuffleArray(directions);
-            let found = false;
+                if (isPositionOccupied(newLeft, newTop)) {
+                    const directions = [[0, -spacing], [0, spacing], [-spacing, 0], [spacing, 0]];
+                    shuffleArray(directions);
+                    let found = false;
 
-            for (let i = 0; i < directions.length; i++) {
-                const [dx, dy] = directions[i];
-                if (!isPositionOccupied(newLeft + dx, newTop + dy)) {
-                    newLeft += dx;
-                    newTop += dy;
-                    found = true;
-                    break;
+                    for (let i = 0; i < directions.length; i++) {
+                        const [dx, dy] = directions[i];
+                        if (!isPositionOccupied(newLeft + dx, newTop + dy)) {
+                            newLeft += dx;
+                            newTop += dy;
+                            found = true;
+                            break;
+                        }
+                    }
+
+                    if (!found) {
+                        let tries = 0;
+                        const maxTries = 1000;
+                        while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
+                            newTop += newTop > 0 ? spacing + step : -(spacing + step);
+                            tries++;
+                        }
+                    }
                 }
             }
 
-            if (!found) {
-                let tries = 0;
-                const maxTries = 1000;
-                while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
-                    newTop += newTop > 0 ? spacing + step : -(spacing + step);
-                    tries++;
-                }
+            yearDotPlacements[event.year].push(newTop);
+            if (yearDotPlacements[event.year].length > 2) {
+                yearDotPlacements[event.year].shift();
             }
+
+            console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
+
+            newEvent.style.left = `${newLeft}%`;
+            newEvent.style.top = `${newTop}px`;
+
+            if (event.eventType === 'historical') {
+                newEvent.style.zIndex = 1;
+            } else {
+                newEvent.style.zIndex = 0;
+            }
+
+            const eventTypeColors = {
+                'historical': 'var(--secondary-color)',
+                'manuscript': 'var(--papyrus-color)',
+                'uncial': 'var(--uncial-color)'
+            };
+            if (!eventTypeColors[event.eventType]) {
+                eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            }
+            newEvent.style.backgroundColor = eventTypeColors[event.eventType];
+
+            timeline.appendChild(newEvent);
         }
-    }
-
-    yearDotPlacements[event.year].push(newTop);
-    if (yearDotPlacements[event.year].length > 2) {
-        yearDotPlacements[event.year].shift();
-    }
-
-    console.log(`Adjusted position for ${event.title}: left=${newLeft}%, top=${newTop}px`);
-
-    newEvent.style.left = `${newLeft}%`;
-    newEvent.style.top = `${newTop}px`;
-
-    if (event.eventType === 'historical') {
-        newEvent.style.zIndex = 1;
-    } else {
-        newEvent.style.zIndex = 0;
-    }
-
-    const eventTypeColors = {
-        'historical': 'var(--secondary-color)',
-        'manuscript': 'var(--papyrus-color)',
-        'uncial': 'var(--uncial-color)'
-    };
-    if (!eventTypeColors[event.eventType]) {
-        eventTypeColors[event.eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-    }
-    newEvent.style.backgroundColor = eventTypeColors[event.eventType];
-
-    timeline.appendChild(newEvent);
-}
-
 
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
@@ -638,134 +638,132 @@ timeline.innerHTML = '';
         }
 
         function filterEventsByText(text, isChecked) {
-    const events = document.querySelectorAll('.event');
-    console.log(`Filtering by text: ${text}, isChecked: ${isChecked}`);
-    events.forEach(event => {
-        const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-        console.log(`Event: ${event.getAttribute('title')}, Event Texts: ${eventTexts}`);
-        if (isChecked && eventTexts.includes(text)) {
-            console.log(`Showing event: ${event.getAttribute('title')}`);
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventTexts.includes(text)) {
-            console.log(`Hiding event: ${event.getAttribute('title')}`);
-            event.classList.add('greyed-out');
+            const events = document.querySelectorAll('.event');
+            console.log(`Filtering by text: ${text}, isChecked: ${isChecked}`);
+            events.forEach(event => {
+                const eventTexts = JSON.parse(event.getAttribute('data-texts'));
+                console.log(`Event: ${event.getAttribute('title')}, Event Texts: ${eventTexts}`);
+                if (isChecked && eventTexts.includes(text)) {
+                    console.log(`Showing event: ${event.getAttribute('title')}`);
+                    event.classList.remove('greyed-out');
+                } else if (!isChecked && eventTexts.includes(text)) {
+                    console.log(`Hiding event: ${event.getAttribute('title')}`);
+                    event.classList.add('greyed-out');
+                }
+            });
         }
-    });
-}
 
-function filterEventsByFamily(family, isChecked) {
-    const events = document.querySelectorAll('.event');
-    console.log(`Filtering by family: ${family}, isChecked: ${isChecked}`);
-    events.forEach(event => {
-        const eventFamily = event.getAttribute('data-family');
-        console.log(`Event: ${event.getAttribute('title')}, Event Family: ${eventFamily}`);
-        if (isChecked && eventFamily === family) {
-            console.log(`Showing event: ${event.getAttribute('title')}`);
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventFamily === family) {
-            console.log(`Hiding event: ${event.getAttribute('title')}`);
-            event.classList.add('greyed-out');
+        function filterEventsByFamily(family, isChecked) {
+            const events = document.querySelectorAll('.event');
+            console.log(`Filtering by family: ${family}, isChecked: ${isChecked}`);
+            events.forEach(event => {
+                const eventFamily = event.getAttribute('data-family');
+                console.log(`Event: ${event.getAttribute('title')}, Event Family: ${eventFamily}`);
+                if (isChecked && eventFamily === family) {
+                    console.log(`Showing event: ${event.getAttribute('title')}`);
+                    event.classList.remove('greyed-out');
+                } else if (!isChecked && eventFamily === family) {
+                    console.log(`Hiding event: ${event.getAttribute('title')}`);
+                    event.classList.add('greyed-out');
+                }
+            });
         }
-    });
-}
 
-// CSS class to hide elements
-const css = `
-    .greyed-out {
-        display: none;
-    }
-`;
-const style = document.createElement('style');
-style.appendChild(document.createTextNode(css));
-document.head.appendChild(style);
-
-// Initialize event listeners
-function initializeFilters() {
-    const textList = document.getElementById('text-list');
-    const familyList = document.getElementById('family-list');
-
-    texts.forEach(text => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
-        listItem.querySelector('input').addEventListener('change', (e) => {
-            console.log(`Text filter changed: ${text}, Checked: ${e.target.checked}`);
-            filterEventsByText(text, e.target.checked);
-        });
-        textList.appendChild(listItem);
-    });
-
-    families.forEach(family => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
-        listItem.querySelector('input').addEventListener('change', (e) => {
-            console.log(`Family filter changed: ${family}, Checked: ${e.target.checked}`);
-            filterEventsByFamily(family, e.target.checked);
-        });
-        familyList.appendChild(listItem);
-    });
-}
-
-// Load events and initialize filters
-async function loadEvents() {
-    try {
-        const historicalEvents = await fetch('historical_events.json').then(response => response.json());
-        const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
-        const uncialEvents = await fetch('uncials.json').then(response => response.json());
-
-        historicalEvents.forEach(event => {
-            event.percentage = (event.year / 1400) * 100;
-            console.log(`Adding historical event: ${event.title}, Year: ${event.year}, Texts: ${event.texts}, Family: ${event.family}`);
-            addEventToTimeline(event);
-            eventTypes.add(event.eventType);
-        });
-
-        manuscriptEvents.forEach(event => {
-            if (event.yearRange) {
-                const yearRange = event.yearRange;
-                const eventYear = (yearRange[0] + yearRange[1]) / 2;
-                event.year = eventYear;
-                event.percentage = (eventYear / 1400) * 100;
+        // CSS class to hide elements
+        const css = `
+            .greyed-out {
+                display: none;
             }
-            console.log(`Adding manuscript event: ${event.title}, Year: ${event.year}, Texts: ${event.texts}, Family: ${event.family}`);
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
-            }
-            if (event.family) {
-                families.add(event.family);
-            }
-            eventTypes.add(event.eventType);
-        });
+        `;
+        const style = document.createElement('style');
+        style.appendChild(document.createTextNode(css));
+        document.head.appendChild(style);
 
-        uncialEvents.forEach(event => {
-            if (event.yearRange) {
-                const yearRange = event.yearRange;
-                const eventYear = (yearRange[0] + yearRange[1]) / 2;
-                event.year = eventYear;
-                event.percentage = (eventYear / 1400) * 100;
+        // Initialize event listeners
+        function initializeFilters() {
+            const textList = document.getElementById('text-list');
+            const familyList = document.getElementById('family-list');
+
+            texts.forEach(text => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
+                listItem.querySelector('input').addEventListener('change', (e) => {
+                    console.log(`Text filter changed: ${text}, Checked: ${e.target.checked}`);
+                    filterEventsByText(text, e.target.checked);
+                });
+                textList.appendChild(listItem);
+            });
+
+            families.forEach(family => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
+                listItem.querySelector('input').addEventListener('change', (e) => {
+                    console.log(`Family filter changed: ${family}, Checked: ${e.target.checked}`);
+                    filterEventsByFamily(family, e.target.checked);
+                });
+                familyList.appendChild(listItem);
+            });
+        }
+
+        // Load events and initialize filters
+        async function loadEvents() {
+            try {
+                const historicalEvents = await fetch('historical_events.json').then(response => response.json());
+                const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
+                const uncialEvents = await fetch('uncials.json').then(response => response.json());
+
+                historicalEvents.forEach(event => {
+                    event.percentage = (event.year / 1400) * 100;
+                    console.log(`Adding historical event: ${event.title}, Year: ${event.year}, Texts: ${event.texts}, Family: ${event.family}`);
+                    addEventToTimeline(event);
+                    eventTypes.add(event.eventType);
+                });
+
+                manuscriptEvents.forEach(event => {
+                    if (event.yearRange) {
+                        const yearRange = event.yearRange;
+                        const eventYear = (yearRange[0] + yearRange[1]) / 2;
+                        event.year = eventYear;
+                        event.percentage = (eventYear / 1400) * 100;
+                    }
+                    console.log(`Adding manuscript event: ${event.title}, Year: ${event.year}, Texts: ${event.texts}, Family: ${event.family}`);
+                    addEventToTimeline(event);
+                    if (event.texts) {
+                        event.texts.forEach(text => texts.add(text));
+                    }
+                    if (event.family) {
+                        families.add(event.family);
+                    }
+                    eventTypes.add(event.eventType);
+                });
+
+                uncialEvents.forEach(event => {
+                    if (event.yearRange) {
+                        const yearRange = event.yearRange;
+                        const eventYear = (yearRange[0] + yearRange[1]) / 2;
+                        event.year = eventYear;
+                        event.percentage = (eventYear / 1400) * 100;
+                    }
+                    console.log(`Adding uncial event: ${event.title}, Year: ${event.year}, Texts: ${event.texts}, Family: ${event.family}`);
+                    addEventToTimeline(event);
+                    if (event.texts) {
+                        event.texts.forEach(text => texts.add(text));
+                    }
+                    if (event.family) {
+                        families.add(event.family);
+                    }
+                    eventTypes.add(event.eventType);
+                });
+
+                updateEvents();
+                initializeFilters();
+                generateLegend();
+            } catch (error) {
+                console.error('Error loading events:', error);
             }
-            console.log(`Adding uncial event: ${event.title}, Year: ${event.year}, Texts: ${event.texts}, Family: ${event.family}`);
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
-            }
-            if (event.family) {
-                families.add(event.family);
-            }
-            eventTypes.add(event.eventType);
-        });
+        }
 
-        updateEvents();
-        initializeFilters();
-        generateLegend();
-    } catch (error) {
-        console.error('Error loading events:', error);
-    }
-}
-
-loadEvents(); // Ensure this is called when the page loads
-
-
+        loadEvents(); // Ensure this is called when the page loads
 
         function generateLegend() {
             legendContainer.innerHTML = ''; // Clear existing legend items
@@ -817,19 +815,18 @@ loadEvents(); // Ensure this is called when the page loads
 
                 const label = document.createElement('span');
                 label.textContent = eventType.charAt(0).toUpperCase() + eventType.slice(1) + ' Events';
-                
 
                 const questionMark = document.createElement('span');
-questionMark.className = 'question-mark';
-questionMark.textContent = '?';
-const tooltip = document.createElement('span');
-tooltip.className = 'tooltip';
-tooltip.textContent = `Filter events by ${eventType} type`;
-questionMark.appendChild(tooltip);
-legendItem.appendChild(checkbox);
-legendItem.appendChild(legendColor);
-legendItem.appendChild(label);
-legendItem.appendChild(questionMark);
+                questionMark.className = 'question-mark';
+                questionMark.textContent = '?';
+                const tooltip = document.createElement('span');
+                tooltip.className = 'tooltip';
+                tooltip.textContent = `Filter events by ${eventType} type`;
+                questionMark.appendChild(tooltip);
+                legendItem.appendChild(checkbox);
+                legendItem.appendChild(legendColor);
+                legendItem.appendChild(label);
+                legendItem.appendChild(questionMark);
 
                 legendContainer.appendChild(legendItem);
             });
@@ -854,8 +851,6 @@ legendItem.appendChild(questionMark);
         function toggleSidebar() {
             sidebar.classList.toggle('collapsed');
         }
-
-        loadEvents(); // Ensure this is called when the page loads
 
         // Zoom functionality
         document.getElementById('zoom-in').addEventListener('click', () => {
