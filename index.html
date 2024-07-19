@@ -337,6 +337,21 @@
                 <!-- Dynamic legend items will be injected here -->
                 <button id="toggle-legend" class="toggle-legend">Hide Legend</button>
             </div>
+            <script>
+    // JavaScript to toggle the legend visibility
+    document.getElementById('toggle-legend').addEventListener('click', () => {
+        const legend = document.getElementById('legend');
+        const toggleButton = document.getElementById('toggle-legend');
+        
+        if (legend.classList.contains('collapsed')) {
+            legend.classList.remove('collapsed');
+            toggleButton.textContent = 'Hide Legend';
+        } else {
+            legend.classList.add('collapsed');
+            toggleButton.textContent = 'Show Legend';
+        }
+    });
+</script>
             <div class="timeline" id="timeline">
                 <span class="year-label" style="left: 0%;">0</span>
                 <span class="year-label" style="left: 10%;">140</span>
