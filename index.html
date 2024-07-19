@@ -223,6 +223,10 @@
             margin-right: 5px;
         }
 
+        .legend.collapsed {
+    display: none;
+}
+        
         .question-mark {
             cursor: pointer;
             margin-left: 5px;
@@ -329,9 +333,10 @@
     <header>New Testament Timeline</header>
     <div class="main-content">
         <div class="top-half" id="timeline-container">
-            <div class="legend" id="legend">
-                <!-- Dynamic legend items will be injected here -->
-            </div>
+           <div class="legend" id="legend">
+    <!-- Dynamic legend items will be injected here -->
+    <button id="toggle-legend" class="toggle-legend">Toggle Legend</button>
+</div>
             <div class="timeline" id="timeline">
                 <span class="year-label" style="left: 0%;">0</span>
                 <span class="year-label" style="left: 10%;">140</span>
@@ -394,6 +399,14 @@
         const dotDiameter = 12; // 12 pixels
         const spacing = 15; // Space between dots
         const step = 5; // Increment for searching new positions
+       
+// JavaScript to toggle the legend visibility
+document.getElementById('toggle-legend').addEventListener('click', () => {
+    const legend = document.getElementById('legend');
+    legend.classList.toggle('collapsed');
+    const toggleButton = document.getElementById('toggle-legend');
+    toggleButton.textContent = legend.classList.contains('collapsed') ? 'Show Legend' : 'Hide Legend';
+});
 
         async function loadEvents() {
             try {
