@@ -224,8 +224,20 @@
         }
 
         .legend.collapsed {
-            display: none;
+            width: 40px;
+    overflow: hidden;
         }
+
+        .toggle-legend {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
 
         .question-mark {
             cursor: pointer;
@@ -334,8 +346,8 @@
     <div class="main-content">
         <div class="top-half" id="timeline-container">
             <div class="legend" id="legend">
-                <!-- Dynamic legend items will be injected here -->
                 <button id="toggle-legend" class="toggle-legend">Hide Legend</button>
+                <!-- Dynamic legend items will be injected here -->
             </div>
             <script>
     // JavaScript to toggle the legend visibility
