@@ -43,11 +43,13 @@
 </select>
 <button onclick="loadSelectedFile()">Load Selected File</button>
 <button onclick="exportJSON()">Export JSON</button>
+<button onclick="addRow()">Add Row</button>
 
 <table id="eventTable">
     <thead>
         <tr>
-            <th>Year</th>
+            <th>Start Year</th>
+            <th>End Year</th>
             <th>Title</th>
             <th>Description</th>
             <th>Texts</th>
@@ -91,7 +93,8 @@ function loadTable() {
     eventData.forEach((event, index) => {
         const row = tableBody.insertRow();
         row.innerHTML = `
-            <td><input type="number" value="${event.year}" onchange="updateEvent(${index}, 'year', this.value)" /></td>
+            <td><input type="number" value="${event.yearRange ? event.yearRange[0] : ''}" onchange="updateEvent(${index}, 'yearRangeStart', this.value)" /></td>
+            <td><input type="number" value="${event.yearRange ? event.yearRange[1] : ''}" onchange="updateEvent(${index}, 'yearRangeEnd', this.value)" /></td>
             <td><input type="text" value="${event.title}" onchange="updateEvent(${index}, 'title', this.value)" /></td>
             <td><input type="text" value="${event.description}" onchange="updateEvent(${index}, 'description', this.value)" /></td>
             <td><input type="text" value="${event.texts.join(', ')}" onchange="updateEvent(${index}, 'texts', this.value.split(', '))" /></td>
@@ -105,9 +108,29 @@ function loadTable() {
 function updateEvent(index, key, value) {
     if (key === 'texts') {
         eventData[index][key] = value.split(',').map(text => text.trim());
+    } else if (key === 'yearRangeStart') {
+        eventData[index]['yearRange'] = eventData[index]['yearRange'] || [];
+        eventData[index]['yearRange'][0] = Number(value);
+    } else if (key === 'yearRangeEnd') {
+        eventData[index]['yearRange'] = eventData[index]['yearRange'] || [];
+        eventData[index]['yearRange'][1] = Number(value);
     } else {
         eventData[index][key] = value;
     }
+}
+
+function addRow() {
+    const newRow = {
+        yearRange: [null, null],
+        title: '',
+        description: '',
+        texts: [],
+        family: '',
+        left: null,
+        top: null
+    };
+    eventData.push(newRow);
+    loadTable();
 }
 
 function exportJSON() {
