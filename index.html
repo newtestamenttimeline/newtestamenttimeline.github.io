@@ -54,17 +54,11 @@
             position: relative;
         }
 
-        .timeline-container {
-            width: 100%;
-            overflow-x: auto;
-        }
-
         .timeline {
             width: 14000px;
             height: 4px;
             background-color: var(--primary-color);
             position: relative;
-            transition: transform 0.3s ease;
         }
 
         .timeline::before,
@@ -195,13 +189,13 @@
             padding: 10px;
             border-radius: 5px;
             font-size: 14px;
-            transition: transform 0.3s ease;
         }
 
         .legend-item {
             display: flex;
             align-items: center;
             margin-bottom: 5px;
+            position: relative;
         }
 
         .legend-color {
@@ -211,59 +205,90 @@
             margin-right: 8px;
         }
 
-        .legend-color.historical {
-            background-color: var(--secondary-color);
-        }
-
-        .legend-color.manuscript {
-            background-color: var(--papyrus-color);
-        }
-
         .legend-checkbox {
             margin-right: 5px;
         }
 
         .legend.collapsed {
-            transform: translateX(calc(-100% + 30px));
+            max-width: 40px;
+            overflow: hidden;
+            padding: 10px 0;
         }
 
-        #collapse-legend {
-            position: absolute;
-            top: 0;
-            right: -30px;
-            background-color: #000;
+        .toggle-legend {
+            background-color: var(--primary-color);
+            color: var(--text-color);
             border: none;
+            padding: 5px 10px;
             cursor: pointer;
+            border-radius: 5px;
+            align-self: flex-start;
+            margin-bottom: 5px;
+        }
+
+        .question-mark {
+            cursor: pointer;
+            margin-left: 5px;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .tooltip {
+            visibility: hidden;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
             padding: 5px;
-            width: 30px;
-            height: 100%;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            width: 120px;
+        }
+
+        .question-mark:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .timeline-controls {
+            position: absolute;
+            top: 10px;
+            right: 10px;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-        }
-
-        #collapse-legend:hover {
-            background-color: #333;
-        }
-
-        #collapse-legend:focus {
-            outline: none;
+            gap: 10px;
         }
 
         .arrow {
-            width: 0;
-            height: 0;
-            border-top: 8px solid transparent;
-            border-bottom: 8px solid transparent;
-            border-right: 8px solid var(--text-color);
-            transition: transform 0.3s ease;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            transform: rotate(45deg);
+            transition: transform 0.3s;
         }
 
-        .legend.collapsed .arrow {
-            transform: rotate(180deg);
+        .arrow.collapsed {
+            transform: rotate(-135deg);
+        }
+
+        .arrow-reverse {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            transform: rotate(-135deg);
+            transition: transform 0.3s;
+        }
+
+        .arrow-reverse.collapsed {
+            transform: rotate(45deg);
         }
 
         @media (max-width: 768px) {
@@ -329,34 +354,6 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #777;
         }
-        .question-mark {
-    cursor: pointer;
-    margin-left: 5px;
-    color: var(--primary-color);
-    position: relative;
-}
-
-.tooltip {
-    visibility: hidden;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-    width: 120px;
-}
-
-.question-mark:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
     </style>
 </head>
 <body>
@@ -364,34 +361,23 @@
     <div class="main-content">
         <div class="top-half" id="timeline-container">
             <div class="legend" id="legend">
-                <div class="legend-item">
-                    <input type="checkbox" class="legend-checkbox" id="historical-checkbox" checked>
-                    <div class="legend-color historical"></div>
-                    <span>Historical Events</span>
-                </div>
-                <div class="legend-item">
-                    <input type="checkbox" class="legend-checkbox" id="manuscript-checkbox" checked>
-                    <div class="legend-color manuscript"></div>
-                    <span>Biblical Manuscripts</span>
-                </div>
-                <button id="collapse-legend" aria-label="Toggle legend">
+                <button id="toggle-legend" aria-label="Toggle legend" class="toggle-legend">
                     <div class="arrow"></div>
                 </button>
+                <!-- Dynamic legend items will be injected here -->
             </div>
-            <div class="timeline-container">
-                <div class="timeline" id="timeline">
-                    <span class="year-label" style="left: 0%;">0</span>
-                    <span class="year-label" style="left: 10%;">140</span>
-                    <span class="year-label" style="left: 20%;">280</span>
-                    <span class="year-label" style="left: 30%;">420</span>
-                    <span class="year-label" style="left: 40%;">560</span>
-                    <span class="year-label" style="left: 50%;">700</span>
-                    <span class="year-label" style="left: 60%;">840</span>
-                    <span class="year-label" style="left: 70%;">980</span>
-                    <span class="year-label" style="left: 80%;">1120</span>
-                    <span class="year-label" style="left: 90%;">1260</span>
-                    <span class="year-label" style="left: 100%;">1400</span>
-                </div>
+            <div class="timeline" id="timeline">
+                <span class="year-label" style="left: 0%;">0</span>
+                <span class="year-label" style="left: 10%;">140</span>
+                <span class="year-label" style="left: 20%;">280</span>
+                <span class="year-label" style="left: 30%;">420</span>
+                <span class="year-label" style="left: 40%;">560</span>
+                <span class="year-label" style="left: 50%;">700</span>
+                <span class="year-label" style="left: 60%;">840</span>
+                <span class="year-label" style="left: 70%;">980</span>
+                <span class="year-label" style="left: 80%;">1120</span>
+                <span class="year-label" style="left: 90%;">1260</span>
+                <span class="year-label" style="left: 100%;">1400</span>
             </div>
             <div class="timeline-controls">
                 <button id="zoom-in">+</button>
@@ -435,7 +421,7 @@
         const timelineContainer = document.getElementById('timeline-container');
         const content = document.getElementById('event-content');
         const sidebar = document.getElementById('sidebar');
-        const legend = document.getElementById('legend');
+        const legendContainer = document.getElementById('legend');
         let scale = 1;
         let selectedEvent = null;
         const texts = new Set();
@@ -447,8 +433,11 @@
 
         const eventTypeColors = {};
 
-        document.getElementById('collapse-legend').addEventListener('click', () => {
+        document.getElementById('toggle-legend').addEventListener('click', () => {
+            const legend = document.getElementById('legend');
             legend.classList.toggle('collapsed');
+            const arrow = document.querySelector('#toggle-legend .arrow');
+            arrow.classList.toggle('collapsed');
         });
 
         document.getElementById('toggle-sidebar').addEventListener('click', () => {
@@ -458,62 +447,63 @@
         });
 
         async function loadEvents() {
-    try {
-        const historicalEvents = await fetch('historical_events.json').then(response => response.json());
-        const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
-        const uncialEvents = await fetch('uncials.json').then(response => response.json());
+            try {
+                const historicalEvents = await fetch('historical_events.json').then(response => response.json());
+                const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
+                const uncialEvents = await fetch('uncials.json').then(response => response.json());
 
-        historicalEvents.forEach(event => {
-            event.percentage = (event.year / 1400) * 100;
-            addEventToTimeline(event);
-            eventTypes.add(event.eventType);
-        });
+                timeline.innerHTML = '';
 
-        manuscriptEvents.forEach(event => {
-            if (event.yearRange) {
-                const yearRange = event.yearRange;
-                const eventYear = (yearRange[0] + yearRange[1]) / 2;
-                event.year = eventYear;
-                event.percentage = (eventYear / 1400) * 100;
-            }
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
-            }
-            if (event.family) {
-                families.add(event.family);
-            }
-            eventTypes.add(event.eventType);
-        });
+                historicalEvents.forEach(event => {
+                    event.percentage = (event.year / 1400) * 100;
+                    addEventToTimeline(event);
+                    eventTypes.add(event.eventType);
+                });
 
-        uncialEvents.forEach(event => {
-            if (event.yearRange) {
-                const yearRange = event.yearRange;
-                const eventYear = (yearRange[0] + yearRange[1]) / 2;
-                event.year = eventYear;
-                event.percentage = (eventYear / 1400) * 100;
-            }
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
-            }
-            if (event.family) {
-                families.add(event.family);
-            }
-            eventTypes.add(event.eventType);
-        });
+                manuscriptEvents.forEach(event => {
+                    if (event.yearRange) {
+                        const yearRange = event.yearRange;
+                        const eventYear = (yearRange[0] + yearRange[1]) / 2;
+                        event.year = eventYear;
+                        event.percentage = (eventYear / 1400) * 100;
+                    }
+                    addEventToTimeline(event);
+                    if (event.texts) {
+                        event.texts.forEach(text => texts.add(text));
+                    }
+                    if (event.family) {
+                        families.add(event.family);
+                    }
+                    eventTypes.add(event.eventType);
+                });
 
-        generateColorsForEventTypes();
-        updateEvents();
-        initializeFilters();
-        populateTextList();
-        populateFamilyList();
-        generateLegend();
-    } catch (error) {
-        console.error('Error loading events:', error);
-    }
-}
+                uncialEvents.forEach(event => {
+                    if (event.yearRange) {
+                        const yearRange = event.yearRange;
+                        const eventYear = (yearRange[0] + yearRange[1]) / 2;
+                        event.year = eventYear;
+                        event.percentage = (eventYear / 1400) * 100;
+                    }
+                    addEventToTimeline(event);
+                    if (event.texts) {
+                        event.texts.forEach(text => texts.add(text));
+                    }
+                    if (event.family) {
+                        families.add(event.family);
+                    }
+                    eventTypes.add(event.eventType);
+                });
 
+                generateColorsForEventTypes();
+                updateEvents();
+                initializeFilters();
+                populateTextList();
+                populateFamilyList();
+                generateLegend();
+            } catch (error) {
+                console.error('Error loading events:', error);
+            }
+        }
 
         const yearDotPlacements = {};
 
@@ -722,53 +712,50 @@
         loadEvents();
 
         function generateLegend() {
-    const legendContainer = document.getElementById('legend');
-    legendContainer.innerHTML = ''; // Clear previous legend items
+            legendContainer.innerHTML = '';
 
-    eventTypes.forEach(eventType => {
-        const legendItem = document.createElement('div');
-        legendItem.className = 'legend-item';
+            eventTypes.forEach(eventType => {
+                const legendItem = document.createElement('div');
+                legendItem.className = 'legend-item';
 
-        const legendColor = document.createElement('div');
-        legendColor.className = 'legend-color';
-        legendColor.style.backgroundColor = getColorForEventType(eventType);
+                const legendColor = document.createElement('div');
+                legendColor.className = 'legend-color';
+                legendColor.style.backgroundColor = getColorForEventType(eventType);
 
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.className = 'legend-checkbox';
-        checkbox.checked = true;
-        checkbox.addEventListener('change', (e) => {
-            toggleEventsByType(eventType, e.target.checked);
-        });
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.className = 'legend-checkbox';
+                checkbox.checked = true;
+                checkbox.addEventListener('change', (e) => {
+                    toggleEventsByType(eventType, e.target.checked);
+                });
 
-        const label = document.createElement('span');
-        label.textContent = eventType.charAt(0).toUpperCase() + eventType.slice(1) + ' Events';
+                const label = document.createElement('span');
+                label.textContent = eventType.charAt(0).toUpperCase() + eventType.slice(1) + ' Events';
 
-        const questionMark = document.createElement('span');
-        questionMark.className = 'question-mark';
-        questionMark.textContent = '?';
-        const tooltip = document.createElement('span');
-        tooltip.className = 'tooltip';
-        tooltip.textContent = `Filter events by ${eventType} type`;
-        questionMark.appendChild(tooltip);
-        legendItem.appendChild(checkbox);
-        legendItem.appendChild(legendColor);
-        legendItem.appendChild(label);
-        legendItem.appendChild(questionMark);
+                const questionMark = document.createElement('span');
+                questionMark.className = 'question-mark';
+                questionMark.textContent = '?';
+                const tooltip = document.createElement('span');
+                tooltip.className = 'tooltip';
+                tooltip.textContent = `Filter events by ${eventType} type`;
+                questionMark.appendChild(tooltip);
+                legendItem.appendChild(checkbox);
+                legendItem.appendChild(legendColor);
+                legendItem.appendChild(label);
+                legendItem.appendChild(questionMark);
 
-        legendContainer.appendChild(legendItem);
-    });
+                legendContainer.appendChild(legendItem);
+            });
 
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventType = event.getAttribute('data-event-type');
-        if (eventTypeColors[eventType]) {
-            event.style.backgroundColor = eventTypeColors[eventType];
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                const eventType = event.getAttribute('data-event-type');
+                if (eventTypeColors[eventType]) {
+                    event.style.backgroundColor = eventTypeColors[eventType];
+                }
+            });
         }
-    });
-}
-
-
 
         function toggleEventsByType(eventType, isChecked) {
             const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
