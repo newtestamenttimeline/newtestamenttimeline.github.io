@@ -99,7 +99,7 @@ function loadTable() {
             <td><input type="number" value="${event.yearRange ? event.yearRange[1] : ''}" onchange="updateEvent(${index}, 'yearRangeEnd', this.value)" /></td>
             <td><input type="text" value="${event.title}" onchange="updateEvent(${index}, 'title', this.value)" /></td>
             <td><input type="text" value="${event.description}" onchange="updateEvent(${index}, 'description', this.value)" /></td>
-            <td><input type="text" value="${event.texts ? event.texts.join(', ') : ''}" onchange="updateEvent(${index}, 'texts', this.value.split(', '))" /></td>
+            <td><input type="text" value="${event.texts ? event.texts.join(', ') : ''}" onchange="updateEvent(${index}, 'texts', this.value.split(',').map(text => text.trim()))" /></td>
             <td><input type="text" value="${event.family || ''}" onchange="updateEvent(${index}, 'family', this.value)" /></td>
             <td><input type="number" value="${event.left || ''}" onchange="updateEvent(${index}, 'left', this.value)" /></td>
             <td><input type="number" value="${event.top || ''}" onchange="updateEvent(${index}, 'top', this.value)" /></td>
