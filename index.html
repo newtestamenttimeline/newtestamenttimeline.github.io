@@ -399,6 +399,8 @@
         const spacing = 15;
         const step = 5;
 
+        const eventTypeColors = {};
+
         document.getElementById('toggle-legend').addEventListener('click', () => {
             const legend = document.getElementById('legend');
             legend.classList.toggle('collapsed');
@@ -454,6 +456,7 @@
                     eventTypes.add(event.eventType);
                 });
 
+                generateColorsForEventTypes();
                 updateEvents();
                 initializeFilters();
                 populateTextList();
@@ -535,7 +538,7 @@
             newEvent.style.left = `${newLeft}%`;
             newEvent.style.top = `${newTop}px`;
 
-            newEvent.style.backgroundColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            newEvent.style.backgroundColor = getColorForEventType(event.eventType);
 
             timeline.appendChild(newEvent);
         }
@@ -656,58 +659,16 @@
             });
         }
 
-        async function loadEvents() {
-            try {
-                const historicalEvents = await fetch('historical_events.json').then(response => response.json());
-                const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
-                const uncialEvents = await fetch('uncials.json').then(response => response.json());
+        function generateColorsForEventTypes() {
+            eventTypes.forEach(eventType => {
+                if (!eventTypeColors[eventType]) {
+                    eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+                }
+            });
+        }
 
-                historicalEvents.forEach(event => {
-                    event.percentage = (event.year / 1400) * 100;
-                    addEventToTimeline(event);
-                    eventTypes.add(event.eventType);
-                });
-
-                manuscriptEvents.forEach(event => {
-                    if (event.yearRange) {
-                        const yearRange = event.yearRange;
-                        const eventYear = (yearRange[0] + yearRange[1]) / 2;
-                        event.year = eventYear;
-                        event.percentage = (eventYear / 1400) * 100;
-                    }
-                    addEventToTimeline(event);
-                    if (event.texts) {
-                        event.texts.forEach(text => texts.add(text));
-                    }
-                    if (event.family) {
-                        families.add(event.family);
-                    }
-                    eventTypes.add(event.eventType);
-                });
-
-                uncialEvents.forEach(event => {
-                    if (event.yearRange) {
-                        const yearRange = event.yearRange;
-                        const eventYear = (yearRange[0] + yearRange[1]) / 2;
-                        event.year = eventYear;
-                        event.percentage = (eventYear / 1400) * 100;
-                    }
-                    addEventToTimeline(event);
-                    if (event.texts) {
-                        event.texts.forEach(text => texts.add(text));
-                    }
-                    if (event.family) {
-                        families.add(event.family);
-                    }
-                    eventTypes.add(event.eventType);
-                });
-
-                updateEvents();
-                initializeFilters();
-                generateLegend();
-            } catch (error) {
-                console.error('Error loading events:', error);
-            }
+        function getColorForEventType(eventType) {
+            return eventTypeColors[eventType];
         }
 
         loadEvents();
@@ -721,7 +682,7 @@
 
                 const legendColor = document.createElement('div');
                 legendColor.className = 'legend-color';
-                legendColor.style.backgroundColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+                legendColor.style.backgroundColor = getColorForEventType(eventType);
 
                 const checkbox = document.createElement('input');
                 checkbox.type = 'checkbox';
@@ -751,7 +712,10 @@
 
             const events = document.querySelectorAll('.event');
             events.forEach(event => {
-                event.style.backgroundColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+                const eventType = event.getAttribute('data-event-type');
+                if (eventTypeColors[eventType]) {
+                    event.style.backgroundColor = eventTypeColors[eventType];
+                }
             });
         }
 
