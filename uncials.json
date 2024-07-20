@@ -5,7 +5,7 @@
         "percentage": 33,
         "eventType": "uncial",
         "description": "Uncial 1 contains parts of the Gospel of Matthew and is dated paleographically to the early 4th century.",
-        "texts": ["Matthew, John"],
+        "texts": ["Matthew"],
         "family": "Alexandrian"
     },
     {
