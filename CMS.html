@@ -41,7 +41,7 @@
     <option value="uncials.json">Uncials</option>
     <!-- Add more options here for any additional JSON files -->
 </select>
-<input type="file" id="fileInput" class="hidden" />
+<input type="file" id="fileInput" style="display: none;" />
 <button onclick="loadSelectedFile()">Load Selected File</button>
 <button onclick="exportJSON()">Export JSON</button>
 
@@ -96,7 +96,7 @@ function loadTable() {
 }
 
 function updateEvent(index, key, value) {
-    eventData[index][key] = value;
+    eventData[index][key] = key === 'texts' ? value.split(',').map(text => text.trim()) : value;
 }
 
 function exportJSON() {
