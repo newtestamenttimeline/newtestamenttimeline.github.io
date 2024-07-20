@@ -398,7 +398,7 @@
         const dotDiameter = 12;
         const spacing = 15;
         const step = 5;
-       
+
         document.getElementById('toggle-legend').addEventListener('click', () => {
             const legend = document.getElementById('legend');
             legend.classList.toggle('collapsed');
@@ -411,7 +411,7 @@
                 const historicalEvents = await fetch('historical_events.json').then(response => response.json());
                 const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
                 const uncialEvents = await fetch('uncials.json').then(response => response.json());
-                
+
                 timeline.innerHTML = '';
 
                 historicalEvents.forEach(event => {
@@ -534,12 +534,6 @@
 
             newEvent.style.left = `${newLeft}%`;
             newEvent.style.top = `${newTop}px`;
-
-            if (event.eventType === 'historical') {
-                newEvent.style.zIndex = 1;
-            } else {
-                newEvent.style.zIndex = 0;
-            }
 
             newEvent.style.backgroundColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
@@ -721,38 +715,13 @@
         function generateLegend() {
             legendContainer.innerHTML = '';
 
-            const colorPalette = [
-                '#40e0d0',
-                '#ffa500',
-                '#9370db',
-                '#ff69b4',
-                '#7fff00',
-                '#1e90ff',
-                '#ff4500',
-                '#f08080',
-                '#ff8c00',
-                '#4682b4'
-            ];
-
-            const eventTypeColors = {};
-
-            let colorIndex = 0;
-            eventTypes.forEach(eventType => {
-                if (colorIndex >= colorPalette.length) {
-                    eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-                } else {
-                    eventTypeColors[eventType] = colorPalette[colorIndex];
-                }
-                colorIndex++;
-            });
-
             eventTypes.forEach(eventType => {
                 const legendItem = document.createElement('div');
                 legendItem.className = 'legend-item';
 
                 const legendColor = document.createElement('div');
                 legendColor.className = 'legend-color';
-                legendColor.style.backgroundColor = eventTypeColors[eventType];
+                legendColor.style.backgroundColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
                 const checkbox = document.createElement('input');
                 checkbox.type = 'checkbox';
@@ -782,10 +751,7 @@
 
             const events = document.querySelectorAll('.event');
             events.forEach(event => {
-                const eventType = event.getAttribute('data-event-type');
-                if (eventTypeColors[eventType]) {
-                    event.style.backgroundColor = eventTypeColors[eventType];
-                }
+                event.style.backgroundColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
             });
         }
 
