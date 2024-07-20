@@ -263,6 +263,34 @@
             gap: 10px;
         }
 
+        .arrow {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            transform: rotate(45deg);
+            transition: transform 0.3s;
+        }
+
+        .arrow.collapsed {
+            transform: rotate(-135deg);
+        }
+
+        .arrow-reverse {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            transform: rotate(-135deg);
+            transition: transform 0.3s;
+        }
+
+        .arrow-reverse.collapsed {
+            transform: rotate(45deg);
+        }
+
         @media (max-width: 768px) {
             header {
                 font-size: 20px;
@@ -333,7 +361,9 @@
     <div class="main-content">
         <div class="top-half" id="timeline-container">
             <div class="legend" id="legend">
-                <button id="toggle-legend" class="toggle-legend">Hide Legend</button>
+                <button id="toggle-legend" aria-label="Toggle legend" class="toggle-legend">
+                    <div class="arrow"></div>
+                </button>
                 <!-- Dynamic legend items will be injected here -->
             </div>
             <div class="timeline" id="timeline">
@@ -363,7 +393,9 @@
                 </div>
             </div>
             <div class="sidebar" id="sidebar">
-                <button class="toggle-sidebar" onclick="toggleSidebar()">Filters</button>
+                <button id="toggle-sidebar" aria-label="Toggle sidebar" class="toggle-sidebar">
+                    <div class="arrow-reverse"></div>
+                </button>
                 <div class="sidebar-section">
                     <h3>Texts <span class="question-mark">?
                         <span class="tooltip">Filter events by specific texts.</span>
@@ -404,8 +436,14 @@
         document.getElementById('toggle-legend').addEventListener('click', () => {
             const legend = document.getElementById('legend');
             legend.classList.toggle('collapsed');
-            const toggleButton = document.getElementById('toggle-legend');
-            toggleButton.textContent = legend.classList.contains('collapsed') ? 'Show Legend' : 'Hide Legend';
+            const arrow = document.querySelector('#toggle-legend .arrow');
+            arrow.classList.toggle('collapsed');
+        });
+
+        document.getElementById('toggle-sidebar').addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            const arrow = document.querySelector('#toggle-sidebar .arrow-reverse');
+            arrow.classList.toggle('collapsed');
         });
 
         async function loadEvents() {
