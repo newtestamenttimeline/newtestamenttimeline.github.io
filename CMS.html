@@ -41,7 +41,6 @@
     <option value="uncials.json">Uncials</option>
     <!-- Add more options here for any additional JSON files -->
 </select>
-<input type="file" id="fileInput" style="display: none;" />
 <button onclick="loadSelectedFile()">Load Selected File</button>
 <button onclick="exportJSON()">Export JSON</button>
 
@@ -70,12 +69,20 @@ function loadSelectedFile() {
     const fileSelector = document.getElementById('fileSelector');
     currentFile = fileSelector.value;
     fetch(currentFile)
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
             eventData = data;
             loadTable();
         })
-        .catch(error => console.error('Error loading file:', error));
+        .catch(error => {
+            console.error('Error loading file:', error);
+            alert('Error loading file: ' + error.message);
+        });
 }
 
 function loadTable() {
@@ -96,7 +103,11 @@ function loadTable() {
 }
 
 function updateEvent(index, key, value) {
-    eventData[index][key] = key === 'texts' ? value.split(',').map(text => text.trim()) : value;
+    if (key === 'texts') {
+        eventData[index][key] = value.split(',').map(text => text.trim());
+    } else {
+        eventData[index][key] = value;
+    }
 }
 
 function exportJSON() {
