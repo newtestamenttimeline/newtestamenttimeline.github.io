@@ -54,13 +54,6 @@
             position: relative;
         }
 
-        .timeline-container {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-
         .timeline {
             width: 14000px;
             height: 4px;
@@ -188,21 +181,14 @@
             align-self: flex-end;
         }
 
-        .legend-container {
-            width: 200px;
-            margin-right: 20px;
+        .legend {
+            position: absolute;
+            top: 10px;
+            left: 10px;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 10px;
             border-radius: 5px;
             font-size: 14px;
-            color: var(--text-color);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .legend {
-            display: flex;
-            flex-direction: column;
         }
 
         .legend-item {
@@ -336,9 +322,11 @@
                 right: 10px;
             }
 
-            .legend-container {
-                width: 100px;
-                margin-right: 5px;
+            .legend {
+                top: 5px;
+                left: 5px;
+                padding: 5px;
+                font-size: 12px;
             }
 
             .timeline-controls {
@@ -371,33 +359,29 @@
 <body>
     <header>New Testament Timeline</header>
     <div class="main-content">
-        <div class="top-half">
-            <div class="legend-container" id="legend-container">
-                <div class="legend" id="legend">
-                    <button id="toggle-legend" aria-label="Toggle legend" class="toggle-legend">
-                        <div class="arrow"></div>
-                    </button>
-                    <!-- Dynamic legend items will be injected here -->
-                </div>
+        <div class="top-half" id="timeline-container">
+            <div class="legend" id="legend">
+                <button id="toggle-legend" aria-label="Toggle legend" class="toggle-legend">
+                    <div class="arrow"></div>
+                </button>
+                <!-- Dynamic legend items will be injected here -->
             </div>
-            <div class="timeline-container" id="timeline-container">
-                <div class="timeline" id="timeline">
-                    <span class="year-label" style="left: 0%;">0</span>
-                    <span class="year-label" style="left: 10%;">140</span>
-                    <span class="year-label" style="left: 20%;">280</span>
-                    <span class="year-label" style="left: 30%;">420</span>
-                    <span class="year-label" style="left: 40%;">560</span>
-                    <span class="year-label" style="left: 50%;">700</span>
-                    <span class="year-label" style="left: 60%;">840</span>
-                    <span class="year-label" style="left: 70%;">980</span>
-                    <span class="year-label" style="left: 80%;">1120</span>
-                    <span class="year-label" style="left: 90%;">1260</span>
-                    <span class="year-label" style="left: 100%;">1400</span>
-                </div>
-                <div class="timeline-controls">
-                    <button id="zoom-in">+</button>
-                    <button id="zoom-out">-</button>
-                </div>
+            <div class="timeline" id="timeline">
+                <span class="year-label" style="left: 0%;">0</span>
+                <span class="year-label" style="left: 10%;">140</span>
+                <span class="year-label" style="left: 20%;">280</span>
+                <span class="year-label" style="left: 30%;">420</span>
+                <span class="year-label" style="left: 40%;">560</span>
+                <span class="year-label" style="left: 50%;">700</span>
+                <span class="year-label" style="left: 60%;">840</span>
+                <span class="year-label" style="left: 70%;">980</span>
+                <span class="year-label" style="left: 80%;">1120</span>
+                <span class="year-label" style="left: 90%;">1260</span>
+                <span class="year-label" style="left: 100%;">1400</span>
+            </div>
+            <div class="timeline-controls">
+                <button id="zoom-in">+</button>
+                <button id="zoom-out">-</button>
             </div>
         </div>
         <div class="bottom-half">
