@@ -25,6 +25,7 @@
         }
         input[type="text"], input[type="number"] {
             width: 100%;
+            box-sizing: border-box;
         }
         button {
             padding: 10px 20px;
@@ -45,7 +46,7 @@
 <button onclick="exportJSON()">Export JSON</button>
 <button onclick="addRow()">Add Row</button>
 
-<table id="eventTable">
+<table id="eventTable" contenteditable="true">
     <thead>
         <tr>
             <th>Year</th>
@@ -94,49 +95,58 @@ function loadTable() {
     eventData.forEach((event, index) => {
         const row = tableBody.insertRow();
         row.innerHTML = `
-            <td><input type="number" value="${event.year || ''}" onchange="updateEvent(${index}, 'year', this.value)" /></td>
-            <td><input type="number" value="${event.yearRange ? event.yearRange[0] : ''}" onchange="updateEvent(${index}, 'yearRangeStart', this.value)" /></td>
-            <td><input type="number" value="${event.yearRange ? event.yearRange[1] : ''}" onchange="updateEvent(${index}, 'yearRangeEnd', this.value)" /></td>
-            <td><input type="text" value="${event.title}" onchange="updateEvent(${index}, 'title', this.value)" /></td>
-            <td><input type="text" value="${event.description}" onchange="updateEvent(${index}, 'description', this.value)" /></td>
-            <td><input type="text" value="${event.texts ? event.texts.join(', ') : ''}" onchange="updateEvent(${index}, 'texts', this.value.split(',').map(text => text.trim()))" /></td>
-            <td><input type="text" value="${event.family || ''}" onchange="updateEvent(${index}, 'family', this.value)" /></td>
-            <td><input type="number" value="${event.left || ''}" onchange="updateEvent(${index}, 'left', this.value)" /></td>
-            <td><input type="number" value="${event.top || ''}" onchange="updateEvent(${index}, 'top', this.value)" /></td>
+            <td contenteditable="true">${event.year || ''}</td>
+            <td contenteditable="true">${event.yearRange ? event.yearRange[0] : ''}</td>
+            <td contenteditable="true">${event.yearRange ? event.yearRange[1] : ''}</td>
+            <td contenteditable="true">${event.title}</td>
+            <td contenteditable="true">${event.description}</td>
+            <td contenteditable="true">${event.texts ? event.texts.join(', ') : ''}</td>
+            <td contenteditable="true">${event.family || ''}</td>
+            <td contenteditable="true">${event.left || ''}</td>
+            <td contenteditable="true">${event.top || ''}</td>
         `;
     });
 }
 
-function updateEvent(index, key, value) {
-    if (key === 'texts') {
-        eventData[index][key] = value.split(',').map(text => text.trim());
-    } else if (key === 'yearRangeStart') {
-        eventData[index]['yearRange'] = eventData[index]['yearRange'] || [];
-        eventData[index]['yearRange'][0] = Number(value);
-    } else if (key === 'yearRangeEnd') {
-        eventData[index]['yearRange'] = eventData[index]['yearRange'] || [];
-        eventData[index]['yearRange'][1] = Number(value);
-    } else {
-        eventData[index][key] = value;
-    }
+function updateEventDataFromTable() {
+    const tableBody = document.getElementById('eventTable').getElementsByTagName('tbody')[0];
+    const rows = tableBody.getElementsByTagName('tr');
+    eventData = Array.from(rows).map(row => {
+        const cells = row.getElementsByTagName('td');
+        return {
+            year: cells[0].innerText.trim() || null,
+            yearRange: [
+                cells[1].innerText.trim() || null,
+                cells[2].innerText.trim() || null
+            ],
+            title: cells[3].innerText.trim(),
+            description: cells[4].innerText.trim(),
+            texts: cells[5].innerText.trim().split(',').map(text => text.trim()),
+            family: cells[6].innerText.trim(),
+            left: cells[7].innerText.trim() || null,
+            top: cells[8].innerText.trim() || null
+        };
+    });
 }
 
 function addRow() {
-    const newRow = {
-        year: null,
-        yearRange: [null, null],
-        title: '',
-        description: '',
-        texts: [],
-        family: '',
-        left: null,
-        top: null
-    };
-    eventData.push(newRow);
-    loadTable();
+    const tableBody = document.getElementById('eventTable').getElementsByTagName('tbody')[0];
+    const row = tableBody.insertRow();
+    row.innerHTML = `
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+    `;
 }
 
 function exportJSON() {
+    updateEventDataFromTable();
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(eventData, null, 2));
     const downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute("href", dataStr);
@@ -145,6 +155,32 @@ function exportJSON() {
     downloadAnchorNode.click();
     downloadAnchorNode.remove();
 }
+
+// Handle paste event to allow pasting from Google Sheets
+document.getElementById('eventTable').addEventListener('paste', (event) => {
+    event.preventDefault();
+    const clipboardData = event.clipboardData || window.clipboardData;
+    const pastedData = clipboardData.getData('Text');
+    const rows = pastedData.split('\n').map(row => row.split('\t'));
+    
+    const tableBody = document.getElementById('eventTable').getElementsByTagName('tbody')[0];
+    
+    rows.forEach(rowData => {
+        if (rowData.length > 1) { // Ensure it's not an empty row
+            const row = tableBody.insertRow();
+            rowData.forEach((cellData, index) => {
+                const cell = row.insertCell(index);
+                cell.contentEditable = "true";
+                cell.innerText = cellData.trim();
+            });
+            // Add empty cells if necessary to complete the row
+            while (row.cells.length < 9) {
+                const cell = row.insertCell();
+                cell.contentEditable = "true";
+            }
+        }
+    });
+});
 </script>
 
 </body>
