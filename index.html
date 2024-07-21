@@ -40,7 +40,7 @@
 
         .main-content {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             flex: 1;
             height: 100vh;
         }
@@ -131,7 +131,7 @@
         }
 
         .sidebar {
-            flex: 1;
+            flex: none;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 10px;
             border-radius: 5px;
@@ -141,7 +141,8 @@
             flex-direction: column;
             overflow-y: auto;
             transition: max-width 0.3s ease;
-            max-width: 100%;
+            max-width: 250px;
+            position: relative;
         }
 
         .sidebar.collapsed {
@@ -181,16 +182,6 @@
             align-self: flex-end;
         }
 
-        .legend {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
         .legend-item {
             display: flex;
             align-items: center;
@@ -207,23 +198,6 @@
 
         .legend-checkbox {
             margin-right: 5px;
-        }
-
-        .legend.collapsed {
-            max-width: 40px;
-            overflow: hidden;
-            padding: 10px 0;
-        }
-
-        .toggle-legend {
-            background-color: var(--primary-color);
-            color: var(--text-color);
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            border-radius: 5px;
-            align-self: flex-start;
-            margin-bottom: 5px;
         }
 
         .question-mark {
@@ -256,11 +230,9 @@
         }
 
         .timeline-controls {
-            position: absolute;
-            top: 10px;
-            right: 10px;
             display: flex;
             gap: 10px;
+            margin-bottom: 10px;
         }
 
         .arrow {
@@ -322,13 +294,6 @@
                 right: 10px;
             }
 
-            .legend {
-                top: 5px;
-                left: 5px;
-                padding: 5px;
-                font-size: 12px;
-            }
-
             .timeline-controls {
                 top: 5px;
                 right: 5px;
@@ -360,12 +325,6 @@
     <header>New Testament Timeline</header>
     <div class="main-content">
         <div class="top-half" id="timeline-container">
-            <div class="legend" id="legend">
-                <button id="toggle-legend" aria-label="Toggle legend" class="toggle-legend">
-                    <div class="arrow"></div>
-                </button>
-                <!-- Dynamic legend items will be injected here -->
-            </div>
             <div class="timeline" id="timeline">
                 <span class="year-label" style="left: 0%;">0</span>
                 <span class="year-label" style="left: 10%;">140</span>
@@ -378,10 +337,6 @@
                 <span class="year-label" style="left: 80%;">1120</span>
                 <span class="year-label" style="left: 90%;">1260</span>
                 <span class="year-label" style="left: 100%;">1400</span>
-            </div>
-            <div class="timeline-controls">
-                <button id="zoom-in">+</button>
-                <button id="zoom-out">-</button>
             </div>
         </div>
         <div class="bottom-half">
@@ -396,6 +351,17 @@
                 <button id="toggle-sidebar" aria-label="Toggle sidebar" class="toggle-sidebar">
                     <div class="arrow-reverse"></div>
                 </button>
+                <div class="timeline-controls">
+                    <button id="zoom-in">+</button>
+                    <button id="zoom-out">-</button>
+                </div>
+                <div class="sidebar-section" id="legend">
+                    <h3>Legend</h3>
+                    <button id="toggle-legend" aria-label="Toggle legend" class="toggle-legend">
+                        <div class="arrow"></div>
+                    </button>
+                    <!-- Dynamic legend items will be injected here -->
+                </div>
                 <div class="sidebar-section">
                     <h3>Texts <span class="question-mark">?
                         <span class="tooltip">Filter events by specific texts.</span>
