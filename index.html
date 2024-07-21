@@ -40,7 +40,7 @@
 
         .main-content {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex: 1;
             height: 100vh;
         }
@@ -118,7 +118,7 @@
         }
 
         .content-container {
-            flex: 2;
+            flex: 1;
             padding: 20px;
             overflow-y: auto;
         }
@@ -142,7 +142,10 @@
             overflow-y: auto;
             transition: max-width 0.3s ease;
             max-width: 250px;
-            position: relative;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
         }
 
         .sidebar.collapsed {
@@ -347,38 +350,38 @@
                     <p>Green dots represent historical events, while yellow dots represent important New Testament manuscript discoveries.</p>
                 </div>
             </div>
-            <div class="sidebar" id="sidebar">
-                <button id="toggle-sidebar" aria-label="Toggle sidebar" class="toggle-sidebar">
-                    <div class="arrow-reverse"></div>
-                </button>
-                <div class="timeline-controls">
-                    <button id="zoom-in">+</button>
-                    <button id="zoom-out">-</button>
-                </div>
-                <div class="sidebar-section" id="legend">
-                    <h3>Legend</h3>
-                    <button id="toggle-legend" aria-label="Toggle legend" class="toggle-legend">
-                        <div class="arrow"></div>
-                    </button>
-                    <!-- Dynamic legend items will be injected here -->
-                </div>
-                <div class="sidebar-section">
-                    <h3>Texts <span class="question-mark">?
-                        <span class="tooltip">Filter events by specific texts.</span>
-                    </span></h3>
-                    <ul id="text-list">
-                        <!-- Texts will be dynamically added here -->
-                    </ul>
-                </div>
-                <div class="sidebar-section">
-                    <h3>Manuscript Families <span class="question-mark">?
-                        <span class="tooltip">Filter events by manuscript families.</span>
-                    </span></h3>
-                    <ul id="family-list">
-                        <!-- Families will be dynamically added here -->
-                    </ul>
-                </div>
-            </div>
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <button id="toggle-sidebar" aria-label="Toggle sidebar" class="toggle-sidebar">
+            <div class="arrow-reverse"></div>
+        </button>
+        <div class="timeline-controls">
+            <button id="zoom-in">+</button>
+            <button id="zoom-out">-</button>
+        </div>
+        <div class="sidebar-section" id="legend">
+            <h3>Legend</h3>
+            <button id="toggle-legend" aria-label="Toggle legend" class="toggle-legend">
+                <div class="arrow"></div>
+            </button>
+            <!-- Dynamic legend items will be injected here -->
+        </div>
+        <div class="sidebar-section">
+            <h3>Texts <span class="question-mark">?
+                <span class="tooltip">Filter events by specific texts.</span>
+            </span></h3>
+            <ul id="text-list">
+                <!-- Texts will be dynamically added here -->
+            </ul>
+        </div>
+        <div class="sidebar-section">
+            <h3>Manuscript Families <span class="question-mark">?
+                <span class="tooltip">Filter events by manuscript families.</span>
+            </span></h3>
+            <ul id="family-list">
+                <!-- Families will be dynamically added here -->
+            </ul>
         </div>
     </div>
 
