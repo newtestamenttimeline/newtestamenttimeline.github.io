@@ -371,7 +371,6 @@
             <h3>Texts <span class="question-mark">?
                 <span class="tooltip">Filter events by specific texts.</span>
             </span></h3>
-            <button id="select-all-texts">Select All</button>
             <ul id="text-list">
                 <!-- Texts will be dynamically added here -->
             </ul>
@@ -380,7 +379,6 @@
             <h3>Manuscript Families <span class="question-mark">?
                 <span class="tooltip">Filter events by manuscript families.</span>
             </span></h3>
-            <button id="select-all-families">Select All</button>
             <ul id="family-list">
                 <!-- Families will be dynamically added here -->
             </ul>
@@ -592,19 +590,9 @@
             texts.forEach(text => {
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
-                
-                listItem.addEventListener('click', (e) => {
-                    if (e.target.tagName !== 'INPUT') {
-                        uncheckAll(textList);
-                        listItem.querySelector('input').checked = true;
-                        filterEvents();
-                    }
+                listItem.querySelector('input').addEventListener('change', (e) => {
+                    filterEventsByText(text, e.target.checked);
                 });
-
-                listItem.querySelector('input').addEventListener('change', () => {
-                    filterEvents();
-                });
-
                 textList.appendChild(listItem);
             });
         }
@@ -615,60 +603,36 @@
             families.forEach(family => {
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
-                
-                listItem.addEventListener('click', (e) => {
-                    if (e.target.tagName !== 'INPUT') {
-                        uncheckAll(familyList);
-                        listItem.querySelector('input').checked = true;
-                        filterEvents();
-                    }
+                listItem.querySelector('input').addEventListener('change', (e) => {
+                    filterEventsByFamily(family, e.target.checked);
                 });
-
-                listItem.querySelector('input').addEventListener('change', () => {
-                    filterEvents();
-                });
-
                 familyList.appendChild(listItem);
             });
         }
 
-        function uncheckAll(list) {
-            const items = list.querySelectorAll('li');
-            items.forEach(item => {
-                item.querySelector('input').checked = false;
-            });
-        }
-
-        function filterEvents() {
-            const checkedTexts = Array.from(document.querySelectorAll('#text-list input:checked')).map(input => input.nextSibling.nodeValue.trim());
-            const checkedFamilies = Array.from(document.querySelectorAll('#family-list input:checked')).map(input => input.nextSibling.nodeValue.trim());
-            
+        function filterEventsByText(text, isChecked) {
             const events = document.querySelectorAll('.event');
             events.forEach(event => {
                 const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-                const eventFamily = event.getAttribute('data-family');
-                
-                const matchesTexts = checkedTexts.length === 0 || checkedTexts.some(text => eventTexts.includes(text));
-                const matchesFamily = checkedFamilies.length === 0 || checkedFamilies.includes(eventFamily);
-                
-                const isGreyedOut = !(matchesTexts && matchesFamily);
-                event.classList.toggle('greyed-out', isGreyedOut);
+                if (isChecked && eventTexts.includes(text)) {
+                    event.classList.remove('greyed-out');
+                } else if (!isChecked && eventTexts.includes(text)) {
+                    event.classList.add('greyed-out');
+                }
             });
         }
 
-        document.getElementById('select-all-texts').addEventListener('click', () => {
-            const textInputs = document.querySelectorAll('#text-list input');
-            const allChecked = Array.from(textInputs).every(input => input.checked);
-            textInputs.forEach(input => input.checked = !allChecked);
-            filterEvents();
-        });
-
-        document.getElementById('select-all-families').addEventListener('click', () => {
-            const familyInputs = document.querySelectorAll('#family-list input');
-            const allChecked = Array.from(familyInputs).every(input => input.checked);
-            familyInputs.forEach(input => input.checked = !allChecked);
-            filterEvents();
-        });
+        function filterEventsByFamily(family, isChecked) {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                const eventFamily = event.getAttribute('data-family');
+                if (isChecked && eventFamily === family) {
+                    event.classList.remove('greyed-out');
+                } else if (!isChecked && eventFamily === family) {
+                    event.classList.add('greyed-out');
+                }
+            });
+        }
 
         const css = `
             .greyed-out {
@@ -687,7 +651,7 @@
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
                 listItem.querySelector('input').addEventListener('change', (e) => {
-                    filterEvents();
+                    filterEventsByText(text, e.target.checked);
                 });
                 textList.appendChild(listItem);
             });
@@ -696,7 +660,7 @@
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
                 listItem.querySelector('input').addEventListener('change', (e) => {
-                    filterEvents();
+                    filterEventsByFamily(family, e.target.checked);
                 });
                 familyList.appendChild(listItem);
             });
