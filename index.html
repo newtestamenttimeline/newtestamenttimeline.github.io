@@ -590,9 +590,13 @@
             texts.forEach(text => {
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
-                listItem.querySelector('input').addEventListener('change', (e) => {
-                    filterEventsByText(text, e.target.checked);
+                
+                listItem.addEventListener('click', () => {
+                    uncheckAll(textList);
+                    listItem.querySelector('input').checked = true;
+                    filterEventsByText(text, true);
                 });
+
                 textList.appendChild(listItem);
             });
         }
@@ -603,10 +607,21 @@
             families.forEach(family => {
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
-                listItem.querySelector('input').addEventListener('change', (e) => {
-                    filterEventsByFamily(family, e.target.checked);
+                
+                listItem.addEventListener('click', () => {
+                    uncheckAll(familyList);
+                    listItem.querySelector('input').checked = true;
+                    filterEventsByFamily(family, true);
                 });
+
                 familyList.appendChild(listItem);
+            });
+        }
+
+        function uncheckAll(list) {
+            const items = list.querySelectorAll('li');
+            items.forEach(item => {
+                item.querySelector('input').checked = false;
             });
         }
 
@@ -616,7 +631,7 @@
                 const eventTexts = JSON.parse(event.getAttribute('data-texts'));
                 if (isChecked && eventTexts.includes(text)) {
                     event.classList.remove('greyed-out');
-                } else if (!isChecked && eventTexts.includes(text)) {
+                } else {
                     event.classList.add('greyed-out');
                 }
             });
@@ -628,7 +643,7 @@
                 const eventFamily = event.getAttribute('data-family');
                 if (isChecked && eventFamily === family) {
                     event.classList.remove('greyed-out');
-                } else if (!isChecked && eventFamily === family) {
+                } else {
                     event.classList.add('greyed-out');
                 }
             });
