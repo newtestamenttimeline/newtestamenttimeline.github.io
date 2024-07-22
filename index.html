@@ -593,8 +593,16 @@
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
                 
+                listItem.addEventListener('click', (e) => {
+                    if (e.target.tagName !== 'INPUT') {
+                        uncheckAll(textList);
+                        listItem.querySelector('input').checked = true;
+                        filterEvents();
+                    }
+                });
+
                 listItem.querySelector('input').addEventListener('change', () => {
-                    filterEventsByTexts();
+                    filterEvents();
                 });
 
                 textList.appendChild(listItem);
@@ -608,30 +616,42 @@
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
                 
+                listItem.addEventListener('click', (e) => {
+                    if (e.target.tagName !== 'INPUT') {
+                        uncheckAll(familyList);
+                        listItem.querySelector('input').checked = true;
+                        filterEvents();
+                    }
+                });
+
                 listItem.querySelector('input').addEventListener('change', () => {
-                    filterEventsByFamily();
+                    filterEvents();
                 });
 
                 familyList.appendChild(listItem);
             });
         }
 
-        function filterEventsByTexts() {
-            const checkedTexts = Array.from(document.querySelectorAll('#text-list input:checked')).map(input => input.nextSibling.nodeValue.trim());
-            const events = document.querySelectorAll('.event');
-            events.forEach(event => {
-                const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-                const isGreyedOut = checkedTexts.every(text => !eventTexts.includes(text));
-                event.classList.toggle('greyed-out', isGreyedOut);
+        function uncheckAll(list) {
+            const items = list.querySelectorAll('li');
+            items.forEach(item => {
+                item.querySelector('input').checked = false;
             });
         }
 
-        function filterEventsByFamily() {
+        function filterEvents() {
+            const checkedTexts = Array.from(document.querySelectorAll('#text-list input:checked')).map(input => input.nextSibling.nodeValue.trim());
             const checkedFamilies = Array.from(document.querySelectorAll('#family-list input:checked')).map(input => input.nextSibling.nodeValue.trim());
+            
             const events = document.querySelectorAll('.event');
             events.forEach(event => {
+                const eventTexts = JSON.parse(event.getAttribute('data-texts'));
                 const eventFamily = event.getAttribute('data-family');
-                const isGreyedOut = checkedFamilies.length > 0 && !checkedFamilies.includes(eventFamily);
+                
+                const matchesTexts = checkedTexts.length === 0 || checkedTexts.some(text => eventTexts.includes(text));
+                const matchesFamily = checkedFamilies.length === 0 || checkedFamilies.includes(eventFamily);
+                
+                const isGreyedOut = !(matchesTexts && matchesFamily);
                 event.classList.toggle('greyed-out', isGreyedOut);
             });
         }
@@ -640,14 +660,14 @@
             const textInputs = document.querySelectorAll('#text-list input');
             const allChecked = Array.from(textInputs).every(input => input.checked);
             textInputs.forEach(input => input.checked = !allChecked);
-            filterEventsByTexts();
+            filterEvents();
         });
 
         document.getElementById('select-all-families').addEventListener('click', () => {
             const familyInputs = document.querySelectorAll('#family-list input');
             const allChecked = Array.from(familyInputs).every(input => input.checked);
             familyInputs.forEach(input => input.checked = !allChecked);
-            filterEventsByFamily();
+            filterEvents();
         });
 
         const css = `
@@ -667,7 +687,7 @@
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
                 listItem.querySelector('input').addEventListener('change', (e) => {
-                    filterEventsByTexts();
+                    filterEvents();
                 });
                 textList.appendChild(listItem);
             });
@@ -676,7 +696,7 @@
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
                 listItem.querySelector('input').addEventListener('change', (e) => {
-                    filterEventsByFamily();
+                    filterEvents();
                 });
                 familyList.appendChild(listItem);
             });
