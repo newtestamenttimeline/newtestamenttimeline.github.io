@@ -162,23 +162,33 @@ document.getElementById('eventTable').addEventListener('paste', (event) => {
     const clipboardData = event.clipboardData || window.clipboardData;
     const pastedData = clipboardData.getData('Text');
     const rows = pastedData.split('\n').map(row => row.split('\t'));
-    
-    const tableBody = document.getElementById('eventTable').getElementsByTagName('tbody')[0];
-    
-    rows.forEach(rowData => {
-        if (rowData.length > 1) { // Ensure it's not an empty row
-            const row = tableBody.insertRow();
-            rowData.forEach((cellData, index) => {
-                const cell = row.insertCell(index);
-                cell.contentEditable = "true";
-                cell.innerText = cellData.trim();
-            });
-            // Add empty cells if necessary to complete the row
-            while (row.cells.length < 9) {
+
+    const selection = window.getSelection();
+    const selectedCell = selection.anchorNode.parentElement;
+    const table = document.getElementById('eventTable');
+    const tableBody = table.getElementsByTagName('tbody')[0];
+    const selectedRowIndex = selectedCell.parentElement.rowIndex - 1; // Adjust for the header row
+    const selectedCellIndex = selectedCell.cellIndex;
+
+    rows.forEach((rowData, rowIndex) => {
+        let row = tableBody.rows[selectedRowIndex + rowIndex];
+        if (!row) {
+            row = tableBody.insertRow();
+            for (let i = 0; i < table.rows[0].cells.length; i++) {
                 const cell = row.insertCell();
                 cell.contentEditable = "true";
             }
         }
+        rowData.forEach((cellData, cellIndex) => {
+            const cell = row.cells[selectedCellIndex + cellIndex];
+            if (cell) {
+                cell.innerText = cellData.trim();
+            } else {
+                const newCell = row.insertCell(selectedCellIndex + cellIndex);
+                newCell.contentEditable = "true";
+                newCell.innerText = cellData.trim();
+            }
+        });
     });
 });
 </script>
