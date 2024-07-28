@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --delete-color: #e74c3c;
+    --grey-out-color: #808080;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+}
+
+.top-half {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    overflow: auto;
+    position: relative;
+}
+
+.timeline {
+    width: 14000px;
+    height: 4px;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.timeline::before,
+.timeline::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.timeline::before {
+    left: -10px;
+    border-right: 10px solid var(--primary-color);
+}
+
+.timeline::after {
+    right: -10px;
+    border-left: 10px solid var(--primary-color);
+}
+
+.event {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.event:hover {
+    transform: scale(1.5);
+}
+
+.event.selected {
+    box-shadow: 0 0 0 2px #fff;
+}
+
+.event.greyed-out {
+    background-color: var(--grey-out-color);
+}
+
+.year-label {
+    position: absolute;
+    top: -25px;
+    transform: translateX(-50%);
+    font-size: 12px;
+}
+
+.bottom-half {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.content-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#event-content {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.sidebar {
+    flex: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    transition: max-width 0.3s ease;
+    max-width: 250px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.sidebar.collapsed {
+    max-width: 40px;
+    overflow: hidden;
+}
+
+.sidebar-section {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.sidebar li:hover {
+    text-decoration: underline;
+}
+
+.sidebar input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.toggle-sidebar {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.legend-checkbox {
+    margin-right: 5px;
+}
+
+.question-mark {
+    cursor: pointer;
+    margin-left: 5px;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 120px;
+}
+
+.question-mark:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.timeline-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.arrow.collapsed {
+    transform: rotate(-135deg);
+}
+
+.arrow-reverse {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(-135deg);
+    transition: transform 0.3s;
+}
+
+.arrow-reverse.collapsed {
+    transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+
+    .top-half {
+        padding: 10px;
+    }
+
+    .content-container {
+        padding: 10px;
+    }
+
+    .sidebar {
+        flex: none;
+        height: 100%;
+        transition: max-width 0.3s ease;
+        max-width: 100%;
+    }
+
+    .sidebar.collapsed {
+        max-width: 40px;
+        overflow: hidden;
+    }
+
+    .toggle-sidebar {
+        top: 10px;
+        right: 10px;
+    }
+
+    .timeline-controls {
+        top: 5px;
+        right: 5px;
+        gap: 5px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
