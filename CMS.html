@@ -159,9 +159,18 @@ function exportJSON() {
 // Handle paste event to allow pasting from Google Sheets
 document.getElementById('eventTable').addEventListener('paste', (event) => {
     event.preventDefault();
+    
     const clipboardData = event.clipboardData || window.clipboardData;
     const pastedData = clipboardData.getData('Text');
-    const rows = pastedData.split('\n').map(row => row.split('\t'));
+
+    // Create a temporary textarea to hold the pasted data
+    const tempTextArea = document.createElement('textarea');
+    document.body.appendChild(tempTextArea);
+    tempTextArea.value = pastedData;
+
+    // Split the data into rows and cells
+    const rows = tempTextArea.value.split('\n').map(row => row.split('\t'));
+    document.body.removeChild(tempTextArea);
 
     const selection = window.getSelection();
     const selectedCell = selection.anchorNode.parentElement;
