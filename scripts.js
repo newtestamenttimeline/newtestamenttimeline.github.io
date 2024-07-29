@@ -89,6 +89,7 @@ function addYearLabels() {
         { year: 0, left: '0%' },
         { year: 100, left: '7%' },
         { year: 150, left: '11%' },
+        { year: 300, left: '22%' },
         { year: 500, left: '32%' },
         { year: 750, left: '53%' },
         { year: 1000, left: '71%' },
