@@ -1,5 +1,5 @@
-const timeline = document.getElementById('timeline');
-const timelineContainer = document.getElementById('timeline-container');
+const canvas = document.getElementById('timelineCanvas');
+const ctx = canvas.getContext('2d');
 const content = document.getElementById('event-content');
 const sidebar = document.getElementById('sidebar');
 const legendContainer = document.getElementById('legend');
@@ -37,40 +37,18 @@ async function loadEvents() {
         console.log('Manuscript Events:', manuscriptEvents);
         console.log('Uncial Events:', uncialEvents);
 
-        timeline.innerHTML = '';
+        const events = [...historicalEvents, ...manuscriptEvents, ...uncialEvents];
+        drawTimeline(events);
 
-        // Add year labels
-        addYearLabels();
-
-        historicalEvents.forEach(event => {
+        events.forEach(event => {
             processEvent(event);
-            addEventToTimeline(event);
             eventTypes.add(event.eventType);
-        });
-
-        manuscriptEvents.forEach(event => {
-            processEvent(event);
-            addEventToTimeline(event);
             if (event.texts) {
                 event.texts.forEach(text => texts.add(text));
             }
             if (event.family) {
                 families.add(event.family);
             }
-            eventTypes.add(event.eventType);
-        });
-
-        uncialEvents.forEach(event => {
-            processEvent(event);
-            console.log('Uncial Event:', event);  // Debugging uncial events
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
-            }
-            if (event.family) {
-                families.add(event.family);
-            }
-            eventTypes.add(event.eventType);
         });
 
         generateColorsForEventTypes();
@@ -84,25 +62,16 @@ async function loadEvents() {
     }
 }
 
-function addYearLabels() {
-    const yearLabels = [
-        { year: 0, left: '0%' },
-        { year: 100, left: '7%' },
-        { year: 150, left: '11%' },
-        { year: 300, left: '22%' },
-        { year: 500, left: '32%' },
-        { year: 750, left: '53%' },
-        { year: 1000, left: '71%' },
-        { year: 1250, left: '90%' },
-        { year: 1400, left: '100%' }
-    ];
-
-    yearLabels.forEach(label => {
-        const yearLabel = document.createElement('div');
-        yearLabel.className = 'year-label';
-        yearLabel.style.left = label.left;
-        yearLabel.innerText = label.year;
-        timeline.appendChild(yearLabel);
+function drawTimeline(events) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    events.forEach(event => {
+        const x = (event.year / 1400) * canvas.width;
+        const y = canvas.height / 2;
+        ctx.beginPath();
+        ctx.arc(x, y, 6, 0, Math.PI * 2);
+        ctx.fillStyle = event.color;
+        ctx.fill();
+        ctx.closePath();
     });
 }
 
@@ -119,128 +88,57 @@ function processEvent(event) {
     console.log('Processed Event:', event);
 }
 
-const yearDotPlacements = {};
-
-function addEventToTimeline(event) {
-    console.log('Adding event to timeline:', event);
-    if (document.querySelector(`.event[title="${event.title}"]`)) {
-        return;
-    }
-
-    const newEvent = document.createElement('div');
-    newEvent.className = 'event';
-    newEvent.setAttribute('data-year', event.year || (event.yearRange ? ((event.yearRange[0] + event.yearRange[1]) / 2).toFixed(0) : ''));
-    newEvent.setAttribute('title', event.title);
-    newEvent.setAttribute('data-description', event.description);
-    newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
-    newEvent.setAttribute('data-family', event.family || '');
-    newEvent.setAttribute('data-location', event.location || 'Unknown');
-    newEvent.setAttribute('data-event-type', event.eventType);
-
-    if (!yearDotPlacements[event.year]) {
-        yearDotPlacements[event.year] = [];
-    }
-
-    const existingDots = yearDotPlacements[event.year];
-    const positions = Array.from(document.querySelectorAll('.event')).map(e => ({
-        left: parseFloat(e.style.left),
-        top: parseFloat(e.style.top)
-    }));
-
-    let newLeft = (event.percentage * timeline.offsetWidth) / 100;
-    let newTop = 0;
-
-    if (existingDots.length === 0) {
-        newTop = 0;
-    } else if (existingDots.length === 1) {
-        newTop = Math.random() > 0.5 ? dotDiameter + spacing : -(dotDiameter + spacing);
-    } else {
-        const [lastTop] = existingDots.slice(-1);
-        newTop = lastTop > 0 ? -(dotDiameter + spacing) : dotDiameter + spacing;
-
-        if (isPositionOccupied(newLeft, newTop)) {
-            const directions = [[0, -spacing], [0, spacing], [-spacing, 0], [spacing, 0]];
-            shuffleArray(directions);
-            let found = false;
-
-            for (let i = 0; i < directions.length; i++) {
-                const [dx, dy] = directions[i];
-                if (!isPositionOccupied(newLeft + dx, newTop + dy)) {
-                    newLeft += dx;
-                    newTop += dy;
-                    found = true;
-                    break;
-                }
-            }
-
-            if (!found) {
-                let tries = 0;
-                const maxTries = 1000;
-                while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
-                    newTop += newTop > 0 ? spacing + step : -(spacing + step);
-                    tries++;
-                }
-            }
+function generateColorsForEventTypes() {
+    eventTypes.forEach(eventType => {
+        if (!eventTypeColors[eventType]) {
+            eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
         }
-    }
-
-    yearDotPlacements[event.year].push(newTop);
-    if (yearDotPlacements[event.year].length > 2) {
-        yearDotPlacements[event.year].shift();
-    }
-
-    newEvent.style.left = `${newLeft}px`;
-    newEvent.style.top = `${newTop}px`;
-
-    newEvent.style.backgroundColor = getColorForEventType(event.eventType);
-
-    timeline.appendChild(newEvent);
-
-    // Ensure year labels are always visible
-    document.querySelectorAll('.year-label').forEach(label => {
-        timeline.appendChild(label);
     });
 }
 
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
-
-function isPositionOccupied(left, top) {
-    const existingEvents = Array.from(document.querySelectorAll('.event'));
-    return existingEvents.some(e => {
-        const eLeft = parseFloat(e.style.left);
-        const eTop = parseFloat(e.style.top);
-        return Math.abs(eLeft - left) < dotDiameter && Math.abs(eTop - top) < dotDiameter;
-    });
+function getColorForEventType(eventType) {
+    return eventTypeColors[eventType];
 }
 
 function updateEvents() {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        event.addEventListener('click', () => {
-            if (selectedEvent) {
-                selectedEvent.classList.remove('selected');
-            }
-            selectedEvent = event;
-            event.classList.add('selected');
-
-            const year = event.getAttribute('data-year');
-            const title = event.getAttribute('title');
-            const description = event.getAttribute('data-description');
-            const texts = JSON.parse(event.getAttribute('data-texts')).join(', ');
-            const family = event.getAttribute('data-family');
-            const location = event.getAttribute('data-location');
-            content.innerHTML = `<h2>${title} (Year ${year})</h2>
-                                 <p>${description}</p>
-                                 <p><strong>Location:</strong> ${location}</p>
-                                 <p><strong>Texts:</strong> ${texts}</p>
-                                 <p><strong>Family:</strong> ${family}</p>`;
-        });
+    // Add event listeners to canvas for interaction if needed
+    canvas.addEventListener('click', (event) => {
+        const rect = canvas.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        const clickedEvent = findEventAtPosition(x, y);
+        if (clickedEvent) {
+            displayEventDetails(clickedEvent);
+        }
     });
+}
+
+function findEventAtPosition(x, y) {
+    const events = [...historicalEvents, ...manuscriptEvents, ...uncialEvents];
+    return events.find(event => {
+        const eventX = (event.year / 1400) * canvas.width;
+        const eventY = canvas.height / 2;
+        return Math.sqrt((x - eventX) ** 2 + (y - eventY) ** 2) < 6;
+    });
+}
+
+function displayEventDetails(event) {
+    const year = event.year;
+    const title = event.title;
+    const description = event.description;
+    const texts = (event.texts || []).join(', ');
+    const family = event.family || '';
+    const location = event.location || 'Unknown';
+    content.innerHTML = `<h2>${title} (Year ${year})</h2>
+                         <p>${description}</p>
+                         <p><strong>Location:</strong> ${location}</p>
+                         <p><strong>Texts:</strong> ${texts}</p>
+                         <p><strong>Family:</strong> ${family}</p>`;
+}
+
+function initializeFilters() {
+    populateTextList();
+    populateFamilyList();
 }
 
 function populateTextList() {
@@ -270,78 +168,15 @@ function populateFamilyList() {
 }
 
 function filterEventsByText(text, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-        if (isChecked && eventTexts.includes(text)) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventTexts.includes(text)) {
-            event.classList.add('greyed-out');
-        }
-    });
+    // Implementation to filter events by text
 }
 
 function filterEventsByFamily(family, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventFamily = event.getAttribute('data-family');
-        if (isChecked && eventFamily === family) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventFamily === family) {
-            event.classList.add('greyed-out');
-        }
-    });
+    // Implementation to filter events by family
 }
-
-const css = `
-    .greyed-out {
-        display: none;
-    }
-`;
-const style = document.createElement('style');
-style.appendChild(document.createTextNode(css));
-document.head.appendChild(style);
-
-function initializeFilters() {
-    const textList = document.getElementById('text-list');
-    const familyList = document.getElementById('family-list');
-
-    texts.forEach(text => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
-        listItem.querySelector('input').addEventListener('change', (e) => {
-            filterEventsByText(text, e.target.checked);
-        });
-        textList.appendChild(listItem);
-    });
-
-    families.forEach(family => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
-        listItem.querySelector('input').addEventListener('change', (e) => {
-            filterEventsByFamily(family, e.target.checked);
-        });
-        familyList.appendChild(listItem);
-    });
-}
-
-function generateColorsForEventTypes() {
-    eventTypes.forEach(eventType => {
-        if (!eventTypeColors[eventType]) {
-            eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-        }
-    });
-}
-
-function getColorForEventType(eventType) {
-    return eventTypeColors[eventType];
-}
-
-loadEvents();
 
 function generateLegend() {
     legendContainer.innerHTML = '';
-
     eventTypes.forEach(eventType => {
         const legendItem = document.createElement('div');
         legendItem.className = 'legend-item';
@@ -375,21 +210,10 @@ function generateLegend() {
 
         legendContainer.appendChild(legendItem);
     });
-
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventType = event.getAttribute('data-event-type');
-        if (eventTypeColors[eventType]) {
-            event.style.backgroundColor = eventTypeColors[eventType];
-        }
-    });
 }
 
 function toggleEventsByType(eventType, isChecked) {
-    const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
-    events.forEach(event => {
-        event.style.display = isChecked ? 'block' : 'none';
-    });
+    // Implementation to toggle events by type
 }
 
 function toggleSidebar() {
@@ -398,55 +222,68 @@ function toggleSidebar() {
 
 document.getElementById('zoom-in').addEventListener('click', () => {
     scale *= 1.2;
-    timeline.style.transform = `scale(${scale})`;
+    canvas.style.transform = `scale(${scale})`;
 });
 
 document.getElementById('zoom-out').addEventListener('click', () => {
     scale /= 1.2;
-    timeline.style.transform = `scale(${scale})`;
+    canvas.style.transform = `scale(${scale})`;
 });
 
-timelineContainer.addEventListener('dblclick', (e) => {
-    const rect = timelineContainer.getBoundingClientRect();
+canvas.addEventListener('dblclick', (e) => {
+    const rect = canvas.getBoundingClientRect();
     const offsetX = e.clientX - rect.left;
     const targetPercentage = offsetX / rect.width;
-    const targetScroll = targetPercentage * timeline.scrollWidth * scale - rect.width / 2;
+    const targetScroll = targetPercentage * canvas.scrollWidth * scale - rect.width / 2;
 
-    timelineContainer.scrollTo({
+    canvas.scrollTo({
         left: targetScroll,
         behavior: 'smooth'
     });
 
     scale *= 1.2;
-    timeline.style.transform = `scale(${scale})`;
+    canvas.style.transform = `scale(${scale})`;
 });
 
 let isDown = false;
 let startX;
 let scrollLeft;
 
-timelineContainer.addEventListener('mousedown', (e) => {
+canvas.addEventListener('mousedown', (e) => {
     isDown = true;
-    startX = e.pageX - timelineContainer.offsetLeft;
-    scrollLeft = timelineContainer.scrollLeft;
+    startX = e.pageX - canvas.offsetLeft;
+    scrollLeft = canvas.scrollLeft;
 });
 
-timelineContainer.addEventListener('mouseleave', () => {
+canvas.addEventListener('mouseleave', () => {
     isDown = false;
 });
 
-timelineContainer.addEventListener('mouseup', () => {
+canvas.addEventListener('mouseup', () => {
     isDown = false;
 });
 
-timelineContainer.addEventListener('mousemove', (e) => {
+canvas.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
-    const x = e.pageX - timelineContainer.offsetLeft;
+    const x = e.pageX - canvas.offsetLeft;
     const walk = (x - startX) * 3;
-    timelineContainer.scrollLeft = scrollLeft - walk;
+    canvas.scrollLeft = scrollLeft - walk;
 });
 
 new ResizeObserver(() => {
-    timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
-}).observe(timelineContainer);
+    canvas.scrollLeft = (canvas.scrollWidth - canvas.clientWidth) / 2;
+}).observe(canvas);
+
+loadEvents();
+
+// Register service worker for client-side caching
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+        .then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        })
+        .catch(error => {
+            console.log('ServiceWorker registration failed: ', error);
+        });
+}
