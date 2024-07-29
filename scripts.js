@@ -170,6 +170,11 @@ function addEventToTimeline(event) {
     newEvent.style.backgroundColor = getColorForEventType(event.eventType);
 
     timeline.appendChild(newEvent);
+
+    // Ensure year labels are always visible
+    document.querySelectorAll('.year-label').forEach(label => {
+        timeline.appendChild(label);
+    });
 }
 
 function shuffleArray(array) {
