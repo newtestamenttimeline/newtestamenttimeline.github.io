@@ -10,6 +10,9 @@ const families = new Set();
 const eventTypes = new Set();
 const eventTypeColors = {};
 let allEvents = [];
+const dotRadius = 6;
+const dotDiameter = dotRadius * 2;
+const spacing = 20; // Minimum space between dots
 
 // Add event listeners for sidebar and legend toggles
 document.getElementById('toggle-legend')?.addEventListener('click', () => {
@@ -59,15 +62,38 @@ async function loadEvents() {
 
 function drawTimeline(events) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const drawnPositions = [];
+
     events.forEach(event => {
-        const x = (event.year / 1400) * canvas.width;
-        const y = canvas.height / 2;
-        ctx.beginPath();
-        ctx.arc(x, y, 6, 0, Math.PI * 2);
-        ctx.fillStyle = getColorForEventType(event.eventType);
-        ctx.fill();
-        ctx.closePath();
-        console.log(`Drawing event ${event.title} at (${x}, ${y}) with color ${ctx.fillStyle}`); // Debugging: log event drawing details
+        let x = (event.year / 1400) * canvas.width;
+        let y = canvas.height / 2;
+
+        // Adjust y position if dot overlaps with any already drawn dot
+        let attempts = 0;
+        while (isOverlapping(x, y, drawnPositions) && attempts < 100) {
+            y += spacing;
+            attempts++;
+        }
+
+        if (attempts >= 100) {
+            console.warn(`Could not place event ${event.title} without overlap.`);
+        } else {
+            drawnPositions.push({ x, y });
+            ctx.beginPath();
+            ctx.arc(x, y, dotRadius, 0, Math.PI * 2);
+            ctx.fillStyle = getColorForEventType(event.eventType);
+            ctx.fill();
+            ctx.closePath();
+            console.log(`Drawing event ${event.title} at (${x}, ${y}) with color ${ctx.fillStyle}`); // Debugging: log event drawing details
+        }
+    });
+}
+
+function isOverlapping(x, y, positions) {
+    return positions.some(pos => {
+        const dx = x - pos.x;
+        const dy = y - pos.y;
+        return Math.sqrt(dx * dx + dy * dy) < dotDiameter + spacing;
     });
 }
 
