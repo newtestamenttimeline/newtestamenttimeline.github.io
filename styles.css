@@ -53,6 +53,7 @@ header {
     height: 4px;
     background-color: var(--primary-color);
     position: relative;
+    z-index: 1; /* Ensure timeline is below dots and legend */
 }
 
 .timeline::before,
@@ -83,6 +84,7 @@ header {
     position: absolute;
     cursor: pointer;
     transition: all 0.3s ease;
+    z-index: 2; /* Ensure dots are above the timeline and year labels */
 }
 
 .event:hover {
@@ -101,12 +103,12 @@ header {
     position: absolute;
     bottom: 0;
     transform: translateY(100%);
-    background: black; /* Ensure the background is white to contrast with the timeline background */
+    background: white; /* Ensure the background is white to contrast with the timeline background */
     padding: 2px 5px;
     font-size: 12px;
-    color: white; /* Ensure the text color is black */
+    color: black; /* Ensure the text color is black */
     border: 1px solid #ccc;
-    z-index: 10; /* Ensure year labels are above other elements */
+    z-index: 0; /* Ensure year labels are below the dots and timeline */
 }
 
 .bottom-half {
@@ -145,6 +147,7 @@ header {
     right: 0;
     top: 0;
     bottom: 0;
+    z-index: 3; /* Ensure sidebar is above everything else */
 }
 
 .sidebar.collapsed {
@@ -189,6 +192,7 @@ header {
     align-items: center;
     margin-bottom: 5px;
     position: relative;
+    z-index: 2; /* Ensure legend items are above the timeline and year labels */
 }
 
 .legend-color {
