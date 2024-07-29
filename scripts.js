@@ -105,6 +105,7 @@ function addEventToTimeline(event) {
     newEvent.setAttribute('data-description', event.description);
     newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
     newEvent.setAttribute('data-family', event.family || '');
+    newEvent.setAttribute('data-location', event.location || 'Unknown');
     newEvent.setAttribute('data-event-type', event.eventType);
 
     if (!yearDotPlacements[event.year]) {
@@ -201,9 +202,9 @@ function updateEvents() {
             const location = event.getAttribute('data-location');
             content.innerHTML = `<h2>${title} (Year ${year})</h2>
                                  <p>${description}</p>
-                                 <p>Texts: ${texts}</p>
-                                 <p>Family: ${family}</p>
-                                 <p>Location: ${location}</p>`;
+                                 <p><strong>Location:</strong> ${location}</p>
+                                 <p><strong>Texts:</strong> ${texts}</p>
+                                 <p><strong>Family:</strong> ${family}</p>`;
         });
     });
 }
