@@ -41,10 +41,10 @@ async function loadEvents() {
 
         historicalEvents.forEach(event => {
             if (event.year) {
-                event.percentage = Math.round((event.year / 1000) * 100);
+                event.percentage = (event.year / 1400) * 100;
             } else if (event.yearRange) {
                 const midPoint = (event.yearRange[0] + event.yearRange[1]) / 2;
-                event.percentage = Math.round((midPoint / 1000) * 100);
+                event.percentage = (midPoint / 1400) * 100;
             }
             addEventToTimeline(event);
             eventTypes.add(event.eventType);
@@ -52,10 +52,10 @@ async function loadEvents() {
 
         manuscriptEvents.forEach(event => {
             if (event.year) {
-                event.percentage = Math.round((event.year / 1000) * 100);
+                event.percentage = (event.year / 1400) * 100;
             } else if (event.yearRange) {
                 const midPoint = (event.yearRange[0] + event.yearRange[1]) / 2;
-                event.percentage = Math.round((midPoint / 1000) * 100);
+                event.percentage = (midPoint / 1400) * 100;
             }
             addEventToTimeline(event);
             if (event.texts) {
@@ -69,10 +69,10 @@ async function loadEvents() {
 
         uncialEvents.forEach(event => {
             if (event.year) {
-                event.percentage = Math.round((event.year / 1000) * 100);
+                event.percentage = (event.year / 1400) * 100;
             } else if (event.yearRange) {
                 const midPoint = (event.yearRange[0] + event.yearRange[1]) / 2;
-                event.percentage = Math.round((midPoint / 1000) * 100);
+                event.percentage = (midPoint / 1400) * 100;
             }
             addEventToTimeline(event);
             if (event.texts) {
@@ -123,7 +123,7 @@ function addEventToTimeline(event) {
         top: parseFloat(e.style.top)
     }));
 
-    let newLeft = (event.percentage / 1000) * 100;
+    let newLeft = (event.percentage * timeline.offsetWidth) / 100;
     let newTop = 0;
 
     if (existingDots.length === 0) {
@@ -165,7 +165,7 @@ function addEventToTimeline(event) {
         yearDotPlacements[event.year].shift();
     }
 
-    newEvent.style.left = `${newLeft}%`;
+    newEvent.style.left = `${newLeft}px`;
     newEvent.style.top = `${newTop}px`;
 
     newEvent.style.backgroundColor = getColorForEventType(event.eventType);
