@@ -40,23 +40,13 @@ async function loadEvents() {
         timeline.innerHTML = '';
 
         historicalEvents.forEach(event => {
-            if (event.year) {
-                event.percentage = (event.year / 1400) * 100;
-            } else if (event.yearRange) {
-                const midPoint = (event.yearRange[0] + event.yearRange[1]) / 2;
-                event.percentage = (midPoint / 1400) * 100;
-            }
+            processEvent(event);
             addEventToTimeline(event);
             eventTypes.add(event.eventType);
         });
 
         manuscriptEvents.forEach(event => {
-            if (event.year) {
-                event.percentage = (event.year / 1400) * 100;
-            } else if (event.yearRange) {
-                const midPoint = (event.yearRange[0] + event.yearRange[1]) / 2;
-                event.percentage = (midPoint / 1400) * 100;
-            }
+            processEvent(event);
             addEventToTimeline(event);
             if (event.texts) {
                 event.texts.forEach(text => texts.add(text));
@@ -68,12 +58,8 @@ async function loadEvents() {
         });
 
         uncialEvents.forEach(event => {
-            if (event.year) {
-                event.percentage = (event.year / 1400) * 100;
-            } else if (event.yearRange) {
-                const midPoint = (event.yearRange[0] + event.yearRange[1]) / 2;
-                event.percentage = (midPoint / 1400) * 100;
-            }
+            processEvent(event);
+            console.log('Uncial Event:', event);  // Debugging uncial events
             addEventToTimeline(event);
             if (event.texts) {
                 event.texts.forEach(text => texts.add(text));
@@ -93,6 +79,19 @@ async function loadEvents() {
     } catch (error) {
         console.error('Error loading events:', error);
     }
+}
+
+function processEvent(event) {
+    if (event.year) {
+        event.percentage = (event.year / 1400) * 100;
+    } else if (event.yearRange) {
+        const midPoint = (event.yearRange[0] + event.yearRange[1]) / 2;
+        event.year = midPoint;
+        event.percentage = (midPoint / 1400) * 100;
+    } else {
+        console.warn('Event has no year or yearRange:', event);
+    }
+    console.log('Processed Event:', event);
 }
 
 const yearDotPlacements = {};
