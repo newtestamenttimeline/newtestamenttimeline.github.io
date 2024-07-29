@@ -475,15 +475,5 @@
     "location": "",
     "percentage": 50,
     "eventType": "uncial"
-  },
-  {
-    "title": "",
-    "description": "",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "",
-    "eventType": "uncial"
-  }
+  } 
 ]
