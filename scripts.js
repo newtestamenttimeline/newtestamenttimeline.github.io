@@ -87,15 +87,12 @@ async function loadEvents() {
 function addYearLabels() {
     const yearLabels = [
         { year: 0, left: '0%' },
-        { year: 140, left: '10%' },
-        { year: 280, left: '20%' },
-        { year: 420, left: '30%' },
-        { year: 560, left: '40%' },
-        { year: 700, left: '50%' },
-        { year: 840, left: '60%' },
-        { year: 980, left: '70%' },
-        { year: 1120, left: '80%' },
-        { year: 1260, left: '90%' },
+        { year: 100, left: '7%' },
+        { year: 150, left: '11%' },
+        { year: 500, left: '32%' },
+        { year: 750, left: '53%' },
+        { year: 1000, left: '71%' },
+        { year: 1250, left: '90%' },
         { year: 1400, left: '100%' }
     ];
 
