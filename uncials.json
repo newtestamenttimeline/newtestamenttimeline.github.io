@@ -450,22 +450,22 @@
     "eventType": "uncial"
   },
   {
-    "year": 6,
+    "year": 550,
     "title": "Uncial 31",
-    "description": "Contains portions of the Gospels",
+    "description": "Contains portions of the Gospels, dated to the 6th century",
     "texts": [
       "Matthew",
       "Mark"
     ],
     "family": "Byzantine",
     "location": "",
-    "percentage": 1,
+    "percentage": 55,
     "eventType": "uncial"
   },
   {
-    "year": 4,
+    "year": 500,
     "title": "Uncial 32",
-    "description": "Contains portions of the Gospels, significant variations",
+    "description": "Contains portions of the Gospels, significant variations, dated to the 4th/5th century.",
     "texts": [
       "Matthew",
       "Mark",
@@ -473,7 +473,7 @@
     ],
     "family": "Western",
     "location": "",
-    "percentage": 0,
+    "percentage": 50,
     "eventType": "uncial"
   },
   {
