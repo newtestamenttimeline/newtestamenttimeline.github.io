@@ -1,6 +1,5 @@
 const canvas = document.getElementById('timelineCanvas');
 const ctx = canvas.getContext('2d');
-const timelineContainer = document.getElementById('timeline-container');
 const content = document.getElementById('event-content');
 const sidebar = document.getElementById('sidebar');
 const legendContainer = document.getElementById('legend');
@@ -9,52 +8,44 @@ let selectedEvent = null;
 const texts = new Set();
 const families = new Set();
 const eventTypes = new Set();
-const dotDiameter = 12;
-const spacing = 15;
-const step = 5;
-
 const eventTypeColors = {};
 
-document.getElementById('toggle-legend').addEventListener('click', () => {
+document.getElementById('toggle-legend')?.addEventListener('click', () => {
     const legend = document.getElementById('legend');
     legend.classList.toggle('collapsed');
     const arrow = document.querySelector('#toggle-legend .arrow');
     arrow.classList.toggle('collapsed');
 });
 
-document.getElementById('toggle-sidebar').addEventListener('click', () => {
+document.getElementById('toggle-sidebar')?.addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
     const arrow = document.querySelector('#toggle-sidebar .arrow-reverse');
     arrow.classList.toggle('collapsed');
 });
 
+// Load and process events
 async function loadEvents() {
     try {
         const historicalEvents = await fetch('historical_events.json').then(response => response.json());
         const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
         const uncialEvents = await fetch('uncials.json').then(response => response.json());
 
-        console.log('Historical Events:', historicalEvents);
-        console.log('Manuscript Events:', manuscriptEvents);
-        console.log('Uncial Events:', uncialEvents);
-
         const events = [...historicalEvents, ...manuscriptEvents, ...uncialEvents];
-        drawTimeline(events);
+        console.log('Loaded Events:', events); // Debugging: log loaded events
 
         events.forEach(event => {
             processEvent(event);
-            addEventToTimeline(event);
+            eventTypes.add(event.eventType);
             if (event.texts) {
                 event.texts.forEach(text => texts.add(text));
             }
             if (event.family) {
                 families.add(event.family);
             }
-            eventTypes.add(event.eventType);
         });
 
         generateColorsForEventTypes();
-        updateEvents();
+        drawTimeline(events);
         initializeFilters();
         populateTextList();
         populateFamilyList();
@@ -64,6 +55,7 @@ async function loadEvents() {
     }
 }
 
+// Draw events on the canvas
 function drawTimeline(events) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     events.forEach(event => {
@@ -74,9 +66,12 @@ function drawTimeline(events) {
         ctx.fillStyle = getColorForEventType(event.eventType);
         ctx.fill();
         ctx.closePath();
+        // Debugging: log event drawing details
+        console.log(`Drawing event ${event.title} at (${x}, ${y}) with color ${ctx.fillStyle}`);
     });
 }
 
+// Process each event to determine its position
 function processEvent(event) {
     if (event.year) {
         event.percentage = (event.year / 1400) * 100;
@@ -90,6 +85,7 @@ function processEvent(event) {
     console.log('Processed Event:', event);
 }
 
+// Generate colors for each event type
 function generateColorsForEventTypes() {
     eventTypes.forEach(eventType => {
         if (!eventTypeColors[eventType]) {
@@ -98,53 +94,21 @@ function generateColorsForEventTypes() {
     });
 }
 
+// Get color for event type
 function getColorForEventType(eventType) {
     return eventTypeColors[eventType];
 }
 
-function updateEvents() {
-    // Add event listeners to canvas for interaction if needed
-    canvas.addEventListener('click', (event) => {
-        const rect = canvas.getBoundingClientRect();
-        const x = event.clientX - rect.left;
-        const y = event.clientY - rect.top;
-        const clickedEvent = findEventAtPosition(x, y);
-        if (clickedEvent) {
-            displayEventDetails(clickedEvent);
-        }
-    });
-}
-
-function findEventAtPosition(x, y) {
-    const events = [...historicalEvents, ...manuscriptEvents, ...uncialEvents];
-    return events.find(event => {
-        const eventX = (event.year / 1400) * canvas.width;
-        const eventY = canvas.height / 2;
-        return Math.sqrt((x - eventX) ** 2 + (y - eventY) ** 2) < 6;
-    });
-}
-
-function displayEventDetails(event) {
-    const year = event.year;
-    const title = event.title;
-    const description = event.description;
-    const texts = (event.texts || []).join(', ');
-    const family = event.family || '';
-    const location = event.location || 'Unknown';
-    content.innerHTML = `<h2>${title} (Year ${year})</h2>
-                         <p>${description}</p>
-                         <p><strong>Location:</strong> ${location}</p>
-                         <p><strong>Texts:</strong> ${texts}</p>
-                         <p><strong>Family:</strong> ${family}</p>`;
-}
-
+// Initialize event listeners and filters
 function initializeFilters() {
     populateTextList();
     populateFamilyList();
 }
 
+// Populate text filter list
 function populateTextList() {
     const textList = document.getElementById('text-list');
+    if (!textList) return;
     textList.innerHTML = '';
     texts.forEach(text => {
         const listItem = document.createElement('li');
@@ -156,8 +120,10 @@ function populateTextList() {
     });
 }
 
+// Populate family filter list
 function populateFamilyList() {
     const familyList = document.getElementById('family-list');
+    if (!familyList) return;
     familyList.innerHTML = '';
     families.forEach(family => {
         const listItem = document.createElement('li');
@@ -169,6 +135,7 @@ function populateFamilyList() {
     });
 }
 
+// Filter events by text
 function filterEventsByText(text, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
@@ -181,6 +148,7 @@ function filterEventsByText(text, isChecked) {
     });
 }
 
+// Filter events by family
 function filterEventsByFamily(family, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
@@ -193,15 +161,7 @@ function filterEventsByFamily(family, isChecked) {
     });
 }
 
-const css = `
-    .greyed-out {
-        display: none;
-    }
-`;
-const style = document.createElement('style');
-style.appendChild(document.createTextNode(css));
-document.head.appendChild(style);
-
+// Generate the legend
 function generateLegend() {
     legendContainer.innerHTML = '';
 
@@ -248,6 +208,7 @@ function generateLegend() {
     });
 }
 
+// Toggle events by type
 function toggleEventsByType(eventType, isChecked) {
     const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
     events.forEach(event => {
@@ -255,60 +216,61 @@ function toggleEventsByType(eventType, isChecked) {
     });
 }
 
-document.getElementById('zoom-in').addEventListener('click', () => {
+// Add zoom functionality
+document.getElementById('zoom-in')?.addEventListener('click', () => {
     scale *= 1.2;
-    timelineContainer.style.transform = `scale(${scale})`;
+    canvas.style.transform = `scale(${scale})`;
 });
 
-document.getElementById('zoom-out').addEventListener('click', () => {
+document.getElementById('zoom-out')?.addEventListener('click', () => {
     scale /= 1.2;
-    timelineContainer.style.transform = `scale(${scale})`;
+    canvas.style.transform = `scale(${scale})`;
 });
 
-timelineContainer.addEventListener('dblclick', (e) => {
-    const rect = timelineContainer.getBoundingClientRect();
+canvas.addEventListener('dblclick', (e) => {
+    const rect = canvas.getBoundingClientRect();
     const offsetX = e.clientX - rect.left;
     const targetPercentage = offsetX / rect.width;
-    const targetScroll = targetPercentage * timelineContainer.scrollWidth * scale - rect.width / 2;
+    const targetScroll = targetPercentage * canvas.scrollWidth * scale - rect.width / 2;
 
-    timelineContainer.scrollTo({
+    canvas.scrollTo({
         left: targetScroll,
         behavior: 'smooth'
     });
 
     scale *= 1.2;
-    timelineContainer.style.transform = `scale(${scale})`;
+    canvas.style.transform = `scale(${scale})`;
 });
 
 let isDown = false;
 let startX;
 let scrollLeft;
 
-timelineContainer.addEventListener('mousedown', (e) => {
+canvas.addEventListener('mousedown', (e) => {
     isDown = true;
-    startX = e.pageX - timelineContainer.offsetLeft;
-    scrollLeft = timelineContainer.scrollLeft;
+    startX = e.pageX - canvas.offsetLeft;
+    scrollLeft = canvas.scrollLeft;
 });
 
-timelineContainer.addEventListener('mouseleave', () => {
+canvas.addEventListener('mouseleave', () => {
     isDown = false;
 });
 
-timelineContainer.addEventListener('mouseup', () => {
+canvas.addEventListener('mouseup', () => {
     isDown = false;
 });
 
-timelineContainer.addEventListener('mousemove', (e) => {
+canvas.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
-    const x = e.pageX - timelineContainer.offsetLeft;
+    const x = e.pageX - canvas.offsetLeft;
     const walk = (x - startX) * 3;
-    timelineContainer.scrollLeft = scrollLeft - walk;
+    canvas.scrollLeft = scrollLeft - walk;
 });
 
 new ResizeObserver(() => {
-    timelineContainer.scrollLeft = (timelineContainer.scrollWidth - timelineContainer.clientWidth) / 2;
-}).observe(timelineContainer);
+    canvas.scrollLeft = (canvas.scrollWidth - canvas.clientWidth) / 2;
+}).observe(canvas);
 
 loadEvents();
 
