@@ -9,6 +9,7 @@ const texts = new Set();
 const families = new Set();
 const eventTypes = new Set();
 const eventTypeColors = {};
+let allEvents = [];
 
 document.getElementById('toggle-legend')?.addEventListener('click', () => {
     const legend = document.getElementById('legend');
@@ -23,17 +24,16 @@ document.getElementById('toggle-sidebar')?.addEventListener('click', () => {
     arrow.classList.toggle('collapsed');
 });
 
-// Load and process events
 async function loadEvents() {
     try {
         const historicalEvents = await fetch('historical_events.json').then(response => response.json());
         const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
         const uncialEvents = await fetch('uncials.json').then(response => response.json());
 
-        const events = [...historicalEvents, ...manuscriptEvents, ...uncialEvents];
-        console.log('Loaded Events:', events); // Debugging: log loaded events
+        allEvents = [...historicalEvents, ...manuscriptEvents, ...uncialEvents];
+        console.log('Loaded Events:', allEvents); // Debugging: log loaded events
 
-        events.forEach(event => {
+        allEvents.forEach(event => {
             processEvent(event);
             eventTypes.add(event.eventType);
             if (event.texts) {
@@ -45,7 +45,7 @@ async function loadEvents() {
         });
 
         generateColorsForEventTypes();
-        drawTimeline(events);
+        drawTimeline(allEvents);
         initializeFilters();
         populateTextList();
         populateFamilyList();
@@ -55,7 +55,6 @@ async function loadEvents() {
     }
 }
 
-// Draw events on the canvas
 function drawTimeline(events) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     events.forEach(event => {
@@ -66,12 +65,10 @@ function drawTimeline(events) {
         ctx.fillStyle = getColorForEventType(event.eventType);
         ctx.fill();
         ctx.closePath();
-        // Debugging: log event drawing details
         console.log(`Drawing event ${event.title} at (${x}, ${y}) with color ${ctx.fillStyle}`);
     });
 }
 
-// Process each event to determine its position
 function processEvent(event) {
     if (event.year) {
         event.percentage = (event.year / 1400) * 100;
@@ -85,7 +82,6 @@ function processEvent(event) {
     console.log('Processed Event:', event);
 }
 
-// Generate colors for each event type
 function generateColorsForEventTypes() {
     eventTypes.forEach(eventType => {
         if (!eventTypeColors[eventType]) {
@@ -94,18 +90,15 @@ function generateColorsForEventTypes() {
     });
 }
 
-// Get color for event type
 function getColorForEventType(eventType) {
     return eventTypeColors[eventType];
 }
 
-// Initialize event listeners and filters
 function initializeFilters() {
     populateTextList();
     populateFamilyList();
 }
 
-// Populate text filter list
 function populateTextList() {
     const textList = document.getElementById('text-list');
     if (!textList) return;
@@ -114,13 +107,12 @@ function populateTextList() {
         const listItem = document.createElement('li');
         listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
         listItem.querySelector('input').addEventListener('change', (e) => {
-            filterEventsByText(text, e.target.checked);
+            filterEvents();
         });
         textList.appendChild(listItem);
     });
 }
 
-// Populate family filter list
 function populateFamilyList() {
     const familyList = document.getElementById('family-list');
     if (!familyList) return;
@@ -129,39 +121,29 @@ function populateFamilyList() {
         const listItem = document.createElement('li');
         listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
         listItem.querySelector('input').addEventListener('change', (e) => {
-            filterEventsByFamily(family, e.target.checked);
+            filterEvents();
         });
         familyList.appendChild(listItem);
     });
 }
 
-// Filter events by text
-function filterEventsByText(text, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-        if (isChecked && eventTexts.includes(text)) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventTexts.includes(text)) {
-            event.classList.add('greyed-out');
-        }
+function filterEvents() {
+    const activeTexts = new Set(
+        [...document.querySelectorAll('#text-list input:checked')].map(input => input.parentElement.textContent.trim())
+    );
+    const activeFamilies = new Set(
+        [...document.querySelectorAll('#family-list input:checked')].map(input => input.parentElement.textContent.trim())
+    );
+
+    const filteredEvents = allEvents.filter(event => {
+        const matchesText = event.texts ? event.texts.some(text => activeTexts.has(text)) : true;
+        const matchesFamily = event.family ? activeFamilies.has(event.family) : true;
+        return matchesText && matchesFamily;
     });
+
+    drawTimeline(filteredEvents);
 }
 
-// Filter events by family
-function filterEventsByFamily(family, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventFamily = event.getAttribute('data-family');
-        if (isChecked && eventFamily === family) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventFamily === family) {
-            event.classList.add('greyed-out');
-        }
-    });
-}
-
-// Generate the legend
 function generateLegend() {
     legendContainer.innerHTML = '';
 
@@ -208,7 +190,6 @@ function generateLegend() {
     });
 }
 
-// Toggle events by type
 function toggleEventsByType(eventType, isChecked) {
     const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
     events.forEach(event => {
@@ -216,7 +197,6 @@ function toggleEventsByType(eventType, isChecked) {
     });
 }
 
-// Add zoom functionality
 document.getElementById('zoom-in')?.addEventListener('click', () => {
     scale *= 1.2;
     canvas.style.transform = `scale(${scale})`;
