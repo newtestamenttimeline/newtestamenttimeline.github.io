@@ -164,7 +164,7 @@ document.getElementById('eventTable').addEventListener('paste', (event) => {
     const rows = pastedData.split('\n').map(row => row.split('\t'));
 
     const selection = window.getSelection();
-    const selectedCell = selection.anchorNode.parentElement;
+    const selectedCell = selection.anchorNode.nodeType === Node.TEXT_NODE ? selection.anchorNode.parentElement : selection.anchorNode;
     const table = document.getElementById('eventTable');
     const tableBody = table.getElementsByTagName('tbody')[0];
     const selectedRowIndex = selectedCell.parentElement.rowIndex - 1; // Adjust for the header row
