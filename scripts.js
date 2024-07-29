@@ -11,6 +11,7 @@ const eventTypes = new Set();
 const eventTypeColors = {};
 let allEvents = [];
 
+// Add event listeners for sidebar and legend toggles
 document.getElementById('toggle-legend')?.addEventListener('click', () => {
     const legend = document.getElementById('legend');
     legend.classList.toggle('collapsed');
@@ -24,6 +25,7 @@ document.getElementById('toggle-sidebar')?.addEventListener('click', () => {
     arrow.classList.toggle('collapsed');
 });
 
+// Load and process events
 async function loadEvents() {
     try {
         const historicalEvents = await fetch('historical_events.json').then(response => response.json());
@@ -106,7 +108,7 @@ function populateTextList() {
     texts.forEach(text => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
-        listItem.querySelector('input').addEventListener('change', (e) => {
+        listItem.querySelector('input').addEventListener('change', () => {
             filterEvents();
         });
         textList.appendChild(listItem);
@@ -120,7 +122,7 @@ function populateFamilyList() {
     families.forEach(family => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
-        listItem.querySelector('input').addEventListener('change', (e) => {
+        listItem.querySelector('input').addEventListener('change', () => {
             filterEvents();
         });
         familyList.appendChild(listItem);
@@ -180,14 +182,6 @@ function generateLegend() {
 
         legendContainer.appendChild(legendItem);
     });
-
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventType = event.getAttribute('data-event-type');
-        if (eventTypeColors[eventType]) {
-            event.style.backgroundColor = eventTypeColors[eventType];
-        }
-    });
 }
 
 function toggleEventsByType(eventType, isChecked) {
@@ -197,6 +191,7 @@ function toggleEventsByType(eventType, isChecked) {
     });
 }
 
+// Add zoom functionality
 document.getElementById('zoom-in')?.addEventListener('click', () => {
     scale *= 1.2;
     canvas.style.transform = `scale(${scale})`;
