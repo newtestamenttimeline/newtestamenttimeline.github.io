@@ -56,8 +56,7 @@
             <th>Description</th>
             <th>Texts</th>
             <th>Family</th>
-            <th>Left (%)</th>
-            <th>Top (px)</th>
+            <th>Location</th>
         </tr>
     </thead>
     <tbody>
@@ -102,8 +101,7 @@ function loadTable() {
             <td contenteditable="true">${event.description}</td>
             <td contenteditable="true">${event.texts ? event.texts.join(', ') : ''}</td>
             <td contenteditable="true">${event.family || ''}</td>
-            <td contenteditable="true">${event.left || ''}</td>
-            <td contenteditable="true">${event.top || ''}</td>
+            <td contenteditable="true">${event.location || ''}</td>
         `;
     });
 }
@@ -132,6 +130,7 @@ function updateEventDataFromTable() {
             description: cells[4].innerText.trim(),
             texts: cells[5].innerText.trim().split(',').map(text => text.trim()),
             family: cells[6].innerText.trim(),
+            location: cells[7].innerText.trim(),
             percentage: percentage,
             eventType: 'uncial', // or other type if applicable
         };
@@ -142,7 +141,6 @@ function addRow() {
     const tableBody = document.getElementById('eventTable').getElementsByTagName('tbody')[0];
     const row = tableBody.insertRow();
     row.innerHTML = `
-        <td contenteditable="true"></td>
         <td contenteditable="true"></td>
         <td contenteditable="true"></td>
         <td contenteditable="true"></td>
@@ -164,6 +162,7 @@ function exportJSON() {
                 description: event.description,
                 texts: event.texts,
                 family: event.family,
+                location: event.location,
                 percentage: event.percentage,
                 eventType: event.eventType
             };
@@ -174,6 +173,7 @@ function exportJSON() {
                 description: event.description,
                 texts: event.texts,
                 family: event.family,
+                location: event.location,
                 percentage: event.percentage,
                 eventType: event.eventType
             };
