@@ -39,6 +39,9 @@ async function loadEvents() {
 
         timeline.innerHTML = '';
 
+        // Add year labels
+        addYearLabels();
+
         historicalEvents.forEach(event => {
             processEvent(event);
             addEventToTimeline(event);
@@ -79,6 +82,30 @@ async function loadEvents() {
     } catch (error) {
         console.error('Error loading events:', error);
     }
+}
+
+function addYearLabels() {
+    const yearLabels = [
+        { year: 0, left: '0%' },
+        { year: 140, left: '10%' },
+        { year: 280, left: '20%' },
+        { year: 420, left: '30%' },
+        { year: 560, left: '40%' },
+        { year: 700, left: '50%' },
+        { year: 840, left: '60%' },
+        { year: 980, left: '70%' },
+        { year: 1120, left: '80%' },
+        { year: 1260, left: '90%' },
+        { year: 1400, left: '100%' }
+    ];
+
+    yearLabels.forEach(label => {
+        const yearLabel = document.createElement('div');
+        yearLabel.className = 'year-label';
+        yearLabel.style.left = label.left;
+        yearLabel.innerText = label.year;
+        timeline.appendChild(yearLabel);
+    });
 }
 
 function processEvent(event) {
