@@ -36,17 +36,22 @@ async function loadEvents() {
         timeline.innerHTML = '';
 
         historicalEvents.forEach(event => {
-            event.percentage = (event.year / 1400) * 100;
+            if (event.year) {
+                event.percentage = Math.round((event.year / 1000) * 100);
+            } else if (event.yearRange) {
+                const midPoint = (event.yearRange[0] + event.yearRange[1]) / 2;
+                event.percentage = Math.round((midPoint / 1000) * 100);
+            }
             addEventToTimeline(event);
             eventTypes.add(event.eventType);
         });
 
         manuscriptEvents.forEach(event => {
-            if (event.yearRange) {
-                const yearRange = event.yearRange;
-                const eventYear = (yearRange[0] + yearRange[1]) / 2;
-                event.year = eventYear;
-                event.percentage = (eventYear / 1400) * 100;
+            if (event.year) {
+                event.percentage = Math.round((event.year / 1000) * 100);
+            } else if (event.yearRange) {
+                const midPoint = (event.yearRange[0] + event.yearRange[1]) / 2;
+                event.percentage = Math.round((midPoint / 1000) * 100);
             }
             addEventToTimeline(event);
             if (event.texts) {
@@ -59,11 +64,11 @@ async function loadEvents() {
         });
 
         uncialEvents.forEach(event => {
-            if (event.yearRange) {
-                const yearRange = event.yearRange;
-                const eventYear = (yearRange[0] + yearRange[1]) / 2;
-                event.year = eventYear;
-                event.percentage = (eventYear / 1400) * 100;
+            if (event.year) {
+                event.percentage = Math.round((event.year / 1000) * 100);
+            } else if (event.yearRange) {
+                const midPoint = (event.yearRange[0] + event.yearRange[1]) / 2;
+                event.percentage = Math.round((midPoint / 1000) * 100);
             }
             addEventToTimeline(event);
             if (event.texts) {
@@ -95,7 +100,7 @@ function addEventToTimeline(event) {
 
     const newEvent = document.createElement('div');
     newEvent.className = 'event';
-    newEvent.setAttribute('data-year', event.year);
+    newEvent.setAttribute('data-year', event.year || event.yearRange ? ((event.yearRange[0] + event.yearRange[1]) / 2).toFixed(0) : '');
     newEvent.setAttribute('title', event.title);
     newEvent.setAttribute('data-description', event.description);
     newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
@@ -112,7 +117,7 @@ function addEventToTimeline(event) {
         top: parseFloat(e.style.top)
     }));
 
-    let newLeft = (event.year / 1400) * 100;
+    let newLeft = (event.percentage / 1000) * 100;
     let newTop = 0;
 
     if (existingDots.length === 0) {
@@ -191,7 +196,14 @@ function updateEvents() {
             const year = event.getAttribute('data-year');
             const title = event.getAttribute('title');
             const description = event.getAttribute('data-description');
-            content.innerHTML = `<h2>${title} (Year ${year})</h2><p>${description}</p>`;
+            const texts = JSON.parse(event.getAttribute('data-texts')).join(', ');
+            const family = event.getAttribute('data-family');
+            const location = event.getAttribute('data-location');
+            content.innerHTML = `<h2>${title} (Year ${year})</h2>
+                                 <p>${description}</p>
+                                 <p>Texts: ${texts}</p>
+                                 <p>Family: ${family}</p>
+                                 <p>Location: ${location}</p>`;
         });
     });
 }
