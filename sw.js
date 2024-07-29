@@ -7,11 +7,15 @@ const urlsToCache = [
 ];
 
 self.addEventListener('install', event => {
+    console.log('Service Worker: Install event in progress.');
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(cache => {
                 console.log('Opened cache');
-                return cache.addAll(urlsToCache);
+                return cache.addAll(urlsToCache.map(url => new Request(url, { cache: 'reload' })));
+            })
+            .catch(error => {
+                console.error('Failed to open cache or add files:', error);
             })
     );
 });
