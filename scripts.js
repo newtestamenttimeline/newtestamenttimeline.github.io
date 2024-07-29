@@ -13,6 +13,7 @@ let allEvents = [];
 const dotRadius = 6;
 const dotDiameter = dotRadius * 2;
 const spacing = 20; // Minimum space between dots
+const maxLayers = 5; // Maximum number of layers to try placing dots
 
 // Add event listeners for sidebar and legend toggles
 document.getElementById('toggle-legend')?.addEventListener('click', () => {
@@ -62,29 +63,67 @@ async function loadEvents() {
 
 function drawTimeline(events) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    const drawnPositions = [];
 
+    // Draw timeline line
+    ctx.beginPath();
+    ctx.moveTo(0, canvas.height / 2);
+    ctx.lineTo(canvas.width, canvas.height / 2);
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    ctx.closePath();
+
+    // Draw year labels
+    const interval = 100; // Interval for year labels
+    const startYear = 0;
+    const endYear = 1400;
+    for (let year = startYear; year <= endYear; year += interval) {
+        const x = (year / endYear) * canvas.width;
+        ctx.fillStyle = '#000';
+        ctx.font = '14px Arial';
+        ctx.fillText(year, x, canvas.height / 2 - 10);
+        ctx.beginPath();
+        ctx.moveTo(x, canvas.height / 2 - 5);
+        ctx.lineTo(x, canvas.height / 2 + 5);
+        ctx.stroke();
+        ctx.closePath();
+    }
+
+    const drawnPositions = [];
     events.forEach(event => {
         let x = (event.year / 1400) * canvas.width;
-        let y = canvas.height / 2;
+        let placed = false;
 
-        // Adjust y position if dot overlaps with any already drawn dot
-        let attempts = 0;
-        while (isOverlapping(x, y, drawnPositions) && attempts < 100) {
-            y += spacing;
-            attempts++;
+        for (let layer = 0; layer < maxLayers; layer++) {
+            let y = canvas.height / 2 + (layer * dotDiameter * 2);
+            if (!isOverlapping(x, y, drawnPositions)) {
+                drawnPositions.push({ x, y });
+                ctx.beginPath();
+                ctx.arc(x, y, dotRadius, 0, Math.PI * 2);
+                ctx.fillStyle = getColorForEventType(event.eventType);
+                ctx.fill();
+                ctx.closePath();
+                console.log(`Drawing event ${event.title} at (${x}, ${y}) with color ${ctx.fillStyle}`); // Debugging: log event drawing details
+                placed = true;
+                break;
+            }
+
+            y = canvas.height / 2 - (layer * dotDiameter * 2);
+            if (!isOverlapping(x, y, drawnPositions)) {
+                drawnPositions.push({ x, y });
+                ctx.beginPath();
+                ctx.arc(x, y, dotRadius, 0, Math.PI * 2);
+                ctx.fillStyle = getColorForEventType(event.eventType);
+                ctx.fill();
+                ctx.closePath();
+                console.log(`Drawing event ${event.title} at (${x}, ${y}) with color ${ctx.fillStyle}`); // Debugging: log event drawing details
+                placed = true;
+                break;
+            }
         }
 
-        if (attempts >= 100) {
+        if (!placed) {
             console.warn(`Could not place event ${event.title} without overlap.`);
-        } else {
-            drawnPositions.push({ x, y });
-            ctx.beginPath();
-            ctx.arc(x, y, dotRadius, 0, Math.PI * 2);
-            ctx.fillStyle = getColorForEventType(event.eventType);
-            ctx.fill();
-            ctx.closePath();
-            console.log(`Drawing event ${event.title} at (${x}, ${y}) with color ${ctx.fillStyle}`); // Debugging: log event drawing details
         }
     });
 }
@@ -93,7 +132,7 @@ function isOverlapping(x, y, positions) {
     return positions.some(pos => {
         const dx = x - pos.x;
         const dy = y - pos.y;
-        return Math.sqrt(dx * dx + dy * dy) < dotDiameter + spacing;
+        return Math.sqrt(dx * dx + dy * dy) < dotDiameter;
     });
 }
 
