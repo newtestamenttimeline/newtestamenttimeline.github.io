@@ -33,6 +33,10 @@ async function loadEvents() {
         const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
         const uncialEvents = await fetch('uncials.json').then(response => response.json());
 
+        console.log('Historical Events:', historicalEvents);
+        console.log('Manuscript Events:', manuscriptEvents);
+        console.log('Uncial Events:', uncialEvents);
+
         timeline.innerHTML = '';
 
         historicalEvents.forEach(event => {
@@ -94,13 +98,14 @@ async function loadEvents() {
 const yearDotPlacements = {};
 
 function addEventToTimeline(event) {
+    console.log('Adding event to timeline:', event);
     if (document.querySelector(`.event[title="${event.title}"]`)) {
         return;
     }
 
     const newEvent = document.createElement('div');
     newEvent.className = 'event';
-    newEvent.setAttribute('data-year', event.year || event.yearRange ? ((event.yearRange[0] + event.yearRange[1]) / 2).toFixed(0) : '');
+    newEvent.setAttribute('data-year', event.year || (event.yearRange ? ((event.yearRange[0] + event.yearRange[1]) / 2).toFixed(0) : ''));
     newEvent.setAttribute('title', event.title);
     newEvent.setAttribute('data-description', event.description);
     newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
