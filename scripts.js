@@ -67,7 +67,7 @@ function drawTimeline(events) {
         ctx.fillStyle = getColorForEventType(event.eventType);
         ctx.fill();
         ctx.closePath();
-        console.log(`Drawing event ${event.title} at (${x}, ${y}) with color ${ctx.fillStyle}`);
+        console.log(`Drawing event ${event.title} at (${x}, ${y}) with color ${ctx.fillStyle}`); // Debugging: log event drawing details
     });
 }
 
@@ -81,7 +81,7 @@ function processEvent(event) {
     } else {
         console.warn('Event has no year or yearRange:', event);
     }
-    console.log('Processed Event:', event);
+    console.log('Processed Event:', event); // Debugging: log processed event
 }
 
 function generateColorsForEventTypes() {
