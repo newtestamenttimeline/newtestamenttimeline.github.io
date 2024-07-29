@@ -1,5 +1,6 @@
 const canvas = document.getElementById('timelineCanvas');
 const ctx = canvas.getContext('2d');
+const timelineContainer = document.getElementById('timeline-container');
 const content = document.getElementById('event-content');
 const sidebar = document.getElementById('sidebar');
 const legendContainer = document.getElementById('legend');
@@ -42,13 +43,14 @@ async function loadEvents() {
 
         events.forEach(event => {
             processEvent(event);
-            eventTypes.add(event.eventType);
+            addEventToTimeline(event);
             if (event.texts) {
                 event.texts.forEach(text => texts.add(text));
             }
             if (event.family) {
                 families.add(event.family);
             }
+            eventTypes.add(event.eventType);
         });
 
         generateColorsForEventTypes();
@@ -69,7 +71,7 @@ function drawTimeline(events) {
         const y = canvas.height / 2;
         ctx.beginPath();
         ctx.arc(x, y, 6, 0, Math.PI * 2);
-        ctx.fillStyle = event.color;
+        ctx.fillStyle = getColorForEventType(event.eventType);
         ctx.fill();
         ctx.closePath();
     });
@@ -168,15 +170,41 @@ function populateFamilyList() {
 }
 
 function filterEventsByText(text, isChecked) {
-    // Implementation to filter events by text
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventTexts = JSON.parse(event.getAttribute('data-texts'));
+        if (isChecked && eventTexts.includes(text)) {
+            event.classList.remove('greyed-out');
+        } else if (!isChecked && eventTexts.includes(text)) {
+            event.classList.add('greyed-out');
+        }
+    });
 }
 
 function filterEventsByFamily(family, isChecked) {
-    // Implementation to filter events by family
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventFamily = event.getAttribute('data-family');
+        if (isChecked && eventFamily === family) {
+            event.classList.remove('greyed-out');
+        } else if (!isChecked && eventFamily === family) {
+            event.classList.add('greyed-out');
+        }
+    });
 }
+
+const css = `
+    .greyed-out {
+        display: none;
+    }
+`;
+const style = document.createElement('style');
+style.appendChild(document.createTextNode(css));
+document.head.appendChild(style);
 
 function generateLegend() {
     legendContainer.innerHTML = '';
+
     eventTypes.forEach(eventType => {
         const legendItem = document.createElement('div');
         legendItem.className = 'legend-item';
@@ -210,70 +238,77 @@ function generateLegend() {
 
         legendContainer.appendChild(legendItem);
     });
+
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventType = event.getAttribute('data-event-type');
+        if (eventTypeColors[eventType]) {
+            event.style.backgroundColor = eventTypeColors[eventType];
+        }
+    });
 }
 
 function toggleEventsByType(eventType, isChecked) {
-    // Implementation to toggle events by type
-}
-
-function toggleSidebar() {
-    sidebar.classList.toggle('collapsed');
+    const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
+    events.forEach(event => {
+        event.style.display = isChecked ? 'block' : 'none';
+    });
 }
 
 document.getElementById('zoom-in').addEventListener('click', () => {
     scale *= 1.2;
-    canvas.style.transform = `scale(${scale})`;
+    timelineContainer.style.transform = `scale(${scale})`;
 });
 
 document.getElementById('zoom-out').addEventListener('click', () => {
     scale /= 1.2;
-    canvas.style.transform = `scale(${scale})`;
+    timelineContainer.style.transform = `scale(${scale})`;
 });
 
-canvas.addEventListener('dblclick', (e) => {
-    const rect = canvas.getBoundingClientRect();
+timelineContainer.addEventListener('dblclick', (e) => {
+    const rect = timelineContainer.getBoundingClientRect();
     const offsetX = e.clientX - rect.left;
     const targetPercentage = offsetX / rect.width;
-    const targetScroll = targetPercentage * canvas.scrollWidth * scale - rect.width / 2;
+    const targetScroll = targetPercentage * timelineContainer.scrollWidth * scale - rect.width / 2;
 
-    canvas.scrollTo({
+    timelineContainer.scrollTo({
         left: targetScroll,
         behavior: 'smooth'
     });
 
     scale *= 1.2;
-    canvas.style.transform = `scale(${scale})`;
+    timelineContainer.style.transform = `scale(${scale})`;
 });
 
 let isDown = false;
 let startX;
 let scrollLeft;
 
-canvas.addEventListener('mousedown', (e) => {
+timelineContainer.addEventListener('mousedown', (e) => {
     isDown = true;
-    startX = e.pageX - canvas.offsetLeft;
-    scrollLeft = canvas.scrollLeft;
+    startX = e.pageX - timelineContainer.offsetLeft;
+    scrollLeft = timelineContainer.scrollLeft;
 });
 
-canvas.addEventListener('mouseleave', () => {
+timelineContainer.addEventListener('mouseleave', () => {
     isDown = false;
 });
 
-canvas.addEventListener('mouseup', () => {
+timelineContainer.addEventListener('mouseup', () => {
     isDown = false;
 });
 
-canvas.addEventListener('mousemove', (e) => {
+timelineContainer.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
-    const x = e.pageX - canvas.offsetLeft;
+    const x = e.pageX - timelineContainer.offsetLeft;
     const walk = (x - startX) * 3;
-    canvas.scrollLeft = scrollLeft - walk;
+    timelineContainer.scrollLeft = scrollLeft - walk;
 });
 
 new ResizeObserver(() => {
-    canvas.scrollLeft = (canvas.scrollWidth - canvas.clientWidth) / 2;
-}).observe(canvas);
+    timelineContainer.scrollLeft = (timelineContainer.scrollWidth - timelineContainer.clientWidth) / 2;
+}).observe(timelineContainer);
 
 loadEvents();
 
