@@ -40,7 +40,7 @@
       "Luke"
     ],
     "family": "Western",
-    "location": "",
+    "location": "Alexandria (likely origin), now in the British Library, London (Codex Alexandrinus)",
     "percentage": 38,
     "eventType": "uncial"
   },
@@ -55,7 +55,7 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "",
+    "location": "Constantinople (now in the Bibliothèque nationale de France, Paris) (Codex Ephraemi Rescriptus)",
     "percentage": 40,
     "eventType": "uncial"
   },
@@ -70,7 +70,7 @@
       "Acts"
     ],
     "family": "Byzantine",
-    "location": "",
+    "location": "Monastery of St. Irenaeus, Lyon (now in the University of Cambridge) (Codex Bezae)",
     "percentage": 43,
     "eventType": "uncial"
   },
@@ -85,7 +85,7 @@
       "Romans"
     ],
     "family": "Western",
-    "location": "",
+    "location": "Mount Athos, Greece (Codex Athous Lavrensis)",
     "percentage": 45,
     "eventType": "uncial"
   },
@@ -100,7 +100,7 @@
       "1 Corinthians"
     ],
     "family": "Alexandrian",
-    "location": "",
+    "location": "Monastery of St. Catherine, Sinai Peninsula (Codex Petropolitanus Purpureus)",
     "percentage": 48,
     "eventType": "uncial"
   },
@@ -115,7 +115,7 @@
       "Galatians"
     ],
     "family": "Byzantine",
-    "location": "",
+    "location": "Egypt (Codex Claromontanus, now in Paris)",
     "percentage": 50,
     "eventType": "uncial"
   },
@@ -130,7 +130,7 @@
       "Ephesians"
     ],
     "family": "Western",
-    "location": "",
+    "location": "Great Lavra Monastery, Mount Athos (Codex Coislinianus)",
     "percentage": 53,
     "eventType": "uncial"
   },
@@ -145,7 +145,7 @@
       "Philippians"
     ],
     "family": "Alexandrian",
-    "location": "",
+    "location": "Unknown, now in the British Library (Codex Harleianus)",
     "percentage": 55,
     "eventType": "uncial"
   },
@@ -160,7 +160,7 @@
       "Colossians"
     ],
     "family": "Byzantine",
-    "location": "",
+    "location": "Alexandria (likely origin) (Codex Tischendorfianus III)",
     "percentage": 57,
     "eventType": "uncial"
   },
@@ -175,7 +175,7 @@
       "1 Thessalonians"
     ],
     "family": "Western",
-    "location": "",
+    "location": "Egypt (Codex Petropolitanus Purpureus)",
     "percentage": 60,
     "eventType": "uncial"
   },
@@ -190,7 +190,7 @@
       "2 Thessalonians"
     ],
     "family": "Alexandrian",
-    "location": "",
+    "location": "Sinai (Codex Zacynthius)",
     "percentage": 63,
     "eventType": "uncial"
   },
@@ -205,7 +205,7 @@
       "1 Timothy"
     ],
     "family": "Byzantine",
-    "location": "",
+    "location": "Egypt (Codex Beratinus)",
     "percentage": 65,
     "eventType": "uncial"
   },
@@ -220,7 +220,7 @@
       "2 Timothy"
     ],
     "family": "Western",
-    "location": "",
+    "location": "Egypt (Codex Rossanensis)",
     "percentage": 68,
     "eventType": "uncial"
   },
@@ -235,7 +235,7 @@
       "Titus"
     ],
     "family": "Alexandrian",
-    "location": "",
+    "location": "Unknown (Codex Dublinensis)",
     "percentage": 70,
     "eventType": "uncial"
   },
@@ -250,7 +250,7 @@
       "Philemon"
     ],
     "family": "Byzantine",
-    "location": "",
+    "location": "Egypt (Codex Basilensis)",
     "percentage": 73,
     "eventType": "uncial"
   },
@@ -265,7 +265,7 @@
       "Hebrews"
     ],
     "family": "Western",
-    "location": "",
+    "location": "Egypt (Codex Boernerianus)",
     "percentage": 75,
     "eventType": "uncial"
   },
@@ -280,7 +280,7 @@
       "James"
     ],
     "family": "Alexandrian",
-    "location": "",
+    "location": "Egypt (Codex Basilensis A. N. III. 12)",
     "percentage": 78,
     "eventType": "uncial"
   },
@@ -295,7 +295,7 @@
       "1 Peter"
     ],
     "family": "Byzantine",
-    "location": "",
+    "location": "Unknown (Codex Cyprius)",
     "percentage": 80,
     "eventType": "uncial"
   },
@@ -310,7 +310,7 @@
       "2 Peter"
     ],
     "family": "Western",
-    "location": "",
+    "location": "Egypt (Codex Seidelianus I)",
     "percentage": 83,
     "eventType": "uncial"
   },
@@ -325,7 +325,7 @@
       "1 John"
     ],
     "family": "Alexandrian",
-    "location": "",
+    "location": "Egypt (Codex Seidelianus II)",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -340,7 +340,7 @@
       "2 John"
     ],
     "family": "Byzantine",
-    "location": "",
+    "location": "Egypt (Codex Guelferbytanus A)",
     "percentage": 88,
     "eventType": "uncial"
   },
@@ -355,7 +355,7 @@
       "3 John"
     ],
     "family": "Western",
-    "location": "",
+    "location": "Egypt (Codex Guelferbytanus B)",
     "percentage": 90,
     "eventType": "uncial"
   },
@@ -370,7 +370,7 @@
       "Jude"
     ],
     "family": "Alexandrian",
-    "location": "",
+    "location": "Egypt (Codex Augiensis)",
     "percentage": 93,
     "eventType": "uncial"
   },
@@ -385,7 +385,7 @@
       "Revelation"
     ],
     "family": "Byzantine",
-    "location": "",
+    "location": "Egypt (Codex Boernerianus)",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -400,7 +400,7 @@
       "Matthew"
     ],
     "family": "Western",
-    "location": "",
+    "location": "Egypt (Codex Sangallensis)",
     "percentage": 98,
     "eventType": "uncial"
   },
@@ -415,7 +415,7 @@
       "Mark"
     ],
     "family": "Alexandrian",
-    "location": "",
+    "location": "Egypt (Codex Tischendorfianus IV)",
     "percentage": 100,
     "eventType": "uncial"
   },
@@ -430,7 +430,7 @@
       "Luke"
     ],
     "family": "Byzantine",
-    "location": "",
+    "location": "Egypt (Codex Tischendorfianus I)",
     "percentage": 102,
     "eventType": "uncial"
   },
@@ -445,7 +445,7 @@
       "John"
     ],
     "family": "Western",
-    "location": "",
+    "location": "Egypt (Codex Tischendorfianus II)",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -458,7 +458,7 @@
       "Mark"
     ],
     "family": "Byzantine",
-    "location": "",
+    "location": "Egypt (Codex Vaticanus 2061)",
     "percentage": 55,
     "eventType": "uncial"
   },
@@ -472,8 +472,3493 @@
       "Luke"
     ],
     "family": "Western",
-    "location": "",
+    "location": "Egypt (Codex Washingtonianus)",
     "percentage": 50,
     "eventType": "uncial"
-  } 
+  },
+  {
+    "year": 850,
+    "title": "Uncial 33",
+    "description": "Contains portions of the New Testament",
+    "texts": [
+      "Paul's Epistles"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt (Codex Regius)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 34",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Nanianus)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 35",
+    "description": "Contains portions of the New Testament",
+    "texts": [
+      "Paul's Epistles"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Monacensis)",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 550,
+    "title": "Uncial 36",
+    "description": "Palimpsest containing portions of the Gospels",
+    "texts": [
+      "Luke",
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt (Codex Tischendorfianus III)",
+    "percentage": 55,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 37",
+    "description": "Contains portions of the New Testament",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Petropolitanus)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 38",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Macedoniensis)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 39",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Angelicus)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 550,
+    "title": "Uncial 40",
+    "description": "Palimpsest containing portions of the Gospels",
+    "texts": [
+      "Matthew",
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt (Codex Athous Dionysiou)",
+    "percentage": 55,
+    "eventType": "uncial"
+  },
+  {
+    "year": 750,
+    "title": "Uncial 41",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke",
+      "John"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Athous Lavrensis)",
+    "percentage": 75,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 42",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "John"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Athous Koutloumousiou)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 550,
+    "title": "Uncial 43",
+    "description": "Palimpsest containing portions of the Gospels",
+    "texts": [
+      "Matthew",
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt (Codex Vaticanus 2066)",
+    "percentage": 55,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 44",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Athous Lavrensis)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 45",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Athous Pantokratoros)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 46",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Athous Zographou)",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 750,
+    "title": "Uncial 47",
+    "description": "Contains portions of the New Testament",
+    "texts": [
+      "Paul's Epistles"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 2067)",
+    "percentage": 75,
+    "eventType": "uncial"
+  },
+  {
+    "year": 450,
+    "title": "Uncial 48",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew",
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt (Codex Vaticanus 354)",
+    "percentage": 45,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 49",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 367)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 50",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 375)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 51",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 380)",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 52",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 383)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 53",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 386)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 550,
+    "title": "Uncial 54",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 401)",
+    "percentage": 55,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 55",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 405)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 56",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 420)",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 57",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 425)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 58",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 440)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 550,
+    "title": "Uncial 59",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 450)",
+    "percentage": 55,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 60",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 466)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 61",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 481)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 62",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 492)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 63",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 493)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 64",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 500)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 65",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 511)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 66",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 517)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 67",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 522)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 68",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 526)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 69",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 529)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 70",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 536)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 71",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 540)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 72",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 545)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 73",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 548)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 74",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 553)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 75",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 555)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 76",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 560)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 77",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 564)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 78",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 567)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 79",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 571)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 80",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 577)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 81",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 580)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 82",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 586)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 83",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 590)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 84",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 593)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 85",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 599)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 86",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 603)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 87",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 607)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 88",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 611)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 89",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 615)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 90",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 619)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 91",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 623)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 92",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 628)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 93",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 632)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 94",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 636)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 95",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 640)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 96",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 644)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 97",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 648)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 98",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 652)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 99",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 656)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 850,
+    "title": "Uncial 100",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt (Codex Vaticanus 660)",
+    "percentage": 85,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 101",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 102",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 103",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 104",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 105",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 106",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 107",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 108",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 109",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 110",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 111",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 112",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 113",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 114",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 115",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 116",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 117",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 118",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 119",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 120",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 121",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 122",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 123",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 124",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 125",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 126",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 127",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 128",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 129",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 130",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 131",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 132",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 133",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 134",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 135",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 136",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 137",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 138",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 139",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 140",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 141",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 142",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 143",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 144",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 145",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 146",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 147",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 148",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 149",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 150",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 151",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 152",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 153",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 154",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 155",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 156",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 157",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 158",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 159",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 160",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 161",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 162",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 163",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 164",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 165",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 166",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 167",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 168",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 169",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 170",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 171",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 172",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 173",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 174",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 175",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 176",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 177",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 178",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 179",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 180",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 181",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 182",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 183",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 184",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 185",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 186",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 187",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 188",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 189",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 190",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 191",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 192",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 193",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 194",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 195",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 196",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 197",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 198",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 199",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 200",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 201",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 202",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 203",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 204",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 950,
+    "title": "Uncial 205",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 95,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 206",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 207",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 208",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 209",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 210",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 211",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 212",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 213",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 214",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 215",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 216",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 217",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 218",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 219",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 220",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 221",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 222",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 223",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 224",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 225",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 226",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 227",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 228",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 229",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 230",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 231",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 232",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 233",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 234",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 235",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 236",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 237",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 238",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 239",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 240",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 241",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 242",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 243",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 244",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 245",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 246",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 247",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 248",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 249",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 250",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 251",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 252",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 253",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 254",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 255",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 256",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 257",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 258",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 259",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 260",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 261",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 262",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 263",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 264",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 265",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 266",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 267",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 268",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 269",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 270",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 271",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 272",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 273",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 274",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 275",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 276",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 277",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 278",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 279",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 280",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 281",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 282",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 283",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 284",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 285",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 286",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 287",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 288",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 289",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 290",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 291",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 292",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 293",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 294",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 295",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 296",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 297",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 298",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 299",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 300",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 301",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 302",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 303",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 304",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 305",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 306",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 307",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 308",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 309",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 310",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 311",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 312",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 313",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 314",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 315",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 316",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 317",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 318",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 319",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 320",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 321",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  },
+  {
+    "year": 1050,
+    "title": "Uncial 322",
+    "description": "Contains portions of the Gospels",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "percentage": 105,
+    "eventType": "uncial"
+  }
 ]
