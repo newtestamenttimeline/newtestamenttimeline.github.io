@@ -113,18 +113,27 @@ function updateEventDataFromTable() {
     const rows = tableBody.getElementsByTagName('tr');
     eventData = Array.from(rows).map(row => {
         const cells = row.getElementsByTagName('td');
+        const year = cells[0].innerText.trim();
+        const startYear = cells[1].innerText.trim();
+        const endYear = cells[2].innerText.trim();
+        let percentage;
+
+        if (year) {
+            percentage = Math.round((parseInt(year) / 1000) * 100);
+        } else if (startYear && endYear) {
+            const midPoint = (parseInt(startYear) + parseInt(endYear)) / 2;
+            percentage = Math.round((midPoint / 1000) * 100);
+        }
+
         return {
-            year: cells[0].innerText.trim() || null,
-            yearRange: [
-                cells[1].innerText.trim() || null,
-                cells[2].innerText.trim() || null
-            ],
+            yearRange: startYear && endYear ? [parseInt(startYear), parseInt(endYear)] : undefined,
+            year: year ? parseInt(year) : undefined,
             title: cells[3].innerText.trim(),
             description: cells[4].innerText.trim(),
             texts: cells[5].innerText.trim().split(',').map(text => text.trim()),
             family: cells[6].innerText.trim(),
-            left: cells[7].innerText.trim() || null,
-            top: cells[8].innerText.trim() || null
+            percentage: percentage,
+            eventType: 'uncial', // or other type if applicable
         };
     });
 }
@@ -147,7 +156,31 @@ function addRow() {
 
 function exportJSON() {
     updateEventDataFromTable();
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(eventData, null, 2));
+    const formattedEventData = eventData.map(event => {
+        if (event.year) {
+            return {
+                year: event.year,
+                title: event.title,
+                description: event.description,
+                texts: event.texts,
+                family: event.family,
+                percentage: event.percentage,
+                eventType: event.eventType
+            };
+        } else {
+            return {
+                yearRange: event.yearRange,
+                title: event.title,
+                description: event.description,
+                texts: event.texts,
+                family: event.family,
+                percentage: event.percentage,
+                eventType: event.eventType
+            };
+        }
+    });
+
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(formattedEventData, null, 2));
     const downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute("href", dataStr);
     downloadAnchorNode.setAttribute("download", currentFile);
