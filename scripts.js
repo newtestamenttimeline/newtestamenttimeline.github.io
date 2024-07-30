@@ -431,14 +431,14 @@ function toggleSidebar() {
 document.getElementById('zoom-in').addEventListener('click', () => {
     scale *= 1.2;
     timeline.style.transform = `scale(${scale})`;
-    timelineContainer.scrollLeft = 0; // Ensure the scroll is reset to the left
+    timeline.style.transformOrigin = '0 50%'; // Ensure scaling starts from the left side
 });
 
 // Zoom out of the timeline
 document.getElementById('zoom-out').addEventListener('click', () => {
     scale /= 1.2;
     timeline.style.transform = `scale(${scale})`;
-    timelineContainer.scrollLeft = 0; // Ensure the scroll is reset to the left
+    timeline.style.transformOrigin = '0 50%'; // Ensure scaling starts from the left side
 });
 
 // Handle double-click to zoom in on the timeline
@@ -455,9 +455,7 @@ timelineContainer.addEventListener('dblclick', (e) => {
 
     scale *= 1.2;
     timeline.style.transform = `scale(${scale})`;
-    setTimeout(() => {
-        timelineContainer.scrollLeft = 0; // Ensure the scroll is reset to the left
-    }, 500); // Adjust delay as needed
+    timeline.style.transformOrigin = '0 50%'; // Ensure scaling starts from the left side
 });
 
 let isDown = false;
