@@ -125,8 +125,6 @@ function processEvent(event) {
     console.log('Processed Event:', event);
 }
 
-const yearDotPlacements = {};
-
 // Add an event to the timeline
 function addEventToTimeline(event) {
     console.log('Adding event to timeline:', event);
@@ -144,61 +142,9 @@ function addEventToTimeline(event) {
     newEvent.setAttribute('data-location', event.location || 'Unknown');
     newEvent.setAttribute('data-event-type', event.eventType);
 
-    if (!yearDotPlacements[event.year]) {
-        yearDotPlacements[event.year] = [];
-    }
-
-    const existingDots = yearDotPlacements[event.year];
-    const positions = Array.from(document.querySelectorAll('.event')).map(e => ({
-        left: parseFloat(e.style.left),
-        top: parseFloat(e.style.top)
-    }));
-
-    let newLeft = (event.percentage * timeline.offsetWidth) / 100;
-    let newTop = 0;
-
-    if (existingDots.length === 0) {
-        newTop = 0;
-    } else if (existingDots.length === 1) {
-        newTop = Math.random() > 0.5 ? dotDiameter + spacing : -(dotDiameter + spacing);
-    } else {
-        const [lastTop] = existingDots.slice(-1);
-        newTop = lastTop > 0 ? -(dotDiameter + spacing) : dotDiameter + spacing;
-
-        if (isPositionOccupied(newLeft, newTop)) {
-            const directions = [[0, -spacing], [0, spacing], [-spacing, 0], [spacing, 0]];
-            shuffleArray(directions);
-            let found = false;
-
-            for (let i = 0; i < directions.length; i++) {
-                const [dx, dy] = directions[i];
-                if (!isPositionOccupied(newLeft + dx, newTop + dy)) {
-                    newLeft += dx;
-                    newTop += dy;
-                    found = true;
-                    break;
-                }
-            }
-
-            if (!found) {
-                let tries = 0;
-                const maxTries = 1000;
-                while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
-                    newTop += newTop > 0 ? spacing + step : -(spacing + step);
-                    tries++;
-                }
-            }
-        }
-    }
-
-    yearDotPlacements[event.year].push(newTop);
-    if (yearDotPlacements[event.year].length > 2) {
-        yearDotPlacements[event.year].shift();
-    }
-
-    // Set initial position
-    newEvent.style.left = `${newLeft}px`;
-    newEvent.style.top = '0px'; // Start at the line
+    // Set initial position based on percentage and y-coordinate from JSON
+    newEvent.style.left = `${event.percentage}%`;
+    newEvent.style.top = `${event.y}px`;
 
     newEvent.style.backgroundColor = getColorForEventType(event.eventType);
 
@@ -207,29 +153,6 @@ function addEventToTimeline(event) {
     // Ensure year labels are always visible
     document.querySelectorAll('.year-label').forEach(label => {
         timeline.appendChild(label);
-    });
-
-    // Trigger transition to final position
-    setTimeout(() => {
-        newEvent.style.top = `${newTop}px`;
-    }, 0);
-}
-
-// Shuffle an array
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
-
-// Check if a position is occupied
-function isPositionOccupied(left, top) {
-    const existingEvents = Array.from(document.querySelectorAll('.event'));
-    return existingEvents.some(e => {
-        const eLeft = parseFloat(e.style.left);
-        const eTop = parseFloat(e.style.top);
-        return Math.abs(eLeft - left) < dotDiameter && Math.abs(eTop - top) < dotDiameter;
     });
 }
 
