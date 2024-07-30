@@ -1,3 +1,5 @@
+/* styles.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root {
@@ -48,12 +50,18 @@ header {
     position: relative;
 }
 
+#timeline-container {
+    width: 100%;
+    position: relative;
+}
+
 .timeline {
     width: 14000px;
     height: 4px;
     background-color: var(--primary-color);
-    position: relative;
-    z-index: 1; /* Ensure timeline is below dots and legend */
+    position: absolute;
+    top: 50%; /* Center the timeline vertically */
+    transform: translateY(-50%);
 }
 
 .timeline::before,
@@ -83,7 +91,7 @@ header {
     border-radius: 50%;
     position: absolute;
     cursor: pointer;
-    transition: top 0.5s ease-out; /* Ensure smooth transition */
+    transition: top 0.5s ease-out, left 0.5s ease-out; /* Ensure smooth transition */
     z-index: 2; /* Ensure dots are above the timeline and year labels */
 }
 
