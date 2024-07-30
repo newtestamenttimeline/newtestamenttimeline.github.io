@@ -83,7 +83,7 @@ header {
     border-radius: 50%;
     position: absolute;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: top 0.5s ease-out; /* Ensure smooth transition */
     z-index: 2; /* Ensure dots are above the timeline and year labels */
 }
 
