@@ -354,44 +354,54 @@ function toggleSidebar() {
 document.getElementById('zoom-in').addEventListener('click', () => {
     scale *= 1.2;
     timeline.style.transform = `scale(${scale})`;
-    timeline.style.transformOrigin = '0 50%'; // Ensure scaling starts from the left side
+    timeline.style.transformOrigin = '0 0'; // Ensure scaling starts from the top-left corner
     timelineContainer.scrollLeft = 0; // Ensure the scroll is reset to the left
+    timelineContainer.scrollTop = 0;  // Ensure the scroll is reset to the top
 });
 
 // Zoom out of the timeline
 document.getElementById('zoom-out').addEventListener('click', () => {
     scale /= 1.2;
     timeline.style.transform = `scale(${scale})`;
-    timeline.style.transformOrigin = '0 50%'; // Ensure scaling starts from the left side
+    timeline.style.transformOrigin = '0 0'; // Ensure scaling starts from the top-left corner
     timelineContainer.scrollLeft = 0; // Ensure the scroll is reset to the left
+    timelineContainer.scrollTop = 0;  // Ensure the scroll is reset to the top
 });
 
 // Handle double-click to zoom in on the timeline
 timelineContainer.addEventListener('dblclick', (e) => {
     const rect = timelineContainer.getBoundingClientRect();
     const offsetX = e.clientX - rect.left;
-    const targetPercentage = offsetX / rect.width;
-    const targetScroll = targetPercentage * timeline.scrollWidth * scale - rect.width / 2;
+    const offsetY = e.clientY - rect.top;
+    const targetPercentageX = offsetX / rect.width;
+    const targetPercentageY = offsetY / rect.height;
+    const targetScrollX = targetPercentageX * timeline.scrollWidth * scale - rect.width / 2;
+    const targetScrollY = targetPercentageY * timeline.scrollHeight * scale - rect.height / 2;
 
     timelineContainer.scrollTo({
-        left: targetScroll,
+        left: targetScrollX,
+        top: targetScrollY,
         behavior: 'smooth'
     });
 
     scale *= 1.2;
     timeline.style.transform = `scale(${scale})`;
-    timeline.style.transformOrigin = '0 50%'; // Ensure scaling starts from the left side
+    timeline.style.transformOrigin = '0 0'; // Ensure scaling starts from the top-left corner
 });
 
 let isDown = false;
 let startX;
+let startY;
 let scrollLeft;
+let scrollTop;
 
 // Handle dragging to scroll the timeline
 timelineContainer.addEventListener('mousedown', (e) => {
     isDown = true;
     startX = e.pageX - timelineContainer.offsetLeft;
+    startY = e.pageY - timelineContainer.offsetTop;
     scrollLeft = timelineContainer.scrollLeft;
+    scrollTop = timelineContainer.scrollTop;
 });
 
 timelineContainer.addEventListener('mouseleave', () => {
@@ -406,11 +416,15 @@ timelineContainer.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - timelineContainer.offsetLeft;
-    const walk = (x - startX) * 3;
-    timelineContainer.scrollLeft = scrollLeft - walk;
+    const y = e.pageY - timelineContainer.offsetTop;
+    const walkX = (x - startX) * 3;
+    const walkY = (y - startY) * 3;
+    timelineContainer.scrollLeft = scrollLeft - walkX;
+    timelineContainer.scrollTop = scrollTop - walkY;
 });
 
 // Ensure the timeline is centered on load
 new ResizeObserver(() => {
     timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
+    timelineContainer.scrollTop = (timeline.scrollHeight - timelineContainer.clientHeight) / 2;
 }).observe(timelineContainer);
