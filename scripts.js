@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const endYear = 1400;
     const interval = 100; // Interval for year labels
     const maxLayers = 5; // Maximum number of layers to try placing dots
+    const eventPositions = []; // Store event positions for click detection
 
     // Add event listeners for sidebar and legend toggles
     document.getElementById('toggle-legend')?.addEventListener('click', () => {
@@ -102,12 +103,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         // Draw events
+        eventPositions.length = 0; // Clear previous positions
         events.forEach(event => {
             ctx.beginPath();
             ctx.arc(event.x, event.y, dotRadius, 0, Math.PI * 2);
             ctx.fillStyle = getColorForEventType(event.eventType);
             ctx.fill();
             ctx.closePath();
+            eventPositions.push({ x: event.x, y: event.y, event: event });
         });
     }
 
@@ -273,10 +276,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function toggleEventsByType(eventType, isChecked) {
-        const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
-        events.forEach(event => {
-            event.style.display = isChecked ? 'block' : 'none';
-        });
+        const events = allEvents.filter(event => event.eventType === eventType);
+        if (isChecked) {
+            events.forEach(event => {
+                event.visible = true;
+            });
+        } else {
+            events.forEach(event => {
+                event.visible = false;
+            });
+        }
+        const visibleEvents = allEvents.filter(event => event.visible);
+        drawTimeline(visibleEvents);
     }
 
     // Add zoom functionality
@@ -337,6 +348,28 @@ document.addEventListener("DOMContentLoaded", function() {
     new ResizeObserver(() => {
         canvas.scrollLeft = (canvas.scrollWidth - canvas.clientWidth) / 2;
     }).observe(canvas);
+
+    canvas.addEventListener('click', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const offsetX = (e.clientX - rect.left) / scale;
+        const offsetY = (e.clientY - rect.top) / scale;
+
+        for (const pos of eventPositions) {
+            const dx = offsetX - pos.x;
+            const dy = offsetY - pos.y;
+            if (Math.sqrt(dx * dx + dy * dy) < dotRadius) {
+                showEventDetails(pos.event);
+                break;
+            }
+        }
+    });
+
+    function showEventDetails(event) {
+        content.innerHTML = `
+            <h2>${event.title}</h2>
+            <p>${event.description}</p>
+        `;
+    }
 
     loadEvents();
 
