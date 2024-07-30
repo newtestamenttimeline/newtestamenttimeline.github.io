@@ -53,16 +53,18 @@ header {
 #timeline-container {
     width: 100%;
     position: relative;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 .timeline {
     width: 14000px;
     height: 4px;
     background-color: var(--primary-color);
-    position: absolute;
+    position: relative;
     top: 50%; /* Center the timeline vertically */
-    left: 0; /* Ensure the timeline starts from the left */
     transform: translateY(-50%);
+    margin: 0 auto;
 }
 
 .timeline::before,
