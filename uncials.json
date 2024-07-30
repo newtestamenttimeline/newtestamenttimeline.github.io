@@ -11,6 +11,7 @@
     ],
     "family": "Alexandrian",
     "location": "St. Catherine's Monastery, Sinai Peninsula (Codex Sinaiticus)",
+    "y": "5",
     "percentage": 33,
     "eventType": "uncial"
   },
@@ -26,6 +27,7 @@
     ],
     "family": "Byzantine",
     "location": "Vatican Library, Rome (Codex Vaticanus)",
+    "y": "5",
     "percentage": 35,
     "eventType": "uncial"
   },
@@ -41,6 +43,7 @@
     ],
     "family": "Western",
     "location": "Alexandria (likely origin), now in the British Library, London (Codex Alexandrinus)",
+    "y": "10",
     "percentage": 38,
     "eventType": "uncial"
   },
@@ -56,6 +59,7 @@
     ],
     "family": "Alexandrian",
     "location": "Constantinople (now in the Bibliothèque nationale de France, Paris) (Codex Ephraemi Rescriptus)",
+    "y": "100",
     "percentage": 40,
     "eventType": "uncial"
   },
@@ -71,6 +75,7 @@
     ],
     "family": "Byzantine",
     "location": "Monastery of St. Irenaeus, Lyon (now in the University of Cambridge) (Codex Bezae)",
+    "y": "1000",
     "percentage": 43,
     "eventType": "uncial"
   },
@@ -86,6 +91,7 @@
     ],
     "family": "Western",
     "location": "Mount Athos, Greece (Codex Athous Lavrensis)",
+    "y": "",
     "percentage": 45,
     "eventType": "uncial"
   },
@@ -101,6 +107,7 @@
     ],
     "family": "Alexandrian",
     "location": "Monastery of St. Catherine, Sinai Peninsula (Codex Petropolitanus Purpureus)",
+    "y": "",
     "percentage": 48,
     "eventType": "uncial"
   },
@@ -116,6 +123,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Claromontanus, now in Paris)",
+    "y": "",
     "percentage": 50,
     "eventType": "uncial"
   },
@@ -131,6 +139,7 @@
     ],
     "family": "Western",
     "location": "Great Lavra Monastery, Mount Athos (Codex Coislinianus)",
+    "y": "",
     "percentage": 53,
     "eventType": "uncial"
   },
@@ -146,6 +155,7 @@
     ],
     "family": "Alexandrian",
     "location": "Unknown, now in the British Library (Codex Harleianus)",
+    "y": "",
     "percentage": 55,
     "eventType": "uncial"
   },
@@ -161,6 +171,7 @@
     ],
     "family": "Byzantine",
     "location": "Alexandria (likely origin) (Codex Tischendorfianus III)",
+    "y": "",
     "percentage": 57,
     "eventType": "uncial"
   },
@@ -176,6 +187,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Petropolitanus Purpureus)",
+    "y": "",
     "percentage": 60,
     "eventType": "uncial"
   },
@@ -191,6 +203,7 @@
     ],
     "family": "Alexandrian",
     "location": "Sinai (Codex Zacynthius)",
+    "y": "",
     "percentage": 63,
     "eventType": "uncial"
   },
@@ -206,6 +219,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Beratinus)",
+    "y": "",
     "percentage": 65,
     "eventType": "uncial"
   },
@@ -221,6 +235,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Rossanensis)",
+    "y": "",
     "percentage": 68,
     "eventType": "uncial"
   },
@@ -236,6 +251,7 @@
     ],
     "family": "Alexandrian",
     "location": "Unknown (Codex Dublinensis)",
+    "y": "",
     "percentage": 70,
     "eventType": "uncial"
   },
@@ -251,6 +267,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Basilensis)",
+    "y": "",
     "percentage": 73,
     "eventType": "uncial"
   },
@@ -266,6 +283,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Boernerianus)",
+    "y": "",
     "percentage": 75,
     "eventType": "uncial"
   },
@@ -281,6 +299,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Basilensis A. N. III. 12)",
+    "y": "",
     "percentage": 78,
     "eventType": "uncial"
   },
@@ -296,6 +315,7 @@
     ],
     "family": "Byzantine",
     "location": "Unknown (Codex Cyprius)",
+    "y": "",
     "percentage": 80,
     "eventType": "uncial"
   },
@@ -311,6 +331,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Seidelianus I)",
+    "y": "",
     "percentage": 83,
     "eventType": "uncial"
   },
@@ -326,6 +347,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Seidelianus II)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -341,6 +363,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Guelferbytanus A)",
+    "y": "",
     "percentage": 88,
     "eventType": "uncial"
   },
@@ -356,6 +379,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Guelferbytanus B)",
+    "y": "",
     "percentage": 90,
     "eventType": "uncial"
   },
@@ -371,6 +395,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Augiensis)",
+    "y": "",
     "percentage": 93,
     "eventType": "uncial"
   },
@@ -386,6 +411,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Boernerianus)",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -401,6 +427,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Sangallensis)",
+    "y": "",
     "percentage": 98,
     "eventType": "uncial"
   },
@@ -416,6 +443,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Tischendorfianus IV)",
+    "y": "",
     "percentage": 100,
     "eventType": "uncial"
   },
@@ -431,6 +459,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Tischendorfianus I)",
+    "y": "",
     "percentage": 102,
     "eventType": "uncial"
   },
@@ -446,6 +475,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Tischendorfianus II)",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -459,6 +489,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 2061)",
+    "y": "",
     "percentage": 55,
     "eventType": "uncial"
   },
@@ -473,6 +504,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Washingtonianus)",
+    "y": "",
     "percentage": 50,
     "eventType": "uncial"
   },
@@ -485,6 +517,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Regius)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -497,6 +530,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Nanianus)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -509,6 +543,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Monacensis)",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -522,6 +557,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Tischendorfianus III)",
+    "y": "",
     "percentage": 55,
     "eventType": "uncial"
   },
@@ -534,6 +570,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Petropolitanus)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -546,6 +583,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Macedoniensis)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -558,6 +596,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Angelicus)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -571,6 +610,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Athous Dionysiou)",
+    "y": "",
     "percentage": 55,
     "eventType": "uncial"
   },
@@ -584,6 +624,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Athous Lavrensis)",
+    "y": "",
     "percentage": 75,
     "eventType": "uncial"
   },
@@ -596,6 +637,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Athous Koutloumousiou)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -609,6 +651,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Vaticanus 2066)",
+    "y": "",
     "percentage": 55,
     "eventType": "uncial"
   },
@@ -621,6 +664,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Athous Lavrensis)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -633,6 +677,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Athous Pantokratoros)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -645,6 +690,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Athous Zographou)",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -657,6 +703,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 2067)",
+    "y": "",
     "percentage": 75,
     "eventType": "uncial"
   },
@@ -670,6 +717,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Vaticanus 354)",
+    "y": "",
     "percentage": 45,
     "eventType": "uncial"
   },
@@ -682,6 +730,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 367)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -694,6 +743,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 375)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -706,6 +756,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 380)",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -718,6 +769,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 383)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -730,6 +782,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 386)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -742,6 +795,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 401)",
+    "y": "",
     "percentage": 55,
     "eventType": "uncial"
   },
@@ -754,6 +808,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 405)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -766,6 +821,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 420)",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -778,6 +834,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 425)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -790,6 +847,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 440)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -802,6 +860,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 450)",
+    "y": "",
     "percentage": 55,
     "eventType": "uncial"
   },
@@ -814,6 +873,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 466)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -826,6 +886,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 481)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -838,6 +899,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 492)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -850,6 +912,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 493)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -862,6 +925,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 500)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -874,6 +938,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 511)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -886,6 +951,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 517)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -898,6 +964,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 522)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -910,6 +977,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 526)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -922,6 +990,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 529)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -934,6 +1003,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 536)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -946,6 +1016,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 540)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -958,6 +1029,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 545)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -970,6 +1042,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 548)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -982,6 +1055,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 553)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -994,6 +1068,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 555)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1006,6 +1081,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 560)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1018,6 +1094,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 564)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1030,6 +1107,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 567)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1042,6 +1120,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 571)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1054,6 +1133,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 577)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1066,6 +1146,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 580)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1078,6 +1159,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 586)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1090,6 +1172,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 590)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1102,6 +1185,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 593)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1114,6 +1198,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 599)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1126,6 +1211,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 603)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1138,6 +1224,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 607)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1150,6 +1237,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 611)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1162,6 +1250,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 615)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1174,6 +1263,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 619)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1186,6 +1276,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 623)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1198,6 +1289,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 628)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1210,6 +1302,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 632)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1222,6 +1315,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 636)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1234,6 +1328,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 640)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1246,6 +1341,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 644)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1258,6 +1354,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 648)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1270,6 +1367,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 652)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1282,6 +1380,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 656)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1294,6 +1393,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 660)",
+    "y": "",
     "percentage": 85,
     "eventType": "uncial"
   },
@@ -1306,6 +1406,7 @@
     ],
     "family": "Byzantine",
     "location": "Sinai",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1318,6 +1419,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1330,6 +1432,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1342,6 +1445,7 @@
     ],
     "family": "Byzantine",
     "location": "Sinai",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1354,6 +1458,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1366,6 +1471,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1378,6 +1484,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1390,6 +1497,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1402,6 +1510,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1414,6 +1523,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1426,6 +1536,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1438,6 +1549,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1450,6 +1562,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1462,6 +1575,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1474,6 +1588,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1486,6 +1601,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1498,6 +1614,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1510,6 +1627,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1522,6 +1640,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1534,6 +1653,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1546,6 +1666,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1558,6 +1679,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1570,6 +1692,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1582,6 +1705,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1594,6 +1718,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1606,6 +1731,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1618,6 +1744,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1630,6 +1757,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1642,6 +1770,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1654,6 +1783,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1666,6 +1796,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1678,6 +1809,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1690,6 +1822,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1702,6 +1835,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1714,6 +1848,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1726,6 +1861,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1738,6 +1874,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1750,6 +1887,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1762,6 +1900,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1774,6 +1913,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1786,6 +1926,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1798,6 +1939,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1810,6 +1952,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1822,6 +1965,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1834,6 +1978,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1846,6 +1991,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1858,6 +2004,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1870,6 +2017,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1882,6 +2030,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1894,6 +2043,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1906,6 +2056,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1918,6 +2069,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1930,6 +2082,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1942,6 +2095,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1954,6 +2108,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -1966,6 +2121,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1978,6 +2134,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -1990,6 +2147,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2002,6 +2160,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2014,6 +2173,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -2026,6 +2186,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2038,6 +2199,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2050,6 +2212,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2062,6 +2225,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2074,6 +2238,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2086,6 +2251,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -2098,6 +2264,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2110,6 +2277,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2122,6 +2290,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2134,6 +2303,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2146,6 +2316,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -2158,6 +2329,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2170,6 +2342,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2182,6 +2355,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2194,6 +2368,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2206,6 +2381,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2218,6 +2394,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -2230,6 +2407,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2242,6 +2420,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2254,6 +2433,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2266,6 +2446,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2278,6 +2459,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -2290,6 +2472,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2302,6 +2485,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2314,6 +2498,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2326,6 +2511,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2338,6 +2524,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -2350,6 +2537,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2362,6 +2550,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2374,6 +2563,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2386,6 +2576,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2398,6 +2589,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -2410,6 +2602,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2422,6 +2615,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2434,6 +2628,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2446,6 +2641,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2458,6 +2654,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -2470,6 +2667,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2482,6 +2680,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2494,6 +2693,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2506,6 +2706,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -2518,6 +2719,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -2530,6 +2732,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -2542,6 +2745,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2554,6 +2758,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 95,
     "eventType": "uncial"
   },
@@ -2566,6 +2771,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2578,6 +2784,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2590,6 +2797,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2602,6 +2810,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2614,6 +2823,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2626,6 +2836,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2638,6 +2849,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2650,6 +2862,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2662,6 +2875,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2674,6 +2888,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2686,6 +2901,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2698,6 +2914,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2710,6 +2927,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2722,6 +2940,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2734,6 +2953,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2746,6 +2966,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2758,6 +2979,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2770,6 +2992,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2782,6 +3005,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2794,6 +3018,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2806,6 +3031,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2818,6 +3044,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2830,6 +3057,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2842,6 +3070,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2854,6 +3083,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2866,6 +3096,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2878,6 +3109,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2890,6 +3122,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2902,6 +3135,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2914,6 +3148,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2926,6 +3161,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2938,6 +3174,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2950,6 +3187,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2962,6 +3200,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2974,6 +3213,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2986,6 +3226,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -2998,6 +3239,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3010,6 +3252,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3022,6 +3265,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3034,6 +3278,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3046,6 +3291,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3058,6 +3304,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3070,6 +3317,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3082,6 +3330,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3094,6 +3343,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3106,6 +3356,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3118,6 +3369,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3130,6 +3382,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3142,6 +3395,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3154,6 +3408,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3166,6 +3421,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3178,6 +3434,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3190,6 +3447,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3202,6 +3460,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3214,6 +3473,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3226,6 +3486,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3238,6 +3499,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3250,6 +3512,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3262,6 +3525,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3274,6 +3538,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3286,6 +3551,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3298,6 +3564,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3310,6 +3577,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3322,6 +3590,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3334,6 +3603,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3346,6 +3616,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3358,6 +3629,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3370,6 +3642,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3382,6 +3655,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3394,6 +3668,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3406,6 +3681,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3418,6 +3694,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3430,6 +3707,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3442,6 +3720,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3454,6 +3733,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3466,6 +3746,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3478,6 +3759,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3490,6 +3772,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3502,6 +3785,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3514,6 +3798,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3526,6 +3811,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3538,6 +3824,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3550,6 +3837,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3562,6 +3850,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3574,6 +3863,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3586,6 +3876,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3598,6 +3889,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3610,6 +3902,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3622,6 +3915,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3634,6 +3928,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3646,6 +3941,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3658,6 +3954,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3670,6 +3967,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3682,6 +3980,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3694,6 +3993,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3706,6 +4006,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3718,6 +4019,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3730,6 +4032,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3742,6 +4045,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3754,6 +4058,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3766,6 +4071,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3778,6 +4084,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3790,6 +4097,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3802,6 +4110,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3814,6 +4123,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3826,6 +4136,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3838,6 +4149,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3850,6 +4162,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3862,6 +4175,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3874,6 +4188,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3886,6 +4201,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3898,6 +4214,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3910,6 +4227,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3922,6 +4240,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3934,6 +4253,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3946,6 +4266,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   },
@@ -3958,6 +4279,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
+    "y": "",
     "percentage": 105,
     "eventType": "uncial"
   }
