@@ -101,9 +101,14 @@ document.addEventListener("DOMContentLoaded", function() {
             ctx.closePath();
         }
 
-        // Initialize the animation
-        const startTime = performance.now();
-        animateDots(events, startTime);
+        // Draw events
+        events.forEach(event => {
+            ctx.beginPath();
+            ctx.arc(event.x, event.y, dotRadius, 0, Math.PI * 2);
+            ctx.fillStyle = getColorForEventType(event.eventType);
+            ctx.fill();
+            ctx.closePath();
+        });
     }
 
     function animateDots(events, startTime) {
@@ -152,6 +157,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (progress < 1) {
             requestAnimationFrame(() => animateDots(events, startTime));
+        } else {
+            drawTimeline(events); // Ensure the final state is drawn
         }
     }
 
@@ -276,11 +283,13 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('zoom-in')?.addEventListener('click', () => {
         scale *= 1.2;
         canvas.style.transform = `scale(${scale})`;
+        canvas.style.transformOrigin = '0 0';
     });
 
     document.getElementById('zoom-out')?.addEventListener('click', () => {
         scale /= 1.2;
         canvas.style.transform = `scale(${scale})`;
+        canvas.style.transformOrigin = '0 0';
     });
 
     canvas.addEventListener('dblclick', (e) => {
@@ -296,6 +305,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         scale *= 1.2;
         canvas.style.transform = `scale(${scale})`;
+        canvas.style.transformOrigin = '0 0';
     });
 
     let isDown = false;
