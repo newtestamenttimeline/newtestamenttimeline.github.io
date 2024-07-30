@@ -61,6 +61,7 @@ header {
     background-color: var(--primary-color);
     position: absolute;
     top: 50%; /* Center the timeline vertically */
+    left: 0; /* Ensure the timeline starts from the left */
     transform: translateY(-50%);
 }
 
