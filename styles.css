@@ -48,7 +48,7 @@ header {
 }
 
 #timeline-container {
-    width: 14000px;
+    width: 14000px; /* Adjust this value based on the range of years */
     height: 100%;
     position: relative;
 }
@@ -112,7 +112,7 @@ header {
     transform: translateY(100%);
     background: black; /* Ensure the background is black to blend with the timeline background */
     padding: 2px 5px;
-    font-size: 12px;
+    font-size: 12px; /* Adjust this value for text size */
     color: white; /* Ensure the text color is white */
     border: 1px solid #ccc;
     z-index: 0; /* Ensure year labels are below the dots and timeline */
