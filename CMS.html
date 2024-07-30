@@ -57,6 +57,7 @@
             <th>Texts</th>
             <th>Family</th>
             <th>Location</th>
+            <th>Y Coordinate</th>
         </tr>
     </thead>
     <tbody>
@@ -102,6 +103,7 @@ function loadTable() {
             <td contenteditable="true">${event.texts ? event.texts.join(', ') : ''}</td>
             <td contenteditable="true">${event.family || ''}</td>
             <td contenteditable="true">${event.location || ''}</td>
+            <td contenteditable="true">${event.y || ''}</td>
         `;
     });
 }
@@ -131,6 +133,7 @@ function updateEventDataFromTable() {
             texts: cells[5].innerText.trim().split(',').map(text => text.trim()),
             family: cells[6].innerText.trim(),
             location: cells[7].innerText.trim(),
+            y: cells[8].innerText.trim(), // Add the y coordinate
             percentage: percentage,
             eventType: 'uncial', // or other type if applicable
         };
@@ -141,6 +144,7 @@ function addRow() {
     const tableBody = document.getElementById('eventTable').getElementsByTagName('tbody')[0];
     const row = tableBody.insertRow();
     row.innerHTML = `
+        <td contenteditable="true"></td>
         <td contenteditable="true"></td>
         <td contenteditable="true"></td>
         <td contenteditable="true"></td>
@@ -163,6 +167,7 @@ function exportJSON() {
                 texts: event.texts,
                 family: event.family,
                 location: event.location,
+                y: event.y, // Add the y coordinate
                 percentage: event.percentage,
                 eventType: event.eventType
             };
@@ -174,6 +179,7 @@ function exportJSON() {
                 texts: event.texts,
                 family: event.family,
                 location: event.location,
+                y: event.y, // Add the y coordinate
                 percentage: event.percentage,
                 eventType: event.eventType
             };
