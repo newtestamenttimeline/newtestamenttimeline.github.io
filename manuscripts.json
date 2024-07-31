@@ -7,120 +7,13 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "0",
+    "y": "130",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       225,
       275
     ]
-  },
-  {
-    "title": "Papyrus2",
-    "description": "Papyrus2 includes text from the Gospel of John. It is dated to the 6th century based on handwriting analysis.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "0",
-    "eventType": "Papyrus",
-    "percentage": 55,
-    "yearRange": [
-      525,
-      575
-    ]
-  },
-  {
-    "title": "Papyrus3",
-    "description": "Papyrus3 features excerpts from the Gospel of Luke. Paleographic dating suggests it originates from the 6th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "0",
-    "eventType": "Papyrus",
-    "percentage": 60,
-    "year": 600
-  },
-  {
-    "title": "Papyrus4",
-    "description": "Papyrus4 contains sections of the Gospel of Mark. It is dated to the late 3rd century.",
-    "texts": [
-      "Mark"
-    ],
-    "family": "Byzantine",
-    "location": "Capernaum, Israel",
-    "y": "0",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 249
-  },
-  {
-    "title": "Papyrus5",
-    "description": "Papyrus5 includes parts of the Gospel of John, dated to the 3rd century through paleographic methods.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "10",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 251
-  },
-  {
-    "title": "Papyrus6",
-    "description": "Papyrus6 features fragments of the Gospel of Matthew, paleographically dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "10",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus7",
-    "description": "Papyrus7 contains portions of the Gospel of John, dated to the 4th century by handwriting analysis.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "10",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Papyrus8",
-    "description": "Papyrus8 includes sections of the Gospel of Luke, dated to the mid-4th century based on paleography.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "10",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus9",
-    "description": "Papyrus9 contains text from the Gospel of Matthew, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "10",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 252
   },
   {
     "title": "Papyrus10",
@@ -130,10 +23,153 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "10",
+    "y": "30",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
+  },
+  {
+    "title": "Papyrus100",
+    "description": "Papyrus100 includes fragments of the Gospel of John, paleographically dated to the early 4th century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "45",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Papyrus101",
+    "description": "Papyrus101 contains text from the Gospel of Matthew, dated to the mid-3rd century.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "115",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 254
+  },
+  {
+    "title": "Papyrus102",
+    "description": "Papyrus102 features sections of the Gospel of John, paleographically dated to the early 4th century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "50",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Papyrus103",
+    "description": "Papyrus103 includes fragments of the Gospel of Luke, dated to the early 3rd century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "25",
+    "eventType": "Papyrus",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Papyrus104",
+    "description": "Papyrus104 contains text from the Gospel of John, paleographically dated to the mid-3rd century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "120",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 254
+  },
+  {
+    "title": "Papyrus104",
+    "description": "Papyrus104 contains text from the Gospel of John, paleographically dated to the mid-3rd century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "125",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 254
+  },
+  {
+    "title": "Papyrus105",
+    "description": "Papyrus105 features sections of the Gospel of Luke, dated to the 5th century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "30",
+    "eventType": "Papyrus",
+    "percentage": 50,
+    "year": 500
+  },
+  {
+    "title": "Papyrus106",
+    "description": "Papyrus106 includes fragments of the Gospel of John, paleographically dated to the mid-3rd century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "135",
+    "eventType": "Papyrus",
+    "percentage": 26,
+    "year": 255
+  },
+  {
+    "title": "Papyrus107",
+    "description": "Papyrus107 contains text from the Gospel of Matthew, dated to the mid-3rd century.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "25",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 245
+  },
+  {
+    "title": "Papyrus108",
+    "description": "Papyrus108 features sections of the Gospel of John, paleographically dated to the mid-3rd century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "30",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 245
+  },
+  {
+    "title": "Papyrus109",
+    "description": "Papyrus109 includes fragments of the Gospel of Luke, dated to the mid-3rd century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "15",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 250
   },
   {
     "title": "Papyrus11",
@@ -143,10 +179,140 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "10",
+    "y": "60",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 551
+  },
+  {
+    "title": "Papyrus110",
+    "description": "Papyrus110 contains text from the Gospel of Matthew, paleographically dated to the mid-4th century.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "70",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "year": 350
+  },
+  {
+    "title": "Papyrus111",
+    "description": "Papyrus111 features sections of the Gospel of John, dated to the mid-3rd century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "20",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Papyrus112",
+    "description": "Papyrus112 includes fragments of the Gospel of Luke, paleographically dated to the mid-5th century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "20",
+    "eventType": "Papyrus",
+    "percentage": 45,
+    "year": 450
+  },
+  {
+    "title": "Papyrus113",
+    "description": "Papyrus113 contains text from the Gospel of Matthew, dated to the mid-3rd century.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "25",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Papyrus114",
+    "description": "Papyrus114 features sections of the Gospel of John, paleographically dated to the mid-3rd century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "30",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Papyrus115",
+    "description": "Papyrus115 includes fragments of the Gospel of Luke, dated to the early 4th century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "55",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Papyrus116",
+    "description": "Papyrus116 features text from the Gospel of Matthew, dated paleographically to the 7th century.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "45",
+    "eventType": "Papyrus",
+    "percentage": 60,
+    "year": 600
+  },
+  {
+    "title": "Papyrus117",
+    "description": "Papyrus117 contains portions of the Gospel of John, dated to the 5th century through paleographic methods.",
+    "texts": [
+      "John"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "50",
+    "eventType": "Papyrus",
+    "percentage": 40,
+    "year": 400
+  },
+  {
+    "title": "Papyrus118",
+    "description": "Papyrus118 includes fragments of the Gospel of Luke, paleographically dated to the mid-3rd century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "35",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Papyrus119",
+    "description": "Papyrus119 contains text from the Gospel of John, dated to the mid-3rd century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "40",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 250
   },
   {
     "title": "Papyrus12",
@@ -156,10 +322,140 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "10",
+    "y": "15",
     "eventType": "Papyrus",
     "percentage": 29,
     "year": 287
+  },
+  {
+    "title": "Papyrus120",
+    "description": "Papyrus120 features sections of the Gospel of Matthew, paleographically dated to the mid-4th century.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "75",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "year": 350
+  },
+  {
+    "title": "Papyrus121",
+    "description": "Papyrus121 includes fragments of the Gospel of Luke, dated to the mid-3rd century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "45",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Papyrus122",
+    "description": "Papyrus122 contains portions of the Gospel of John, dated to the 5th century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "55",
+    "eventType": "Papyrus",
+    "percentage": 40,
+    "year": 400
+  },
+  {
+    "title": "Papyrus123",
+    "description": "Papyrus123 features sections of the Gospel of Matthew, paleographically dated to the mid-4th century.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "80",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "year": 350
+  },
+  {
+    "title": "Papyrus124",
+    "description": "Papyrus124 includes fragments of the Gospel of Luke, dated to the 6th century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "50",
+    "eventType": "Papyrus",
+    "percentage": 55,
+    "year": 550
+  },
+  {
+    "title": "Papyrus125",
+    "description": "Papyrus125 contains text from the Gospel of John, paleographically dated to the early 4th century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "60",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Papyrus126",
+    "description": "Papyrus126 features sections of the Gospel of Matthew, dated to the mid-4th century.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "85",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "year": 350
+  },
+  {
+    "title": "Papyrus127",
+    "description": "Papyrus127 includes fragments of the Gospel of Luke, paleographically dated to the mid-5th century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "25",
+    "eventType": "Papyrus",
+    "percentage": 45,
+    "year": 450
+  },
+  {
+    "title": "Papyrus128",
+    "description": "Papyrus128 contains text from the Gospel of John, dated paleographically to the 7th century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "50",
+    "eventType": "Papyrus",
+    "percentage": 60,
+    "year": 600
+  },
+  {
+    "title": "Papyrus129",
+    "description": "Papyrus129 features sections of the Gospel of Matthew, paleographically dated to the mid-3rd century.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "50",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 250
   },
   {
     "title": "Papyrus13",
@@ -169,10 +465,166 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "10",
+    "y": "80",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 301
+  },
+  {
+    "title": "Papyrus130",
+    "description": "Papyrus130 includes fragments of the Gospel of Luke, dated to the early 4th century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "65",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Papyrus131",
+    "description": "Papyrus131 contains text from the Gospel of John, paleographically dated to the mid-3rd century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "55",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Papyrus132",
+    "description": "Papyrus132 features sections of the Gospel of Luke, dated to the early 4th century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "70",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Papyrus133",
+    "description": "Papyrus133 includes fragments of the Gospel of John, paleographically dated to the mid-3rd century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "60",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Papyrus134",
+    "description": "Papyrus134 contains text from the Gospel of Matthew, dated to the early 4th century.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "75",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Papyrus135",
+    "description": "Papyrus135 features sections of the Gospel of Luke, paleographically dated to the 5th century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "60",
+    "eventType": "Papyrus",
+    "percentage": 40,
+    "year": 400
+  },
+  {
+    "title": "Papyrus136",
+    "description": "Papyrus136 includes fragments of the Gospel of John, dated to the 6th century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "55",
+    "eventType": "Papyrus",
+    "percentage": 55,
+    "year": 550
+  },
+  {
+    "title": "Papyrus137",
+    "description": "Papyrus137 contains text from the Gospel of Luke, paleographically dated to the early 3rd century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "30",
+    "eventType": "Papyrus",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Papyrus138",
+    "description": "Papyrus138 features sections of the Gospel of John, dated to the mid-3rd century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "65",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Papyrus139",
+    "description": "Papyrus139 includes fragments of the Gospel of Matthew, paleographically dated to the mid-4th century.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "90",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "year": 350
+  },
+  {
+    "title": "Papyrus140",
+    "description": "Papyrus140 contains text from the Gospel of Luke, dated to the mid-5th century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "30",
+    "eventType": "Papyrus",
+    "percentage": 45,
+    "year": 450
+  },
+  {
+    "title": "Papyrus141",
+    "description": "Papyrus141 features sections of the Gospel of John, paleographically dated to the mid-3rd century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "70",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 250
   },
   {
     "title": "Papyrus15",
@@ -182,7 +634,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "10",
+    "y": "90",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 253
@@ -195,7 +647,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "10",
+    "y": "15",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 300
@@ -208,7 +660,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "10",
+    "y": "35",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -221,7 +673,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "20",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 300
@@ -234,10 +686,26 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "20",
     "eventType": "Papyrus",
     "percentage": 40,
     "year": 400
+  },
+  {
+    "title": "Papyrus2",
+    "description": "Papyrus2 includes text from the Gospel of John. It is dated to the 6th century based on handwriting analysis.",
+    "texts": [
+      "John"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "135",
+    "eventType": "Papyrus",
+    "percentage": 55,
+    "yearRange": [
+      525,
+      575
+    ]
   },
   {
     "title": "Papyrus20",
@@ -247,7 +715,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "130",
     "eventType": "Papyrus",
     "percentage": 26,
     "year": 255
@@ -260,7 +728,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "25",
     "eventType": "Papyrus",
     "percentage": 40,
     "year": 400
@@ -299,7 +767,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "95",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 351
@@ -338,7 +806,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "100",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 254
@@ -364,10 +832,23 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "85",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 252
+  },
+  {
+    "title": "Papyrus3",
+    "description": "Papyrus3 features excerpts from the Gospel of Luke. Paleographic dating suggests it originates from the 6th century.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "15",
+    "eventType": "Papyrus",
+    "percentage": 60,
+    "year": 600
   },
   {
     "title": "Papyrus30",
@@ -377,7 +858,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "20",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 249
@@ -403,7 +884,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "20",
     "eventType": "Papyrus",
     "percentage": 22,
     "year": 215
@@ -429,7 +910,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "20",
     "eventType": "Papyrus",
     "percentage": 65,
     "year": 650
@@ -455,7 +936,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "20",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 550
@@ -468,7 +949,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "25",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 300
@@ -494,10 +975,23 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "105",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 254
+  },
+  {
+    "title": "Papyrus4",
+    "description": "Papyrus4 contains sections of the Gospel of Mark. It is dated to the late 3rd century.",
+    "texts": [
+      "Mark"
+    ],
+    "family": "Byzantine",
+    "location": "Capernaum, Israel",
+    "y": "15",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 249
   },
   {
     "title": "Papyrus40",
@@ -507,7 +1001,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "25",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 249
@@ -546,7 +1040,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "20",
     "eventType": "Papyrus",
     "percentage": 60,
     "year": 600
@@ -559,7 +1053,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "25",
     "eventType": "Papyrus",
     "percentage": 60,
     "year": 600
@@ -572,7 +1066,7 @@
     ],
     "family": "Byzantine",
     "location": "Fayum, Egypt",
-    "y": "15",
+    "y": "20",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 248
@@ -585,7 +1079,7 @@
     ],
     "family": "Alexandrian",
     "location": "Fayum, Egypt",
-    "y": "15",
+    "y": "25",
     "eventType": "Papyrus",
     "percentage": 22,
     "year": 215
@@ -611,7 +1105,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "95",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 253
@@ -624,10 +1118,23 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "20",
     "eventType": "Papyrus",
     "percentage": 29,
     "year": 287
+  },
+  {
+    "title": "Papyrus5",
+    "description": "Papyrus5 includes parts of the Gospel of John, dated to the 3rd century through paleographic methods.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "75",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 251
   },
   {
     "title": "Papyrus50",
@@ -637,7 +1144,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "30",
     "eventType": "Papyrus",
     "percentage": 40,
     "year": 400
@@ -676,7 +1183,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "20",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 247
@@ -702,7 +1209,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "30",
     "eventType": "Papyrus",
     "percentage": 60,
     "year": 600
@@ -715,7 +1222,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "25",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 550
@@ -728,7 +1235,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "35",
     "eventType": "Papyrus",
     "percentage": 40,
     "year": 400
@@ -741,10 +1248,23 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "25",
     "eventType": "Papyrus",
     "percentage": 65,
     "year": 650
+  },
+  {
+    "title": "Papyrus6",
+    "description": "Papyrus6 features fragments of the Gospel of Matthew, paleographically dated to the mid-4th century.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "20",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "year": 350
   },
   {
     "title": "Papyrus60",
@@ -754,7 +1274,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "30",
     "eventType": "Papyrus",
     "percentage": 65,
     "year": 650
@@ -767,7 +1287,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "15",
     "eventType": "Papyrus",
     "percentage": 72,
     "year": 717
@@ -780,7 +1300,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "40",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -793,7 +1313,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "15",
     "eventType": "Papyrus",
     "percentage": 52,
     "year": 517
@@ -806,7 +1326,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "30",
     "eventType": "Papyrus",
     "percentage": 22,
     "year": 215
@@ -832,7 +1352,7 @@
     ],
     "family": "Byzantine",
     "location": "Jabal Abu Mana, Egypt",
-    "y": "20",
+    "y": "35",
     "eventType": "Papyrus",
     "percentage": 22,
     "year": 215
@@ -845,7 +1365,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "35",
     "eventType": "Papyrus",
     "percentage": 60,
     "year": 600
@@ -858,10 +1378,23 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "15",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 246
+  },
+  {
+    "title": "Papyrus7",
+    "description": "Papyrus7 contains portions of the Gospel of John, dated to the 4th century by handwriting analysis.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "15",
+    "eventType": "Papyrus",
+    "percentage": 40,
+    "year": 400
   },
   {
     "title": "Papyrus70",
@@ -884,7 +1417,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "45",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -897,7 +1430,7 @@
     ],
     "family": "Alexandrian",
     "location": "Jabal Abu Mana, Egypt",
-    "y": "20",
+    "y": "30",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 300
@@ -910,7 +1443,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "35",
     "eventType": "Papyrus",
     "percentage": 65,
     "year": 650
@@ -923,7 +1456,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "40",
     "eventType": "Papyrus",
     "percentage": 65,
     "year": 650
@@ -936,7 +1469,7 @@
     ],
     "family": "Byzantine",
     "location": "Jabal Abu Mana, Egypt",
-    "y": "20",
+    "y": "40",
     "eventType": "Papyrus",
     "percentage": 22,
     "year": 215
@@ -949,7 +1482,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "30",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 550
@@ -962,7 +1495,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "15",
     "eventType": "Papyrus",
     "percentage": 20,
     "year": 200
@@ -975,7 +1508,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "35",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 300
@@ -988,10 +1521,23 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "45",
     "eventType": "Papyrus",
     "percentage": 65,
     "year": 650
+  },
+  {
+    "title": "Papyrus8",
+    "description": "Papyrus8 includes sections of the Gospel of Luke, dated to the mid-4th century based on paleography.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Byzantine",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "25",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "year": 350
   },
   {
     "title": "Papyrus80",
@@ -1001,7 +1547,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "25",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 246
@@ -1014,7 +1560,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "50",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -1027,7 +1573,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "40",
     "eventType": "Papyrus",
     "percentage": 40,
     "year": 400
@@ -1040,7 +1586,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "35",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 550
@@ -1053,7 +1599,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "40",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 550
@@ -1066,7 +1612,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "45",
     "eventType": "Papyrus",
     "percentage": 40,
     "year": 400
@@ -1079,7 +1625,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "55",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -1105,7 +1651,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "60",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -1118,10 +1664,23 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "65",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
+  },
+  {
+    "title": "Papyrus9",
+    "description": "Papyrus9 contains text from the Gospel of Matthew, paleographically dated to the mid-3rd century.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "80",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "year": 252
   },
   {
     "title": "Papyrus90",
@@ -1131,7 +1690,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "15",
     "eventType": "Papyrus",
     "percentage": 15,
     "year": 150
@@ -1144,7 +1703,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "30",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 247
@@ -1157,7 +1716,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "40",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 300
@@ -1170,7 +1729,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "15",
     "eventType": "Papyrus",
     "percentage": 45,
     "year": 450
@@ -1196,7 +1755,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "110",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 254
@@ -1209,7 +1768,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "45",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 550
@@ -1222,7 +1781,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "40",
     "eventType": "Papyrus",
     "percentage": 60,
     "year": 600
@@ -1235,7 +1794,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "20",
     "eventType": "Papyrus",
     "percentage": 20,
     "year": 200
@@ -1248,568 +1807,9 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "20",
     "eventType": "Papyrus",
     "percentage": 42,
     "year": 417
-  },
-  {
-    "title": "Papyrus100",
-    "description": "Papyrus100 includes fragments of the Gospel of John, paleographically dated to the early 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "25",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus101",
-    "description": "Papyrus101 contains text from the Gospel of Matthew, dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "25",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 254
-  },
-  {
-    "title": "Papyrus102",
-    "description": "Papyrus102 features sections of the Gospel of John, paleographically dated to the early 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "25",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus103",
-    "description": "Papyrus103 includes fragments of the Gospel of Luke, dated to the early 3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "25",
-    "eventType": "Papyrus",
-    "percentage": 20,
-    "year": 200
-  },
-  {
-    "title": "Papyrus104",
-    "description": "Papyrus104 contains text from the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "25",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 254
-  },
-  {
-    "title": "Papyrus104",
-    "description": "Papyrus104 contains text from the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 254
-  },
-  {
-    "title": "Papyrus105",
-    "description": "Papyrus105 features sections of the Gospel of Luke, dated to the 5th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 50,
-    "year": 500
-  },
-  {
-    "title": "Papyrus106",
-    "description": "Papyrus106 includes fragments of the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 26,
-    "year": 255
-  },
-  {
-    "title": "Papyrus107",
-    "description": "Papyrus107 contains text from the Gospel of Matthew, dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 245
-  },
-  {
-    "title": "Papyrus108",
-    "description": "Papyrus108 features sections of the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 245
-  },
-  {
-    "title": "Papyrus109",
-    "description": "Papyrus109 includes fragments of the Gospel of Luke, dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus110",
-    "description": "Papyrus110 contains text from the Gospel of Matthew, paleographically dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus111",
-    "description": "Papyrus111 features sections of the Gospel of John, dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus112",
-    "description": "Papyrus112 includes fragments of the Gospel of Luke, paleographically dated to the mid-5th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 45,
-    "year": 450
-  },
-  {
-    "title": "Papyrus113",
-    "description": "Papyrus113 contains text from the Gospel of Matthew, dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus114",
-    "description": "Papyrus114 features sections of the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus115",
-    "description": "Papyrus115 includes fragments of the Gospel of Luke, dated to the early 4th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus116",
-    "description": "Papyrus116 features text from the Gospel of Matthew, dated paleographically to the 7th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 60,
-    "year": 600
-  },
-  {
-    "title": "Papyrus117",
-    "description": "Papyrus117 contains portions of the Gospel of John, dated to the 5th century through paleographic methods.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Papyrus118",
-    "description": "Papyrus118 includes fragments of the Gospel of Luke, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus119",
-    "description": "Papyrus119 contains text from the Gospel of John, dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus120",
-    "description": "Papyrus120 features sections of the Gospel of Matthew, paleographically dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus121",
-    "description": "Papyrus121 includes fragments of the Gospel of Luke, dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus122",
-    "description": "Papyrus122 contains portions of the Gospel of John, dated to the 5th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Papyrus123",
-    "description": "Papyrus123 features sections of the Gospel of Matthew, paleographically dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus124",
-    "description": "Papyrus124 includes fragments of the Gospel of Luke, dated to the 6th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 55,
-    "year": 550
-  },
-  {
-    "title": "Papyrus125",
-    "description": "Papyrus125 contains text from the Gospel of John, paleographically dated to the early 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus126",
-    "description": "Papyrus126 features sections of the Gospel of Matthew, dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus127",
-    "description": "Papyrus127 includes fragments of the Gospel of Luke, paleographically dated to the mid-5th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 45,
-    "year": 450
-  },
-  {
-    "title": "Papyrus128",
-    "description": "Papyrus128 contains text from the Gospel of John, dated paleographically to the 7th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 60,
-    "year": 600
-  },
-  {
-    "title": "Papyrus129",
-    "description": "Papyrus129 features sections of the Gospel of Matthew, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus130",
-    "description": "Papyrus130 includes fragments of the Gospel of Luke, dated to the early 4th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus131",
-    "description": "Papyrus131 contains text from the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus132",
-    "description": "Papyrus132 features sections of the Gospel of Luke, dated to the early 4th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "35",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus133",
-    "description": "Papyrus133 includes fragments of the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "35",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus134",
-    "description": "Papyrus134 contains text from the Gospel of Matthew, dated to the early 4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "35",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus135",
-    "description": "Papyrus135 features sections of the Gospel of Luke, paleographically dated to the 5th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "35",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Papyrus136",
-    "description": "Papyrus136 includes fragments of the Gospel of John, dated to the 6th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "35",
-    "eventType": "Papyrus",
-    "percentage": 55,
-    "year": 550
-  },
-  {
-    "title": "Papyrus137",
-    "description": "Papyrus137 contains text from the Gospel of Luke, paleographically dated to the early 3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "35",
-    "eventType": "Papyrus",
-    "percentage": 20,
-    "year": 200
-  },
-  {
-    "title": "Papyrus138",
-    "description": "Papyrus138 features sections of the Gospel of John, dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "35",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus139",
-    "description": "Papyrus139 includes fragments of the Gospel of Matthew, paleographically dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "35",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus140",
-    "description": "Papyrus140 contains text from the Gospel of Luke, dated to the mid-5th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "35",
-    "eventType": "Papyrus",
-    "percentage": 45,
-    "year": 450
-  },
-  {
-    "title": "Papyrus141",
-    "description": "Papyrus141 features sections of the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "35",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
   }
 ]
