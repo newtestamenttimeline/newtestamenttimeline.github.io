@@ -58,6 +58,7 @@
             <th>Family</th>
             <th>Location</th>
             <th>Y Coordinate</th>
+            <th>Event Type</th>
         </tr>
     </thead>
     <tbody>
@@ -104,6 +105,7 @@ function loadTable() {
             <td contenteditable="true">${event.family || ''}</td>
             <td contenteditable="true">${event.location || ''}</td>
             <td contenteditable="true">${event.y || ''}</td>
+            <td contenteditable="true">${event.eventType || 'uncial'}</td>
         `;
     });
 }
@@ -133,9 +135,9 @@ function updateEventDataFromTable() {
             texts: cells[5].innerText.trim().split(',').map(text => text.trim()),
             family: cells[6].innerText.trim(),
             location: cells[7].innerText.trim(),
-            y: cells[8].innerText.trim(), // Add the y coordinate
+            y: cells[8].innerText.trim(),
+            eventType: cells[9].innerText.trim() || 'uncial',
             percentage: percentage,
-            eventType: 'uncial', // or other type if applicable
         };
     });
 }
@@ -153,35 +155,33 @@ function addRow() {
         <td contenteditable="true"></td>
         <td contenteditable="true"></td>
         <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
     `;
 }
 
 function exportJSON() {
     updateEventDataFromTable();
     const formattedEventData = eventData.map(event => {
+        const commonFields = {
+            title: event.title,
+            description: event.description,
+            texts: event.texts,
+            family: event.family,
+            location: event.location,
+            y: event.y,
+            eventType: event.eventType,
+            percentage: event.percentage,
+        };
+
         if (event.year) {
             return {
+                ...commonFields,
                 year: event.year,
-                title: event.title,
-                description: event.description,
-                texts: event.texts,
-                family: event.family,
-                location: event.location,
-                y: event.y, // Add the y coordinate
-                percentage: event.percentage,
-                eventType: event.eventType
             };
         } else {
             return {
+                ...commonFields,
                 yearRange: event.yearRange,
-                title: event.title,
-                description: event.description,
-                texts: event.texts,
-                family: event.family,
-                location: event.location,
-                y: event.y, // Add the y coordinate
-                percentage: event.percentage,
-                eventType: event.eventType
             };
         }
     });
