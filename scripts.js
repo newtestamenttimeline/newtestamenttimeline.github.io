@@ -44,13 +44,13 @@ async function loadEvents() {
 
         historicalEvents.forEach(event => {
             processEvent(event);
-            addEventToTimeline(event);
+            addEventToTimeline(event, 'historical');
             eventTypes.add(event.eventType);
         });
 
         manuscriptEvents.forEach(event => {
             processEvent(event);
-            addEventToTimeline(event);
+            addEventToTimeline(event, 'manuscript');
             if (event.texts) {
                 event.texts.forEach(text => texts.add(text));
             }
@@ -63,7 +63,7 @@ async function loadEvents() {
         uncialEvents.forEach(event => {
             processEvent(event);
             console.log('Uncial Event:', event);  // Debugging uncial events
-            addEventToTimeline(event);
+            addEventToTimeline(event, 'uncial');
             if (event.texts) {
                 event.texts.forEach(text => texts.add(text));
             }
@@ -119,8 +119,8 @@ function processEvent(event) {
     console.log('Processed Event:', event);
 }
 
-function addEventToTimeline(event) {
-    console.log('Adding event to timeline:', event);
+function addEventToTimeline(event, eventType) {
+    console.log(`Adding ${eventType} event to timeline:`, event);
     if (document.querySelector(`.event[title="${event.title}"]`)) {
         return;
     }
