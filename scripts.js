@@ -44,13 +44,13 @@ async function loadEvents() {
 
         historicalEvents.forEach(event => {
             processEvent(event);
-            addEventToTimeline(event, 'historical');
+            addEventToTimeline(event);
             eventTypes.add(event.eventType);
         });
 
         manuscriptEvents.forEach(event => {
             processEvent(event);
-            addEventToTimeline(event, 'manuscript');
+            addEventToTimeline(event);
             if (event.texts) {
                 event.texts.forEach(text => texts.add(text));
             }
@@ -63,7 +63,7 @@ async function loadEvents() {
         uncialEvents.forEach(event => {
             processEvent(event);
             console.log('Uncial Event:', event);  // Debugging uncial events
-            addEventToTimeline(event, 'uncial');
+            addEventToTimeline(event);
             if (event.texts) {
                 event.texts.forEach(text => texts.add(text));
             }
@@ -119,8 +119,8 @@ function processEvent(event) {
     console.log('Processed Event:', event);
 }
 
-function addEventToTimeline(event, eventType) {
-    console.log(`Adding ${eventType} event to timeline:`, event);
+function addEventToTimeline(event) {
+    console.log('Adding event to timeline:', event);
     if (document.querySelector(`.event[title="${event.title}"]`)) {
         return;
     }
@@ -135,19 +135,11 @@ function addEventToTimeline(event, eventType) {
     newEvent.setAttribute('data-location', event.location || 'Unknown');
     newEvent.setAttribute('data-event-type', event.eventType);
 
-    // Get the y-coordinate from the event data
-    const newLeft = (event.percentage * timeline.offsetWidth) / 100;
-    const newTop = parseFloat(event.y);
+    let newLeft = (event.percentage * timeline.offsetWidth) / 100;
+    let newTop = parseFloat(event.y); // Get y coordinate directly from the JSON
 
     newEvent.style.left = `${newLeft}px`;
-    
-    // Adjust top position relative to the timeline
-    if (newTop >= 0) {
-        newEvent.style.top = `calc(50% - ${newTop}px)`;  // Above the timeline
-    } else {
-        newEvent.style.top = `calc(50% + ${Math.abs(newTop)}px)`;  // Below the timeline
-    }
-
+    newEvent.style.top = `${newTop}px`;
     newEvent.style.backgroundColor = getColorForEventType(event.eventType);
 
     timeline.appendChild(newEvent);
@@ -155,22 +147,6 @@ function addEventToTimeline(event, eventType) {
     // Ensure year labels are always visible
     document.querySelectorAll('.year-label').forEach(label => {
         timeline.appendChild(label);
-    });
-}
-
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
-
-function isPositionOccupied(left, top) {
-    const existingEvents = Array.from(document.querySelectorAll('.event'));
-    return existingEvents.some(e => {
-        const eLeft = parseFloat(e.style.left);
-        const eTop = parseFloat(e.style.top);
-        return Math.abs(eLeft - left) < dotDiameter && Math.abs(eTop - top) < dotDiameter;
     });
 }
 
@@ -293,8 +269,6 @@ function getColorForEventType(eventType) {
     return eventTypeColors[eventType];
 }
 
-loadEvents();
-
 function generateLegend() {
     legendContainer.innerHTML = '';
 
@@ -321,6 +295,7 @@ function generateLegend() {
         questionMark.className = 'question-mark';
         questionMark.textContent = '?';
         const tooltip = document.createElement('span');
+        tooltip.className = 'tooltip';
         tooltip.textContent = `Filter events by ${eventType} type`;
         questionMark.appendChild(tooltip);
         legendItem.appendChild(checkbox);
@@ -405,3 +380,7 @@ timelineContainer.addEventListener('mousemove', (e) => {
 new ResizeObserver(() => {
     timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
 }).observe(timelineContainer);
+
+document.addEventListener('DOMContentLoaded', function() {
+    loadEvents();
+});
