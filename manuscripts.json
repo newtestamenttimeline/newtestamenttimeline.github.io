@@ -23,7 +23,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "30",
+    "y": "-30",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -49,7 +49,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "115",
+    "y": "-115",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 254
@@ -75,7 +75,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "-25",
     "eventType": "Papyrus",
     "percentage": 20,
     "year": 200
@@ -101,7 +101,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "125",
+    "y": "-125",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 254
@@ -127,7 +127,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "135",
+    "y": "-135",
     "eventType": "Papyrus",
     "percentage": 26,
     "year": 255
@@ -153,7 +153,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "30",
+    "y": "-30",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 245
@@ -179,7 +179,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "60",
+    "y": "-60",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 551
@@ -205,7 +205,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "-20",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 250
@@ -231,7 +231,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "-25",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 250
@@ -257,7 +257,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "55",
+    "y": "-55",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 300
@@ -283,7 +283,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "50",
+    "y": "-50",
     "eventType": "Papyrus",
     "percentage": 40,
     "year": 400
@@ -309,7 +309,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "40",
+    "y": "-40",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 250
@@ -335,7 +335,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "75",
+    "y": "-75",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -361,7 +361,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "55",
+    "y": "-55",
     "eventType": "Papyrus",
     "percentage": 40,
     "year": 400
@@ -387,7 +387,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "50",
+    "y": "-50",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 550
@@ -413,7 +413,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "85",
+    "y": "-85",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -439,7 +439,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "50",
+    "y": "-50",
     "eventType": "Papyrus",
     "percentage": 60,
     "year": 600
@@ -465,7 +465,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "80",
+    "y": "-80",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 301
@@ -491,7 +491,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "55",
+    "y": "-55",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 250
@@ -517,7 +517,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "60",
+    "y": "-60",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 250
@@ -543,7 +543,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "60",
+    "y": "-60",
     "eventType": "Papyrus",
     "percentage": 40,
     "year": 400
@@ -569,7 +569,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "30",
+    "y": "-30",
     "eventType": "Papyrus",
     "percentage": 20,
     "year": 200
@@ -595,7 +595,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "90",
+    "y": "-90",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -621,7 +621,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "70",
+    "y": "-70",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 250
@@ -647,7 +647,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "-15",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 300
@@ -673,7 +673,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "-20",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 300
@@ -699,7 +699,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "135",
+    "y": "-135",
     "eventType": "Papyrus",
     "percentage": 55,
     "yearRange": [
@@ -728,7 +728,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "-25",
     "eventType": "Papyrus",
     "percentage": 40,
     "year": 400
@@ -754,7 +754,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "-15",
     "eventType": "Papyrus",
     "percentage": 22,
     "year": 215
@@ -780,7 +780,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "-15",
     "eventType": "Papyrus",
     "percentage": 39,
     "year": 387
@@ -806,7 +806,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "100",
+    "y": "-100",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 254
@@ -832,7 +832,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "85",
+    "y": "-85",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 252
@@ -858,7 +858,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "-20",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 249
@@ -884,7 +884,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "-20",
     "eventType": "Papyrus",
     "percentage": 22,
     "year": 215
@@ -910,7 +910,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "-20",
     "eventType": "Papyrus",
     "percentage": 65,
     "year": 650
@@ -936,7 +936,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "-20",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 550
@@ -962,7 +962,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "-15",
     "eventType": "Papyrus",
     "percentage": 32,
     "year": 315
@@ -988,7 +988,7 @@
     ],
     "family": "Byzantine",
     "location": "Capernaum, Israel",
-    "y": "15",
+    "y": "-15",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 249
@@ -1014,7 +1014,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "-15",
     "eventType": "Papyrus",
     "percentage": 75,
     "year": 750
@@ -1040,7 +1040,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "-20",
     "eventType": "Papyrus",
     "percentage": 60,
     "year": 600
@@ -1066,7 +1066,7 @@
     ],
     "family": "Byzantine",
     "location": "Fayum, Egypt",
-    "y": "20",
+    "y": "-20",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 248
@@ -1092,7 +1092,7 @@
     ],
     "family": "Byzantine",
     "location": "Fayum, Egypt",
-    "y": "15",
+    "y": "-15",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 247
@@ -1118,7 +1118,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "-20",
     "eventType": "Papyrus",
     "percentage": 29,
     "year": 287
@@ -1144,7 +1144,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "30",
+    "y": "-30",
     "eventType": "Papyrus",
     "percentage": 40,
     "year": 400
@@ -1170,7 +1170,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "-15",
     "eventType": "Papyrus",
     "percentage": 13,
     "year": 125
@@ -1196,7 +1196,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "-20",
     "eventType": "Papyrus",
     "percentage": 50,
     "year": 500
@@ -1222,7 +1222,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "-25",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 550
@@ -1248,7 +1248,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "-25",
     "eventType": "Papyrus",
     "percentage": 65,
     "year": 650
@@ -1274,7 +1274,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "30",
+    "y": "-30",
     "eventType": "Papyrus",
     "percentage": 65,
     "year": 650
@@ -1300,7 +1300,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "40",
+    "y": "-40",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -1326,7 +1326,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "30",
+    "y": "-30",
     "eventType": "Papyrus",
     "percentage": 22,
     "year": 215
@@ -1352,7 +1352,7 @@
     ],
     "family": "Byzantine",
     "location": "Jabal Abu Mana, Egypt",
-    "y": "35",
+    "y": "-35",
     "eventType": "Papyrus",
     "percentage": 22,
     "year": 215
@@ -1378,7 +1378,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "-15",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 246
@@ -1404,7 +1404,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "-20",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 246
@@ -1430,7 +1430,7 @@
     ],
     "family": "Alexandrian",
     "location": "Jabal Abu Mana, Egypt",
-    "y": "30",
+    "y": "-30",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 300
@@ -1456,7 +1456,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "40",
+    "y": "-40",
     "eventType": "Papyrus",
     "percentage": 65,
     "year": 650
@@ -1482,7 +1482,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "30",
+    "y": "-30",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 550
@@ -1508,7 +1508,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "35",
+    "y": "-35",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 300
@@ -1534,7 +1534,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "-25",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -1560,7 +1560,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "50",
+    "y": "-50",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -1586,7 +1586,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "35",
+    "y": "-35",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 550
@@ -1612,7 +1612,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "45",
+    "y": "-45",
     "eventType": "Papyrus",
     "percentage": 40,
     "year": 400
@@ -1638,7 +1638,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "-25",
     "eventType": "Papyrus",
     "percentage": 25,
     "year": 247
@@ -1664,7 +1664,7 @@
     ],
     "family": "Byzantine",
     "location": "Oxyrhynchus, Egypt",
-    "y": "65",
+    "y": "-65",
     "eventType": "Papyrus",
     "percentage": 35,
     "year": 350
@@ -1690,7 +1690,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "15",
+    "y": "-15",
     "eventType": "Papyrus",
     "percentage": 15,
     "year": 150
@@ -1716,7 +1716,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "40",
+    "y": "-40",
     "eventType": "Papyrus",
     "percentage": 30,
     "year": 300
@@ -1742,7 +1742,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "25",
+    "y": "-25",
     "eventType": "Papyrus",
     "percentage": 50,
     "year": 500
@@ -1768,7 +1768,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "45",
+    "y": "-45",
     "eventType": "Papyrus",
     "percentage": 55,
     "year": 550
@@ -1794,7 +1794,7 @@
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "20",
+    "y": "-20",
     "eventType": "Papyrus",
     "percentage": 20,
     "year": 200
