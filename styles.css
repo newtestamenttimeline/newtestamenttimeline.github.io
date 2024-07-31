@@ -41,24 +41,19 @@ header {
 
 .top-half {
     flex: 1;
-    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
     overflow: auto;
-}
-
-#timeline-container {
-    width: 14000px; /* Adjust this value based on the range of years */
-    height: 100%;
     position: relative;
 }
 
 .timeline {
-    width: 100%;
+    width: 14000px;
     height: 4px;
     background-color: var(--primary-color);
-    position: absolute;
-    top: 50%; /* Center the timeline vertically */
-    left: 0; /* Ensure the timeline starts from the left */
-    transform: translateY(-50%);
+    position: relative;
+    z-index: 1; /* Ensure timeline is below dots and legend */
 }
 
 .timeline::before,
@@ -88,7 +83,7 @@ header {
     border-radius: 50%;
     position: absolute;
     cursor: pointer;
-    transition: top 0.5s ease-out, left 0.5s ease-out; /* Ensure smooth transition */
+    transition: all 0.3s ease;
     z-index: 2; /* Ensure dots are above the timeline and year labels */
 }
 
@@ -110,7 +105,7 @@ header {
     transform: translateY(100%);
     background: black; /* Ensure the background is black to blend with the timeline background */
     padding: 2px 5px;
-    font-size: 12px; /* Adjust this value for text size */
+    font-size: 12px;
     color: white; /* Ensure the text color is white */
     border: 1px solid #ccc;
     z-index: 0; /* Ensure year labels are below the dots and timeline */
