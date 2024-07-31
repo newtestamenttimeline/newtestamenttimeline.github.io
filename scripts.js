@@ -119,8 +119,6 @@ function processEvent(event) {
     console.log('Processed Event:', event);
 }
 
-const yearDotPlacements = {};
-
 function addEventToTimeline(event) {
     console.log('Adding event to timeline:', event);
     if (document.querySelector(`.event[title="${event.title}"]`)) {
@@ -137,57 +135,9 @@ function addEventToTimeline(event) {
     newEvent.setAttribute('data-location', event.location || 'Unknown');
     newEvent.setAttribute('data-event-type', event.eventType);
 
-    if (!yearDotPlacements[event.year]) {
-        yearDotPlacements[event.year] = [];
-    }
-
-    const existingDots = yearDotPlacements[event.year];
-    const positions = Array.from(document.querySelectorAll('.event')).map(e => ({
-        left: parseFloat(e.style.left),
-        top: parseFloat(e.style.top)
-    }));
-
-    let newLeft = (event.percentage * timeline.offsetWidth) / 100;
-    let newTop = 0;
-
-    if (existingDots.length === 0) {
-        newTop = 0;
-    } else if (existingDots.length === 1) {
-        newTop = Math.random() > 0.5 ? dotDiameter + spacing : -(dotDiameter + spacing);
-    } else {
-        const [lastTop] = existingDots.slice(-1);
-        newTop = lastTop > 0 ? -(dotDiameter + spacing) : dotDiameter + spacing;
-
-        if (isPositionOccupied(newLeft, newTop)) {
-            const directions = [[0, -spacing], [0, spacing], [-spacing, 0], [spacing, 0]];
-            shuffleArray(directions);
-            let found = false;
-
-            for (let i = 0; i < directions.length; i++) {
-                const [dx, dy] = directions[i];
-                if (!isPositionOccupied(newLeft + dx, newTop + dy)) {
-                    newLeft += dx;
-                    newTop += dy;
-                    found = true;
-                    break;
-                }
-            }
-
-            if (!found) {
-                let tries = 0;
-                const maxTries = 1000;
-                while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
-                    newTop += newTop > 0 ? spacing + step : -(spacing + step);
-                    tries++;
-                }
-            }
-        }
-    }
-
-    yearDotPlacements[event.year].push(newTop);
-    if (yearDotPlacements[event.year].length > 2) {
-        yearDotPlacements[event.year].shift();
-    }
+    // Get the y-coordinate from the event data
+    const newLeft = (event.percentage * timeline.offsetWidth) / 100;
+    const newTop = parseFloat(event.y);
 
     newEvent.style.left = `${newLeft}px`;
     newEvent.style.top = `${newTop}px`;
@@ -365,7 +315,6 @@ function generateLegend() {
         questionMark.className = 'question-mark';
         questionMark.textContent = '?';
         const tooltip = document.createElement('span');
-        tooltip.className = 'tooltip';
         tooltip.textContent = `Filter events by ${eventType} type`;
         questionMark.appendChild(tooltip);
         legendItem.appendChild(checkbox);
