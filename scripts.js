@@ -14,7 +14,6 @@ const step = 5;
 
 const eventTypeColors = {};
 
-// Toggle legend visibility
 document.getElementById('toggle-legend').addEventListener('click', () => {
     const legend = document.getElementById('legend');
     legend.classList.toggle('collapsed');
@@ -22,14 +21,12 @@ document.getElementById('toggle-legend').addEventListener('click', () => {
     arrow.classList.toggle('collapsed');
 });
 
-// Toggle sidebar visibility
 document.getElementById('toggle-sidebar').addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
     const arrow = document.querySelector('#toggle-sidebar .arrow-reverse');
     arrow.classList.toggle('collapsed');
 });
 
-// Fetch and load event data
 async function loadEvents() {
     try {
         const historicalEvents = await fetch('historical_events.json').then(response => response.json());
@@ -45,7 +42,6 @@ async function loadEvents() {
         // Add year labels
         addYearLabels();
 
-        // Process and display events
         historicalEvents.forEach(event => {
             processEvent(event);
             addEventToTimeline(event);
@@ -88,7 +84,6 @@ async function loadEvents() {
     }
 }
 
-// Add year labels to the timeline
 function addYearLabels() {
     const yearLabels = [
         { year: 0, left: '0%' },
@@ -111,7 +106,6 @@ function addYearLabels() {
     });
 }
 
-// Process each event to calculate its position on the timeline
 function processEvent(event) {
     if (event.year) {
         event.percentage = (event.year / 1400) * 100;
@@ -125,7 +119,8 @@ function processEvent(event) {
     console.log('Processed Event:', event);
 }
 
-// Add an event to the timeline
+const yearDotPlacements = {};
+
 function addEventToTimeline(event) {
     console.log('Adding event to timeline:', event);
     if (document.querySelector(`.event[title="${event.title}"]`)) {
@@ -142,9 +137,60 @@ function addEventToTimeline(event) {
     newEvent.setAttribute('data-location', event.location || 'Unknown');
     newEvent.setAttribute('data-event-type', event.eventType);
 
-    // Set initial position based on percentage and y-coordinate from JSON
-    newEvent.style.left = `${event.percentage}%`;
-    newEvent.style.top = `${event.y}px`;
+    if (!yearDotPlacements[event.year]) {
+        yearDotPlacements[event.year] = [];
+    }
+
+    const existingDots = yearDotPlacements[event.year];
+    const positions = Array.from(document.querySelectorAll('.event')).map(e => ({
+        left: parseFloat(e.style.left),
+        top: parseFloat(e.style.top)
+    }));
+
+    let newLeft = (event.percentage * timeline.offsetWidth) / 100;
+    let newTop = 0;
+
+    if (existingDots.length === 0) {
+        newTop = 0;
+    } else if (existingDots.length === 1) {
+        newTop = Math.random() > 0.5 ? dotDiameter + spacing : -(dotDiameter + spacing);
+    } else {
+        const [lastTop] = existingDots.slice(-1);
+        newTop = lastTop > 0 ? -(dotDiameter + spacing) : dotDiameter + spacing;
+
+        if (isPositionOccupied(newLeft, newTop)) {
+            const directions = [[0, -spacing], [0, spacing], [-spacing, 0], [spacing, 0]];
+            shuffleArray(directions);
+            let found = false;
+
+            for (let i = 0; i < directions.length; i++) {
+                const [dx, dy] = directions[i];
+                if (!isPositionOccupied(newLeft + dx, newTop + dy)) {
+                    newLeft += dx;
+                    newTop += dy;
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                let tries = 0;
+                const maxTries = 1000;
+                while (isPositionOccupied(newLeft, newTop) && tries < maxTries) {
+                    newTop += newTop > 0 ? spacing + step : -(spacing + step);
+                    tries++;
+                }
+            }
+        }
+    }
+
+    yearDotPlacements[event.year].push(newTop);
+    if (yearDotPlacements[event.year].length > 2) {
+        yearDotPlacements[event.year].shift();
+    }
+
+    newEvent.style.left = `${newLeft}px`;
+    newEvent.style.top = `${newTop}px`;
 
     newEvent.style.backgroundColor = getColorForEventType(event.eventType);
 
@@ -156,7 +202,22 @@ function addEventToTimeline(event) {
     });
 }
 
-// Update events to handle interactions
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+function isPositionOccupied(left, top) {
+    const existingEvents = Array.from(document.querySelectorAll('.event'));
+    return existingEvents.some(e => {
+        const eLeft = parseFloat(e.style.left);
+        const eTop = parseFloat(e.style.top);
+        return Math.abs(eLeft - left) < dotDiameter && Math.abs(eTop - top) < dotDiameter;
+    });
+}
+
 function updateEvents() {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
@@ -182,7 +243,6 @@ function updateEvents() {
     });
 }
 
-// Populate the text filter list
 function populateTextList() {
     const textList = document.getElementById('text-list');
     textList.innerHTML = '';
@@ -196,7 +256,6 @@ function populateTextList() {
     });
 }
 
-// Populate the family filter list
 function populateFamilyList() {
     const familyList = document.getElementById('family-list');
     familyList.innerHTML = '';
@@ -210,7 +269,6 @@ function populateFamilyList() {
     });
 }
 
-// Filter events by text
 function filterEventsByText(text, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
@@ -223,7 +281,6 @@ function filterEventsByText(text, isChecked) {
     });
 }
 
-// Filter events by family
 function filterEventsByFamily(family, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
@@ -236,20 +293,15 @@ function filterEventsByFamily(family, isChecked) {
     });
 }
 
-// CSS for greyed-out events
 const css = `
     .greyed-out {
         display: none;
-    }
-    .event {
-        transition: top 0.5s ease-out, left 0.5s ease-out;
     }
 `;
 const style = document.createElement('style');
 style.appendChild(document.createTextNode(css));
 document.head.appendChild(style);
 
-// Initialize filters
 function initializeFilters() {
     const textList = document.getElementById('text-list');
     const familyList = document.getElementById('family-list');
@@ -273,7 +325,6 @@ function initializeFilters() {
     });
 }
 
-// Generate colors for different event types
 function generateColorsForEventTypes() {
     eventTypes.forEach(eventType => {
         if (!eventTypeColors[eventType]) {
@@ -282,15 +333,12 @@ function generateColorsForEventTypes() {
     });
 }
 
-// Get the color for a specific event type
 function getColorForEventType(eventType) {
     return eventTypeColors[eventType];
 }
 
-// Load the events when the page loads
 loadEvents();
 
-// Generate the legend to explain event types
 function generateLegend() {
     legendContainer.innerHTML = '';
 
@@ -337,7 +385,6 @@ function generateLegend() {
     });
 }
 
-// Toggle visibility of events based on their type
 function toggleEventsByType(eventType, isChecked) {
     const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
     events.forEach(event => {
@@ -345,63 +392,43 @@ function toggleEventsByType(eventType, isChecked) {
     });
 }
 
-// Toggle sidebar visibility
 function toggleSidebar() {
     sidebar.classList.toggle('collapsed');
 }
 
-// Zoom in on the timeline
 document.getElementById('zoom-in').addEventListener('click', () => {
     scale *= 1.2;
     timeline.style.transform = `scale(${scale})`;
-    timeline.style.transformOrigin = '0 0'; // Ensure scaling starts from the top-left corner
-    timelineContainer.scrollLeft = 0; // Ensure the scroll is reset to the left
-    timelineContainer.scrollTop = 0;  // Ensure the scroll is reset to the top
 });
 
-// Zoom out of the timeline
 document.getElementById('zoom-out').addEventListener('click', () => {
     scale /= 1.2;
     timeline.style.transform = `scale(${scale})`;
-    timeline.style.transformOrigin = '0 0'; // Ensure scaling starts from the top-left corner
-    timelineContainer.scrollLeft = 0; // Ensure the scroll is reset to the left
-    timelineContainer.scrollTop = 0;  // Ensure the scroll is reset to the top
 });
 
-// Handle double-click to zoom in on the timeline
 timelineContainer.addEventListener('dblclick', (e) => {
     const rect = timelineContainer.getBoundingClientRect();
     const offsetX = e.clientX - rect.left;
-    const offsetY = e.clientY - rect.top;
-    const targetPercentageX = offsetX / rect.width;
-    const targetPercentageY = offsetY / rect.height;
-    const targetScrollX = targetPercentageX * timeline.scrollWidth * scale - rect.width / 2;
-    const targetScrollY = targetPercentageY * timeline.scrollHeight * scale - rect.height / 2;
+    const targetPercentage = offsetX / rect.width;
+    const targetScroll = targetPercentage * timeline.scrollWidth * scale - rect.width / 2;
 
     timelineContainer.scrollTo({
-        left: targetScrollX,
-        top: targetScrollY,
+        left: targetScroll,
         behavior: 'smooth'
     });
 
     scale *= 1.2;
     timeline.style.transform = `scale(${scale})`;
-    timeline.style.transformOrigin = '0 0'; // Ensure scaling starts from the top-left corner
 });
 
 let isDown = false;
 let startX;
-let startY;
 let scrollLeft;
-let scrollTop;
 
-// Handle dragging to scroll the timeline
 timelineContainer.addEventListener('mousedown', (e) => {
     isDown = true;
     startX = e.pageX - timelineContainer.offsetLeft;
-    startY = e.pageY - timelineContainer.offsetTop;
     scrollLeft = timelineContainer.scrollLeft;
-    scrollTop = timelineContainer.scrollTop;
 });
 
 timelineContainer.addEventListener('mouseleave', () => {
@@ -416,15 +443,10 @@ timelineContainer.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - timelineContainer.offsetLeft;
-    const y = e.pageY - timelineContainer.offsetTop;
-    const walkX = (x - startX) * 3;
-    const walkY = (y - startY) * 3;
-    timelineContainer.scrollLeft = scrollLeft - walkX;
-    timelineContainer.scrollTop = scrollTop - walkY;
+    const walk = (x - startX) * 3;
+    timelineContainer.scrollLeft = scrollLeft - walk;
 });
 
-// Ensure the timeline is centered on load
 new ResizeObserver(() => {
     timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
-    timelineContainer.scrollTop = (timeline.scrollHeight - timelineContainer.clientHeight) / 2;
 }).observe(timelineContainer);
