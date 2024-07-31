@@ -140,11 +140,24 @@ function addEventToTimeline(event) {
     const newTop = parseFloat(event.y);
 
     newEvent.style.left = `${newLeft}px`;
-    newEvent.style.top = `${newTop}px`;
+    
+    // Adjust top position relative to the timeline
+    if (newTop >= 0) {
+        newEvent.style.top = `calc(50% - ${newTop}px)`;  // Above the timeline
+    } else {
+        newEvent.style.top = `calc(50% + ${Math.abs(newTop)}px)`;  // Below the timeline
+    }
 
     newEvent.style.backgroundColor = getColorForEventType(event.eventType);
 
     timeline.appendChild(newEvent);
+
+    // Ensure year labels are always visible
+    document.querySelectorAll('.year-label').forEach(label => {
+        timeline.appendChild(label);
+    });
+}
+
 
     // Ensure year labels are always visible
     document.querySelectorAll('.year-label').forEach(label => {
