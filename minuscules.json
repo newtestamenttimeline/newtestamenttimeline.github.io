@@ -60,7 +60,7 @@
     "title": "minuscule 74",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -87,7 +87,7 @@
     "description": "",
     "texts": [
       "Gospels",
-      "Acts†",
+      "Acts",
       "Pauline Epistles",
       "General Epistles"
     ],
@@ -154,7 +154,7 @@
     "title": "minuscule 2500",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -180,7 +180,7 @@
     "title": "minuscule 14",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -273,9 +273,9 @@
     "title": "minuscule 1734",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles",
       "Revelation"
     ],
     "family": "",
@@ -315,7 +315,7 @@
     "title": "minuscule 623",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Acts†",
+      "Chrysostom Commentary on Acts",
       "Pauline Epistles",
       "General Epistles"
     ],
@@ -356,7 +356,7 @@
     "title": "minuscule 609 + [2152]",
     "description": "",
     "texts": [
-      "Gospel of Luke†"
+      "Gospel of Luke"
     ],
     "family": "",
     "location": "",
@@ -369,7 +369,7 @@
     "title": "minuscule 81",
     "description": "",
     "texts": [
-      "Acts†"
+      "Acts"
     ],
     "family": "",
     "location": "",
@@ -408,7 +408,7 @@
     "title": "minuscule 174",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -434,7 +434,7 @@
     "title": "minuscule 391",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -515,7 +515,7 @@
     "title": "minuscule 278",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -529,8 +529,8 @@
     "description": "",
     "texts": [
       "Acts",
-      "General Epistles†",
-      "Pauline Epistles†",
+      "General Epistles",
+      "Pauline Epistles",
       "Revelation"
     ],
     "family": "",
@@ -747,7 +747,7 @@
     "title": "minuscule 159",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -828,7 +828,7 @@
     "title": "minuscule 513",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -883,7 +883,7 @@
     "title": "minuscule 229",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -925,7 +925,7 @@
     "title": "minuscule 863",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -1177,10 +1177,10 @@
     "title": "minuscule 2733",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
+      "Acts",
+      "General Epistles",
       "Pauline Epistles (lacks 1 Corinthians",
-      "1 Thessalonians)†"
+      "1 Thessalonians)"
     ],
     "family": "",
     "location": "",
@@ -1206,7 +1206,7 @@
     "title": "minuscule 2936",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Romans 7:15–16:24†; 1 Corinthians 1:1–16:16<†; 2 Corinthians 1:6–13:14†; Galatians - Philippians; Colossians 1:1-4:11†; 1 Thessalonians 1:3-5:28†; 2 Thessalonians - Hebrews"
+      "Theophylact Commentary on Romans 7:15–16:24; 1 Corinthians 1:1–16:16<; 2 Corinthians 1:6–13:14; Galatians - Philippians; Colossians 1:1-4:11; 1 Thessalonians 1:3-5:28; 2 Thessalonians - Hebrews"
     ],
     "family": "",
     "location": "",
@@ -1273,9 +1273,9 @@
     "title": "minuscule 1238 + [2167]",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Luke†",
-      "John†"
+      "Matthew",
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -1301,7 +1301,7 @@
     "title": "minuscule 1206",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -1314,7 +1314,7 @@
     "title": "minuscule 303",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -1327,7 +1327,7 @@
     "title": "minuscule 293",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -1558,7 +1558,7 @@
     "title": "minuscule 2223",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -1597,10 +1597,10 @@
     "title": "minuscule 1594",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -1794,7 +1794,7 @@
     "title": "minuscule 1041",
     "description": "",
     "texts": [
-      "Matthew and Mark†"
+      "Matthew and Mark"
     ],
     "family": "",
     "location": "",
@@ -1849,9 +1849,9 @@
     "title": "minuscule 1827",
     "description": "",
     "texts": [
-      "Acts† 1:16-28:31",
+      "Acts 1:16-28:31",
       "General Epistles",
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -1916,7 +1916,7 @@
     "title": "minuscule 1564",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -2061,7 +2061,7 @@
     "title": "minuscule 2160",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -2132,7 +2132,7 @@
     "title": "minuscule 649",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -2174,7 +2174,7 @@
     "title": "minuscule 1569",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -2228,7 +2228,7 @@
     "title": "minuscule 2758",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -2241,7 +2241,7 @@
     "title": "minuscule 2247",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -2254,9 +2254,9 @@
     "title": "minuscule 2484",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -2295,7 +2295,7 @@
     "title": "minuscule 2651",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -2388,7 +2388,7 @@
     "texts": [
       "GospelsK",
       "RomansK",
-      "1 Corinthians 1:1-4:15K†"
+      "1 Corinthians 1:1-4:15K"
     ],
     "family": "",
     "location": "",
@@ -2401,7 +2401,7 @@
     "title": "minuscule 588",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -2479,9 +2479,9 @@
     "title": "minuscule 1249",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline epistles"
     ],
     "family": "",
     "location": "",
@@ -2494,7 +2494,7 @@
     "title": "minuscule 1614",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -2520,7 +2520,7 @@
     "title": "minuscule 1654",
     "description": "",
     "texts": [
-      "Matthew† 9:16-28:20",
+      "Matthew 9:16-28:20",
       "Mark",
       "Luke",
       "John"
@@ -2619,9 +2619,9 @@
     "title": "minuscule 2249",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -2704,7 +2704,7 @@
     "title": "minuscule 2407",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -2824,7 +2824,7 @@
     "title": "minuscule 1547",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -2999,7 +2999,7 @@
     "description": "",
     "texts": [
       "Acts",
-      "Pauline Epistles†",
+      "Pauline Epistles",
       "General Epistles"
     ],
     "family": "",
@@ -3013,10 +3013,10 @@
     "title": "minuscule 1548",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -3095,7 +3095,7 @@
     "description": "",
     "texts": [
       "Gospels",
-      "Hebrews†"
+      "Hebrews"
     ],
     "family": "",
     "location": "",
@@ -3162,9 +3162,9 @@
     "title": "minuscule 1100",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline epistles"
     ],
     "family": "",
     "location": "",
@@ -3232,7 +3232,7 @@
     "title": "minuscule 1929",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Pauline Epistles†"
+      "Theophylact Commentary on the Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -3245,7 +3245,7 @@
     "title": "minuscule 294",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -3317,8 +3317,8 @@
     "texts": [
       "Acts",
       "Pauline Epistles",
-      "General Epistles†",
-      "Revelation†"
+      "General Epistles",
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -3370,7 +3370,7 @@
     "title": "minuscule 2467",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -3498,7 +3498,7 @@
       "Theophylact Commentary on the Gospels",
       "Acts",
       "Pauline Epistles",
-      "Revelation†"
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -3524,9 +3524,9 @@
     "title": "minuscule 1610",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -3593,9 +3593,9 @@
     "title": "minuscule 1027",
     "description": "",
     "texts": [
-      "John of Constantinople Commentary on Matthew†",
-      "Mark†",
-      "Luke†"
+      "John of Constantinople Commentary on Matthew",
+      "Mark",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -3608,7 +3608,7 @@
     "title": "minuscule 962",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -3888,7 +3888,7 @@
     "title": "minuscule 1591",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -4008,7 +4008,7 @@
     "title": "minuscule 2931",
     "description": "",
     "texts": [
-      "Revelation 16:21-22:21†"
+      "Revelation 16:21-22:21"
     ],
     "family": "",
     "location": "",
@@ -4049,7 +4049,7 @@
     "title": "minuscule 1629",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -4062,9 +4062,9 @@
     "title": "minuscule 1101",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline epistles"
     ],
     "family": "",
     "location": "",
@@ -4090,7 +4090,7 @@
     "title": "minuscule 2240",
     "description": "",
     "texts": [
-      "Romans†"
+      "Romans"
     ],
     "family": "",
     "location": "",
@@ -4291,7 +4291,7 @@
     "title": "minuscule 2267",
     "description": "",
     "texts": [
-      "Matthew †"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -4327,43 +4327,10 @@
     "year": 1888
   },
   {
-    "title": "minuscule",
-    "description": "",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "",
-    "y": "195",
-    "eventType": "Minuscule"
-  },
-  {
-    "title": "minuscule",
-    "description": "",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "",
-    "y": "-195",
-    "eventType": "Minuscule"
-  },
-  {
-    "title": "minuscule",
-    "description": "",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "",
-    "y": "225",
-    "eventType": "Minuscule"
-  },
-  {
     "title": "minuscule 24",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -4376,7 +4343,7 @@
     "title": "minuscule 27",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -4428,7 +4395,7 @@
     "title": "minuscule 63",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -4441,7 +4408,7 @@
     "title": "minuscule 67",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -4508,7 +4475,7 @@
     "title": "minuscule 115",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -4521,7 +4488,7 @@
     "title": "minuscule 135",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -4534,7 +4501,7 @@
     "title": "minuscule 144",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -4560,7 +4527,7 @@
     "title": "minuscule 161",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -4574,7 +4541,7 @@
     "description": "",
     "texts": [
       "Acts",
-      "Pauline Epistles†",
+      "Pauline Epistles",
       "General Epistles"
     ],
     "family": "",
@@ -4642,7 +4609,7 @@
     "title": "minuscule 274",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -4683,8 +4650,8 @@
     "description": "",
     "texts": [
       "Acts",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -4710,7 +4677,7 @@
     "title": "minuscule 344",
     "description": "",
     "texts": [
-      "Gospelss†"
+      "Gospelss"
     ],
     "family": "",
     "location": "",
@@ -4749,8 +4716,8 @@
     "title": "minuscule 398",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
+      "Acts",
+      "Pauline Epistles",
       "General Epistles"
     ],
     "family": "",
@@ -4764,7 +4731,7 @@
     "title": "minuscule 405",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -4805,7 +4772,7 @@
     "description": "",
     "texts": [
       "Acts",
-      "Romans - Ephesians†",
+      "Romans - Ephesians",
       "General Epistles"
     ],
     "family": "",
@@ -4930,9 +4897,9 @@
     "title": "minuscule 602",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -4960,7 +4927,7 @@
     "title": "minuscule 626",
     "description": "",
     "texts": [
-      "Acts†",
+      "Acts",
       "James",
       "1 Peter"
     ],
@@ -4975,8 +4942,8 @@
     "title": "minuscule 627",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
+      "Acts",
+      "Pauline Epistles",
       "General Epistles",
       "Revelation"
     ],
@@ -5004,7 +4971,7 @@
     "title": "minuscule 669",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -5017,7 +4984,7 @@
     "title": "minuscule 771",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -5113,7 +5080,7 @@
     "title": "minuscule 1055",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -5126,8 +5093,8 @@
     "title": "minuscule 1066",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†"
+      "Acts",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -5244,9 +5211,9 @@
     "title": "minuscule 1175",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -5272,7 +5239,7 @@
     "title": "minuscule 1220",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -5311,7 +5278,7 @@
     "title": "minuscule 1281 = [767]",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -5324,7 +5291,7 @@
     "title": "minuscule 1347",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -5337,7 +5304,7 @@
     "title": "minuscule 1351",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -5376,7 +5343,7 @@
     "title": "minuscule 1379",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -5402,9 +5369,9 @@
     "title": "minuscule 1412",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Luke†",
-      "John†"
+      "Matthew",
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -5456,7 +5423,7 @@
     "title": "minuscule 1507",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -5485,8 +5452,8 @@
     "title": "minuscule 1662",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark† Luke†"
+      "Matthew",
+      "Mark Luke"
     ],
     "family": "",
     "location": "",
@@ -5499,7 +5466,7 @@
     "title": "minuscule 1663",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -5528,8 +5495,8 @@
     "description": "",
     "texts": [
       "Acts",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -5557,8 +5524,8 @@
     "title": "minuscule 1756",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline epistlesP†"
+      "Acts",
+      "Pauline epistlesP"
     ],
     "family": "",
     "location": "",
@@ -5584,7 +5551,7 @@
     "title": "minuscule 1829",
     "description": "",
     "texts": [
-      "ActsS†",
+      "ActsS",
       "General Epistles"
     ],
     "family": "",
@@ -5598,7 +5565,7 @@
     "title": "minuscule 1836",
     "description": "",
     "texts": [
-      "1 JohnP† - 2 ThessaloniansP†"
+      "1 JohnP - 2 ThessaloniansP"
     ],
     "family": "",
     "location": "",
@@ -5641,9 +5608,9 @@
     "title": "minuscule 1851",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -5656,8 +5623,8 @@
     "title": "minuscule 1871",
     "description": "",
     "texts": [
-      "Acts† (no commentary)",
-      "General Epistles†"
+      "Acts (no commentary)",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -5687,7 +5654,7 @@
     "texts": [
       "Acts",
       "General Epistles",
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -5702,7 +5669,7 @@
     "texts": [
       "Acts",
       "General Epistles",
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -5730,7 +5697,7 @@
     "title": "minuscule 1905",
     "description": "",
     "texts": [
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -5810,7 +5777,7 @@
     "title": "minuscule 1997",
     "description": "",
     "texts": [
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -5875,7 +5842,7 @@
     "title": "minuscule 2125",
     "description": "",
     "texts": [
-      "General Epistles† and Pauline Epistles†"
+      "General Epistles and Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -5901,10 +5868,10 @@
     "title": "minuscule 2290",
     "description": "",
     "texts": [
-      "Matthew†S",
+      "MatthewS",
       "Mark",
       "Luke",
-      "John†S"
+      "JohnS"
     ],
     "family": "",
     "location": "",
@@ -5917,7 +5884,7 @@
     "title": "minuscule 2324",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -5943,7 +5910,7 @@
     "title": "minuscule 2351",
     "description": "",
     "texts": [
-      "Revelation 1:1-14:5†"
+      "Revelation 1:1-14:5"
     ],
     "family": "",
     "location": "",
@@ -5969,7 +5936,7 @@
     "title": "minuscule 2373",
     "description": "",
     "texts": [
-      "Gospels through John 6:8†"
+      "Gospels through John 6:8"
     ],
     "family": "",
     "location": "",
@@ -5995,7 +5962,7 @@
     "title": "minuscule 2424",
     "description": "",
     "texts": [
-      "Hebrews†"
+      "Hebrews"
     ],
     "family": "",
     "location": "",
@@ -6008,7 +5975,7 @@
     "title": "minuscule 2440",
     "description": "",
     "texts": [
-      "Luke†"
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -6036,7 +6003,7 @@
     "title": "minuscule 2531",
     "description": "",
     "texts": [
-      "John†"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -6062,7 +6029,7 @@
     "title": "minuscule 2722",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -6088,8 +6055,8 @@
     "title": "minuscule 2800",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†"
+      "Matthew",
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -6128,7 +6095,7 @@
     "title": "minuscule 2854",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -6154,8 +6121,8 @@
     "title": "minuscule 2892",
     "description": "",
     "texts": [
-      "Acts† 7:40-28:31; General Epistles; Romans; 1 Corinthians† 1:24-16:24; 2 Corinthians; Galatians† 1:1-3:5",
-      "4:2-6:18; Ephesians - 1 Thessalonians; 2 Thessalonians 1:1-3:6†; 1 Timothy 1:1-4:8†; Titus† 1:5-3:15; Hebrews"
+      "Acts 7:40-28:31; General Epistles; Romans; 1 Corinthians 1:24-16:24; 2 Corinthians; Galatians 1:1-3:5",
+      "4:2-6:18; Ephesians - 1 Thessalonians; 2 Thessalonians 1:1-3:6; 1 Timothy 1:1-4:8; Titus 1:5-3:15; Hebrews"
     ],
     "family": "",
     "location": "",
@@ -6168,7 +6135,7 @@
     "title": "minuscule 2898=[278b]",
     "description": "",
     "texts": [
-      "Matthew† 13:43-17:5"
+      "Matthew 13:43-17:5"
     ],
     "family": "",
     "location": "",
@@ -6181,7 +6148,7 @@
     "title": "minuscule 2907",
     "description": "",
     "texts": [
-      "GospelsS†"
+      "GospelsS"
     ],
     "family": "",
     "location": "",
@@ -6207,7 +6174,7 @@
     "title": "minuscule 2932",
     "description": "",
     "texts": [
-      "John 10:18-31 †"
+      "John 10:18-31"
     ],
     "family": "",
     "location": "",
@@ -6233,7 +6200,7 @@
     "title": "minuscule 2939",
     "description": "",
     "texts": [
-      "Gospels†s"
+      "Gospelss"
     ],
     "family": "",
     "location": "",
@@ -6337,7 +6304,7 @@
     "title": "minuscule 2172",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -6350,7 +6317,7 @@
     "title": "minuscule 2368",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -6376,7 +6343,7 @@
     "title": "minuscule 2790",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -6389,7 +6356,7 @@
     "title": "minuscule 2835",
     "description": "",
     "texts": [
-      "Matthew† 1:20-10:29"
+      "Matthew 1:20-10:29"
     ],
     "family": "",
     "location": "",
@@ -6431,7 +6398,7 @@
     "description": "",
     "texts": [
       "Acts",
-      "Pauline Epistles†",
+      "Pauline Epistles",
       "General Epistles",
       "Revelation"
     ],
@@ -6446,7 +6413,7 @@
     "title": "minuscule 175",
     "description": "",
     "texts": [
-      "New Testament†"
+      "New Testament"
     ],
     "family": "",
     "location": "",
@@ -6472,8 +6439,8 @@
     "title": "minuscule 994",
     "description": "",
     "texts": [
-      "Matthew†",
-      "John†"
+      "Matthew",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -6539,7 +6506,7 @@
     "title": "minuscule 1701",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -6643,7 +6610,7 @@
     "title": "minuscule 23",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -6656,7 +6623,7 @@
     "title": "minuscule 25",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -6682,7 +6649,7 @@
     "title": "minuscule 28",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -6734,7 +6701,7 @@
     "title": "minuscule 40",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -6747,8 +6714,8 @@
     "title": "minuscule 41",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†"
+      "Matthew",
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -6761,9 +6728,9 @@
     "title": "minuscule 42",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles† Revelation†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles Revelation"
     ],
     "family": "",
     "location": "",
@@ -6776,10 +6743,10 @@
     "title": "minuscule 43",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Gospels",
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -6792,7 +6759,7 @@
     "title": "minuscule 50",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -6896,9 +6863,9 @@
     "title": "minuscule 91",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "Revelation†"
+      "Acts",
+      "Pauline Epistles",
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -6924,9 +6891,9 @@
     "title": "minuscule 101",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -6978,7 +6945,7 @@
     "title": "minuscule 114",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7046,7 +7013,7 @@
     "title": "minuscule 138",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7088,8 +7055,8 @@
     "title": "minuscule 145",
     "description": "",
     "texts": [
-      "Luke†",
-      "John†"
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -7183,7 +7150,7 @@
     "title": "minuscule 194",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7209,9 +7176,9 @@
     "title": "minuscule 197",
     "description": "",
     "texts": [
-      "Matthew†",
+      "Matthew",
       "Mark",
-      "James†"
+      "James"
     ],
     "family": "",
     "location": "",
@@ -7237,7 +7204,7 @@
     "title": "minuscule 207",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7263,7 +7230,7 @@
     "title": "minuscule 210",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7276,7 +7243,7 @@
     "title": "minuscule 212",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7289,7 +7256,7 @@
     "title": "minuscule 213",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7315,7 +7282,7 @@
     "title": "minuscule 236",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7481,8 +7448,8 @@
     "title": "minuscule 302",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline EpistlesP†",
+      "Acts",
+      "Pauline EpistlesP",
       "General Epistles"
     ],
     "family": "",
@@ -7496,8 +7463,8 @@
     "title": "minuscule 312",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
+      "Acts",
+      "Pauline Epistles",
       "General Epistles"
     ],
     "family": "",
@@ -7511,10 +7478,10 @@
     "title": "minuscule 314",
     "description": "",
     "texts": [
-      "ActsS†",
-      "Pauline Epistles†",
-      "General Epistles†",
-      "Revelation†"
+      "ActsS",
+      "Pauline Epistles",
+      "General Epistles",
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -7527,9 +7494,9 @@
     "title": "minuscule 325",
     "description": "",
     "texts": [
-      "ActsS†",
+      "ActsS",
       "Pauline Epistles",
-      "General EpistlesS†",
+      "General EpistlesS",
       "Revelation"
     ],
     "family": "",
@@ -7582,7 +7549,7 @@
     "title": "minuscule 350",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7595,7 +7562,7 @@
     "title": "minuscule 352",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7608,7 +7575,7 @@
     "title": "minuscule 354",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew†"
+      "Theophylact Commentary on Matthew"
     ],
     "family": "",
     "location": "",
@@ -7713,7 +7680,7 @@
     "title": "minuscule 406",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7755,7 +7722,7 @@
     "title": "minuscule 430",
     "description": "",
     "texts": [
-      "John 1:1–8:14† (Nicetas Catena)"
+      "John 1:1–8:14 (Nicetas Catena)"
     ],
     "family": "",
     "location": "",
@@ -7768,7 +7735,7 @@
     "title": "minuscule 433",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7839,8 +7806,8 @@
     "title": "minuscule 466",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
+      "Acts",
+      "Pauline Epistles",
       "General Epistles"
     ],
     "family": "",
@@ -7880,7 +7847,7 @@
     "title": "minuscule 474",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7893,7 +7860,7 @@
     "title": "minuscule 475",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7919,7 +7886,7 @@
     "title": "minuscule 490",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -7932,8 +7899,8 @@
     "title": "minuscule 491",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
+      "Gospels",
+      "Acts",
       "Pauline Epistles",
       "General Epistles"
     ],
@@ -7961,7 +7928,7 @@
     "title": "minuscule 506",
     "description": "",
     "texts": [
-      "New Testament†"
+      "New Testament"
     ],
     "family": "",
     "location": "",
@@ -8052,7 +8019,7 @@
     "title": "minuscule 530",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -8065,7 +8032,7 @@
     "title": "minuscule 532",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -8078,7 +8045,7 @@
     "title": "minuscule 539",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -8133,7 +8100,7 @@
     "title": "minuscule 559",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -8199,7 +8166,7 @@
     "description": "",
     "texts": [
       "Theophylact Commentary on Matthew",
-      "Mark†"
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -8242,8 +8209,8 @@
     "title": "minuscule 617",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
+      "Acts",
+      "Pauline Epistles",
       "General Epistles",
       "Revelation"
     ],
@@ -8273,9 +8240,9 @@
     "title": "minuscule 624",
     "description": "",
     "texts": [
-      "Acts†",
-      "Romans† - 1 Corinthians†",
-      "General Epistles†"
+      "Acts",
+      "Romans - 1 Corinthians",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -8318,9 +8285,9 @@
     "title": "minuscule 639",
     "description": "",
     "texts": [
-      "Acts†",
+      "Acts",
       "Pauline Epistles",
-      "General Epistles†"
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -8346,8 +8313,8 @@
     "title": "minuscule 641",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
+      "Acts",
+      "Pauline Epistles",
       "General Epistles"
     ],
     "family": "",
@@ -8400,7 +8367,7 @@
     "title": "minuscule 672",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -8426,7 +8393,7 @@
     "title": "minuscule 687",
     "description": "",
     "texts": [
-      "Matthew 10:33-18:16†"
+      "Matthew 10:33-18:16"
     ],
     "family": "",
     "location": "",
@@ -8442,10 +8409,10 @@
       "Gospels",
       "Acts",
       "General Epistles",
-      "Romans 1:1-16:19†",
-      "1 Corinthians† 1:11-end",
-      "2 Corinthians 1:1-10:9†",
-      "Galatians† 1:12-end"
+      "Romans 1:1-16:19",
+      "1 Corinthians 1:11-end",
+      "2 Corinthians 1:1-10:9",
+      "Galatians 1:12-end"
     ],
     "family": "",
     "location": "",
@@ -8497,7 +8464,7 @@
     "title": "minuscule 708",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -8510,7 +8477,7 @@
     "title": "minuscule 709",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -8523,7 +8490,7 @@
     "title": "minuscule 711",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -8565,7 +8532,7 @@
     "title": "minuscule 753",
     "description": "",
     "texts": [
-      "Matthew 23:11-21†"
+      "Matthew 23:11-21"
     ],
     "family": "",
     "location": "",
@@ -8591,7 +8558,7 @@
     "title": "minuscule 756",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -8672,7 +8639,7 @@
       "Gospels",
       "Acts",
       "Pauline Epistles",
-      "General Epistles†"
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -8685,7 +8652,7 @@
     "title": "minuscule 798 + [2447]",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -8711,7 +8678,7 @@
     "title": "minuscule 804",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -8817,7 +8784,7 @@
     "title": "minuscule 899",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -8846,10 +8813,10 @@
     "title": "minuscule 919",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†",
-      "Revelation†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles",
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -8943,7 +8910,7 @@
     "title": "minuscule 991",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -8996,7 +8963,7 @@
     "title": "minuscule 1028",
     "description": "",
     "texts": [
-      "Matthew†"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -9037,7 +9004,7 @@
     "title": "minuscule 1054",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9115,7 +9082,7 @@
     "title": "minuscule 1157",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9169,7 +9136,7 @@
     "title": "minuscule 1170",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9182,7 +9149,7 @@
     "title": "minuscule 1174",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9338,7 +9305,7 @@
     "title": "minuscule 1221",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9395,7 +9362,7 @@
     "title": "minuscule [1257]",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9437,7 +9404,7 @@
     "title": "minuscule 1277",
     "description": "",
     "texts": [
-      "Acts-2 Timothy†"
+      "Acts-2 Timothy"
     ],
     "family": "",
     "location": "",
@@ -9463,7 +9430,7 @@
     "title": "minuscule 1286",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9476,7 +9443,7 @@
     "title": "minuscule 1293",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9489,7 +9456,7 @@
     "title": "minuscule 1300",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9515,7 +9482,7 @@
     "title": "minuscule 1312",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9554,7 +9521,7 @@
     "title": "minuscule 1317",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9619,7 +9586,7 @@
     "title": "minuscule 1332",
     "description": "",
     "texts": [
-      "Matthew†"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -9658,7 +9625,7 @@
     "title": "minuscule 1343",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9671,7 +9638,7 @@
     "title": "minuscule 1349",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9684,7 +9651,7 @@
     "title": "minuscule 1373",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9697,7 +9664,7 @@
     "title": "minuscule 1384",
     "description": "",
     "texts": [
-      "New Testament†"
+      "New Testament"
     ],
     "family": "",
     "location": "",
@@ -9710,8 +9677,8 @@
     "title": "minuscule 1411",
     "description": "",
     "texts": [
-      "Commentary on the Gospel of Luke†",
-      "Gospel of John†"
+      "Commentary on the Gospel of Luke",
+      "Gospel of John"
     ],
     "family": "",
     "location": "",
@@ -9763,7 +9730,7 @@
     "title": "minuscule 1430",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9828,7 +9795,7 @@
     "title": "minuscule 1449",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9880,7 +9847,7 @@
     "title": "minuscule 1510",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9893,7 +9860,7 @@
     "title": "minuscule 1513",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9919,7 +9886,7 @@
     "title": "minuscule 1517",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -9945,8 +9912,8 @@
     "title": "minuscule 1520",
     "description": "",
     "texts": [
-      "Luke†",
-      "John†"
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -9998,8 +9965,8 @@
     "title": "minuscule 1607",
     "description": "",
     "texts": [
-      "Mark†",
-      "Luke†"
+      "Mark",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -10012,10 +9979,10 @@
     "title": "minuscule 1668",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -10028,7 +9995,7 @@
     "title": "minuscule 1672",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -10080,9 +10047,9 @@
     "title": "minuscule 1730",
     "description": "",
     "texts": [
-      "Acts†",
-      "General EpistlesP†",
-      "Pauline EpistlesP†"
+      "Acts",
+      "General EpistlesP",
+      "Pauline EpistlesP"
     ],
     "family": "",
     "location": "",
@@ -10095,9 +10062,9 @@
     "title": "minuscule 1738",
     "description": "",
     "texts": [
-      "Acts†",
-      "General EpistlesP†",
-      "Pauline EpistlesP†"
+      "Acts",
+      "General EpistlesP",
+      "Pauline EpistlesP"
     ],
     "family": "",
     "location": "",
@@ -10110,9 +10077,9 @@
     "title": "minuscule 1755",
     "description": "",
     "texts": [
-      "2 Timothy†",
+      "2 Timothy",
       "Titus",
-      "Philemon†"
+      "Philemon"
     ],
     "family": "",
     "location": "",
@@ -10125,7 +10092,7 @@
     "title": "minuscule 1770",
     "description": "",
     "texts": [
-      "Pauline epistlesP†"
+      "Pauline epistlesP"
     ],
     "family": "",
     "location": "",
@@ -10138,7 +10105,7 @@
     "title": "minuscule 1801",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -10164,7 +10131,7 @@
     "title": "minuscule 1811",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -10206,7 +10173,7 @@
       "Acts",
       "General Epistles",
       "Pauline Epistles",
-      "Revelation 1:1-18:22†"
+      "Revelation 1:1-18:22"
     ],
     "family": "",
     "location": "",
@@ -10219,7 +10186,7 @@
     "title": "minuscule 1835",
     "description": "",
     "texts": [
-      "Revelation†"
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -10234,7 +10201,7 @@
     "texts": [
       "Acts",
       "General Epistles",
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -10247,9 +10214,9 @@
     "title": "minuscule 1846",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -10350,8 +10317,8 @@
     "title": "minuscule 1904",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline EpistlesP†",
+      "Acts",
+      "Pauline EpistlesP",
       ""
     ],
     "family": "",
@@ -10365,7 +10332,7 @@
     "title": "minuscule 1907",
     "description": "",
     "texts": [
-      "Pauline epistles†"
+      "Pauline epistles"
     ],
     "family": "",
     "location": "",
@@ -10469,7 +10436,7 @@
     "title": "minuscule 1932",
     "description": "",
     "texts": [
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -10496,7 +10463,7 @@
     "title": "minuscule 1946",
     "description": "",
     "texts": [
-      "1 Corinthians - Hebrews†"
+      "1 Corinthians - Hebrews"
     ],
     "family": "",
     "location": "",
@@ -10510,7 +10477,7 @@
     "description": "",
     "texts": [
       "Pauline Epistles",
-      "Revelation†"
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -10536,7 +10503,7 @@
     "title": "minuscule 1980",
     "description": "",
     "texts": [
-      "Pauline Epistles† (Portions of NT text abridged)"
+      "Pauline Epistles (Portions of NT text abridged)"
     ],
     "family": "",
     "location": "",
@@ -10549,7 +10516,7 @@
     "title": "minuscule 1981",
     "description": "",
     "texts": [
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -10562,7 +10529,7 @@
     "title": "minuscule 1982",
     "description": "",
     "texts": [
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -10575,7 +10542,7 @@
     "title": "minuscule 1993",
     "description": "",
     "texts": [
-      "1 Corinthians-Ephesians†"
+      "1 Corinthians-Ephesians"
     ],
     "family": "",
     "location": "",
@@ -10588,7 +10555,7 @@
     "title": "minuscule 2007",
     "description": "",
     "texts": [
-      "Pauline epistles†"
+      "Pauline epistles"
     ],
     "family": "",
     "location": "",
@@ -10601,10 +10568,10 @@
     "title": "minuscule 2032",
     "description": "",
     "texts": [
-      "1 John 4:3-5:3†; Andreas of Caesarea Commentary on Revelation 1:12-2:20",
+      "1 John 4:3-5:3; Andreas of Caesarea Commentary on Revelation 1:12-2:20",
       "3:6-6:9",
       "7:17-9:5",
-      "21:18-22:17†"
+      "21:18-22:17"
     ],
     "family": "",
     "location": "",
@@ -10683,10 +10650,10 @@
     "title": "minuscule 2121+[2443]",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†",
+      "Matthew",
+      "Mark",
       "Luke",
-      "John†"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -10699,7 +10666,7 @@
     "title": "minuscule 2132",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -10738,9 +10705,9 @@
     "title": "minuscule 2144",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†",
-      "Luke†"
+      "Matthew",
+      "Mark",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -10821,8 +10788,8 @@
     "title": "minuscule 2199",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†"
+      "Matthew",
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -10874,7 +10841,7 @@
     "title": "minuscule 2259",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation 13:14-14:16†"
+      "Andreas of Caesarea Commentary on Revelation 13:14-14:16"
     ],
     "family": "",
     "location": "",
@@ -10887,7 +10854,7 @@
     "title": "minuscule 2275",
     "description": "",
     "texts": [
-      "Mark †"
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -10926,7 +10893,7 @@
     "title": "minuscule 2282",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -10978,7 +10945,7 @@
     "title": "minuscule 2299",
     "description": "",
     "texts": [
-      "Matthew† 13:33–17:25; 18:24–24.20; 25:1–31; 26:64–27.14; 27:35–28.20; Mark† 1:20–6:12."
+      "Matthew 13:33–17:25; 18:24–24.20; 25:1–31; 26:64–27.14; 27:35–28.20; Mark 1:20–6:12."
     ],
     "family": "",
     "location": "",
@@ -10991,8 +10958,8 @@
     "title": "minuscule 2307",
     "description": "",
     "texts": [
-      "Matthew†",
-      "John†"
+      "Matthew",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -11005,7 +10972,7 @@
     "title": "minuscule 2308",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11018,7 +10985,7 @@
     "title": "minuscule 2313",
     "description": "",
     "texts": [
-      "John† 6:44-8:35"
+      "John 6:44-8:35"
     ],
     "family": "",
     "location": "",
@@ -11060,7 +11027,7 @@
     "title": "minuscule 2360",
     "description": "",
     "texts": [
-      "Matthew†"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -11073,7 +11040,7 @@
     "title": "minuscule 2363",
     "description": "",
     "texts": [
-      "Luke†"
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -11138,7 +11105,7 @@
     "title": "minuscule 2442",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11151,7 +11118,7 @@
     "title": "minuscule 2451",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11164,7 +11131,7 @@
     "title": "minuscule 2453",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11190,8 +11157,8 @@
     "title": "minuscule 2468",
     "description": "",
     "texts": [
-      "Mark†",
-      "Luke†"
+      "Mark",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -11204,7 +11171,7 @@
     "title": "minuscule 2474",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11233,7 +11200,7 @@
     "title": "minuscule 2487",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11246,7 +11213,7 @@
     "title": "minuscule 2489",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11259,7 +11226,7 @@
     "title": "minuscule 2517",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11285,7 +11252,7 @@
     "title": "minuscule 2539",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11298,7 +11265,7 @@
     "title": "minuscule 2543",
     "description": "",
     "texts": [
-      "John†"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -11324,10 +11291,10 @@
     "title": "minuscule 2563",
     "description": "",
     "texts": [
-      "Matthew† 14:3-28:20",
+      "Matthew 14:3-28:20",
       "Mark",
       "Luke",
-      "John 1:1-21:11†"
+      "John 1:1-21:11"
     ],
     "family": "",
     "location": "",
@@ -11340,7 +11307,7 @@
     "title": "minuscule 2567",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11366,7 +11333,7 @@
     "title": "minuscule 2585",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11379,7 +11346,7 @@
     "title": "minuscule 2586",
     "description": "",
     "texts": [
-      "Matthew† 5:25-28:20",
+      "Matthew 5:25-28:20",
       "Mark",
       "Luke",
       "John"
@@ -11395,7 +11362,7 @@
     "title": "minuscule 2587",
     "description": "",
     "texts": [
-      "Acts† 5:1-28:31",
+      "Acts 5:1-28:31",
       "General Epistles",
       "Pauline Epistles"
     ],
@@ -11410,7 +11377,7 @@
     "title": "minuscule 2589",
     "description": "",
     "texts": [
-      "Matthew† 11:29-12:31"
+      "Matthew 11:29-12:31"
     ],
     "family": "",
     "location": "",
@@ -11436,7 +11403,7 @@
     "title": "minuscule 2596",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Galatians† 1:16-6:18"
+      "Chrysostom Commentary on Galatians 1:16-6:18"
     ],
     "family": "",
     "location": "",
@@ -11488,7 +11455,7 @@
     "title": "minuscule 2642",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11501,7 +11468,7 @@
     "title": "minuscule 2655",
     "description": "",
     "texts": [
-      "Luke†"
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -11514,7 +11481,7 @@
     "title": "minuscule 2661",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11540,7 +11507,7 @@
     "title": "minuscule 2693",
     "description": "",
     "texts": [
-      "Gospels†s"
+      "Gospelss"
     ],
     "family": "",
     "location": "",
@@ -11553,7 +11520,7 @@
     "title": "minuscule 2741",
     "description": "",
     "texts": [
-      "1 Peter† 4:17-5:7"
+      "1 Peter 4:17-5:7"
     ],
     "family": "",
     "location": "",
@@ -11579,9 +11546,9 @@
     "title": "minuscule 2746",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -11594,7 +11561,7 @@
     "title": "minuscule 2754",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11607,7 +11574,7 @@
     "title": "minuscule 2755",
     "description": "",
     "texts": [
-      "Matthew and Mark†"
+      "Matthew and Mark"
     ],
     "family": "",
     "location": "",
@@ -11620,7 +11587,7 @@
     "title": "minuscule 2782",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11711,7 +11678,7 @@
     "title": "minuscule 2896",
     "description": "",
     "texts": [
-      "Matthew† 6:5-22; Mark"
+      "Matthew 6:5-22; Mark"
     ],
     "family": "",
     "location": "",
@@ -11724,7 +11691,7 @@
     "title": "minuscule 2914",
     "description": "",
     "texts": [
-      "John 14:24-15:12; 16:30-17:18 †"
+      "John 14:24-15:12; 16:30-17:18"
     ],
     "family": "",
     "location": "",
@@ -11737,7 +11704,7 @@
     "title": "minuscule 2927",
     "description": "",
     "texts": [
-      "Gospel of John 4:23-6:7†"
+      "Gospel of John 4:23-6:7"
     ],
     "family": "",
     "location": "",
@@ -11802,10 +11769,10 @@
     "title": "minuscule 2147",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Gospels",
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -11846,7 +11813,7 @@
     "title": "minuscule 2415",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11859,7 +11826,7 @@
     "title": "minuscule 2485",
     "description": "",
     "texts": [
-      "Gospel of Luke †"
+      "Gospel of Luke"
     ],
     "family": "",
     "location": "",
@@ -11872,8 +11839,8 @@
     "title": "minuscule 2534",
     "description": "",
     "texts": [
-      "Mark†",
-      "Luke†"
+      "Mark",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -11886,7 +11853,7 @@
     "title": "minuscule 2535",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11899,7 +11866,7 @@
     "title": "minuscule 2752",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -11965,7 +11932,7 @@
     "title": "minuscule 2904",
     "description": "",
     "texts": [
-      "Luke 6:45–22:56 †"
+      "Luke 6:45–22:56"
     ],
     "family": "",
     "location": "",
@@ -12020,7 +11987,7 @@
       "Acts 3:2-5",
       "8-11; 1 John 2:29-3:3",
       "5:11-15",
-      "18-21†"
+      "18-21"
     ],
     "family": "",
     "location": "",
@@ -12033,7 +12000,7 @@
     "title": "minuscule 2933",
     "description": "",
     "texts": [
-      "Luke 1:1-6 †"
+      "Luke 1:1-6"
     ],
     "family": "",
     "location": "",
@@ -12072,8 +12039,8 @@
     "title": "minuscule 166",
     "description": "",
     "texts": [
-      "Luke†",
-      "John†"
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -12099,10 +12066,10 @@
     "title": "minuscule 256",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†",
-      "Revelation†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles",
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -12130,7 +12097,7 @@
     "title": "minuscule 517",
     "description": "",
     "texts": [
-      "New Testament †"
+      "New Testament"
     ],
     "family": "",
     "location": "",
@@ -12156,7 +12123,7 @@
     "title": "minuscule 657 = [838]",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -12287,7 +12254,7 @@
     "title": "minuscule 1478",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -12326,7 +12293,7 @@
     "title": "minuscule 1566",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -12339,9 +12306,9 @@
     "title": "minuscule 1724",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -12380,7 +12347,7 @@
     "title": "minuscule 1962",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on the Pauline Epistles†"
+      "Chrysostom Commentary on the Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -12393,7 +12360,7 @@
     "title": "minuscule 2437",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -12582,7 +12549,7 @@
     "title": "minuscule 21",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -12595,7 +12562,7 @@
     "title": "minuscule 22",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -12608,7 +12575,7 @@
     "title": "minuscule 32",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -12621,7 +12588,7 @@
     "title": "minuscule 38",
     "description": "",
     "texts": [
-      "Gospels†",
+      "Gospels",
       "Acts",
       "Pauline Epistles"
     ],
@@ -12776,7 +12743,7 @@
       "Acts",
       "Pauline Epistles",
       "General Epistles",
-      "Revelation 1:1-3:13†"
+      "Revelation 1:1-3:13"
     ],
     "family": "",
     "location": "",
@@ -12849,10 +12816,10 @@
     "title": "minuscule 110",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†",
-      "Revelation†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles",
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -12865,7 +12832,7 @@
     "title": "minuscule 111",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -12920,9 +12887,9 @@
     "description": "",
     "texts": [
       "Gospels",
-      "Acts†",
-      "Pauline Epistles†",
-      "General EpistlesP†"
+      "Acts",
+      "Pauline Epistles",
+      "General EpistlesP"
     ],
     "family": "",
     "location": "",
@@ -13027,7 +12994,7 @@
     "title": "minuscule 173",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13053,7 +13020,7 @@
     "title": "minuscule 179",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13131,7 +13098,7 @@
     "title": "minuscule 196",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Gospels†"
+      "Zigabenus Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -13170,7 +13137,7 @@
     "title": "minuscule 211",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13238,7 +13205,7 @@
     "title": "minuscule 240",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Gospels†"
+      "Zigabenus Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -13316,7 +13283,7 @@
     "title": "minuscule 261",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13329,7 +13296,7 @@
     "title": "minuscule 264",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13355,7 +13322,7 @@
     "title": "minuscule 267",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13446,7 +13413,7 @@
     "title": "minuscule 281",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13500,7 +13467,7 @@
     "description": "",
     "texts": [
       "Theophylact Commentary on Matthew",
-      "John†"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -13513,7 +13480,7 @@
     "title": "minuscule 310",
     "description": "",
     "texts": [
-      "Matthew† (Nicetas Catena)"
+      "Matthew (Nicetas Catena)"
     ],
     "family": "",
     "location": "",
@@ -13526,7 +13493,7 @@
     "title": "minuscule 311",
     "description": "",
     "texts": [
-      "Matthew†"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -13539,7 +13506,7 @@
     "title": "minuscule 317",
     "description": "",
     "texts": [
-      "John† (Nicetas Catena)"
+      "John (Nicetas Catena)"
     ],
     "family": "",
     "location": "",
@@ -13552,9 +13519,9 @@
     "title": "minuscule 319",
     "description": "",
     "texts": [
-      "ActsS†",
+      "ActsS",
       "Pauline Epistles",
-      "General EpistlesS†"
+      "General EpistlesS"
     ],
     "family": "",
     "location": "",
@@ -13580,8 +13547,8 @@
     "title": "minuscule 321",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
+      "Acts",
+      "Pauline Epistles",
       "General Epistles"
     ],
     "family": "",
@@ -13610,7 +13577,7 @@
     "title": "minuscule 329",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13666,10 +13633,10 @@
     "title": "minuscule 337",
     "description": "",
     "texts": [
-      "Acts†",
+      "Acts",
       "Pauline Epistles",
       "General Epistles",
-      "Revelation†"
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -13682,7 +13649,7 @@
     "title": "minuscule 346",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13721,7 +13688,7 @@
     "title": "minuscule 353",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13747,9 +13714,9 @@
     "title": "minuscule 356",
     "description": "",
     "texts": [
-      "Pauline Epistles†",
-      "2 Peter 2:4-3:18†",
-      "1 John 1:1-3:20†"
+      "Pauline Epistles",
+      "2 Peter 2:4-3:18",
+      "1 John 1:1-3:20"
     ],
     "family": "",
     "location": "",
@@ -13764,8 +13731,8 @@
     "texts": [
       "Gospels",
       "Acts",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -13817,7 +13784,7 @@
     "title": "minuscule 396",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13830,7 +13797,7 @@
     "title": "minuscule 401",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13843,8 +13810,8 @@
     "title": "minuscule 407",
     "description": "",
     "texts": [
-      "Luke† 5:30-24:53",
-      "John 1:1-9:2†"
+      "Luke 5:30-24:53",
+      "John 1:1-9:2"
     ],
     "family": "",
     "location": "",
@@ -13870,7 +13837,7 @@
     "title": "minuscule 419",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13941,9 +13908,9 @@
     "title": "minuscule 463",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -13969,7 +13936,7 @@
     "title": "minuscule 485",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -13995,7 +13962,7 @@
     "title": "minuscule 499",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14008,7 +13975,7 @@
     "title": "minuscule 502",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14139,7 +14106,7 @@
     "title": "minuscule 534",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14165,7 +14132,7 @@
     "title": "minuscule 538",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14178,7 +14145,7 @@
     "title": "minuscule 543",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14243,7 +14210,7 @@
     "title": "minuscule 570",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14256,7 +14223,7 @@
     "title": "minuscule 571",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14295,8 +14262,8 @@
     "title": "minuscule 610",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†"
+      "Acts",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -14309,8 +14276,8 @@
     "title": "minuscule 611",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
+      "Acts",
+      "Pauline Epistles",
       "General Epistles"
     ],
     "family": "",
@@ -14324,7 +14291,7 @@
     "title": "minuscule 612",
     "description": "",
     "texts": [
-      "Acts†",
+      "Acts",
       "Pauline Epistles",
       "General Epistles"
     ],
@@ -14354,9 +14321,9 @@
     "title": "minuscule 618",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -14369,7 +14336,7 @@
     "title": "minuscule 620",
     "description": "",
     "texts": [
-      "Pauline Epistles†",
+      "Pauline Epistles",
       "General Epistles",
       "Revelation"
     ],
@@ -14384,8 +14351,8 @@
     "title": "minuscule 622",
     "description": "",
     "texts": [
-      "Commentary on Pauline Epistles†",
-      "General Epistles†"
+      "Commentary on Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -14413,7 +14380,7 @@
     "title": "minuscule 650",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14426,7 +14393,7 @@
     "title": "minuscule 654",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14439,7 +14406,7 @@
     "title": "minuscule 656",
     "description": "",
     "texts": [
-      "Luke† 14:51-53",
+      "Luke 14:51-53",
       "John",
       "Acts",
       "Romans - 1 Thessalonians",
@@ -14469,7 +14436,7 @@
     "title": "minuscule 660",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14495,7 +14462,7 @@
     "title": "minuscule 671",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14508,9 +14475,9 @@
     "title": "minuscule 673",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†",
-      "Luke†"
+      "Matthew",
+      "Mark",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -14523,7 +14490,7 @@
     "title": "minuscule 674",
     "description": "",
     "texts": [
-      "Matthew 10:42-12:43†"
+      "Matthew 10:42-12:43"
     ],
     "family": "",
     "location": "",
@@ -14549,7 +14516,7 @@
     "title": "minuscule 702",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14562,7 +14529,7 @@
     "title": "minuscule 713",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14616,7 +14583,7 @@
     "title": "minuscule 748",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14681,7 +14648,7 @@
     "title": "minuscule 768",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14694,7 +14661,7 @@
     "title": "minuscule 770",
     "description": "",
     "texts": [
-      "Matthew†",
+      "Matthew",
       "John"
     ],
     "family": "",
@@ -14799,7 +14766,7 @@
     "title": "minuscule 800",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14812,7 +14779,7 @@
     "title": "minuscule 807 + [1368]",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14825,9 +14792,9 @@
     "title": "minuscule 813",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†",
-      "Luke†"
+      "Matthew",
+      "Mark",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -14840,7 +14807,7 @@
     "title": "minuscule 822",
     "description": "",
     "texts": [
-      "Matthew† (Nicetas Catena)"
+      "Matthew (Nicetas Catena)"
     ],
     "family": "",
     "location": "",
@@ -14905,7 +14872,7 @@
     "title": "minuscule 829",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14918,7 +14885,7 @@
     "title": "minuscule 843",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -14931,8 +14898,8 @@
     "title": "minuscule 847",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†"
+      "Matthew",
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -15024,7 +14991,7 @@
     "title": "minuscule 872",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -15132,7 +15099,7 @@
     "title": "minuscule 916",
     "description": "",
     "texts": [
-      "Acts†"
+      "Acts"
     ],
     "family": "",
     "location": "",
@@ -15160,7 +15127,7 @@
     "title": "minuscule 930",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -15173,7 +15140,7 @@
     "title": "minuscule 933",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -15278,7 +15245,7 @@
     "title": "minuscule 967",
     "description": "",
     "texts": [
-      "Luke† 7:6 — John† 11:16"
+      "Luke 7:6 — John 11:16"
     ],
     "family": "",
     "location": "",
@@ -15343,7 +15310,7 @@
     "title": "minuscule 976",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -15369,7 +15336,7 @@
     "title": "minuscule 983",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -15382,7 +15349,7 @@
     "title": "minuscule 985",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -15395,7 +15362,7 @@
     "title": "minuscule 987",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -15421,7 +15388,7 @@
     "title": "minuscule 993",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John†"
+      "Theophylact Commentary on John"
     ],
     "family": "",
     "location": "",
@@ -15434,7 +15401,7 @@
     "title": "minuscule 998",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -15538,7 +15505,7 @@
     "title": "minuscule 1097",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -15564,9 +15531,9 @@
     "title": "minuscule 1115",
     "description": "",
     "texts": [
-      "Acts†",
-      "General epistles†",
-      "Pauline epistles†"
+      "Acts",
+      "General epistles",
+      "Pauline epistles"
     ],
     "family": "",
     "location": "",
@@ -15634,7 +15601,7 @@
     "title": "minuscule 1128",
     "description": "",
     "texts": [
-      "Matthew† 17:15–28:19",
+      "Matthew 17:15–28:19",
       "Mark",
       "Luke",
       "John"
@@ -15691,7 +15658,7 @@
     "texts": [
       "Matthew",
       "Mark",
-      "Luke†"
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -15704,7 +15671,7 @@
     "title": "minuscule 1169",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -15795,7 +15762,7 @@
     "title": "minuscule 1200",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -15847,10 +15814,10 @@
     "title": "minuscule 1228",
     "description": "",
     "texts": [
-      "Matthew 1:1-10:22†",
+      "Matthew 1:1-10:22",
       "28:19-20",
-      "Luke† 6:3-24:53",
-      "John 1:1-20:11†"
+      "Luke 6:3-24:53",
+      "John 1:1-20:11"
     ],
     "family": "",
     "location": "",
@@ -15893,7 +15860,7 @@
     "texts": [
       "Gospels",
       "Acts",
-      "General Epistles†",
+      "General Epistles",
       "Pauline Epistles"
     ],
     "family": "",
@@ -15922,7 +15889,7 @@
     "title": "minuscule 1275",
     "description": "",
     "texts": [
-      "Luke-John†"
+      "Luke-John"
     ],
     "family": "",
     "location": "",
@@ -15961,7 +15928,7 @@
     "title": "minuscule 1282 = [2293]",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -15974,7 +15941,7 @@
     "title": "minuscule 1284",
     "description": "",
     "texts": [
-      "John 12:35-13:2†"
+      "John 12:35-13:2"
     ],
     "family": "",
     "location": "",
@@ -15987,7 +15954,7 @@
     "title": "minuscule 1291",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -16000,7 +15967,7 @@
     "title": "minuscule 1301",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -16026,10 +15993,10 @@
     "title": "minuscule 1315",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -16068,10 +16035,10 @@
     "title": "minuscule 1319",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -16110,7 +16077,7 @@
     "title": "minuscule 1338 + [2154]",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -16123,7 +16090,7 @@
     "title": "minuscule 1344",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -16248,7 +16215,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "John 1:1-18:27†"
+      "John 1:1-18:27"
     ],
     "family": "",
     "location": "",
@@ -16274,7 +16241,7 @@
     "title": "minuscule 1401",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -16365,10 +16332,10 @@
     "title": "minuscule 1433",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -16475,7 +16442,7 @@
     "title": "minuscule 1459",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -16638,7 +16605,7 @@
     "title": "minuscule 1562",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -16703,7 +16670,7 @@
     "title": "minuscule 1612",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -16743,8 +16710,8 @@
     "title": "minuscule 1669",
     "description": "",
     "texts": [
-      "Mark†",
-      "Luke†"
+      "Mark",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -16757,7 +16724,7 @@
     "title": "minuscule 1673",
     "description": "",
     "texts": [
-      "Luke† - Hebrews†"
+      "Luke - Hebrews"
     ],
     "family": "",
     "location": "",
@@ -16865,7 +16832,7 @@
     "title": "minuscule 1715",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -16939,9 +16906,9 @@
     "title": "minuscule 1752",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -16954,9 +16921,9 @@
     "title": "minuscule 1754",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -16969,10 +16936,10 @@
     "title": "minuscule 1760",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†",
-      "Revelation†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles",
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -17011,7 +16978,7 @@
     "title": "minuscule 1800",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -17024,7 +16991,7 @@
     "title": "minuscule 1803",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -17037,7 +17004,7 @@
     "title": "minuscule 1804",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -17115,7 +17082,7 @@
     "title": "minuscule 1826",
     "description": "",
     "texts": [
-      "Matthew† 20:19-26:59",
+      "Matthew 20:19-26:59",
       "LukeP 22:43-45",
       "JohnP 13:3-17"
     ],
@@ -17175,9 +17142,9 @@
     "title": "minuscule 1867",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -17233,9 +17200,9 @@
     "title": "minuscule 1889",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -17248,10 +17215,10 @@
     "title": "minuscule 1893",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†",
-      "Revelation†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles",
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -17264,9 +17231,9 @@
     "title": "minuscule 1894",
     "description": "",
     "texts": [
-      "Acts†",
+      "Acts",
       "General Epistles",
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -17332,7 +17299,7 @@
     "title": "minuscule 1942",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Romans - 1 Thessalonians†"
+      "Chrysostom Commentary on Romans - 1 Thessalonians"
     ],
     "family": "",
     "location": "",
@@ -17358,7 +17325,7 @@
     "title": "minuscule 1970",
     "description": "",
     "texts": [
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -17384,7 +17351,7 @@
     "title": "minuscule 1974",
     "description": "",
     "texts": [
-      "Romans - 2 Thessalonians†"
+      "Romans - 2 Thessalonians"
     ],
     "family": "",
     "location": "",
@@ -17397,7 +17364,7 @@
     "title": "minuscule 1986",
     "description": "",
     "texts": [
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -17410,7 +17377,7 @@
     "title": "minuscule 1988",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Romans-Ephesians†"
+      "Theophylact Commentary on Romans-Ephesians"
     ],
     "family": "",
     "location": "",
@@ -17436,7 +17403,7 @@
     "title": "minuscule 2004",
     "description": "",
     "texts": [
-      "Pauline epistles †"
+      "Pauline epistles"
     ],
     "family": "",
     "location": "",
@@ -17449,7 +17416,7 @@
     "title": "minuscule 2011",
     "description": "",
     "texts": [
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -17462,7 +17429,7 @@
     "title": "minuscule 2013",
     "description": "",
     "texts": [
-      "2 Corinthians - 1 Thessalonians†"
+      "2 Corinthians - 1 Thessalonians"
     ],
     "family": "",
     "location": "",
@@ -17501,7 +17468,7 @@
     "title": "minuscule 2050",
     "description": "",
     "texts": [
-      "Revelation† 1:1-5:14; 20:1-22:21"
+      "Revelation 1:1-5:14; 20:1-22:21"
     ],
     "family": "",
     "location": "",
@@ -17514,9 +17481,9 @@
     "title": "minuscule 2096",
     "description": "",
     "texts": [
-      "Matthew †",
-      "Mark †",
-      "Luke †"
+      "Matthew",
+      "Mark",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -17542,7 +17509,7 @@
     "title": "minuscule 2104",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Pauline Epistles†"
+      "Theophylact Commentary on the Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -17569,7 +17536,7 @@
     "title": "minuscule 2113",
     "description": "",
     "texts": [
-      "GospelsP†"
+      "GospelsP"
     ],
     "family": "",
     "location": "",
@@ -17647,7 +17614,7 @@
     "title": "minuscule 2127",
     "description": "",
     "texts": [
-      "Gospels†",
+      "Gospels",
       "Acts",
       "General Epistles",
       "Pauline Epistles"
@@ -17676,7 +17643,7 @@
     "title": "minuscule 2140",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -17704,7 +17671,7 @@
     "title": "minuscule 2145",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -17743,7 +17710,7 @@
     "title": "minuscule 2177",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -17756,7 +17723,7 @@
     "title": "minuscule 2186",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on General Epistles† Revelation"
+      "Chrysostom Commentary on General Epistles Revelation"
     ],
     "family": "",
     "location": "",
@@ -17782,7 +17749,7 @@
     "title": "minuscule 2190",
     "description": "",
     "texts": [
-      "Matthew†"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -17808,7 +17775,7 @@
     "title": "minuscule 2216",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -17834,7 +17801,7 @@
     "title": "minuscule 2220",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -17890,7 +17857,7 @@
     "texts": [
       "Acts",
       "Pauline Epistles",
-      "General Epistles †"
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -17903,9 +17870,9 @@
     "title": "minuscule 2242",
     "description": "",
     "texts": [
-      "Theodoret Commentary on Acts†",
-      "Romans†",
-      "1 Corinthians†"
+      "Theodoret Commentary on Acts",
+      "Romans",
+      "1 Corinthians"
     ],
     "family": "",
     "location": "",
@@ -17918,7 +17885,7 @@
     "title": "minuscule 2260",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -17957,7 +17924,7 @@
     "title": "minuscule 2269",
     "description": "",
     "texts": [
-      "Matthew †"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -17970,7 +17937,7 @@
     "title": "minuscule 2271",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -17983,7 +17950,7 @@
     "title": "minuscule 2280",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -17996,9 +17963,9 @@
     "title": "minuscule 2285",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on Matthew†",
-      "Mark†",
-      "Luke†"
+      "Zigabenus Commentary on Matthew",
+      "Mark",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -18024,9 +17991,9 @@
     "title": "minuscule 2289",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -18066,7 +18033,7 @@
     "title": "minuscule 2306",
     "description": "",
     "texts": [
-      "Matthew†"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -18079,8 +18046,8 @@
     "title": "minuscule 2311",
     "description": "",
     "texts": [
-      "Luke†",
-      "John†"
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -18132,7 +18099,7 @@
     "title": "minuscule 2346",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -18145,7 +18112,7 @@
     "title": "minuscule 2358",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -18158,7 +18125,7 @@
     "title": "minuscule 2365",
     "description": "",
     "texts": [
-      "Matthew†"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -18223,7 +18190,7 @@
     "title": "minuscule 2391",
     "description": "",
     "texts": [
-      "Luke†"
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -18236,9 +18203,9 @@
     "title": "minuscule 2392",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Luke†",
-      "John†"
+      "Matthew",
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -18264,9 +18231,9 @@
     "title": "minuscule 2401",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -18279,7 +18246,7 @@
     "title": "minuscule 2411",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -18292,9 +18259,9 @@
     "title": "minuscule 2412",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -18333,7 +18300,7 @@
     "title": "minuscule 2430",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -18346,9 +18313,9 @@
     "title": "minuscule 2445",
     "description": "",
     "texts": [
-      "Mark†",
-      "Luke†",
-      "John†"
+      "Mark",
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -18374,9 +18341,9 @@
     "title": "minuscule 2448",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -18389,7 +18356,7 @@
     "title": "minuscule 2459",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -18402,7 +18369,7 @@
     "title": "minuscule 2460=[2417]",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -18428,7 +18395,7 @@
     "title": "minuscule 2472",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -18467,7 +18434,7 @@
     "title": "minuscule 2536",
     "description": "",
     "texts": [
-      "Romans 1:1-5:12†"
+      "Romans 1:1-5:12"
     ],
     "family": "",
     "location": "",
@@ -18508,7 +18475,7 @@
     "title": "minuscule 2547",
     "description": "",
     "texts": [
-      "John†"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -18521,7 +18488,7 @@
     "title": "minuscule 2549",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -18547,8 +18514,8 @@
     "title": "minuscule 2552",
     "description": "",
     "texts": [
-      "Luke†",
-      "John†"
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -18561,7 +18528,7 @@
     "title": "minuscule 2553",
     "description": "",
     "texts": [
-      "John†"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -18574,8 +18541,8 @@
     "title": "minuscule 2557",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark† Luke†"
+      "Matthew",
+      "Mark Luke"
     ],
     "family": "",
     "location": "",
@@ -18588,7 +18555,7 @@
     "title": "minuscule 2559",
     "description": "",
     "texts": [
-      "Gospels†",
+      "Gospels",
       "(MatthewS)"
     ],
     "family": "",
@@ -18615,7 +18582,7 @@
     "title": "minuscule 2570",
     "description": "",
     "texts": [
-      "Acts† 1:13-24; 24:23-25:8; 1 Corinthians† 5:3-6:7"
+      "Acts 1:13-24; 24:23-25:8; 1 Corinthians 5:3-6:7"
     ],
     "family": "",
     "location": "",
@@ -18628,7 +18595,7 @@
     "title": "minuscule 2574",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Galatians 1:1-6:17†"
+      "Chrysostom Commentary on Galatians 1:1-6:17"
     ],
     "family": "",
     "location": "",
@@ -18641,7 +18608,7 @@
     "title": "minuscule 2601",
     "description": "",
     "texts": [
-      "Luke†"
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -18719,10 +18686,10 @@
     "title": "minuscule 2625",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†",
-      "Revelation†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles",
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -18735,7 +18702,7 @@
     "title": "minuscule 2632",
     "description": "",
     "texts": [
-      "John†"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -18748,7 +18715,7 @@
     "title": "minuscule 2650",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -18761,7 +18728,7 @@
     "title": "minuscule 2657",
     "description": "",
     "texts": [
-      "Mark†"
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -18774,7 +18741,7 @@
     "title": "minuscule 2662",
     "description": "",
     "texts": [
-      "Matthew†"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -18787,7 +18754,7 @@
     "title": "minuscule 2671",
     "description": "",
     "texts": [
-      "Acts†"
+      "Acts"
     ],
     "family": "",
     "location": "",
@@ -18839,7 +18806,7 @@
     "title": "minuscule 2700",
     "description": "",
     "texts": [
-      "1 Corinthians†"
+      "1 Corinthians"
     ],
     "family": "",
     "location": "",
@@ -18865,9 +18832,9 @@
     "title": "minuscule 2712",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -18880,10 +18847,10 @@
     "title": "minuscule 2718",
     "description": "",
     "texts": [
-      "Gospels †",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -18897,7 +18864,7 @@
     "description": "",
     "texts": [
       "Theophylact Commentary on Luke",
-      "John†",
+      "John",
       ""
     ],
     "family": "",
@@ -18911,7 +18878,7 @@
     "title": "minuscule 2725",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -18963,7 +18930,7 @@
     "title": "minuscule 2745",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -19028,7 +18995,7 @@
     "title": "minuscule 2781",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -19055,7 +19022,7 @@
     "title": "minuscule 2787",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -19068,7 +19035,7 @@
     "title": "minuscule 2791",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -19095,8 +19062,8 @@
     "title": "minuscule 2794",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Revelation 1:1-22:12†"
+      "Gospels",
+      "Revelation 1:1-22:12"
     ],
     "family": "",
     "location": "",
@@ -19415,7 +19382,7 @@
     "description": "",
     "texts": [
       "Luke",
-      "John †"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -19598,7 +19565,7 @@
     "title": "minuscule 2108",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -19624,7 +19591,7 @@
     "title": "minuscule 2179",
     "description": "",
     "texts": [
-      "John †"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -19637,7 +19604,7 @@
     "title": "minuscule 2182",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -19663,7 +19630,7 @@
     "title": "minuscule 2322",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -19702,8 +19669,8 @@
     "title": "minuscule 2490",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew†",
-      "John†",
+      "Theophylact Commentary on Matthew",
+      "John",
       ""
     ],
     "family": "",
@@ -19717,7 +19684,7 @@
     "title": "minuscule 2529",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -19730,8 +19697,8 @@
     "title": "minuscule 2537",
     "description": "",
     "texts": [
-      "Mark† 14:72-16:20",
-      "Luke†"
+      "Mark 14:72-16:20",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -19744,7 +19711,7 @@
     "title": "minuscule 2748",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -19757,10 +19724,10 @@
     "title": "minuscule 2903",
     "description": "",
     "texts": [
-      "2 Peter †",
+      "2 Peter",
       "John's",
       "Jude",
-      "Pauline Epistles †"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -19773,7 +19740,7 @@
     "title": "minuscule 2924",
     "description": "",
     "texts": [
-      "Revelation 14:10-15:2†"
+      "Revelation 14:10-15:2"
     ],
     "family": "",
     "location": "",
@@ -19814,7 +19781,7 @@
     "title": "minuscule 292",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -19827,7 +19794,7 @@
     "title": "minuscule 435 + [576]",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -19840,7 +19807,7 @@
     "title": "minuscule 442",
     "description": "",
     "texts": [
-      "Pauline Epistles†",
+      "Pauline Epistles",
       "General Epistles"
     ],
     "family": "",
@@ -19951,7 +19918,7 @@
     "title": "minuscule 1310",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -19964,7 +19931,7 @@
     "title": "minuscule 1335",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20003,7 +19970,7 @@
     "title": "minuscule 1451",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20016,7 +19983,7 @@
     "title": "minuscule 1457",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20055,7 +20022,7 @@
     "title": "minuscule 1542",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20068,7 +20035,7 @@
     "title": "minuscule 1561",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20081,10 +20048,10 @@
     "title": "minuscule 1573",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -20110,9 +20077,9 @@
     "title": "minuscule 1799",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -20264,7 +20231,7 @@
     "title": "minuscule 31",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20277,7 +20244,7 @@
     "title": "minuscule 45",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20290,10 +20257,10 @@
     "title": "minuscule 51",
     "description": "",
     "texts": [
-      "Gospels†",
+      "Gospels",
       "Acts",
       "Pauline Epistles",
-      "General Epistles†"
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -20319,10 +20286,10 @@
     "title": "minuscule 85",
     "description": "",
     "texts": [
-      "Matthew† 8:15-9:17",
+      "Matthew 8:15-9:17",
       "16:12-17:20",
       "24:26-45",
-      "26:35-54; Mark† 6:13-9:45; Luke† 3:12-6:44; John† 9:7-12:5",
+      "26:35-54; Mark 6:13-9:45; Luke 3:12-6:44; John 9:7-12:5",
       "20:23-21:11"
     ],
     "family": "",
@@ -20349,7 +20316,7 @@
     "title": "minuscule 118",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20362,7 +20329,7 @@
     "title": "minuscule 121",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20388,8 +20355,8 @@
     "title": "minuscule 136",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on Matthew†",
-      "Mark†"
+      "Zigabenus Commentary on Matthew",
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -20402,7 +20369,7 @@
     "title": "minuscule 140",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20493,7 +20460,7 @@
     "title": "minuscule 168",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -20506,7 +20473,7 @@
     "title": "minuscule 170",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20519,7 +20486,7 @@
     "title": "minuscule 176",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20571,9 +20538,9 @@
     "title": "minuscule 206",
     "description": "",
     "texts": [
-      "Acts†",
+      "Acts",
       "Pauline Epistles",
-      "General Epistles†"
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -20586,7 +20553,7 @@
     "title": "minuscule 218",
     "description": "",
     "texts": [
-      "New Testament†"
+      "New Testament"
     ],
     "family": "",
     "location": "",
@@ -20638,7 +20605,7 @@
     "title": "minuscule 233",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20706,7 +20673,7 @@
     "title": "minuscule 273",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20719,7 +20686,7 @@
     "title": "minuscule 283",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -20771,7 +20738,7 @@
     "title": "minuscule 305",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Gospels†"
+      "Zigabenus Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -20784,8 +20751,8 @@
     "title": "minuscule 309",
     "description": "",
     "texts": [
-      "Acts†",
-      "Romans-Titus†",
+      "Acts",
+      "Romans-Titus",
       "General Epistles"
     ],
     "family": "",
@@ -20799,7 +20766,7 @@
     "title": "minuscule 315",
     "description": "",
     "texts": [
-      "Theophylact Commentary on JohnS†"
+      "Theophylact Commentary on JohnS"
     ],
     "family": "",
     "location": "",
@@ -20842,7 +20809,7 @@
     "title": "minuscule 339",
     "description": "",
     "texts": [
-      "New Testament†"
+      "New Testament"
     ],
     "family": "",
     "location": "",
@@ -20965,7 +20932,7 @@
     "title": "minuscule 403",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -21033,7 +21000,7 @@
     "title": "minuscule 434",
     "description": "",
     "texts": [
-      "Luke 1:5–6:21† (Nicetas Catena)"
+      "Luke 1:5–6:21 (Nicetas Catena)"
     ],
     "family": "",
     "location": "",
@@ -21046,9 +21013,9 @@
     "title": "minuscule 441",
     "description": "",
     "texts": [
-      "Acts† 8:14-28:31",
+      "Acts 8:14-28:31",
       "Romans",
-      "1 Corinthians 1:1-15:38†"
+      "1 Corinthians 1:1-15:38"
     ],
     "family": "",
     "location": "",
@@ -21089,7 +21056,7 @@
     "title": "minuscule 468",
     "description": "",
     "texts": [
-      "Acts†",
+      "Acts",
       "Pauline Epistles",
       "General Epistles",
       "Revelation"
@@ -21106,7 +21073,7 @@
     "description": "",
     "texts": [
       "Acts",
-      "Pauline Epistles†",
+      "Pauline Epistles",
       "General Epistles",
       "Revelation"
     ],
@@ -21121,7 +21088,7 @@
     "title": "minuscule 472",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -21179,7 +21146,7 @@
     "title": "minuscule 498",
     "description": "",
     "texts": [
-      "New Testament†"
+      "New Testament"
     ],
     "family": "",
     "location": "",
@@ -21194,7 +21161,7 @@
     "texts": [
       "Matthew",
       "Mark",
-      "Luke†"
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -21207,7 +21174,7 @@
     "title": "minuscule 501",
     "description": "",
     "texts": [
-      "GospelsS†"
+      "GospelsS"
     ],
     "family": "",
     "location": "",
@@ -21233,7 +21200,7 @@
     "title": "minuscule 508",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -21246,7 +21213,7 @@
     "title": "minuscule 511",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -21272,7 +21239,7 @@
     "title": "minuscule 533",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -21300,7 +21267,7 @@
     "description": "",
     "texts": [
       "Gospels",
-      "Acts†",
+      "Acts",
       "Pauline Epistles"
     ],
     "family": "",
@@ -21327,7 +21294,7 @@
     "title": "minuscule 546",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -21392,9 +21359,9 @@
     "title": "minuscule 567",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -21420,7 +21387,7 @@
     "title": "minuscule 574",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -21473,9 +21440,9 @@
     "title": "minuscule 593",
     "description": "",
     "texts": [
-      "Mark†",
-      "Luke†",
-      "John†"
+      "Mark",
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -21515,7 +21482,7 @@
     "description": "",
     "texts": [
       "Acts",
-      "Pauline Epistles†",
+      "Pauline Epistles",
       "General Epistles"
     ],
     "family": "",
@@ -21558,8 +21525,8 @@
     "description": "",
     "texts": [
       "Acts",
-      "Pauline EpistlesS†",
-      "General Epistles†"
+      "Pauline EpistlesS",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -21572,7 +21539,7 @@
     "title": "minuscule 666",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -21598,7 +21565,7 @@
     "title": "minuscule 676",
     "description": "",
     "texts": [
-      "Gospels†",
+      "Gospels",
       "Acts",
       "Pauline Epistles",
       "General Epistles"
@@ -21614,7 +21581,7 @@
     "title": "minuscule 677",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -21692,7 +21659,7 @@
     "title": "minuscule 695",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -21758,7 +21725,7 @@
     "title": "minuscule 710",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -21771,7 +21738,7 @@
     "title": "minuscule 714",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -21862,7 +21829,7 @@
     "title": "minuscule 744",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -21875,7 +21842,7 @@
     "title": "minuscule 749",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -21888,7 +21855,7 @@
     "title": "minuscule 751",
     "description": "",
     "texts": [
-      "Matthew 2:13-9:17†"
+      "Matthew 2:13-9:17"
     ],
     "family": "",
     "location": "",
@@ -21901,7 +21868,7 @@
     "title": "minuscule 757",
     "description": "",
     "texts": [
-      "New Testament†"
+      "New Testament"
     ],
     "family": "",
     "location": "",
@@ -21969,7 +21936,7 @@
     "texts": [
       "Matthew",
       "Mark",
-      "and Luke†"
+      "and Luke"
     ],
     "family": "",
     "location": "",
@@ -22008,7 +21975,7 @@
     "title": "minuscule 823",
     "description": "",
     "texts": [
-      "GospelsS†",
+      "GospelsS",
       "Acts",
       "Pauline Epistles",
       "General Epistles"
@@ -22024,7 +21991,7 @@
     "title": "minuscule 827",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22037,7 +22004,7 @@
     "title": "minuscule 830",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22050,7 +22017,7 @@
     "title": "minuscule 840",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke†"
+      "Theophylact Commentary on Luke"
     ],
     "family": "",
     "location": "",
@@ -22063,7 +22030,7 @@
     "title": "minuscule 871",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22102,7 +22069,7 @@
     "title": "minuscule 897",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22115,7 +22082,7 @@
     "title": "minuscule 898",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22169,9 +22136,9 @@
     "title": "minuscule 914",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -22184,9 +22151,9 @@
     "title": "minuscule 915",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -22264,7 +22231,7 @@
     "title": "minuscule 940",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22277,7 +22244,7 @@
     "title": "minuscule 947",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22316,7 +22283,7 @@
     "title": "minuscule 969",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22343,7 +22310,7 @@
     "title": "minuscule 981",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22414,7 +22381,7 @@
     "title": "minuscule 1000",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22518,8 +22485,8 @@
     "title": "minuscule 1031",
     "description": "",
     "texts": [
-      "LukeP†",
-      "JohnP†"
+      "LukeP",
+      "JohnP"
     ],
     "family": "",
     "location": "",
@@ -22558,7 +22525,7 @@
     "title": "minuscule 1047",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22584,7 +22551,7 @@
     "title": "minuscule 1052",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22597,7 +22564,7 @@
     "title": "minuscule 1053",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22679,7 +22646,7 @@
     "title": "minuscule 1085",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -22705,7 +22672,7 @@
     "title": "minuscule 1094",
     "description": "",
     "texts": [
-      "New Testament †"
+      "New Testament"
     ],
     "family": "",
     "location": "",
@@ -22776,8 +22743,8 @@
     "description": "",
     "texts": [
       "Acts",
-      "General Epistles †",
-      "Pauline Epistles †"
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -22829,9 +22796,9 @@
     "title": "minuscule 1129",
     "description": "",
     "texts": [
-      "Matthew† 20:23–28:20",
-      "Mark†",
-      "Luke†"
+      "Matthew 20:23–28:20",
+      "Mark",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -22844,7 +22811,7 @@
     "title": "minuscule 1137",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -22925,7 +22892,7 @@
     "title": "minuscule 1176 + [2504]",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -23055,7 +23022,7 @@
     "title": "minuscule 1229",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -23084,10 +23051,10 @@
     "title": "minuscule 1251",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -23100,7 +23067,7 @@
     "title": "minuscule 1255",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke†"
+      "Theophylact Commentary on Luke"
     ],
     "family": "",
     "location": "",
@@ -23153,7 +23120,7 @@
     "title": "minuscule 1265",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -23179,7 +23146,7 @@
     "title": "minuscule 1285",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -23302,7 +23269,7 @@
     "title": "minuscule 1306",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -23385,7 +23352,7 @@
     "title": "minuscule 1372",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -23424,10 +23391,10 @@
     "title": "minuscule 1398",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -23440,7 +23407,7 @@
     "title": "minuscule 1399",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -23498,7 +23465,7 @@
     "title": "minuscule 1407",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -23511,9 +23478,9 @@
     "title": "minuscule 1420",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†",
-      "Luke†"
+      "Matthew",
+      "Mark",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -23539,7 +23506,7 @@
     "title": "minuscule 1440",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -23578,10 +23545,10 @@
     "title": "minuscule 1456",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -23646,7 +23613,7 @@
     "title": "minuscule 1469",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -23844,7 +23811,7 @@
     "title": "minuscule 1509",
     "description": "",
     "texts": [
-      "Matthew† 17:25-28:20",
+      "Matthew 17:25-28:20",
       "Mark - Acts",
       "Pauline Epistles",
       "General Epistles"
@@ -23873,7 +23840,7 @@
     "title": "minuscule 1515",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -23886,9 +23853,9 @@
     "title": "minuscule 1525",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline epistles"
     ],
     "family": "",
     "location": "",
@@ -23954,10 +23921,10 @@
     "title": "minuscule 1563",
     "description": "",
     "texts": [
-      "Gospels†",
+      "Gospels",
       "Acts",
       "General Epistles",
-      "Romans - Colossians 1:18†"
+      "Romans - Colossians 1:18"
     ],
     "family": "",
     "location": "",
@@ -23970,7 +23937,7 @@
     "title": "minuscule 1565",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -23983,7 +23950,7 @@
     "title": "minuscule 1567",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -24061,7 +24028,7 @@
     "title": "minuscule 1587",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -24087,7 +24054,7 @@
     "title": "minuscule 1593",
     "description": "",
     "texts": [
-      "Matthew† 14:6-28:20",
+      "Matthew 14:6-28:20",
       "Mark - John"
     ],
     "family": "",
@@ -24130,7 +24097,7 @@
     "title": "minuscule 1601",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -24198,7 +24165,7 @@
     "title": "minuscule 1666",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -24211,7 +24178,7 @@
     "title": "minuscule 1677",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -24309,10 +24276,10 @@
     "title": "minuscule 1728",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†",
-      "Revelation†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles",
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -24325,9 +24292,9 @@
     "title": "minuscule 1731",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -24370,9 +24337,9 @@
     "title": "minuscule 1758",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -24385,9 +24352,9 @@
     "title": "minuscule 1759",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -24439,9 +24406,9 @@
     "title": "minuscule 1839",
     "description": "",
     "texts": [
-      "Commentary on Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Commentary on Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -24469,9 +24436,9 @@
     "title": "minuscule 1852",
     "description": "",
     "texts": [
-      "Acts† 9:33-28:31",
-      "General Epistles†",
-      "Pauline Epistles†",
+      "Acts 9:33-28:31",
+      "General Epistles",
+      "Pauline Epistles",
       "Revelation"
     ],
     "family": "",
@@ -24516,9 +24483,9 @@
     "title": "minuscule 1858",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -24593,7 +24560,7 @@
     "title": "minuscule 1913",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Pauline epistles†"
+      "Theophylact Commentary on the Pauline epistles"
     ],
     "family": "",
     "location": "",
@@ -24632,7 +24599,7 @@
     "title": "minuscule 1941",
     "description": "",
     "texts": [
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -24736,7 +24703,7 @@
     "title": "minuscule 1976",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Philippians† - Hebrews†"
+      "Theophylact Commentary on Philippians - Hebrews"
     ],
     "family": "",
     "location": "",
@@ -24788,8 +24755,8 @@
     "title": "minuscule 2005",
     "description": "",
     "texts": [
-      "Acts †",
-      "Pauline epistles †"
+      "Acts",
+      "Pauline epistles"
     ],
     "family": "",
     "location": "",
@@ -24815,7 +24782,7 @@
     "title": "minuscule 2019",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation†"
+      "Andreas of Caesarea Commentary on Revelation"
     ],
     "family": "",
     "location": "",
@@ -24828,7 +24795,7 @@
     "title": "minuscule 2027",
     "description": "",
     "texts": [
-      "Revelation†"
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -25013,7 +24980,7 @@
     "title": "minuscule 2119",
     "description": "",
     "texts": [
-      "Matthew† 12:10-26:43; Mark† 1:1-5:21",
+      "Matthew 12:10-26:43; Mark 1:1-5:21",
       "14:43-16:20"
     ],
     "family": "",
@@ -25029,7 +24996,7 @@
     "texts": [
       "Matthew",
       "Mark",
-      "Luke†"
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -25042,7 +25009,7 @@
     "title": "minuscule 2139",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -25069,7 +25036,7 @@
     "description": "",
     "texts": [
       "Theophylact Commentary on Luke",
-      "John†"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -25082,7 +25049,7 @@
     "title": "minuscule 2187",
     "description": "",
     "texts": [
-      "Luke† (Nicetas Catena)"
+      "Luke (Nicetas Catena)"
     ],
     "family": "",
     "location": "",
@@ -25095,9 +25062,9 @@
     "title": "minuscule 2202",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew†",
-      "Luke†",
-      "John†"
+      "Theophylact Commentary on Matthew",
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -25110,7 +25077,7 @@
     "title": "minuscule 2203",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -25136,7 +25103,7 @@
     "title": "minuscule [2230]",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -25201,7 +25168,7 @@
     "title": "minuscule 2264",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -25253,7 +25220,7 @@
     "title": "minuscule 2300",
     "description": "",
     "texts": [
-      "Luke† 9:32-11:31"
+      "Luke 9:32-11:31"
     ],
     "family": "",
     "location": "",
@@ -25266,7 +25233,7 @@
     "title": "minuscule 2304",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -25279,8 +25246,8 @@
     "title": "minuscule 2323",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Revelation†"
+      "Gospels",
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -25293,8 +25260,8 @@
     "title": "minuscule 2353",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†"
+      "Matthew",
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -25307,7 +25274,7 @@
     "title": "minuscule 2372",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -25320,9 +25287,9 @@
     "title": "minuscule 2376",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†",
-      "Luke†"
+      "Matthew",
+      "Mark",
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -25335,7 +25302,7 @@
     "title": "minuscule 2380",
     "description": "",
     "texts": [
-      "Mark†"
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -25376,7 +25343,7 @@
     "title": "minuscule 2395",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -25389,10 +25356,10 @@
     "title": "minuscule 2400",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Gospels",
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -25434,8 +25401,8 @@
     "title": "minuscule 2409",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†"
+      "Matthew",
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -25448,7 +25415,7 @@
     "title": "minuscule 2421",
     "description": "",
     "texts": [
-      "John†"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -25461,9 +25428,9 @@
     "title": "minuscule 2423",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -25476,8 +25443,8 @@
     "title": "minuscule 2425",
     "description": "",
     "texts": [
-      "2 Timothy†",
-      "Titus†"
+      "2 Timothy",
+      "Titus"
     ],
     "family": "",
     "location": "",
@@ -25516,7 +25483,7 @@
     "title": "minuscule 2444",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -25529,7 +25496,7 @@
     "title": "minuscule 2457",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -25568,7 +25535,7 @@
     "title": "minuscule 2479",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -25597,9 +25564,9 @@
     "title": "minuscule 2491=[2850], [2617]",
     "description": "",
     "texts": [
-      "Matthew 19-23†",
-      "Mark 1:14-5:33; 9:14-end†",
-      "Luke 1:1-11:46†"
+      "Matthew 19-23",
+      "Mark 1:14-5:33; 9:14-end",
+      "Luke 1:1-11:46"
     ],
     "family": "",
     "location": "",
@@ -25612,10 +25579,10 @@
     "title": "minuscule 2502",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Gospels",
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -25680,10 +25647,10 @@
     "title": "minuscule 2516",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -25709,7 +25676,7 @@
     "title": "minuscule 2522",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -25722,7 +25689,7 @@
     "title": "minuscule 2525",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -25735,7 +25702,7 @@
     "title": "minuscule 2538",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on Mark†"
+      "Zigabenus Commentary on Mark"
     ],
     "family": "",
     "location": "",
@@ -25748,8 +25715,8 @@
     "title": "minuscule 2540",
     "description": "",
     "texts": [
-      "Luke† 24:39-53",
-      "John† 2:4-4:23; 9:34-11:12"
+      "Luke 24:39-53",
+      "John 2:4-4:23; 9:34-11:12"
     ],
     "family": "",
     "location": "",
@@ -25762,9 +25729,9 @@
     "title": "minuscule 2542",
     "description": "",
     "texts": [
-      "Matthew† 12:5-28:20",
+      "Matthew 12:5-28:20",
       "Mark",
-      "Luke 1:1-24:19†"
+      "Luke 1:1-24:19"
     ],
     "family": "",
     "location": "",
@@ -25777,7 +25744,7 @@
     "title": "minuscule 2548",
     "description": "",
     "texts": [
-      "Luke†"
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -25790,9 +25757,9 @@
     "title": "minuscule 2551",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Luke†",
-      "John†"
+      "Matthew",
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -25805,9 +25772,9 @@
     "title": "minuscule 2558",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -25820,8 +25787,8 @@
     "title": "minuscule 2568",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark† Luke†"
+      "Matthew",
+      "Mark Luke"
     ],
     "family": "",
     "location": "",
@@ -25834,7 +25801,7 @@
     "title": "minuscule 2569",
     "description": "",
     "texts": [
-      "John†"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -25847,9 +25814,9 @@
     "title": "minuscule 2584",
     "description": "",
     "texts": [
-      "Mark†",
-      "Luke†",
-      "John†"
+      "Mark",
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -25862,7 +25829,7 @@
     "title": "minuscule 2588",
     "description": "",
     "texts": [
-      "Luke† 19:13-38"
+      "Luke 19:13-38"
     ],
     "family": "",
     "location": "",
@@ -25888,7 +25855,7 @@
     "title": "minuscule 2599",
     "description": "",
     "texts": [
-      "Luke†"
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -25901,8 +25868,8 @@
     "title": "minuscule 2600",
     "description": "",
     "texts": [
-      "Luke† 20:19-24:53",
-      "John†"
+      "Luke 20:19-24:53",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -25941,8 +25908,8 @@
     "title": "minuscule 2607",
     "description": "",
     "texts": [
-      "Matthew† 14:34-15:28",
-      "27:45-28:20; Mark 1:1-14:51† Luke 1:1-2:20†"
+      "Matthew 14:34-15:28",
+      "27:45-28:20; Mark 1:1-14:51 Luke 1:1-2:20"
     ],
     "family": "",
     "location": "",
@@ -25955,7 +25922,7 @@
     "title": "minuscule 2608",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -25968,7 +25935,7 @@
     "title": "minuscule 2610",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -25997,7 +25964,7 @@
     "title": "minuscule 2614",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26036,9 +26003,9 @@
     "title": "minuscule 2627",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -26051,7 +26018,7 @@
     "title": "minuscule 2631",
     "description": "",
     "texts": [
-      "Mark†"
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -26064,7 +26031,7 @@
     "title": "minuscule 2633",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26077,7 +26044,7 @@
     "title": "minuscule 2639",
     "description": "",
     "texts": [
-      "Ephesians† 4:9-25; Philippians† 1:14-2:2"
+      "Ephesians 4:9-25; Philippians 1:14-2:2"
     ],
     "family": "",
     "location": "",
@@ -26104,7 +26071,7 @@
     "title": "minuscule 2644",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26117,7 +26084,7 @@
     "title": "minuscule 2645",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26130,7 +26097,7 @@
     "title": "minuscule 2646",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Gospels†"
+      "Zigabenus Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -26143,7 +26110,7 @@
     "title": "minuscule 2647",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26156,7 +26123,7 @@
     "title": "minuscule 2658",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26182,7 +26149,7 @@
     "title": "minuscule 2670",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26208,7 +26175,7 @@
     "title": "minuscule 2677",
     "description": "",
     "texts": [
-      "Luke†"
+      "Luke"
     ],
     "family": "",
     "location": "",
@@ -26221,7 +26188,7 @@
     "title": "minuscule 2678",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26247,7 +26214,7 @@
     "title": "minuscule 2682",
     "description": "",
     "texts": [
-      "John†"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -26260,7 +26227,7 @@
     "title": "minuscule 2683",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26301,7 +26268,7 @@
     "title": "minuscule 2697",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26314,8 +26281,8 @@
     "title": "minuscule 2699",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†"
+      "Matthew",
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -26341,7 +26308,7 @@
     "title": "minuscule 2717",
     "description": "",
     "texts": [
-      "John†"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -26406,9 +26373,9 @@
     "title": "minuscule 2750",
     "description": "",
     "texts": [
-      "Mark†",
-      "Luke†",
-      "John†"
+      "Mark",
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -26421,8 +26388,8 @@
     "title": "minuscule 2751",
     "description": "",
     "texts": [
-      "Matthew† 27:23-27:38",
-      "28:4-28:20; Luke† 7:47-24:53; John† 1:1-17:26"
+      "Matthew 27:23-27:38",
+      "28:4-28:20; Luke 7:47-24:53; John 1:1-17:26"
     ],
     "family": "",
     "location": "",
@@ -26515,9 +26482,9 @@
     "title": "minuscule 2772",
     "description": "",
     "texts": [
-      "ActsP†",
-      "General EpistlesP†",
-      "Pauline EpistlesP†"
+      "ActsP",
+      "General EpistlesP",
+      "Pauline EpistlesP"
     ],
     "family": "",
     "location": "",
@@ -26530,7 +26497,7 @@
     "title": "minuscule 2788",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26608,8 +26575,8 @@
     "title": "minuscule 2813",
     "description": "",
     "texts": [
-      "Luke†",
-      "John†"
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -26622,7 +26589,7 @@
     "title": "minuscule 2831",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26876,7 +26843,7 @@
     "texts": [
       "Acts",
       "General Epistles",
-      "Pauline Epistles †"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -26889,7 +26856,7 @@
     "title": "minuscule 2250",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26918,7 +26885,7 @@
     "title": "minuscule 2383",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -26931,7 +26898,7 @@
     "title": "minuscule 2419",
     "description": "",
     "texts": [
-      "Revelation† 3:1-4:8"
+      "Revelation 3:1-4:8"
     ],
     "family": "",
     "location": "",
@@ -27064,10 +27031,10 @@
     "title": "minuscule 172",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†",
-      "Rev.†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles",
+      "Rev."
     ],
     "family": "",
     "location": "",
@@ -27110,8 +27077,8 @@
     "title": "minuscule 460",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
+      "Acts",
+      "Pauline Epistles",
       "General Epistles"
     ],
     "family": "",
@@ -27167,7 +27134,7 @@
     "title": "minuscule 1334",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -27250,7 +27217,7 @@
     "title": "minuscule 1552",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -27276,7 +27243,7 @@
     "title": "minuscule 1571",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -27289,7 +27256,7 @@
     "title": "minuscule 1580",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -27475,9 +27442,9 @@
     "title": "minuscule 62",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -27571,7 +27538,7 @@
     "title": "minuscule 189",
     "description": "",
     "texts": [
-      "Gospels†",
+      "Gospels",
       "Acts",
       "Pauline Epistles",
       "General Epistles"
@@ -27629,7 +27596,7 @@
     "title": "minuscule 222",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -27642,9 +27609,9 @@
     "title": "minuscule 223",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -27686,7 +27653,7 @@
     "title": "minuscule 246",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -27742,9 +27709,9 @@
     "title": "minuscule 308",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -27757,7 +27724,7 @@
     "title": "minuscule 316",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke 18:18–24:53†; John 1:16–12:25†"
+      "Theophylact Commentary on Luke 18:18–24:53; John 1:16–12:25"
     ],
     "family": "",
     "location": "",
@@ -27770,7 +27737,7 @@
     "title": "minuscule 318",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John† 7:9–12:8"
+      "Theophylact Commentary on John 7:9–12:8"
     ],
     "family": "",
     "location": "",
@@ -27853,7 +27820,7 @@
     "title": "minuscule 366",
     "description": "",
     "texts": [
-      "Matthew†"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -27866,7 +27833,7 @@
     "title": "minuscule 369",
     "description": "",
     "texts": [
-      "Mark† 6:25–9:45",
+      "Mark 6:25–9:45",
       "10:17–16:9"
     ],
     "family": "",
@@ -27880,7 +27847,7 @@
     "title": "minuscule 370",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -27961,7 +27928,7 @@
     "title": "minuscule 414",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -27974,7 +27941,7 @@
     "title": "minuscule 416",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -27989,7 +27956,7 @@
     "texts": [
       "Matthew",
       "Mark",
-      "and Luke†"
+      "and Luke"
     ],
     "family": "",
     "location": "",
@@ -28002,7 +27969,7 @@
     "title": "minuscule 426",
     "description": "",
     "texts": [
-      "Luke† 6:17–11:28 (Nicetas Catena)"
+      "Luke 6:17–11:28 (Nicetas Catena)"
     ],
     "family": "",
     "location": "",
@@ -28059,7 +28026,7 @@
     "title": "minuscule 494",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -28098,7 +28065,7 @@
     "title": "minuscule 540",
     "description": "",
     "texts": [
-      "Gospel of Mark†"
+      "Gospel of Mark"
     ],
     "family": "",
     "location": "",
@@ -28137,8 +28104,8 @@
     "title": "minuscule 589",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke†",
-      "John†"
+      "Theophylact Commentary on Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -28154,7 +28121,7 @@
       "Matthew",
       "Mark",
       "Luke 1:1-23:15",
-      "23:33-48†"
+      "23:33-48"
     ],
     "family": "",
     "location": "",
@@ -28225,10 +28192,10 @@
     "title": "minuscule 628",
     "description": "",
     "texts": [
-      "Acts†",
+      "Acts",
       "Pauline Epistles",
       "General Epistles",
-      "Revelation†"
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -28256,7 +28223,7 @@
     "title": "minuscule 633",
     "description": "",
     "texts": [
-      "Acts†",
+      "Acts",
       "Pauline Epistles",
       "General Epistles"
     ],
@@ -28271,8 +28238,8 @@
     "title": "minuscule 642",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†",
+      "Acts",
+      "Pauline Epistles",
       "General Epistles"
     ],
     "family": "",
@@ -28300,7 +28267,7 @@
     "title": "minuscule 648",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -28367,7 +28334,7 @@
     "title": "minuscule 693",
     "description": "",
     "texts": [
-      "Gospel†"
+      "Gospel"
     ],
     "family": "",
     "location": "",
@@ -28421,7 +28388,7 @@
     "title": "minuscule 718",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -28434,7 +28401,7 @@
     "title": "minuscule 727",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -28460,7 +28427,7 @@
     "title": "minuscule 730",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Gospels†"
+      "Zigabenus Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -28581,7 +28548,7 @@
     "title": "minuscule 764",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -28607,7 +28574,7 @@
     "title": "minuscule 772",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -28620,7 +28587,7 @@
     "title": "minuscule 781",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -28646,7 +28613,7 @@
     "title": "minuscule 784",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -28672,7 +28639,7 @@
     "title": "minuscule 789",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -28685,7 +28652,7 @@
     "title": "minuscule 790",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -28700,7 +28667,7 @@
     "texts": [
       "Gospels",
       "Acts",
-      "Pauline Epistles†",
+      "Pauline Epistles",
       "General Epistles"
     ],
     "family": "",
@@ -28756,7 +28723,7 @@
     "title": "minuscule 802",
     "description": "",
     "texts": [
-      "Luke 1:1-6:13†"
+      "Luke 1:1-6:13"
     ],
     "family": "",
     "location": "",
@@ -28863,8 +28830,8 @@
     "title": "minuscule 837 = [2580]",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark†"
+      "Matthew",
+      "Mark"
     ],
     "family": "",
     "location": "",
@@ -28890,7 +28857,7 @@
     "title": "minuscule 842",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew†"
+      "Theophylact Commentary on Matthew"
     ],
     "family": "",
     "location": "",
@@ -28955,7 +28922,7 @@
     "title": "minuscule 867",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -29008,7 +28975,7 @@
     "description": "",
     "texts": [
       "Theophylact Commentary on the Gospels",
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -29036,7 +29003,7 @@
     "texts": [
       "Acts",
       "Pauline Epistles",
-      "General Epistles †"
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -29140,8 +29107,8 @@
     "title": "minuscule 977",
     "description": "",
     "texts": [
-      "Luke†",
-      "John†"
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -29193,7 +29160,7 @@
     "title": "minuscule 986",
     "description": "",
     "texts": [
-      "New Testament†"
+      "New Testament"
     ],
     "family": "",
     "location": "",
@@ -29302,7 +29269,7 @@
     "title": "minuscule 1032",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -29380,10 +29347,10 @@
     "title": "minuscule 1040",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -29396,7 +29363,7 @@
     "title": "minuscule 1042",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -29410,7 +29377,7 @@
     "description": "",
     "texts": [
       "Theophylact Commentary on Matthew",
-      "John†"
+      "John"
     ],
     "family": "",
     "location": "",
@@ -29560,8 +29527,8 @@
     "description": "",
     "texts": [
       "Acts",
-      "General Epistles †",
-      "Pauline Epistles †"
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -29628,9 +29595,9 @@
     "title": "minuscule 1119",
     "description": "",
     "texts": [
-      "MarkP†",
-      "LukeP†",
-      "JohnP†"
+      "MarkP",
+      "LukeP",
+      "JohnP"
     ],
     "family": "",
     "location": "",
@@ -29643,7 +29610,7 @@
     "title": "minuscule 1133",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -29669,7 +29636,7 @@
     "title": "minuscule 1155",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -29682,8 +29649,8 @@
     "title": "minuscule 1159",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark† Luke†"
+      "Matthew",
+      "Mark Luke"
     ],
     "family": "",
     "location": "",
@@ -29696,7 +29663,7 @@
     "title": "minuscule 1182",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -29709,8 +29676,8 @@
     "title": "minuscule 1183",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Mark†",
-      "John†"
+      "Theophylact Commentary on Mark",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -29840,8 +29807,8 @@
     "title": "minuscule 1267",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John†",
-      "Romans-Colossians†"
+      "Theophylact Commentary on John",
+      "Romans-Colossians"
     ],
     "family": "",
     "location": "",
@@ -29867,7 +29834,7 @@
     "title": "minuscule 1271",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John†"
+      "Theophylact Commentary on John"
     ],
     "family": "",
     "location": "",
@@ -29880,7 +29847,7 @@
     "title": "minuscule 1283",
     "description": "",
     "texts": [
-      "Mark 11:25-12:40†"
+      "Mark 11:25-12:40"
     ],
     "family": "",
     "location": "",
@@ -29933,8 +29900,8 @@
     "title": "minuscule 1330",
     "description": "",
     "texts": [
-      "Matthew†",
-      "Mark† Luke†"
+      "Matthew",
+      "Mark Luke"
     ],
     "family": "",
     "location": "",
@@ -30099,10 +30066,10 @@
     "title": "minuscule 1409",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -30223,7 +30190,7 @@
     "texts": [
       "Gospels",
       "General Epistles",
-      "Pauline Epistles†"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -30236,8 +30203,8 @@
     "title": "minuscule 1504",
     "description": "",
     "texts": [
-      "Luke†",
-      "John†"
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -30250,7 +30217,7 @@
     "title": "minuscule 1512",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30263,8 +30230,8 @@
     "title": "minuscule 1516",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew†",
-      "John†"
+      "Theophylact Commentary on Matthew",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -30292,9 +30259,9 @@
     "title": "minuscule 1527",
     "description": "",
     "texts": [
-      "MatthewK†",
-      "MarkK†",
-      "LukeK†"
+      "MatthewK",
+      "MarkK",
+      "LukeK"
     ],
     "family": "",
     "location": "",
@@ -30307,7 +30274,7 @@
     "title": "minuscule 1534",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -30346,7 +30313,7 @@
     "title": "minuscule 1554",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30372,7 +30339,7 @@
     "title": "minuscule 1560",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30385,7 +30352,7 @@
     "title": "minuscule 1568",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30398,7 +30365,7 @@
     "title": "minuscule 1574",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30437,10 +30404,10 @@
     "title": "minuscule 1598",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -30453,10 +30420,10 @@
     "title": "minuscule 1599",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -30495,7 +30462,7 @@
     "title": "minuscule 1608",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30508,10 +30475,10 @@
     "title": "minuscule 1618",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -30524,10 +30491,10 @@
     "title": "minuscule 1619",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -30553,7 +30520,7 @@
     "title": "minuscule 1621",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30566,10 +30533,10 @@
     "title": "minuscule 1622",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -30634,7 +30601,7 @@
     "title": "minuscule 1638",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30647,10 +30614,10 @@
     "title": "minuscule 1643",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -30663,7 +30630,7 @@
     "title": "minuscule 1650",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30676,7 +30643,7 @@
     "title": "minuscule 1655",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30689,7 +30656,7 @@
     "title": "minuscule 1657",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30702,7 +30669,7 @@
     "title": "minuscule 1658",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30715,7 +30682,7 @@
     "title": "minuscule 1659",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30728,7 +30695,7 @@
     "title": "minuscule 1660",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30741,10 +30708,10 @@
     "title": "minuscule 1661",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -30757,7 +30724,7 @@
     "title": "minuscule 1670",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30783,7 +30750,7 @@
     "title": "minuscule 1675",
     "description": "",
     "texts": [
-      "Matthew† 2:5-28:20",
+      "Matthew 2:5-28:20",
       "Mark",
       "Luke",
       "John"
@@ -30825,7 +30792,7 @@
     "title": "minuscule 1698",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -30864,9 +30831,9 @@
     "title": "minuscule 1723",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -30879,9 +30846,9 @@
     "title": "minuscule 1726",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -30910,9 +30877,9 @@
     "title": "minuscule 1741",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -30941,9 +30908,9 @@
     "title": "minuscule 1747",
     "description": "",
     "texts": [
-      "Acts†",
-      "General EpistlesP†",
-      "Pauline EpistlesP†"
+      "Acts",
+      "General EpistlesP",
+      "Pauline EpistlesP"
     ],
     "family": "",
     "location": "",
@@ -30986,9 +30953,9 @@
     "title": "minuscule 1762",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline EpistlesP†"
+      "Acts",
+      "General Epistles",
+      "Pauline EpistlesP"
     ],
     "family": "",
     "location": "",
@@ -31016,7 +30983,7 @@
     "title": "minuscule 1769",
     "description": "",
     "texts": [
-      "1 Corinthians† – Revelation†"
+      "1 Corinthians – Revelation"
     ],
     "family": "",
     "location": "",
@@ -31029,7 +30996,7 @@
     "title": "minuscule 1771",
     "description": "",
     "texts": [
-      "1 Corinthians† 14:36-15:58—Hebrews",
+      "1 Corinthians 14:36-15:58—Hebrews",
       "Revelation"
     ],
     "family": "",
@@ -31043,7 +31010,7 @@
     "title": "minuscule 1772",
     "description": "",
     "texts": [
-      "2 Corinthians† – Hebrews†"
+      "2 Corinthians – Hebrews"
     ],
     "family": "",
     "location": "",
@@ -31121,9 +31088,9 @@
     "title": "minuscule 1809",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -31137,8 +31104,8 @@
     "description": "",
     "texts": [
       "Acts",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -31151,9 +31118,9 @@
     "title": "minuscule 1832",
     "description": "",
     "texts": [
-      "Acts† 7:35-28:31",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts 7:35-28:31",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -31166,9 +31133,9 @@
     "title": "minuscule 1856",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -31211,8 +31178,8 @@
     "title": "minuscule 1881",
     "description": "",
     "texts": [
-      "Romans† - Hebrews†",
-      "1 Peter† - Jude"
+      "Romans - Hebrews",
+      "1 Peter - Jude"
     ],
     "family": "",
     "location": "",
@@ -31240,9 +31207,9 @@
     "title": "minuscule 1890",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -31270,8 +31237,8 @@
     "title": "minuscule 1899",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†"
+      "Acts",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -31284,8 +31251,8 @@
     "title": "minuscule 1902",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†"
+      "Acts",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -31298,8 +31265,8 @@
     "title": "minuscule 1918",
     "description": "",
     "texts": [
-      "Romans - 1 Timothy†",
-      "Revelation†"
+      "Romans - 1 Timothy",
+      "Revelation"
     ],
     "family": "",
     "location": "",
@@ -31325,7 +31292,7 @@
     "title": "minuscule 1950",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Pauline Epistles†"
+      "Theophylact Commentary on the Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -31390,7 +31357,7 @@
     "title": "minuscule 1975",
     "description": "",
     "texts": [
-      "EphesiansK† 5:8 - 1 ThessaloniansK 2:16†"
+      "EphesiansK 5:8 - 1 ThessaloniansK 2:16"
     ],
     "family": "",
     "location": "",
@@ -31403,7 +31370,7 @@
     "title": "minuscule 1977",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Pauline Epistles†"
+      "Theophylact Commentary on the Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -31429,7 +31396,7 @@
     "title": "minuscule 1987",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Pauline Epistles†"
+      "Theophylact Commentary on the Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -31468,7 +31435,7 @@
     "title": "minuscule 2010",
     "description": "",
     "texts": [
-      "Revelation†",
+      "Revelation",
       "8:23-14:10"
     ],
     "family": "",
@@ -31638,7 +31605,7 @@
     "title": "minuscule 2080",
     "description": "",
     "texts": [
-      "Acts† 1:13-28:31; General Epistles; Pauline Epistles; Revelation† 1:1-22:16"
+      "Acts 1:13-28:31; General Epistles; Pauline Epistles; Revelation 1:1-22:16"
     ],
     "family": "",
     "location": "",
@@ -31720,7 +31687,7 @@
     "texts": [
       "Gospels",
       "Acts",
-      "1 Corinthians-Hebrews †"
+      "1 Corinthians-Hebrews"
     ],
     "family": "",
     "location": "",
@@ -31733,7 +31700,7 @@
     "title": "minuscule 2188",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Gospels†"
+      "Theophylact Commentary on the Gospels"
     ],
     "family": "",
     "location": "",
@@ -31746,8 +31713,8 @@
     "title": "minuscule 2197",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Pauline Epistles†",
-      "General Epistles†"
+      "Theophylact Commentary on Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -31760,7 +31727,7 @@
     "title": "minuscule 2200",
     "description": "",
     "texts": [
-      "New Testament†"
+      "New Testament"
     ],
     "family": "",
     "location": "",
@@ -31773,7 +31740,7 @@
     "title": "minuscule 2208",
     "description": "",
     "texts": [
-      "Pauline Epistles †"
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -31825,7 +31792,7 @@
     "title": "minuscule 2246",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -31838,7 +31805,7 @@
     "title": "minuscule 2248",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Pauline Epistles†"
+      "Theophylact Commentary on the Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -31851,7 +31818,7 @@
     "title": "minuscule 2257",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Romans-2 Timothy†"
+      "Theophylact Commentary on Romans-2 Timothy"
     ],
     "family": "",
     "location": "",
@@ -31919,7 +31886,7 @@
     "title": "minuscule 2274",
     "description": "",
     "texts": [
-      "Matthew †"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -31932,7 +31899,7 @@
     "title": "minuscule 2276+[815]",
     "description": "",
     "texts": [
-      "Matthew†"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -31958,8 +31925,8 @@
     "title": "minuscule 2279",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles (Romans†)",
+      "Acts",
+      "Pauline Epistles (Romans)",
       "General Epistles"
     ],
     "family": "",
@@ -31973,9 +31940,9 @@
     "title": "minuscule 2303",
     "description": "",
     "texts": [
-      "Acts†",
-      "James†",
-      "1 Peter†"
+      "Acts",
+      "James",
+      "1 Peter"
     ],
     "family": "",
     "location": "",
@@ -32001,9 +31968,9 @@
     "title": "minuscule 2309",
     "description": "",
     "texts": [
-      "Mark†",
-      "Luke†",
-      "John†"
+      "Mark",
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
@@ -32017,9 +31984,9 @@
     "description": "",
     "texts": [
       "Gospels",
-      "Acts†",
-      "Pauline Epistles†",
-      "General Epistles†"
+      "Acts",
+      "Pauline Epistles",
+      "General Epistles"
     ],
     "family": "",
     "location": "",
@@ -32045,7 +32012,7 @@
     "title": "minuscule 2345",
     "description": "",
     "texts": [
-      "Matthew†"
+      "Matthew"
     ],
     "family": "",
     "location": "",
@@ -32087,8 +32054,8 @@
     "title": "minuscule 2357",
     "description": "",
     "texts": [
-      "General Epistles†",
-      "Pauline Epistles†"
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -32114,7 +32081,7 @@
     "title": "minuscule 2377",
     "description": "",
     "texts": [
-      "Revelation 13:10-14:4; 19:21-22:20†"
+      "Revelation 13:10-14:4; 19:21-22:20"
     ],
     "family": "",
     "location": "",
@@ -32153,7 +32120,7 @@
     "title": "minuscule 2398",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -32166,7 +32133,7 @@
     "title": "minuscule 2399",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -32179,7 +32146,7 @@
     "title": "minuscule 2406",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -32192,7 +32159,7 @@
     "title": "minuscule 2408",
     "description": "",
     "texts": [
-      "Commentary on Revelation† 5:1-5"
+      "Commentary on Revelation 5:1-5"
     ],
     "family": "",
     "location": "",
@@ -32205,7 +32172,7 @@
     "title": "minuscule 2429",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation† 1:1-21:12"
+      "Andreas of Caesarea Commentary on Revelation 1:1-21:12"
     ],
     "family": "",
     "location": "",
@@ -32244,8 +32211,8 @@
     "title": "minuscule 2441",
     "description": "",
     "texts": [
-      "Acts†",
-      "Pauline Epistles†"
+      "Acts",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
@@ -32271,7 +32238,7 @@
     "title": "minuscule 2463",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
@@ -32302,7 +32269,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-45",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32318,7 +32285,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "75",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32327,11 +32294,11 @@
     "title": "minuscule 2493",
     "description": "",
     "texts": [
-      "Revelation†"
+      "Revelation"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-75",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32344,7 +32311,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "105",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32353,14 +32320,14 @@
     "title": "minuscule 2508",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-105",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32375,7 +32342,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "135",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32388,7 +32355,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-135",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32397,11 +32364,11 @@
     "title": "minuscule 2524",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "165",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32410,11 +32377,11 @@
     "title": "minuscule 2526",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-165",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32423,12 +32390,12 @@
     "title": "minuscule 2527",
     "description": "",
     "texts": [
-      "General Epistles†",
-      "Pauline Epistles†"
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "195",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32441,7 +32408,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-195",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32450,11 +32417,11 @@
     "title": "minuscule 2577",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew†"
+      "Theophylact Commentary on Matthew"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "225",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32467,7 +32434,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-225",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32476,11 +32443,11 @@
     "title": "minuscule 2593",
     "description": "",
     "texts": [
-      "Luke† (Nicetas Catena)"
+      "Luke (Nicetas Catena)"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "255",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32489,14 +32456,14 @@
     "title": "minuscule 2626",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†",
-      "Revelation 1:1-18:3†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles",
+      "Revelation 1:1-18:3"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-255",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32505,11 +32472,11 @@
     "title": "minuscule 2629",
     "description": "",
     "texts": [
-      "1 Corinthians - Hebrews†"
+      "1 Corinthians - Hebrews"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "30",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32522,7 +32489,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-30",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32531,11 +32498,11 @@
     "title": "minuscule 2638",
     "description": "",
     "texts": [
-      "Commentary on Revelation 1:1-15:7†"
+      "Commentary on Revelation 1:1-15:7"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "60",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32544,11 +32511,11 @@
     "title": "minuscule 2641",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-60",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32557,11 +32524,11 @@
     "title": "minuscule 2654",
     "description": "",
     "texts": [
-      "Luke†"
+      "Luke"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "90",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32570,11 +32537,11 @@
     "title": "minuscule 2666",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-90",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32583,11 +32550,11 @@
     "title": "minuscule 2668",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on Ephesians†"
+      "Zigabenus Commentary on Ephesians"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "120",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32596,13 +32563,13 @@
     "title": "minuscule 2675",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-120",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32615,7 +32582,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "150",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32628,7 +32595,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-150",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32637,11 +32604,11 @@
     "title": "minuscule 2701",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "180",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32657,7 +32624,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-180",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32670,7 +32637,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "210",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32683,7 +32650,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-210",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32692,14 +32659,14 @@
     "title": "minuscule 2716",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†",
-      "Revelation†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles",
+      "Revelation"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "240",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32712,7 +32679,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-240",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32727,7 +32694,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "15",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32736,11 +32703,11 @@
     "title": "minuscule 2739",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Pauline Epistles†"
+      "Zigabenus Commentary on the Pauline Epistles"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-15",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32753,7 +32720,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "45",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32762,11 +32729,11 @@
     "title": "minuscule 2773",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-45",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32775,11 +32742,11 @@
     "title": "minuscule 2775",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "75",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32788,13 +32755,13 @@
     "title": "minuscule 2777",
     "description": "",
     "texts": [
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-75",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32803,11 +32770,11 @@
     "title": "minuscule 2780",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-90",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32816,11 +32783,11 @@
     "title": "minuscule 2783",
     "description": "",
     "texts": [
-      "Gospels†"
+      "Gospels"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-45",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32833,7 +32800,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "75",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32846,7 +32813,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-75",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32861,7 +32828,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "105",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32870,14 +32837,14 @@
     "title": "minuscule 2803",
     "description": "",
     "texts": [
-      "Gospels†",
-      "Acts†",
-      "General Epistles†",
-      "Pauline Epistles†"
+      "Gospels",
+      "Acts",
+      "General Epistles",
+      "Pauline Epistles"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-105",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32890,7 +32857,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "135",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32903,7 +32870,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-135",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32916,7 +32883,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "165",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32925,11 +32892,11 @@
     "title": "minuscule 2824",
     "description": "",
     "texts": [
-      "Revelation†"
+      "Revelation"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-165",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32943,7 +32910,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "195",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32956,7 +32923,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-195",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32969,7 +32936,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "225",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32982,7 +32949,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-225",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -32995,7 +32962,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "255",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33009,7 +32976,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-255",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33022,7 +32989,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "30",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33035,7 +33002,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-30",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33044,11 +33011,11 @@
     "title": "minuscule 2889=[1929abs]",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Pauline Epistles†"
+      "Theophylact Commentary on the Pauline Epistles"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "60",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33061,7 +33028,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-60",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33070,11 +33037,11 @@
     "title": "minuscule 2900",
     "description": "",
     "texts": [
-      "Matthew† 1:17-28:20; Mark; Luke; John"
+      "Matthew 1:17-28:20; Mark; Luke; John"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "90",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33083,11 +33050,11 @@
     "title": "minuscule 2908",
     "description": "",
     "texts": [
-      "Matthew and John Gospel fragments †"
+      "Matthew and John Gospel fragments"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-90",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33100,7 +33067,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "120",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33109,11 +33076,11 @@
     "title": "minuscule 2913",
     "description": "",
     "texts": [
-      "Gospels †"
+      "Gospels"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-120",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33126,7 +33093,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "150",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33135,11 +33102,11 @@
     "title": "minuscule 2943",
     "description": "",
     "texts": [
-      "Luke 3-23†; John 1-11†"
+      "Luke 3-23; John 1-11"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-150",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33148,11 +33115,11 @@
     "title": "minuscule 2944",
     "description": "",
     "texts": [
-      "John 1:1-25; 8:34-10:34†"
+      "John 1:1-25; 8:34-10:34"
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "180",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33165,7 +33132,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-180",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33178,7 +33145,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "210",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33191,7 +33158,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-210",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33204,7 +33171,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "240",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33217,7 +33184,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-240",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33230,7 +33197,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "15",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33243,7 +33210,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-15",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33256,7 +33223,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "45",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33269,7 +33236,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-45",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33282,7 +33249,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "75",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
@@ -33297,7 +33264,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-75",
     "eventType": "Minuscule",
     "percentage": 135,
     "year": 1350
