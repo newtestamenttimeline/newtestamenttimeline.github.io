@@ -314,7 +314,7 @@ function getColorForEventType(eventType) {
     return eventTypeColors[eventType];
 }
 
-"function generateLegend() {
+function generateLegend() {
     legendContainer.innerHTML = '';
 
     eventTypes.forEach(eventType => {
