@@ -270,7 +270,8 @@ function generateLegend() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox';
-        checkbox.checked = true;
+        // Uncheck the uncial and minuscule filters by default
+        checkbox.checked = !(eventType === 'uncial' || eventType === 'minuscule');
         checkbox.addEventListener('change', (e) => {
             toggleEventsByType(eventType, e.target.checked);
         });
@@ -301,6 +302,7 @@ function generateLegend() {
         }
     });
 }
+
 
 function toggleEventsByType(eventType, isChecked) {
     const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
