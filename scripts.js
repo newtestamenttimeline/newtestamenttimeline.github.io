@@ -314,7 +314,7 @@ function getColorForEventType(eventType) {
     return eventTypeColors[eventType];
 }
 
-function generateLegend() {
+"function generateLegend() {
     legendContainer.innerHTML = '';
 
     eventTypes.forEach(eventType => {
@@ -328,9 +328,8 @@ function generateLegend() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox';
-        // Uncheck the minuscules and lectionaries filters by default
-        const isInitiallyUnchecked = eventType.toLowerCase() === 'lectionary' || eventType.toLowerCase() === 'minuscule';
-        checkbox.checked = !isInitiallyUnchecked; // Only uncheck these types initially
+        // Uncheck the uncial and minuscule filters by default
+        checkbox.checked = !(eventType === 'lectionary' || eventType === 'Minuscule');
         checkbox.addEventListener('change', (e) => {
             toggleEventsByType(eventType, e.target.checked);
         });
@@ -343,7 +342,7 @@ function generateLegend() {
         questionMark.textContent = '?';
         const tooltip = document.createElement('span');
         tooltip.className = 'tooltip';
-        tooltip.textContent = `Filter events by ${eventType} type`;
+        tooltip.textContent = Filter events by ${eventType} type;
         questionMark.appendChild(tooltip);
         legendItem.appendChild(checkbox);
         legendItem.appendChild(legendColor);
@@ -353,17 +352,22 @@ function generateLegend() {
         legendContainer.appendChild(legendItem);
     });
 
-    // Initially hide events of unchecked types
-    toggleEventsByType('lectionary', false);
-    toggleEventsByType('minuscule', false);
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventType = event.getAttribute('data-event-type');
+        if (eventTypeColors[eventType]) {
+            event.style.backgroundColor = eventTypeColors[eventType];
+        }
+    });
 }
 
+
 function toggleEventsByType(eventType, isChecked) {
-    const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
+    const events = document.querySelectorAll(.event[data-event-type="${eventType}"]);
     events.forEach(event => {
         event.style.display = isChecked ? 'block' : 'none';
     });
-}
+}"
 
 
 
