@@ -33,11 +33,13 @@ async function loadEvents() {
         const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
         const uncialEvents = await fetch('uncials.json').then(response => response.json());
         const churchFathersEvents = await fetch('church_fathers.json').then(response => response.json()); // Fetch the new JSON file
+        const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
 
         console.log('Historical Events:', historicalEvents);
         console.log('Manuscript Events:', manuscriptEvents);
         console.log('Uncial Events:', uncialEvents);
         console.log('Church Fathers Events:', churchFathersEvents); // Log the new events
+        console.log('Lectionaries Events:', lectionariesEvents);
 
         timeline.innerHTML = '';
 
@@ -75,6 +77,18 @@ async function loadEvents() {
         });
 
         churchFathersEvents.forEach(event => {  // Process the new events
+            processEvent(event);
+            addEventToTimeline(event);
+            if (event.texts) {
+                event.texts.forEach(text => texts.add(text));
+            }
+            if (event.family) {
+                families.add(event.family);
+            }
+            eventTypes.add(event.eventType);
+        });
+
+        lectionariesEvents.forEach(event => {  // Process the new events
             processEvent(event);
             addEventToTimeline(event);
             if (event.texts) {
