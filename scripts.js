@@ -29,26 +29,34 @@ document.getElementById('toggle-sidebar').addEventListener('click', () => {
 
 async function loadEvents() {
     try {
+        // Fetch and process initial events
         const historicalEvents = await fetch('historical_events.json').then(response => response.json());
         const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
-        const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
         const churchFathersEvents = await fetch('church_fathers.json').then(response => response.json());
 
-        // Process other events first
-        processEvents(historicalEvents, manuscriptEvents, lectionariesEvents, churchFathersEvents);
+        // Process initial events
+        processEvents(historicalEvents, manuscriptEvents, churchFathersEvents);
 
-        // Load uncial and minuscule events last
-        const uncialEvents = await fetch('uncials.json').then(response => response.json());
-        const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
-
-        processEvents(uncialEvents, minusculesEvents);
-
+        // Initial updates
         generateColorsForEventTypes();
         updateEvents();
         initializeFilters();
         populateTextList();
         populateFamilyList();
         generateLegend();
+
+        // Defer loading additional events
+        setTimeout(async () => {
+            const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
+            const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
+
+            // Process additional events
+            processEvents(lectionariesEvents, minusculesEvents);
+
+            // Update the timeline with new events
+            updateEvents();
+            generateLegend(); // Update legend if necessary
+        }, 1000); // Adjust the delay (in milliseconds) as needed
     } catch (error) {
         console.error('Error loading events:', error);
     }
@@ -69,6 +77,7 @@ function processEvents(...eventGroups) {
         });
     });
 }
+
 
 
 function addYearLabels() {
