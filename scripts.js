@@ -32,10 +32,11 @@ async function loadEvents() {
         // Fetch and process initial events
         const historicalEvents = await fetch('historical_events.json').then(response => response.json());
         const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
+        const uncialsEvents = await fetch('uncials.json').then(response => response.json());
         const churchFathersEvents = await fetch('church_fathers.json').then(response => response.json());
 
         // Process initial events
-        processEvents(historicalEvents, manuscriptEvents, churchFathersEvents);
+        processEvents(historicalEvents, manuscriptEvents, uncialEvents, churchFathersEvents);
 
         // Initial updates
         generateColorsForEventTypes();
@@ -58,28 +59,13 @@ async function loadEvents() {
 
             // Update the timeline with new events and colors
             updateEvents();
+            populateTextList(); // Repopulate text list
+            populateFamilyList(); // Repopulate family list
             generateLegend(); // Refresh legend to include new event types with colors
         }, 1000); // Adjust the delay (in milliseconds) as needed
     } catch (error) {
         console.error('Error loading events:', error);
     }
-}
-
-function generateColorsForEventTypes() {
-    eventTypes.forEach(eventType => {
-        if (!eventTypeColors[eventType]) {
-            eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-        }
-    });
-
-    // Update colors for existing events
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventType = event.getAttribute('data-event-type');
-        if (eventTypeColors[eventType]) {
-            event.style.backgroundColor = eventTypeColors[eventType];
-        }
-    });
 }
 
 function processEvents(...eventGroups) {
@@ -98,6 +84,48 @@ function processEvents(...eventGroups) {
     });
 }
 
+function populateTextList() {
+    const textList = document.getElementById('text-list');
+    textList.innerHTML = '';
+    texts.forEach(text => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
+        listItem.querySelector('input').addEventListener('change', (e) => {
+            filterEventsByText(text, e.target.checked);
+        });
+        textList.appendChild(listItem);
+    });
+}
+
+function populateFamilyList() {
+    const familyList = document.getElementById('family-list');
+    familyList.innerHTML = '';
+    families.forEach(family => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
+        listItem.querySelector('input').addEventListener('change', (e) => {
+            filterEventsByFamily(family, e.target.checked);
+        });
+        familyList.appendChild(listItem);
+    });
+}
+
+function generateColorsForEventTypes() {
+    eventTypes.forEach(eventType => {
+        if (!eventTypeColors[eventType]) {
+            eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+        }
+    });
+
+    // Update colors for existing events
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventType = event.getAttribute('data-event-type');
+        if (eventTypeColors[eventType]) {
+            event.style.backgroundColor = eventTypeColors[eventType];
+        }
+    });
+}
 
 
 
