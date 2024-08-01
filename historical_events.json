@@ -27,7 +27,7 @@
   },
   {
     "title": "Birth of Jesus of Nazareth",
-    "description": "The birth of Jesus of Nazareth, who is later recognized as the central figure of Christianity.",
+    "description": "The birth of Jesus of Nazareth, who is later recognized as the central figure of Christianity. Although this is the event from which the modern calendar is counted, the exact year is somewhat debated, and likely it happened 3-5 BCE.",
     "texts": [
       ""
     ],
@@ -46,7 +46,7 @@
     ],
     "family": "",
     "location": "Judea and the Jordan River",
-    "y": "",
+    "y": "-10",
     "eventType": "historical",
     "percentage": 3,
     "year": 28
@@ -72,7 +72,7 @@
     ],
     "family": "",
     "location": "Outside to Damascus",
-    "y": "",
+    "y": "10",
     "eventType": "historical",
     "percentage": 3,
     "year": 34
@@ -112,19 +112,8 @@
     "family": "",
     "location": "Roman Empire",
     "y": "",
-    "eventType": "uncial",
+    "eventType": "historical",
     "percentage": 9,
     "year": 88
-  },
-  {
-    "title": "",
-    "description": "",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "",
-    "y": "",
-    "eventType": "uncial"
   }
 ]
