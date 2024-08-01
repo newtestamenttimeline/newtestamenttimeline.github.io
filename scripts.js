@@ -329,7 +329,8 @@ function generateLegend() {
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox';
         // Uncheck the minuscules and lectionaries filters by default
-        checkbox.checked = !(eventType.toLowerCase() === 'lectionary' || eventType.toLowerCase() === 'minuscule');
+        const isInitiallyUnchecked = eventType.toLowerCase() === 'lectionary' || eventType.toLowerCase() === 'minuscule';
+        checkbox.checked = !isInitiallyUnchecked; // Only uncheck these types initially
         checkbox.addEventListener('change', (e) => {
             toggleEventsByType(eventType, e.target.checked);
         });
@@ -363,6 +364,7 @@ function toggleEventsByType(eventType, isChecked) {
         event.style.display = isChecked ? 'block' : 'none';
     });
 }
+
 
 
 function toggleSidebar() {
