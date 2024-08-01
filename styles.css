@@ -32,6 +32,17 @@ header {
     letter-spacing: 2px;
 }
 
+#progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: white;
+    z-index: 10;
+    transition: width 0.4s ease;
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
