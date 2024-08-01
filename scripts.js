@@ -425,5 +425,26 @@ new ResizeObserver(() => {
 }).observe(timelineContainer);
 
 document.addEventListener('DOMContentLoaded', function() {
+    setUpProgressBar();
     loadEvents();
 });
+
+function setUpProgressBar() {
+    const header = document.querySelector('header');
+    const progressBar = document.createElement('div');
+    progressBar.id = 'progress-bar';
+    header.appendChild(progressBar);
+
+    let progress = 0;
+    const interval = setInterval(() => {
+        if (progress < 100) {
+            progress += 5;
+            progressBar.style.width = `${progress}%`;
+        } else {
+            clearInterval(interval);
+            // Hide the progress bar after loading is complete
+            setTimeout(() => progressBar.style.display = 'none', 500);
+        }
+    }, 100); // Adjust timing as necessary
+}
+
