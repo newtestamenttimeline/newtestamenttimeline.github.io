@@ -31,89 +31,17 @@ async function loadEvents() {
     try {
         const historicalEvents = await fetch('historical_events.json').then(response => response.json());
         const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
-        const uncialEvents = await fetch('uncials.json').then(response => response.json());
         const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
-        const minusculesEvents = await fetch('minuscules.json').then(response => response.json()); // Fetch the new JSON file
         const churchFathersEvents = await fetch('church_fathers.json').then(response => response.json());
 
-        console.log('Historical Events:', historicalEvents);
-        console.log('Manuscript Events:', manuscriptEvents);
-        console.log('Uncial Events:', uncialEvents);
-        console.log('Church Fathers Events:', churchFathersEvents); // Log the new events
-        console.log('Lectionaries Events:', lectionariesEvents);
-        console.log('Minuscules Events:', minusculesEvents);
-        
+        // Process other events first
+        processEvents(historicalEvents, manuscriptEvents, lectionariesEvents, churchFathersEvents);
 
-        timeline.innerHTML = '';
+        // Load uncial and minuscule events last
+        const uncialEvents = await fetch('uncials.json').then(response => response.json());
+        const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
 
-        // Add year labels
-        addYearLabels();
-
-        historicalEvents.forEach(event => {
-            processEvent(event);
-            addEventToTimeline(event);
-            eventTypes.add(event.eventType);
-        });
-
-        manuscriptEvents.forEach(event => {
-            processEvent(event);
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
-            }
-            if (event.family) {
-                families.add(event.family);
-            }
-            eventTypes.add(event.eventType);
-        });
-
-        uncialEvents.forEach(event => {
-            processEvent(event);
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
-            }
-            if (event.family) {
-                families.add(event.family);
-            }
-            eventTypes.add(event.eventType);
-        });
-
-        minusculesEvents.forEach(event => {  
-            processEvent(event);
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
-            }
-            if (event.family) {
-                families.add(event.family);
-            }
-            eventTypes.add(event.eventType);
-        });
-
-        lectionariesEvents.forEach(event => {  // Process the new events
-            processEvent(event);
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
-            }
-            if (event.family) {
-                families.add(event.family);
-            }
-            eventTypes.add(event.eventType);
-        });
-
-        churchFathersEvents.forEach(event => {  // Process the new events
-            processEvent(event);
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
-            }
-            if (event.family) {
-                families.add(event.family);
-            }
-            eventTypes.add(event.eventType);
-        });
+        processEvents(uncialEvents, minusculesEvents);
 
         generateColorsForEventTypes();
         updateEvents();
@@ -124,6 +52,22 @@ async function loadEvents() {
     } catch (error) {
         console.error('Error loading events:', error);
     }
+}
+
+function processEvents(...eventGroups) {
+    eventGroups.forEach(events => {
+        events.forEach(event => {
+            processEvent(event);
+            addEventToTimeline(event);
+            if (event.texts) {
+                event.texts.forEach(text => texts.add(text));
+            }
+            if (event.family) {
+                families.add(event.family);
+            }
+            eventTypes.add(event.eventType);
+        });
+    });
 }
 
 
