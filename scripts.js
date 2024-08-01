@@ -36,7 +36,7 @@ async function loadEvents() {
         const churchFathersEvents = await fetch('church_fathers.json').then(response => response.json());
 
         // Process initial events
-        processEvents(historicalEvents, manuscriptEvents, uncialEvents, churchFathersEvents);
+        processEvents(historicalEvents, manuscriptEvents, uncialsEvents, churchFathersEvents);
 
         // Initial updates
         generateColorsForEventTypes();
