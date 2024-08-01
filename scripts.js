@@ -53,13 +53,33 @@ async function loadEvents() {
             // Process additional events
             processEvents(lectionariesEvents, minusculesEvents);
 
-            // Update the timeline with new events
+            // Generate colors for any new event types that were loaded later
+            generateColorsForEventTypes();
+
+            // Update the timeline with new events and colors
             updateEvents();
-            generateLegend(); // Update legend if necessary
+            generateLegend(); // Refresh legend to include new event types with colors
         }, 1000); // Adjust the delay (in milliseconds) as needed
     } catch (error) {
         console.error('Error loading events:', error);
     }
+}
+
+function generateColorsForEventTypes() {
+    eventTypes.forEach(eventType => {
+        if (!eventTypeColors[eventType]) {
+            eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+        }
+    });
+
+    // Update colors for existing events
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventType = event.getAttribute('data-event-type');
+        if (eventTypeColors[eventType]) {
+            event.style.backgroundColor = eventTypeColors[eventType];
+        }
+    });
 }
 
 function processEvents(...eventGroups) {
@@ -77,6 +97,7 @@ function processEvents(...eventGroups) {
         });
     });
 }
+
 
 
 
