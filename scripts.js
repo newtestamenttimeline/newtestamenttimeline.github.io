@@ -32,10 +32,12 @@ async function loadEvents() {
         const historicalEvents = await fetch('historical_events.json').then(response => response.json());
         const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
         const uncialEvents = await fetch('uncials.json').then(response => response.json());
+        const churchFathersEvents = await fetch('church_fathers.json').then(response => response.json()); // Fetch the new JSON file
 
         console.log('Historical Events:', historicalEvents);
         console.log('Manuscript Events:', manuscriptEvents);
         console.log('Uncial Events:', uncialEvents);
+        console.log('Church Fathers Events:', churchFathersEvents); // Log the new events
 
         timeline.innerHTML = '';
 
@@ -62,7 +64,18 @@ async function loadEvents() {
 
         uncialEvents.forEach(event => {
             processEvent(event);
-            console.log('Uncial Event:', event);  // Debugging uncial events
+            addEventToTimeline(event);
+            if (event.texts) {
+                event.texts.forEach(text => texts.add(text));
+            }
+            if (event.family) {
+                families.add(event.family);
+            }
+            eventTypes.add(event.eventType);
+        });
+
+        churchFathersEvents.forEach(event => {  // Process the new events
+            processEvent(event);
             addEventToTimeline(event);
             if (event.texts) {
                 event.texts.forEach(text => texts.add(text));
@@ -83,6 +96,7 @@ async function loadEvents() {
         console.error('Error loading events:', error);
     }
 }
+
 
 function addYearLabels() {
     const yearLabels = [
