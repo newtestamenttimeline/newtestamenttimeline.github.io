@@ -1,23 +1,418 @@
 [
-{
-        "year": 50,
-        "title": "Council of Jerusalem",
-        "eventType": "historical",
-        "percentage": 5,
-        "description": "The Council of Jerusalem was a conference of the Christian Apostles that decreed that Gentile Christians did not have to observe Mosaic Law."
-    },
   {
-        "year": 325,
-        "title": "Council of Nicea",
-        "eventType": "historical",
-        "percentage": 32.5,
-        "description": "The Council of Nicea was ecumenical council of almost all Christian churches."
-    },
-    {
-        "year": 1,
-        "title": "Birth of Jesus of Nazareth farts farts farts",
-        "percentage": 1,
-        "eventType": "historical",
-        "description": "The birth of Jesus of Nazareth, who is later recognized as the central figure of Christianity."
-    }
-  ]
+    "title": "The First Epistle of Clement (Clement of Rome)",
+    "description": "A letter to the church in Corinth, addressing issues of leadership and church order. Historical references within the text suggest a date around AD 96. Manuscript:Codex Alexandrinus (5th century) and other manuscripts",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "",
+    "eventType": "Church fathers",
+    "percentage": 10,
+    "year": 96
+  },
+  {
+    "title": "The Didache (Teaching of the Twelve Apostles)",
+    "description": "A manual of church discipline, including teachings on ethics, rituals, and church organization. The content and style of the text, along with historical references, suggest late 1st or early 2nd century. Manuscript:Codex Hierosolymitanus (or Codex H), dated to 1056 AD",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "15",
+    "eventType": "Church fathers",
+    "percentage": 10,
+    "year": 100
+  },
+  {
+    "title": "The Epistle of Barnabas",
+    "description": "An early Christian work addressing Christian ethics and theology, emphasizing allegorical interpretations of the Old Testament. Internal evidence and thematic elements indicate late 1st or early 2nd century. Manuscript:Codex Sinaiticus (4th century) and other later manuscripts",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-15",
+    "eventType": "Church fathers",
+    "percentage": 10,
+    "year": 100
+  },
+  {
+    "title": "The Epistles of Ignatius of Antioch",
+    "description": "A series of letters written to various churches, focusing on church unity, hierarchy, and the Eucharist. Historical context places them around AD 110. Manuscript:Various Greek, Latin, and Syriac manuscripts from the 5th century and later",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "30",
+    "eventType": "Church fathers",
+    "percentage": 11,
+    "year": 110
+  },
+  {
+    "title": "The Shepherd of Hermas",
+    "description": "An apocalyptic text that includes visions, mandates, and parables, emphasizing repentance and discipline. Text's content suggests early to mid-2nd century. Manuscript:Codex Sinaiticus and other fragments",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-30",
+    "eventType": "Church fathers",
+    "percentage": 12,
+    "year": 115
+  },
+  {
+    "title": "The Fragments of Papias",
+    "description": "Writings on the teachings of Jesus, known from later references, with a focus on oral tradition. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "45",
+    "eventType": "Church fathers",
+    "percentage": 12,
+    "year": 115
+  },
+  {
+    "title": "The Epistle of Polycarp to the Philippians",
+    "description": "A letter addressing Christian conduct and warning against heresies. Content and external references suggest early 2nd century. Manuscript:Greek and Latin versions",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-15",
+    "eventType": "Church fathers",
+    "percentage": 13,
+    "year": 125
+  },
+  {
+    "title": "Aristides of Athens",
+    "description": "Christian apologist known for his Apology addressed to Emperor Hadrian. Referenced by Eusebius and other early sources situate it in the early 2nd century. Manuscript:Armenian and Syriac versions preserved.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "30",
+    "eventType": "Church fathers",
+    "percentage": 13,
+    "year": 125
+  },
+  {
+    "title": "The Writings of Justin Martyr",
+    "description": "Includes the First Apology, Second Apology, and Dialogue with Trypho, addressing Christian beliefs and defending against pagan criticisms. Historical references and apologetic context date these writings to mid-2nd century. Manuscript:Several Greek manuscripts from the 14th century onwards",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "15",
+    "eventType": "Church fathers",
+    "percentage": 15,
+    "year": 150
+  },
+  {
+    "title": "Dionysius of Corinth",
+    "description": "Known for letters to various churches. Citations and historical context indicate mid-2nd century. Manuscript:Preserved in quotations by Eusebius and other church fathers.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-15",
+    "eventType": "Church fathers",
+    "percentage": 15,
+    "year": 150
+  },
+  {
+    "title": "The Epistle of Mathetes to Diognetus",
+    "description": "An apologetic work explaining Christianity to a pagan audience. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "15",
+    "eventType": "Church fathers",
+    "percentage": 18,
+    "year": 175
+  },
+  {
+    "title": "The Writings of Irenaeus of Lyons",
+    "description": "His major work, Against Heresies, critiques Gnosticism and establishes early Christian doctrine. Historical references to Gnosticism date these writings to late 2nd century. Manuscript:Latin translations and some Greek fragments",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-15",
+    "eventType": "Church fathers",
+    "percentage": 18,
+    "year": 175
+  },
+  {
+    "title": "The Writings of Athenagoras of Athens",
+    "description": "Includes A Plea for the Christians and On the Resurrection of the Dead, defending Christian beliefs. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "30",
+    "eventType": "Church fathers",
+    "percentage": 18,
+    "year": 175
+  },
+  {
+    "title": "The Writings of Theophilus of Antioch",
+    "description": "His work, To Autolycus, is an apologetic text defending Christianity and critiquing pagan beliefs. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-30",
+    "eventType": "Church fathers",
+    "percentage": 18,
+    "year": 175
+  },
+  {
+    "title": "Melito of Sardis",
+    "description": "Known for fragments of homilies and apologies, especially a Paschal Homily. Cited by early church historians and contextual references place his works in the late 2nd century. Manuscript:Various fragments preserved in later writings.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "45",
+    "eventType": "Church fathers",
+    "percentage": 18,
+    "year": 175
+  },
+  {
+    "title": "Polycrates of Ephesus",
+    "description": "Bishop known for letters concerning Easter controversies. Eusebius and others reference him, situating his letters around the late 2nd century. Manuscript:Fragments preserved in Eusebius' Church History.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-45",
+    "eventType": "Church fathers",
+    "percentage": 18,
+    "year": 175
+  },
+  {
+    "title": "The Writings of Tertullian",
+    "description": "Includes Apology, Against Marcion, and other works addressing heresy, morality, and church practice. Known historical and theological context places them in early 3rd century. Manuscript:Numerous Latin manuscripts from the Middle Ages",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "60",
+    "eventType": "Church fathers",
+    "percentage": 23,
+    "year": 225
+  },
+  {
+    "title": "The Writings of Clement of Alexandria",
+    "description": "Major works include Exhortation to the Greeks, The Instructor, and Stromata, discussing Christian theology and philosophy. Theological content and references suggest early 3rd century. Manuscript:Greek manuscripts from the 9th century and later",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-60",
+    "eventType": "Church fathers",
+    "percentage": 23,
+    "year": 225
+  },
+  {
+    "title": "Caius of Rome",
+    "description": "Theologian known for fragments against Montanism. Contextual analysis from references in early Christian writings. Manuscript:Fragments preserved in other works by Eusebius.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "75",
+    "eventType": "Church fathers",
+    "percentage": 23,
+    "year": 225
+  },
+  {
+    "title": "Julius Africanus",
+    "description": "Historian known for Chronographiae, a chronicle of world history. Historical context and citations by later historians place him in the early 3rd century. Manuscript:Fragments in later chronicles and citations.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-75",
+    "eventType": "Church fathers",
+    "percentage": 23,
+    "year": 225
+  },
+  {
+    "title": "The Writings of Origen",
+    "description": "Includes On First Principles, Contra Celsum, and extensive biblical commentaries. Well-documented life and works provide precise early to mid-3rd century dating. Manuscript:Greek and Latin manuscripts from the 4th century onward",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "135",
+    "eventType": "Church fathers",
+    "percentage": 24,
+    "year": 235
+  },
+  {
+    "title": "The Writings of Hippolytus of Rome",
+    "description": "Includes The Refutation of All Heresies and The Apostolic Tradition, focusing on church order and heresy. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-135",
+    "eventType": "Church fathers",
+    "percentage": 24,
+    "year": 235
+  },
+  {
+    "title": "The Writings of Cyprian of Carthage",
+    "description": "Includes On the Unity of the Church, letters, and treatises on church discipline and unity. Historical context situates these works in mid-3rd century. Manuscript:Latin manuscripts from the 4th century onward",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "135",
+    "eventType": "Church fathers",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "The Writings of Novatian",
+    "description": "Notable for On the Trinity, addressing the nature of God and the Church. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-135",
+    "eventType": "Church fathers",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "The Writings of Gregory Thaumaturgus",
+    "description": "Includes Oration and Panegyric Addressed to Origen, expressing gratitude and theological insights. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "150",
+    "eventType": "Church fathers",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Commodianus",
+    "description": "Christian Latin poet, known for Carmen Apologeticum and other works. Linguistic style and thematic content place his works in the mid-3rd century. Manuscript:Latin manuscripts from later periods.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-150",
+    "eventType": "Church fathers",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "The Writings of Dionysius of Alexandria",
+    "description": "Letters and fragments dealing with various theological and pastoral issues. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-75",
+    "eventType": "Church fathers",
+    "percentage": 27,
+    "year": 265
+  },
+  {
+    "title": "The Writings of Methodius of Olympus",
+    "description": "Known for The Banquet of the Ten Virgins, focusing on eschatology and ethics. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "90",
+    "eventType": "Church fathers",
+    "percentage": 28,
+    "year": 275
+  },
+  {
+    "title": "Victorinus of Pettau",
+    "description": "Known for Commentary on the Apocalypse. Contextual and thematic analysis of his work suggests late 3rd century. Manuscript:Latin manuscripts from the Middle Ages.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-90",
+    "eventType": "Church fathers",
+    "percentage": 28,
+    "year": 275
+  },
+  {
+    "title": "The Writings of Lactantius",
+    "description": "Includes Divine Institutes, addressing Christian doctrine and philosophy. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "30",
+    "eventType": "Church fathers",
+    "percentage": 33,
+    "year": 325
+  },
+  {
+    "title": "The Writings of Arnobius of Sicca",
+    "description": "Includes Against the Heathen, critiquing pagan religion and defending Christianity. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-30",
+    "eventType": "Church fathers",
+    "percentage": 33,
+    "year": 325
+  },
+  {
+    "title": "The Writings of Eusebius of Caesarea",
+    "description": "Although he lived into the post-Nicene period, his early works like Ecclesiastical History and Chronicon are key sources for Ante-Nicene history. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "45",
+    "eventType": "Church fathers",
+    "percentage": 33,
+    "year": 325
+  }
+]
