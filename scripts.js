@@ -32,14 +32,17 @@ async function loadEvents() {
         const historicalEvents = await fetch('historical_events.json').then(response => response.json());
         const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
         const uncialEvents = await fetch('uncials.json').then(response => response.json());
-        const churchFathersEvents = await fetch('church_fathers.json').then(response => response.json()); // Fetch the new JSON file
         const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
+        const minusculesEvents = await fetch('minuscules.json').then(response => response.json()); // Fetch the new JSON file
+        const churchFathersEvents = await fetch('church_fathers.json').then(response => response.json());
 
         console.log('Historical Events:', historicalEvents);
         console.log('Manuscript Events:', manuscriptEvents);
         console.log('Uncial Events:', uncialEvents);
         console.log('Church Fathers Events:', churchFathersEvents); // Log the new events
         console.log('Lectionaries Events:', lectionariesEvents);
+        console.log('Minuscules Events:', minusculesEvents);
+        
 
         timeline.innerHTML = '';
 
@@ -76,7 +79,7 @@ async function loadEvents() {
             eventTypes.add(event.eventType);
         });
 
-        churchFathersEvents.forEach(event => {  // Process the new events
+        minusculesEvents.forEach(event => {  
             processEvent(event);
             addEventToTimeline(event);
             if (event.texts) {
@@ -89,6 +92,18 @@ async function loadEvents() {
         });
 
         lectionariesEvents.forEach(event => {  // Process the new events
+            processEvent(event);
+            addEventToTimeline(event);
+            if (event.texts) {
+                event.texts.forEach(text => texts.add(text));
+            }
+            if (event.family) {
+                families.add(event.family);
+            }
+            eventTypes.add(event.eventType);
+        });
+
+        churchFathersEvents.forEach(event => {  // Process the new events
             processEvent(event);
             addEventToTimeline(event);
             if (event.texts) {
