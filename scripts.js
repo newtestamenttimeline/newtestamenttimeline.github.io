@@ -328,8 +328,8 @@ function generateLegend() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox';
-        // Uncheck the uncial and minuscule filters by default
-        checkbox.checked = !(eventType === 'lectionary' || eventType === 'Minuscule');
+        // Uncheck the minuscules and lectionaries filters by default
+        checkbox.checked = !(eventType.toLowerCase() === 'lectionary' || eventType.toLowerCase() === 'minuscule');
         checkbox.addEventListener('change', (e) => {
             toggleEventsByType(eventType, e.target.checked);
         });
@@ -352,15 +352,10 @@ function generateLegend() {
         legendContainer.appendChild(legendItem);
     });
 
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventType = event.getAttribute('data-event-type');
-        if (eventTypeColors[eventType]) {
-            event.style.backgroundColor = eventTypeColors[eventType];
-        }
-    });
+    // Initially hide events of unchecked types
+    toggleEventsByType('lectionary', false);
+    toggleEventsByType('minuscule', false);
 }
-
 
 function toggleEventsByType(eventType, isChecked) {
     const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
@@ -368,6 +363,7 @@ function toggleEventsByType(eventType, isChecked) {
         event.style.display = isChecked ? 'block' : 'none';
     });
 }
+
 
 function toggleSidebar() {
     sidebar.classList.toggle('collapsed');
