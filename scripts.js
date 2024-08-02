@@ -129,6 +129,14 @@ function generateColorsForEventTypes() {
     });
 }
 
+// Define the missing function getColorForEventType
+function getColorForEventType(eventType) {
+    if (!eventTypeColors[eventType]) {
+        eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    }
+    return eventTypeColors[eventType];
+}
+
 function addYearLabels() {
     const yearLabels = [
         { year: 0, left: '0%' },
