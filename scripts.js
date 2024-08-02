@@ -421,8 +421,60 @@ new ResizeObserver(() => {
     timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
 }).observe(timelineContainer);
 
+// Function to set up the progress bar
+function setUpProgressBar() {
+    const progressBar = document.getElementById('progress-bar');
+    progressBar.style.width = '0%';
+}
+
+// Function to update the progress bar
+function updateProgressBar(progress) {
+    const progressBar = document.getElementById('progress-bar');
+    progressBar.style.width = progress + '%';
+}
+
+// Modify loadEvents function to update progress
+async function loadEvents() {
+    try {
+        const totalFiles = 4; // Number of JSON files to load
+        let filesLoaded = 0;
+
+        // Fetch and process initial events
+        const historicalEvents = await fetch('historical_events.json').then(response => response.json());
+        filesLoaded++;
+        updateProgressBar((filesLoaded / totalFiles) * 100);
+
+        const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
+        filesLoaded++;
+        updateProgressBar((filesLoaded / totalFiles) * 100);
+
+        const uncialsEvents = await fetch('uncials.json').then(response => response.json());
+        filesLoaded++;
+        updateProgressBar((filesLoaded / totalFiles) * 100);
+
+        const churchFathersEvents = await fetch('church_fathers.json').then(response => response.json());
+        filesLoaded++;
+        updateProgressBar((filesLoaded / totalFiles) * 100);
+
+        // Process initial events
+        processEvents(historicalEvents, manuscriptEvents, uncialsEvents, churchFathersEvents);
+
+        // Initial updates
+        generateColorsForEventTypes();
+        updateEvents();
+        initializeFilters();
+        populateTextList();
+        populateFamilyList();
+        generateLegend();
+
+    } catch (error) {
+        console.error('Error loading events:', error);
+    }
+}
+
 // Event listener for document ready
 document.addEventListener('DOMContentLoaded', function() {
     setUpProgressBar();
     loadEvents();
 });
+
