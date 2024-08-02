@@ -46,61 +46,41 @@ async function loadEvents() {
         processEvents(historicalEvents, manuscriptEvents, uncialsEvents, churchFathersEvents);
 
         // Initial updates
+        generateColorsForEventTypes();
         updateEvents();
         initializeFilters();
         populateTextList();
         populateFamilyList();
         generateLegend();
 
-        // Setup listeners for dynamic loading
-        setupDynamicLoading();
+        // Defer loading additional events (remove setTimeout)
     } catch (error) {
         console.error('Error loading events:', error);
     }
 }
 
-function setupDynamicLoading() {
-    const minusculeCheckbox = document.querySelector('input[type="checkbox"][data-event-type="Minuscule"]');
-    const lectionaryCheckbox = document.querySelector('input[type="checkbox"][data-event-type="Lectionary"]');
+// New function to load deferred event types when filters are checked
+async function loadDeferredEvents() {
+    try {
+        const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
+        const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
 
-    minusculeCheckbox.addEventListener('change', async (e) => {
-        if (e.target.checked) {
-            const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
-            processEvents(minusculesEvents);
-            updateEvents();
-            populateTextList(); // Repopulate text list
-            populateFamilyList(); // Repopulate family list
-            generateLegend(); // Refresh legend to include new event types with colors
-        }
-    });
+        // Process deferred events
+        processEvents(lectionariesEvents, minusculesEvents);
 
-    lectionaryCheckbox.addEventListener('change', async (e) => {
-        if (e.target.checked) {
-            const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
-            processEvents(lectionariesEvents);
-            updateEvents();
-            populateTextList(); // Repopulate text list
-            populateFamilyList(); // Repopulate family list
-            generateLegend(); // Refresh legend to include new event types with colors
-        }
-    });
+        // Generate colors for any new event types that were loaded later
+        generateColorsForEventTypes();
+
+        // Update the timeline with new events and colors
+        updateEvents();
+        populateTextList(); // Repopulate text list
+        populateFamilyList(); // Repopulate family list
+        generateLegend(); // Refresh legend to include new event types with colors
+    } catch (error) {
+        console.error('Error loading deferred events:', error);
+    }
 }
 
-function processEvents(...eventGroups) {
-    eventGroups.forEach(events => {
-        events.forEach(event => {
-            processEvent(event);
-            addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
-            }
-            if (event.family) {
-                families.add(event.family);
-            }
-            eventTypes.add(event.eventType);
-        });
-    });
-}
 
 function populateTextList() {
     const textList = document.getElementById('text-list');
@@ -319,9 +299,14 @@ function generateLegend() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox';
-        checkbox.checked = !(eventType === 'Lectionary' || eventType === 'Minuscule'); // Uncheck initially
-        checkbox.setAttribute('data-event-type', eventType);
-        checkbox.addEventListener('change', (e) => {
+        
+        // Uncheck the "minuscules" and "lectionaries" filters by default
+        checkbox.checked = !(eventType === 'minuscules' || eventType === 'lectionaries');
+
+        checkbox.addEventListener('change', async (e) => {
+            if ((eventType === 'minuscules' || eventType === 'lectionaries') && e.target.checked) {
+                await loadDeferredEvents();
+            }
             toggleEventsByType(eventType, e.target.checked);
         });
 
@@ -351,6 +336,7 @@ function generateLegend() {
         }
     });
 }
+
 
 
 function toggleEventsByType(eventType, isChecked) {
