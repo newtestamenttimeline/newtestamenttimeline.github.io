@@ -14,6 +14,7 @@ const step = 5;
 
 const eventTypeColors = {};
 
+// Toggle legend visibility
 document.getElementById('toggle-legend').addEventListener('click', () => {
     const legend = document.getElementById('legend');
     legend.classList.toggle('collapsed');
@@ -21,13 +22,20 @@ document.getElementById('toggle-legend').addEventListener('click', () => {
     arrow.classList.toggle('collapsed');
 });
 
+// Toggle sidebar visibility
 document.getElementById('toggle-sidebar').addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
     const arrow = document.querySelector('#toggle-sidebar .arrow-reverse');
     arrow.classList.toggle('collapsed');
 });
 
-async function loadEvents() {
+// Load initial events when the document is ready
+document.addEventListener('DOMContentLoaded', function() {
+    loadInitialEvents();
+});
+
+// Load initial events from JSON files
+async function loadInitialEvents() {
     try {
         // Fetch and process initial events
         const historicalEvents = await fetch('historical_events.json').then(response => response.json());
@@ -45,29 +53,34 @@ async function loadEvents() {
         populateTextList();
         populateFamilyList();
         generateLegend();
-
-        // Defer loading additional events
-        setTimeout(async () => {
-            const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
-            const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
-
-            // Process additional events
-            processEvents(lectionariesEvents, minusculesEvents);
-
-            // Generate colors for any new event types that were loaded later
-            generateColorsForEventTypes();
-
-            // Update the timeline with new events and colors
-            updateEvents();
-            populateTextList(); // Repopulate text list
-            populateFamilyList(); // Repopulate family list
-            generateLegend(); // Refresh legend to include new event types with colors
-        }, 1000); // Adjust the delay (in milliseconds) as needed
     } catch (error) {
         console.error('Error loading events:', error);
     }
 }
 
+// Handle the "Load More Events" button click
+document.getElementById('load-more-event-types').addEventListener('click', async () => {
+    try {
+        const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
+        const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
+
+        // Process additional events
+        processEvents(lectionariesEvents, minusculesEvents);
+
+        // Generate colors for any new event types that were loaded later
+        generateColorsForEventTypes();
+
+        // Update the timeline with new events and colors
+        updateEvents();
+        populateTextList(); // Repopulate text list
+        populateFamilyList(); // Repopulate family list
+        generateLegend(); // Refresh legend to include new event types with colors
+    } catch (error) {
+        console.error('Error loading additional events:', error);
+    }
+});
+
+// Process and add events to the timeline
 function processEvents(...eventGroups) {
     eventGroups.forEach(events => {
         events.forEach(event => {
@@ -84,6 +97,7 @@ function processEvents(...eventGroups) {
     });
 }
 
+// Populate the text filter list
 function populateTextList() {
     const textList = document.getElementById('text-list');
     textList.innerHTML = '';
@@ -97,6 +111,7 @@ function populateTextList() {
     });
 }
 
+// Populate the family filter list
 function populateFamilyList() {
     const familyList = document.getElementById('family-list');
     familyList.innerHTML = '';
@@ -110,6 +125,7 @@ function populateFamilyList() {
     });
 }
 
+// Generate random colors for each event type
 function generateColorsForEventTypes() {
     eventTypes.forEach(eventType => {
         if (!eventTypeColors[eventType]) {
@@ -127,8 +143,7 @@ function generateColorsForEventTypes() {
     });
 }
 
-
-
+// Add year labels to the timeline
 function addYearLabels() {
     const yearLabels = [
         { year: 0, left: '0%' },
@@ -151,6 +166,7 @@ function addYearLabels() {
     });
 }
 
+// Process an individual event
 function processEvent(event) {
     if (event.year) {
         event.percentage = (event.year / 1400) * 100;
@@ -164,6 +180,7 @@ function processEvent(event) {
     console.log('Processed Event:', event);
 }
 
+// Add an event to the timeline
 function addEventToTimeline(event) {
     console.log('Adding event to timeline:', event);
     if (document.querySelector(`.event[title="${event.title}"]`)) {
@@ -195,6 +212,7 @@ function addEventToTimeline(event) {
     });
 }
 
+// Update event listeners for each event
 function updateEvents() {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
@@ -220,32 +238,7 @@ function updateEvents() {
     });
 }
 
-function populateTextList() {
-    const textList = document.getElementById('text-list');
-    textList.innerHTML = '';
-    texts.forEach(text => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
-        listItem.querySelector('input').addEventListener('change', (e) => {
-            filterEventsByText(text, e.target.checked);
-        });
-        textList.appendChild(listItem);
-    });
-}
-
-function populateFamilyList() {
-    const familyList = document.getElementById('family-list');
-    familyList.innerHTML = '';
-    families.forEach(family => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
-        listItem.querySelector('input').addEventListener('change', (e) => {
-            filterEventsByFamily(family, e.target.checked);
-        });
-        familyList.appendChild(listItem);
-    });
-}
-
+// Filter events based on selected texts
 function filterEventsByText(text, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
@@ -258,6 +251,7 @@ function filterEventsByText(text, isChecked) {
     });
 }
 
+// Filter events based on selected family
 function filterEventsByFamily(family, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
@@ -270,15 +264,7 @@ function filterEventsByFamily(family, isChecked) {
     });
 }
 
-const css = `
-    .greyed-out {
-        display: none;
-    }
-`;
-const style = document.createElement('style');
-style.appendChild(document.createTextNode(css));
-document.head.appendChild(style);
-
+// Initialize filters for text and family lists
 function initializeFilters() {
     const textList = document.getElementById('text-list');
     const familyList = document.getElementById('family-list');
@@ -302,6 +288,7 @@ function initializeFilters() {
     });
 }
 
+// Generate colors for each event type
 function generateColorsForEventTypes() {
     eventTypes.forEach(eventType => {
         if (!eventTypeColors[eventType]) {
@@ -310,10 +297,12 @@ function generateColorsForEventTypes() {
     });
 }
 
+// Get color for a specific event type
 function getColorForEventType(eventType) {
     return eventTypeColors[eventType];
 }
 
+// Generate legend items for event types
 function generateLegend() {
     legendContainer.innerHTML = '';
 
@@ -328,7 +317,6 @@ function generateLegend() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox';
-        // Uncheck the uncial and minuscule filters by default
         checkbox.checked = !(eventType === 'lectionary' || eventType === 'Minuscule');
         checkbox.addEventListener('change', (e) => {
             toggleEventsByType(eventType, e.target.checked);
@@ -361,7 +349,7 @@ function generateLegend() {
     });
 }
 
-
+// Toggle events visibility by type
 function toggleEventsByType(eventType, isChecked) {
     const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
     events.forEach(event => {
@@ -369,10 +357,12 @@ function toggleEventsByType(eventType, isChecked) {
     });
 }
 
+// Toggle sidebar visibility
 function toggleSidebar() {
     sidebar.classList.toggle('collapsed');
 }
 
+// Zoom controls
 document.getElementById('zoom-in').addEventListener('click', () => {
     scale *= 1.2;
     timeline.style.transform = `scale(${scale})`;
@@ -383,6 +373,7 @@ document.getElementById('zoom-out').addEventListener('click', () => {
     timeline.style.transform = `scale(${scale})`;
 });
 
+// Double-click to center timeline
 timelineContainer.addEventListener('dblclick', (e) => {
     const rect = timelineContainer.getBoundingClientRect();
     const offsetX = e.clientX - rect.left;
@@ -398,6 +389,7 @@ timelineContainer.addEventListener('dblclick', (e) => {
     timeline.style.transform = `scale(${scale})`;
 });
 
+// Timeline drag controls
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -424,31 +416,7 @@ timelineContainer.addEventListener('mousemove', (e) => {
     timelineContainer.scrollLeft = scrollLeft - walk;
 });
 
+// Center timeline on window resize
 new ResizeObserver(() => {
     timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
 }).observe(timelineContainer);
-
-function setUpProgressBar() {
-    const header = document.querySelector('header');
-    const progressBar = document.createElement('div');
-    progressBar.id = 'progress-bar';
-    header.appendChild(progressBar);
-
-    let progress = 0;
-    const interval = setInterval(() => {
-        if (progress < 100) {
-            progress += 5;
-            progressBar.style.width = `${progress}%`;
-        } else {
-            clearInterval(interval);
-            // Hide the progress bar after loading is complete
-            setTimeout(() => progressBar.style.display = 'none', 500);
-        }
-    }, 100); // Adjust timing as necessary
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    setUpProgressBar();
-    loadEvents();
-});
-

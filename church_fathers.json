@@ -402,6 +402,34 @@
     "percentage": 33,
     "year": 325
   },
+ {
+    "title": "minuscule 720",
+    "description": "",
+    "texts": [
+      "Theophylact Commentary on Gospels",
+      "Pauline Epistles",
+      "General Epistles"
+    ],
+    "family": "",
+    "location": "",
+    "y": "15",
+    "eventType": "Minuscule",
+    "percentage": 114,
+    "year": 1138
+  },
+   {
+    "title": "ℓ 1043",
+    "description": "",
+    "texts": [
+      "Gospels"
+    ],
+    "family": "",
+    "location": "",
+    "y": "15",
+    "eventType": "lectionary",
+    "percentage": 45,
+    "year": 450
+  },
   {
     "title": "The Writings of Eusebius of Caesarea",
     "description": "Although he lived into the post-Nicene period, his early works like Ecclesiastical History and Chronicon are key sources for Ante-Nicene history. Manuscript:",
