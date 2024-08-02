@@ -47,7 +47,7 @@ async function loadEvents() {
         initializeFilters();
         populateTextList();
         populateFamilyList();
-        generateLegend();
+        generateLegend();  // Make sure this is called to create legend items
 
     } catch (error) {
         console.error('Error loading events:', error);
