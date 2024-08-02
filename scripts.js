@@ -29,13 +29,16 @@ document.getElementById('toggle-sidebar').addEventListener('click', () => {
 
 async function loadInitialEvents() {
     try {
+        // Fetch and process initial events
         const historicalEvents = await fetch('historical_events.json').then(response => response.json());
         const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
         const uncialsEvents = await fetch('uncials.json').then(response => response.json());
         const churchFathersEvents = await fetch('church_fathers.json').then(response => response.json());
 
+        // Process initial events
         processEvents(historicalEvents, manuscriptEvents, uncialsEvents, churchFathersEvents);
 
+        // Initial updates
         generateColorsForEventTypes();
         updateEvents();
         initializeFilters();
@@ -47,24 +50,25 @@ async function loadInitialEvents() {
     }
 }
 
-async function loadAdditionalEvents() {
+async function loadMoreEvents() {
     try {
+        // Fetch additional events
         const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
         const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
 
+        // Process additional events
         processEvents(lectionariesEvents, minusculesEvents);
 
+        // Update the timeline with new events and colors
         generateColorsForEventTypes();
         updateEvents();
-        populateTextList();
-        populateFamilyList();
-        generateLegend();
+        populateTextList(); // Repopulate text list
+        populateFamilyList(); // Repopulate family list
+        generateLegend(); // Refresh legend to include new event types with colors
     } catch (error) {
-        console.error('Error loading additional events:', error);
+        console.error('Error loading more events:', error);
     }
 }
-
-document.getElementById('load-more-event-types').addEventListener('click', loadAdditionalEvents);
 
 function processEvents(...eventGroups) {
     eventGroups.forEach(events => {
@@ -115,6 +119,7 @@ function generateColorsForEventTypes() {
         }
     });
 
+    // Update colors for existing events
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
         const eventType = event.getAttribute('data-event-type');
@@ -176,7 +181,7 @@ function addEventToTimeline(event) {
     newEvent.setAttribute('data-event-type', event.eventType);
 
     let newLeft = (event.percentage * timeline.offsetWidth) / 100;
-    let newTop = parseFloat(event.y);
+    let newTop = parseFloat(event.y); // Get y coordinate directly from the JSON
 
     newEvent.style.left = `${newLeft}px`;
     newEvent.style.top = `${newTop}px`;
@@ -184,6 +189,7 @@ function addEventToTimeline(event) {
 
     timeline.appendChild(newEvent);
 
+    // Ensure year labels are always visible
     document.querySelectorAll('.year-label').forEach(label => {
         timeline.appendChild(label);
     });
@@ -270,18 +276,6 @@ function initializeFilters() {
     });
 }
 
-function generateColorsForEventTypes() {
-    eventTypes.forEach(eventType => {
-        if (!eventTypeColors[eventType]) {
-            eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-        }
-    });
-}
-
-function getColorForEventType(eventType) {
-    return eventTypeColors[eventType];
-}
-
 function generateLegend() {
     legendContainer.innerHTML = '';
 
@@ -296,6 +290,7 @@ function generateLegend() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox';
+        // Uncheck the uncial and minuscule filters by default
         checkbox.checked = !(eventType === 'lectionary' || eventType === 'Minuscule');
         checkbox.addEventListener('change', (e) => {
             toggleEventsByType(eventType, e.target.checked);
@@ -309,7 +304,7 @@ function generateLegend() {
         questionMark.textContent = '?';
         const tooltip = document.createElement('span');
         tooltip.className = 'tooltip';
-        tooltip.textContent = `Filter events by ${eventType} type!`;
+        tooltip.textContent = `Filter events by ${eventType} type`;
         questionMark.appendChild(tooltip);
         legendItem.appendChild(checkbox);
         legendItem.appendChild(legendColor);
@@ -396,4 +391,6 @@ new ResizeObserver(() => {
 
 document.addEventListener('DOMContentLoaded', function() {
     loadInitialEvents();
+    // Add an event listener to load more events when the button is clicked
+    document.getElementById('load-more-event-types').addEventListener('click', loadMoreEvents);
 });
