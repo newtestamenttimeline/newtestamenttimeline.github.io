@@ -420,3 +420,9 @@ timelineContainer.addEventListener('mousemove', (e) => {
 new ResizeObserver(() => {
     timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
 }).observe(timelineContainer);
+
+// Event listener for document ready
+document.addEventListener('DOMContentLoaded', function() {
+    setUpProgressBar();
+    loadEvents();
+});
