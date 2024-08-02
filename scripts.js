@@ -280,7 +280,6 @@ function generateLegend() {
         legendItem.appendChild(label);
         legendItem.appendChild(questionMark);
 
-        // Add Load More button for deferred event types
         if (eventType === 'minuscules' || eventType === 'lectionaries') {
             const loadMoreButton = document.createElement('button');
             loadMoreButton.textContent = 'Load More';
@@ -351,6 +350,10 @@ const css = `
         padding: 5px 10px;
         cursor: pointer;
         border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .load-more-btn:hover {
+        background-color: #2980b9;
     }
     .load-more-btn:disabled {
         background-color: #aaa;
