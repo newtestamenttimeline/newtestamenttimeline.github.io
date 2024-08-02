@@ -8,6 +8,10 @@ let selectedEvent = null;
 const texts = new Set();
 const families = new Set();
 const eventTypes = new Set();
+const dotDiameter = 12;
+const spacing = 15;
+const step = 5;
+
 const eventTypeColors = {};
 
 document.getElementById('toggle-legend').addEventListener('click', () => {
@@ -23,18 +27,15 @@ document.getElementById('toggle-sidebar').addEventListener('click', () => {
     arrow.classList.toggle('collapsed');
 });
 
-async function loadEvents() {
+async function loadInitialEvents() {
     try {
-        // Fetch and process initial events
         const historicalEvents = await fetch('historical_events.json').then(response => response.json());
         const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
         const uncialsEvents = await fetch('uncials.json').then(response => response.json());
         const churchFathersEvents = await fetch('church_fathers.json').then(response => response.json());
 
-        // Process initial events
         processEvents(historicalEvents, manuscriptEvents, uncialsEvents, churchFathersEvents);
 
-        // Initial updates
         generateColorsForEventTypes();
         updateEvents();
         initializeFilters();
@@ -42,34 +43,28 @@ async function loadEvents() {
         populateFamilyList();
         generateLegend();
     } catch (error) {
-        console.error('Error loading events:', error);
+        console.error('Error loading initial events:', error);
     }
 }
 
-// Load more events on clicking the "Load More" button
-document.getElementById('load-more-all').addEventListener('click', async () => {
+async function loadAdditionalEvents() {
     try {
         const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
         const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
 
-        // Process additional events
         processEvents(lectionariesEvents, minusculesEvents);
 
-        // Generate colors for any new event types that were loaded later
         generateColorsForEventTypes();
-
-        // Update the timeline with new events and colors
         updateEvents();
-        populateTextList(); // Repopulate text list
-        populateFamilyList(); // Repopulate family list
-        generateLegend(); // Refresh legend to include new event types with colors
-
-        // Hide the button after loading if desired
-        document.getElementById('load-more-all').style.display = 'none';
+        populateTextList();
+        populateFamilyList();
+        generateLegend();
     } catch (error) {
-        console.error('Error loading more events:', error);
+        console.error('Error loading additional events:', error);
     }
-});
+}
+
+document.getElementById('load-more-event-types').addEventListener('click', loadAdditionalEvents);
 
 function processEvents(...eventGroups) {
     eventGroups.forEach(events => {
@@ -120,7 +115,6 @@ function generateColorsForEventTypes() {
         }
     });
 
-    // Update colors for existing events
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
         const eventType = event.getAttribute('data-event-type');
@@ -182,7 +176,7 @@ function addEventToTimeline(event) {
     newEvent.setAttribute('data-event-type', event.eventType);
 
     let newLeft = (event.percentage * timeline.offsetWidth) / 100;
-    let newTop = parseFloat(event.y); // Get y coordinate directly from the JSON
+    let newTop = parseFloat(event.y);
 
     newEvent.style.left = `${newLeft}px`;
     newEvent.style.top = `${newTop}px`;
@@ -190,7 +184,6 @@ function addEventToTimeline(event) {
 
     timeline.appendChild(newEvent);
 
-    // Ensure year labels are always visible
     document.querySelectorAll('.year-label').forEach(label => {
         timeline.appendChild(label);
     });
@@ -303,7 +296,7 @@ function generateLegend() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox';
-        checkbox.checked = true;
+        checkbox.checked = !(eventType === 'lectionary' || eventType === 'Minuscule');
         checkbox.addEventListener('change', (e) => {
             toggleEventsByType(eventType, e.target.checked);
         });
@@ -402,5 +395,5 @@ new ResizeObserver(() => {
 }).observe(timelineContainer);
 
 document.addEventListener('DOMContentLoaded', function() {
-    loadEvents();
+    loadInitialEvents();
 });
