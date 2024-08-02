@@ -8,10 +8,6 @@ let selectedEvent = null;
 const texts = new Set();
 const families = new Set();
 const eventTypes = new Set();
-const dotDiameter = 12;
-const spacing = 15;
-const step = 5;
-
 const eventTypeColors = {};
 
 document.getElementById('toggle-legend').addEventListener('click', () => {
@@ -45,7 +41,6 @@ async function loadEvents() {
         populateTextList();
         populateFamilyList();
         generateLegend();
-
     } catch (error) {
         console.error('Error loading events:', error);
     }
@@ -69,7 +64,7 @@ document.getElementById('load-more-all').addEventListener('click', async () => {
         populateFamilyList(); // Repopulate family list
         generateLegend(); // Refresh legend to include new event types with colors
 
-        // Hide the button after loading
+        // Hide the button after loading if desired
         document.getElementById('load-more-all').style.display = 'none';
     } catch (error) {
         console.error('Error loading more events:', error);
@@ -308,8 +303,7 @@ function generateLegend() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox';
-        // Uncheck the uncial and minuscule filters by default
-        checkbox.checked = !(eventType === 'lectionary' || eventType === 'Minuscule');
+        checkbox.checked = true;
         checkbox.addEventListener('change', (e) => {
             toggleEventsByType(eventType, e.target.checked);
         });
