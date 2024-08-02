@@ -54,7 +54,7 @@ async function loadEvents() {
     }
 }
 
-// New function to load deferred event types when "Load More" is clicked
+// Function to load deferred events when "Load More" is clicked
 async function loadDeferredEvents(eventType) {
     try {
         let eventsToLoad;
