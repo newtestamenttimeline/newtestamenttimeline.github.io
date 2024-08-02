@@ -14,7 +14,6 @@ const step = 5;
 
 const eventTypeColors = {};
 
-// Event listener for the legend toggle button
 document.getElementById('toggle-legend').addEventListener('click', () => {
     const legend = document.getElementById('legend');
     legend.classList.toggle('collapsed');
@@ -22,14 +21,12 @@ document.getElementById('toggle-legend').addEventListener('click', () => {
     arrow.classList.toggle('collapsed');
 });
 
-// Event listener for the sidebar toggle button
 document.getElementById('toggle-sidebar').addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
     const arrow = document.querySelector('#toggle-sidebar .arrow-reverse');
     arrow.classList.toggle('collapsed');
 });
 
-// Function to load initial events
 async function loadEvents() {
     try {
         // Fetch and process initial events
@@ -47,25 +44,21 @@ async function loadEvents() {
         initializeFilters();
         populateTextList();
         populateFamilyList();
-        generateLegend();  // Make sure this is called to create legend items
+        generateLegend();
 
     } catch (error) {
         console.error('Error loading events:', error);
     }
 }
 
-// Function to load deferred events when "Load More" is clicked
-async function loadDeferredEvents(eventType) {
+// Load more events on clicking the "Load More" button
+document.getElementById('load-more-all').addEventListener('click', async () => {
     try {
-        let eventsToLoad;
-        if (eventType === 'lectionaries') {
-            eventsToLoad = await fetch('lectionaries.json').then(response => response.json());
-        } else if (eventType === 'minuscules') {
-            eventsToLoad = await fetch('minuscules.json').then(response => response.json());
-        }
+        const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
+        const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
 
-        // Process deferred events
-        processEvents(eventsToLoad);
+        // Process additional events
+        processEvents(lectionariesEvents, minusculesEvents);
 
         // Generate colors for any new event types that were loaded later
         generateColorsForEventTypes();
@@ -75,12 +68,14 @@ async function loadDeferredEvents(eventType) {
         populateTextList(); // Repopulate text list
         populateFamilyList(); // Repopulate family list
         generateLegend(); // Refresh legend to include new event types with colors
-    } catch (error) {
-        console.error('Error loading deferred events:', error);
-    }
-}
 
-// Function to process and add events to the timeline
+        // Hide the button after loading
+        document.getElementById('load-more-all').style.display = 'none';
+    } catch (error) {
+        console.error('Error loading more events:', error);
+    }
+});
+
 function processEvents(...eventGroups) {
     eventGroups.forEach(events => {
         events.forEach(event => {
@@ -97,7 +92,6 @@ function processEvents(...eventGroups) {
     });
 }
 
-// Function to populate text filters
 function populateTextList() {
     const textList = document.getElementById('text-list');
     textList.innerHTML = '';
@@ -111,7 +105,6 @@ function populateTextList() {
     });
 }
 
-// Function to populate family filters
 function populateFamilyList() {
     const familyList = document.getElementById('family-list');
     familyList.innerHTML = '';
@@ -125,7 +118,6 @@ function populateFamilyList() {
     });
 }
 
-// Function to generate colors for event types
 function generateColorsForEventTypes() {
     eventTypes.forEach(eventType => {
         if (!eventTypeColors[eventType]) {
@@ -143,7 +135,28 @@ function generateColorsForEventTypes() {
     });
 }
 
-// Function to process individual event
+function addYearLabels() {
+    const yearLabels = [
+        { year: 0, left: '0%' },
+        { year: 100, left: '7%' },
+        { year: 150, left: '11%' },
+        { year: 300, left: '22%' },
+        { year: 500, left: '32%' },
+        { year: 750, left: '53%' },
+        { year: 1000, left: '71%' },
+        { year: 1250, left: '90%' },
+        { year: 1400, left: '100%' }
+    ];
+
+    yearLabels.forEach(label => {
+        const yearLabel = document.createElement('div');
+        yearLabel.className = 'year-label';
+        yearLabel.style.left = label.left;
+        yearLabel.innerText = label.year;
+        timeline.appendChild(yearLabel);
+    });
+}
+
 function processEvent(event) {
     if (event.year) {
         event.percentage = (event.year / 1400) * 100;
@@ -157,7 +170,6 @@ function processEvent(event) {
     console.log('Processed Event:', event);
 }
 
-// Function to add an event to the timeline
 function addEventToTimeline(event) {
     console.log('Adding event to timeline:', event);
     if (document.querySelector(`.event[title="${event.title}"]`)) {
@@ -189,7 +201,6 @@ function addEventToTimeline(event) {
     });
 }
 
-// Function to update event interactions
 function updateEvents() {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
@@ -215,7 +226,39 @@ function updateEvents() {
     });
 }
 
-// Initialize filters
+function filterEventsByText(text, isChecked) {
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventTexts = JSON.parse(event.getAttribute('data-texts'));
+        if (isChecked && eventTexts.includes(text)) {
+            event.classList.remove('greyed-out');
+        } else if (!isChecked && eventTexts.includes(text)) {
+            event.classList.add('greyed-out');
+        }
+    });
+}
+
+function filterEventsByFamily(family, isChecked) {
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventFamily = event.getAttribute('data-family');
+        if (isChecked && eventFamily === family) {
+            event.classList.remove('greyed-out');
+        } else if (!isChecked && eventFamily === family) {
+            event.classList.add('greyed-out');
+        }
+    });
+}
+
+const css = `
+    .greyed-out {
+        display: none;
+    }
+`;
+const style = document.createElement('style');
+style.appendChild(document.createTextNode(css));
+document.head.appendChild(style);
+
 function initializeFilters() {
     const textList = document.getElementById('text-list');
     const familyList = document.getElementById('family-list');
@@ -239,12 +282,18 @@ function initializeFilters() {
     });
 }
 
-// Function to get color for an event type
+function generateColorsForEventTypes() {
+    eventTypes.forEach(eventType => {
+        if (!eventTypeColors[eventType]) {
+            eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+        }
+    });
+}
+
 function getColorForEventType(eventType) {
     return eventTypeColors[eventType];
 }
 
-// Function to generate the legend
 function generateLegend() {
     legendContainer.innerHTML = '';
 
@@ -259,8 +308,8 @@ function generateLegend() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox';
-        checkbox.checked = true; // Initially check all filters
-
+        // Uncheck the uncial and minuscule filters by default
+        checkbox.checked = !(eventType === 'lectionary' || eventType === 'Minuscule');
         checkbox.addEventListener('change', (e) => {
             toggleEventsByType(eventType, e.target.checked);
         });
@@ -280,17 +329,6 @@ function generateLegend() {
         legendItem.appendChild(label);
         legendItem.appendChild(questionMark);
 
-        if (eventType === 'minuscules' || eventType === 'lectionaries') {
-            const loadMoreButton = document.createElement('button');
-            loadMoreButton.textContent = 'Load More';
-            loadMoreButton.className = 'load-more-btn';
-            loadMoreButton.addEventListener('click', async () => {
-                await loadDeferredEvents(eventType);
-                loadMoreButton.disabled = true; // Disable button after loading
-            });
-            legendItem.appendChild(loadMoreButton);
-        }
-
         legendContainer.appendChild(legendItem);
     });
 
@@ -303,7 +341,6 @@ function generateLegend() {
     });
 }
 
-// Function to toggle events by type
 function toggleEventsByType(eventType, isChecked) {
     const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
     events.forEach(event => {
@@ -311,108 +348,10 @@ function toggleEventsByType(eventType, isChecked) {
     });
 }
 
-// Function to filter events by text
-function filterEventsByText(text, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-        if (isChecked && eventTexts.includes(text)) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventTexts.includes(text)) {
-            event.classList.add('greyed-out');
-        }
-    });
-}
-
-// Function to filter events by family
-function filterEventsByFamily(family, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventFamily = event.getAttribute('data-family');
-        if (isChecked && eventFamily === family) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventFamily === family) {
-            event.classList.add('greyed-out');
-        }
-    });
-}
-
-// Additional CSS for greyed-out events
-const css = `
-    .greyed-out {
-        display: none;
-    }
-    .load-more-btn {
-        margin-left: 10px;
-        background-color: #3498db;
-        color: #fff;
-        border: none;
-        padding: 5px 10px;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-    }
-    .load-more-btn:hover {
-        background-color: #2980b9;
-    }
-    .load-more-btn:disabled {
-        background-color: #aaa;
-        cursor: not-allowed;
-    }
-`;
-const style = document.createElement('style');
-style.appendChild(document.createTextNode(css));
-document.head.appendChild(style);
-
-// Function to add year labels
-function addYearLabels() {
-    const yearLabels = [
-        { year: 0, left: '0%' },
-        { year: 100, left: '7%' },
-        { year: 150, left: '11%' },
-        { year: 300, left: '22%' },
-        { year: 500, left: '32%' },
-        { year: 750, left: '53%' },
-        { year: 1000, left: '71%' },
-        { year: 1250, left: '90%' },
-        { year: 1400, left: '100%' }
-    ];
-
-    yearLabels.forEach(label => {
-        const yearLabel = document.createElement('div');
-        yearLabel.className = 'year-label';
-        yearLabel.style.left = label.left;
-        yearLabel.innerText = label.year;
-        timeline.appendChild(yearLabel);
-    });
-}
-
-// Function to set up the progress bar
-function setUpProgressBar() {
-    const header = document.querySelector('header');
-    const progressBar = document.createElement('div');
-    progressBar.id = 'progress-bar';
-    header.appendChild(progressBar);
-
-    let progress = 0;
-    const interval = setInterval(() => {
-        if (progress < 100) {
-            progress += 5;
-            progressBar.style.width = `${progress}%`;
-        } else {
-            clearInterval(interval);
-            // Hide the progress bar after loading is complete
-            setTimeout(() => progressBar.style.display = 'none', 500);
-        }
-    }, 100); // Adjust timing as necessary
-}
-
-// Function to toggle the sidebar
 function toggleSidebar() {
     sidebar.classList.toggle('collapsed');
 }
 
-// Zoom in and out functionality
 document.getElementById('zoom-in').addEventListener('click', () => {
     scale *= 1.2;
     timeline.style.transform = `scale(${scale})`;
@@ -423,7 +362,6 @@ document.getElementById('zoom-out').addEventListener('click', () => {
     timeline.style.transform = `scale(${scale})`;
 });
 
-// Scroll and drag functionality for the timeline
 timelineContainer.addEventListener('dblclick', (e) => {
     const rect = timelineContainer.getBoundingClientRect();
     const offsetX = e.clientX - rect.left;
@@ -465,13 +403,10 @@ timelineContainer.addEventListener('mousemove', (e) => {
     timelineContainer.scrollLeft = scrollLeft - walk;
 });
 
-// Resize observer for timeline
 new ResizeObserver(() => {
     timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
 }).observe(timelineContainer);
 
-// Event listener for document ready
 document.addEventListener('DOMContentLoaded', function() {
-    setUpProgressBar();
     loadEvents();
 });
