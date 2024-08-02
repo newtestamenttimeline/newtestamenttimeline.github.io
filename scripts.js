@@ -12,15 +12,9 @@ const dotDiameter = 12;
 const spacing = 15;
 const step = 5;
 
-const eventTypeColors = {
-    'Historical': '#3498db',
-    'Manuscript': '#2ecc71',
-    'Uncial': '#e74c3c',
-    'ChurchFather': '#9b59b6',
-    'Minuscule': '#f1c40f',
-    'Lectionary': '#e67e22'
-};
+const eventTypeColors = {};
 
+// Event listener for the legend toggle button
 document.getElementById('toggle-legend').addEventListener('click', () => {
     const legend = document.getElementById('legend');
     legend.classList.toggle('collapsed');
@@ -28,12 +22,14 @@ document.getElementById('toggle-legend').addEventListener('click', () => {
     arrow.classList.toggle('collapsed');
 });
 
+// Event listener for the sidebar toggle button
 document.getElementById('toggle-sidebar').addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
     const arrow = document.querySelector('#toggle-sidebar .arrow-reverse');
     arrow.classList.toggle('collapsed');
 });
 
+// Function to load initial events
 async function loadEvents() {
     try {
         // Fetch and process initial events
@@ -53,7 +49,6 @@ async function loadEvents() {
         populateFamilyList();
         generateLegend();
 
-        // Defer loading additional events (remove setTimeout)
     } catch (error) {
         console.error('Error loading events:', error);
     }
@@ -81,7 +76,24 @@ async function loadDeferredEvents() {
     }
 }
 
+// Function to process and add events to the timeline
+function processEvents(...eventGroups) {
+    eventGroups.forEach(events => {
+        events.forEach(event => {
+            processEvent(event);
+            addEventToTimeline(event);
+            if (event.texts) {
+                event.texts.forEach(text => texts.add(text));
+            }
+            if (event.family) {
+                families.add(event.family);
+            }
+            eventTypes.add(event.eventType);
+        });
+    });
+}
 
+// Function to populate text filters
 function populateTextList() {
     const textList = document.getElementById('text-list');
     textList.innerHTML = '';
@@ -95,6 +107,7 @@ function populateTextList() {
     });
 }
 
+// Function to populate family filters
 function populateFamilyList() {
     const familyList = document.getElementById('family-list');
     familyList.innerHTML = '';
@@ -108,28 +121,25 @@ function populateFamilyList() {
     });
 }
 
-function addYearLabels() {
-    const yearLabels = [
-        { year: 0, left: '0%' },
-        { year: 100, left: '7%' },
-        { year: 150, left: '11%' },
-        { year: 300, left: '22%' },
-        { year: 500, left: '32%' },
-        { year: 750, left: '53%' },
-        { year: 1000, left: '71%' },
-        { year: 1250, left: '90%' },
-        { year: 1400, left: '100%' }
-    ];
+// Function to generate colors for event types
+function generateColorsForEventTypes() {
+    eventTypes.forEach(eventType => {
+        if (!eventTypeColors[eventType]) {
+            eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+        }
+    });
 
-    yearLabels.forEach(label => {
-        const yearLabel = document.createElement('div');
-        yearLabel.className = 'year-label';
-        yearLabel.style.left = label.left;
-        yearLabel.innerText = label.year;
-        timeline.appendChild(yearLabel);
+    // Update colors for existing events
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventType = event.getAttribute('data-event-type');
+        if (eventTypeColors[eventType]) {
+            event.style.backgroundColor = eventTypeColors[eventType];
+        }
     });
 }
 
+// Function to process individual event
 function processEvent(event) {
     if (event.year) {
         event.percentage = (event.year / 1400) * 100;
@@ -143,6 +153,7 @@ function processEvent(event) {
     console.log('Processed Event:', event);
 }
 
+// Function to add an event to the timeline
 function addEventToTimeline(event) {
     console.log('Adding event to timeline:', event);
     if (document.querySelector(`.event[title="${event.title}"]`)) {
@@ -174,6 +185,7 @@ function addEventToTimeline(event) {
     });
 }
 
+// Function to update event interactions
 function updateEvents() {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
@@ -199,65 +211,7 @@ function updateEvents() {
     });
 }
 
-function populateTextList() {
-    const textList = document.getElementById('text-list');
-    textList.innerHTML = '';
-    texts.forEach(text => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
-        listItem.querySelector('input').addEventListener('change', (e) => {
-            filterEventsByText(text, e.target.checked);
-        });
-        textList.appendChild(listItem);
-    });
-}
-
-function populateFamilyList() {
-    const familyList = document.getElementById('family-list');
-    familyList.innerHTML = '';
-    families.forEach(family => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
-        listItem.querySelector('input').addEventListener('change', (e) => {
-            filterEventsByFamily(family, e.target.checked);
-        });
-        familyList.appendChild(listItem);
-    });
-}
-
-function filterEventsByText(text, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-        if (isChecked && eventTexts.includes(text)) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventTexts.includes(text)) {
-            event.classList.add('greyed-out');
-        }
-    });
-}
-
-function filterEventsByFamily(family, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventFamily = event.getAttribute('data-family');
-        if (isChecked && eventFamily === family) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventFamily === family) {
-            event.classList.add('greyed-out');
-        }
-    });
-}
-
-const css = `
-    .greyed-out {
-        display: none;
-    }
-`;
-const style = document.createElement('style');
-style.appendChild(document.createTextNode(css));
-document.head.appendChild(style);
-
+// Initialize filters
 function initializeFilters() {
     const textList = document.getElementById('text-list');
     const familyList = document.getElementById('family-list');
@@ -281,10 +235,12 @@ function initializeFilters() {
     });
 }
 
+// Function to get color for an event type
 function getColorForEventType(eventType) {
     return eventTypeColors[eventType];
 }
 
+// Function to generate the legend
 function generateLegend() {
     legendContainer.innerHTML = '';
 
@@ -337,8 +293,7 @@ function generateLegend() {
     });
 }
 
-
-
+// Function to toggle events by type
 function toggleEventsByType(eventType, isChecked) {
     const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
     events.forEach(event => {
@@ -346,10 +301,91 @@ function toggleEventsByType(eventType, isChecked) {
     });
 }
 
+// Function to filter events by text
+function filterEventsByText(text, isChecked) {
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventTexts = JSON.parse(event.getAttribute('data-texts'));
+        if (isChecked && eventTexts.includes(text)) {
+            event.classList.remove('greyed-out');
+        } else if (!isChecked && eventTexts.includes(text)) {
+            event.classList.add('greyed-out');
+        }
+    });
+}
+
+// Function to filter events by family
+function filterEventsByFamily(family, isChecked) {
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventFamily = event.getAttribute('data-family');
+        if (isChecked && eventFamily === family) {
+            event.classList.remove('greyed-out');
+        } else if (!isChecked && eventFamily === family) {
+            event.classList.add('greyed-out');
+        }
+    });
+}
+
+// Additional CSS for greyed-out events
+const css = `
+    .greyed-out {
+        display: none;
+    }
+`;
+const style = document.createElement('style');
+style.appendChild(document.createTextNode(css));
+document.head.appendChild(style);
+
+// Function to add year labels
+function addYearLabels() {
+    const yearLabels = [
+        { year: 0, left: '0%' },
+        { year: 100, left: '7%' },
+        { year: 150, left: '11%' },
+        { year: 300, left: '22%' },
+        { year: 500, left: '32%' },
+        { year: 750, left: '53%' },
+        { year: 1000, left: '71%' },
+        { year: 1250, left: '90%' },
+        { year: 1400, left: '100%' }
+    ];
+
+    yearLabels.forEach(label => {
+        const yearLabel = document.createElement('div');
+        yearLabel.className = 'year-label';
+        yearLabel.style.left = label.left;
+        yearLabel.innerText = label.year;
+        timeline.appendChild(yearLabel);
+    });
+}
+
+// Function to set up the progress bar
+function setUpProgressBar() {
+    const header = document.querySelector('header');
+    const progressBar = document.createElement('div');
+    progressBar.id = 'progress-bar';
+    header.appendChild(progressBar);
+
+    let progress = 0;
+    const interval = setInterval(() => {
+        if (progress < 100) {
+            progress += 5;
+            progressBar.style.width = `${progress}%`;
+        } else {
+            clearInterval(interval);
+            // Hide the progress bar after loading is complete
+            setTimeout(() => progressBar.style.display = 'none', 500);
+        }
+    }, 100); // Adjust timing as necessary
+}
+
+// Function to toggle the sidebar
 function toggleSidebar() {
     sidebar.classList.toggle('collapsed');
 }
 
+// Zoom in and out functionality
 document.getElementById('zoom-in').addEventListener('click', () => {
     scale *= 1.2;
     timeline.style.transform = `scale(${scale})`;
@@ -360,6 +396,7 @@ document.getElementById('zoom-out').addEventListener('click', () => {
     timeline.style.transform = `scale(${scale})`;
 });
 
+// Scroll and drag functionality for the timeline
 timelineContainer.addEventListener('dblclick', (e) => {
     const rect = timelineContainer.getBoundingClientRect();
     const offsetX = e.clientX - rect.left;
@@ -401,10 +438,13 @@ timelineContainer.addEventListener('mousemove', (e) => {
     timelineContainer.scrollLeft = scrollLeft - walk;
 });
 
+// Resize observer for timeline
 new ResizeObserver(() => {
     timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
 }).observe(timelineContainer);
 
+// Event listener for document ready
 document.addEventListener('DOMContentLoaded', function() {
+    setUpProgressBar();
     loadEvents();
 });
