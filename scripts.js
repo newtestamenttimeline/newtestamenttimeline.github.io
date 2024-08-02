@@ -280,6 +280,7 @@ function generateLegend() {
         legendItem.appendChild(label);
         legendItem.appendChild(questionMark);
 
+        // Add Load More button for deferred event types
         if (eventType === 'minuscules' || eventType === 'lectionaries') {
             const loadMoreButton = document.createElement('button');
             loadMoreButton.textContent = 'Load More';
