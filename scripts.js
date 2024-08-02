@@ -12,7 +12,14 @@ const dotDiameter = 12;
 const spacing = 15;
 const step = 5;
 
-const eventTypeColors = {};
+const eventTypeColors = {
+    'Historical': '#3498db',
+    'Manuscript': '#2ecc71',
+    'Uncial': '#e74c3c',
+    'ChurchFather': '#9b59b6',
+    'Minuscule': '#f1c40f',
+    'Lectionary': '#e67e22'
+};
 
 document.getElementById('toggle-legend').addEventListener('click', () => {
     const legend = document.getElementById('legend');
@@ -39,33 +46,44 @@ async function loadEvents() {
         processEvents(historicalEvents, manuscriptEvents, uncialsEvents, churchFathersEvents);
 
         // Initial updates
-        generateColorsForEventTypes();
         updateEvents();
         initializeFilters();
         populateTextList();
         populateFamilyList();
         generateLegend();
 
-        // Defer loading additional events
-        setTimeout(async () => {
-            const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
+        // Setup listeners for dynamic loading
+        setupDynamicLoading();
+    } catch (error) {
+        console.error('Error loading events:', error);
+    }
+}
+
+function setupDynamicLoading() {
+    const minusculeCheckbox = document.querySelector('input[type="checkbox"][data-event-type="Minuscule"]');
+    const lectionaryCheckbox = document.querySelector('input[type="checkbox"][data-event-type="Lectionary"]');
+
+    minusculeCheckbox.addEventListener('change', async (e) => {
+        if (e.target.checked) {
             const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
-
-            // Process additional events
-            processEvents(lectionariesEvents, minusculesEvents);
-
-            // Generate colors for any new event types that were loaded later
-            generateColorsForEventTypes();
-
-            // Update the timeline with new events and colors
+            processEvents(minusculesEvents);
             updateEvents();
             populateTextList(); // Repopulate text list
             populateFamilyList(); // Repopulate family list
             generateLegend(); // Refresh legend to include new event types with colors
-        }, 1000); // Adjust the delay (in milliseconds) as needed
-    } catch (error) {
-        console.error('Error loading events:', error);
-    }
+        }
+    });
+
+    lectionaryCheckbox.addEventListener('change', async (e) => {
+        if (e.target.checked) {
+            const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
+            processEvents(lectionariesEvents);
+            updateEvents();
+            populateTextList(); // Repopulate text list
+            populateFamilyList(); // Repopulate family list
+            generateLegend(); // Refresh legend to include new event types with colors
+        }
+    });
 }
 
 function processEvents(...eventGroups) {
@@ -109,25 +127,6 @@ function populateFamilyList() {
         familyList.appendChild(listItem);
     });
 }
-
-function generateColorsForEventTypes() {
-    eventTypes.forEach(eventType => {
-        if (!eventTypeColors[eventType]) {
-            eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-        }
-    });
-
-    // Update colors for existing events
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventType = event.getAttribute('data-event-type');
-        if (eventTypeColors[eventType]) {
-            event.style.backgroundColor = eventTypeColors[eventType];
-        }
-    });
-}
-
-
 
 function addYearLabels() {
     const yearLabels = [
@@ -302,14 +301,6 @@ function initializeFilters() {
     });
 }
 
-function generateColorsForEventTypes() {
-    eventTypes.forEach(eventType => {
-        if (!eventTypeColors[eventType]) {
-            eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-        }
-    });
-}
-
 function getColorForEventType(eventType) {
     return eventTypeColors[eventType];
 }
@@ -328,8 +319,8 @@ function generateLegend() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox';
-        // Uncheck the uncial and minuscule filters by default
-        checkbox.checked = !(eventType === 'lectionary' || eventType === 'Minuscule');
+        checkbox.checked = !(eventType === 'Lectionary' || eventType === 'Minuscule'); // Uncheck initially
+        checkbox.setAttribute('data-event-type', eventType);
         checkbox.addEventListener('change', (e) => {
             toggleEventsByType(eventType, e.target.checked);
         });
@@ -428,27 +419,6 @@ new ResizeObserver(() => {
     timelineContainer.scrollLeft = (timeline.scrollWidth - timelineContainer.clientWidth) / 2;
 }).observe(timelineContainer);
 
-function setUpProgressBar() {
-    const header = document.querySelector('header');
-    const progressBar = document.createElement('div');
-    progressBar.id = 'progress-bar';
-    header.appendChild(progressBar);
-
-    let progress = 0;
-    const interval = setInterval(() => {
-        if (progress < 100) {
-            progress += 5;
-            progressBar.style.width = `${progress}%`;
-        } else {
-            clearInterval(interval);
-            // Hide the progress bar after loading is complete
-            setTimeout(() => progressBar.style.display = 'none', 500);
-        }
-    }, 100); // Adjust timing as necessary
-}
-
 document.addEventListener('DOMContentLoaded', function() {
-    setUpProgressBar();
     loadEvents();
 });
-
