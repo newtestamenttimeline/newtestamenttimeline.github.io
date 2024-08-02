@@ -54,14 +54,18 @@ async function loadEvents() {
     }
 }
 
-// New function to load deferred event types when filters are checked
-async function loadDeferredEvents() {
+// New function to load deferred event types when "Load More" is clicked
+async function loadDeferredEvents(eventType) {
     try {
-        const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
-        const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
+        let eventsToLoad;
+        if (eventType === 'lectionaries') {
+            eventsToLoad = await fetch('lectionaries.json').then(response => response.json());
+        } else if (eventType === 'minuscules') {
+            eventsToLoad = await fetch('minuscules.json').then(response => response.json());
+        }
 
         // Process deferred events
-        processEvents(lectionariesEvents, minusculesEvents);
+        processEvents(eventsToLoad);
 
         // Generate colors for any new event types that were loaded later
         generateColorsForEventTypes();
@@ -255,14 +259,9 @@ function generateLegend() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox';
-        
-        // Uncheck the "minuscules" and "lectionaries" filters by default
-        checkbox.checked = !(eventType === 'minuscules' || eventType === 'lectionaries');
+        checkbox.checked = true; // Initially check all filters
 
-        checkbox.addEventListener('change', async (e) => {
-            if ((eventType === 'minuscules' || eventType === 'lectionaries') && e.target.checked) {
-                await loadDeferredEvents();
-            }
+        checkbox.addEventListener('change', (e) => {
             toggleEventsByType(eventType, e.target.checked);
         });
 
@@ -280,6 +279,17 @@ function generateLegend() {
         legendItem.appendChild(legendColor);
         legendItem.appendChild(label);
         legendItem.appendChild(questionMark);
+
+        if (eventType === 'minuscules' || eventType === 'lectionaries') {
+            const loadMoreButton = document.createElement('button');
+            loadMoreButton.textContent = 'Load More';
+            loadMoreButton.className = 'load-more-btn';
+            loadMoreButton.addEventListener('click', async () => {
+                await loadDeferredEvents(eventType);
+                loadMoreButton.disabled = true; // Disable button after loading
+            });
+            legendItem.appendChild(loadMoreButton);
+        }
 
         legendContainer.appendChild(legendItem);
     });
@@ -331,6 +341,19 @@ function filterEventsByFamily(family, isChecked) {
 const css = `
     .greyed-out {
         display: none;
+    }
+    .load-more-btn {
+        margin-left: 10px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .load-more-btn:disabled {
+        background-color: #aaa;
+        cursor: not-allowed;
     }
 `;
 const style = document.createElement('style');
