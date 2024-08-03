@@ -317,7 +317,7 @@ function generateLegend() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox';
-        checkbox.checked = !(eventType === 'lectionary' || eventType === 'Minuscule');
+checkbox.checked = true; // Ensure all checkboxes are checked by default        
         checkbox.addEventListener('change', (e) => {
             toggleEventsByType(eventType, e.target.checked);
         });
