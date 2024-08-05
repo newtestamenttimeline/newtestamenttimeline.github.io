@@ -1,23 +1,47 @@
-// Function to load additional events from JSON files
-async function loadAdditionalEvents() {
-    try {
-        // Fetch events from JSON files
-        const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
-        const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
+// JavaScript to load events from JSON files and update the UI
 
-        // Process the additional events and add them to the timeline
-        processEvents(lectionariesEvents, minusculesEvents);
-
-        // Update the filters and lists with new events
-        populateTextList();
-        populateFamilyList();
-        generateLegend();
-    } catch (error) {
-        console.error('Error loading additional events:', error);
+// Function to fetch and process JSON data
+async function fetchAndProcessJSON(url) {
+    const response = await fetch(url);
+    if (!response.ok) {
+        console.error(`Failed to fetch data from ${url}`);
+        return [];
     }
+    return await response.json();
 }
 
-// Add event listener to the "Load More" button
-document.getElementById('load-more-events').addEventListener('click', () => {
-    loadAdditionalEvents();
-});
+// Function to update filters
+function updateFilters(data, textList, familyList) {
+    data.forEach(event => {
+        // Check and add new texts to the text list
+        if (event.text && !textList.includes(event.text)) {
+            textList.push(event.text);
+            const li = document.createElement('li');
+            li.textContent = event.text;
+            document.getElementById('text-list').appendChild(li);
+        }
+
+        // Check and add new families to the family list
+        if (event.family && !familyList.includes(event.family)) {
+            familyList.push(event.family);
+            const li = document.createElement('li');
+            li.textContent = event.family;
+            document.getElementById('family-list').appendChild(li);
+        }
+    });
+}
+
+// Main function to load more manuscripts
+async function loadMoreManuscripts() {
+    const minusculesData = await fetchAndProcessJSON('minuscules.json');
+    const lectionariesData = await fetchAndProcessJSON('lectionaries.json');
+
+    const textList = Array.from(document.getElementById('text-list').children).map(item => item.textContent);
+    const familyList = Array.from(document.getElementById('family-list').children).map(item => item.textContent);
+
+    updateFilters(minusculesData, textList, familyList);
+    updateFilters(lectionariesData, textList, familyList);
+}
+
+// Event listener for the Load More Manuscripts button
+document.getElementById('load-more-manuscripts').addEventListener('click', loadMoreManuscripts);
