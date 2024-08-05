@@ -374,3 +374,12 @@ header {
     cursor: not-allowed;
 }
 
+/* CSS for event dots on the timeline */
+.event-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: yellow; /* Change color as needed */
+    border-radius: 50%;
+    cursor: pointer;
+}
