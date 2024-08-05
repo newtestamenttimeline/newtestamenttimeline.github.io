@@ -15,6 +15,36 @@ async function fetchAndProcessJSON(url) {
     }
 }
 
+// Function to add events to the timeline
+function addEventsToTimeline(data) {
+    const timelineContainer = document.getElementById('timeline');
+
+    data.forEach(event => {
+        // Create a dot for each event
+        const eventDot = document.createElement('div');
+        eventDot.className = 'event-dot';
+        eventDot.title = event.name || 'Event';
+        
+        // Position the dot on the timeline based on the event year
+        // Assuming the event has a 'year' property
+        const yearPercentage = ((event.year - 0) / (1400 - 0)) * 100;
+        eventDot.style.left = `${yearPercentage}%`;
+
+        // Add a tooltip for the event details
+        eventDot.addEventListener('click', () => {
+            document.getElementById('event-content').innerHTML = `
+                <h2>${event.name || 'Event'}</h2>
+                <p>${event.description || 'No description available.'}</p>
+                <p><strong>Year:</strong> ${event.year}</p>
+                <p><strong>Text:</strong> ${event.text || 'N/A'}</p>
+                <p><strong>Family:</strong> ${event.family || 'N/A'}</p>
+            `;
+        });
+
+        timelineContainer.appendChild(eventDot);
+    });
+}
+
 // Function to update filters
 function updateFilters(data, textList, familyList) {
     data.forEach(event => {
@@ -52,12 +82,18 @@ async function loadMoreManuscripts() {
         lectionaries: lectionariesData.length
     });
 
+    // Combine both data sets
+    const allData = [...minusculesData, ...lectionariesData];
+
+    // Add events to the timeline
+    addEventsToTimeline(allData);
+
+    // Update filters after adding events
     const textList = Array.from(document.getElementById('text-list').children).map(item => item.textContent);
     const familyList = Array.from(document.getElementById('family-list').children).map(item => item.textContent);
 
-    updateFilters(minusculesData, textList, familyList);
-    updateFilters(lectionariesData, textList, familyList);
-    console.log('Filters updated.');
+    updateFilters(allData, textList, familyList);
+    console.log('Filters updated and events added to the timeline.');
 }
 
 // Event listener for the Load More Manuscripts button
