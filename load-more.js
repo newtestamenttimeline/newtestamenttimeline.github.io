@@ -2,12 +2,17 @@
 
 // Function to fetch and process JSON data
 async function fetchAndProcessJSON(url) {
-    const response = await fetch(url);
-    if (!response.ok) {
-        console.error(`Failed to fetch data from ${url}`);
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            console.error(`Failed to fetch data from ${url}: ${response.statusText}`);
+            return [];
+        }
+        return await response.json();
+    } catch (error) {
+        console.error(`Error fetching data from ${url}: ${error}`);
         return [];
     }
-    return await response.json();
 }
 
 // Function to update filters
@@ -33,14 +38,26 @@ function updateFilters(data, textList, familyList) {
 
 // Main function to load more manuscripts
 async function loadMoreManuscripts() {
+    console.log('Loading more manuscripts...');
     const minusculesData = await fetchAndProcessJSON('minuscules.json');
     const lectionariesData = await fetchAndProcessJSON('lectionaries.json');
+
+    if (minusculesData.length === 0 && lectionariesData.length === 0) {
+        console.error('No data loaded from JSON files.');
+        return;
+    }
+
+    console.log('Data loaded successfully:', {
+        minuscules: minusculesData.length,
+        lectionaries: lectionariesData.length
+    });
 
     const textList = Array.from(document.getElementById('text-list').children).map(item => item.textContent);
     const familyList = Array.from(document.getElementById('family-list').children).map(item => item.textContent);
 
     updateFilters(minusculesData, textList, familyList);
     updateFilters(lectionariesData, textList, familyList);
+    console.log('Filters updated.');
 }
 
 // Event listener for the Load More Manuscripts button
