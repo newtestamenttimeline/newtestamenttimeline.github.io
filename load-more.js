@@ -18,6 +18,10 @@ async function fetchAndProcessJSON(url) {
 // Function to add events to the timeline
 function addEventsToTimeline(data) {
     const timelineContainer = document.getElementById('timeline');
+    if (!timelineContainer) {
+        console.error('Timeline container not found.');
+        return;
+    }
 
     data.forEach(event => {
         // Create a dot for each event
@@ -96,5 +100,12 @@ async function loadMoreManuscripts() {
     console.log('Filters updated and events added to the timeline.');
 }
 
-// Event listener for the Load More Manuscripts button
-document.getElementById('load-more-manuscripts').addEventListener('click', loadMoreManuscripts);
+// Ensure the DOM is fully loaded before adding event listeners
+document.addEventListener('DOMContentLoaded', () => {
+    const loadMoreButton = document.getElementById('load-more-manuscripts');
+    if (loadMoreButton) {
+        loadMoreButton.addEventListener('click', loadMoreManuscripts);
+    } else {
+        console.error('Load More Manuscripts button not found.');
+    }
+});
