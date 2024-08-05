@@ -109,3 +109,4 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Load More Manuscripts button not found.');
     }
 });
+ 
