@@ -27,13 +27,12 @@ function addEventsToTimeline(data) {
         // Create an event element
         const eventElement = document.createElement('div');
         eventElement.className = 'event'; // Use the existing class name
-        eventElement.title = event.title || 'Event';
 
-        // Assign a color based on eventType
+        // Assign a CSS class based on eventType
         if (event.eventType === 'Minuscule') {
-            eventElement.style.backgroundColor = 'blue'; // Use the same color as in the legend
+            eventElement.classList.add('minuscule'); // Add class for styling
         } else if (event.eventType === 'Lectionary') {
-            eventElement.style.backgroundColor = 'red'; // Use the same color as in the legend
+            eventElement.classList.add('lectionary'); // Add class for styling
         }
 
         // Position the event on the timeline based on the event year and y coordinate
