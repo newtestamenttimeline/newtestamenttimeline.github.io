@@ -32,24 +32,6 @@ header {
     letter-spacing: 2px;
 }
 
-/* Add these styles to your CSS file or in a <style> block in your HTML */
-.load-more-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-#load-more-manuscripts {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    border-radius: 5px;
-    display: inline-block;
-}
-
-
 #progress-bar {
     position: absolute;
     bottom: 0;
@@ -113,13 +95,12 @@ header {
     position: absolute;
     cursor: pointer;
     transition: all 0.3s ease;
-    transform: translateX(-50%) translateY(-50%);
     z-index: 2; /* Ensure dots are above the timeline and year labels */
 }
 
 .event:hover {
-    transform: translateX(-50%) translateY(-50%) scale(1.5);
-
+    transform: scale(1.5);
+}
 
 .event.selected {
     box-shadow: 0 0 0 2px #fff;
@@ -375,12 +356,3 @@ header {
     cursor: not-allowed;
 }
 
-/* CSS for event dots on the timeline */
-.event-dot {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: yellow; /* Change color as needed */
-    border-radius: 50%;
-    cursor: pointer;
-}
