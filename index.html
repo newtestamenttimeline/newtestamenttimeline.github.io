@@ -8,10 +8,6 @@
 <body>
     <header>New Testament Timeline</header>
     <div class="main-content">
-        <div id="progress-bar-container">
-    <div id="progress-bar"></div>
-</div>
-
         <div class="top-half" id="timeline-container">
             <div class="timeline" id="timeline">
                 <div class="year-label" style="left: 0%;">0</div>
@@ -44,28 +40,13 @@
         <div class="timeline-controls">
             <button id="zoom-in">+</button>
             <button id="zoom-out">-</button>
-            <!-- Move Load More Button Here -->
-            <div class="load-more-section">
-                <button id="load-more-event-types" class="load-more-btn">Load More Events</button>
-            </div>
         </div>
         <div class="sidebar-section" id="legend">
             <h3>Legend</h3>
             <button id="toggle-legend" aria-label="Toggle legend" class="toggle-legend">
                 <div class="arrow"></div>
             </button>
-
-            <!-- Legend Items -->
-            <div class="legend-item">
-                <input type="checkbox" class="legend-checkbox" id="minuscules-checkbox" checked>
-                <span>Minuscules Events</span>
-            </div>
-
-            <div class="legend-item">
-                <input type="checkbox" class="legend-checkbox" id="lectionaries-checkbox" checked>
-                <span>Lectionaries Events</span>
         </div>
-        
         <div class="sidebar-section">
             <h3>Texts <span class="question-mark">?
                 <span class="tooltip">Filter events by specific texts.</span>
@@ -81,6 +62,13 @@
             </ul>
         </div>
     </div>
+
+    <!-- Add the Load More Manuscripts Button -->
+    <div class="load-more-container">
+        <button id="load-more-manuscripts">Load More Manuscripts</button>
+    </div>
+
     <script src="scripts.js"></script>
+    <script src="load-more.js"></script> <!-- Link to the new JavaScript file -->
 </body>
 </html>
