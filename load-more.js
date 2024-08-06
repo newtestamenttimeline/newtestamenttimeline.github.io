@@ -24,21 +24,28 @@ function addEventsToTimeline(data) {
     }
 
     data.forEach(event => {
-        // Create a dot for each event
-        const eventDot = document.createElement('div');
-        eventDot.className = 'event-dot';
-        eventDot.title = event.title || 'Event';
+        // Create an event element
+        const eventElement = document.createElement('div');
+        eventElement.className = 'event'; // Use the existing class name
+        eventElement.title = event.title || 'Event';
 
-        // Position the dot on the timeline based on the event year and y coordinate
+        // Assign a color based on eventType
+        if (event.eventType === 'Minuscule') {
+            eventElement.style.backgroundColor = 'blue'; // Use the same color as in the legend
+        } else if (event.eventType === 'Lectionary') {
+            eventElement.style.backgroundColor = 'red'; // Use the same color as in the legend
+        }
+
+        // Position the event on the timeline based on the event year and y coordinate
         const yearPercentage = ((event.year - 0) / (1400 - 0)) * 100;
-        eventDot.style.left = `${yearPercentage}%`;
+        eventElement.style.left = `${yearPercentage}%`;
 
         // Use the 'y' value to position vertically
         const yOffset = parseFloat(event.y) || 0;
-        eventDot.style.top = `calc(50% + ${yOffset}px)`;
+        eventElement.style.top = `calc(50% + ${yOffset}px)`;
 
         // Add a tooltip for the event details
-        eventDot.addEventListener('click', () => {
+        eventElement.addEventListener('click', () => {
             document.getElementById('event-content').innerHTML = `
                 <h2>${event.title || 'Event'}</h2>
                 <p>${event.description || 'No description available.'}</p>
@@ -50,7 +57,7 @@ function addEventsToTimeline(data) {
             `;
         });
 
-        timelineContainer.appendChild(eventDot);
+        timelineContainer.appendChild(eventElement);
     });
 }
 
