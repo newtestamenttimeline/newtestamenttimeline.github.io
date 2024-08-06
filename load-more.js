@@ -23,29 +23,22 @@ function addEventsToTimeline(data) {
         return;
     }
 
-    // Map of event type to color
-    const eventTypeToColor = getEventTypeColors();
-
     data.forEach(event => {
         // Create a dot for each event
-        const eventElement = document.createElement('div');
-        eventElement.className = 'event';
-        eventElement.title = event.title || 'Event';
+        const eventDot = document.createElement('div');
+        eventDot.className = 'event-dot';
+        eventDot.title = event.title || 'Event';
 
         // Position the dot on the timeline based on the event year and y coordinate
         const yearPercentage = ((event.year - 0) / (1400 - 0)) * 100;
-        eventElement.style.left = `${yearPercentage}%`;
+        eventDot.style.left = `${yearPercentage}%`;
 
         // Use the 'y' value to position vertically
         const yOffset = parseFloat(event.y) || 0;
-        eventElement.style.top = `calc(50% + ${yOffset}px)`;
-
-        // Assign color based on event type
-        const color = eventTypeToColor[event.eventType] || 'gray'; // Default to gray if no color found
-        eventElement.style.backgroundColor = color;
+        eventDot.style.top = `calc(50% + ${yOffset}px)`;
 
         // Add a tooltip for the event details
-        eventElement.addEventListener('click', () => {
+        eventDot.addEventListener('click', () => {
             document.getElementById('event-content').innerHTML = `
                 <h2>${event.title || 'Event'}</h2>
                 <p>${event.description || 'No description available.'}</p>
@@ -57,7 +50,7 @@ function addEventsToTimeline(data) {
             `;
         });
 
-        timelineContainer.appendChild(eventElement);
+        timelineContainer.appendChild(eventDot);
     });
 }
 
@@ -82,20 +75,6 @@ function updateFilters(data, textList, familyList) {
             document.getElementById('family-list').appendChild(li);
         }
     });
-}
-
-// Function to extract colors from the legend
-function getEventTypeColors() {
-    const colors = {};
-    document.querySelectorAll('.legend .legend-item').forEach(item => {
-        const eventType = item.querySelector('.legend-label').textContent.trim();
-        const colorElement = item.querySelector('.legend-color');
-        const color = colorElement ? colorElement.style.backgroundColor : null;
-        if (color) {
-            colors[eventType] = color;
-        }
-    });
-    return colors;
 }
 
 // Main function to load more manuscripts
