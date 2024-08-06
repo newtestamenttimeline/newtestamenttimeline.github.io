@@ -27,21 +27,26 @@ function addEventsToTimeline(data) {
         // Create a dot for each event
         const eventDot = document.createElement('div');
         eventDot.className = 'event-dot';
-        eventDot.title = event.name || 'Event';
-        
-        // Position the dot on the timeline based on the event year
-        // Assuming the event has a 'year' property
+        eventDot.title = event.title || 'Event';
+
+        // Position the dot on the timeline based on the event year and y coordinate
         const yearPercentage = ((event.year - 0) / (1400 - 0)) * 100;
         eventDot.style.left = `${yearPercentage}%`;
+
+        // Use the 'y' value to position vertically
+        const yOffset = parseFloat(event.y) || 0;
+        eventDot.style.top = `calc(50% + ${yOffset}px)`;
 
         // Add a tooltip for the event details
         eventDot.addEventListener('click', () => {
             document.getElementById('event-content').innerHTML = `
-                <h2>${event.name || 'Event'}</h2>
+                <h2>${event.title || 'Event'}</h2>
                 <p>${event.description || 'No description available.'}</p>
                 <p><strong>Year:</strong> ${event.year}</p>
-                <p><strong>Text:</strong> ${event.text || 'N/A'}</p>
+                <p><strong>Texts:</strong> ${event.texts.join(', ') || 'N/A'}</p>
                 <p><strong>Family:</strong> ${event.family || 'N/A'}</p>
+                <p><strong>Location:</strong> ${event.location || 'N/A'}</p>
+                <p><strong>Event Type:</strong> ${event.eventType || 'N/A'}</p>
             `;
         });
 
@@ -53,12 +58,14 @@ function addEventsToTimeline(data) {
 function updateFilters(data, textList, familyList) {
     data.forEach(event => {
         // Check and add new texts to the text list
-        if (event.text && !textList.includes(event.text)) {
-            textList.push(event.text);
-            const li = document.createElement('li');
-            li.textContent = event.text;
-            document.getElementById('text-list').appendChild(li);
-        }
+        event.texts.forEach(text => {
+            if (text && !textList.includes(text)) {
+                textList.push(text);
+                const li = document.createElement('li');
+                li.textContent = text;
+                document.getElementById('text-list').appendChild(li);
+            }
+        });
 
         // Check and add new families to the family list
         if (event.family && !familyList.includes(event.family)) {
@@ -109,4 +116,3 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Load More Manuscripts button not found.');
     }
 });
- 
