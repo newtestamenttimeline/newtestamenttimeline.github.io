@@ -1,5 +1,3 @@
-// script.js
-
 async function loadGospels() {
   const gospels = await Promise.all([
     fetch('matthew.json').then(res => res.json()),
@@ -11,15 +9,15 @@ async function loadGospels() {
 
   const [matthew, mark, luke, john, parallels] = gospels;
 
-  populateGospel('matthew', matthew, parallels);
-  populateGospel('mark', mark, parallels);
-  populateGospel('luke', luke, parallels);
-  populateGospel('john', john, parallels);
+  populateGospel('matthew', matthew);
+  populateGospel('mark', mark);
+  populateGospel('luke', luke);
+  populateGospel('john', john);
 
   addVerseClickListeners(parallels);
 }
 
-function populateGospel(gospelId, gospelData, parallels) {
+function populateGospel(gospelId, gospelData) {
   const container = document.getElementById(`${gospelId}-content`);
   gospelData.forEach(chapter => {
     const chapterHeader = document.createElement('h3');
@@ -28,23 +26,7 @@ function populateGospel(gospelId, gospelData, parallels) {
     chapter.verses.forEach(verse => {
       const verseElement = document.createElement('p');
       verseElement.textContent = `${verse.number} ${verse.text}`;
-      const verseId = `${gospelId}-${chapter.chapter}-${verse.number}`;
-      verseElement.setAttribute('data-verse', verseId);
-
-      // Apply the appropriate class based on the number of parallels
-      if (!parallels[verseId]) {
-        verseElement.classList.add('unique');
-      } else {
-        const parallelCount = parallels[verseId].length;
-        if (parallelCount === 1) {
-          verseElement.classList.add('pastel-green');
-        } else if (parallelCount === 2) {
-          verseElement.classList.add('pastel-purple');
-        } else if (parallelCount >= 3) {
-          verseElement.classList.add('pastel-pink');
-        }
-      }
-
+      verseElement.setAttribute('data-verse', `${gospelId}-${chapter.chapter}-${verse.number}`);
       container.appendChild(verseElement);
     });
   });
