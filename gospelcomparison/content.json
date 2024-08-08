@@ -4,29 +4,20 @@
       "chapter": 1,
       "verses": [
         {"number": 1, "text": "The book of the genealogy of Jesus Christ, the son of David, the son of Abraham."},
-        {"number": 2, "text": "Abraham was the father of Isaac, and Isaac the father of Jacob, and Jacob the father of Judah and his brothers,"}
-        // More verses from chapter 1
+        {"number": 2, "text": "Abraham was the father of Isaac, and Isaac the father of Jacob, and Jacob the father of Judah and his brothers"}
       ]
     },
     {
       "chapter": 2,
       "verses": [
-        {"number": 1, "text": "Now after Jesus was born in Bethlehem of Judea in the days of Herod the king, behold, wise men from the east came to Jerusalem,"},
+        {"number": 1, "text": "Now after Jesus was born in Bethlehem of Judea in the days of Herod the king, behold, wise men from the east came to Jerusalem"},
         {"number": 2, "text": "saying, \"Where is he who has been born king of the Jews? For we saw his star when it rose and have come to worship him.\""}
-        // More verses from chapter 2
       ]
-    },
-    // More chapters
+    }
   ],
-  "mark": [
-    // Chapters and verses for Mark
-  ],
-  "luke": [
-    // Chapters and verses for Luke
-  ],
-  "john": [
-    // Chapters and verses for John
-  ],
+  "mark": [],
+  "luke": [],
+  "john": [],
   "parallelVerses": {
     "matthew-3-1": ["mark-1-4", "luke-3-2", "john-1-6"],
     "matthew-3-2": ["mark-1-4", "luke-3-3", "john-1-7"],
