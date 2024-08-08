@@ -15,9 +15,33 @@
       ]
     }
   ],
-  "mark": [],
-  "luke": [],
-  "john": [],
+  "mark": [
+    {
+      "chapter": 1,
+      "verses": [
+        {"number": 1, "text": "The beginning of the gospel of Jesus Christ, the Son of God."},
+        {"number": 2, "text": "As it is written in Isaiah the prophet, \"Behold, I send my messenger before your face, who will prepare your way\""}
+      ]
+    }
+  ],
+  "luke": [
+    {
+      "chapter": 1,
+      "verses": [
+        {"number": 1, "text": "Inasmuch as many have undertaken to compile a narrative of the things that have been accomplished among us"},
+        {"number": 2, "text": "just as those who from the beginning were eyewitnesses and ministers of the word have delivered them to us"}
+      ]
+    }
+  ],
+  "john": [
+    {
+      "chapter": 1,
+      "verses": [
+        {"number": 1, "text": "In the beginning was the Word, and the Word was with God, and the Word was God."},
+        {"number": 2, "text": "He was in the beginning with God."}
+      ]
+    }
+  ],
   "parallelVerses": {
     "matthew-3-1": ["mark-1-4", "luke-3-2", "john-1-6"],
     "matthew-3-2": ["mark-1-4", "luke-3-3", "john-1-7"],
