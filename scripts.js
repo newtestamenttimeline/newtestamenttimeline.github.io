@@ -47,12 +47,18 @@ function highlightParallelVerses(event, parallels) {
   // Remove previous highlights
   document.querySelectorAll('.highlight').forEach(el => el.classList.remove('highlight'));
 
-  // Highlight the clicked verse
-  event.target.classList.add('highlight');
+  // Find the group containing the clicked verse
+  let foundGroup = null;
+  for (const [group, verses] of Object.entries(parallels)) {
+    if (verses.includes(verseId)) {
+      foundGroup = verses;
+      break;
+    }
+  }
 
-  // Highlight and scroll to parallel verses
-  if (parallels[verseId]) {
-    parallels[verseId].forEach(parallelVerseId => {
+  if (foundGroup) {
+    // Highlight and scroll to all verses in the found group
+    foundGroup.forEach(parallelVerseId => {
       const parallelVerse = document.querySelector(`p[data-verse="${parallelVerseId}"]`);
       if (parallelVerse) {
         parallelVerse.classList.add('highlight');
@@ -60,6 +66,10 @@ function highlightParallelVerses(event, parallels) {
       }
     });
   }
+
+  // Also highlight and scroll to the clicked verse
+  event.target.classList.add('highlight');
+  scrollToVerse(event.target);
 }
 
 function scrollToVerse(verseElement) {
