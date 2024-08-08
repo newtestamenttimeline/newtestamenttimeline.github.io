@@ -1,45 +1,44 @@
-// Load content and parallel data from JSON files
-fetch('content.json')
-  .then(response => response.json())
-  .then(data => {
-    populateGospels(data);
-    highlightUniqueVerses(data.parallelVerses);
-    addVerseClickListeners(data.parallelVerses);
-  });
+async function loadGospels() {
+  const gospels = await Promise.all([
+    fetch('matthew.json').then(res => res.json()),
+    fetch('mark.json').then(res => res.json()),
+    fetch('luke.json').then(res => res.json()),
+    fetch('john.json').then(res => res.json()),
+    fetch('parallels.json').then(res => res.json())
+  ]);
 
-function populateGospels(data) {
-  ['matthew', 'mark', 'luke', 'john'].forEach(gospel => {
-    const container = document.getElementById(`${gospel}-content`);
-    data[gospel].forEach(chapter => {
-      const chapterHeader = document.createElement('h3');
-      chapterHeader.textContent = `Chapter ${chapter.chapter}`;
-      container.appendChild(chapterHeader);
-      chapter.verses.forEach(verse => {
-        const verseElement = document.createElement('p');
-        verseElement.textContent = `${verse.number} ${verse.text}`;
-        verseElement.setAttribute('data-verse', `${gospel}-${chapter.chapter}-${verse.number}`);
-        container.appendChild(verseElement);
-      });
+  const [matthew, mark, luke, john, parallels] = gospels;
+
+  populateGospel('matthew', matthew);
+  populateGospel('mark', mark);
+  populateGospel('luke', luke);
+  populateGospel('john', john);
+
+  addVerseClickListeners(parallels);
+}
+
+function populateGospel(gospelId, gospelData) {
+  const container = document.getElementById(`${gospelId}-content`);
+  gospelData.forEach(chapter => {
+    const chapterHeader = document.createElement('h3');
+    chapterHeader.textContent = `Chapter ${chapter.chapter}`;
+    container.appendChild(chapterHeader);
+    chapter.verses.forEach(verse => {
+      const verseElement = document.createElement('p');
+      verseElement.textContent = `${verse.number} ${verse.text}`;
+      verseElement.setAttribute('data-verse', `${gospelId}-${chapter.chapter}-${verse.number}`);
+      container.appendChild(verseElement);
     });
   });
 }
 
-function highlightUniqueVerses(parallelVerses) {
+function addVerseClickListeners(parallels) {
   document.querySelectorAll('.column p').forEach(verse => {
-    const verseId = verse.getAttribute('data-verse');
-    if (!parallelVerses[verseId] || parallelVerses[verseId].length === 0) {
-      verse.classList.add('unique');
-    }
+    verse.addEventListener('click', (event) => highlightParallelVerses(event, parallels));
   });
 }
 
-function addVerseClickListeners(parallelVerses) {
-  document.querySelectorAll('.column p').forEach(verse => {
-    verse.addEventListener('click', (event) => highlightParallelVerses(event, parallelVerses));
-  });
-}
-
-function highlightParallelVerses(event, parallelVerses) {
+function highlightParallelVerses(event, parallels) {
   const verseId = event.target.getAttribute('data-verse');
 
   // Remove previous highlights
@@ -47,8 +46,8 @@ function highlightParallelVerses(event, parallelVerses) {
   
   event.target.classList.add('highlight');
   
-  if (parallelVerses[verseId]) {
-    parallelVerses[verseId].forEach(parallelVerseId => {
+  if (parallels[verseId]) {
+    parallels[verseId].forEach(parallelVerseId => {
       const parallelVerse = document.querySelector(`p[data-verse="${parallelVerseId}"]`);
       if (parallelVerse) {
         parallelVerse.classList.add('highlight');
@@ -74,3 +73,5 @@ function scrollToVerse(verseElement) {
     behavior: 'smooth'
   });
 }
+
+loadGospels();
