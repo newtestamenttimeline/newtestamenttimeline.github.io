@@ -1,3 +1,5 @@
+/* styles.css */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -44,9 +46,21 @@ p:hover {
 }
 
 .highlight {
-  background-color: #ffff99;
+  background-color: #4169e1 !important;
 }
 
 .unique {
   background-color: #e0e0e0;
+}
+
+.pastel-green {
+  background-color: rgba(144, 238, 144, 0.5);
+}
+
+.pastel-purple {
+  background-color: rgba(216, 191, 216, 0.5);
+}
+
+.pastel-pink {
+  background-color: rgba(255, 182, 193, 0.5);
 }
