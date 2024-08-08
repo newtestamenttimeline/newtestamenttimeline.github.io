@@ -1,196 +1,30 @@
-<html><head><base href="https://parallel-gospels.example.com/">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Parallel Gospels Viewer - Unique Verses Highlighted</title>
-<style>
-  body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-  }
-  .container {
-    display: flex;
-    height: 100%;
-  }
-  .column {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-    border-right: 1px solid #ccc;
-  }
-  .column:last-child {
-    border-right: none;
-  }
-  h2 {
-    text-align: center;
-    color: #333;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    padding: 10px 0;
-    margin-top: 0;
-    z-index: 10;
-  }
-  p {
-    margin-bottom: 10px;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 3px;
-  }
-  p:hover {
-    background-color: #f0f0f0;
-  }
-  .highlight {
-    background-color: #ffff99;
-  }
-  .unique {
-    background-color: #e0e0e0;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallel Gospels Viewer - Unique Verses Highlighted</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-  <div class="column" id="matthew">
-    <h2>Matthew</h2>
-    <div id="matthew-content">
-      <h3>Chapter 1</h3>
-      <p data-verse="matthew-1-1" class="unique">1 The book of the genealogy of Jesus Christ, the son of David, the son of Abraham.</p>
-      <p data-verse="matthew-1-2" class="unique">2 Abraham was the father of Isaac, and Isaac the father of Jacob, and Jacob the father of Judah and his brothers,</p>
-      <!-- More verses from chapter 1 -->
-      
-      <h3>Chapter 2</h3>
-      <p data-verse="matthew-2-1" class="unique">1 Now after Jesus was born in Bethlehem of Judea in the days of Herod the king, behold, wise men from the east came to Jerusalem,</p>
-      <p data-verse="matthew-2-2" class="unique">2 saying, "Where is he who has been born king of the Jews? For we saw his star when it rose and have come to worship him."</p>
-      <!-- More verses from chapter 2 -->
-      
-      <h3>Chapter 3</h3>
-      <p data-verse="matthew-3-1" class="john-baptist">1 In those days John the Baptist came preaching in the wilderness of Judea,</p>
-      <p data-verse="matthew-3-2" class="john-baptist">2 "Repent, for the kingdom of heaven is at hand."</p>
-      <p data-verse="matthew-3-3" class="john-baptist">3 For this is he who was spoken of by the prophet Isaiah when he said, "The voice of one crying in the wilderness: 'Prepare the way of the Lord; make his paths straight.'"</p>
-      <p data-verse="matthew-3-4" class="john-baptist">4 Now John wore a garment of camel's hair and a leather belt around his waist, and his food was locusts and wild honey.</p>
-      <!-- More verses about John the Baptist -->
+  <div class="container">
+    <div class="column" id="matthew">
+      <h2>Matthew</h2>
+      <div id="matthew-content"></div>
+    </div>
+    <div class="column" id="mark">
+      <h2>Mark</h2>
+      <div id="mark-content"></div>
+    </div>
+    <div class="column" id="luke">
+      <h2>Luke</h2>
+      <div id="luke-content"></div>
+    </div>
+    <div class="column" id="john">
+      <h2>John</h2>
+      <div id="john-content"></div>
     </div>
   </div>
-  
-  <div class="column" id="mark">
-    <h2>Mark</h2>
-    <div id="mark-content">
-      <h3>Chapter 1</h3>
-      <p data-verse="mark-1-1" class="unique">1 The beginning of the gospel of Jesus Christ, the Son of God.</p>
-      <p data-verse="mark-1-2" class="john-baptist">2 As it is written in Isaiah the prophet, "Behold, I send my messenger before your face, who will prepare your way,</p>
-      <p data-verse="mark-1-3" class="john-baptist">3 the voice of one crying in the wilderness: 'Prepare the way of the Lord, make his paths straight,'"</p>
-      <p data-verse="mark-1-4" class="john-baptist">4 John appeared, baptizing in the wilderness and proclaiming a baptism of repentance for the forgiveness of sins.</p>
-      <p data-verse="mark-1-5" class="john-baptist">5 And all the country of Judea and all Jerusalem were going out to him and were being baptized by him in the river Jordan, confessing their sins.</p>
-      <p data-verse="mark-1-6" class="john-baptist">6 Now John was clothed with camel's hair and wore a leather belt around his waist and ate locusts and wild honey.</p>
-      <!-- More verses about John the Baptist -->
-    </div>
-  </div>
-  
-  <div class="column" id="luke">
-    <h2>Luke</h2>
-    <div id="luke-content">
-      <h3>Chapter 1</h3>
-      <p data-verse="luke-1-1" class="unique">1 Inasmuch as many have undertaken to compile a narrative of the things that have been accomplished among us,</p>
-      <!-- More verses from chapter 1 -->
-      
-      <h3>Chapter 3</h3>
-      <p data-verse="luke-3-1" class="john-baptist unique">1 In the fifteenth year of the reign of Tiberius Caesar, Pontius Pilate being governor of Judea, and Herod being tetrarch of Galilee, and his brother Philip tetrarch of the region of Ituraea and Trachonitis, and Lysanias tetrarch of Abilene,</p>
-      <p data-verse="luke-3-2" class="john-baptist">2 during the high priesthood of Annas and Caiaphas, the word of God came to John the son of Zechariah in the wilderness.</p>
-      <p data-verse="luke-3-3" class="john-baptist">3 And he went into all the region around the Jordan, proclaiming a baptism of repentance for the forgiveness of sins.</p>
-      <p data-verse="luke-3-4" class="john-baptist">4 As it is written in the book of the words of Isaiah the prophet, "The voice of one crying in the wilderness: 'Prepare the way of the Lord, make his paths straight.</p>
-      <!-- More verses about John the Baptist -->
-    </div>
-  </div>
-  
-  <div class="column" id="john">
-    <h2>John</h2>
-    <div id="john-content">
-      <h3>Chapter 1</h3>
-      <p data-verse="john-1-1" class="unique">1 In the beginning was the Word, and the Word was with God, and the Word was God.</p>
-      <p data-verse="john-1-2" class="unique">2 He was in the beginning with God.</p>
-      <p data-verse="john-1-3" class="unique">3 All things were made through him, and without him was not any thing made that was made.</p>
-      <p data-verse="john-1-4" class="unique">4 In him was life, and the life was the light of men.</p>
-      <p data-verse="john-1-5" class="unique">5 The light shines in the darkness, and the darkness has not overcome it.</p>
-      <p data-verse="john-1-6" class="john-baptist">6 There was a man sent from God, whose name was John.</p>
-      <p data-verse="john-1-7" class="john-baptist">7 He came as a witness, to bear witness about the light, that all might believe through him.</p>
-      <p data-verse="john-1-8" class="john-baptist">8 He was not the light, but came to bear witness about the light.</p>
-      <!-- More verses about John the Baptist -->
-    </div>
-  </div>
-</div>
-
-<script>
-const parallelVerses = {
-  'matthew-3-1': ['mark-1-4', 'luke-3-2', 'john-1-6'],
-  'matthew-3-2': ['mark-1-4', 'luke-3-3', 'john-1-7'],
-  'matthew-3-3': ['mark-1-3', 'luke-3-4', 'john-1-23'],
-  'matthew-3-4': ['mark-1-6'],
-  'mark-1-2': ['matthew-3-3', 'luke-3-4', 'john-1-23'],
-  'mark-1-3': ['matthew-3-3', 'luke-3-4', 'john-1-23'],
-  'mark-1-4': ['matthew-3-1', 'luke-3-3', 'john-1-6'],
-  'mark-1-5': ['matthew-3-5', 'luke-3-7'],
-  'mark-1-6': ['matthew-3-4'],
-  'luke-3-2': ['matthew-3-1', 'mark-1-4', 'john-1-6'],
-  'luke-3-3': ['matthew-3-1', 'mark-1-4', 'john-1-7'],
-  'luke-3-4': ['matthew-3-3', 'mark-1-3', 'john-1-23'],
-  'john-1-6': ['matthew-3-1', 'mark-1-4', 'luke-3-2'],
-  'john-1-7': ['matthew-3-2', 'mark-1-4', 'luke-3-3'],
-  'john-1-8': ['matthew-3-11', 'mark-1-7', 'luke-3-16'],
-};
-
-function highlightParallelVerses(event) {
-  const verseId = event.target.getAttribute('data-verse');
-  const isJohnBaptist = event.target.classList.contains('john-baptist');
-
-  // Remove previous highlights
-  document.querySelectorAll('.highlight').forEach(el => el.classList.remove('highlight'));
-  
-  event.target.classList.add('highlight');
-  
-  if (parallelVerses[verseId]) {
-    parallelVerses[verseId].forEach(parallelVerseId => {
-      const [gospel, chapter, verse] = parallelVerseId.split('-');
-      const parallelVerse = document.querySelector(`#${gospel} p[data-verse="${parallelVerseId}"]`);
-      if (parallelVerse) {
-        parallelVerse.classList.add('highlight');
-        scrollToVerse(parallelVerse);
-      }
-    });
-  }
-
-  // Also scroll the clicked verse into view
-  scrollToVerse(event.target);
-}
-
-function scrollToVerse(verseElement) {
-  const columnElement = verseElement.closest('.column');
-  const columnRect = columnElement.getBoundingClientRect();
-  const verseRect = verseElement.getBoundingClientRect();
-  
-  // Calculate the scroll position to center the verse
-  const scrollTop = verseRect.top + columnElement.scrollTop - columnRect.top - (columnRect.height / 2) + (verseRect.height / 2);
-  
-  columnElement.scrollTo({
-    top: scrollTop,
-    behavior: 'smooth'
-  });
-}
-
-function highlightUniqueVerses() {
-  document.querySelectorAll('.column p').forEach(verse => {
-    const verseId = verse.getAttribute('data-verse');
-    if (!parallelVerses[verseId] || parallelVerses[verseId].length === 0) {
-      verse.classList.add('unique');
-    }
-  });
-}
-
-document.querySelectorAll('.column p').forEach(verse => {
-  verse.addEventListener('click', highlightParallelVerses);
-});
-
-// Call this function to highlight unique verses when the page loads
-highlightUniqueVerses();
-</script>
-</body></html>
+  <script src="script.js"></script>
+</body>
+</html>
