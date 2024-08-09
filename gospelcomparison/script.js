@@ -1,3 +1,5 @@
+// script.js
+
 async function loadGospels() {
   const gospels = await Promise.all([
     fetch('matthew.json').then(res => res.json()),
@@ -9,15 +11,15 @@ async function loadGospels() {
 
   const [matthew, mark, luke, john, parallels] = gospels;
 
-  populateGospel('matthew', matthew);
-  populateGospel('mark', mark);
-  populateGospel('luke', luke);
-  populateGospel('john', john);
+  populateGospel('matthew', matthew, parallels);
+  populateGospel('mark', mark, parallels);
+  populateGospel('luke', luke, parallels);
+  populateGospel('john', john, parallels);
 
   addVerseClickListeners(parallels);
 }
 
-function populateGospel(gospelId, gospelData) {
+function populateGospel(gospelId, gospelData, parallels) {
   const container = document.getElementById(`${gospelId}-content`);
   gospelData.forEach(chapter => {
     const chapterHeader = document.createElement('h3');
@@ -26,7 +28,23 @@ function populateGospel(gospelId, gospelData) {
     chapter.verses.forEach(verse => {
       const verseElement = document.createElement('p');
       verseElement.textContent = `${verse.number} ${verse.text}`;
-      verseElement.setAttribute('data-verse', `${gospelId}-${chapter.chapter}-${verse.number}`);
+      const verseId = `${gospelId}-${chapter.chapter}-${verse.number}`;
+      verseElement.setAttribute('data-verse', verseId);
+
+      // Apply the appropriate class based on the number of parallels
+      if (!parallels[verseId]) {
+        verseElement.classList.add('unique');
+      } else {
+        const parallelCount = parallels[verseId].length;
+        if (parallelCount === 1) {
+          verseElement.classList.add('pastel-green');
+        } else if (parallelCount === 2) {
+          verseElement.classList.add('pastel-purple');
+        } else if (parallelCount >= 3) {
+          verseElement.classList.add('pastel-pink');
+        }
+      }
+
       container.appendChild(verseElement);
     });
   });
@@ -40,6 +58,8 @@ function addVerseClickListeners(parallels) {
 
 function highlightParallelVerses(event, parallels) {
   const verseId = event.target.getAttribute('data-verse');
+  console.log(`Clicked verse ID: ${verseId}`);
+  console.log(`Parallel verses: ${parallels[verseId]}`);
 
   // Remove previous highlights
   document.querySelectorAll('.highlight').forEach(el => el.classList.remove('highlight'));
@@ -50,10 +70,15 @@ function highlightParallelVerses(event, parallels) {
     parallels[verseId].forEach(parallelVerseId => {
       const parallelVerse = document.querySelector(`p[data-verse="${parallelVerseId}"]`);
       if (parallelVerse) {
+        console.log(`Highlighting parallel verse ID: ${parallelVerseId}`);
         parallelVerse.classList.add('highlight');
         scrollToVerse(parallelVerse);
+      } else {
+        console.warn(`Parallel verse ID not found: ${parallelVerseId}`);
       }
     });
+  } else {
+    console.warn(`No parallels found for verse ID: ${verseId}`);
   }
 
   // Also scroll the clicked verse into view
