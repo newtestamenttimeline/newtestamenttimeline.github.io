@@ -11,6 +11,9 @@ async function loadGospels() {
 
   const [matthew, mark, luke, john, parallels] = gospels;
 
+  // Debug: Log the loaded parallels data
+  console.log('Loaded parallels:', parallels);
+
   populateGospel('matthew', matthew, parallels);
   populateGospel('mark', mark, parallels);
   populateGospel('luke', luke, parallels);
@@ -59,7 +62,13 @@ function addVerseClickListeners(parallels) {
 function highlightParallelVerses(event, parallels) {
   const verseId = event.target.getAttribute('data-verse');
   console.log(`Clicked verse ID: ${verseId}`);
-  console.log(`Parallel verses: ${parallels[verseId]}`);
+
+  // Debug: Check if the verseId exists in the parallels object
+  if (parallels.hasOwnProperty(verseId)) {
+    console.log(`Parallel verses for ${verseId}: ${parallels[verseId]}`);
+  } else {
+    console.warn(`No parallels found for verse ID: ${verseId}`);
+  }
 
   // Remove previous highlights
   document.querySelectorAll('.highlight').forEach(el => el.classList.remove('highlight'));
@@ -74,11 +83,9 @@ function highlightParallelVerses(event, parallels) {
         parallelVerse.classList.add('highlight');
         scrollToVerse(parallelVerse);
       } else {
-        console.warn(`Parallel verse ID not found: ${parallelVerseId}`);
+        console.warn(`Parallel verse ID not found in DOM: ${parallelVerseId}`);
       }
     });
-  } else {
-    console.warn(`No parallels found for verse ID: ${verseId}`);
   }
 
   // Also scroll the clicked verse into view
