@@ -60,14 +60,14 @@ select {
     z-index: 10;
     border-bottom: 1px solid #ddd;
     margin-top: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .column h2 {
     text-align: center;
     font-size: 1.5em;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     color: #333;
 }
 
