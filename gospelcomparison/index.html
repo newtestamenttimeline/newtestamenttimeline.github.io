@@ -16,23 +16,22 @@
     </script>
 </head>
 <body>
-    <!-- Top Bar with Welcome Message and Menu -->
+    <!-- Top bar with welcome message and menu -->
     <div id="top-bar">
         <div id="welcome-message">
-            <h3>Welcome to the parallel Gospel explorer</h3>
+            <h3>Welcome to the Parallel Gospel Explorer</h3>
         </div>
         <div id="menu">
-            <select id="bible-translation">
+            <select id="translation-selector">
                 <option value="WEB">WEB</option>
                 <option value="KJV">KJV</option>
             </select>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="timeline.html">NT Manuscript Timeline</a>
-            </nav>
+            <a href="#" id="home-link">Home</a>
+            <a href="#" id="timeline-link">NT Manuscript Timeline</a>
         </div>
     </div>
 
+    <!-- Instructions and Legend -->
     <div id="legend-instructions-container">
         <div id="instructions">
             <h4>How to use this site:</h4>
@@ -45,7 +44,7 @@
                 <div class="legend-column">
                     <p><span class="color-sample pastel-green"></span> 1 Parallel Verse</p>
                     <p><span class="color-sample pastel-purple"></span> 2 Parallel Verses</p>
-                    <p><span class="color-sample pastel-pink"></span> 3 Parallel Verses (i.e. Verse exists in all 4 Gospels)</p>
+                    <p><span class="color-sample pastel-pink"></span> 3 Parallel Verses (i.e., Verse exists in all 4 Gospels)</p>
                 </div>
                 <div class="legend-column">
                     <p><span class="color-sample unique"></span> Unique Verse (No Parallels)</p>
@@ -55,31 +54,32 @@
         </div>
     </div>
 
+    <!-- Gospels content -->
     <div id="gospels">
         <!-- Matthew -->
         <div class="column" id="matthew-column">
-            <h2>Matthew</h2> <!-- Gospel Name -->
+            <h2>Matthew</h2>
             <select id="matthew-verse-finder"></select>
             <div id="matthew-content"></div>
         </div>
 
         <!-- Mark -->
         <div class="column" id="mark-column">
-            <h2>Mark</h2> <!-- Gospel Name -->
+            <h2>Mark</h2>
             <select id="mark-verse-finder"></select>
             <div id="mark-content"></div>
         </div>
 
         <!-- Luke -->
         <div class="column" id="luke-column">
-            <h2>Luke</h2> <!-- Gospel Name -->
+            <h2>Luke</h2>
             <select id="luke-verse-finder"></select>
             <div id="luke-content"></div>
         </div>
 
         <!-- John -->
         <div class="column" id="john-column">
-            <h2>John</h2> <!-- Gospel Name -->
+            <h2>John</h2>
             <select id="john-verse-finder"></select>
             <div id="john-content"></div>
         </div>
