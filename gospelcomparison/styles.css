@@ -15,7 +15,7 @@ body {
     background-color: #f9f9f9;
     padding: 10px;
     border: 1px solid #ddd;
-    width: 48%; /* Adjusted to make both boxes fit side by side */
+    width: 48%; /* Adjusted to make both boxes fit side by side. */
 }
 
 #legend h3, #instructions h3 {
