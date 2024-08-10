@@ -130,6 +130,7 @@ body {
     border-radius: 5px;
     overflow-y: auto;
     height: calc(100vh - 200px); /* Ensure columns take full height minus top/bottom spacing */
+    margin-bottom: 10px; /* Restore spacing between verses */
 }
 
 .column h2 {
