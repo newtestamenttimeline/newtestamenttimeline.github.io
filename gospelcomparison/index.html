@@ -1,30 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parallel Gospels Viewer - Unique Verses Highlighted</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gospel Parallels</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="column" id="matthew">
-      <h2>Matthew</h2>
-      <div id="matthew-content"></div>
+    <div id="legend">
+        <h2>Legend</h2>
+        <p><span class="color-sample pastel-green"></span> 1 Parallel Verse</p>
+        <p><span class="color-sample pastel-purple"></span> 2 Parallel Verses</p>
+        <p><span class="color-sample pastel-pink"></span> 3 or More Parallel Verses</p>
+        <p><span class="color-sample unique"></span> Unique Verse (No Parallels)</p>
     </div>
-    <div class="column" id="mark">
-      <h2>Mark</h2>
-      <div id="mark-content"></div>
+
+    <div id="instructions">
+        <h2>How to Use This Site</h2>
+        <p>This site allows you to explore the parallels between the Gospels. You can use the verse finder at the top of each column to quickly navigate to any verse. 
+           The colors indicate how many parallel verses exist across the Gospels:</p>
+        <ul>
+            <li><span class="color-sample pastel-green"></span> One parallel verse</li>
+            <li><span class="color-sample pastel-purple"></span> Two parallel verses</li>
+            <li><span class="color-sample pastel-pink"></span> Three or more parallel verses</li>
+            <li><span class="color-sample unique"></span> Unique verse (no parallels)</li>
+        </ul>
+        <p>Clicking on a verse will highlight it and its parallels in the other Gospels. The current chapter will always be visible at the top of the screen as you scroll through the text.</p>
     </div>
-    <div class="column" id="luke">
-      <h2>Luke</h2>
-      <div id="luke-content"></div>
+
+    <div class="gospels">
+        <!-- Example for Matthew -->
+        <div class="column" id="matthew-column">
+            <select id="matthew-verse-finder"></select>
+            <div id="matthew-content"></div>
+        </div>
+
+        <!-- Similarly, add columns for Mark, Luke, and John -->
+        <div class="column" id="mark-column">
+            <select id="mark-verse-finder"></select>
+            <div id="mark-content"></div>
+        </div>
+
+        <div class="column" id="luke-column">
+            <select id="luke-verse-finder"></select>
+            <div id="luke-content"></div>
+        </div>
+
+        <div class="column" id="john-column">
+            <select id="john-verse-finder"></select>
+            <div id="john-content"></div>
+        </div>
     </div>
-    <div class="column" id="john">
-      <h2>John</h2>
-      <div id="john-content"></div>
-    </div>
-  </div>
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
