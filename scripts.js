@@ -477,4 +477,3 @@ document.addEventListener('DOMContentLoaded', function() {
     setUpProgressBar();
     loadEvents();
 });
-
