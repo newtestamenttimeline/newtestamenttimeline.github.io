@@ -1,199 +1,151 @@
-/* Basic Reset... */
-body, h1, h2, h3, h4, h5, h6, p, div, select, nav, a {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
 }
 
-/* Top Bar */
+/* Top bar with welcome message and menu */
 #top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f1f1f1;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ccc;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
 }
 
-#top-bar #welcome-message {
-    font-size: 1.2em;
-    font-weight: bold;
+#welcome-message {
+    flex: 2;
 }
 
-#top-bar #menu {
+#menu {
+    flex: 1;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
-#top-bar #menu select {
-    margin-right: 20px;
-    padding: 5px;
-    font-size: 1em;
-}
-
-#top-bar #menu nav a {
-    margin-left: 15px;
+#menu select,
+#menu a {
+    margin-left: 10px;
+    padding: 5px 10px;
     text-decoration: none;
-    color: #007BFF;
-    font-size: 1em;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
 }
 
-#top-bar #menu nav a:hover {
-    text-decoration: underline;
+#menu a:hover,
+#menu select:hover {
+    background-color: #ddd;
 }
 
-/* Instructions and Legend */
+/* Instructions and Legend section */
 #legend-instructions-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
 }
 
-#instructions, #legend {
+#legend, #instructions {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
     width: 48%;
 }
 
-#instructions h4 {
-    margin-bottom: 10px;
-}
-
-#instructions p {
-    font-size: 1em;
-    color: #555;
-}
-
-#legend h3 {
+#legend h3, #instructions h4 {
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
 .legend-columns {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
-.legend-column p {
-    margin-bottom: 10px;
+.legend-column {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .color-sample {
     display: inline-block;
     width: 20px;
-    height: 20px;
+    height: 10px;
     margin-right: 10px;
     vertical-align: middle;
-    border: 1px solid #ccc;
 }
 
-/* Legend Colors */
-.pastel-green {
-    background-color: #c7f0d8;
-}
-
-.pastel-purple {
-    background-color: #d6c7f0;
-}
-
-.pastel-pink {
-    background-color: #f0c7d8;
-}
-
-.unique {
-    background-color: #f7f7f7;
-}
-
+.pastel-green { background-color: #b2fab4; }
+.pastel-purple { background-color: #c3b1e1; }
+.pastel-pink { background-color: #f28b82; }
+.unique { background-color: #ccc; }
 .highlight {
-    background-color: #4169E1; /* Vibrant royal blue */
+    background-color: #4169E1;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 2px 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
 }
 
-/* Gospel Columns */
+/* Gospels content */
 #gospels {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #ffffff;
 }
 
 .column {
-    width: 23%;
-    padding: 10px;
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 22%;
     overflow-y: auto;
-    height: calc(100vh - 250px); /* Adjusted to account for the new top bar */
+    height: 80vh;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.column h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.column select {
+select {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
     font-size: 1em;
 }
 
-.column #matthew-content,
-.column #mark-content,
-.column #luke-content,
-.column #john-content {
-    height: calc(100vh - 320px); /* Adjusted height for scrolling */
-    overflow-y: auto;
-    padding-right: 10px;
+.chapter-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+    border-bottom: 1px solid #ddd;
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-/* Scrollbars */
-.column #matthew-content::-webkit-scrollbar,
-.column #mark-content::-webkit-scrollbar,
-.column #luke-content::-webkit-scrollbar,
-.column #john-content::-webkit-scrollbar {
-    width: 10px;
+.column h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
 }
 
-.column #matthew-content::-webkit-scrollbar-thumb,
-.column #mark-content::-webkit-scrollbar-thumb,
-.column #luke-content::-webkit-scrollbar-thumb,
-.column #john-content::-webkit-scrollbar-thumb {
-    background-color: #bbb;
-    border-radius: 10px;
-}
-
-.column #matthew-content::-webkit-scrollbar-track,
-.column #mark-content::-webkit-scrollbar-track,
-.column #luke-content::-webkit-scrollbar-track,
-.column #john-content::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #legend-instructions-container {
-        flex-direction: column;
-    }
-
-    #instructions, #legend {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    #gospels {
-        flex-direction: column;
-    }
-
-    .column {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+.highlight {
+    background-color: #4169E1;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 2px 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
