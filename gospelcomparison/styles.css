@@ -5,7 +5,7 @@ body {
     line-height: 1.6;
 }
 
-/* Top bar with welcome message and menu! */
+/* Top bar with welcome message and menu */
 #top-bar {
     display: flex;
     justify-content: space-between;
@@ -25,6 +25,36 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+}
+
+/* Style for the translation dropdown to match buttons */
+#menu select {
+    padding: 8px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    appearance: none; /* Hide the default dropdown arrow */
+    -webkit-appearance: none; /* Hide the default dropdown arrow in Safari */
+    -moz-appearance: none; /* Hide the default dropdown arrow in Firefox */
+    text-align: center; /* Center the text */
+}
+
+#menu select:hover {
+    background-color: #0056b3;
+}
+
+/* Add a custom arrow to the dropdown */
+#menu select::after {
+    content: '▼';
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
 }
 
 #menu button {
