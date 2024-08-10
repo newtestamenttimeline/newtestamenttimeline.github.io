@@ -33,13 +33,13 @@ body {
     width: 48%; /* Ensure columns are narrow enough to fit side by side */
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Adds consistent spacing between items */
+    gap: 50px; /* Adds consistent spacing between items */
 }
 
 .color-sample {
     display: inline-block;
     width: 20px;
-    height: 10px;
+    height: 15px;
     margin-right: 10px;
     vertical-align: middle;
 }
