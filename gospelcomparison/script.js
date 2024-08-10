@@ -45,11 +45,11 @@ function populateGospel(gospelId, gospelData, parallels) {
                 if (parallels[group].includes(verseId)) {
                     found = true;
                     const parallelCount = parallels[group].length;
-                    if (parallelCount === 1) {
+                    if (parallelCount === 2) {
                         verseElement.classList.add('pastel-green');
-                    } else if (parallelCount === 2) {
+                    } else if (parallelCount === 3) {
                         verseElement.classList.add('pastel-purple');
-                    } else if (parallelCount >= 3) {
+                    } else if (parallelCount >= 4) {
                         verseElement.classList.add('pastel-pink');
                     }
                     break;
