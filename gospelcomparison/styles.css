@@ -20,25 +20,6 @@ body {
     flex: 2;
 }
 
-
-
-
-
-
-
-
-#menu select:hover,
-#menu button:hover {
-    background-color: #0056b3;
-}
-
-
-
-
-
-
-
-
 #menu {
     flex: 1;
     display: flex;
@@ -69,31 +50,7 @@ body {
     text-align: center;
 }
 
-#menu select:hover {
-    background-color: #0056b3;
-}
-
-/* Add a custom arrow to the dropdown */
-#menu select::after {
-    content: '▼';
-    color: #fff;
-    font-size: 12px;
-    position: absolute;
-    right: 10px;
-    pointer-events: none;
-}
-
-#menu button {
-    padding: 8px 15px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
+#menu select:hover,
 #menu button:hover {
     background-color: #0056b3;
 }
@@ -142,6 +99,18 @@ body {
 .pastel-purple { background-color: #c3b1e1; }
 .pastel-pink { background-color: #f28b82; }
 .unique { background-color: #ccc; }
+
+/* Legend highlight color chip */
+.highlight-legend {
+    background-color: #4169E1;
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Verse highlight style */
 .highlight {
     background-color: #4169E1;
     color: white;
@@ -193,35 +162,3 @@ select {
     margin-bottom: 10px;
     color: #333;
 }
-
-/* Legend highlight color chip */
-.highlight-legend {
-    background-color: #4169E1;
-    width: 20px;
-    height: 10px;
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-/* Verse highlight style */
-.highlight {
-    background-color: #4169E1;
-    color: white;
-    font-weight: bold;
-    border-radius: 4px;
-    padding: 2px 4px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    z-index: 1;
-}
-
-
-
-
-
-
-
-
-
-
