@@ -30,7 +30,7 @@ body {
 }
 
 .legend-column {
-    width: 48%; /* Ensure columns are narrow enough to fit side by side */
+    width: 48%; /* Ensure columns are narrow enough to fit side by side. */
     display: flex;
     flex-direction: column;
     gap: 5px; /* Adds consistent spacing between items */
