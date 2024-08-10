@@ -5,25 +5,17 @@ body {
     line-height: 1.6;
 }
 
-#gospels {
+#legend-instructions-container {
     display: flex;
     justify-content: space-between;
-}
-
-.column {
-    width: 22%;
-    overflow-y: auto;
-    height: 80vh;
-    border: 1px solid #ddd;
-    padding: 10px;
-    position: relative;
+    margin-bottom: 20px;
 }
 
 #legend, #instructions {
     background-color: #f9f9f9;
     padding: 10px;
     border: 1px solid #ddd;
-    margin-bottom: 20px;
+    width: 48%; /* Adjusted to make both boxes fit side by side */
 }
 
 .color-sample {
@@ -36,8 +28,22 @@ body {
 
 .pastel-green { background-color: #b2fab4; }
 .pastel-purple { background-color: #d4b2fa; }
-.pastel-pink { background-color: #ff9999; }
+.pastel-pink { background-color: #fabbc9; }
 .unique { background-color: #ccc; }
+
+#gospels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 23%; /* Adjusted to ensure they fit side by side */
+    overflow-y: auto;
+    height: 80vh;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
 
 select {
     width: 100%;
