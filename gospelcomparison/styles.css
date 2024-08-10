@@ -8,17 +8,55 @@ body {
 #legend-instructions-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 #legend, #instructions {
     background-color: #f9f9f9;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #ddd;
     width: 48%; /* Adjusted to make both boxes fit side by side */
 }
 
+#legend h3, #instructions h3 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Added consistent spacing below headings */
+}
 
+.legend-columns {
+    display: flex;
+    justify-content: space-between; /* Space between the two columns */
+    align-items: flex-start; /* Aligns items at the start of each column */
+}
+
+.legend-column {
+    width: 48%; /* Ensure columns are narrow enough to fit side by side */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds consistent spacing between items */
+}
+
+.color-sample {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.pastel-green { background-color: #b2fab4; }
+.pastel-purple { background-color: #c3b1e1; }
+.pastel-pink { background-color: #f28b82; }
+.unique { background-color: #ccc; }
+.highlight { 
+    background-color: #4169E1; /* Vibrant Royal Blue */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px; /* Space between the unique color and highlight color */
+    vertical-align: middle;
+    border-radius: 4px; /* If you want to add rounded corners, consistent with the highlight style */
+}
 
 #gospels {
     display: flex;
@@ -26,7 +64,7 @@ body {
 }
 
 .column {
-    width: 23%; /* Adjusted to ensure they fit side by side */
+    width: 22%; /* Adjusted to ensure columns fit side by side */
     overflow-y: auto;
     height: 80vh;
     border: 1px solid #ddd;
@@ -49,56 +87,23 @@ select {
     z-index: 10;
     border-bottom: 1px solid #ddd;
     margin-top: 0;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .column h2 {
     text-align: center;
     font-size: 1.5em;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
     color: #333;
 }
 
 .highlight {
     background-color: #4169E1; /* Vibrant Royal Blue */
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-left: 10px; /* Space between the unique color and highlight color */
-    vertical-align: middle;
-    border-radius: 4px; /* If you want to add rounded corners, consistent with the highlight style */
+    color: white; /* Makes the text stand out against the blue background */
+    font-weight: bold; /* Makes the text more prominent */
+    border-radius: 4px; /* Adds a subtle rounding to the corners */
+    padding: 2px 4px; /* Adds some padding to make the highlight more prominent */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
 }
-
-
-#legend {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-}
-
-.legend-columns {
-    display: flex; /* Ensure this is applied */
-    justify-content: space-between; /* Space between columns */
-}
-
-.legend-column {
-    width: 48%; /* Adjust width so both columns fit side by side */
-}
-
-.color-sample {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    vertical-align: left;
-}
-
-.pastel-green { background-color: #b2fab4; }
-.pastel-purple { background-color: #c3b1e1; }
-.pastel-pink { background-color: #f28b82; }
-.unique { background-color: #ccc; }
-.highlight { background-color: #4169E1; } /* Vibrant Royal Blue for selected verses */
-
-
