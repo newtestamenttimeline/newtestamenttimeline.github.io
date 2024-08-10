@@ -63,3 +63,11 @@ select {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.column h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
