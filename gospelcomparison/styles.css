@@ -109,3 +109,26 @@ select {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
 }
+
+/* Specifically target verse paragraphs for highlighting */
+.column p.highlight {
+    background-color: #4169E1; /* Vibrant royal blue */
+    color: white; /* Optional: Change text color for better contrast */
+}
+
+/* Keep the legend highlight color chip intact */
+.legend-column .highlight {
+    background-color: #4169E1;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+/* Ensure this doesn't affect the actual verses */
+.column p {
+    margin-bottom: 10px; /* Restore spacing between verses */
+    padding-left: 5px;   /* Optional: Adds slight indentation */
+}
+
