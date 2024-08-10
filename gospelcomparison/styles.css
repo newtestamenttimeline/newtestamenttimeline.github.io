@@ -20,6 +20,25 @@ body {
     flex: 2;
 }
 
+
+
+
+
+
+
+
+#menu select:hover,
+#menu button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
 #menu {
     flex: 1;
     display: flex;
@@ -27,10 +46,11 @@ body {
     gap: 10px;
 }
 
-/* Style for the translation dropdown to match buttons */
-#menu select {
-    height: 40px; /* Set the height to ensure consistency */
-    padding: 8px 15px;
+/* Ensure buttons and dropdown are the same height */
+#menu select,
+#menu button {
+    height: 40px; /* Set a uniform height */
+    padding: 0 15px; /* Remove top/bottom padding to keep consistent height */
     font-size: 16px;
     color: #fff;
     background-color: #007bff;
@@ -38,10 +58,15 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    appearance: none; /* Hide the default dropdown arrow */
-    -webkit-appearance: none; /* Hide the default dropdown arrow in Safari */
-    -moz-appearance: none; /* Hide the default dropdown arrow in Firefox */
-    text-align: center; /* Center the text */
+    line-height: 40px; /* Ensure vertical text alignment */
+}
+
+/* Remove default dropdown arrow and add custom appearance */
+#menu select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align: center;
 }
 
 #menu select:hover {
@@ -190,4 +215,13 @@ select {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     z-index: 1;
 }
+
+
+
+
+
+
+
+
+
 
