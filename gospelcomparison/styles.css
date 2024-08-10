@@ -8,12 +8,12 @@ body {
 #legend-instructions-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #legend, #instructions {
     background-color: #f9f9f9;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ddd;
     width: 48%; /* Adjusted to make both boxes fit side by side */
 }
