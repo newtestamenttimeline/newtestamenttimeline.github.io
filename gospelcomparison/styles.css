@@ -72,6 +72,13 @@ select {
 }
 
 .highlight {
-    background-color: #4169E1; /* Light blue color */
+    background-color: #4169E1; /* Vibrant Royal Blue */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px; /* Space between the unique color and highlight color */
+    vertical-align: middle;
+    border-radius: 4px; /* If you want to add rounded corners, consistent with the highlight style */
 }
+
 
