@@ -71,3 +71,7 @@ select {
     color: #333;
 }
 
+.highlight {
+    background-color: #add8e6; /* Light blue color */
+}
+
