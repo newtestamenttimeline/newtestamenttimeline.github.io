@@ -1,11 +1,11 @@
-/* Basic Reset... */
+/* Basic Reset */
 body, h1, h2, h3, h4, h5, h6, p, div, select, nav, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body... */
+/* Body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -32,13 +32,14 @@ body {
     align-items: center;
 }
 
-#top-bar #menu nav {
-    display: flex;
-    align-items: center;
+#top-bar #menu select {
+    margin-right: 20px;
+    padding: 5px;
+    font-size: 1em;
 }
 
 #top-bar #menu nav a {
-    margin-right: 15px;
+    margin-left: 15px;
     text-decoration: none;
     color: #007BFF;
     font-size: 1em;
@@ -46,11 +47,6 @@ body {
 
 #top-bar #menu nav a:hover {
     text-decoration: underline;
-}
-
-#top-bar #menu select {
-    padding: 5px;
-    font-size: 1em;
 }
 
 /* Instructions and Legend */
