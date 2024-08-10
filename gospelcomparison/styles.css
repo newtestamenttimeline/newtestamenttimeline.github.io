@@ -29,6 +29,7 @@ body {
 
 /* Style for the translation dropdown to match buttons */
 #menu select {
+    height: 40px; /* Set the height to ensure consistency */
     padding: 8px 15px;
     font-size: 16px;
     color: #fff;
