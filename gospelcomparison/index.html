@@ -7,28 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="legend">
-        <h2>Legend</h2>
-        <p><span class="color-sample pastel-green"></span> 1 Parallel Verse</p>
-        <p><span class="color-sample pastel-purple"></span> 2 Parallel Verses</p>
-        <p><span class="color-sample pastel-pink"></span> 3 or More Parallel Verses</p>
-        <p><span class="color-sample unique"></span> Unique Verse (No Parallels)</p>
+    <div id="legend-instructions-container">
+        <div id="legend">
+            <h3>Legend</h3>
+            <p><span class="color-sample pastel-green"></span> 1 Parallel Verse</p>
+            <p><span class="color-sample pastel-purple"></span> 2 Parallel Verses</p>
+            <p><span class="color-sample pastel-pink"></span> 3 or More Parallel Verses</p>
+            <p><span class="color-sample unique"></span> Unique Verse (No Parallels)</p>
+        </div>
+
+        <div id="instructions">
+            <h3>How to Use This Site</h3>
+            <p>This site allows you to explore the parallels between the Gospels. Use the verse finder at the top of each column to quickly navigate to any verse. Colors indicate how many parallel verses exist across the Gospels.</p>
+        </div>
     </div>
 
-    <div id="instructions">
-        <h2>How to Use This Site</h2>
-        <p>This site allows you to explore the parallels between the Gospels. You can use the verse finder at the top of each column to quickly navigate to any verse. 
-           The colors indicate how many parallel verses exist across the Gospels:</p>
-        <ul>
-            <li><span class="color-sample pastel-green"></span> One parallel verse</li>
-            <li><span class="color-sample pastel-purple"></span> Two parallel verses</li>
-            <li><span class="color-sample pastel-pink"></span> Three or more parallel verses</li>
-            <li><span class="color-sample unique"></span> Unique verse (no parallels)</li>
-        </ul>
-        <p>Clicking on a verse will highlight it and its parallels in the other Gospels. The current chapter will always be visible at the top of the screen as you scroll through the text.</p>
-    </div>
-
-    <div class="gospels">
+    <div id="gospels">
         <!-- Example for Matthew -->
         <div class="column" id="matthew-column">
             <select id="matthew-verse-finder"></select>
