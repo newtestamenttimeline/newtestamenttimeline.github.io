@@ -18,18 +18,7 @@ body {
     width: 48%; /* Adjusted to make both boxes fit side by side */
 }
 
-.color-sample {
-    display: inline-block;
-    width: 20px;
-    height: 10px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
 
-.pastel-green { background-color: #b2fab4; }
-.pastel-purple { background-color: #d4b2fa; }
-.pastel-pink { background-color: #f28b82; }
-.unique { background-color: #ccc; }
 
 #gospels {
     display: flex;
@@ -80,5 +69,36 @@ select {
     vertical-align: middle;
     border-radius: 4px; /* If you want to add rounded corners, consistent with the highlight style */
 }
+
+
+#legend {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.legend-columns {
+    display: flex; /* Ensure this is applied */
+    justify-content: space-between; /* Space between columns */
+}
+
+.legend-column {
+    width: 48%; /* Adjust width so both columns fit side by side */
+}
+
+.color-sample {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.pastel-green { background-color: #b2fab4; }
+.pastel-purple { background-color: #c3b1e1; }
+.pastel-pink { background-color: #f28b82; }
+.unique { background-color: #ccc; }
+.highlight { background-color: #4169E1; } /* Vibrant Royal Blue for selected verses */
 
 
