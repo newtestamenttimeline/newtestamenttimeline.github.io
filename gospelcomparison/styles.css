@@ -169,6 +169,17 @@ select {
     color: #333;
 }
 
+/* Legend highlight color chip */
+.highlight-legend {
+    background-color: #4169E1;
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Verse highlight style */
 .highlight {
     background-color: #4169E1;
     color: white;
@@ -177,4 +188,5 @@ select {
     padding: 2px 4px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
 }
