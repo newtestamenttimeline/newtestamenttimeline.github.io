@@ -64,7 +64,7 @@ body {
 }
 
 #instructions h4 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #instructions p {
@@ -73,7 +73,7 @@ body {
 }
 
 #legend h3 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .legend-columns {
@@ -82,7 +82,7 @@ body {
 }
 
 .legend-column p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .color-sample {
@@ -112,7 +112,7 @@ body {
 }
 
 .highlight {
-    background-color: #ffd700;
+    background-color: #4169E1; /* Vibrant royal blue for highlight */
 }
 
 /* Gospel Columns */
