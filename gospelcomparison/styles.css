@@ -33,7 +33,7 @@ body {
     width: 48%; /* Ensure columns are narrow enough to fit side by side */
     display: flex;
     flex-direction: column;
-    gap: 50px; /* Adds consistent spacing between items */
+    gap: 5px; /* Adds consistent spacing between items */
 }
 
 .color-sample {
