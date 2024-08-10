@@ -92,7 +92,7 @@ select {
     width: 20px;
     height: 20px;
     margin-right: 10px;
-    vertical-align: middle;
+    vertical-align: left;
 }
 
 .pastel-green { background-color: #b2fab4; }
