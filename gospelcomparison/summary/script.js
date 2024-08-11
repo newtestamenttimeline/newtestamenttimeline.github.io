@@ -152,5 +152,44 @@ function scrollToSummary(summaryElement) {
     });
 }
 
+function drawLinesBetweenParallels(parallels) {
+    // First, remove any existing SVG lines
+    const existingSvg = document.querySelector('.svg-container');
+    if (existingSvg) {
+        existingSvg.remove();
+    }
+
+    // Create a new SVG container
+    const svgContainer = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svgContainer.setAttribute("class", "svg-container");
+    document.body.appendChild(svgContainer);
+
+    for (const group in parallels) {
+        const elements = parallels[group].map(id => document.querySelector(`div[data-summary="${id}"]`)).filter(Boolean);
+
+        if (elements.length < 2) continue;
+
+        elements.forEach((element, index) => {
+            if (index === 0) return;
+            const previousElement = elements[index - 1];
+
+            const startX = previousElement.getBoundingClientRect().right;
+            const startY = previousElement.getBoundingClientRect().top + previousElement.clientHeight / 2;
+            const endX = element.getBoundingClientRect().left;
+            const endY = element.getBoundingClientRect().top + element.clientHeight / 2;
+
+            const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            line.setAttribute("x1", startX);
+            line.setAttribute("y1", startY);
+            line.setAttribute("x2", endX);
+            line.setAttribute("y2", endY);
+            line.setAttribute("class", `line ${elements[0].querySelector('p').classList[1]}-line`); // Use the class of the first element to color the line
+
+            svgContainer.appendChild(line);
+        });
+    }
+}
+
+
 // Call loadGospels on page load
 document.addEventListener('DOMContentLoaded', loadGospels);
