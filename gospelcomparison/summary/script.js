@@ -1,3 +1,36 @@
+async function loadGospels() {
+    try {
+        const matthew = await fetch('matthew.json').then(res => res.json()).catch(err => console.error('Error loading matthew.json:', err));
+        const mark = await fetch('mark.json').then(res => res.json()).catch(err => console.error('Error loading mark.json:', err));
+        const luke = await fetch('luke.json').then(res => res.json()).catch(err => console.error('Error loading luke.json:', err));
+        const john = await fetch('john.json').then(res => res.json()).catch(err => console.error('Error loading john.json:', err));
+        const parallels = await fetch('parallels.json').then(res => res.json()).catch(err => console.error('Error loading parallels.json:', err));
+
+        // Log the loaded data to inspect
+        console.log('Matthew:', matthew);
+        console.log('Mark:', mark);
+        console.log('Luke:', luke);
+        console.log('John:', john);
+        console.log('Parallels:', parallels);
+
+        // Check if any gospel data is undefined
+        if (!matthew || !mark || !luke || !john || !parallels) {
+            console.error('One or more gospels failed to load.');
+            return;
+        }
+
+        // Populate each gospel with the corresponding data
+        populateGospel('matthew', matthew, parallels);
+        populateGospel('mark', mark, parallels);
+        populateGospel('luke', luke, parallels);
+        populateGospel('john', john, parallels);
+
+    } catch (error) {
+        console.error('Error loading gospels:', error);
+        alert('Failed to load the requested file. Please check the console for more details.');
+    }
+}
+
 function populateGospel(gospelName, gospelContent, parallels) {
     if (!Array.isArray(gospelContent)) {
         console.error(`${gospelName}.json data is not an array or is undefined.`);
@@ -118,3 +151,6 @@ function scrollToSummary(summaryElement) {
         behavior: 'smooth'
     });
 }
+
+// Call loadGospels on page load
+document.addEventListener('DOMContentLoaded', loadGospels);
