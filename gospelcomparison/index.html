@@ -28,34 +28,40 @@
                 <option value="Summary">Summary</option>
             </select>
             <a href="index.html">
-    <button id="home-button">Home</button>
-</a>
-            
+                <button id="home-button">Home</button>
+            </a>
             <a href="https://newtestamenttimeline.github.io/index.html">
-    <button id="timeline-button">Timeline</button>
-</a>
-            
+                <button id="timeline-button">Timeline</button>
+            </a>
         </div>
     </div>
 
     <!-- Instructions and Legend -->
     <div id="legend-instructions-container">
-        <div id="instructions">
-            <h4>How to use this site:</h4>
-            <p>This site allows you to explore the parallels between the Gospels. Click a verse and if it has parallels, the site will scroll to them and highlight them. Use the verse finder at the top of each column to jump to any verse. Colors indicate how many parallel verses exist across the Gospels (See legend on the right).</p>
-        </div> 
-        
-        <div id="legend">
-            <h3>Legend</h3>
-            <div class="legend-columns">
-                <div class="legend-column">
-                    <p><span class="color-sample pastel-green"></span> 1 Parallel Verse</p>
-                    <p><span class="color-sample pastel-purple"></span> 2 Parallel Verses</p>
-                    <p><span class="color-sample pastel-pink"></span> 3 Parallel Verses (i.e., Verse exists in all 4 Gospels)</p>
-                </div>
-                <div class="legend-column">
-                    <p><span class="color-sample unique"></span> Unique Verse (No Parallels)</p>
-                     <p><span class="color-sample highlight-legend"></span> Highlight (Selected Verse and its Parallels)</p>
+        <!-- Instructions Section -->
+        <div id="instructions-container">
+            <button id="toggle-instructions">Toggle Instructions</button>
+            <div id="instructions">
+                <h4>How to use this site:</h4>
+                <p>This site allows you to explore the parallels between the Gospels. Click a verse and if it has parallels, the site will scroll to them and highlight them. Use the verse finder at the top of each column to jump to any verse. Colors indicate how many parallel verses exist across the Gospels (See legend on the right).</p>
+            </div>
+        </div>
+
+        <!-- Legend Section -->
+        <div id="legend-container">
+            <button id="toggle-legend">Toggle Legend</button>
+            <div id="legend">
+                <h3>Legend</h3>
+                <div class="legend-columns">
+                    <div class="legend-column">
+                        <p><span class="color-sample pastel-green"></span> 1 Parallel Verse</p>
+                        <p><span class="color-sample pastel-purple"></span> 2 Parallel Verses</p>
+                        <p><span class="color-sample pastel-pink"></span> 3 Parallel Verses (i.e., Verse exists in all 4 Gospels)</p>
+                    </div>
+                    <div class="legend-column">
+                        <p><span class="color-sample unique"></span> Unique Verse (No Parallels)</p>
+                        <p><span class="color-sample highlight-legend"></span> Highlight (Selected Verse and its Parallels)</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,5 +99,38 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        document.getElementById('toggle-instructions').addEventListener('click', function() {
+            var instructions = document.getElementById('instructions');
+            if (instructions.style.display === 'none' || instructions.style.display === '') {
+                instructions.style.display = 'block';
+            } else {
+                instructions.style.display = 'none';
+            }
+        });
+
+        document.getElementById('toggle-legend').addEventListener('click', function() {
+            var legend = document.getElementById('legend');
+            if (legend.style.display === 'none' || legend.style.display === '') {
+                legend.style.display = 'block';
+            } else {
+                legend.style.display = 'none';
+            }
+        });
+
+        document.getElementById('translation-selector').addEventListener('change', function() {
+            var selectedValue = this.value;
+            
+            if (selectedValue === 'Summary') {
+                window.location.href = 'https://newtestamenttimeline.github.io/gospelcomparison/summary/index.html';
+            } else if (selectedValue === 'WEB') {
+                // Add the appropriate URL if necessary for WEB Bible
+                window.location.href = 'URL_FOR_WEB_BIBLE';
+            } else if (selectedValue === 'KJV') {
+                // Add the appropriate URL if necessary for KJV Bible
+                window.location.href = 'URL_FOR_KJV_BIBLE';
+            }
+        });
+    </script>
 </body>
 </html>
