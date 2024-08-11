@@ -45,7 +45,7 @@ function populateFamilyList() {
 function filterEventsByText(text, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
-        const eventTexts = event.getAttribute('data-text').split(',');
+        const eventTexts = event.getAttribute('data-texts').split(',');
         if (isChecked) {
             if (eventTexts.includes(text)) {
                 event.classList.remove('greyed-out');
@@ -61,18 +61,19 @@ function filterEventsByText(text, isChecked) {
 function filterEventsByFamily(family, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
-        const eventFamilies = event.getAttribute('data-family').split(',');
+        const eventFamily = event.getAttribute('data-family');
         if (isChecked) {
-            if (eventFamilies.includes(family)) {
+            if (eventFamily === family) {
                 event.classList.remove('greyed-out');
             }
         } else {
-            if (eventFamilies.length === 1 && eventFamilies.includes(family)) {
+            if (eventFamily === family) {
                 event.classList.add('greyed-out');
             }
         }
     });
 }
+
 
 
 // Ensure DOM is fully loaded before executing the rest of the script
