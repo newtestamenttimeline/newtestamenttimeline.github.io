@@ -1,4 +1,3 @@
-
 function setUpProgressBar() {
     const progressBar = document.getElementById('progress-bar');
     if (progressBar) {
