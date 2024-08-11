@@ -196,7 +196,7 @@ select {
 }
 
 #top-bar {
-    background-color: var(--primary-color); /* Bright blue background */
+    background-color: #3498db; /* Bright blue background */
     color: var(--text-color); /* White text */
     text-align: center;
     padding: 10px 20px;
