@@ -45,7 +45,7 @@ function populateFamilyList() {
 function filterEventsByText(text, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
-        const eventTexts = event.getAttribute('data-texts').split(',');
+        const eventTexts = event.getAttribute('data-text').split(',');
         if (isChecked) {
             if (eventTexts.includes(text)) {
                 event.classList.remove('greyed-out');
@@ -61,18 +61,19 @@ function filterEventsByText(text, isChecked) {
 function filterEventsByFamily(family, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
-        const eventFamily = event.getAttribute('data-family');
+        const eventFamilies = event.getAttribute('data-family').split(',');
         if (isChecked) {
-            if (eventFamily === family) {
+            if (eventFamilies.includes(family)) {
                 event.classList.remove('greyed-out');
             }
         } else {
-            if (eventFamily === family) {
+            if (eventFamilies.length === 1 && eventFamilies.includes(family)) {
                 event.classList.add('greyed-out');
             }
         }
     });
 }
+
 
 
 
