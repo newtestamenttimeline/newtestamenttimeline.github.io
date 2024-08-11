@@ -238,4 +238,7 @@ select {
     stroke: red;
 }
 
+#line-container .line {
+    z-index: 0; /* Ensure lines are behind other elements */
+}
 
