@@ -1,6 +1,6 @@
 async function loadEvents() {
     try {
-        const totalFiles = 4; // Number of JSON files to load
+        const totalFiles = 4; // Number of JSON files to load!
         let filesLoaded = 0;
 
         // Fetch and process initial events
