@@ -1,7 +1,3 @@
-// Declare these at the top of your script to ensure they are globally accessible
-let texts = new Set();
-let families = new Set();
-
 
 function filterEventsByText(text, isChecked) {
     const events = document.querySelectorAll('.event');
