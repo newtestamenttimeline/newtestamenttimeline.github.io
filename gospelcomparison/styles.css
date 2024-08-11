@@ -199,7 +199,7 @@ select {
     background-color: var(--primary-color); /* Bright blue background */
     color: var(--text-color); /* White text */
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -226,20 +226,21 @@ select {
 
 #menu select,
 #menu button {
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #2980b9; /* Slightly darker blue for buttons */
-    color: white;
+    background-color: white; /* White background for buttons */
+    color: var(--primary-color); /* Blue text for buttons */
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #menu button:hover,
 #menu select:hover {
-    background-color: #21618c; /* Even darker blue on hover */
+    background-color: var(--primary-color); /* Blue background on hover */
+    color: white; /* White text on hover */
 }
