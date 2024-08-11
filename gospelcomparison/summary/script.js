@@ -1,12 +1,11 @@
 async function loadGospels() {
     try {
-        const selectedTranslation = document.getElementById('translation-selector').value;
         const gospels = await Promise.all([
-            fetch(`matthew_${selectedTranslation}.json`).then(res => res.json()),
-            fetch(`mark_${selectedTranslation}.json`).then(res => res.json()),
-            fetch(`luke_${selectedTranslation}.json`).then(res => res.json()),
-            fetch(`john_${selectedTranslation}.json`).then(res => res.json()),
-            fetch('parallels.json').then(res => res.json())
+            fetch('summary/matthew.json').then(res => res.json()),
+            fetch('summary/mark.json').then(res => res.json()),
+            fetch('summary/luke.json').then(res => res.json()),
+            fetch('summary/john.json').then(res => res.json()),
+            fetch('summary/parallels.json').then(res => res.json())
         ]);
 
         const [matthew, mark, luke, john, parallels] = gospels;
