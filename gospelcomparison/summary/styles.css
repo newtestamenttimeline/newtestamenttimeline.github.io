@@ -162,3 +162,22 @@ select {
     margin-bottom: 10px;
     color: #333;
 }
+
+.summary-chapter {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.summary-chapter h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+.summary-chapter p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+
