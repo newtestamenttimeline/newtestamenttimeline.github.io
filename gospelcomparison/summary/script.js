@@ -156,8 +156,23 @@ function scrollToSummary(summaryElement) {
 }
 
 function drawLinesBetweenParallels(parallels) {
-    const container = document.getElementById('lines-container');
-    container.innerHTML = ''; // Clear previous lines
+    // First, remove any existing SVG lines
+    const existingSvg = document.querySelector('.svg-container');
+    if (existingSvg) {
+        existingSvg.remove();
+    }
+
+    // Create a new SVG container
+    const svgContainer = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svgContainer.setAttribute("class", "svg-container");
+    svgContainer.style.position = 'absolute';
+    svgContainer.style.width = '100%';
+    svgContainer.style.height = '100%';
+    svgContainer.style.top = '0';
+    svgContainer.style.left = '0';
+    svgContainer.style.pointerEvents = 'none'; // Allows clicks to pass through the lines
+
+    document.body.appendChild(svgContainer);
 
     for (const group in parallels) {
         const elements = parallels[group].map(id => document.querySelector(`div[data-summary="${id}"]`)).filter(Boolean);
@@ -168,19 +183,20 @@ function drawLinesBetweenParallels(parallels) {
             if (index === 0) return;
             const previousElement = elements[index - 1];
 
-            const start = previousElement.getBoundingClientRect();
-            const end = element.getBoundingClientRect();
+            const startX = previousElement.getBoundingClientRect().right + window.scrollX;
+            const startY = previousElement.getBoundingClientRect().top + window.scrollY + previousElement.clientHeight / 2;
+            const endX = element.getBoundingClientRect().left + window.scrollX;
+            const endY = element.getBoundingClientRect().top + window.scrollY + element.clientHeight / 2;
 
-            const line = document.createElement('div');
-            line.classList.add('line');
-            line.style.position = 'absolute';
-            line.style.width = `${end.left - start.right}px`;
-            line.style.height = '2px';
-            line.style.top = `${start.top + start.height / 2}px`;
-            line.style.left = `${start.right}px`;
-            line.style.backgroundColor = getColorByClass(previousElement);
+            const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            line.setAttribute("x1", startX);
+            line.setAttribute("y1", startY);
+            line.setAttribute("x2", endX);
+            line.setAttribute("y2", endY);
+            line.setAttribute("stroke-width", "2");
+            line.setAttribute("stroke", getColorByClass(previousElement)); // Color based on the class
 
-            container.appendChild(line);
+            svgContainer.appendChild(line);
         });
     }
 }
@@ -193,14 +209,5 @@ function getColorByClass(element) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Add an empty container for the lines
-    const container = document.createElement('div');
-    container.id = 'lines-container';
-    container.style.position = 'absolute';
-    container.style.width = '100%';
-    container.style.height = '100%';
-    container.style.pointerEvents = 'none';
-    document.body.appendChild(container);
-
     loadGospels();
 });
