@@ -51,3 +51,22 @@ function addYearLabels() {
         timeline.appendChild(yearLabel);
     });
 }
+
+function setUpProgressBar() {
+    const progressBar = document.getElementById('progress-bar');
+    if (progressBar) {
+        progressBar.style.width = '0%';
+    } else {
+        console.error('Progress bar element not found.');
+    }
+}
+
+function updateProgressBar(progress) {
+    const progressBar = document.getElementById('progress-bar');
+    if (progressBar) {
+        progressBar.style.width = progress + '%';
+    } else {
+        console.error('Progress bar element not found.');
+    }
+}
+
