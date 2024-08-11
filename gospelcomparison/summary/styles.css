@@ -181,3 +181,23 @@ select {
     color: #333;
 }
 
+/* Style for group titles */
+.group-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Style for chapter summaries */
+.chapter-summary {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Highlighting for parallels */
+.highlight {
+    background-color: #ffeb3b;
+    color: black;
+    font-weight: bold;
+}
+
