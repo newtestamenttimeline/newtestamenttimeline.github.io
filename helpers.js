@@ -1,4 +1,3 @@
-let eventTypeColors = {}; // Ensure this is declared if it's used across multiple files
 
 function setUpProgressBar() {
     const progressBar = document.getElementById('progress-bar');
