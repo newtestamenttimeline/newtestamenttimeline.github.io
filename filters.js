@@ -1,13 +1,18 @@
-//comment to redeploy
-
 function filterEventsByText(text, isChecked) {
+    console.log(`Filtering by text: ${text}, isChecked: ${isChecked}`);
     const events = document.querySelectorAll('.event');
+    console.log(`Total events found: ${events.length}`);
     events.forEach(event => {
         const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-        if (isChecked && eventTexts.includes(text)) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventTexts.includes(text)) {
+        console.log(`Event texts: ${eventTexts}`);
+        const allUnchecked = eventTexts.every(eventText => 
+            !document.querySelector(`#text-list input[type="checkbox"][value="${eventText}"]`).checked
+        );
+        if (allUnchecked) {
+            console.log(`Greying out event: ${event}`);
             event.classList.add('greyed-out');
+        } else {
+            event.classList.remove('greyed-out');
         }
     });
 }
