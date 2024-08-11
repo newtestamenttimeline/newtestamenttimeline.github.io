@@ -25,6 +25,9 @@ async function loadGospels() {
         populateGospel('luke', luke, parallels);
         populateGospel('john', john, parallels);
 
+        // Draw lines connecting the parallel summaries after loading all gospels
+        drawLinesBetweenParallels(parallels);
+
     } catch (error) {
         console.error('Error loading gospels:', error);
         alert('Failed to load the requested file. Please check the console for more details.');
@@ -189,7 +192,6 @@ function drawLinesBetweenParallels(parallels) {
         });
     }
 }
-
 
 // Call loadGospels on page load
 document.addEventListener('DOMContentLoaded', loadGospels);
