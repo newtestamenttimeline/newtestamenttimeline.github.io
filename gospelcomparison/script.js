@@ -117,6 +117,21 @@ function highlightParallelVerses(event, parallels) {
     scrollToVerse(event.target);
 }
 
+document.getElementById('translation-selector').addEventListener('change', function() {
+    var selectedValue = this.value;
+    
+    if (selectedValue === 'Summary') {
+        window.location.href = 'https://newtestamenttimeline.github.io/gospelcomparison/summary/index.html';
+    } else if (selectedValue === 'WEB') {
+        // Add the appropriate URL if necessary for WEB Bible
+        window.location.href = 'URL_FOR_WEB_BIBLE';
+    } else if (selectedValue === 'KJV') {
+        // Add the appropriate URL if necessary for KJV Bible
+        window.location.href = 'URL_FOR_KJV_BIBLE';
+    }
+});
+
+
 function scrollToVerse(verseElement) {
     const columnElement = verseElement.closest('.column');
     const columnRect = columnElement.getBoundingClientRect();
