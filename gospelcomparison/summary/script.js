@@ -25,6 +25,9 @@ async function loadGospels() {
         populateGospel('luke', luke, parallels);
         populateGospel('john', john, parallels);
 
+        // Draw lines connecting the parallel summaries after loading all gospels
+        drawLinesBetweenParallels(parallels);
+
     } catch (error) {
         console.error('Error loading gospels:', error);
         alert('Failed to load the requested file. Please check the console for more details.');
@@ -137,9 +140,6 @@ function highlightParallelSummaries(event, parallels) {
     });
 
     scrollToSummary(event.currentTarget);
-
-    // Draw lines connecting the parallel summaries
-    drawLinesBetweenParallels(parallels);
 }
 
 function scrollToSummary(summaryElement) {
@@ -156,16 +156,8 @@ function scrollToSummary(summaryElement) {
 }
 
 function drawLinesBetweenParallels(parallels) {
-    // First, remove any existing SVG lines
-    const existingSvg = document.querySelector('.svg-container');
-    if (existingSvg) {
-        existingSvg.remove();
-    }
-
-    // Create a new SVG container
-    const svgContainer = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svgContainer.setAttribute("class", "svg-container");
-    document.body.appendChild(svgContainer);
+    const container = document.getElementById('lines-container');
+    container.innerHTML = ''; // Clear previous lines
 
     for (const group in parallels) {
         const elements = parallels[group].map(id => document.querySelector(`div[data-summary="${id}"]`)).filter(Boolean);
@@ -176,22 +168,39 @@ function drawLinesBetweenParallels(parallels) {
             if (index === 0) return;
             const previousElement = elements[index - 1];
 
-            const startX = previousElement.getBoundingClientRect().right;
-            const startY = previousElement.getBoundingClientRect().top + previousElement.clientHeight / 2;
-            const endX = element.getBoundingClientRect().left;
-            const endY = element.getBoundingClientRect().top + element.clientHeight / 2;
+            const start = previousElement.getBoundingClientRect();
+            const end = element.getBoundingClientRect();
 
-            const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-            line.setAttribute("x1", startX);
-            line.setAttribute("y1", startY);
-            line.setAttribute("x2", endX);
-            line.setAttribute("y2", endY);
-            line.setAttribute("class", `line ${elements[0].querySelector('p').classList[1]}-line`); // Use the class of the first element to color the line
+            const line = document.createElement('div');
+            line.classList.add('line');
+            line.style.position = 'absolute';
+            line.style.width = `${end.left - start.right}px`;
+            line.style.height = '2px';
+            line.style.top = `${start.top + start.height / 2}px`;
+            line.style.left = `${start.right}px`;
+            line.style.backgroundColor = getColorByClass(previousElement);
 
-            svgContainer.appendChild(line);
+            container.appendChild(line);
         });
     }
 }
 
-// Call loadGospels on page load
-document.addEventListener('DOMContentLoaded', loadGospels);
+function getColorByClass(element) {
+    if (element.querySelector('.pastel-green')) return 'green';
+    if (element.querySelector('.pastel-purple')) return 'purple';
+    if (element.querySelector('.pastel-pink')) return 'red';
+    return 'black';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Add an empty container for the lines
+    const container = document.createElement('div');
+    container.id = 'lines-container';
+    container.style.position = 'absolute';
+    container.style.width = '100%';
+    container.style.height = '100%';
+    container.style.pointerEvents = 'none';
+    document.body.appendChild(container);
+
+    loadGospels();
+});
