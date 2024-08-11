@@ -1,6 +1,5 @@
 // Global variables that need to be accessible across different script files
 
-let families = new Set();
 let eventTypeColors = {};
 
 // Ensure DOM is fully loaded before executing the rest of the script
