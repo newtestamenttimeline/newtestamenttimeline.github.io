@@ -1,6 +1,5 @@
 async function loadGospels() {
     try {
-        // Attempt to load all gospels and parallels
         const matthew = await fetch('matthew.json').then(res => res.json()).catch(err => console.error('Error loading matthew.json:', err));
         const mark = await fetch('mark.json').then(res => res.json()).catch(err => console.error('Error loading mark.json:', err));
         const luke = await fetch('luke.json').then(res => res.json()).catch(err => console.error('Error loading luke.json:', err));
@@ -34,116 +33,41 @@ async function loadGospels() {
 }
 
 function populateGospel(gospelName, gospelContent, parallels) {
-    // Check if the content is structured as expected
     if (!Array.isArray(gospelContent)) {
         console.error(`${gospelName}.json data is not an array or is undefined.`);
         return;
     }
 
     const container = document.getElementById(`${gospelName}-content`);
-    const verseFinder = document.getElementById(`${gospelName}-verse-finder`);
 
     // Clear existing content
     container.innerHTML = '';
-    verseFinder.innerHTML = '';
 
-    gospelContent.forEach(chapter => {
-        if (!chapter || !chapter.verses || !Array.isArray(chapter.verses)) {
-            console.error(`Invalid chapter data in ${gospelName}.json`);
-            return;
+    gospelContent.forEach(entry => {
+        const chapterElement = document.createElement('div');
+        chapterElement.classList.add('summary-chapter');
+
+        // Add group title if it exists
+        if (entry.group_title) {
+            const groupTitleElement = document.createElement('h3');
+            groupTitleElement.textContent = entry.group_title;
+            groupTitleElement.classList.add('group-title');
+            chapterElement.appendChild(groupTitleElement);
         }
 
-        const chapterHeader = document.createElement('h3');
-        chapterHeader.textContent = `Chapter ${chapter.chapter}`;
-        chapterHeader.classList.add('chapter-header');
-        container.appendChild(chapterHeader);
+        // Add chapter summary
+        const summaryElement = document.createElement('p');
+        summaryElement.textContent = `${entry.chapter}: ${entry.summary}`;
+        summaryElement.classList.add('chapter-summary');
+        chapterElement.appendChild(summaryElement);
 
-        chapter.verses.forEach(verse => {
-            const verseElement = document.createElement('p');
-            verseElement.textContent = `${verse.number} ${verse.text}`;
-            const verseId = `${gospelName}-${chapter.chapter}-${verse.number}`;
-            verseElement.setAttribute('data-verse', verseId);
-
-            const optionElement = document.createElement('option');
-            optionElement.value = verseId;
-            optionElement.textContent = `Chapter ${chapter.chapter}, Verse ${verse.number}`;
-            verseFinder.appendChild(optionElement);
-
-            let found = false;
-            for (const group in parallels) {
-                if (parallels[group].includes(verseId)) {
-                    found = true;
-                    const parallelCount = parallels[group].length;
-                    if (parallelCount === 2) {
-                        verseElement.classList.add('pastel-green');
-                    } else if (parallelCount === 3) {
-                        verseElement.classList.add('pastel-purple');
-                    } else if (parallelCount >= 4) {
-                        verseElement.classList.add('pastel-pink');
-                    }
-                    break;
-                }
-            }
-
-            if (!found) {
-                verseElement.classList.add('unique');
-            }
-
-            container.appendChild(verseElement);
-        });
-    });
-
-    verseFinder.addEventListener('change', (event) => {
-        const verseId = event.target.value;
-        const verseElement = document.querySelector(`p[data-verse="${verseId}"]`);
-        if (verseElement) {
-            scrollToVerse(verseElement);
-        }
+        container.appendChild(chapterElement);
     });
 }
 
 function addVerseClickListeners(parallels) {
-    document.querySelectorAll('.column p').forEach(verse => {
-        verse.addEventListener('click', (event) => highlightParallelVerses(event, parallels));
-    });
-}
-
-function highlightParallelVerses(event, parallels) {
-    const verseId = event.target.getAttribute('data-verse');
-    console.log(`Clicked verse ID: ${verseId}`);
-
-    let foundGroup = null;
-
-    for (const group in parallels) {
-        if (parallels[group].includes(verseId)) {
-            foundGroup = parallels[group];
-            break;
-        }
-    }
-
-    if (foundGroup) {
-        console.log(`Parallel verses for ${verseId}: ${foundGroup}`);
-    } else {
-        console.warn(`No parallels found for verse ID: ${verseId}`);
-        return;
-    }
-
-    document.querySelectorAll('.highlight').forEach(el => el.classList.remove('highlight'));
-
-    event.target.classList.add('highlight');
-
-    foundGroup.forEach(parallelVerseId => {
-        const parallelVerse = document.querySelector(`p[data-verse="${parallelVerseId}"]`);
-        if (parallelVerse) {
-            console.log(`Highlighting parallel verse ID: ${parallelVerseId}`);
-            parallelVerse.classList.add('highlight');
-            scrollToVerse(parallelVerse);
-        } else {
-            console.warn(`Parallel verse ID not found in DOM: ${parallelVerseId}`);
-        }
-    });
-
-    scrollToVerse(event.target);
+    // Assuming this function handles highlighting parallels, it may need to be adapted or removed
+    // if parallels don't apply directly to the summary data.
 }
 
 function scrollToVerse(verseElement) {
