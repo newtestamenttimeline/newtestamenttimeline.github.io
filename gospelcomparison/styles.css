@@ -244,3 +244,26 @@ select {
     background-color: var(--primary-color); /* Blue background on hover */
     color: white; /* White text on hover */
 }
+
+#translation-selector,
+#home-button,
+#timeline-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #8e44ad; /* Purple background */
+    color: white; /* White text */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#home-button:hover,
+#translation-selector:hover,
+#timeline-button:hover {
+    background-color: #732d91; /* Darker purple on hover */
+    color: white;
+}
