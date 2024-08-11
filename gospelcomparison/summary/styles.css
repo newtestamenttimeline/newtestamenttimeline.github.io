@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 20px;
     line-height: 1.6;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light text color */
 }
 
 /* Top bar with welcome message and menu */
@@ -10,10 +12,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: #1E1E1E; /* Darker top bar */
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333; /* Darker border */
     margin-bottom: 20px;
+    color: #E0E0E0;
 }
 
 #welcome-message {
@@ -33,13 +36,13 @@ body {
     height: 40px; /* Set a uniform height */
     padding: 0 15px; /* Remove top/bottom padding to keep consistent height */
     font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
+    color: #121212; /* Darker text on buttons */
+    background-color: #BB86FC; /* Accent color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    line-height: 40px; /* Ensure vertical text alignment */
+    line-height: 40px;
 }
 
 /* Remove default dropdown arrow and add custom appearance */
@@ -52,7 +55,7 @@ body {
 
 #menu select:hover,
 #menu button:hover {
-    background-color: #0056b3;
+    background-color: #3700B3; /* Darker accent on hover */
 }
 
 /* Instructions and Legend section */
@@ -63,10 +66,11 @@ body {
 }
 
 #legend, #instructions {
-    background-color: #f9f9f9;
+    background-color: #1E1E1E;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     width: 48%;
+    color: #E0E0E0;
 }
 
 #legend h3, #instructions h4 {
@@ -95,14 +99,14 @@ body {
     vertical-align: middle;
 }
 
-.pastel-green { background-color: #b2fab4; }
-.pastel-purple { background-color: #c3b1e1; }
-.pastel-pink { background-color: #f28b82; }
-.unique { background-color: #ccc; }
+.pastel-green { background-color: #66BB6A; }
+.pastel-purple { background-color: #AB47BC; }
+.pastel-pink { background-color: #EF5350; }
+.unique { background-color: #757575; }
 
 /* Legend highlight color chip */
 .highlight-legend {
-    background-color: #4169E1;
+    background-color: #BB86FC; /* Accent color for highlight */
     width: 20px;
     height: 10px;
     display: inline-block;
@@ -112,12 +116,12 @@ body {
 
 /* Verse highlight style */
 .highlight {
-    background-color: #4169E1;
-    color: white;
+    background-color: #BB86FC;
+    color: #121212;
     font-weight: bold;
     border-radius: 4px;
     padding: 2px 4px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     z-index: 1;
 }
@@ -132,9 +136,11 @@ body {
     width: 22%;
     overflow-y: auto;
     height: 80vh;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     padding: 10px;
     box-sizing: border-box;
+    background-color: #1E1E1E;
+    color: #E0E0E0;
 }
 
 select {
@@ -148,37 +154,38 @@ select {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: #1E1E1E;
     z-index: 10;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333;
     margin-top: 0;
     padding-top: 5px;
     padding-bottom: 5px;
+    color: #E0E0E0;
 }
 
 .column h2 {
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #333;
+    color: #E0E0E0;
 }
 
 .summary-chapter {
     padding: 10px;
     margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333;
 }
 
 .summary-chapter h3 {
     margin-bottom: 5px;
     font-size: 1.2em;
-    color: #007bff;
+    color: #BB86FC;
 }
 
 .summary-chapter p {
     margin: 0;
     font-size: 1em;
-    color: #333;
+    color: #E0E0E0;
 }
 
 /* Style for group titles */
@@ -196,15 +203,15 @@ select {
 
 /* Highlighting for parallels */
 .highlight {
-    background-color: #ffeb3b;
-    color: black;
+    background-color: #BB86FC;
+    color: #121212;
     font-weight: bold;
 }
 
 /* Highlighting for the selected and parallel summaries */
 .royal-blue {
-    color: white; /* Change text color to white for contrast */
-    background-color: royalblue; /* Bright royal blue background */
+    color: #121212; /* Change text color to dark for contrast */
+    background-color: #6200EE; /* Bright royal blue background */
     font-weight: bold;
     padding: 5px;
     border-radius: 5px;
@@ -227,15 +234,15 @@ select {
 }
 
 .pastel-green-line {
-    stroke: green;
+    stroke: #66BB6A;
 }
 
 .pastel-purple-line {
-    stroke: purple;
+    stroke: #AB47BC;
 }
 
 .pastel-pink-line {
-    stroke: red;
+    stroke: #EF5350;
 }
 
 #line-container .line {
