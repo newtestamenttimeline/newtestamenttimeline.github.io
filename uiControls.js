@@ -1,3 +1,4 @@
+//comment to redeploy
 function toggleSidebar() {
     sidebar.classList.toggle('collapsed');
 }
