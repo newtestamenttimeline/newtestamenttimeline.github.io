@@ -1,14 +1,10 @@
 async function loadGospels() {
     try {
-        const gospels = await Promise.all([
-            fetch('matthew.json').then(res => res.json()),
-            fetch('mark.json').then(res => res.json()),
-            fetch('luke.json').then(res => res.json()),
-            fetch('john.json').then(res => res.json()),
-            fetch('parallels.json').then(res => res.json())
-        ]);
-
-        const [matthew, mark, luke, john, parallels] = gospels;
+        const matthew = await fetch('matthew.json').then(res => res.json());
+        const mark = await fetch('mark.json').then(res => res.json());
+        const luke = await fetch('luke.json').then(res => res.json());
+        const john = await fetch('john.json').then(res => res.json());
+        const parallels = await fetch('parallels.json').then(res => res.json());
 
         // Populate each gospel with the corresponding data
         populateGospel('matthew', matthew, parallels);
@@ -23,15 +19,15 @@ async function loadGospels() {
     }
 }
 
-function populateGospel(gospelId, gospelData, parallels) {
-    const container = document.getElementById(`${gospelId}-content`);
-    const verseFinder = document.getElementById(`${gospelId}-verse-finder`);
+function populateGospel(gospelName, gospelContent, parallels) {
+    const container = document.getElementById(`${gospelName}-content`);
+    const verseFinder = document.getElementById(`${gospelName}-verse-finder`);
 
     // Clear existing content
     container.innerHTML = '';
     verseFinder.innerHTML = '';
 
-    gospelData.forEach(chapter => {
+    gospelContent.forEach(chapter => {
         const chapterHeader = document.createElement('h3');
         chapterHeader.textContent = `Chapter ${chapter.chapter}`;
         chapterHeader.classList.add('chapter-header');
@@ -40,7 +36,7 @@ function populateGospel(gospelId, gospelData, parallels) {
         chapter.verses.forEach(verse => {
             const verseElement = document.createElement('p');
             verseElement.textContent = `${verse.number} ${verse.text}`;
-            const verseId = `${gospelId}-${chapter.chapter}-${verse.number}`;
+            const verseId = `${gospelName}-${chapter.chapter}-${verse.number}`;
             verseElement.setAttribute('data-verse', verseId);
 
             const optionElement = document.createElement('option');
