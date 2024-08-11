@@ -1,10 +1,24 @@
 async function loadGospels() {
     try {
-        const matthew = await fetch('matthew.json').then(res => res.json());
-        const mark = await fetch('mark.json').then(res => res.json());
-        const luke = await fetch('luke.json').then(res => res.json());
-        const john = await fetch('john.json').then(res => res.json());
-        const parallels = await fetch('parallels.json').then(res => res.json());
+        // Attempt to load all gospels and parallels
+        const matthew = await fetch('matthew.json').then(res => res.json()).catch(err => console.error('Error loading matthew.json:', err));
+        const mark = await fetch('mark.json').then(res => res.json()).catch(err => console.error('Error loading mark.json:', err));
+        const luke = await fetch('luke.json').then(res => res.json()).catch(err => console.error('Error loading luke.json:', err));
+        const john = await fetch('john.json').then(res => res.json()).catch(err => console.error('Error loading john.json:', err));
+        const parallels = await fetch('parallels.json').then(res => res.json()).catch(err => console.error('Error loading parallels.json:', err));
+
+        // Log the loaded data to inspect
+        console.log('Matthew:', matthew);
+        console.log('Mark:', mark);
+        console.log('Luke:', luke);
+        console.log('John:', john);
+        console.log('Parallels:', parallels);
+
+        // Check if any gospel data is undefined
+        if (!matthew || !mark || !luke || !john || !parallels) {
+            console.error('One or more gospels failed to load.');
+            return;
+        }
 
         // Populate each gospel with the corresponding data
         populateGospel('matthew', matthew, parallels);
@@ -20,6 +34,12 @@ async function loadGospels() {
 }
 
 function populateGospel(gospelName, gospelContent, parallels) {
+    // Check if the content is structured as expected
+    if (!Array.isArray(gospelContent)) {
+        console.error(`${gospelName}.json data is not an array or is undefined.`);
+        return;
+    }
+
     const container = document.getElementById(`${gospelName}-content`);
     const verseFinder = document.getElementById(`${gospelName}-verse-finder`);
 
@@ -28,6 +48,11 @@ function populateGospel(gospelName, gospelContent, parallels) {
     verseFinder.innerHTML = '';
 
     gospelContent.forEach(chapter => {
+        if (!chapter || !chapter.verses || !Array.isArray(chapter.verses)) {
+            console.error(`Invalid chapter data in ${gospelName}.json`);
+            return;
+        }
+
         const chapterHeader = document.createElement('h3');
         chapterHeader.textContent = `Chapter ${chapter.chapter}`;
         chapterHeader.classList.add('chapter-header');
