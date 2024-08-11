@@ -19,6 +19,7 @@ function filterEventsByText(text, isChecked) {
 
 
 
+
 function filterEventsByFamily(family, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
@@ -37,6 +38,8 @@ function filterEventsByFamily(family, isChecked) {
         }
     });
 }
+
+
 
 
 function initializeFilters() {
