@@ -106,7 +106,7 @@ body {
 
 /* Legend highlight color chip */
 .highlight-legend {
-    background-color: #BB86FC;
+    background-color: #4169E1; /* Bright Royal Blue */
     width: 20px;
     height: 10px;
     display: inline-block;
@@ -114,10 +114,11 @@ body {
     vertical-align: middle;
 }
 
+
 /* Verse highlight style */
 .highlight {
-    background-color: #BB86FC;
-    color: #121212;
+    background-color: #4169E1; /* Bright Royal Blue */
+    color: #121212; /* Keeping the text color dark for contrast */
     font-weight: bold;
     border-radius: 4px;
     padding: 2px 4px;
@@ -125,6 +126,7 @@ body {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     z-index: 1;
 }
+
 
 /* Gospels content */
 #gospels {
