@@ -1,4 +1,5 @@
-//comment to redeploy
+const legendContainer = document.getElementById('legend'); // Ensure this is defined
+
 function toggleSidebar() {
     sidebar.classList.toggle('collapsed');
 }
