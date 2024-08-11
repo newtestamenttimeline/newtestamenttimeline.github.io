@@ -59,23 +59,86 @@ function populateGospel(gospelName, gospelContent, parallels) {
         const summaryElement = document.createElement('p');
         summaryElement.textContent = `${entry.chapter}: ${entry.summary}`;
         summaryElement.classList.add('chapter-summary');
-        chapterElement.appendChild(summaryElement);
 
+        const summaryId = `${gospelName}-${entry.chapter}`;
+        chapterElement.setAttribute('data-summary', summaryId);
+
+        // Check for parallels and add coloring
+        let found = false;
+        for (const group in parallels) {
+            if (parallels[group].includes(summaryId)) {
+                found = true;
+                const parallelCount = parallels[group].length;
+                if (parallelCount === 2) {
+                    summaryElement.classList.add('pastel-green');
+                } else if (parallelCount === 3) {
+                    summaryElement.classList.add('pastel-purple');
+                } else if (parallelCount >= 4) {
+                    summaryElement.classList.add('pastel-pink');
+                }
+                break;
+            }
+        }
+
+        if (!found) {
+            summaryElement.classList.add('unique');
+        }
+
+        chapterElement.appendChild(summaryElement);
         container.appendChild(chapterElement);
+    });
+
+    // Add click listeners for scrolling to parallels
+    container.querySelectorAll('.summary-chapter').forEach(summary => {
+        summary.addEventListener('click', (event) => highlightParallelSummaries(event, parallels));
     });
 }
 
-function addVerseClickListeners(parallels) {
-    // Assuming this function handles highlighting parallels, it may need to be adapted or removed
-    // if parallels don't apply directly to the summary data.
+function highlightParallelSummaries(event, parallels) {
+    const summaryId = event.currentTarget.getAttribute('data-summary');
+    console.log(`Clicked summary ID: ${summaryId}`);
+
+    let foundGroup = null;
+
+    for (const group in parallels) {
+        if (parallels[group].includes(summaryId)) {
+            foundGroup = parallels[group];
+            break;
+        }
+    }
+
+    if (foundGroup) {
+        console.log(`Parallel summaries for ${summaryId}: ${foundGroup}`);
+    } else {
+        console.warn(`No parallels found for summary ID: ${summaryId}`);
+        return;
+    }
+
+    // Remove previous highlights
+    document.querySelectorAll('.highlight').forEach(el => el.classList.remove('highlight'));
+
+    // Highlight current and parallel summaries
+    event.currentTarget.classList.add('highlight');
+    foundGroup.forEach(parallelSummaryId => {
+        const parallelSummary = document.querySelector(`div[data-summary="${parallelSummaryId}"]`);
+        if (parallelSummary) {
+            console.log(`Highlighting parallel summary ID: ${parallelSummaryId}`);
+            parallelSummary.classList.add('highlight');
+            scrollToSummary(parallelSummary);
+        } else {
+            console.warn(`Parallel summary ID not found in DOM: ${parallelSummaryId}`);
+        }
+    });
+
+    scrollToSummary(event.currentTarget);
 }
 
-function scrollToVerse(verseElement) {
-    const columnElement = verseElement.closest('.column');
+function scrollToSummary(summaryElement) {
+    const columnElement = summaryElement.closest('.column');
     const columnRect = columnElement.getBoundingClientRect();
-    const verseRect = verseElement.getBoundingClientRect();
+    const summaryRect = summaryElement.getBoundingClientRect();
 
-    const scrollTop = verseRect.top + columnElement.scrollTop - columnRect.top - (columnRect.height / 2) + (verseRect.height / 2);
+    const scrollTop = summaryRect.top + columnElement.scrollTop - columnRect.top - (columnRect.height / 2) + (summaryRect.height / 2);
 
     columnElement.scrollTo({
         top: scrollTop,
@@ -83,7 +146,11 @@ function scrollToVerse(verseElement) {
     });
 }
 
+// Remove the "verse selector" at the top of each gospel
+// This code is now removed since we no longer use verse-based navigation
+
 // Event listener for the translation selector
 document.getElementById('translation-selector').addEventListener('change', loadGospels);
 
+// Initial load
 loadGospels();
