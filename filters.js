@@ -1,3 +1,4 @@
+//commenting to redeploy
 function filterEventsByText(text, isChecked) {
     console.log(`Filtering by text: ${text}, isChecked: ${isChecked}`);
     const events = document.querySelectorAll('.event');
