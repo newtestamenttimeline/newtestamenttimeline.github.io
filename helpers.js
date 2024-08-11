@@ -1,11 +1,21 @@
 function setUpProgressBar() {
-    const progressBar = document.getElementById('progress-bar');
-    progressBar.style.width = '0%';
+    document.addEventListener('DOMContentLoaded', () => {
+        const progressBar = document.getElementById('progress-bar');
+        if (progressBar) {
+            progressBar.style.width = '0%';
+        } else {
+            console.error('Progress bar element not found.');
+        }
+    });
 }
 
 function updateProgressBar(progress) {
     const progressBar = document.getElementById('progress-bar');
-    progressBar.style.width = progress + '%';
+    if (progressBar) {
+        progressBar.style.width = progress + '%';
+    } else {
+        console.error('Progress bar element not found.');
+    }
 }
 
 function generateColorsForEventTypes() {
