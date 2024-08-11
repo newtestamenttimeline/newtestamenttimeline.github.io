@@ -29,6 +29,14 @@ function addEventsToTimeline(data) {
         eventDot.className = 'event-dot';
         eventDot.title = event.title || 'Event';
 
+        // Assign the correct color based on the event type
+        const eventType = event.eventType;
+        if (eventTypeColors[eventType]) {
+            eventDot.style.backgroundColor = eventTypeColors[eventType];
+        } else {
+            eventDot.style.backgroundColor = 'yellow'; // Fallback color
+        }
+
         // Position the dot on the timeline based on the event year and y coordinate
         const yearPercentage = ((event.year - 0) / (1400 - 0)) * 100;
         eventDot.style.left = `${yearPercentage}%`;
@@ -77,6 +85,19 @@ function updateFilters(data, textList, familyList) {
     });
 }
 
+// Function to apply active filters to newly loaded events
+function applyActiveFilters() {
+    const textCheckboxes = document.querySelectorAll('#text-list input[type="checkbox"]');
+    textCheckboxes.forEach(checkbox => {
+        filterEventsByText(checkbox.parentElement.textContent.trim(), checkbox.checked);
+    });
+
+    const familyCheckboxes = document.querySelectorAll('#family-list input[type="checkbox"]');
+    familyCheckboxes.forEach(checkbox => {
+        filterEventsByFamily(checkbox.parentElement.textContent.trim(), checkbox.checked);
+    });
+}
+
 // Main function to load more manuscripts
 async function loadMoreManuscripts() {
     console.log('Loading more manuscripts...');
@@ -104,6 +125,10 @@ async function loadMoreManuscripts() {
     const familyList = Array.from(document.getElementById('family-list').children).map(item => item.textContent);
 
     updateFilters(allData, textList, familyList);
+
+    // Apply active filters to the newly added events
+    applyActiveFilters();
+
     console.log('Filters updated and events added to the timeline.');
 }
 
