@@ -1,4 +1,3 @@
-//commenting to redeploy!
 function filterEventsByText(text, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
@@ -17,6 +16,7 @@ function filterEventsByText(text, isChecked) {
         }
     });
 }
+
 
 
 function filterEventsByFamily(family, isChecked) {
