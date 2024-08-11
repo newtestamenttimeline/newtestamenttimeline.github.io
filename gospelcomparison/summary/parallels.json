@@ -1,7 +1,5 @@
 {
-  "group-1": ["matthew-1", "luke-2"],
-  "group-2": ["mark-1", "john-2"],
-  "group-3": ["matthew-3", "luke-3", "mark-1"],
-  "group-4": ["matthew-5-7", "luke-6"],
-  "group-5": ["matthew-1-18", "mark-1-18", "luke-1-18", "john-18-20"]
+  "group-1": ["matthew-1", "mark-1", "luke-1"],
+  "group-2": ["matthew-4A", "mark-1", "luke-4A", "john-4A"],
+  "group-3": ["matthew-4B", "mark-4B", "luke-4B"]
 }
