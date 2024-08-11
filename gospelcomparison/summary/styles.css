@@ -106,7 +106,7 @@ body {
 
 /* Legend highlight color chip */
 .highlight-legend {
-    background-color: #BB86FC; /* Accent color for highlight */
+    background-color: #4169E1; /* Accent color for highlight */
     width: 20px;
     height: 10px;
     display: inline-block;
