@@ -16,7 +16,7 @@ document.getElementById('load-more-event-types').addEventListener('click', async
         // Process additional events
         processEvents(lectionariesEvents, minusculesEvents);
 
-        // Generate colors for any new event types that were loaded later
+        // Generate colors for any new event types that were loaded later!
         generateColorsForEventTypes();
 
         // Update the timeline with new events and colors
