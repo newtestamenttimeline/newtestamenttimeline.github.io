@@ -6,6 +6,8 @@ let eventTypeColors = {}; // Declare this only once
 
 // Ensure DOM is fully loaded before executing the rest of the script
 document.addEventListener('DOMContentLoaded', function() {
+    const legendContainer = document.getElementById('legend'); // Define legendContainer here
+
     setUpProgressBar();
     loadEvents();
     initializeFilters();
