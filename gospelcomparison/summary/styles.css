@@ -37,7 +37,7 @@ body {
     padding: 0 15px; /* Remove top/bottom padding to keep consistent height */
     font-size: 16px;
     color: #121212; /* Darker text on buttons */
-    background-color: #8e44ad; /* Accent color */
+    background-color: #BB86FC; /* Accent color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -55,19 +55,19 @@ body {
 
 #menu select:hover,
 #menu button:hover {
-    background-color: #732d91; /* Darker accent on hover */
+    background-color: #3700B3; /* Darker accent on hover */
 }
 
 /* Instructions and Legend section */
 #legend-instructions-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 #legend, #instructions {
     background-color: #1E1E1E;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #333;
     width: 48%;
     color: #E0E0E0;
@@ -75,7 +75,7 @@ body {
 
 #legend h3, #instructions h4 {
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .legend-columns {
@@ -95,7 +95,7 @@ body {
     display: inline-block;
     width: 20px;
     height: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
     vertical-align: middle;
 }
 
@@ -106,19 +106,18 @@ body {
 
 /* Legend highlight color chip */
 .highlight-legend {
-    background-color: #4169E1; /* Bright Royal Blue */
+    background-color: #4169E1; /* Accent color for highlight */
     width: 20px;
-    height: 5px;
+    height: 10px;
     display: inline-block;
     margin-right: 10px;
     vertical-align: middle;
 }
 
-
 /* Verse highlight style */
 .highlight {
-    background-color: #4169E1; /* Bright Royal Blue */
-    color: #121212; /* Keeping the text color dark for contrast */
+    background-color: #BB86FC;
+    color: #121212;
     font-weight: bold;
     border-radius: 4px;
     padding: 2px 4px;
@@ -126,7 +125,6 @@ body {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     z-index: 1;
 }
-
 
 /* Gospels content */
 #gospels {
@@ -150,9 +148,6 @@ select {
     padding: 5px;
     margin-bottom: 10px;
     font-size: 1em;
-    background-color: #333;
-    color: #E0E0E0;
-    border: 1px solid #666;
 }
 
 .chapter-header {
@@ -175,95 +170,85 @@ select {
     color: #E0E0E0;
 }
 
-/* Default state of collapsible content */
-#instructions, #legend {
-    display: block; /* Show by default */
+.summary-chapter {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
 }
 
-/* Optional: Add styles to buttons */
-#toggle-instructions, #toggle-legend {
-    margin-bottom: 10px;
-    background-color: #4169E1; /* Royal blue */
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
+.summary-chapter h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #BB86FC;
 }
 
-#toggle-instructions:focus, #toggle-legend:focus {
-    outline: none;
-}
-
-#top-bar {
-    background-color: #3498db; /* Bright blue background */
-    color: var(--text-color); /* White text */
-    text-align: center;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-#welcome-message h3 {
+.summary-chapter p {
     margin: 0;
-    font-size: 24px;
+    font-size: 1em;
+    color: #E0E0E0;
+}
+
+/* Style for group titles */
+.group-title {
+    font-size: 1.5em;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    margin-top: 20px;
 }
 
-#menu {
-    display: flex;
-    gap: 15px;
-    align-items: center;
+/* Style for chapter summaries */
+.chapter-summary {
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
-#menu select,
-#menu button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
+/* Highlighting for parallels */
+.highlight {
+    background-color: #BB86FC;
+    color: #121212;
+    font-weight: bold;
+}
+
+/* Highlighting for the selected and parallel summaries */
+.royal-blue {
+    color: #121212; /* Change text color to dark for contrast */
+    background-color: #6200EE; /* Bright royal blue background */
+    font-weight: bold;
+    padding: 5px;
     border-radius: 5px;
-    background-color: white; /* White background for buttons */
-    color: var(--primary-color); /* Blue text for buttons */
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#menu button:hover,
-#menu select:hover {
-    background-color: var(--primary-color); /* Blue background on hover */
-    color: white; /* White text on hover */
+/* Container for SVG lines */
+.svg-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Allows clicking through the SVG lines */
 }
 
-#translation-selector,
-#home-button,
-#timeline-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #8e44ad; /* Purple background */
-    color: white; /* White text */
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.line {
+    stroke-width: 2px;
+    fill: none;
 }
 
-#home-button:hover,
-#translation-selector:hover,
-#timeline-button:hover {
-    background-color: #732d91; /* Darker purple on hover */
-    color: white;
+.pastel-green-line {
+    stroke: #66BB6A;
+}
+
+.pastel-purple-line {
+    stroke: #AB47BC;
+}
+
+.pastel-pink-line {
+    stroke: #EF5350;
+}
+
+#line-container .line {
+    z-index: 0; /* Ensure lines are behind other elements */
+}
+
+.svg-container {
+    z-index: 0; /* Ensure lines are behind other elements */
 }

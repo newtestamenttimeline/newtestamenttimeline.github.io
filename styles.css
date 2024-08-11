@@ -383,3 +383,11 @@ header {
     border-radius: 50%;
     cursor: pointer;
 }
+
+/* Default state of collapsible content */
+#instructions, #legend {
+    display: block; /* Show by default */
+}
+
+
+
