@@ -174,3 +174,24 @@ select {
     margin-bottom: 10px;
     color: #E0E0E0;
 }
+
+/* Default state of collapsible content */
+#instructions, #legend {
+    display: block; /* Show by default */
+}
+
+/* Optional: Add styles to buttons */
+#toggle-instructions, #toggle-legend {
+    margin-bottom: 10px;
+    background-color: #4169E1; /* Royal blue */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#toggle-instructions:focus, #toggle-legend:focus {
+    outline: none;
+}
+
