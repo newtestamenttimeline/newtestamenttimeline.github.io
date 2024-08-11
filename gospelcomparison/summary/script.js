@@ -1,14 +1,26 @@
 async function loadGospels() {
-    const selectedTranslation = document.getElementById('translation-selector').value;
-    const fileName = selectedTranslation === 'Summary' ? 'summary.json' : `${selectedTranslation.toLowerCase()}.json`;
-    
-    const gospelData = await fetch(fileName).then(res => res.json());
+    try {
+        const selectedTranslation = document.getElementById('translation-selector').value;
+        const gospels = await Promise.all([
+            fetch(`summary/matthew_${selectedTranslation}.json`).then(res => res.json()),
+            fetch(`summary/mark_${selectedTranslation}.json`).then(res => res.json()),
+            fetch(`summary/luke_${selectedTranslation}.json`).then(res => res.json()),
+            fetch(`summary/john_${selectedTranslation}.json`).then(res => res.json()),
+            fetch('summary/parallels.json').then(res => res.json())
+        ]);
 
-    if (selectedTranslation === 'Summary') {
-        populateSummary(gospelData);
-    } else {
-        const parallels = await fetch('parallels.json').then(res => res.json());
-        populateGospel(selectedTranslation.toLowerCase(), gospelData, parallels);
+        const [matthew, mark, luke, john, parallels] = gospels;
+
+        // Populate each gospel with the corresponding data
+        populateGospel('matthew', matthew, parallels);
+        populateGospel('mark', mark, parallels);
+        populateGospel('luke', luke, parallels);
+        populateGospel('john', john, parallels);
+
+        addVerseClickListeners(parallels);
+    } catch (error) {
+        console.error('Error loading gospels:', error);
+        alert('Failed to load the requested file. Please check the console for more details.');
     }
 }
 
@@ -67,30 +79,6 @@ function populateGospel(gospelId, gospelData, parallels) {
         if (verseElement) {
             scrollToVerse(verseElement);
         }
-    });
-}
-
-function populateSummary(gospelData) {
-    const container = document.getElementById('gospels');
-
-    // Clear existing content
-    container.innerHTML = '';
-
-    gospelData.forEach(entry => {
-        const chapterElement = document.createElement('div');
-        chapterElement.classList.add('summary-chapter');
-        
-        if (entry.group_title) {
-            const groupTitleElement = document.createElement('h3');
-            groupTitleElement.textContent = entry.group_title;
-            chapterElement.appendChild(groupTitleElement);
-        }
-        
-        const summaryElement = document.createElement('p');
-        summaryElement.textContent = `${entry.chapter}: ${entry.summary}`;
-        chapterElement.appendChild(summaryElement);
-        
-        container.appendChild(chapterElement);
     });
 }
 
