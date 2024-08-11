@@ -1,4 +1,4 @@
-
+//comment to redeploy
 function filterEventsByText(text, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
