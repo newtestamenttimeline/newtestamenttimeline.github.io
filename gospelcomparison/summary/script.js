@@ -1,4 +1,3 @@
-//comment to redeploy
 async function loadGospels() {
     const selectedTranslation = document.getElementById('translation-selector').value;
     const fileName = selectedTranslation === 'Summary' ? 'summary.json' : `${selectedTranslation.toLowerCase()}.json`;
