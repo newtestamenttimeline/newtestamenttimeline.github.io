@@ -4,6 +4,37 @@ let families = new Set();
 let eventTypes = new Set(); // Add this declaration
 let eventTypeColors = {}; // Declare this only once
 
+// Function to populate text list
+function populateTextList() {
+    const textListElement = document.getElementById('text-list');
+    textListElement.innerHTML = ''; // Clear the list first
+
+    texts.forEach(text => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
+        listItem.querySelector('input').addEventListener('change', (e) => {
+            filterEventsByText(text, e.target.checked);
+        });
+        textListElement.appendChild(listItem);
+    });
+}
+
+// Function to populate family list
+function populateFamilyList() {
+    const familyListElement = document.getElementById('family-list');
+    familyListElement.innerHTML = ''; // Clear the list first
+
+    families.forEach(family => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
+        listItem.querySelector('input').addEventListener('change', (e) => {
+            filterEventsByFamily(family, e.target.checked);
+        });
+        familyListElement.appendChild(listItem);
+    });
+}
+
+
 // Ensure DOM is fully loaded before executing the rest of the script
 document.addEventListener('DOMContentLoaded', function() {
     const legendContainer = document.getElementById('legend'); // Define legendContainer here
