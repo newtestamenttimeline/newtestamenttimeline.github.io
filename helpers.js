@@ -1,12 +1,12 @@
+let eventTypeColors = {}; // Ensure this is declared if it's used across multiple files
+
 function setUpProgressBar() {
-    document.addEventListener('DOMContentLoaded', () => {
-        const progressBar = document.getElementById('progress-bar');
-        if (progressBar) {
-            progressBar.style.width = '0%';
-        } else {
-            console.error('Progress bar element not found.');
-        }
-    });
+    const progressBar = document.getElementById('progress-bar');
+    if (progressBar) {
+        progressBar.style.width = '0%';
+    } else {
+        console.error('Progress bar element not found.');
+    }
 }
 
 function updateProgressBar(progress) {
@@ -51,22 +51,3 @@ function addYearLabels() {
         timeline.appendChild(yearLabel);
     });
 }
-
-function setUpProgressBar() {
-    const progressBar = document.getElementById('progress-bar');
-    if (progressBar) {
-        progressBar.style.width = '0%';
-    } else {
-        console.error('Progress bar element not found.');
-    }
-}
-
-function updateProgressBar(progress) {
-    const progressBar = document.getElementById('progress-bar');
-    if (progressBar) {
-        progressBar.style.width = progress + '%';
-    } else {
-        console.error('Progress bar element not found.');
-    }
-}
-
