@@ -1,4 +1,4 @@
-function filterEventsByText(text, isChecked) {
+dvdfunction filterEventsByText(text, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
         const eventTexts = JSON.parse(event.getAttribute('data-texts'));
