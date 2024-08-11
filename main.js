@@ -52,6 +52,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let scale = 1;
     let selectedEvent = null;
 
+    // Declare variables for drag functionality
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
     setUpProgressBar();
     loadEvents();
     initializeFilters();
