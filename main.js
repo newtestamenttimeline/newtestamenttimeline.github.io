@@ -42,6 +42,39 @@ function populateFamilyList() {
     }
 }
 
+function filterEventsByText(text, isChecked) {
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventTexts = event.getAttribute('data-text').split(',');
+        if (isChecked) {
+            if (eventTexts.includes(text)) {
+                event.classList.remove('greyed-out');
+            }
+        } else {
+            if (eventTexts.length === 1 && eventTexts.includes(text)) {
+                event.classList.add('greyed-out');
+            }
+        }
+    });
+}
+
+function filterEventsByFamily(family, isChecked) {
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventFamilies = event.getAttribute('data-family').split(',');
+        if (isChecked) {
+            if (eventFamilies.includes(family)) {
+                event.classList.remove('greyed-out');
+            }
+        } else {
+            if (eventFamilies.length === 1 && eventFamilies.includes(family)) {
+                event.classList.add('greyed-out');
+            }
+        }
+    });
+}
+
+
 // Ensure DOM is fully loaded before executing the rest of the script
 document.addEventListener('DOMContentLoaded', function() {
     const timeline = document.getElementById('timeline');
