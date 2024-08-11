@@ -1,37 +1,3 @@
-async function loadGospels() {
-    try {
-        const matthew = await fetch('matthew.json').then(res => res.json()).catch(err => console.error('Error loading matthew.json:', err));
-        const mark = await fetch('mark.json').then(res => res.json()).catch(err => console.error('Error loading mark.json:', err));
-        const luke = await fetch('luke.json').then(res => res.json()).catch(err => console.error('Error loading luke.json:', err));
-        const john = await fetch('john.json').then(res => res.json()).catch(err => console.error('Error loading john.json:', err));
-        const parallels = await fetch('parallels.json').then(res => res.json()).catch(err => console.error('Error loading parallels.json:', err));
-
-        // Log the loaded data to inspect
-        console.log('Matthew:', matthew);
-        console.log('Mark:', mark);
-        console.log('Luke:', luke);
-        console.log('John:', john);
-        console.log('Parallels:', parallels);
-
-        // Check if any gospel data is undefined
-        if (!matthew || !mark || !luke || !john || !parallels) {
-            console.error('One or more gospels failed to load.');
-            return;
-        }
-
-        // Populate each gospel with the corresponding data
-        populateGospel('matthew', matthew, parallels);
-        populateGospel('mark', mark, parallels);
-        populateGospel('luke', luke, parallels);
-        populateGospel('john', john, parallels);
-
-        addVerseClickListeners(parallels);
-    } catch (error) {
-        console.error('Error loading gospels:', error);
-        alert('Failed to load the requested file. Please check the console for more details.');
-    }
-}
-
 function populateGospel(gospelName, gospelContent, parallels) {
     if (!Array.isArray(gospelContent)) {
         console.error(`${gospelName}.json data is not an array or is undefined.`);
@@ -63,7 +29,7 @@ function populateGospel(gospelName, gospelContent, parallels) {
         const summaryId = `${gospelName}-${entry.chapter}`;
         chapterElement.setAttribute('data-summary', summaryId);
 
-        // Check for parallels and add coloring
+        // Check for parallels and add initial coloring
         let found = false;
         for (const group in parallels) {
             if (parallels[group].includes(summaryId)) {
@@ -88,7 +54,7 @@ function populateGospel(gospelName, gospelContent, parallels) {
         container.appendChild(chapterElement);
     });
 
-    // Add click listeners for scrolling to parallels
+    // Add click listeners for scrolling to parallels and changing color
     container.querySelectorAll('.summary-chapter').forEach(summary => {
         summary.addEventListener('click', (event) => highlightParallelSummaries(event, parallels));
     });
@@ -114,16 +80,23 @@ function highlightParallelSummaries(event, parallels) {
         return;
     }
 
-    // Remove previous highlights
+    // Remove previous highlights and revert to original colors
     document.querySelectorAll('.highlight').forEach(el => el.classList.remove('highlight'));
+    document.querySelectorAll('.summary-chapter').forEach(summary => {
+        const paragraph = summary.querySelector('p.chapter-summary');
+        if (paragraph) {
+            // Revert to original color
+            summary.querySelector('p.chapter-summary').classList.remove('royal-blue');
+        }
+    });
 
-    // Highlight current and parallel summaries
-    event.currentTarget.classList.add('highlight');
+    // Highlight current and parallel summaries in royal blue
+    event.currentTarget.querySelector('p.chapter-summary').classList.add('royal-blue');
     foundGroup.forEach(parallelSummaryId => {
         const parallelSummary = document.querySelector(`div[data-summary="${parallelSummaryId}"]`);
         if (parallelSummary) {
             console.log(`Highlighting parallel summary ID: ${parallelSummaryId}`);
-            parallelSummary.classList.add('highlight');
+            parallelSummary.querySelector('p.chapter-summary').classList.add('royal-blue');
             scrollToSummary(parallelSummary);
         } else {
             console.warn(`Parallel summary ID not found in DOM: ${parallelSummaryId}`);
@@ -145,12 +118,3 @@ function scrollToSummary(summaryElement) {
         behavior: 'smooth'
     });
 }
-
-// Remove the "verse selector" at the top of each gospel
-// This code is now removed since we no longer use verse-based navigation
-
-// Event listener for the translation selector
-document.getElementById('translation-selector').addEventListener('change', loadGospels);
-
-// Initial load
-loadGospels();
