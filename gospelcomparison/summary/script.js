@@ -57,36 +57,39 @@ function populateGospel(gospelName, gospelContent, parallels) {
             chapterElement.appendChild(groupTitleElement);
         }
 
-        // Add chapter summary
-        const summaryElement = document.createElement('p');
-        summaryElement.textContent = `${entry.chapter}: ${entry.summary}`;
-        summaryElement.classList.add('chapter-summary');
+        // Only add chapter summary if it exists
+        if (entry.summary) {
+            const summaryElement = document.createElement('p');
+            summaryElement.textContent = `${entry.chapter}: ${entry.summary}`;
+            summaryElement.classList.add('chapter-summary');
 
-        const summaryId = `${gospelName}-${entry.chapter}`;
-        chapterElement.setAttribute('data-summary', summaryId);
+            const summaryId = `${gospelName}-${entry.chapter}`;
+            chapterElement.setAttribute('data-summary', summaryId);
 
-        // Check for parallels and add initial coloring
-        let found = false;
-        for (const group in parallels) {
-            if (parallels[group].includes(summaryId)) {
-                found = true;
-                const parallelCount = parallels[group].length;
-                if (parallelCount === 2) {
-                    summaryElement.classList.add('pastel-green');
-                } else if (parallelCount === 3) {
-                    summaryElement.classList.add('pastel-purple');
-                } else if (parallelCount >= 4) {
-                    summaryElement.classList.add('pastel-pink');
+            // Check for parallels and add initial coloring
+            let found = false;
+            for (const group in parallels) {
+                if (parallels[group].includes(summaryId)) {
+                    found = true;
+                    const parallelCount = parallels[group].length;
+                    if (parallelCount === 2) {
+                        summaryElement.classList.add('pastel-green');
+                    } else if (parallelCount === 3) {
+                        summaryElement.classList.add('pastel-purple');
+                    } else if (parallelCount >= 4) {
+                        summaryElement.classList.add('pastel-pink');
+                    }
+                    break;
                 }
-                break;
             }
+
+            if (!found) {
+                summaryElement.classList.add('unique');
+            }
+
+            chapterElement.appendChild(summaryElement);
         }
 
-        if (!found) {
-            summaryElement.classList.add('unique');
-        }
-
-        chapterElement.appendChild(summaryElement);
         container.appendChild(chapterElement);
     });
 
@@ -95,6 +98,7 @@ function populateGospel(gospelName, gospelContent, parallels) {
         summary.addEventListener('click', (event) => highlightParallelSummaries(event, parallels));
     });
 }
+
 
 function highlightParallelSummaries(event, parallels) {
     const summaryId = event.currentTarget.getAttribute('data-summary');
