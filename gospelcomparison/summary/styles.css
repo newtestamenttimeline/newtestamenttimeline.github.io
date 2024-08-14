@@ -203,6 +203,14 @@ select {
     flex-direction: column;
 }
 
+/* Style for overarching section titles (e.g., "Chapter 5-7: The Sermon on the Mount") */
+.section-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #BB86FC;
+}
+
 /* Container for sections within a chapter or range of chapters */
 .section-container {
     display: flex;
