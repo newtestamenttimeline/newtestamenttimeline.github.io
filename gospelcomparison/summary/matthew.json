@@ -10,16 +10,6 @@
     "summary": "Genealogy of Jesus"
   },
   {
-    "chapter": "2",
-    "group_title": "",
-    "summary": "The visit of the magi, flees to egypt and returns to Nazareth"
-  },
-  {
-    "chapter": "3",
-    "group_title": "",
-    "summary": "John Baptist, baptism of Christ"
-  },
-  {
     "chapter": "4a",
     "group_title": "",
     "summary": "Temptation of Christ"
@@ -32,7 +22,21 @@
   {
     "chapter": "5-7",
     "group_title": "",
-    "summary": "The sermon on the mount 5. beatitudes, Golden rule, salt and light, fulfillment of the law, murder and adultery in the heart, divorce, oaths, eye for an eye, love for enemies 6. Charity, prayer and fasting, treasures, do not worry 7. judging others, ask/seek/knock, the wide and narrow gates, true prophets, true disciples, the foolish builder."
+    "summary": "Sermon on the Mount",
+    "sections": [
+      {
+        "chapter_verse": "5:3-5:12",
+        "verse_title": "Beatitudes"
+      },
+      {
+        "chapter_verse": "5:13-5:16",
+        "verse_title": "Salt and Light"
+      },
+      {
+        "chapter_verse": "5:17-5:20",
+        "verse_title": "Fulfillment of the Law"
+      }
+    ]
   },
   {
     "chapter": "19-20",
