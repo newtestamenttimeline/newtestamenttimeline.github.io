@@ -108,7 +108,7 @@ function updateGospelDataFromTable() {
         const groupTitle = cells[1].innerText.trim();
         const summary = cells[2].innerText.trim();
 
-        if (chapter) {
+        if (chapter || groupTitle || summary) {  // Add only if there is some data
             gospelData.push({
                 chapter: chapter,
                 group_title: groupTitle,
