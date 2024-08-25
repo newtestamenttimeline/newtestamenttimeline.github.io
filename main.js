@@ -1,4 +1,4 @@
-// Global variables that need to be accessible across different script files!
+// Global variables that need to be accessible across different script files
 let texts = new Set();
 let families = new Set();
 let eventTypes = new Set(); 
