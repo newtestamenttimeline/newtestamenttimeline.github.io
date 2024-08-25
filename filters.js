@@ -1,46 +1,26 @@
-dvdfunction filterEventsByText(text, isChecked) {
+function filterEventsByText(text, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
         const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-        if (isChecked) {
-            if (eventTexts.includes(text)) {
-                event.classList.remove('greyed-out');
-            }
-        } else {
-            if (eventTexts.includes(text)) {
-                const remainingTexts = eventTexts.filter(t => texts.has(t));
-                if (remainingTexts.length === 0) {
-                    event.classList.add('greyed-out');
-                }
-            }
+        if (isChecked && eventTexts.includes(text)) {
+            event.classList.remove('greyed-out');
+        } else if (!isChecked && eventTexts.includes(text)) {
+            event.classList.add('greyed-out');
         }
     });
 }
-
-
-
 
 function filterEventsByFamily(family, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
         const eventFamily = event.getAttribute('data-family');
-        if (isChecked) {
-            if (eventFamily === family) {
-                event.classList.remove('greyed-out');
-            }
-        } else {
-            if (eventFamily === family) {
-                const remainingFamilies = Array.from(families).filter(f => f !== family);
-                if (remainingFamilies.length === 0) {
-                    event.classList.add('greyed-out');
-                }
-            }
+        if (isChecked && eventFamily === family) {
+            event.classList.remove('greyed-out');
+        } else if (!isChecked && eventFamily === family) {
+            event.classList.add('greyed-out');
         }
     });
 }
-
-
-
 
 function initializeFilters() {
     const textList = document.getElementById('text-list');
