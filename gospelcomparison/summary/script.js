@@ -57,44 +57,67 @@ function populateGospel(gospelName, gospelContent, parallels) {
             chapterElement.appendChild(groupTitleElement);
         }
 
-        // Add chapter summary
-        const summaryElement = document.createElement('p');
-        summaryElement.textContent = `${entry.chapter}: ${entry.summary}`;
-        summaryElement.classList.add('chapter-summary');
+        // Handle chapter summaries
+        if (entry.summary) {
+            const summaryElement = document.createElement('div');
+            summaryElement.classList.add('chapter-summary');
 
-        const summaryId = `${gospelName}-${entry.chapter}`;
-        chapterElement.setAttribute('data-summary', summaryId);
+            if (entry.sections) {
+                // Handle sections within a chapter or group of chapters
+                const sectionContainer = document.createElement('div');
+                sectionContainer.classList.add('section-container');
 
-        // Check for parallels and add initial coloring
-        let found = false;
-        for (const group in parallels) {
-            if (parallels[group].includes(summaryId)) {
-                found = true;
-                const parallelCount = parallels[group].length;
-                if (parallelCount === 2) {
-                    summaryElement.classList.add('pastel-green');
-                } else if (parallelCount === 3) {
-                    summaryElement.classList.add('pastel-purple');
-                } else if (parallelCount >= 4) {
-                    summaryElement.classList.add('pastel-pink');
-                }
-                break;
+                entry.sections.forEach(section => {
+                    const sectionElement = document.createElement('div');
+                    sectionElement.classList.add('verse-box');
+                    sectionElement.textContent = `${section.chapter_verse}: ${section.verse_title}`;
+                    
+                    const summaryId = `${gospelName}-${section.chapter_verse}`;
+                    sectionElement.setAttribute('data-summary', summaryId);
+
+                    // Check for parallels and add initial coloring
+                    let found = false;
+                    for (const group in parallels) {
+                        if (parallels[group].includes(summaryId)) {
+                            found = true;
+                            const parallelCount = parallels[group].length;
+                            if (parallelCount === 2) {
+                                sectionElement.classList.add('pastel-green');
+                            } else if (parallelCount === 3) {
+                                sectionElement.classList.add('pastel-purple');
+                            } else if (parallelCount >= 4) {
+                                sectionElement.classList.add('pastel-pink');
+                            }
+                            break;
+                        }
+                    }
+
+                    if (!found) {
+                        sectionElement.classList.add('unique');
+                    }
+
+                    sectionContainer.appendChild(sectionElement);
+                });
+
+                summaryElement.appendChild(sectionContainer);
+            } else {
+                // Handle whole chapter or single part (e.g., 4a, 4b)
+                summaryElement.textContent = `${entry.chapter}: ${entry.summary}`;
             }
+
+            chapterElement.appendChild(summaryElement);
         }
 
-        if (!found) {
-            summaryElement.classList.add('unique');
-        }
-
-        chapterElement.appendChild(summaryElement);
         container.appendChild(chapterElement);
     });
 
     // Add click listeners for scrolling to parallels and changing color
-    container.querySelectorAll('.summary-chapter').forEach(summary => {
-        summary.addEventListener('click', (event) => highlightParallelSummaries(event, parallels));
+    container.querySelectorAll('.verse-box').forEach(verse => {
+        verse.addEventListener('click', (event) => highlightParallelSummaries(event, parallels));
     });
 }
+
+
 
 function highlightParallelSummaries(event, parallels) {
     const summaryId = event.currentTarget.getAttribute('data-summary');

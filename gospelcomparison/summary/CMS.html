@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gospel Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Gospel Editor</h1>
+<select id="fileSelector">
+    <option value="matthew.json">Matthew</option>
+    <option value="mark.json">Mark</option>
+    <option value="luke.json">Luke</option>
+    <option value="john.json">John</option>
+    <!-- Add more options here for any additional JSON files -->
+</select>
+<button onclick="loadSelectedFile()">Load Selected File</button>
+<button onclick="exportJSON()">Export JSON</button>
+<button onclick="addRow()">Add Row</button>
+
+<table id="gospelTable" contenteditable="true">
+    <thead>
+        <tr>
+            <th>Chapter</th>
+            <th>Group Title</th>
+            <th>Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Rows will be added here dynamically -->
+    </tbody>
+</table>
+
+<script>
+let gospelData = [];
+let currentFile = '';
+
+function loadSelectedFile() {
+    const fileSelector = document.getElementById('fileSelector');
+    currentFile = fileSelector.value;
+    fetch(currentFile)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            gospelData = data;
+            loadTable();
+        })
+        .catch(error => {
+            console.error('Error loading file:', error);
+            alert('Error loading file: ' + error.message);
+        });
+}
+
+function loadTable() {
+    const tableBody = document.getElementById('gospelTable').getElementsByTagName('tbody')[0];
+    tableBody.innerHTML = '';
+    gospelData.forEach((entry, index) => {
+        const row = tableBody.insertRow();
+        row.innerHTML = `
+            <td contenteditable="true">${entry.chapter || ''}</td>
+            <td contenteditable="true">${entry.group_title || ''}</td>
+            <td contenteditable="true">${entry.summary || ''}</td>
+        `;
+    });
+}
+
+function updateGospelDataFromTable() {
+    const tableBody = document.getElementById('gospelTable').getElementsByTagName('tbody')[0];
+    const rows = tableBody.getElementsByTagName('tr');
+    gospelData = [];
+
+    Array.from(rows).forEach(row => {
+        const cells = row.getElementsByTagName('td');
+        const chapter = cells[0].innerText.trim();
+        const groupTitle = cells[1].innerText.trim();
+        const summary = cells[2].innerText.trim();
+
+        if (chapter || groupTitle || summary) {  // Add only if there is some data
+            gospelData.push({
+                chapter: chapter,
+                group_title: groupTitle,
+                summary: summary
+            });
+        }
+    });
+}
+
+function addRow() {
+    const tableBody = document.getElementById('gospelTable').getElementsByTagName('tbody')[0];
+    const row = tableBody.insertRow();
+    row.innerHTML = `
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+    `;
+}
+
+function exportJSON() {
+    updateGospelDataFromTable();
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(gospelData, null, 2));
+    const downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href", dataStr);
+    downloadAnchorNode.setAttribute("download", currentFile);
+    document.body.appendChild(downloadAnchorNode);
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+}
+
+// Handle paste event to allow pasting from Google Sheets
+document.getElementById('gospelTable').addEventListener('paste', (event) => {
+    event.preventDefault();
+    const clipboardData = event.clipboardData || window.clipboardData;
+    const pastedData = clipboardData.getData('Text');
+    const rows = pastedData.split('\n').map(row => row.split('\t'));
+
+    const selection = window.getSelection();
+    const selectedCell = selection.anchorNode.nodeType === Node.TEXT_NODE ? selection.anchorNode.parentElement : selection.anchorNode;
+    const table = document.getElementById('gospelTable');
+    const tableBody = table.getElementsByTagName('tbody')[0];
+    const selectedRowIndex = selectedCell.parentElement.rowIndex - 1; // Adjust for the header row
+    const selectedCellIndex = selectedCell.cellIndex;
+
+    rows.forEach((rowData, rowIndex) => {
+        let row = tableBody.rows[selectedRowIndex + rowIndex];
+        if (!row) {
+            row = tableBody.insertRow();
+            for (let i = 0; i < table.rows[0].cells.length; i++) {
+                const cell = row.insertCell();
+                cell.contentEditable = "true";
+            }
+        }
+        rowData.forEach((cellData, cellIndex) => {
+            const cell = row.cells[selectedCellIndex + cellIndex];
+            if (cell) {
+                cell.innerText = cellData.trim();
+            } else {
+                const newCell = row.insertCell(selectedCellIndex + cellIndex);
+                newCell.contentEditable = "true";
+                newCell.innerText = cellData.trim();
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>

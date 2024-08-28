@@ -1,23 +1,46 @@
-
 [
   {
     "chapter": "1-18",
-    "summary": "In Galilee: The early ministry of Jesum, including his teachings and miracles.",
-    "group_title": "In Galilee"
+    "group_title": "In Galilee",
+    "summary": ""
   },
   {
     "chapter": "1",
-    "summary": "Genealogy of Jesus Christ, showing his lineage from Abraham through David.",
-    "group_title": "Genealogy"
+    "group_title": "",
+    "summary": "Genealogy of Jesus"
   },
   {
-    "chapter": "4A",
-    "summary": "Temptation of Jesus in the wilderness by the devil.",
-    "group_title": ""
+    "chapter": "4a",
+    "group_title": "",
+    "summary": "Temptation of Christ"
   },
   {
-    "chapter": "4B",
-    "summary": "Beginning of Jesus' ministry in Galilee.",
-    "group_title": ""
+    "chapter": "4b",
+    "group_title": "",
+    "summary": "Jesus calls his first disciples"
+  },
+  {
+    "chapter": "5-7",
+    "group_title": "",
+    "summary": "Sermon on the Mount",
+    "sections": [
+      {
+        "chapter_verse": "5:3-5:12",
+        "verse_title": "Beatitudes"
+      },
+      {
+        "chapter_verse": "5:13-5:16",
+        "verse_title": "Salt and Light"
+      },
+      {
+        "chapter_verse": "5:17-5:20",
+        "verse_title": "Fulfillment of the Law"
+      }
+    ]
+  },
+  {
+    "chapter": "19-20",
+    "group_title": "Journey to Jerusalem",
+    "summary": ""
   }
 ]

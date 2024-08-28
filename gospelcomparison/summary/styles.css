@@ -199,13 +199,52 @@ select {
 .chapter-summary {
     font-size: 1.2em;
     margin: 10px 0;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Highlighting for parallels */
-.highlight {
-    background-color: #BB86FC;
-    color: #121212;
+/* Style for overarching section titles (e.g., "Chapter 5-7: The Sermon on the Mount") */
+.section-title {
+    font-size: 1.3em;
     font-weight: bold;
+    margin-bottom: 5px;
+    color: #BB86FC;
+}
+
+/* Container for sections within a chapter or range of chapters */
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+/* Style for sub-boxes representing individual verses or verse ranges */
+.verse-box {
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid #333;
+    font-size: 0.8em;
+    flex: 0 1 calc(33.33% - 4px); /* Controls the size of the sub-boxes within the main container */
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    background-color: #2E2E2E; /* Background color for sub-boxes */
+}
+
+.pastel-green {
+    background-color: #66BB6A;
+}
+
+.pastel-purple {
+    background-color: #AB47BC;
+}
+
+.pastel-pink {
+    background-color: #EF5350;
+}
+
+.unique {
+    background-color: #757575;
 }
 
 /* Highlighting for the selected and parallel summaries */
@@ -226,6 +265,7 @@ select {
     top: 0;
     left: 0;
     pointer-events: none; /* Allows clicking through the SVG lines */
+    z-index: 0; /* Ensure lines are behind other elements */
 }
 
 .line {
@@ -246,9 +286,5 @@ select {
 }
 
 #line-container .line {
-    z-index: 0; /* Ensure lines are behind other elements */
-}
-
-.svg-container {
     z-index: 0; /* Ensure lines are behind other elements */
 }
