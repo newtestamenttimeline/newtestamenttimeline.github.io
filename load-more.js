@@ -34,7 +34,7 @@ function addEventsToTimeline(data) {
         if (eventTypeColors[eventType]) {
             eventDot.style.backgroundColor = eventTypeColors[eventType];
         } else {
-            eventDot.style.backgroundColor = 'yellow'; // Fallback color
+            eventDot.style.backgroundColor = 'yellow'; // Fallback color, though all should be defined
         }
 
         // Position the dot on the timeline based on the event year and y coordinate
