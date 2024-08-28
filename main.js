@@ -2,7 +2,13 @@
 let texts = new Set();
 let families = new Set();
 let eventTypes = new Set(); 
-let eventTypeColors = {}; 
+let eventTypeColors = {
+    historical: '#3498db', // Blue
+    manuscript: '#2ecc71', // Green
+    uncial: '#e74c3c',     // Red
+    churchFather: '#f39c12', // Orange
+    // Add more event types and colors as needed
+}; 
 
 // Function to populate text list
 function populateTextList() {
