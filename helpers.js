@@ -16,14 +16,6 @@ function updateProgressBar(progress) {
     }
 }
 
-// This function can be removed if all event types are predefined
-function generateColorsForEventTypes() {
-    eventTypes.forEach(eventType => {
-        if (!eventTypeColors[eventType]) {
-            eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-        }
-    });
-}
 
 function getColorForEventType(eventType) {
     return eventTypeColors[eventType];
