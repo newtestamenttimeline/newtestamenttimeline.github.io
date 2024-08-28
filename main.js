@@ -4,13 +4,14 @@ let families = new Set();
 let eventTypes = new Set(); 
 let eventTypeColors = {
     historical: '#3498db',  // Blue
-    manuscript: '#2ecc71',  // Green
     uncial: '#e74c3c',      // Red
+    manuscript: '#2ecc71',  // Green
     churchFather: '#f39c12', // Orange
     minuscules: '#9b59b6',  // Purple
     lectionaries: '#e67e22', // Orange
     // Add or update colors as needed
 };
+
 
 // Function to populate text list
 function populateTextList() {
