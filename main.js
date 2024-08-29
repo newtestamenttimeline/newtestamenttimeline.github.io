@@ -8,7 +8,7 @@ let eventTypeColors = {
     manuscripts: '#2ecc71',  // Green
     churchFathers: '#f39c12', // Orange
     minuscules: '#9b59b6',  // Purple
-    lectionaries: '#e67e22', // Orange
+    lectionary: '#e67e22', // Orange
     // Add or update colors as needed
 };
 
