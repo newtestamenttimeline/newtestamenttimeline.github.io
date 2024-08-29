@@ -5,7 +5,7 @@ let eventTypes = new Set();
 let eventTypeColors = {
     historical: '#3498db',  // Blue
     uncial: '#e74c3c',      // Red
-    manuscripts: '#2ecc71',  // Green
+    Papyrus: '#2ecc71',  // Green
     churchFathers: '#f39c12', // Orange
     Minuscule: '#9b59b6',  // Purple
     lectionary: '#e67e22', // Orange
