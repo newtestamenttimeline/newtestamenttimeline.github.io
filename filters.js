@@ -27,13 +27,17 @@ function filterEventsByFamily(family, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
         const eventFamily = event.getAttribute('data-family');
-        if (isChecked && eventFamily === family) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventFamily === family) {
-            event.classList.add('greyed-out');
+
+        if (eventFamily) {
+            if (isChecked && eventFamily === family) {
+                event.classList.remove('greyed-out');
+            } else if (!isChecked && eventFamily === family) {
+                event.classList.add('greyed-out');
+            }
         }
     });
 }
+
 
 function initializeFilters() {
     const textList = document.getElementById('text-list');
