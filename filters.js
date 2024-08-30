@@ -56,7 +56,6 @@ function initializeFilters() {
             console.log('Text filter checkbox changed:', e.target.value, e.target.checked);
             filterEventsByText(e.target.value, e.target.checked);
         });
-        console.log('Added text filter for:', text);
         textList.appendChild(listItem);
     });
 
@@ -69,8 +68,11 @@ function initializeFilters() {
             console.log('Family filter checkbox changed:', e.target.value, e.target.checked);
             filterEventsByFamily(e.target.value, e.target.checked);
         });
-        console.log('Added family filter for:', family);
         familyList.appendChild(listItem);
     });
+
+    // Log the initialization
+    console.log('Filters initialized for texts and families');
 }
+
 
