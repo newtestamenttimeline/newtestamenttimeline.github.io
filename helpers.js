@@ -24,6 +24,7 @@ function generateColorsForEventTypes() {
     });
 }
 
+
 function getColorForEventType(eventType) {
     return eventTypeColors[eventType];
 }

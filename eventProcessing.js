@@ -24,7 +24,7 @@ async function loadEvents() {
         processEvents(historicalEvents, manuscriptEvents, uncialsEvents, churchFathersEvents);
 
         // Initial updates
-        generateColorsForEventTypes();
+        generateColorsForEventTypes(); // Optional, can be removed if all event types are predefined
         updateEvents();
     } catch (error) {
         console.error('Error loading events:', error);
