@@ -1,14 +1,27 @@
 function filterEventsByText(text, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
-        const eventTexts = JSON.parse(event.getAttribute('data-texts'));
-        if (isChecked && eventTexts.includes(text)) {
-            event.classList.remove('greyed-out');
-        } else if (!isChecked && eventTexts.includes(text)) {
-            event.classList.add('greyed-out');
+        const eventTextsAttr = event.getAttribute('data-texts');
+        
+        if (eventTextsAttr) {
+            let eventTexts = [];
+            try {
+                eventTexts = JSON.parse(eventTextsAttr);
+            } catch (error) {
+                console.error('Error parsing data-texts:', error);
+            }
+
+            if (Array.isArray(eventTexts) && eventTexts.length > 0) {
+                if (isChecked && eventTexts.includes(text)) {
+                    event.classList.remove('greyed-out');
+                } else if (!isChecked && eventTexts.includes(text)) {
+                    event.classList.add('greyed-out');
+                }
+            }
         }
     });
 }
+
 
 function filterEventsByFamily(family, isChecked) {
     const events = document.querySelectorAll('.event');
