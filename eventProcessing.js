@@ -58,8 +58,6 @@ function processEvents(...eventGroups) {
     console.log('Families set after processing:', Array.from(families));
 }
 
-}
-
 function addEventToTimeline(event) {
     console.log('Adding event to timeline:', event);
     if (document.querySelector(`.event[title="${event.title}"]`)) {
