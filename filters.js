@@ -22,7 +22,6 @@ function filterEventsByText(text, isChecked) {
     });
 }
 
-
 function filterEventsByFamily(family, isChecked) {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
@@ -38,14 +37,30 @@ function filterEventsByFamily(family, isChecked) {
     });
 }
 
+function filterEventsByEventType(eventType, isChecked) {
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventTypeAttr = event.getAttribute('data-event-type');
+        
+        if (eventTypeAttr) {
+            if (isChecked && eventTypeAttr === eventType) {
+                event.classList.remove('greyed-out');
+            } else if (!isChecked && eventTypeAttr === eventType) {
+                event.classList.add('greyed-out');
+            }
+        }
+    });
+}
 
 function initializeFilters() {
     const textList = document.getElementById('text-list');
     const familyList = document.getElementById('family-list');
+    const eventTypeList = document.getElementById('event-type-list'); // Assuming you have a list for event types
 
     // Clear existing filters
     textList.innerHTML = '';
     familyList.innerHTML = '';
+    if (eventTypeList) eventTypeList.innerHTML = ''; // Clear event type filters if it exists
 
     // Populate text filters
     texts.forEach(text => {
@@ -71,8 +86,20 @@ function initializeFilters() {
         familyList.appendChild(listItem);
     });
 
+    // Populate event type filters if needed
+    if (eventTypeList) {
+        eventTypes.forEach(eventType => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<input type="checkbox" checked value="${eventType}"> ${eventType}`;
+            const checkbox = listItem.querySelector('input');
+            checkbox.addEventListener('change', (e) => {
+                console.log('Event type filter checkbox changed:', e.target.value, e.target.checked);
+                filterEventsByEventType(e.target.value, e.target.checked);
+            });
+            eventTypeList.appendChild(listItem);
+        });
+    }
+
     // Log the initialization
-    console.log('Filters initialized for texts and families');
+    console.log('Filters initialized for texts, families, and event types');
 }
-
-
