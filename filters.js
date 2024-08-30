@@ -43,21 +43,34 @@ function initializeFilters() {
     const textList = document.getElementById('text-list');
     const familyList = document.getElementById('family-list');
 
+    // Clear existing filters
+    textList.innerHTML = '';
+    familyList.innerHTML = '';
+
+    // Populate text filters
     texts.forEach(text => {
         const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
-        listItem.querySelector('input').addEventListener('change', (e) => {
-            filterEventsByText(text, e.target.checked);
+        listItem.innerHTML = `<input type="checkbox" checked value="${text}"> ${text}`;
+        const checkbox = listItem.querySelector('input');
+        checkbox.addEventListener('change', (e) => {
+            console.log('Text filter checkbox changed:', e.target.value, e.target.checked);
+            filterEventsByText(e.target.value, e.target.checked);
         });
+        console.log('Added text filter for:', text);
         textList.appendChild(listItem);
     });
 
+    // Populate family filters
     families.forEach(family => {
         const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
-        listItem.querySelector('input').addEventListener('change', (e) => {
-            filterEventsByFamily(family, e.target.checked);
+        listItem.innerHTML = `<input type="checkbox" checked value="${family}"> ${family}`;
+        const checkbox = listItem.querySelector('input');
+        checkbox.addEventListener('change', (e) => {
+            console.log('Family filter checkbox changed:', e.target.value, e.target.checked);
+            filterEventsByFamily(e.target.value, e.target.checked);
         });
+        console.log('Added family filter for:', family);
         familyList.appendChild(listItem);
     });
 }
+
