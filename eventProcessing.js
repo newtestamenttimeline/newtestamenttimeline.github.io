@@ -45,6 +45,10 @@ function processEvents(...eventGroups) {
             eventTypes.add(event.eventType);
         });
     });
+
+    // Debugging: Check the contents of texts and families sets
+    console.log('Texts set after processing:', Array.from(texts));
+    console.log('Families set after processing:', Array.from(families));
 }
 
 function addEventToTimeline(event) {
