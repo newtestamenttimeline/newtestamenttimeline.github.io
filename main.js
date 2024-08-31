@@ -238,11 +238,12 @@ async function loadEvents() {
         // Initial updates
         generateColorsForEventTypes();
         updateEvents();
-        initializeFilters(); // This should handle all filter initialization
-        generateLegend(); // If this creates a legend, it should come after filters are initialized
+        // Restore these functions as they seem necessary for filter setup
+        populateTextList();  
+        populateFamilyList();  
+        generateLegend();
 
     } catch (error) {
         console.error('Error loading events:', error);
     }
 }
-
