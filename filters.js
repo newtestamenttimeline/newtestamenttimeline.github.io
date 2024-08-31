@@ -55,7 +55,6 @@ function filterEventsByEventType(eventType, isChecked) {
 function initializeFilters() {
     const textList = document.getElementById('text-list');
     const familyList = document.getElementById('family-list');
-    const eventTypeList = document.getElementById('event-type-list'); // Assuming you have a list for event types
 
     console.log('Initializing text filters...');
     console.log('Texts:', Array.from(texts)); // Log texts set
@@ -63,7 +62,6 @@ function initializeFilters() {
     // Clear existing filters
     textList.innerHTML = '';
     familyList.innerHTML = '';
-    if (eventTypeList) eventTypeList.innerHTML = ''; // Clear event type filters if it exists
 
     // Populate text filters
     texts.forEach(text => {
@@ -93,6 +91,10 @@ function initializeFilters() {
         });
         familyList.appendChild(listItem);
     });
+
+    console.log('Filters initialized for texts and families');
+}
+
 
     // Populate event type filters if needed
     if (eventTypeList) {
