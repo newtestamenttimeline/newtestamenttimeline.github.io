@@ -1,3 +1,5 @@
+let selectedEvent = null; // Add this at the top of eventProcessing.js
+
 async function loadEvents() {
     try {
         const totalFiles = 4; // Number of JSON files to load!
