@@ -14,42 +14,42 @@ let eventTypeColors = {
 
 
 // Function to populate text list
-function populateTextList() {
-    const textListElement = document.getElementById('text-list');
-    if (textListElement) {
-        textListElement.innerHTML = ''; // Clear the list first
+//function populateTextList() {
+  //  const textListElement = document.getElementById('text-list');
+    //if (textListElement) {
+      //  textListElement.innerHTML = ''; // Clear the list first
 
-        texts.forEach(text => {
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
-            listItem.querySelector('input').addEventListener('change', (e) => {
-                filterEventsByText(text, e.target.checked);
-            });
-            textListElement.appendChild(listItem);
-        });
-    } else {
-        console.error('Text list element not found.');
-    }
-}
+        //texts.forEach(text => {
+          //  const listItem = document.createElement('li');
+           // listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
+           // listItem.querySelector('input').addEventListener('change', (e) => {
+            //    filterEventsByText(text, e.target.checked);
+          //  });
+           // textListElement.appendChild(listItem);
+       // });
+   // } else {
+     //   console.error('Text list element not found.');
+   // }
+//}
 
 // Function to populate family list
-function populateFamilyList() {
-    const familyListElement = document.getElementById('family-list');
-    if (familyListElement) {
-        familyListElement.innerHTML = ''; // Clear the list first
+//function populateFamilyList() {
+  //  const familyListElement = document.getElementById('family-list');
+    //if (familyListElement) {
+      //  familyListElement.innerHTML = ''; // Clear the list first
 
-        families.forEach(family => {
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
-            listItem.querySelector('input').addEventListener('change', (e) => {
-                filterEventsByFamily(family, e.target.checked);
-            });
-            familyListElement.appendChild(listItem);
-        });
-    } else {
-        console.error('Family list element not found.');
-    }
-}
+//        families.forEach(family => {
+  //          const listItem = document.createElement('li');
+    //        listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
+      //      listItem.querySelector('input').addEventListener('change', (e) => {
+       //         filterEventsByFamily(family, e.target.checked);
+        //    });
+         //   familyListElement.appendChild(listItem);
+       // });
+  //  } else {
+    //    console.error('Family list element not found.');
+  //  }
+//}
 
 // Ensure DOM is fully loaded before executing the rest of the script
 document.addEventListener('DOMContentLoaded', function() {
@@ -238,12 +238,11 @@ async function loadEvents() {
         // Initial updates
         generateColorsForEventTypes();
         updateEvents();
-        initializeFilters();
-        populateTextList();
-        populateFamilyList();
-        generateLegend();
+        initializeFilters(); // This should handle all filter initialization
+        generateLegend(); // If this creates a legend, it should come after filters are initialized
 
     } catch (error) {
         console.error('Error loading events:', error);
     }
 }
+
