@@ -1,5 +1,8 @@
 let selectedEvent = null; // Add this at the top of eventProcessing.js
 
+// Ensure content is defined and pointing to the correct element
+const content = document.getElementById('event-content');
+
 async function loadEvents() {
     try {
         const totalFiles = 4; // Number of JSON files to load!
