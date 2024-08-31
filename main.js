@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setUpProgressBar();
     loadEvents();
-    initializeFilters();
+  //  initializeFilters();
     generateLegend();
     populateTextList();
     populateFamilyList();
