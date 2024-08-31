@@ -57,6 +57,9 @@ function initializeFilters() {
     const familyList = document.getElementById('family-list');
     const eventTypeList = document.getElementById('event-type-list'); // Assuming you have a list for event types
 
+    console.log('Initializing text filters...');
+    console.log('Texts:', Array.from(texts)); // Log texts set
+
     // Clear existing filters
     textList.innerHTML = '';
     familyList.innerHTML = '';
@@ -64,6 +67,7 @@ function initializeFilters() {
 
     // Populate text filters
     texts.forEach(text => {
+        console.log('Adding filter for text:', text);
         const listItem = document.createElement('li');
         listItem.innerHTML = `<input type="checkbox" checked value="${text}"> ${text}`;
         const checkbox = listItem.querySelector('input');
@@ -74,8 +78,12 @@ function initializeFilters() {
         textList.appendChild(listItem);
     });
 
+    console.log('Initializing family filters...');
+    console.log('Families:', Array.from(families)); // Log families set
+
     // Populate family filters
     families.forEach(family => {
+        console.log('Adding filter for family:', family);
         const listItem = document.createElement('li');
         listItem.innerHTML = `<input type="checkbox" checked value="${family}"> ${family}`;
         const checkbox = listItem.querySelector('input');
@@ -88,7 +96,9 @@ function initializeFilters() {
 
     // Populate event type filters if needed
     if (eventTypeList) {
+        console.log('Initializing event type filters...');
         eventTypes.forEach(eventType => {
+            console.log('Adding filter for event type:', eventType);
             const listItem = document.createElement('li');
             listItem.innerHTML = `<input type="checkbox" checked value="${eventType}"> ${eventType}`;
             const checkbox = listItem.querySelector('input');
@@ -100,6 +110,5 @@ function initializeFilters() {
         });
     }
 
-    // Log the initialization
     console.log('Filters initialized for texts, families, and event types');
 }
