@@ -15,7 +15,7 @@ let eventTypeColors = {
 
 // Function to populate text list
 function populateTextList() {
-    const textListElement = document.getElementById('text-list');
+   const textListElement = document.getElementById('text-list');
     if (textListElement) {
         textListElement.innerHTML = ''; // Clear the list first
 
@@ -44,7 +44,7 @@ function populateFamilyList() {
             listItem.querySelector('input').addEventListener('change', (e) => {
                 filterEventsByFamily(family, e.target.checked);
             });
-            familyListElement.appendChild(listItem);
+           familyListElement.appendChild(listItem);
         });
     } else {
         console.error('Family list element not found.');
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setUpProgressBar();
     loadEvents();
-    initializeFilters();
+  //  initializeFilters();
     generateLegend();
     populateTextList();
     populateFamilyList();
@@ -238,9 +238,9 @@ async function loadEvents() {
         // Initial updates
         generateColorsForEventTypes();
         updateEvents();
-        initializeFilters();
-        populateTextList();
-        populateFamilyList();
+        // Restore these functions as they seem necessary for filter setup
+        populateTextList();  
+        populateFamilyList();  
         generateLegend();
 
     } catch (error) {

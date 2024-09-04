@@ -1,3 +1,8 @@
+let selectedEvent = null; // Add this at the top of eventProcessing.js
+
+// Ensure content is defined and pointing to the correct element
+const content = document.getElementById('event-content');
+
 async function loadEvents() {
     try {
         const totalFiles = 4; // Number of JSON files to load!
@@ -36,15 +41,26 @@ function processEvents(...eventGroups) {
         events.forEach(event => {
             processEvent(event);
             addEventToTimeline(event);
-            if (event.texts) {
-                event.texts.forEach(text => texts.add(text));
+
+            if (event.texts && Array.isArray(event.texts)) {
+                event.texts.forEach(text => {
+                    if (text && text.trim() !== '') {  // Ensure the text is non-empty and valid
+                        texts.add(text);
+                    }
+                });
             }
-            if (event.family) {
+
+            if (event.family && event.family.trim() !== '') {
                 families.add(event.family);
             }
+
             eventTypes.add(event.eventType);
         });
     });
+
+    // Debugging: Check the contents of texts and families sets
+    console.log('Texts set after processing:', Array.from(texts));
+    console.log('Families set after processing:', Array.from(families));
 }
 
 function addEventToTimeline(event) {
