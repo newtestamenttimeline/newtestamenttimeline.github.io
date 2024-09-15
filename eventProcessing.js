@@ -1,3 +1,28 @@
+// Define colors for event types
+let eventTypeColors = {
+    historical: '#3498db',  // Blue
+    uncial: '#e74c3c',      // Red
+    Papyrus: '#2ecc71',     // Green
+    Church_fathers: '#f39c12', // Orange
+    Minuscule: '#9b59b6',   // Purple
+    lectionary: '#e67e22'   // Orange
+};
+
+// Function to get color for each event type
+function getColorForEventType(eventType) {
+    return eventTypeColors[eventType] || '#000'; // Default to black if no color is found
+}
+
+// Generate random colors for event types if needed
+function generateColorsForEventTypes() {
+    eventTypes.forEach(eventType => {
+        if (!eventTypeColors[eventType]) {
+            eventTypeColors[eventType] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+        }
+    });
+}
+
+
 // Global sets for texts, families, and event types
 let texts = new Set();
 let families = new Set();
