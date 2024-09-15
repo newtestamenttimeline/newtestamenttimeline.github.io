@@ -1,50 +1,56 @@
-let selectedEvent = null; // Add this at the top of eventProcessing.js
-
-// Ensure content is defined and pointing to the correct element
+let selectedEvent = null; // Ensure this is declared at the top
 const content = document.getElementById('event-content');
 
+// Consolidated loadEvents function to handle all event loading
 async function loadEvents() {
     try {
-        const totalFiles = 4; // Number of JSON files to load!
+        const totalFiles = 4; // Number of JSON files to load
         let filesLoaded = 0;
 
-        // Fetch and process initial events
-        const historicalEvents = await fetch('historical_events.json').then(response => response.json());
-        filesLoaded++;
-        updateProgressBar((filesLoaded / totalFiles) * 100);
+        // Fetch and process the event data from JSON files
+        const eventFiles = [
+            'historical_events.json',
+            'manuscripts.json',
+            'uncials.json',
+            'church_fathers.json'
+        ];
 
-        const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
-        filesLoaded++;
-        updateProgressBar((filesLoaded / totalFiles) * 100);
+        const eventGroups = await Promise.all(
+            eventFiles.map(file =>
+                fetch(file)
+                    .then(response => response.json())
+                    .then(data => {
+                        filesLoaded++;
+                        updateProgressBar((filesLoaded / totalFiles) * 100);
+                        return data;
+                    })
+                    .catch(error => {
+                        console.error(`Error loading ${file}:`, error);
+                    })
+            )
+        );
 
-        const uncialsEvents = await fetch('uncials.json').then(response => response.json());
-        filesLoaded++;
-        updateProgressBar((filesLoaded / totalFiles) * 100);
-
-        const churchFathersEvents = await fetch('church_fathers.json').then(response => response.json());
-        filesLoaded++;
-        updateProgressBar((filesLoaded / totalFiles) * 100);
-
-        // Process initial events
-        processEvents(historicalEvents, manuscriptEvents, uncialsEvents, churchFathersEvents);
-
-        // Initial updates
-        generateColorsForEventTypes(); // Optional, can be removed if all event types are predefined
+        // Process and add events to the timeline
+        processEvents(...eventGroups);
+        generateColorsForEventTypes();
         updateEvents();
     } catch (error) {
         console.error('Error loading events:', error);
     }
 }
 
+// Function to process events and add them to the timeline
 function processEvents(...eventGroups) {
     eventGroups.forEach(events => {
+        if (!events) return; // Handle case where fetch might fail
         events.forEach(event => {
             processEvent(event);
             addEventToTimeline(event);
 
+            // Add texts and families to the filter sets
             if (event.texts && Array.isArray(event.texts)) {
                 event.texts.forEach(text => {
-                    if (text && text.trim() !== '') {  // Ensure the text is non-empty and valid
+                    if (text && text.trim() !== '') {
                         texts.add(text);
                     }
                 });
@@ -57,21 +63,16 @@ function processEvents(...eventGroups) {
             eventTypes.add(event.eventType);
         });
     });
-
-    // Debugging: Check the contents of texts and families sets
-    console.log('Texts set after processing:', Array.from(texts));
-    console.log('Families set after processing:', Array.from(families));
 }
 
+// Function to add an event to the timeline
 function addEventToTimeline(event) {
     console.log('Adding event to timeline:', event);
-    if (document.querySelector(`.event[title="${event.title}"]`)) {
-        return;
-    }
+    if (document.querySelector(`.event[title="${event.title}"]`)) return;
 
     const newEvent = document.createElement('div');
     newEvent.className = 'event';
-    newEvent.setAttribute('data-year', event.year || (event.yearRange ? ((event.yearRange[0] + event.yearRange[1]) / 2).toFixed(0) : ''));
+    newEvent.setAttribute('data-year', event.year || '');
     newEvent.setAttribute('title', event.title);
     newEvent.setAttribute('data-description', event.description);
     newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
@@ -80,7 +81,7 @@ function addEventToTimeline(event) {
     newEvent.setAttribute('data-event-type', event.eventType);
 
     let newLeft = (event.percentage * timeline.offsetWidth) / 100;
-    let newTop = parseFloat(event.y); // Get y coordinate directly from the JSON
+    let newTop = parseFloat(event.y);
 
     newEvent.style.left = `${newLeft}px`;
     newEvent.style.top = `${newTop}px`;
@@ -88,12 +89,13 @@ function addEventToTimeline(event) {
 
     timeline.appendChild(newEvent);
 
-    // Ensure year labels are always visible
+    // Ensure year labels are visible
     document.querySelectorAll('.year-label').forEach(label => {
         timeline.appendChild(label);
     });
 }
 
+// Processing the event to calculate its position on the timeline
 function processEvent(event) {
     if (event.year) {
         event.percentage = (event.year / 1400) * 100;
@@ -107,13 +109,12 @@ function processEvent(event) {
     console.log('Processed Event:', event);
 }
 
+// Function to update the events on the timeline
 function updateEvents() {
     const events = document.querySelectorAll('.event');
     events.forEach(event => {
         event.addEventListener('click', () => {
-            if (selectedEvent) {
-                selectedEvent.classList.remove('selected');
-            }
+            if (selectedEvent) selectedEvent.classList.remove('selected');
             selectedEvent = event;
             event.classList.add('selected');
 
@@ -130,4 +131,12 @@ function updateEvents() {
                                  <p><strong>Family:</strong> ${family}</p>`;
         });
     });
+}
+
+// Set up the progress bar (assumed to be in your HTML)
+function updateProgressBar(progress) {
+    const progressBar = document.getElementById('progress-bar');
+    if (progressBar) {
+        progressBar.style.width = `${progress}%`;
+    }
 }
