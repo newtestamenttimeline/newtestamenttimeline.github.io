@@ -1,77 +1,19 @@
-// Global variables that need to be accessible across different script files
-let texts = new Set();
-let families = new Set();
-let eventTypes = new Set(); 
-let eventTypeColors = {
-    historical: '#3498db',  // Blue
-    uncial: '#e74c3c',      // Red
-    Papyrus: '#2ecc71',  // Green
-    Church_fathers: '#f39c12', // Orange!
-    Minuscule: '#9b59b6',  // Purple
-    lectionary: '#e67e22', // Orange
-    // Add or update colors as needed
-};
-
-
-// Function to populate text list
-function populateTextList() {
-   const textListElement = document.getElementById('text-list');
-    if (textListElement) {
-        textListElement.innerHTML = ''; // Clear the list first
-
-        texts.forEach(text => {
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `<input type="checkbox" checked> ${text}`;
-            listItem.querySelector('input').addEventListener('change', (e) => {
-                filterEventsByText(text, e.target.checked);
-            });
-            textListElement.appendChild(listItem);
-        });
-    } else {
-        console.error('Text list element not found.');
-    }
-}
-
-// Function to populate family list
-function populateFamilyList() {
-    const familyListElement = document.getElementById('family-list');
-    if (familyListElement) {
-        familyListElement.innerHTML = ''; // Clear the list first
-
-        families.forEach(family => {
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `<input type="checkbox" checked> ${family}`;
-            listItem.querySelector('input').addEventListener('change', (e) => {
-                filterEventsByFamily(family, e.target.checked);
-            });
-           familyListElement.appendChild(listItem);
-        });
-    } else {
-        console.error('Family list element not found.');
-    }
-}
+let isDown = false;
+let startX;
+let scrollLeft;
 
 // Ensure DOM is fully loaded before executing the rest of the script
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const timeline = document.getElementById('timeline');
     const timelineContainer = document.getElementById('timeline-container');
-    const content = document.getElementById('event-content');
     const sidebar = document.getElementById('sidebar');
     const legendContainer = document.getElementById('legend');
     let scale = 1;
     let selectedEvent = null;
 
-    // Declare variables for drag functionality
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
+    // Initialize progress bar and event loading
     setUpProgressBar();
-    loadEvents();
-  //  initializeFilters();
-    generateLegend();
-    populateTextList();
-    populateFamilyList();
+    loadEvents(); // This function is now called from eventProcessing.js
 
     // Event listener for "Load More Events" button
     const loadMoreButton = document.getElementById('load-more-event-types');
@@ -81,17 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
                 const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
 
-                // Process additional events
+                // Process additional events (handled by eventProcessing.js)
                 processEvents(lectionariesEvents, minusculesEvents);
 
-                // Generate colors for any new event types that were loaded later
-                generateColorsForEventTypes();
-
-                // Update the timeline with new events and colors
+                // Update the timeline and UI
                 updateEvents();
-                populateTextList(); // Repopulate text list
-                populateFamilyList(); // Repopulate family list
-                generateLegend(); // Refresh legend to include new event types with colors
+               // generateLegend(); // Refresh legend to include new event types - commenting out to see what happens based on chatgpt advice
+                initializeFilters(); // Refresh filters with the newly loaded events
+
             } catch (error) {
                 console.error('Error loading additional events:', error);
             }
@@ -206,44 +145,5 @@ function updateProgressBar(progress) {
         progressBar.style.width = progress + '%';
     } else {
         console.error('Progress bar element not found.');
-    }
-}
-
-// Load events and update the timeline
-async function loadEvents() {
-    try {
-        const totalFiles = 4; // Number of JSON files to load
-        let filesLoaded = 0;
-
-        // Fetch and process initial events
-        const historicalEvents = await fetch('historical_events.json').then(response => response.json());
-        filesLoaded++;
-        updateProgressBar((filesLoaded / totalFiles) * 100);
-
-        const manuscriptEvents = await fetch('manuscripts.json').then(response => response.json());
-        filesLoaded++;
-        updateProgressBar((filesLoaded / totalFiles) * 100);
-
-        const uncialsEvents = await fetch('uncials.json').then(response => response.json());
-        filesLoaded++;
-        updateProgressBar((filesLoaded / totalFiles) * 100);
-
-        const churchFathersEvents = await fetch('church_fathers.json').then(response => response.json());
-        filesLoaded++;
-        updateProgressBar((filesLoaded / totalFiles) * 100);
-
-        // Process initial events
-        processEvents(historicalEvents, manuscriptEvents, uncialsEvents, churchFathersEvents);
-
-        // Initial updates
-        generateColorsForEventTypes();
-        updateEvents();
-        // Restore these functions as they seem necessary for filter setup
-        populateTextList();  
-        populateFamilyList();  
-        generateLegend();
-
-    } catch (error) {
-        console.error('Error loading events:', error);
     }
 }
