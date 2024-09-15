@@ -165,3 +165,5 @@ function updateProgressBar(progress) {
         progressBar.style.width = `${progress}%`;
     }
 }
+
+window.loadEvents = loadEvents;
