@@ -1,3 +1,7 @@
+let isDown = false;
+let startX;
+let scrollLeft;
+
 // Ensure DOM is fully loaded before executing the rest of the script
 document.addEventListener('DOMContentLoaded', function () {
     const timeline = document.getElementById('timeline');
