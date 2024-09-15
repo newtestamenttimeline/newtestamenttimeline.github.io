@@ -3,16 +3,6 @@ let texts = new Set();
 let families = new Set();
 let eventTypes = new Set();
 
-// Define colors for event types
-let eventTypeColors = {
-    historical: '#3498db',  // Blue
-    uncial: '#e74c3c',      // Red
-    Papyrus: '#2ecc71',     // Green
-    Church_fathers: '#f39c12', // Orange!
-    Minuscule: '#9b59b6',   // Purple
-    lectionary: '#e67e22'   // Orange
-};
-
 
 let selectedEvent = null; // Ensure this is declared at the top
 const content = document.getElementById('event-content');
