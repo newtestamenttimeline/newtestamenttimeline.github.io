@@ -40,6 +40,8 @@ async function loadEvents() {
         processEvents(...eventGroups);
         generateColorsForEventTypes();
         updateEvents();
+        generateLegend();  // Ensure the legend is generated after eventTypes is populated
+
     } catch (error) {
         console.error('Error loading events:', error);
     }
