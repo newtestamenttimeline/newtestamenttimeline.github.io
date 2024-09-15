@@ -40,6 +40,7 @@ async function loadEvents() {
         processEvents(...eventGroups);
         generateColorsForEventTypes();
         updateEvents();
+        initializeFilters(); // Now call initializeFilters to populate the filters after events are processed
         generateLegend();  // Ensure the legend is generated after eventTypes is populated
 
     } catch (error) {
