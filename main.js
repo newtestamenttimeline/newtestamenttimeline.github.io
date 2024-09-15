@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize progress bar and event loading
     setUpProgressBar();
     loadEvents(); // This function is now called from eventProcessing.js
-    initializeFilters(); // Moved all filter logic to filters.js
 
     // Event listener for "Load More Events" button
     const loadMoreButton = document.getElementById('load-more-event-types');
