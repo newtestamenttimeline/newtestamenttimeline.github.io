@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Update the timeline and UI
                 updateEvents();
-                generateLegend(); // Refresh legend to include new event types
+               // generateLegend(); // Refresh legend to include new event types - commenting out to see what happens based on chatgpt advice
+                initializeFilters(); // Refresh filters with the newly loaded events
+
             } catch (error) {
                 console.error('Error loading additional events:', error);
             }
