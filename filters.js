@@ -1,115 +1,64 @@
+// Helper function to handle event filtering by attribute
+function filterEventsByAttribute(attribute, value, isChecked) {
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const eventAttr = event.getAttribute(attribute);
+
+        if (eventAttr) {
+            if (isChecked && eventAttr.includes(value)) {
+                event.classList.remove('greyed-out');
+            } else if (!isChecked && eventAttr.includes(value)) {
+                event.classList.add('greyed-out');
+            }
+        }
+    });
+}
+
+// Filter events by text
 function filterEventsByText(text, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventTextsAttr = event.getAttribute('data-texts');
-        
-        if (eventTextsAttr) {
-            let eventTexts = [];
-            try {
-                eventTexts = JSON.parse(eventTextsAttr);
-            } catch (error) {
-                console.error('Error parsing data-texts:', error);
-            }
-
-            if (Array.isArray(eventTexts) && eventTexts.length > 0) {
-                if (isChecked && eventTexts.includes(text)) {
-                    event.classList.remove('greyed-out');
-                } else if (!isChecked && eventTexts.includes(text)) {
-                    event.classList.add('greyed-out');
-                }
-            }
-        }
-    });
+    filterEventsByAttribute('data-texts', text, isChecked);
 }
 
+// Filter events by family
 function filterEventsByFamily(family, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventFamily = event.getAttribute('data-family');
-
-        if (eventFamily) {
-            if (isChecked && eventFamily === family) {
-                event.classList.remove('greyed-out');
-            } else if (!isChecked && eventFamily === family) {
-                event.classList.add('greyed-out');
-            }
-        }
-    });
+    filterEventsByAttribute('data-family', family, isChecked);
 }
 
+// Filter events by event type
 function filterEventsByEventType(eventType, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventTypeAttr = event.getAttribute('data-event-type');
-        
-        if (eventTypeAttr) {
-            if (isChecked && eventTypeAttr === eventType) {
-                event.classList.remove('greyed-out');
-            } else if (!isChecked && eventTypeAttr === eventType) {
-                event.classList.add('greyed-out');
-            }
-        }
+    filterEventsByAttribute('data-event-type', eventType, isChecked);
+}
+
+// Central function to create and append filters to the filter list
+function createFilterList(filterContainer, filterSet, filterCallback) {
+    filterContainer.innerHTML = ''; // Clear existing filters
+
+    filterSet.forEach(filterValue => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<input type="checkbox" checked value="${filterValue}"> ${filterValue}`;
+        const checkbox = listItem.querySelector('input');
+        checkbox.addEventListener('change', (e) => {
+            filterCallback(e.target.value, e.target.checked);
+        });
+        filterContainer.appendChild(listItem);
     });
 }
 
+// Initialize all filters (texts, families, event types)
 function initializeFilters() {
     const textList = document.getElementById('text-list');
     const familyList = document.getElementById('family-list');
-
-    console.log('Initializing text filters...');
-    console.log('Texts:', Array.from(texts)); // Log texts set
-
-    // Clear existing filters
-    textList.innerHTML = '';
-    familyList.innerHTML = '';
+    const eventTypeList = document.getElementById('event-type-list');
 
     // Populate text filters
-    texts.forEach(text => {
-        console.log('Adding filter for text:', text);
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked value="${text}"> ${text}`;
-        const checkbox = listItem.querySelector('input');
-        checkbox.addEventListener('change', (e) => {
-            console.log('Text filter checkbox changed:', e.target.value, e.target.checked);
-            filterEventsByText(e.target.value, e.target.checked);
-        });
-        textList.appendChild(listItem);
-    });
-
-    console.log('Initializing family filters...');
-    console.log('Families:', Array.from(families)); // Log families set
+    createFilterList(textList, texts, filterEventsByText);
 
     // Populate family filters
-    families.forEach(family => {
-        console.log('Adding filter for family:', family);
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<input type="checkbox" checked value="${family}"> ${family}`;
-        const checkbox = listItem.querySelector('input');
-        checkbox.addEventListener('change', (e) => {
-            console.log('Family filter checkbox changed:', e.target.value, e.target.checked);
-            filterEventsByFamily(e.target.value, e.target.checked);
-        });
-        familyList.appendChild(listItem);
-    });
+    createFilterList(familyList, families, filterEventsByFamily);
 
-    console.log('Filters initialized for texts and families');
-}
-
-
-    // Populate event type filters if needed
+    // Populate event type filters
     if (eventTypeList) {
-        console.log('Initializing event type filters...');
-        eventTypes.forEach(eventType => {
-            console.log('Adding filter for event type:', eventType);
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `<input type="checkbox" checked value="${eventType}"> ${eventType}`;
-            const checkbox = listItem.querySelector('input');
-            checkbox.addEventListener('change', (e) => {
-                console.log('Event type filter checkbox changed:', e.target.value, e.target.checked);
-                filterEventsByEventType(e.target.value, e.target.checked);
-            });
-            eventTypeList.appendChild(listItem);
-        });
+        createFilterList(eventTypeList, eventTypes, filterEventsByEventType);
     }
 
     console.log('Filters initialized for texts, families, and event types');
