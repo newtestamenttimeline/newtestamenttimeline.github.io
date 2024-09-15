@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     setUpProgressBar();
     loadEvents(); // This function is now called from eventProcessing.js
     initializeFilters(); // Moved all filter logic to filters.js
-    generateLegend(); // Legend is handled via uiControls.js
 
     // Event listener for "Load More Events" button
     const loadMoreButton = document.getElementById('load-more-event-types');
