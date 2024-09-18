@@ -16,13 +16,21 @@ function filterEventsByAttribute(attribute, value, isChecked) {
 
 // Filter events by text
 function filterEventsByText(text, isChecked) {
-    filterEventsByAttribute('data-texts', text, isChecked);
+    const events = document.querySelectorAll(`.event[data-texts*="${text}"]`);
+    events.forEach(event => {
+        event.style.display = isChecked ? 'block' : 'none';
+    });
 }
+
 
 // Filter events by family
 function filterEventsByFamily(family, isChecked) {
-    filterEventsByAttribute('data-family', family, isChecked);
+    const events = document.querySelectorAll(`.event[data-family*="${family}"]`);
+    events.forEach(event => {
+        event.style.display = isChecked ? 'block' : 'none';
+    });
 }
+
 
 // Filter events by event type
 function filterEventsByEventType(eventType, isChecked) {
