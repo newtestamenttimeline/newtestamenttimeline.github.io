@@ -1,18 +1,18 @@
-// Helper function to handle event filtering by attribute
-function filterEventsByAttribute(attribute, value, isChecked) {
-    const events = document.querySelectorAll('.event');
-    events.forEach(event => {
-        const eventAttr = event.getAttribute(attribute);
+// deprectated - Helper function to handle event filtering by attribute
+//function filterEventsByAttribute(attribute, value, isChecked) {
+  //  const events = document.querySelectorAll('.event');
+    //events.forEach(event => {
+      //  const eventAttr = event.getAttribute(attribute);
 
-        if (eventAttr) {
-            if (isChecked && eventAttr.includes(value)) {
-                event.classList.remove('greyed-out');
-            } else if (!isChecked && eventAttr.includes(value)) {
-                event.classList.add('greyed-out');
-            }
-        }
-    });
-}
+        //if (eventAttr) {
+          //  if (isChecked && eventAttr.includes(value)) {
+            //    event.classList.remove('greyed-out');
+           // } else if (!isChecked && eventAttr.includes(value)) {
+             //   event.classList.add('greyed-out');
+           // }
+      //  }
+   // });
+//}
 
 // Filter events by text
 function filterEventsByText(text, isChecked) {
