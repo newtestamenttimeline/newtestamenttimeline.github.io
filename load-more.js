@@ -62,7 +62,6 @@ function addEventsToTimeline(data) {
     });
 }
 
-// Function to update filters
 function updateFilters(data, textList, familyList) {
     data.forEach(event => {
         // Check and add new texts to the text list
@@ -70,31 +69,51 @@ function updateFilters(data, textList, familyList) {
             if (text && !textList.includes(text)) {
                 textList.push(text);
                 const li = document.createElement('li');
-                li.textContent = text;
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.checked = true;
+                checkbox.addEventListener('change', (e) => {
+                    filterEventsByText(text, e.target.checked);
+                });
+                li.appendChild(checkbox);
+                li.appendChild(document.createTextNode(text));
                 document.getElementById('text-list').appendChild(li);
             }
         });
 
-        // Check and add new families to the family list
+        // Check and add new families to the family list (if applicable)
         if (event.family && !familyList.includes(event.family)) {
             familyList.push(event.family);
             const li = document.createElement('li');
-            li.textContent = event.family;
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.checked = true;
+            checkbox.addEventListener('change', (e) => {
+                filterEventsByFamily(event.family, e.target.checked);
+            });
+            li.appendChild(checkbox);
+            li.appendChild(document.createTextNode(event.family));
             document.getElementById('family-list').appendChild(li);
         }
     });
 }
 
+
 // Function to apply active filters to newly loaded events
 function applyActiveFilters() {
     const textCheckboxes = document.querySelectorAll('#text-list input[type="checkbox"]');
     textCheckboxes.forEach(checkbox => {
-        filterEventsByText(checkbox.parentElement.textContent.trim(), checkbox.checked);
+        filterEventsByText(checkbox.value.trim(), checkbox.checked);
     });
 
     const familyCheckboxes = document.querySelectorAll('#family-list input[type="checkbox"]');
     familyCheckboxes.forEach(checkbox => {
-        filterEventsByFamily(checkbox.parentElement.textContent.trim(), checkbox.checked);
+        filterEventsByFamily(checkbox.value.trim(), checkbox.checked);
+    });
+
+    const eventTypeCheckboxes = document.querySelectorAll('.legend-checkbox');
+    eventTypeCheckboxes.forEach(checkbox => {
+        filterEventsByEventType(checkbox.value.trim(), checkbox.checked);
     });
 }
 
