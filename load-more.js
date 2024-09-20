@@ -26,75 +26,85 @@ function addEventsToTimeline(data) {
     data.forEach(event => {
         // Create a dot for each event
         const eventDot = document.createElement('div');
-        eventDot.className = 'event-dot';
+        eventDot.className = 'event';
         eventDot.title = event.title || 'Event';
+
+        // Set the necessary data attributes for filtering
+        eventDot.setAttribute('data-event-type', event.eventType || '');
+        eventDot.setAttribute('data-texts', JSON.stringify(event.texts || []));
+        eventDot.setAttribute('data-family', event.family || '');
 
         // Assign the correct color based on the event type
         const eventType = event.eventType;
         if (eventTypeColors[eventType]) {
             eventDot.style.backgroundColor = eventTypeColors[eventType];
         } else {
-            eventDot.style.backgroundColor = 'yellow'; // Fallback color, though all should be defined
+            eventDot.style.backgroundColor = 'yellow'; // Fallback color
         }
 
         // Position the dot on the timeline based on the event year and y coordinate
         const yearPercentage = ((event.year - 0) / (1400 - 0)) * 100;
         eventDot.style.left = `${yearPercentage}%`;
 
-        // Use the 'y' value to position vertically
         const yOffset = parseFloat(event.y) || 0;
         eventDot.style.top = `calc(50% + ${yOffset}px)`;
 
-        // Add a tooltip for the event details
-        eventDot.addEventListener('click', () => {
-            document.getElementById('event-content').innerHTML = `
-                <h2>${event.title || 'Event'}</h2>
-                <p>${event.description || 'No description available.'}</p>
-                <p><strong>Year:</strong> ${event.year}</p>
-                <p><strong>Texts:</strong> ${event.texts.join(', ') || 'N/A'}</p>
-                <p><strong>Family:</strong> ${event.family || 'N/A'}</p>
-                <p><strong>Location:</strong> ${event.location || 'N/A'}</p>
-                <p><strong>Event Type:</strong> ${event.eventType || 'N/A'}</p>
-            `;
-        });
-
+        // Add the new event to the timeline
         timelineContainer.appendChild(eventDot);
     });
 }
 
 // Function to update filters
-function updateFilters(data, textList, familyList) {
+function updateFilters(data) {
+    const textList = document.getElementById('text-list');
+    const familyList = document.getElementById('family-list');
+
     data.forEach(event => {
-        // Check and add new texts to the text list
+        // Add new texts to the text list
         event.texts.forEach(text => {
-            if (text && !textList.includes(text)) {
-                textList.push(text);
-                const li = document.createElement('li');
-                li.textContent = text;
-                document.getElementById('text-list').appendChild(li);
+            if (text && !Array.from(textList.children).some(li => li.textContent === text)) {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `<input type="checkbox" checked value="${text}"> ${text}`;
+
+                const checkbox = listItem.querySelector('input');
+                checkbox.addEventListener('change', (e) => {
+                    filterEventsByText(e.target.value, e.target.checked);
+                });
+
+                textList.appendChild(listItem);
             }
         });
 
-        // Check and add new families to the family list
-        if (event.family && !familyList.includes(event.family)) {
-            familyList.push(event.family);
-            const li = document.createElement('li');
-            li.textContent = event.family;
-            document.getElementById('family-list').appendChild(li);
+        // Add new families to the family list
+        if (event.family && !Array.from(familyList.children).some(li => li.textContent === event.family)) {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<input type="checkbox" checked value="${event.family}"> ${event.family}`;
+
+            const checkbox = listItem.querySelector('input');
+            checkbox.addEventListener('change', (e) => {
+                filterEventsByFamily(e.target.value, e.target.checked);
+            });
+
+            familyList.appendChild(listItem);
         }
     });
 }
 
-// Function to apply active filters to newly loaded events
+// Function to apply active filters to the timeline
 function applyActiveFilters() {
-    const textCheckboxes = document.querySelectorAll('#text-list input[type="checkbox"]');
-    textCheckboxes.forEach(checkbox => {
-        filterEventsByText(checkbox.parentElement.textContent.trim(), checkbox.checked);
+    // Apply text filters
+    document.querySelectorAll('#text-list input[type="checkbox"]').forEach(checkbox => {
+        filterEventsByText(checkbox.value, checkbox.checked);
     });
 
-    const familyCheckboxes = document.querySelectorAll('#family-list input[type="checkbox"]');
-    familyCheckboxes.forEach(checkbox => {
-        filterEventsByFamily(checkbox.parentElement.textContent.trim(), checkbox.checked);
+    // Apply family filters
+    document.querySelectorAll('#family-list input[type="checkbox"]').forEach(checkbox => {
+        filterEventsByFamily(checkbox.value, checkbox.checked);
+    });
+
+    // Apply event type filters
+    document.querySelectorAll('#event-type-list input[type="checkbox"]').forEach(checkbox => {
+        toggleEventsByType(checkbox.value, checkbox.checked);
     });
 }
 
@@ -121,10 +131,7 @@ async function loadMoreManuscripts() {
     addEventsToTimeline(allData);
 
     // Update filters after adding events
-    const textList = Array.from(document.getElementById('text-list').children).map(item => item.textContent);
-    const familyList = Array.from(document.getElementById('family-list').children).map(item => item.textContent);
-
-    updateFilters(allData, textList, familyList);
+    updateFilters(allData);
 
     // Apply active filters to the newly added events
     applyActiveFilters();
