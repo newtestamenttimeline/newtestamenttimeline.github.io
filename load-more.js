@@ -15,7 +15,7 @@ async function fetchAndProcessJSON(url) {
     }
 }
 
-// Function to add events to the timeline
+// Function to add events to the timeline using DocumentFragment for batch updates
 function addEventsToTimeline(data) {
     const timelineContainer = document.getElementById('timeline');
     if (!timelineContainer) {
@@ -23,44 +23,62 @@ function addEventsToTimeline(data) {
         return;
     }
 
+    // Use a DocumentFragment to batch event dot creation and appending
+    const fragment = document.createDocumentFragment();
+
     data.forEach(event => {
-        // Create a dot for each event
         const eventDot = document.createElement('div');
         eventDot.className = 'event';
         eventDot.title = event.title || 'Event';
 
-        // Set the necessary data attributes for filtering
         eventDot.setAttribute('data-event-type', event.eventType || '');
         eventDot.setAttribute('data-texts', JSON.stringify(event.texts || []));
         eventDot.setAttribute('data-family', event.family || '');
 
-        // Assign the correct color based on the event type
         const eventType = event.eventType;
-        if (eventTypeColors[eventType]) {
-            eventDot.style.backgroundColor = eventTypeColors[eventType];
-        } else {
-            eventDot.style.backgroundColor = 'yellow'; // Fallback color
-        }
+        eventDot.style.backgroundColor = eventTypeColors[eventType] || 'yellow';
 
-        // Position the dot on the timeline based on the event year and y coordinate
         const yearPercentage = ((event.year - 0) / (1400 - 0)) * 100;
         eventDot.style.left = `${yearPercentage}%`;
 
         const yOffset = parseFloat(event.y) || 0;
         eventDot.style.top = `calc(50% + ${yOffset}px)`;
 
-        // Add the new event to the timeline
-        timelineContainer.appendChild(eventDot);
+        // Attach click event listener for showing event details
+        eventDot.addEventListener('click', () => {
+            document.getElementById('event-content').innerHTML = `
+                <h2>${event.title || 'Event'}</h2>
+                <p>${event.description || 'No description available.'}</p>
+                <p><strong>Year:</strong> ${event.year}</p>
+                <p><strong>Texts:</strong> ${event.texts.join(', ') || 'N/A'}</p>
+                <p><strong>Family:</strong> ${event.family || 'N/A'}</p>
+                <p><strong>Location:</strong> ${event.location || 'N/A'}</p>
+                <p><strong>Event Type:</strong> ${event.eventType || 'N/A'}</p>
+            `;
+        });
+
+        fragment.appendChild(eventDot);
+    });
+
+    // Append all event dots at once
+    timelineContainer.appendChild(fragment);
+
+    // Ensure year labels are visible on the timeline (if they are dynamically added elsewhere)
+    document.querySelectorAll('.year-label').forEach(label => {
+        timelineContainer.appendChild(label);
     });
 }
 
-// Function to update filters
+// Function to update filters using DocumentFragment for batch updates
 function updateFilters(data) {
     const textList = document.getElementById('text-list');
     const familyList = document.getElementById('family-list');
 
+    const textFragment = document.createDocumentFragment();
+    const familyFragment = document.createDocumentFragment();
+
     data.forEach(event => {
-        // Add new texts to the text list
+        // Add new texts
         event.texts.forEach(text => {
             if (text && !Array.from(textList.children).some(li => li.textContent === text)) {
                 const listItem = document.createElement('li');
@@ -71,11 +89,11 @@ function updateFilters(data) {
                     filterEventsByText(e.target.value, e.target.checked);
                 });
 
-                textList.appendChild(listItem);
+                textFragment.appendChild(listItem);
             }
         });
 
-        // Add new families to the family list
+        // Add new families
         if (event.family && !Array.from(familyList.children).some(li => li.textContent === event.family)) {
             const listItem = document.createElement('li');
             listItem.innerHTML = `<input type="checkbox" checked value="${event.family}"> ${event.family}`;
@@ -85,25 +103,29 @@ function updateFilters(data) {
                 filterEventsByFamily(e.target.value, e.target.checked);
             });
 
-            familyList.appendChild(listItem);
+            familyFragment.appendChild(listItem);
         }
     });
+
+    // Append all list items at once
+    textList.appendChild(textFragment);
+    familyList.appendChild(familyFragment);
 }
 
-// Function to apply active filters to the timeline
+// Function to apply active filters selectively based on the current state
 function applyActiveFilters() {
-    // Apply text filters
-    document.querySelectorAll('#text-list input[type="checkbox"]').forEach(checkbox => {
+    const activeTextFilters = document.querySelectorAll('#text-list input[type="checkbox"]:checked');
+    activeTextFilters.forEach(checkbox => {
         filterEventsByText(checkbox.value, checkbox.checked);
     });
 
-    // Apply family filters
-    document.querySelectorAll('#family-list input[type="checkbox"]').forEach(checkbox => {
+    const activeFamilyFilters = document.querySelectorAll('#family-list input[type="checkbox"]:checked');
+    activeFamilyFilters.forEach(checkbox => {
         filterEventsByFamily(checkbox.value, checkbox.checked);
     });
 
-    // Apply event type filters
-    document.querySelectorAll('#event-type-list input[type="checkbox"]').forEach(checkbox => {
+    const activeEventTypeFilters = document.querySelectorAll('#event-type-list input[type="checkbox"]:checked');
+    activeEventTypeFilters.forEach(checkbox => {
         toggleEventsByType(checkbox.value, checkbox.checked);
     });
 }
