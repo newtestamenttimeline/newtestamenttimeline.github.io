@@ -26,7 +26,7 @@ function addEventsToTimeline(data) {
     data.forEach(event => {
         // Create a dot for each event
         const eventDot = document.createElement('div');
-        eventDot.className = 'event-dot';
+        eventDot.className = 'event';
         eventDot.title = event.title || 'Event';
 
         // Set the necessary data attributes for filtering
@@ -55,61 +55,56 @@ function addEventsToTimeline(data) {
 }
 
 // Function to update filters
-function updateFilters(data, textList, familyList) {
-    data.forEach(event => {
-        // Check and add new texts to the text list
-        event.texts.forEach(text => {
-            if (text && !textList.includes(text)) {
-                textList.push(text);
+function updateFilters(data) {
+    const textList = document.getElementById('text-list');
+    const familyList = document.getElementById('family-list');
 
-                // Create a list item with a checkbox
+    data.forEach(event => {
+        // Add new texts to the text list
+        event.texts.forEach(text => {
+            if (text && !Array.from(textList.children).some(li => li.textContent === text)) {
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked value="${text}"> ${text}`;
 
-                // Add event listener for the checkbox
                 const checkbox = listItem.querySelector('input');
                 checkbox.addEventListener('change', (e) => {
                     filterEventsByText(e.target.value, e.target.checked);
                 });
 
-                document.getElementById('text-list').appendChild(listItem);
+                textList.appendChild(listItem);
             }
         });
 
-        // Check and add new families to the family list
-        if (event.family && !familyList.includes(event.family)) {
-            familyList.push(event.family);
-
-            // Create a list item with a checkbox
+        // Add new families to the family list
+        if (event.family && !Array.from(familyList.children).some(li => li.textContent === event.family)) {
             const listItem = document.createElement('li');
             listItem.innerHTML = `<input type="checkbox" checked value="${event.family}"> ${event.family}`;
 
-            // Add event listener for the checkbox
             const checkbox = listItem.querySelector('input');
             checkbox.addEventListener('change', (e) => {
                 filterEventsByFamily(e.target.value, e.target.checked);
             });
 
-            document.getElementById('family-list').appendChild(listItem);
+            familyList.appendChild(listItem);
         }
     });
 }
 
-// Function to apply active filters to newly loaded events
+// Function to apply active filters to the timeline
 function applyActiveFilters() {
-    const textCheckboxes = document.querySelectorAll('#text-list input[type="checkbox"]');
-    textCheckboxes.forEach(checkbox => {
-        filterEventsByText(checkbox.parentElement.textContent.trim(), checkbox.checked);
+    // Apply text filters
+    document.querySelectorAll('#text-list input[type="checkbox"]').forEach(checkbox => {
+        filterEventsByText(checkbox.value, checkbox.checked);
     });
 
-    const familyCheckboxes = document.querySelectorAll('#family-list input[type="checkbox"]');
-    familyCheckboxes.forEach(checkbox => {
-        filterEventsByFamily(checkbox.parentElement.textContent.trim(), checkbox.checked);
+    // Apply family filters
+    document.querySelectorAll('#family-list input[type="checkbox"]').forEach(checkbox => {
+        filterEventsByFamily(checkbox.value, checkbox.checked);
     });
 
-    const eventTypeCheckboxes = document.querySelectorAll('#event-type-list input[type="checkbox"]');
-    eventTypeCheckboxes.forEach(checkbox => {
-        toggleEventsByType(checkbox.parentElement.textContent.trim(), checkbox.checked);
+    // Apply event type filters
+    document.querySelectorAll('#event-type-list input[type="checkbox"]').forEach(checkbox => {
+        toggleEventsByType(checkbox.value, checkbox.checked);
     });
 }
 
@@ -136,10 +131,7 @@ async function loadMoreManuscripts() {
     addEventsToTimeline(allData);
 
     // Update filters after adding events
-    const textList = Array.from(document.getElementById('text-list').children).map(item => item.textContent);
-    const familyList = Array.from(document.getElementById('family-list').children).map(item => item.textContent);
-
-    updateFilters(allData, textList, familyList);
+    updateFilters(allData);
 
     // Apply active filters to the newly added events
     applyActiveFilters();
