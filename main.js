@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Timeline container not found.');
     }
 
-    // Adjust the scroll position after zooming to ensure left side remains visible
+   // Adjust the scroll position after zooming to ensure left side remains visible
     function allowInfiniteScroll() {
         timelineContainer.addEventListener('scroll', () => {
             if (timelineContainer.scrollLeft <= 0) {
