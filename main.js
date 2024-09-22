@@ -11,9 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const legendContainer = document.getElementById('legend');
     let selectedEvent = null;
 
-    // Set initial timeline width based on original width
-    timeline.style.width = `${originalTimelineWidth}px`;
-
     // Initialize progress bar and event loading
     setUpProgressBar();
     loadEvents(); // This function is now called from eventProcessing.js
@@ -64,18 +61,13 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Toggle Sidebar button not found.');
     }
 
-    // Function to dynamically adjust the timeline width based on zoom level
-    function adjustTimelineWidth(newScale) {
-        scale = newScale;
-        const newWidth = originalTimelineWidth * scale;
-        timeline.style.width = `${newWidth}px`;
-    }
-
     // Zoom In
     const zoomInButton = document.getElementById('zoom-in');
     if (zoomInButton) {
         zoomInButton.addEventListener('click', () => {
-            adjustTimelineWidth(scale * 1.2); // Increase zoom factor
+            scale *= 1.2;
+            timeline.style.transform = `scale(${scale})`;
+            adjustScrollPositionAfterZoom();
         });
     } else {
         console.error('Zoom In button not found.');
@@ -85,7 +77,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const zoomOutButton = document.getElementById('zoom-out');
     if (zoomOutButton) {
         zoomOutButton.addEventListener('click', () => {
-            adjustTimelineWidth(scale / 1.2); // Decrease zoom factor
+            scale /= 1.2;
+            timeline.style.transform = `scale(${scale})`;
+            adjustScrollPositionAfterZoom();
         });
     } else {
         console.error('Zoom Out button not found.');
@@ -104,7 +98,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 behavior: 'smooth'
             });
 
-            adjustTimelineWidth(scale * 1.2); // Zoom in on double-click
+            scale *= 1.2;
+            timeline.style.transform = `scale(${scale})`;
+            adjustScrollPositionAfterZoom();
         });
 
         // Mouse drag for scrolling
@@ -135,6 +131,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }).observe(timelineContainer);
     } else {
         console.error('Timeline container not found.');
+    }
+
+    // Adjust the scroll position after zooming to ensure left side remains visible
+    function adjustScrollPositionAfterZoom() {
+        const scrollOffset = timelineContainer.scrollLeft / scale;
+        timelineContainer.scrollLeft = scrollOffset;
     }
 });
 
