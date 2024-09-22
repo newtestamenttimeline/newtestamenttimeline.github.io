@@ -74,36 +74,38 @@ function updateFilters(data) {
     const textList = document.getElementById('text-list');
     const familyList = document.getElementById('family-list');
 
+    // Store existing filters to avoid duplication
+    const existingTexts = new Set(Array.from(textList.querySelectorAll('li')).map(li => li.textContent.trim()));
+    const existingFamilies = new Set(Array.from(familyList.querySelectorAll('li')).map(li => li.textContent.trim()));
+
     const textFragment = document.createDocumentFragment();
     const familyFragment = document.createDocumentFragment();
 
     data.forEach(event => {
-        // Add new texts
+        // Add unique texts
         event.texts.forEach(text => {
-            if (text && !Array.from(textList.children).some(li => li.textContent === text)) {
+            if (text && !existingTexts.has(text)) {  // Only add if not already in the list
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `<input type="checkbox" checked value="${text}"> ${text}`;
-
                 const checkbox = listItem.querySelector('input');
                 checkbox.addEventListener('change', (e) => {
                     filterEventsByText(e.target.value, e.target.checked);
                 });
-
                 textFragment.appendChild(listItem);
+                existingTexts.add(text);  // Mark as added
             }
         });
 
-        // Add new families
-        if (event.family && !Array.from(familyList.children).some(li => li.textContent === event.family)) {
+        // Add unique families
+        if (event.family && !existingFamilies.has(event.family)) {
             const listItem = document.createElement('li');
             listItem.innerHTML = `<input type="checkbox" checked value="${event.family}"> ${event.family}`;
-
             const checkbox = listItem.querySelector('input');
             checkbox.addEventListener('change', (e) => {
                 filterEventsByFamily(e.target.value, e.target.checked);
             });
-
             familyFragment.appendChild(listItem);
+            existingFamilies.add(event.family);  // Mark as added
         }
     });
 
