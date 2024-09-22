@@ -1,15 +1,18 @@
 let isDown = false;
 let startX;
 let scrollLeft;
+let originalTimelineWidth = 14000; // Original width in pixels
+let scale = 1; // Initial zoom level
 
-// Ensure DOM is fully loaded before executing the rest of the script
 document.addEventListener('DOMContentLoaded', function () {
     const timeline = document.getElementById('timeline');
     const timelineContainer = document.getElementById('timeline-container');
     const sidebar = document.getElementById('sidebar');
     const legendContainer = document.getElementById('legend');
-    let scale = 1;
     let selectedEvent = null;
+
+    // Set initial timeline width based on original width
+    timeline.style.width = `${originalTimelineWidth}px`;
 
     // Initialize progress bar and event loading
     setUpProgressBar();
@@ -28,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Update the timeline and UI
                 updateEvents();
-               // generateLegend(); // Refresh legend to include new event types - commenting out to see what happens based on chatgpt advice
                 initializeFilters(); // Refresh filters with the newly loaded events
 
             } catch (error) {
@@ -62,27 +64,35 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Toggle Sidebar button not found.');
     }
 
+    // Function to dynamically adjust the timeline width based on zoom level
+    function adjustTimelineWidth(newScale) {
+        scale = newScale;
+        const newWidth = originalTimelineWidth * scale;
+        timeline.style.width = `${newWidth}px`;
+    }
+
+    // Zoom In
     const zoomInButton = document.getElementById('zoom-in');
     if (zoomInButton) {
         zoomInButton.addEventListener('click', () => {
-            scale *= 1.2;
-            timeline.style.transform = `scale(${scale})`;
+            adjustTimelineWidth(scale * 1.2); // Increase zoom factor
         });
     } else {
         console.error('Zoom In button not found.');
     }
 
+    // Zoom Out
     const zoomOutButton = document.getElementById('zoom-out');
     if (zoomOutButton) {
         zoomOutButton.addEventListener('click', () => {
-            scale /= 1.2;
-            timeline.style.transform = `scale(${scale})`;
+            adjustTimelineWidth(scale / 1.2); // Decrease zoom factor
         });
     } else {
         console.error('Zoom Out button not found.');
     }
 
     if (timelineContainer) {
+        // Double-click zoom logic
         timelineContainer.addEventListener('dblclick', (e) => {
             const rect = timelineContainer.getBoundingClientRect();
             const offsetX = e.clientX - rect.left;
@@ -94,10 +104,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 behavior: 'smooth'
             });
 
-            scale *= 1.2;
-            timeline.style.transform = `scale(${scale})`;
+            adjustTimelineWidth(scale * 1.2); // Zoom in on double-click
         });
 
+        // Mouse drag for scrolling
         timelineContainer.addEventListener('mousedown', (e) => {
             isDown = true;
             startX = e.pageX - timelineContainer.offsetLeft;
