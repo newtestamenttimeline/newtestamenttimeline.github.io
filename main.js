@@ -2,6 +2,7 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
+// Ensure DOM is fully loaded before executing the rest of the script
 document.addEventListener('DOMContentLoaded', function () {
     const timeline = document.getElementById('timeline');
     const timelineContainer = document.getElementById('timeline-container');
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initialize progress bar and event loading
     setUpProgressBar();
-    loadEvents();
+    loadEvents(); // This function is now called from eventProcessing.js
 
     // Event listener for "Load More Events" button
     const loadMoreButton = document.getElementById('load-more-event-types');
@@ -22,9 +23,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
                 const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
 
+                // Process additional events (handled by eventProcessing.js)
                 processEvents(lectionariesEvents, minusculesEvents);
+
+                // Update the timeline and UI
                 updateEvents();
-                initializeFilters(); 
+               // generateLegend(); // Refresh legend to include new event types - commenting out to see what happens based on chatgpt advice
+                initializeFilters(); // Refresh filters with the newly loaded events
+
             } catch (error) {
                 console.error('Error loading additional events:', error);
             }
@@ -33,36 +39,44 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Load More Events button not found.');
     }
 
-    const zoomInButton = document.getElementById('zoom-in');
-    const zoomOutButton = document.getElementById('zoom-out');
-
-    function zoomTimeline(zoomFactor) {
-        // Adjust the zoom scale
-        scale *= zoomFactor;
-        timeline.style.transform = `scale(${scale})`;
-
-        // Calculate the scaled width of the timeline
-        const scaledWidth = 14000 * scale;
-        const leftScrollAdjustment = (scaledWidth - 14000) / 2;
-
-        // Adjust scrollLeft to account for zooming
-        timelineContainer.scrollLeft = Math.max(
-            Math.min(timelineContainer.scrollLeft + leftScrollAdjustment, scaledWidth - timelineContainer.clientWidth),
-            0
-        );
+    // Add event listeners for UI controls
+    const toggleLegendButton = document.getElementById('toggle-legend');
+    if (toggleLegendButton) {
+        toggleLegendButton.addEventListener('click', () => {
+            legendContainer.classList.toggle('collapsed');
+            const arrow = document.querySelector('#toggle-legend .arrow');
+            arrow.classList.toggle('collapsed');
+        });
+    } else {
+        console.error('Toggle Legend button not found.');
     }
 
+    const toggleSidebarButton = document.getElementById('toggle-sidebar');
+    if (toggleSidebarButton) {
+        toggleSidebarButton.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            const arrow = document.querySelector('#toggle-sidebar .arrow-reverse');
+            arrow.classList.toggle('collapsed');
+        });
+    } else {
+        console.error('Toggle Sidebar button not found.');
+    }
+
+    const zoomInButton = document.getElementById('zoom-in');
     if (zoomInButton) {
         zoomInButton.addEventListener('click', () => {
-            zoomTimeline(1.2); // Zoom in
+            scale *= 1.2;
+            timeline.style.transform = `scale(${scale})`;
         });
     } else {
         console.error('Zoom In button not found.');
     }
 
+    const zoomOutButton = document.getElementById('zoom-out');
     if (zoomOutButton) {
         zoomOutButton.addEventListener('click', () => {
-            zoomTimeline(1 / 1.2); // Zoom out
+            scale /= 1.2;
+            timeline.style.transform = `scale(${scale})`;
         });
     } else {
         console.error('Zoom Out button not found.');
@@ -80,7 +94,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 behavior: 'smooth'
             });
 
-            zoomTimeline(1.2); // Double-click zooms in
+            scale *= 1.2;
+            timeline.style.transform = `scale(${scale})`;
         });
 
         timelineContainer.addEventListener('mousedown', (e) => {
