@@ -15,29 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     setUpProgressBar();
     loadEvents(); // This function is now called from eventProcessing.js
 
-    // Event listener for "Load More Events" button
-    const loadMoreButton = document.getElementById('load-more-event-types');
-    if (loadMoreButton) {
-        loadMoreButton.addEventListener('click', async () => {
-            try {
-                const lectionariesEvents = await fetch('lectionaries.json').then(response => response.json());
-                const minusculesEvents = await fetch('minuscules.json').then(response => response.json());
-
-                // Process additional events (handled by eventProcessing.js)
-                processEvents(lectionariesEvents, minusculesEvents);
-
-                // Update the timeline and UI
-                updateEvents();
-                initializeFilters(); // Refresh filters with the newly loaded events
-
-            } catch (error) {
-                console.error('Error loading additional events:', error);
-            }
-        });
-    } else {
-        console.error('Load More Events button not found.');
-    }
-
     // Add event listeners for UI controls
     const toggleLegendButton = document.getElementById('toggle-legend');
     if (toggleLegendButton) {
@@ -61,13 +38,22 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Toggle Sidebar button not found.');
     }
 
+    // Allow infinite scrolling left
+    function allowInfiniteScroll() {
+        timelineContainer.addEventListener('scroll', () => {
+            if (timelineContainer.scrollLeft <= 0) {
+                timelineContainer.scrollLeft -= 100; // Arbitrary negative scroll value
+            }
+        });
+    }
+
     // Zoom In
     const zoomInButton = document.getElementById('zoom-in');
     if (zoomInButton) {
         zoomInButton.addEventListener('click', () => {
             scale *= 1.2;
             timeline.style.transform = `scale(${scale})`;
-            adjustScrollPositionAfterZoom();
+            allowInfiniteScroll(); // Allow infinite left scroll
         });
     } else {
         console.error('Zoom In button not found.');
@@ -79,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
         zoomOutButton.addEventListener('click', () => {
             scale /= 1.2;
             timeline.style.transform = `scale(${scale})`;
-            adjustScrollPositionAfterZoom();
+            allowInfiniteScroll(); // Allow infinite left scroll
         });
     } else {
         console.error('Zoom Out button not found.');
@@ -100,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             scale *= 1.2;
             timeline.style.transform = `scale(${scale})`;
-            adjustScrollPositionAfterZoom();
+            allowInfiniteScroll(); // Allow infinite left scroll
         });
 
         // Mouse drag for scrolling
@@ -134,9 +120,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Adjust the scroll position after zooming to ensure left side remains visible
-    function adjustScrollPositionAfterZoom() {
-        const scrollOffset = timelineContainer.scrollLeft / scale;
-        timelineContainer.scrollLeft = scrollOffset;
+    function allowInfiniteScroll() {
+        timelineContainer.addEventListener('scroll', () => {
+            if (timelineContainer.scrollLeft <= 0) {
+                timelineContainer.scrollLeft -= 100; // Arbitrary negative scroll value
+            }
+        });
     }
 });
 
