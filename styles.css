@@ -49,6 +49,7 @@ header {
     display: inline-block;
 }
 
+
 #progress-bar {
     position: absolute;
     bottom: 0;
@@ -125,21 +126,6 @@ header {
 
 .event.greyed-out {
     background-color: var(--grey-out-color);
-}
-
-/* Added CSS for event titles */
-.event-title {
-    position: absolute;
-    bottom: 100%; /* Places the title above the dot */
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif; /* Matches with the rest of the design */
-    background-color: rgba(0, 0, 0, 0.5); /* Adds readability */
-    padding: 2px 5px;
-    border-radius: 3px;
-    pointer-events: none; /* Prevents interference with event dot clicks */
 }
 
 .year-label {
@@ -402,3 +388,6 @@ header {
 #instructions, #legend {
     display: block; /* Show by default */
 }
+
+
+
