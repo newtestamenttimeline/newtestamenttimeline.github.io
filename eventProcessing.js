@@ -1,4 +1,3 @@
-
 // Function to get color for each event type
 function getColorForEventType(eventType) {
     return eventTypeColors[eventType] || '#000'; // Default to black if no color is found
@@ -104,6 +103,14 @@ function addEventToTimeline(event) {
     newEvent.setAttribute('data-family', event.family || '');
     newEvent.setAttribute('data-location', event.location || 'Unknown');
     newEvent.setAttribute('data-event-type', event.eventType);
+
+    // Create the title element
+    const titleLabel = document.createElement('div');
+    titleLabel.className = 'event-title';
+    titleLabel.innerText = event.title;
+
+    // Append the title above the event dot
+    newEvent.appendChild(titleLabel);
 
     let newLeft = (event.percentage * timeline.offsetWidth) / 100;
     let newTop = parseFloat(event.y);
