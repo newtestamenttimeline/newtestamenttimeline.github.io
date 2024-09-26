@@ -663,7 +663,11 @@
     "description": "",
     "texts": [
       "Acts",
-      "Romans - Ephesians",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
       "James",
       "1 Peter",
       "2 Peter",
@@ -1751,7 +1755,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "HebrewsP"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -1800,7 +1804,8 @@
     "title": "minuscule 1836",
     "description": "",
     "texts": [
-      "1 JohnP - 2 ThessaloniansP"
+      "1 John",
+      "2 Thessalonians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2203,7 +2208,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "HebrewsP"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2413,7 +2418,7 @@
     "title": "minuscule 2351",
     "description": "",
     "texts": [
-      "Revelation 1:1-14:5"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2579,7 +2584,7 @@
     "title": "minuscule 2789",
     "description": "",
     "texts": [
-      "JohnP"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2622,7 +2627,7 @@
     "title": "minuscule 2844",
     "description": "",
     "texts": [
-      "JohnP"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2667,14 +2672,23 @@
     "title": "minuscule 2892",
     "description": "",
     "texts": [
-      "Acts 7:40-28:31; James",
+      "Acts",
+      "James",
       "1 Peter",
       "2 Peter",
       "1 John",
       "2 John",
       "3 John",
-      "Jude; Romans; 1 Corinthians 1:24-16:24; 2 Corinthians; Galatians 1:1-3:5",
-      "4:2-6:18; Ephesians - 1 Thessalonians; 2 Thessalonians 1:1-3:6; 1 Timothy 1:1-4:8; Titus 1:5-3:15; Hebrews"
+      "Jude; Romans; 1 Corinthians",
+      "2 Corinthians; Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "Titus",
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2719,7 +2733,7 @@
     "title": "minuscule 2932",
     "description": "",
     "texts": [
-      "John 10:18-31"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2790,7 +2804,7 @@
     "title": "minuscule 3003",
     "description": "",
     "texts": [
-      "Gospel of Mark"
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2803,7 +2817,7 @@
     "title": "minuscule 3007",
     "description": "",
     "texts": [
-      "Revelation 1:1"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2816,7 +2830,7 @@
     "title": "minuscule 3015",
     "description": "",
     "texts": [
-      "John 11:57-12:40"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2861,7 +2875,7 @@
     "title": "minuscule 2898=[278b]",
     "description": "",
     "texts": [
-      "Matthew 13:43-17:5"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -3223,7 +3237,7 @@
     "title": "minuscule 2835",
     "description": "",
     "texts": [
-      "Matthew 1:20-10:29"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -3270,7 +3284,7 @@
     "title": "minuscule 2882",
     "description": "",
     "texts": [
-      "Gospel of Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -3283,7 +3297,7 @@
     "title": "minuscule 2938",
     "description": "",
     "texts": [
-      "John 2:14-24"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -3296,7 +3310,8 @@
     "title": "minuscule 2958",
     "description": "",
     "texts": [
-      "Matthew / John"
+      "Matthew",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -3537,7 +3552,7 @@
     "title": "minuscule 609 + [2152]",
     "description": "",
     "texts": [
-      "Gospel of Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -4834,7 +4849,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "HebrewsP",
+      "Hebrews",
       "James",
       "1 Peter",
       "2 Peter",
@@ -5228,7 +5243,7 @@
     "title": "minuscule 430",
     "description": "",
     "texts": [
-      "John 1:1–8:14 (Nicetas Catena)"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -5643,7 +5658,8 @@
     "title": "minuscule 526",
     "description": "",
     "texts": [
-      "Luke 23:38-50; 24:46-53; John 1:30-3:5"
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -6004,7 +6020,8 @@
     "description": "",
     "texts": [
       "Acts",
-      "Romans - 1 Corinthians",
+      "Romans",
+      "1 Corinthians",
       "James",
       "1 Peter",
       "2 Peter",
@@ -6025,7 +6042,8 @@
     "description": "",
     "texts": [
       "Acts",
-      "Romans - 1 Corinthians",
+      "Romans",
+      "1 Corinthians",
       "James",
       "1 Peter",
       "2 Peter",
@@ -6147,7 +6165,7 @@
     "title": "minuscule 640",
     "description": "",
     "texts": [
-      "Epistle of James 1:1-23"
+      "James"
     ],
     "family": "Byzantine",
     "location": "",
@@ -6258,7 +6276,7 @@
     "title": "minuscule 687",
     "description": "",
     "texts": [
-      "Matthew 10:33-18:16"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -6283,10 +6301,10 @@
       "2 John",
       "3 John",
       "Jude",
-      "Romans 1:1-16:19",
-      "1 Corinthians 1:11-end",
-      "2 Corinthians 1:1-10:9",
-      "Galatians 1:12-end"
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -6411,7 +6429,7 @@
     "title": "minuscule 753",
     "description": "",
     "texts": [
-      "Matthew 23:11-21"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -6622,7 +6640,8 @@
     "title": "minuscule 831",
     "description": "",
     "texts": [
-      "Luke 19:25-John 21:25"
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -6635,7 +6654,7 @@
     "title": "minuscule 870",
     "description": "",
     "texts": [
-      "Luke 11:5-16:14"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -6691,8 +6710,7 @@
     "title": "minuscule 894",
     "description": "",
     "texts": [
-      "Mark 10:25-35",
-      "14:62–15:46"
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -7559,7 +7577,25 @@
     "title": "minuscule 1277",
     "description": "",
     "texts": [
-      "Acts-2 Timothy"
+      "Acts",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John",
+      "2 John",
+      "3 John",
+      "Jude",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy"
     ],
     "family": "Byzantine",
     "location": "",
@@ -7912,8 +7948,8 @@
     "title": "minuscule 1411",
     "description": "",
     "texts": [
-      "Commentary on the Gospel of Luke",
-      "Gospel of John"
+      "Commentary on Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -8383,7 +8419,7 @@
       "1 John",
       "2 John",
       "3 John",
-      "JudeP",
+      "Jude",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -8397,7 +8433,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "HebrewsP"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -8417,7 +8453,7 @@
       "1 John",
       "2 John",
       "3 John",
-      "JudeP",
+      "Jude",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -8431,7 +8467,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "HebrewsP"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -8472,7 +8508,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "HebrewsP"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -8584,7 +8620,7 @@
       "Titus",
       "Philemon",
       "Hebrews",
-      "Revelation 1:1-18:22"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -8768,7 +8804,9 @@
     "title": "minuscule 1878",
     "description": "",
     "texts": [
-      "Romans - 2 Corinthians"
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -8781,7 +8819,18 @@
     "title": "minuscule 1879",
     "description": "",
     "texts": [
-      "Galatians - Hebrews"
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews",
+      ""
     ],
     "family": "Byzantine",
     "location": "",
@@ -8843,7 +8892,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "HebrewsP",
+      "Hebrews",
       ""
     ],
     "family": "Byzantine",
@@ -9039,7 +9088,18 @@
     "title": "minuscule 1925",
     "description": "",
     "texts": [
-      "2 Corinthians - Hebrews"
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -9594,7 +9654,7 @@
     "title": "minuscule 2259",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation 13:14-14:16"
+      "Andreas of Caesarea Commentary on Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -9700,7 +9760,8 @@
     "title": "minuscule 2299",
     "description": "",
     "texts": [
-      "Matthew 13:33–17:25; 18:24–24.20; 25:1–31; 26:64–27.14; 27:35–28.20; Mark 1:20–6:12."
+      "Matthew",
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -9743,7 +9804,7 @@
     "title": "minuscule 2313",
     "description": "",
     "texts": [
-      "John 6:44-8:35"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10119,10 +10180,10 @@
     "title": "minuscule 2563",
     "description": "",
     "texts": [
-      "Matthew 14:3-28:20",
+      "Matthew",
       "Mark",
       "Luke",
-      "John 1:1-21:11"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10183,7 +10244,7 @@
     "title": "minuscule 2586",
     "description": "",
     "texts": [
-      "Matthew 5:25-28:20",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -10199,7 +10260,7 @@
     "title": "minuscule 2587",
     "description": "",
     "texts": [
-      "Acts 5:1-28:31",
+      "Acts",
       "James",
       "1 Peter",
       "2 Peter",
@@ -10233,7 +10294,7 @@
     "title": "minuscule 2589",
     "description": "",
     "texts": [
-      "Matthew 11:29-12:31"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10262,7 +10323,7 @@
     "title": "minuscule 2596",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Galatians 1:16-6:18"
+      "Chrysostom Commentary on Galatians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10400,7 +10461,7 @@
     "title": "minuscule 2741",
     "description": "",
     "texts": [
-      "1 Peter 4:17-5:7"
+      "1 Peter"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10413,7 +10474,7 @@
     "title": "minuscule 2742",
     "description": "",
     "texts": [
-      "MatthewP"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10505,7 +10566,7 @@
     "title": "minuscule 2802",
     "description": "",
     "texts": [
-      "LukeP"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10518,7 +10579,7 @@
     "title": "minuscule 2823",
     "description": "",
     "texts": [
-      "LukeP"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10531,7 +10592,7 @@
     "title": "minuscule 2827",
     "description": "",
     "texts": [
-      "MatthewP"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10544,7 +10605,7 @@
     "title": "minuscule 2833",
     "description": "",
     "texts": [
-      "ActsP"
+      "Acts"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10589,7 +10650,8 @@
     "title": "minuscule 2896",
     "description": "",
     "texts": [
-      "Matthew 6:5-22; Mark"
+      "Matthew",
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10602,7 +10664,7 @@
     "title": "minuscule 2914",
     "description": "",
     "texts": [
-      "John 14:24-15:12; 16:30-17:18"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10615,7 +10677,7 @@
     "title": "minuscule 2927",
     "description": "",
     "texts": [
-      "Gospel of John 4:23-6:7"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10628,7 +10690,7 @@
     "title": "minuscule 2946",
     "description": "",
     "texts": [
-      "John 13:27-30"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10641,7 +10703,7 @@
     "title": "minuscule 2990",
     "description": "",
     "texts": [
-      "Gospel of Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -11428,8 +11490,7 @@
     "title": "minuscule 670",
     "description": "",
     "texts": [
-      "Gospel of Luke 8:3-24",
-      "9:13-34"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -11684,7 +11745,17 @@
     "title": "minuscule 1910",
     "description": "",
     "texts": [
-      "Galatians - Hebrews"
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -11824,7 +11895,7 @@
     "title": "minuscule 2485",
     "description": "",
     "texts": [
-      "Gospel of Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -11883,7 +11954,7 @@
     "title": "minuscule 2769",
     "description": "",
     "texts": [
-      "MatthewP"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -11896,8 +11967,8 @@
     "title": "minuscule 2784",
     "description": "",
     "texts": [
-      "MatthewP",
-      "MarkP"
+      "Matthew",
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -11939,7 +12010,7 @@
     "title": "minuscule 2881",
     "description": "",
     "texts": [
-      "Matthew 25:6–15.15–24"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -11952,7 +12023,7 @@
     "title": "minuscule 2904",
     "description": "",
     "texts": [
-      "Luke 6:45–22:56"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -11965,7 +12036,7 @@
     "title": "minuscule 2933",
     "description": "",
     "texts": [
-      "Luke 1:1-6"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -11978,10 +12049,8 @@
     "title": "minuscule 2934",
     "description": "",
     "texts": [
-      "Acts 3:2-5",
-      "8-11; 1 John 2:29-3:3",
-      "5:11-15",
-      "18-21"
+      "Acts",
+      "1 John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -11994,7 +12063,7 @@
     "title": "minuscule 2940",
     "description": "",
     "texts": [
-      "Matthew 28:1-20"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -12007,7 +12076,7 @@
     "title": "minuscule 2941",
     "description": "",
     "texts": [
-      "Matthew 24:38-25:14"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -12020,7 +12089,7 @@
     "title": "minuscule 2959",
     "description": "",
     "texts": [
-      "1 Peter 4:4-5:4"
+      "1 Peter"
     ],
     "family": "Byzantine",
     "location": "",
@@ -13035,7 +13104,7 @@
       "2 John",
       "3 John",
       "Jude",
-      "Revelation 1:1-3:13"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -13291,7 +13360,7 @@
       "1 John",
       "2 John",
       "3 John",
-      "JudeP"
+      "Jude"
     ],
     "family": "Byzantine",
     "location": "",
@@ -13776,7 +13845,7 @@
     "title": "minuscule 249",
     "description": "",
     "texts": [
-      "Gospel of John (Nicetas Catena)"
+      "John (Nicetas Catena)"
     ],
     "family": "Byzantine",
     "location": "",
@@ -14408,8 +14477,8 @@
       "Titus",
       "Philemon",
       "Hebrews",
-      "2 Peter 2:4-3:18",
-      "1 John 1:1-3:20"
+      "2 Peter",
+      "1 John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -14540,8 +14609,8 @@
     "title": "minuscule 407",
     "description": "",
     "texts": [
-      "Luke 5:30-24:53",
-      "John 1:1-9:2"
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -15431,10 +15500,17 @@
     "title": "minuscule 656",
     "description": "",
     "texts": [
-      "Luke 14:51-53",
+      "Luke",
       "John",
       "Acts",
-      "Romans - 1 Thessalonians",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
       "James",
       "1 Peter",
       "2 Peter",
@@ -15533,7 +15609,7 @@
     "title": "minuscule 674",
     "description": "",
     "texts": [
-      "Matthew 10:42-12:43"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -16037,7 +16113,7 @@
     "title": "minuscule 850",
     "description": "",
     "texts": [
-      "Cyril Commentary on John 1:1-10:17"
+      "Cyril Commentary on John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -16093,7 +16169,7 @@
     "title": "minuscule 866",
     "description": "",
     "texts": [
-      "Matthew 7:24-10:40"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -16106,7 +16182,7 @@
     "title": "minuscule 869",
     "description": "",
     "texts": [
-      "John 6:20-11:57 (Nicetas Catena)"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -16185,7 +16261,7 @@
     "title": "minuscule 893",
     "description": "",
     "texts": [
-      "Matthew 1:4–9:8 (Nicetas Catena)"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -16325,8 +16401,8 @@
     "title": "minuscule 936",
     "description": "",
     "texts": [
-      "Matthew 7:13-28:20",
-      "Mark 1:14-10:10"
+      "Matthew",
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -16419,7 +16495,8 @@
     "title": "minuscule 950",
     "description": "",
     "texts": [
-      "Mark 4:4-16:20; Luke 1:29-2:21"
+      "Mark",
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -16762,7 +16839,8 @@
     "title": "minuscule 1112",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on Mark 12:19 – Luke 10:30"
+      "Zigabenus Commentary on Mark",
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -16825,7 +16903,8 @@
     "title": "minuscule 1124",
     "description": "",
     "texts": [
-      "Mark 6:11–16:20; Luke 1:25–16:24"
+      "Mark",
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -16892,7 +16971,7 @@
     "title": "minuscule 1128",
     "description": "",
     "texts": [
-      "Matthew 17:15–28:19",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -17147,10 +17226,9 @@
     "title": "minuscule 1228",
     "description": "",
     "texts": [
-      "Matthew 1:1-10:22",
-      "28:19-20",
-      "Luke 6:3-24:53",
-      "John 1:1-20:11"
+      "Matthew",
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -17272,7 +17350,8 @@
     "title": "minuscule 1275",
     "description": "",
     "texts": [
-      "Luke-John"
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -17285,7 +17364,9 @@
     "title": "minuscule 1276",
     "description": "",
     "texts": [
-      "Mark-Luke"
+      "Mark",
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -17314,7 +17395,7 @@
     "title": "minuscule 1284",
     "description": "",
     "texts": [
-      "John 12:35-13:2"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -17664,7 +17745,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "John 1:1-18:27"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -18304,7 +18385,7 @@
     "title": "minuscule 1613",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Gospel of Matthew",
+      "Theophylact Commentary on Matthew",
       "John"
     ],
     "family": "Byzantine",
@@ -18348,7 +18429,23 @@
     "title": "minuscule 1673",
     "description": "",
     "texts": [
-      "Luke - Hebrews"
+      "Luke",
+      "John",
+      "Acts",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -18376,7 +18473,7 @@
     "title": "minuscule 1683",
     "description": "",
     "texts": [
-      "Gospel of Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -18437,7 +18534,7 @@
     "title": "minuscule 1709",
     "description": "",
     "texts": [
-      "JohnP"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -18882,9 +18979,9 @@
     "title": "minuscule 1826",
     "description": "",
     "texts": [
-      "Matthew 20:19-26:59",
-      "LukeP 22:43-45",
-      "JohnP 13:3-17"
+      "Matthew",
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -19204,7 +19301,7 @@
     "title": "minuscule 1909",
     "description": "",
     "texts": [
-      "Romans 7:7 - 16:24 (Nicetas Catena)"
+      "Romans"
     ],
     "family": "Byzantine",
     "location": "",
@@ -19269,8 +19366,7 @@
     "title": "minuscule 1926",
     "description": "",
     "texts": [
-      "Theophylact Commentary on 1 Corinthians",
-      "2 Corinthians"
+      "Theophylact Commentary on 1 and 2 Corinthians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -19283,7 +19379,14 @@
     "title": "minuscule 1942",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Romans - 1 Thessalonians"
+      "Chrysostom Commentary on Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -19374,7 +19477,15 @@
     "title": "minuscule 1974",
     "description": "",
     "texts": [
-      "Romans - 2 Thessalonians"
+      "omans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -19413,7 +19524,11 @@
     "title": "minuscule 1988",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Romans-Ephesians"
+      "Theophylact Commentary on Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -19426,7 +19541,10 @@
     "title": "minuscule 2001",
     "description": "",
     "texts": [
-      "Romans - 2 Corinthians"
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      ""
     ],
     "family": "Byzantine",
     "location": "",
@@ -19491,7 +19609,12 @@
     "title": "minuscule 2013",
     "description": "",
     "texts": [
-      "2 Corinthians - 1 Thessalonians"
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -19504,7 +19627,7 @@
     "title": "minuscule 2030",
     "description": "",
     "texts": [
-      "RevelationP"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -19530,7 +19653,7 @@
     "title": "minuscule 2050",
     "description": "",
     "texts": [
-      "Revelation 1:1-5:14; 20:1-22:21"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -19558,7 +19681,7 @@
     "title": "minuscule 2103",
     "description": "",
     "texts": [
-      "Gospel of JohnP"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -19614,7 +19737,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "JohnP"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -20177,7 +20300,7 @@
     "title": "minuscule 2298",
     "description": "",
     "texts": [
-      "Book of Acts",
+      "Acts",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -20693,7 +20816,7 @@
     "title": "minuscule 2536",
     "description": "",
     "texts": [
-      "Romans 1:1-5:12"
+      "Romans"
     ],
     "family": "Byzantine",
     "location": "",
@@ -20875,7 +20998,8 @@
     "title": "minuscule 2570",
     "description": "",
     "texts": [
-      "Acts 1:13-24; 24:23-25:8; 1 Corinthians 5:3-6:7"
+      "Acts",
+      "1 Corinthians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -20888,7 +21012,7 @@
     "title": "minuscule 2574",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Galatians 1:1-6:17"
+      "Chrysostom Commentary on Galatians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21306,7 +21430,7 @@
     "title": "minuscule 2744",
     "description": "",
     "texts": [
-      "MarkP 10:25-35"
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21367,7 +21491,7 @@
     "title": "minuscule 2762",
     "description": "",
     "texts": [
-      "JohnP"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21380,7 +21504,7 @@
     "title": "minuscule 2778",
     "description": "",
     "texts": [
-      "ActsP"
+      "Acts"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21409,8 +21533,8 @@
     "title": "minuscule 2785",
     "description": "",
     "texts": [
-      "MarkP",
-      "LukeP"
+      "Mark",
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21455,8 +21579,8 @@
     "title": "minuscule 2792",
     "description": "",
     "texts": [
-      "MatthewP",
-      "MarkP LukeP"
+      "Matthew",
+      "Mark Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21473,7 +21597,7 @@
       "Mark",
       "Luke",
       "John",
-      "Revelation 1:1-22:12"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21486,7 +21610,7 @@
     "title": "minuscule 2798",
     "description": "",
     "texts": [
-      "MarkP"
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21499,7 +21623,7 @@
     "title": "minuscule 2801",
     "description": "",
     "texts": [
-      "JohnP"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21512,7 +21636,7 @@
     "title": "minuscule 2814",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary of Book of Revelation"
+      "Andreas of Caesarea Commentary of Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21605,7 +21729,7 @@
     "title": "minuscule 2819",
     "description": "",
     "texts": [
-      "Matthew 6:6–20"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21618,8 +21742,8 @@
     "title": "minuscule 2822",
     "description": "",
     "texts": [
-      "JamesP",
-      "JudeP"
+      "James",
+      "Jude"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21632,7 +21756,7 @@
     "title": "minuscule 2825",
     "description": "",
     "texts": [
-      "MarkP"
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21645,7 +21769,7 @@
     "title": "minuscule 2826",
     "description": "",
     "texts": [
-      "MatthewP"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21658,7 +21782,7 @@
     "title": "minuscule 2828",
     "description": "",
     "texts": [
-      "JohnP"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21671,7 +21795,7 @@
     "title": "minuscule 2829",
     "description": "",
     "texts": [
-      "ActsP"
+      "Acts"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21684,7 +21808,7 @@
     "title": "minuscule 2836",
     "description": "",
     "texts": [
-      "MatthewP"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21710,7 +21834,7 @@
     "title": "minuscule 2851",
     "description": "",
     "texts": [
-      "MatthewP"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21723,7 +21847,7 @@
     "title": "minuscule 2855",
     "description": "",
     "texts": [
-      "Book of Revelation 12:12–13:13"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21752,7 +21876,7 @@
     "title": "minuscule 2858",
     "description": "",
     "texts": [
-      "Matthew 5:33–6:1; 9:2–15"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21831,7 +21955,7 @@
     "title": "minuscule 2878",
     "description": "",
     "texts": [
-      "LukeP"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21919,7 +22043,7 @@
     "title": "minuscule 2953",
     "description": "",
     "texts": [
-      "Matthew 26:59-75"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21948,7 +22072,7 @@
     "title": "minuscule 2956",
     "description": "",
     "texts": [
-      "Luke 20:17-21"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -22181,7 +22305,7 @@
     "title": "minuscule 1231 + [572]",
     "description": "",
     "texts": [
-      "Mark 1:34-44; 2:14-8:3; 8:3-9:42.46-50"
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -22225,7 +22349,9 @@
       "Titus",
       "Philemon",
       "Hebrews",
-      "James - 2 Peter"
+      "James",
+      "1 Peter",
+      "2 Peter"
     ],
     "family": "Byzantine",
     "location": "",
@@ -22783,7 +22909,12 @@
     "title": "minuscule 643",
     "description": "",
     "texts": [
-      "James - 3 John"
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John",
+      "2 John",
+      "3 John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -23329,7 +23460,7 @@
     "title": "minuscule 2537",
     "description": "",
     "texts": [
-      "Mark 14:72-16:20",
+      "Mark",
       "Luke"
     ],
     "family": "Byzantine",
@@ -23422,7 +23553,7 @@
     "title": "minuscule 2924",
     "description": "",
     "texts": [
-      "Revelation 14:10-15:2"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -23532,7 +23663,19 @@
     "title": "minuscule 2936",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Romans 7:15–16:24; 1 Corinthians 1:1–16:16<; 2 Corinthians 1:6–13:14; Galatians - Philippians; Colossians 1:1-4:11; 1 Thessalonians 1:3-5:28; 2 Thessalonians - Hebrews"
+      "Theophylact Commentary on Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians; Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -23853,11 +23996,10 @@
     "title": "minuscule 85",
     "description": "",
     "texts": [
-      "Matthew 8:15-9:17",
-      "16:12-17:20",
-      "24:26-45",
-      "26:35-54; Mark 6:13-9:45; Luke 3:12-6:44; John 9:7-12:5",
-      "20:23-21:11"
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -24499,7 +24641,18 @@
     "description": "",
     "texts": [
       "Acts",
-      "Romans-Titus",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
       "James",
       "1 Peter",
       "2 Peter",
@@ -24687,7 +24840,7 @@
     "title": "minuscule 362",
     "description": "",
     "texts": [
-      "Luke 6:29–12:10 (Nicetas Catena)"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -24914,7 +25067,7 @@
     "title": "minuscule 434",
     "description": "",
     "texts": [
-      "Luke 1:5–6:21 (Nicetas Catena)"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -24927,9 +25080,9 @@
     "title": "minuscule 441",
     "description": "",
     "texts": [
-      "Acts 8:14-28:31",
+      "Acts",
       "Romans",
-      "1 Corinthians 1:1-15:38"
+      "1 Corinthians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -25748,7 +25901,7 @@
     "title": "minuscule 675",
     "description": "",
     "texts": [
-      "Matthew 26:20-39"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -26130,7 +26283,7 @@
     "title": "minuscule 751",
     "description": "",
     "texts": [
-      "Matthew 2:13-9:17"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -26982,8 +27135,8 @@
     "title": "minuscule 1031",
     "description": "",
     "texts": [
-      "LukeP",
-      "JohnP"
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -27318,8 +27471,8 @@
     "title": "minuscule 1098",
     "description": "",
     "texts": [
-      "LukeP",
-      "JohnP"
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -27482,7 +27635,7 @@
     "title": "minuscule 1129",
     "description": "",
     "texts": [
-      "Matthew 20:23–28:20",
+      "Matthew",
       "Mark",
       "Luke"
     ],
@@ -27615,7 +27768,7 @@
     "title": "minuscule 1177",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke 11:14–24:53"
+      "Theophylact Commentary on Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -27644,7 +27797,7 @@
     "title": "minuscule 1184",
     "description": "",
     "texts": [
-      "JohnK P"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -28140,8 +28293,8 @@
     "title": "minuscule 1337",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Gospel of Mark",
-      "Gospel of Luke"
+      "Theophylact Commentary on Mark",
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -28238,7 +28391,7 @@
     "title": "minuscule 1380",
     "description": "",
     "texts": [
-      "Gospel of JohnP"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -28872,8 +29025,11 @@
     "title": "minuscule 1509",
     "description": "",
     "texts": [
-      "Matthew 17:25-28:20",
-      "Mark - Acts",
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -29050,7 +29206,13 @@
       "2 John",
       "3 John",
       "Jude",
-      "Romans - Colossians 1:18"
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -29207,8 +29369,10 @@
     "title": "minuscule 1593",
     "description": "",
     "texts": [
-      "Matthew 14:6-28:20",
-      "Mark - John"
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -29881,7 +30045,7 @@
     "title": "minuscule 1852",
     "description": "",
     "texts": [
-      "Acts 9:33-28:31",
+      "Acts",
       "James",
       "1 Peter",
       "2 Peter",
@@ -30274,7 +30438,8 @@
     "title": "minuscule 1953",
     "description": "",
     "texts": [
-      "Romans 1:1 - 1 Corinthians 1:12"
+      "Romans",
+      "Corinthians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -30407,7 +30572,15 @@
     "title": "minuscule 1976",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Philippians - Hebrews"
+      "Theophylact Commentary on Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -30459,7 +30632,17 @@
     "title": "minuscule 2002",
     "description": "",
     "texts": [
-      "Theophylact Commentary on 1 Corinthians-Titus"
+      "Theophylact Commentary on 1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus"
     ],
     "family": "Byzantine",
     "location": "",
@@ -30603,7 +30786,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "HebrewsP"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -30696,7 +30879,7 @@
     "title": "minuscule 2111",
     "description": "",
     "texts": [
-      "Gospel of LukeP"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -30741,8 +30924,8 @@
     "title": "minuscule 2119",
     "description": "",
     "texts": [
-      "Matthew 12:10-26:43; Mark 1:1-5:21",
-      "14:43-16:20"
+      "Matthew",
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -30816,7 +30999,7 @@
     "title": "minuscule 2187",
     "description": "",
     "texts": [
-      "Luke (Nicetas Catena)"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -30988,7 +31171,7 @@
     "title": "minuscule 2300",
     "description": "",
     "texts": [
-      "Luke 9:32-11:31"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -31319,7 +31502,7 @@
     "title": "minuscule 2438",
     "description": "",
     "texts": [
-      "Matthew 4:25-5:22"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -31613,8 +31796,8 @@
     "title": "minuscule 2540",
     "description": "",
     "texts": [
-      "Luke 24:39-53",
-      "John 2:4-4:23; 9:34-11:12"
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -31627,9 +31810,9 @@
     "title": "minuscule 2542",
     "description": "",
     "texts": [
-      "Matthew 12:5-28:20",
+      "Matthew",
       "Mark",
-      "Luke 1:1-24:19"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -31746,7 +31929,7 @@
     "title": "minuscule 2588",
     "description": "",
     "texts": [
-      "Luke 19:13-38"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -31788,7 +31971,7 @@
     "title": "minuscule 2600",
     "description": "",
     "texts": [
-      "Luke 20:19-24:53",
+      "Luke",
       "John"
     ],
     "family": "Byzantine",
@@ -31834,8 +32017,9 @@
     "title": "minuscule 2607",
     "description": "",
     "texts": [
-      "Matthew 14:34-15:28",
-      "27:45-28:20; Mark 1:1-14:51 Luke 1:1-2:20"
+      "Matthew",
+      "Mark",
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32007,7 +32191,8 @@
     "title": "minuscule 2639",
     "description": "",
     "texts": [
-      "Ephesians 4:9-25; Philippians 1:14-2:2"
+      "Ephesians",
+      "Philippians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32427,8 +32612,9 @@
     "title": "minuscule 2751",
     "description": "",
     "texts": [
-      "Matthew 27:23-27:38",
-      "28:4-28:20; Luke 7:47-24:53; John 1:1-17:26"
+      "Matthew",
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32486,9 +32672,9 @@
     "title": "minuscule 2761",
     "description": "",
     "texts": [
-      "MarkP",
-      "LukeP",
-      "JohnP"
+      "Mark",
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32533,14 +32719,14 @@
     "title": "minuscule 2772",
     "description": "",
     "texts": [
-      "ActsP",
+      "Acts",
       "James",
       "1 Peter",
       "2 Peter",
       "1 John",
       "2 John",
       "3 John",
-      "JudeP",
+      "Jude",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -32554,7 +32740,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "HebrewsP"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32583,7 +32769,7 @@
     "title": "minuscule 2793",
     "description": "",
     "texts": [
-      "Gospel of Matthew 22:7–22"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32596,7 +32782,8 @@
     "title": "minuscule 2795",
     "description": "",
     "texts": [
-      "1 Peter 4:3-5:6; 1 John 3:12-4:10"
+      "1 Peter",
+      "1 John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32609,7 +32796,7 @@
     "title": "minuscule 2796",
     "description": "",
     "texts": [
-      "LukeP"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32638,7 +32825,7 @@
     "title": "minuscule 2807",
     "description": "",
     "texts": [
-      "HebrewsP"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32681,9 +32868,9 @@
     "title": "minuscule 2834",
     "description": "",
     "texts": [
-      "EphesiansP",
-      "ColossiansP",
-      "HebrewsP"
+      "Ephesians",
+      "Colossians",
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32696,8 +32883,8 @@
     "title": "minuscule 2852",
     "description": "",
     "texts": [
-      "GalatiansP 6:8-18",
-      "EphesiansP 1:1-22"
+      "Galatians",
+      "Ephesians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32710,7 +32897,7 @@
     "title": "minuscule 2859",
     "description": "",
     "texts": [
-      "Gospel of Luke 20:1–22:8"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32739,8 +32926,8 @@
     "title": "minuscule 2880",
     "description": "",
     "texts": [
-      "LukeP",
-      "JohnP"
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32753,7 +32940,11 @@
     "title": "minuscule 2893",
     "description": "",
     "texts": [
-      "1 Timothy 4:7 - Hebrews 8:8"
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32830,7 +33021,7 @@
     "title": "minuscule 2915",
     "description": "",
     "texts": [
-      "Luke 11:52-12:39"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -33084,7 +33275,7 @@
     "title": "minuscule 1016 + [1150]",
     "description": "",
     "texts": [
-      "Luke 1:1-10:42 (Nicetas Catena)"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -33113,7 +33304,7 @@
     "title": "minuscule 2890=[1983abs]",
     "description": "",
     "texts": [
-      "HebrewsP"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -33126,9 +33317,9 @@
     "title": "minuscule 2491=[2850], [2617]",
     "description": "",
     "texts": [
-      "Matthew 19-23",
-      "Mark 1:14-5:33; 9:14-end",
-      "Luke 1:1-11:46"
+      "Matthew",
+      "Mark",
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -34129,7 +34320,7 @@
     "title": "minuscule 1827",
     "description": "",
     "texts": [
-      "Acts 1:16-28:31",
+      "Acts",
       "James",
       "1 Peter",
       "2 Peter",
@@ -34535,7 +34726,11 @@
       "3 John",
       "Jude",
       "Romans",
-      "2 Corinthians - Colossians"
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -34676,7 +34871,8 @@
     "title": "minuscule 1706",
     "description": "",
     "texts": [
-      "Acts? James",
+      "Acts",
+      "James",
       "1 Peter",
       "2 Peter",
       "1 John",
@@ -34919,7 +35115,7 @@
     "title": "minuscule 2419",
     "description": "",
     "texts": [
-      "Revelation 3:1-4:8"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -35127,7 +35323,7 @@
     "title": "minuscule 3008",
     "description": "",
     "texts": [
-      "Luke 1:74-2:14"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -35904,9 +36100,9 @@
       "Matthew",
       "Mark",
       "Luke",
-      "JohnK",
-      "RomansK",
-      "1 Corinthians 1:1-4:15K"
+      "John",
+      "Romans",
+      "1 Corinthians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -35983,7 +36179,7 @@
     "title": "minuscule 1156",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Gospel of Matthew"
+      "Theophylact Commentary on Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -36110,7 +36306,7 @@
     "title": "minuscule 1654",
     "description": "",
     "texts": [
-      "Matthew 9:16-28:20",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -37381,7 +37577,8 @@
     "title": "minuscule 316",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke 18:18–24:53; John 1:16–12:25"
+      "Theophylact Commentary on Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -37394,7 +37591,7 @@
     "title": "minuscule 318",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John 7:9–12:8"
+      "Theophylact Commentary on John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -37540,8 +37737,7 @@
     "title": "minuscule 369",
     "description": "",
     "texts": [
-      "Mark 6:25–9:45",
-      "10:17–16:9"
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -37570,7 +37766,7 @@
     "title": "minuscule 381",
     "description": "",
     "texts": [
-      "Gospel of Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -37739,7 +37935,7 @@
     "title": "minuscule 426",
     "description": "",
     "texts": [
-      "Luke 6:17–11:28 (Nicetas Catena)"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -37888,7 +38084,7 @@
     "title": "minuscule 540",
     "description": "",
     "texts": [
-      "Gospel of Mark"
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -37949,8 +38145,7 @@
     "texts": [
       "Matthew",
       "Mark",
-      "Luke 1:1-23:15",
-      "23:33-48"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -38218,8 +38413,20 @@
     "title": "minuscule 644",
     "description": "",
     "texts": [
-      "2 Corinthians - Hebrews",
-      "James - 1 Peter"
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews",
+      "James",
+      "1 Peter"
     ],
     "family": "Byzantine",
     "location": "",
@@ -38838,7 +39045,7 @@
     "title": "minuscule 802",
     "description": "",
     "texts": [
-      "Luke 1:1-6:13"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -39012,7 +39219,7 @@
     "title": "minuscule 846",
     "description": "",
     "texts": [
-      "Gospel of Luke 6:32-12:17 (Nicetas Catena)"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -39766,14 +39973,14 @@
     "title": "minuscule 1067",
     "description": "",
     "texts": [
-      "ActsP",
+      "Acts",
       "James",
       "1 Peter",
       "2 Peter",
       "1 John",
       "2 John",
       "3 John",
-      "JudeP",
+      "Jude",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -39787,7 +39994,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "HebrewsP"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -40103,9 +40310,9 @@
     "title": "minuscule 1119",
     "description": "",
     "texts": [
-      "MarkP",
-      "LukeP",
-      "JohnP"
+      "Mark",
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -40375,7 +40582,13 @@
     "description": "",
     "texts": [
       "Theophylact Commentary on John",
-      "Romans-Colossians"
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -40417,7 +40630,7 @@
     "title": "minuscule 1283",
     "description": "",
     "texts": [
-      "Mark 11:25-12:40"
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -41744,7 +41957,7 @@
     "title": "minuscule 1675",
     "description": "",
     "texts": [
-      "Matthew 2:5-28:20",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -41847,7 +42060,7 @@
     "title": "minuscule 1707",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Gospel of John"
+      "Theophylact Commentary on John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -42039,7 +42252,7 @@
       "1 John",
       "2 John",
       "3 John",
-      "JudeP",
+      "Jude",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -42053,7 +42266,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "HebrewsP"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -42155,7 +42368,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "HebrewsP"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -42250,7 +42463,18 @@
     "title": "minuscule 1772",
     "description": "",
     "texts": [
-      "2 Corinthians – Hebrews"
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -42405,7 +42629,7 @@
     "title": "minuscule 1832",
     "description": "",
     "texts": [
-      "Acts 7:35-28:31",
+      "Acts",
       "James",
       "1 Peter",
       "2 Peter",
@@ -42528,8 +42752,26 @@
     "title": "minuscule 1881",
     "description": "",
     "texts": [
-      "Romans - Hebrews",
-      "1 Peter - Jude"
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews",
+      "1 Peter",
+      "2 Peter",
+      "1 John",
+      "2 John",
+      "3 John",
+      "Jude"
     ],
     "family": "Byzantine",
     "location": "",
@@ -42698,7 +42940,16 @@
     "title": "minuscule 1918",
     "description": "",
     "texts": [
-      "Romans - 1 Timothy",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
       "Revelation"
     ],
     "family": "Byzantine",
@@ -42842,7 +43093,10 @@
     "title": "minuscule 1965",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Romans 16:2-13; Colossians 1:1-4; 2 Timothy 2:19-4:22; Hebrews 1:1-2"
+      "Theophylact Commentary on Romans",
+      "Colossians",
+      "2 Timothy",
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -42855,7 +43109,10 @@
     "title": "minuscule 1975",
     "description": "",
     "texts": [
-      "EphesiansK 5:8 - 1 ThessaloniansK 2:16"
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -42998,8 +43255,7 @@
     "title": "minuscule 2010",
     "description": "",
     "texts": [
-      "Revelation",
-      "8:23-14:10"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43038,7 +43294,7 @@
     "title": "minuscule 2022",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation 14:17-18:20"
+      "Andreas of Caesarea Commentary on Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43181,7 +43437,8 @@
     "title": "minuscule 2080",
     "description": "",
     "texts": [
-      "Acts 1:13-28:31; James",
+      "Acts",
+      "James",
       "1 Peter",
       "2 Peter",
       "1 John",
@@ -43200,7 +43457,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "Hebrews; Revelation 1:1-22:16"
+      "Hebrews; Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43292,7 +43549,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "JohnP"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43326,7 +43583,19 @@
       "Luke",
       "John",
       "Acts",
-      "1 Corinthians-Hebrews"
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43527,7 +43796,17 @@
     "title": "minuscule 2257",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Romans-2 Timothy"
+      "Theophylact Commentary on Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43886,7 +44165,7 @@
     "title": "minuscule 2377",
     "description": "",
     "texts": [
-      "Revelation 13:10-14:4; 19:21-22:20"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43979,7 +44258,7 @@
     "title": "minuscule 2408",
     "description": "",
     "texts": [
-      "Commentary on Revelation 5:1-5"
+      "Commentary on Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43992,7 +44271,7 @@
     "title": "minuscule 2429",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation 1:1-21:12"
+      "Andreas of Caesarea Commentary on Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -44459,7 +44738,7 @@
       "Titus",
       "Philemon",
       "Hebrews",
-      "Revelation 1:1-18:3"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -44513,7 +44792,7 @@
     "title": "minuscule 2638",
     "description": "",
     "texts": [
-      "Commentary on Revelation 1:1-15:7"
+      "Commentary on Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -44634,7 +44913,7 @@
     "title": "minuscule 2698",
     "description": "",
     "texts": [
-      "Romans 1:5-3:17"
+      "Romans"
     ],
     "family": "Byzantine",
     "location": "",
@@ -44974,7 +45253,7 @@
     "title": "minuscule 2797",
     "description": "",
     "texts": [
-      "ActsP"
+      "Acts"
     ],
     "family": "Byzantine",
     "location": "",
@@ -44987,14 +45266,14 @@
     "title": "minuscule 2799",
     "description": "",
     "texts": [
-      "ActsP",
+      "Acts",
       "James",
       "1 Peter",
       "2 Peter",
       "1 John",
       "2 John",
       "3 John",
-      "JudeP",
+      "Jude",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -45008,7 +45287,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "HebrewsP"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45075,7 +45354,7 @@
     "title": "minuscule 2820",
     "description": "",
     "texts": [
-      "2 Timothy 4:16–22"
+      "2 Timothy"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45114,8 +45393,8 @@
     "title": "minuscule 2830",
     "description": "",
     "texts": [
-      "2 CorinthiansP",
-      "GalatiansP"
+      "2 Corinthians",
+      "Galatians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45128,7 +45407,7 @@
     "title": "minuscule 2832",
     "description": "",
     "texts": [
-      "MatthewP"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45141,7 +45420,7 @@
     "title": "minuscule 2837",
     "description": "",
     "texts": [
-      "MatthewP"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45154,7 +45433,7 @@
     "title": "minuscule 2842",
     "description": "",
     "texts": [
-      "MatthewP"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45167,7 +45446,7 @@
     "title": "minuscule 2867",
     "description": "",
     "texts": [
-      "John 1:1-3:29"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45229,7 +45508,10 @@
     "title": "minuscule 2900",
     "description": "",
     "texts": [
-      "Matthew 1:17-28:20; Mark; Luke; John"
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45300,7 +45582,8 @@
     "title": "minuscule 2943",
     "description": "",
     "texts": [
-      "Luke 3-23; John 1-11"
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45313,7 +45596,7 @@
     "title": "minuscule 2944",
     "description": "",
     "texts": [
-      "John 1:1-25; 8:34-10:34"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45394,7 +45677,7 @@
     "title": "minuscule 2986",
     "description": "",
     "texts": [
-      "Gospel of John 14:19-21:25; 8:3-11"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -46748,7 +47031,7 @@
     "title": "minuscule 2885=[96abs]",
     "description": "",
     "texts": [
-      "JohnP"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -46959,7 +47242,7 @@
     "title": "minuscule 2980",
     "description": "",
     "texts": [
-      "Gospel of Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -46990,7 +47273,7 @@
       "Mark",
       "Luke",
       "John",
-      "ActsP"
+      "Acts"
     ],
     "family": "Byzantine",
     "location": "",
@@ -47259,7 +47542,7 @@
     "title": "minuscule 2931",
     "description": "",
     "texts": [
-      "Revelation 16:21-22:21"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -47375,7 +47658,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "JohnK"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
