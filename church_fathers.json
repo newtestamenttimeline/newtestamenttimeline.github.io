@@ -402,13 +402,32 @@
     "percentage": 33,
     "year": 325
   },
- {
+  {
     "title": "minuscule 720",
     "description": "",
     "texts": [
       "Theophylact Commentary on Gospels",
-      "Pauline Epistles",
-      "General Epistles"
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John",
+      "2 John",
+      "3 John",
+      "Jude"
     ],
     "family": "",
     "location": "",
@@ -417,11 +436,14 @@
     "percentage": 114,
     "year": 1138
   },
-   {
+  {
     "title": "ℓ 1043",
     "description": "",
     "texts": [
-      "Gospels"
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
     ],
     "family": "",
     "location": "",
