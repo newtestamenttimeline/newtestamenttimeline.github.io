@@ -1,7 +1,7 @@
 [
   {
     "title": "The First Epistle of Clement (Clement of Rome)",
-    "description": "A letter to the church in Corinth, addressing issues of leadership and church order. Historical references within the text suggest a date around AD 96. Manuscript:Codex Alexandrinus (5th century) and other manuscripts",
+    "description": "A letter to the church in Corinth, addressing issues of leadership and church order. Historical references within the text suggest a date around AD 96. Manuscript: Codex Alexandrinus (5th century) and other manuscripts",
     "texts": [
       ""
     ],
@@ -429,8 +429,8 @@
       "3 John",
       "Jude"
     ],
-    "family": "",
-    "location": "",
+    "family": "Byzantine",
+    "location": "Byzantine Empire",
     "y": "15",
     "eventType": "Minuscule",
     "percentage": 114,
@@ -445,8 +445,8 @@
       "Luke",
       "John"
     ],
-    "family": "",
-    "location": "",
+    "family": "Byzantine",
+    "location": "Byzantine Empire",
     "y": "15",
     "eventType": "lectionary",
     "percentage": 45,
