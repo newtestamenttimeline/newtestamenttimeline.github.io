@@ -2115,7 +2115,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "Hebrews (without Titus and Philemon)"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2331,7 +2331,8 @@
       "1 John",
       "2 John",
       "3 John",
-      "Jude and Romans",
+      "Jude",
+      "Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -10536,7 +10537,8 @@
     "title": "minuscule 2755",
     "description": "",
     "texts": [
-      "Matthew and Mark"
+      "Matthew", 
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10715,7 +10717,8 @@
     "title": "minuscule 2994",
     "description": "",
     "texts": [
-      "Matthew and Luke"
+      "Matthew", 
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -19366,7 +19369,8 @@
     "title": "minuscule 1926",
     "description": "",
     "texts": [
-      "1 and 2 Corinthians"
+      "1 Corinthians",
+      "2 Corinthians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -26401,7 +26405,7 @@
     "texts": [
       "Matthew",
       "Mark",
-      "and Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -34236,7 +34240,8 @@
     "title": "minuscule 1041",
     "description": "",
     "texts": [
-      "Matthew and Mark"
+      "Matthew",
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -36695,7 +36700,7 @@
       "2 John",
       "3 John",
       "Jude",
-      "and Revelation (with marginal scholia)"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -37921,7 +37926,7 @@
     "texts": [
       "Matthew",
       "Mark",
-      "and Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -38714,7 +38719,7 @@
     "title": "minuscule 743",
     "description": "",
     "texts": [
-      "Nicetas Catena and John",
+      "John",
       "1 John",
       "2 John",
       "3 John",
@@ -41975,7 +41980,7 @@
     "title": "minuscule 1678",
     "description": "",
     "texts": [
-      "Theophylact and Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John",
@@ -45756,7 +45761,7 @@
     "texts": [
       "Matthew",
       "Mark",
-      "and Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
