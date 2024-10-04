@@ -537,7 +537,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "Johns"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -1052,8 +1052,8 @@
     "title": "minuscule 832",
     "description": "",
     "texts": [
-      "Matthew (abridged)",
-      "John (abridged)",
+      "Matthew",
+      "John",
       "James",
       "1 Peter",
       "2 Peter",
@@ -2115,7 +2115,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "Hebrews (without Titus and Philemon)"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2273,7 +2273,7 @@
     "title": "minuscule 2006",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Romans"
+      "Romans"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2286,7 +2286,7 @@
     "title": "minuscule 2074",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2331,7 +2331,8 @@
       "1 John",
       "2 John",
       "3 John",
-      "Jude and Romans",
+      "Jude",
+      "Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -2373,10 +2374,10 @@
     "title": "minuscule 2290",
     "description": "",
     "texts": [
-      "MatthewS",
+      "Matthew",
       "Mark",
       "Luke",
-      "JohnS"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2704,7 +2705,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "JohnS"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -2765,7 +2766,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "Johns"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -3095,7 +3096,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "JohnS",
+      "John",
       "Acts"
     ],
     "family": "Byzantine",
@@ -3486,7 +3487,7 @@
     "title": "minuscule 623",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Acts",
+      "Acts",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -4721,7 +4722,7 @@
     "title": "minuscule 254",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Acts",
+      "Acts",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -4742,8 +4743,7 @@
       "1 John",
       "2 John",
       "3 John",
-      "Jude",
-      "Revelation"
+      "Jude"
     ],
     "family": "Byzantine",
     "location": "",
@@ -4959,7 +4959,7 @@
       "1 John",
       "2 John",
       "3 John",
-      "JudeS",
+      "Jude",
       "Revelation"
     ],
     "family": "Byzantine",
@@ -5053,7 +5053,7 @@
     "title": "minuscule 354",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -5902,7 +5902,7 @@
     "title": "minuscule 596",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "Mark"
     ],
     "family": "Byzantine",
@@ -5916,7 +5916,7 @@
     "title": "minuscule 606",
     "description": "",
     "texts": [
-      "Theodoret Commentary on Acts",
+      "Acts",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -7948,7 +7948,7 @@
     "title": "minuscule 1411",
     "description": "",
     "texts": [
-      "Commentary on Luke",
+      "Luke",
       "John"
     ],
     "family": "Byzantine",
@@ -8585,7 +8585,7 @@
     "title": "minuscule 1817",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Galatians through Colossians"
+      "Galatians through Colossians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -9243,7 +9243,7 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "Hebrews (Portions of NT text abridged)"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -9351,7 +9351,7 @@
     "description": "",
     "texts": [
       "1 John",
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -9377,7 +9377,7 @@
     "title": "minuscule 2059",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -9390,7 +9390,7 @@
     "title": "minuscule 2081",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -9654,7 +9654,7 @@
     "title": "minuscule 2259",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10323,7 +10323,7 @@
     "title": "minuscule 2596",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Galatians"
+      "Galatians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10448,7 +10448,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "Johns"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10537,7 +10537,8 @@
     "title": "minuscule 2755",
     "description": "",
     "texts": [
-      "Matthew and Mark"
+      "Matthew", 
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -10716,7 +10717,8 @@
     "title": "minuscule 2994",
     "description": "",
     "texts": [
-      "Matthew and Luke"
+      "Matthew", 
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -11768,7 +11770,7 @@
     "title": "minuscule 1962",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -12102,7 +12104,8 @@
     "title": "minuscule 2961",
     "description": "",
     "texts": [
-      "Theophylact Commentary on 1 and 2 Corinthians"
+      "1 Corinthians",
+      "2 Corinthians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -12570,7 +12573,7 @@
     "title": "minuscule 720",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John",
@@ -13165,7 +13168,7 @@
     "title": "minuscule 103",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Acts",
+      "Acts",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -13611,7 +13614,7 @@
     "title": "minuscule 196",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -13758,7 +13761,7 @@
     "title": "minuscule 240",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -13813,7 +13816,7 @@
     "title": "minuscule 244",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -14096,7 +14099,7 @@
     "title": "minuscule 306",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "John"
     ],
     "family": "Byzantine",
@@ -14170,7 +14173,7 @@
       "1 John",
       "2 John",
       "3 John",
-      "JudeS"
+      "Jude"
     ],
     "family": "Byzantine",
     "location": "",
@@ -14183,7 +14186,7 @@
     "title": "minuscule 320",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -14334,7 +14337,7 @@
     "title": "minuscule 334",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on Matthew",
+      "Matthew",
       "Mark"
     ],
     "family": "Byzantine",
@@ -14545,7 +14548,7 @@
     "title": "minuscule 392",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -15401,7 +15404,7 @@
     "title": "minuscule 622",
     "description": "",
     "texts": [
-      "Commentary on Romans",
+      "Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -15670,7 +15673,7 @@
     "title": "minuscule 721",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Mark",
+      "Mark",
       "Luke"
     ],
     "family": "Byzantine",
@@ -15684,7 +15687,7 @@
     "title": "minuscule 733",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -15700,7 +15703,7 @@
     "title": "minuscule 736",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "John"
     ],
     "family": "Byzantine",
@@ -16113,7 +16116,7 @@
     "title": "minuscule 850",
     "description": "",
     "texts": [
-      "Cyril Commentary on John"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -16126,7 +16129,7 @@
     "title": "minuscule 855",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -16142,7 +16145,7 @@
     "title": "minuscule 857",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Luke",
+      "the Luke",
       "John"
     ],
     "family": "Byzantine",
@@ -16156,7 +16159,7 @@
     "title": "minuscule 862",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -16245,7 +16248,7 @@
     "title": "minuscule 878",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -16682,7 +16685,7 @@
     "title": "minuscule 993",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -16839,7 +16842,7 @@
     "title": "minuscule 1112",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on Mark",
+      "Mark",
       "Luke"
     ],
     "family": "Byzantine",
@@ -17241,7 +17244,7 @@
     "title": "minuscule 1240",
     "description": "",
     "texts": [
-      "Theophylact Commentary the Acts",
+      "Acts",
       "James",
       "1 Peter",
       "2 Peter",
@@ -17440,7 +17443,7 @@
     "title": "minuscule 1302",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -18385,7 +18388,7 @@
     "title": "minuscule 1613",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "John"
     ],
     "family": "Byzantine",
@@ -18831,7 +18834,7 @@
     "title": "minuscule 1798",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -18953,7 +18956,7 @@
     "title": "minuscule 1818",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Hebrews"
+      "Hebrews"
     ],
     "family": "Byzantine",
     "location": "",
@@ -19366,7 +19369,8 @@
     "title": "minuscule 1926",
     "description": "",
     "texts": [
-      "Theophylact Commentary on 1 and 2 Corinthians"
+      "1 Corinthians",
+      "2 Corinthians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -19379,7 +19383,7 @@
     "title": "minuscule 1942",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Romans",
+      "Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -19524,7 +19528,7 @@
     "title": "minuscule 1988",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Romans",
+      "Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -19694,7 +19698,7 @@
     "title": "minuscule 2104",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -19720,7 +19724,7 @@
     "title": "minuscule 2106",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Mark",
+      "Mark",
       "John"
     ],
     "family": "Byzantine",
@@ -20008,7 +20012,7 @@
     "title": "minuscule 2186",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on James",
+      "James",
       "1 Peter",
       "2 Peter",
       "1 John",
@@ -20130,7 +20134,7 @@
     "title": "minuscule 2242",
     "description": "",
     "texts": [
-      "Theodoret Commentary on Acts",
+      "Acts",
       "Romans",
       "1 Corinthians"
     ],
@@ -20222,7 +20226,7 @@
     "title": "minuscule 2285",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on Matthew",
+      "Matthew",
       "Mark",
       "Luke"
     ],
@@ -20736,7 +20740,7 @@
     "title": "minuscule 2459",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -20752,7 +20756,7 @@
     "title": "minuscule 2470",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -20968,8 +20972,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "John",
-      "(MatthewS)"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21012,7 +21015,7 @@
     "title": "minuscule 2574",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on Galatians"
+      "Galatians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21370,7 +21373,7 @@
     "title": "minuscule 2720",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke",
+      "Luke",
       "John",
       ""
     ],
@@ -21417,7 +21420,7 @@
     "title": "minuscule 2738",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Mark"
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21636,7 +21639,7 @@
     "title": "minuscule 2814",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary of Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -21968,7 +21971,7 @@
     "title": "minuscule 2879",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -22450,7 +22453,7 @@
     "title": "minuscule 863",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -22694,7 +22697,7 @@
     "title": "minuscule 719",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -23429,7 +23432,7 @@
     "title": "minuscule 2490",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "John",
       ""
     ],
@@ -23647,7 +23650,7 @@
     "title": "minuscule 684",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -23663,7 +23666,7 @@
     "title": "minuscule 2936",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Romans",
+      "Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -23688,7 +23691,7 @@
     "title": "minuscule 3001",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -23701,7 +23704,7 @@
     "title": "minuscule 1992",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -23727,7 +23730,7 @@
     "title": "minuscule 1533",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -24076,7 +24079,7 @@
     "title": "minuscule 136",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on Matthew",
+      "Matthew",
       "Mark"
     ],
     "family": "Byzantine",
@@ -24177,7 +24180,7 @@
     "title": "minuscule 154",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -24225,7 +24228,7 @@
     "title": "minuscule 168",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -24624,7 +24627,7 @@
     "title": "minuscule 305",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -24672,7 +24675,7 @@
     "title": "minuscule 315",
     "description": "",
     "texts": [
-      "Theophylact Commentary on JohnS"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -25037,7 +25040,7 @@
     "title": "minuscule 427",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Mark",
+      "Mark",
       "Luke"
     ],
     "family": "Byzantine",
@@ -25051,7 +25054,7 @@
     "title": "minuscule 428",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -25380,7 +25383,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "JohnS"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -25693,7 +25696,7 @@
     "title": "minuscule 590",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "Mark"
     ],
     "family": "Byzantine",
@@ -26206,7 +26209,7 @@
     "title": "minuscule 729",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -26222,7 +26225,7 @@
     "title": "minuscule 732",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -26238,7 +26241,7 @@
     "title": "minuscule 737",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -26251,7 +26254,7 @@
     "title": "minuscule 744",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -26267,7 +26270,7 @@
     "title": "minuscule 749",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -26402,7 +26405,7 @@
     "texts": [
       "Matthew",
       "Mark",
-      "and Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -26431,7 +26434,7 @@
     "title": "minuscule 814",
     "description": "",
     "texts": [
-      "Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -26450,7 +26453,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "JohnS",
+      "John",
       "Acts",
       "Romans",
       "1 Corinthians",
@@ -26517,7 +26520,7 @@
     "title": "minuscule 840",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -26546,7 +26549,7 @@
     "title": "minuscule 874",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -26837,7 +26840,7 @@
     "title": "minuscule 949",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -26885,7 +26888,7 @@
     "title": "minuscule 970",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "Mark"
     ],
     "family": "Byzantine",
@@ -27119,7 +27122,7 @@
     "title": "minuscule 1021",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -27650,7 +27653,7 @@
     "title": "minuscule 1137",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -27768,7 +27771,7 @@
     "title": "minuscule 1177",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -27781,7 +27784,7 @@
     "title": "minuscule 1178",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -27998,7 +28001,7 @@
     "title": "minuscule 1255",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -28011,7 +28014,7 @@
     "title": "minuscule 1256",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke",
+      "Luke",
       "John"
     ],
     "family": "Byzantine",
@@ -28025,7 +28028,7 @@
     "title": "minuscule 1261",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -28041,7 +28044,7 @@
     "title": "minuscule 1265",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -28057,7 +28060,7 @@
     "title": "minuscule 1268",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -28245,7 +28248,7 @@
     "title": "minuscule 1304",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -28293,7 +28296,7 @@
     "title": "minuscule 1337",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Mark",
+      "Mark",
       "Luke"
     ],
     "family": "Byzantine",
@@ -29129,7 +29132,7 @@
     "title": "minuscule 1536",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -29557,7 +29560,7 @@
     "title": "minuscule 1677",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -29977,7 +29980,7 @@
     "title": "minuscule 1839",
     "description": "",
     "texts": [
-      "Commentary on Acts",
+      "Acts",
       "James",
       "1 Peter",
       "2 Peter",
@@ -30321,7 +30324,7 @@
     "title": "minuscule 1913",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -30412,7 +30415,7 @@
     "title": "minuscule 1945",
     "description": "",
     "texts": [
-      "Theodoret Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -30494,7 +30497,7 @@
     "title": "minuscule 1969",
     "description": "",
     "texts": [
-      "Chrysostom Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -30546,7 +30549,7 @@
     "title": "minuscule 1973",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -30572,7 +30575,7 @@
     "title": "minuscule 1976",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Philippians",
+      "Philippians",
       "Colossians",
       "1 Thessalonians",
       "2 Thessalonians",
@@ -30606,7 +30609,7 @@
     "title": "minuscule 1991",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -30632,7 +30635,7 @@
     "title": "minuscule 2002",
     "description": "",
     "texts": [
-      "Theophylact Commentary on 1 Corinthians",
+      "1 Corinthians",
       "2 Corinthians",
       "Galatians",
       "Ephesians",
@@ -30682,7 +30685,7 @@
     "title": "minuscule 2008",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -30708,7 +30711,7 @@
     "title": "minuscule 2019",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -30734,7 +30737,7 @@
     "title": "minuscule 2053",
     "description": "",
     "texts": [
-      "Oecumenius Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -30747,7 +30750,7 @@
     "title": "minuscule 2062",
     "description": "",
     "texts": [
-      "Oecumenius Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -30831,7 +30834,7 @@
     "title": "minuscule 2100",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -30847,7 +30850,7 @@
     "title": "minuscule 2101",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -30863,7 +30866,7 @@
     "title": "minuscule 2107",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -30985,7 +30988,7 @@
     "title": "minuscule 2184",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke",
+      "Luke",
       "John"
     ],
     "family": "Byzantine",
@@ -31012,7 +31015,7 @@
     "title": "minuscule 2202",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "Luke",
       "John"
     ],
@@ -31027,7 +31030,7 @@
     "title": "minuscule 2203",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -31306,7 +31309,7 @@
     "title": "minuscule 2395",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -31783,7 +31786,7 @@
     "title": "minuscule 2538",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on Mark"
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -32254,7 +32257,7 @@
     "title": "minuscule 2646",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -32581,7 +32584,7 @@
     "title": "minuscule 2735",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -33121,7 +33124,7 @@
     "title": "minuscule 2989",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke",
+      "Luke",
       "John"
     ],
     "family": "Byzantine",
@@ -33332,7 +33335,7 @@
     "title": "minuscule 303",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -33628,7 +33631,7 @@
     "title": "minuscule 856",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -33796,7 +33799,7 @@
     "title": "minuscule 835",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -33898,7 +33901,7 @@
     "title": "minuscule 854",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -33914,7 +33917,7 @@
     "title": "minuscule 2576",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Acts",
+      "Acts",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -34187,7 +34190,7 @@
     "title": "minuscule 820",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -34237,7 +34240,8 @@
     "title": "minuscule 1041",
     "description": "",
     "texts": [
-      "Matthew and Mark"
+      "Matthew",
+      "Mark"
     ],
     "family": "Byzantine",
     "location": "",
@@ -34507,7 +34511,7 @@
     "title": "minuscule 455",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Acts",
+      "Acts",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -34676,7 +34680,7 @@
       "Matthew",
       "Mark",
       "Luke",
-      "JohnS"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -34721,7 +34725,7 @@
     "title": "minuscule 1523",
     "description": "",
     "texts": [
-      "Theophylact Commentary on 1 John",
+      "1 John",
       "2 John",
       "3 John",
       "Jude",
@@ -34998,7 +35002,7 @@
     "title": "minuscule 2018",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -35176,7 +35180,7 @@
     "title": "minuscule 2578",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -35654,7 +35658,7 @@
     "title": "minuscule 649",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -35670,7 +35674,7 @@
     "title": "minuscule 1252",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -35997,7 +36001,7 @@
     "title": "minuscule 2976",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -36065,7 +36069,7 @@
     "title": "minuscule 740",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -36179,7 +36183,7 @@
     "title": "minuscule 1156",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -36322,7 +36326,7 @@
     "title": "minuscule 738",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -36579,7 +36583,7 @@
     "title": "minuscule 2060",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -36608,7 +36612,7 @@
     "title": "minuscule 1336 + [2170]",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -36696,7 +36700,7 @@
       "2 John",
       "3 John",
       "Jude",
-      "and Revelation (with marginal scholia)"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -37442,7 +37446,7 @@
     "title": "minuscule 243",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "Luke"
     ],
     "family": "Byzantine",
@@ -37577,7 +37581,7 @@
     "title": "minuscule 316",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke",
+      "Luke",
       "John"
     ],
     "family": "Byzantine",
@@ -37591,7 +37595,7 @@
     "title": "minuscule 318",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -37750,7 +37754,7 @@
     "title": "minuscule 370",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -37922,7 +37926,7 @@
     "texts": [
       "Matthew",
       "Mark",
-      "and Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -38129,7 +38133,7 @@
     "title": "minuscule 589",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke",
+      "Luke",
       "John"
     ],
     "family": "Byzantine",
@@ -38158,7 +38162,7 @@
     "title": "minuscule 600",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -38242,7 +38246,7 @@
     "title": "minuscule 608",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Acts",
+      "Acts",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -38541,7 +38545,10 @@
     "title": "minuscule 693",
     "description": "",
     "texts": [
-      "Gospel"
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -38617,7 +38624,7 @@
     "title": "minuscule 727",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -38633,7 +38640,7 @@
     "title": "minuscule 728",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -38649,7 +38656,7 @@
     "title": "minuscule 730",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -38665,7 +38672,7 @@
     "title": "minuscule 731",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -38681,7 +38688,7 @@
     "title": "minuscule 734",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "Luke",
       "John"
     ],
@@ -38696,7 +38703,7 @@
     "title": "minuscule 741",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -38712,7 +38719,7 @@
     "title": "minuscule 743",
     "description": "",
     "texts": [
-      "Nicetas Catena and John",
+      "John",
       "1 John",
       "2 John",
       "3 John",
@@ -38825,7 +38832,7 @@
     "title": "minuscule 772",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -39113,7 +39120,7 @@
     "title": "minuscule 818",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -39129,7 +39136,7 @@
     "title": "minuscule 819",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "John"
     ],
     "family": "Byzantine",
@@ -39143,7 +39150,7 @@
     "title": "minuscule 833",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -39159,7 +39166,7 @@
     "title": "minuscule 834",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -39175,7 +39182,7 @@
     "title": "minuscule 836",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "Mark",
       "John"
     ],
@@ -39206,7 +39213,7 @@
     "title": "minuscule 842",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -39232,7 +39239,7 @@
     "title": "minuscule 848",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -39245,7 +39252,7 @@
     "title": "minuscule 858",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -39293,7 +39300,7 @@
     "title": "minuscule 888",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -39309,7 +39316,7 @@
     "title": "minuscule 889",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -39325,7 +39332,7 @@
     "title": "minuscule 890",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -39341,7 +39348,7 @@
     "title": "minuscule 891",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John",
@@ -39777,7 +39784,7 @@
     "title": "minuscule 1029",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -39943,7 +39950,7 @@
     "title": "minuscule 1043",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "John"
     ],
     "family": "Byzantine",
@@ -40387,7 +40394,7 @@
     "title": "minuscule 1182",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -40403,7 +40410,7 @@
     "title": "minuscule 1183",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Mark",
+      "Mark",
       "John"
     ],
     "family": "Byzantine",
@@ -40536,7 +40543,7 @@
     "title": "minuscule 1254",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -40549,7 +40556,7 @@
     "title": "minuscule 1262",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -40565,7 +40572,7 @@
     "title": "minuscule 1263",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -40581,7 +40588,7 @@
     "title": "minuscule 1267",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John",
+      "John",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -40617,7 +40624,7 @@
     "title": "minuscule 1271",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -41180,7 +41187,7 @@
     "title": "minuscule 1516",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "John"
     ],
     "family": "Byzantine",
@@ -41194,7 +41201,7 @@
     "title": "minuscule 1524",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Acts",
+      "Acts",
       "James",
       "1 Peter",
       "2 Peter",
@@ -41243,7 +41250,7 @@
     "title": "minuscule 1534",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -41973,7 +41980,7 @@
     "title": "minuscule 1678",
     "description": "",
     "texts": [
-      "Theophylact and Zigabenus Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John",
@@ -42060,7 +42067,7 @@
     "title": "minuscule 1707",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -42963,7 +42970,7 @@
     "title": "minuscule 1943",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -42989,7 +42996,7 @@
     "title": "minuscule 1950",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -43067,7 +43074,7 @@
     "title": "minuscule 1961",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -43093,7 +43100,7 @@
     "title": "minuscule 1965",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Romans",
+      "Romans",
       "Colossians",
       "2 Timothy",
       "Hebrews"
@@ -43125,7 +43132,7 @@
     "title": "minuscule 1977",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -43151,7 +43158,7 @@
     "title": "minuscule 1984",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -43177,7 +43184,7 @@
     "title": "minuscule 1987",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -43203,7 +43210,7 @@
     "title": "minuscule 1999",
     "description": "",
     "texts": [
-      "Theodoret Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -43229,7 +43236,7 @@
     "title": "minuscule 2000",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -43268,7 +43275,7 @@
     "title": "minuscule 2012",
     "description": "",
     "texts": [
-      "Theodoret Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -43294,7 +43301,7 @@
     "title": "minuscule 2022",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43307,7 +43314,7 @@
     "title": "minuscule 2031",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43320,7 +43327,7 @@
     "title": "minuscule 2036",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43333,7 +43340,7 @@
     "title": "minuscule 2037",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43372,7 +43379,7 @@
     "title": "minuscule 2045",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43398,7 +43405,7 @@
     "title": "minuscule 2058",
     "description": "",
     "texts": [
-      "Andreas of Caesarea and Oecumenius Commentaries on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -43504,7 +43511,7 @@
     "title": "minuscule 2105",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -43530,7 +43537,7 @@
     "title": "minuscule 2109",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -43562,7 +43569,7 @@
     "title": "minuscule 2148",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -43608,7 +43615,7 @@
     "title": "minuscule 2188",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -43624,7 +43631,7 @@
     "title": "minuscule 2197",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Romans",
+      "Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -43722,7 +43729,7 @@
     "title": "minuscule 2214",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -43770,7 +43777,7 @@
     "title": "minuscule 2248",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -43796,7 +43803,7 @@
     "title": "minuscule 2257",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Romans",
+      "Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -43967,7 +43974,7 @@
     "title": "minuscule 2305",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -44258,7 +44265,7 @@
     "title": "minuscule 2408",
     "description": "",
     "texts": [
-      "Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -44271,7 +44278,7 @@
     "title": "minuscule 2429",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -44284,7 +44291,7 @@
     "title": "minuscule 2432",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -44388,7 +44395,7 @@
     "title": "minuscule 2482",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John",
@@ -44677,7 +44684,7 @@
     "title": "minuscule 2577",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -44792,7 +44799,7 @@
     "title": "minuscule 2638",
     "description": "",
     "texts": [
-      "Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -44850,7 +44857,7 @@
     "title": "minuscule 2668",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on Ephesians"
+      "Ephesians"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45097,7 +45104,7 @@
     "title": "minuscule 2739",
     "description": "",
     "texts": [
-      "Zigabenus Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -45524,7 +45531,8 @@
     "title": "minuscule 2908",
     "description": "",
     "texts": [
-      "Matthew and John Gospel fragments"
+      "Matthew",
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45638,7 +45646,7 @@
     "title": "minuscule 2977",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45651,7 +45659,7 @@
     "title": "minuscule 2979",
     "description": "",
     "texts": [
-      "Theophylact Commentary on John"
+      "John"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45664,7 +45672,7 @@
     "title": "minuscule 2984",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew"
+      "Matthew"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45703,7 +45711,7 @@
     "title": "minuscule 2995",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -45719,7 +45727,7 @@
     "title": "minuscule 2998",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -45753,7 +45761,7 @@
     "texts": [
       "Matthew",
       "Mark",
-      "and Luke"
+      "Luke"
     ],
     "family": "Byzantine",
     "location": "",
@@ -45811,7 +45819,7 @@
     "title": "minuscule 2899=[858b]",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -45867,7 +45875,7 @@
     "title": "minuscule 2889=[1929abs]",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -45941,7 +45949,7 @@
     "title": "minuscule 2070",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -46397,7 +46405,7 @@
     "title": "minuscule 1929",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Romans",
+      "the Romans",
       "1 Corinthians",
       "2 Corinthians",
       "Galatians",
@@ -46489,7 +46497,7 @@
     "title": "minuscule 1628",
     "description": "",
     "texts": [
-      "Theophylact Commentary on Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John",
@@ -46823,7 +46831,7 @@
     "title": "minuscule 886",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John",
@@ -46984,7 +46992,7 @@
     "title": "minuscule 1027",
     "description": "",
     "texts": [
-      "John of Constantinople Commentary on Matthew",
+      "Matthew",
       "Mark",
       "Luke"
     ],
@@ -47892,7 +47900,7 @@
     "title": "minuscule 2433",
     "description": "",
     "texts": [
-      "Andreas of Caesarea Commentary on Revelation"
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -47921,7 +47929,7 @@
     "title": "minuscule [1776]",
     "description": "",
     "texts": [
-      "Revelation copied from printed edition."
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -47934,7 +47942,7 @@
     "title": "minuscule [2072]",
     "description": "",
     "texts": [
-      "Commentary on Revelation copied from a printed edition."
+      "Revelation"
     ],
     "family": "Byzantine",
     "location": "",
@@ -47973,7 +47981,7 @@
     "title": "minuscule 2887=[1160abs]",
     "description": "",
     "texts": [
-      "Theophylact Commentary on the Matthew",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
