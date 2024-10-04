@@ -1,7 +1,7 @@
 [
   {
     "title": "The First Epistle of Clement (Clement of Rome)",
-    "description": "A letter to the church in Corinth, addressing issues of leadership and church order. Historical references within the text suggest a date around AD 96. Manuscript:Codex Alexandrinus (5th century) and other manuscripts",
+    "description": "A letter to the church in Corinth, addressing issues of leadership and church order. Historical references within the text suggest a date around AD 96. Manuscript: Codex Alexandrinus (5th century) and other manuscripts",
     "texts": [
       ""
     ],
@@ -402,29 +402,51 @@
     "percentage": 33,
     "year": 325
   },
- {
+  {
     "title": "minuscule 720",
     "description": "",
     "texts": [
       "Theophylact Commentary on Gospels",
-      "Pauline Epistles",
-      "General Epistles"
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John",
+      "2 John",
+      "3 John",
+      "Jude"
     ],
-    "family": "",
-    "location": "",
+    "family": "Byzantine",
+    "location": "Byzantine Empire",
     "y": "15",
     "eventType": "Minuscule",
     "percentage": 114,
     "year": 1138
   },
-   {
+  {
     "title": "ℓ 1043",
     "description": "",
     "texts": [
-      "Gospels"
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
     ],
-    "family": "",
-    "location": "",
+    "family": "Byzantine",
+    "location": "Byzantine Empire",
     "y": "15",
     "eventType": "lectionary",
     "percentage": 45,
