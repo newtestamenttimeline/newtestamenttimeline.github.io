@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Testament Manuscripts Overview</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Inherit the dark-themed styling from the timeline page */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .manuscript-type,
+        .manuscript-family,
+        .geography {
+            border: 2px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Add a subtle hover effect to the boxes */
+        .manuscript-type:hover,
+        .manuscript-family:hover,
+        .geography:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    New Testament Manuscripts Overview
+</header>
+
+<div class="content">
+    <!-- Manuscript Types Section -->
+    <div class="section">
+        <h2>Manuscript Types</h2>
+        <div class="manuscript-type">
+            <h3>Papyrus</h3>
+            <p>Ancient manuscripts written on papyrus, a plant-based material used primarily during the early centuries of the New Testament period. These manuscripts are among the oldest surviving texts of the New Testament.</p>
+        </div>
+        <div class="manuscript-type">
+            <h3>Uncial</h3>
+            <p>Uncial manuscripts are written in large, capital letters on parchment. These manuscripts are from the 4th to 8th centuries and are considered some of the most valuable sources of the New Testament.</p>
+        </div>
+        <div class="manuscript-type">
+            <h3>Minuscule</h3>
+            <p>Minuscule manuscripts, written in a cursive script, date from the 9th to 15th centuries. These are the most numerous type of New Testament manuscripts, often containing marginal notes and corrections.</p>
+        </div>
+        <div class="manuscript-type">
+            <h3>Lectionary</h3>
+            <p>Lectionaries contain portions of the New Testament organized according to the liturgical calendar. These were used in early Christian worship services and are invaluable for understanding how the New Testament was used in early Christian worship.</p>
+        </div>
+    </div>
+
+    <!-- Manuscript Families Section -->
+    <div class="section">
+        <h2>Manuscript Families</h2>
+        <div class="manuscript-family">
+            <h3>Alexandrian Family</h3>
+            <p>The Alexandrian family of manuscripts is one of the earliest and most reliable sources of the New Testament. These manuscripts are often associated with Alexandria, Egypt, a major center of early Christian scholarship.</p>
+        </div>
+        <div class="manuscript-family">
+            <h3>Byzantine Family</h3>
+            <p>The Byzantine family represents the majority of surviving New Testament manuscripts. Originating in the Byzantine Empire, these texts became the standard version of the New Testament in Greek-speaking churches.</p>
+        </div>
+        <div class="manuscript-family">
+            <h3>Western Family</h3>
+            <p>The Western family of manuscripts, associated with the Western Roman Empire, often exhibits paraphrasing and additional textual variation compared to the Alexandrian and Byzantine families.</p>
+        </div>
+        <div class="manuscript-family">
+            <h3>Caesarean Family</h3>
+            <p>This family of manuscripts is believed to have originated in Caesarea in the 3rd or 4th century. It is known for blending features of both the Alexandrian and Western text-types.</p>
+        </div>
+    </div>
+
+    <!-- Geographic Regions Section -->
+    <div class="section">
+        <h2>Geographic Regions</h2>
+        <div class="geography">
+            <h3>Alexandria</h3>
+            <p>Alexandria, Egypt, was a significant center of early Christian learning and the origin of many of the oldest and most reliable New Testament manuscripts.</p>
+        </div>
+        <div class="geography">
+            <h3>Byzantium</h3>
+            <p>Byzantium (later Constantinople) was a major hub for the production of New Testament manuscripts, particularly during the Byzantine period. The Byzantine text-type is the most widely copied and distributed.</p>
+        </div>
+        <div class="geography">
+            <h3>Rome</h3>
+            <p>Rome, as the center of the Western Roman Empire, played a key role in the dissemination of the Western text-type, known for its unique variations in the New Testament text.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
