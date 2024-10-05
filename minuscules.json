@@ -1785,7 +1785,7 @@
     "title": "minuscule 1829",
     "description": "",
     "texts": [
-      "acts",
+      "Acts",
       "James",
       "1 Peter",
       "2 Peter",
@@ -2796,7 +2796,27 @@
     "title": "minuscule 2962",
     "description": "",
     "texts": [
-      "Paul's Epistles"
+      "Acts",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John",
+      "2 John",
+      "3 John",
+      "Jude"
     ],
     "family": "Byzantine",
     "location": "",
@@ -4908,7 +4928,7 @@
     "title": "minuscule 314",
     "description": "",
     "texts": [
-      "acts",
+      "Acts",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -4943,7 +4963,7 @@
     "title": "minuscule 325",
     "description": "",
     "texts": [
-      "acts",
+      "Acts",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -14161,7 +14181,7 @@
     "title": "minuscule 319",
     "description": "",
     "texts": [
-      "acts",
+      "Acts",
       "Romans",
       "1 Corinthians",
       "2 Corinthians",
@@ -17275,7 +17295,8 @@
       "2 Timothy",
       "Titus",
       "Philemon",
-      "Hebrews. Matthew",
+      "Hebrews",
+      "Matthew",
       "Mark",
       "Luke",
       "John"
@@ -34885,7 +34906,7 @@
       "1 John",
       "2 John",
       "3 John",
-      "Jude?"
+      "Jude"
     ],
     "family": "Byzantine",
     "location": "",
@@ -37436,7 +37457,8 @@
       "Luke",
       "John",
       "Acts",
-      "Romans - Titus"
+      "Romans",
+      "Titus"
     ],
     "family": "Byzantine",
     "location": "",
@@ -37480,7 +37502,7 @@
     "description": "",
     "texts": [
       "Acts",
-      "Pauline Epistle]",
+      "",
       "James",
       "1 Peter",
       "2 Peter",
