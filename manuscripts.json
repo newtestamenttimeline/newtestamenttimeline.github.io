@@ -1860,7 +1860,7 @@
     "family": "N/A",
     "location": "N/A",
     "y": "5",
-    "eventType": "Lectionary",
+    "eventType": "lectionary",
     "percentage": 110,
     "year": 1100
   },
