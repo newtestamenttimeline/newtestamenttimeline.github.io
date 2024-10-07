@@ -1,4 +1,4 @@
-// JavaScript to load events from JSON files and update the UI
+// JavaScript to load events from JSON files and update the UI!
 
 // Function to fetch and process JSON data
 async function fetchAndProcessJSON(url) {
