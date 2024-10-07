@@ -146,6 +146,19 @@
     "year": 130
   },
   {
+    "title": "The Book of Mormon",
+    "description": "While not a Bible Translation, The Book of Mormon is a significant religious text in Christianity. Its publication by Joseph Smith marked the beginning of the Latter-day Saint movement, which considers it an additional scriptural witness of Jesus Christ.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "New York, USA",
+    "y": "",
+    "eventType": "Extrabiblical",
+    "percentage": 183,
+    "year": 1830
+  },
+  {
     "title": "The First Apology by Justin Martyr",
     "description": "Written around 165 AD, this early Christian apology defends the faith to Roman authorities and explains early Christian beliefs and practices. It provides valuable insight into how early Christians understood the Bible and defended it against critics.",
     "texts": [
