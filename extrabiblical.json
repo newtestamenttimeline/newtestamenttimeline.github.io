@@ -56,7 +56,8 @@
   },
   {
     "title": "Letters of Pliny the Younger",
-    "description": "In correspondence with Emperor Trajan, Pliny the Younger discusses the treatment of early Christians in the Roman Empire around 112 AD. His letters give insight into the spread of Christianity, early Christian worship practices, and how Roman authorities perceived and dealt with the movement.",
+    "description": "In correspondence with Emperor Trajan, Pliny the Younger discusses the treatment of early Christians in the Roman Empire around 112 AD. His letters give insight into the spread of Christianity, early Christian worship practices, and how Roman authorities perceived and dealt with the movement. In this letter, Pliny the Younger, the governor of Bithynia, seeks guidance from Emperor Trajan on how to handle Christians in his province. He describes their practices, noting their willingness to die for their faith and the growing presence of Christianity in the Roman Empire. This correspondence offers important insights into the early Roman perception of Christians and the legal challenges they faced.",
+
     "texts": [
       ""
     ],
@@ -170,20 +171,7 @@
     "eventType": "Extrabiblical",
     "percentage": 17,
     "year": 165
-  },
-  {
-    "title": "Letter of Pliny the Younger",
-    "description": "In this letter, Pliny the Younger, the governor of Bithynia, seeks guidance from Emperor Trajan on how to handle Christians in his province. He describes their practices, noting their willingness to die for their faith and the growing presence of Christianity in the Roman Empire. This correspondence offers important insights into the early Roman perception of Christians and the legal challenges they faced.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Bithynia",
-    "y": "",
-    "eventType": "Extrabiblical",
-    "percentage": 11,
-    "year": 112
-  },
+  },    
   {
     "title": "Celsus' True Word",
     "description": "Although primarily a critique of Christianity, Celsus’ work provides insights into the beliefs and practices of early Christians and their interactions with the broader Roman society. His arguments reflect the challenges faced by Christians in defending their faith against pagan critiques during the 2nd century.",
