@@ -1,3 +1,4 @@
+// this is a variant of the file that would make the title of each manuscript or dot hover above it
 // Function to get color for each event type
 function getColorForEventType(eventType) {
     return eventTypeColors[eventType] || '#000'; // Default to black if no color is found
