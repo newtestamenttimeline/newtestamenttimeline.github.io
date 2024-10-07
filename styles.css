@@ -264,13 +264,6 @@ header {
     opacity: 1;
 }
 
-/* Optional: Adjust hover behavior to prevent immediate hiding when moving to the tooltip */
-.question-mark:hover .tooltip,
-.question-mark.clicked .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
-
 
 .timeline-controls {
     display: flex;
