@@ -31,7 +31,7 @@ function generateLegend() {
         questionMark.textContent = '?';
         const tooltip = document.createElement('span');
         tooltip.className = 'tooltip';
-        tooltip.textContent = `Filter events by ${eventType} type`;
+        tooltip.textContent = `Filter events by ${eventType} type. Read more here https://newtestamenttimeline.com/manuscript-types.html`;
         questionMark.appendChild(tooltip);
         legendItem.appendChild(checkbox);
         legendItem.appendChild(legendColor);
