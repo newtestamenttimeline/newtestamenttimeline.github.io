@@ -8,7 +8,7 @@
     "family": "",
     "location": "",
     "y": "",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 10,
     "year": 96
   },
@@ -21,7 +21,7 @@
     "family": "",
     "location": "",
     "y": "15",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 10,
     "year": 100
   },
@@ -34,7 +34,7 @@
     "family": "",
     "location": "",
     "y": "-15",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 10,
     "year": 100
   },
@@ -47,7 +47,7 @@
     "family": "",
     "location": "",
     "y": "30",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 11,
     "year": 110
   },
@@ -60,7 +60,7 @@
     "family": "",
     "location": "",
     "y": "-30",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 12,
     "year": 115
   },
@@ -73,7 +73,7 @@
     "family": "",
     "location": "",
     "y": "45",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 12,
     "year": 115
   },
@@ -86,7 +86,7 @@
     "family": "",
     "location": "",
     "y": "-15",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 13,
     "year": 125
   },
@@ -99,7 +99,7 @@
     "family": "",
     "location": "",
     "y": "30",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 13,
     "year": 125
   },
@@ -112,20 +112,20 @@
     "family": "",
     "location": "",
     "y": "15",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 15,
     "year": 150
   },
   {
     "title": "Dionysius of Corinth",
-    "description": "Known for letters to various churches. Citations and historical context indicate mid-2nd century. Manuscript:Preserved in quotations by Eusebius and other Church_fathers.",
+    "description": "Known for letters to various churches. Citations and historical context indicate mid-2nd century. Manuscript:Preserved in quotations by Eusebius and other Church Father.",
     "texts": [
       ""
     ],
     "family": "",
     "location": "",
     "y": "-15",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 15,
     "year": 150
   },
@@ -138,7 +138,7 @@
     "family": "",
     "location": "",
     "y": "15",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 18,
     "year": 175
   },
@@ -151,7 +151,7 @@
     "family": "",
     "location": "",
     "y": "-15",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 18,
     "year": 175
   },
@@ -164,7 +164,7 @@
     "family": "",
     "location": "",
     "y": "30",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 18,
     "year": 175
   },
@@ -177,7 +177,7 @@
     "family": "",
     "location": "",
     "y": "-30",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 18,
     "year": 175
   },
@@ -190,7 +190,7 @@
     "family": "",
     "location": "",
     "y": "45",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 18,
     "year": 175
   },
@@ -203,7 +203,7 @@
     "family": "",
     "location": "",
     "y": "-45",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 18,
     "year": 175
   },
@@ -216,7 +216,7 @@
     "family": "",
     "location": "",
     "y": "60",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 23,
     "year": 225
   },
@@ -229,7 +229,7 @@
     "family": "",
     "location": "",
     "y": "-60",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 23,
     "year": 225
   },
@@ -242,7 +242,7 @@
     "family": "",
     "location": "",
     "y": "75",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 23,
     "year": 225
   },
@@ -255,7 +255,7 @@
     "family": "",
     "location": "",
     "y": "-75",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 23,
     "year": 225
   },
@@ -268,7 +268,7 @@
     "family": "",
     "location": "",
     "y": "135",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 24,
     "year": 235
   },
@@ -281,7 +281,7 @@
     "family": "",
     "location": "",
     "y": "-135",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 24,
     "year": 235
   },
@@ -294,7 +294,7 @@
     "family": "",
     "location": "",
     "y": "135",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 25,
     "year": 250
   },
@@ -307,7 +307,7 @@
     "family": "",
     "location": "",
     "y": "-135",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 25,
     "year": 250
   },
@@ -320,7 +320,7 @@
     "family": "",
     "location": "",
     "y": "150",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 25,
     "year": 250
   },
@@ -333,7 +333,7 @@
     "family": "",
     "location": "",
     "y": "-150",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 25,
     "year": 250
   },
@@ -346,7 +346,7 @@
     "family": "",
     "location": "",
     "y": "-75",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 27,
     "year": 265
   },
@@ -359,7 +359,7 @@
     "family": "",
     "location": "",
     "y": "90",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 28,
     "year": 275
   },
@@ -372,7 +372,7 @@
     "family": "",
     "location": "",
     "y": "-90",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 28,
     "year": 275
   },
@@ -385,7 +385,7 @@
     "family": "",
     "location": "",
     "y": "30",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 33,
     "year": 325
   },
@@ -398,7 +398,7 @@
     "family": "",
     "location": "",
     "y": "-30",
-    "eventType": "Church_fathers",
+    "eventType": "Church Father",
     "percentage": 33,
     "year": 325
   },
