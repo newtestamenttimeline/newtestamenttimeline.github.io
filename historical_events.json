@@ -85,7 +85,7 @@
     ],
     "family": "",
     "location": "Rome, Italy",
-   "y": "-15",
+    "y": "-15",
     "eventType": "historical",
     "percentage": 6,
     "year": 64
@@ -115,5 +115,291 @@
     "eventType": "historical",
     "percentage": 9,
     "year": 88
-  }
+  },
+  {
+    "title": "Edict of Milan",
+    "description": "The Edict of Milan, issued by Roman Emperors Constantine and Licinius, granted religious tolerance to Christians, ending years of persecution and allowing Christianity to spread more freely within the Roman Empire.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Roman Empire",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 31,
+    "year": 313
+  },
+  {
+    "title": "Easter Letter of Athanasius",
+    "description": "In his 39th Festal Letter, Bishop Athanasius of Alexandria lists the 27 books of the New Testament canon, marking one of the earliest known confirmations of the present New Testament canon.",
+    "texts": [
+      ""
+    ],
+    "family": "NT Canon",
+    "location": "Alexandria, Egypt",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 37,
+    "year": 367
+  },
+  {
+    "title": "First Council of Constantinople",
+    "description": "This council reaffirmed the Nicene Creed and dealt with the heresy of Arianism. It marks a significant moment in the establishment of the doctrine of the Trinity.",
+    "texts": [
+      ""
+    ],
+    "family": "Nicene Christianity",
+    "location": "Constantinople (Istanbul, Turkey)",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 38,
+    "year": 381
+  },
+  {
+    "title": "Council of Ephesus",
+    "description": "The Council of Ephesus declared Mary as \"Theotokos\" (Mother of God) and condemned Nestorianism, which held that Christ had two distinct persons. This council shaped the Christological debates of the early church.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Ephesus (Turkey)",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 43,
+    "year": 431
+  },
+  {
+    "title": "Council of Chalcedon",
+    "description": "The Council of Chalcedon defined the dual nature of Christ as both fully human and fully divine, an important development in Christology. It also caused a schism with the Oriental Orthodox churches.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Chalcedon (Turkey)",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 45,
+    "year": 451
+  },
+  {
+    "title": "Christianization of England",
+    "description": "Augustine of Canterbury arrives in England to convert the Anglo-Saxons, initiating the spread of Christianity in the British Isles.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Canterbury, England",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 60,
+    "year": 597
+  },
+  {
+    "title": "Death of Muhammad",
+    "description": "The death of the Prophet Muhammad and the subsequent spread of Islam profoundly affected Christian territories in the Middle East, North Africa, and Spain.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Medina, Arabia",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 63,
+    "year": 632
+  },
+  {
+    "title": "Synod of Whitby",
+    "description": "A significant meeting in the early English Church that decided the English Church would follow Roman rather than Celtic customs, influencing the future of Christianity in England.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Whitby, England",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 66,
+    "year": 664
+  },
+  {
+    "title": "Battle of Tours",
+    "description": "Charles Martel defeats an Islamic army at Tours, halting the northward advance of Islam into Western Europe. This battle is seen as a key moment in the defense of Christian Europe.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Tours, France",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 73,
+    "year": 732
+  },
+  {
+    "title": "The Great Schism",
+    "description": "The formal separation between the Roman Catholic Church and the Eastern Orthodox Church. Differences in theology, liturgy, and authority had been building for centuries, culminating in the mutual excommunication of the Pope and the Patriarch of Constantinople.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Rome, Italy & Constantinople",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 105,
+    "year": 1054
+  },
+  {
+    "title": "First Crusade",
+    "description": "Pope Urban II calls for the First Crusade, aimed at reclaiming the Holy Land from Muslim rule. This and subsequent crusades would reshape Christian-Muslim relations for centuries.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Jerusalem & Europe",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 110,
+    "year": 1095
+  },
+  {
+    "title": "Fourth Lateran Council",
+    "description": "The council formalized several important doctrines, including the definition of transubstantiation in the Eucharist and the requirement for annual confession.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Rome, Italy",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 122,
+    "year": 1215
+  },
+  {
+    "title": "The Western Schism",
+    "description": "The Western Schism saw multiple claimants to the papacy, dividing Europe and weakening the authority of the Roman Church. It lasted until the Council of Constance (1417).",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Rome & Avignon",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 138,
+    "year": 1378
+  },
+  {
+    "title": "Fall of Constantinople",
+    "description": "The fall of Constantinople to the Ottoman Empire marked the end of the Byzantine Empire, a major center of Eastern Christianity. It also led to the migration of scholars and texts to the West, contributing to the Renaissance.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Constantinople (Istanbul, Turkey)",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 145,
+    "year": 1453
+  },
+  {
+    "title": "Martin Luther's 95 Theses",
+    "description": "Martin Luther nailed his 95 Theses to the door of the church in Wittenberg, sparking the Protestant Reformation and leading to a major schism within Western Christianity.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Wittenberg, Germany",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 152,
+    "year": 1517
+  },
+  {
+    "title": "Formation of the Church of England",
+    "description": "King Henry VIII declared himself the head of the Church of England, breaking away from the Roman Catholic Church in what is known as the English Reformation.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "England",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 153,
+    "year": 1534
+  },
+  {
+    "title": "Council of Trent",
+    "description": "The Council of Trent was the Roman Catholic Church's response to the Protestant Reformation. It clarified Catholic doctrine and initiated significant reforms in the Church.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Trent, Italy",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 155,
+    "year": 1545
+  },
+  {
+    "title": "King James Bible Published",
+    "description": "The publication of the King James Version of the Bible, commissioned by King James I of England, had a profound impact on the English-speaking world and remains one of the most widely read versions of the Bible.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "England",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 161,
+    "year": 1611
+  },
+  {
+    "title": "Peace of Westphalia",
+    "description": "The Peace of Westphalia ended the Thirty Years' War and marked the beginning of a new order in Europe, with a greater tolerance for Protestantism and a shift away from religiously motivated conflict.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Westphalia, Germany",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 165,
+    "year": 1648
+  },
+  {
+    "title": "John Wesley's Aldersgate Experience",
+    "description": "John Wesley, the founder of Methodism, had a profound spiritual experience at a meeting on Aldersgate Street in London, leading to the Methodist revival within Anglicanism.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "London, England",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 174,
+    "year": 1738
+  },
+  {
+    "title": "Establishment of the Protestant Episcopal Church",
+    "description": "Following the American Revolution, the Protestant Episcopal Church (the American branch of Anglicanism) was formally established, marking the development of a uniquely American form of Anglicanism.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "United States",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 179,
+    "year": 1789
+  },
+  {
+    "title": "Invention of the Printing Press",
+    "description": "Johannes Gutenberg invented the movable type printing press in Mainz, Germany. This revolutionized the production of books, including the Bible, making them more accessible and leading to the spread of literacy and the Reformation. The Gutenberg Bible (1455) was the first major book printed with movable type, dramatically increasing the dissemination of biblical texts and theological ideas.",
+    "texts": [
+      "Gutenberg Bible"
+    ],
+    "family": "",
+    "location": "Mainz, Germany",
+    "y": "",
+    "eventType": "historical",
+    "percentage": 144,
+    "year": 1440
+  },
 ]
