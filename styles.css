@@ -250,7 +250,7 @@ header {
     border-radius: 6px;
     padding: 5px;
     position: absolute;
-    z-index: 1;
+    z-index: 9999; /* Ensure the tooltip is above everything else */
     bottom: 125%;
     left: 50%;
     transform: translateX(-50%);
@@ -263,6 +263,14 @@ header {
     visibility: visible;
     opacity: 1;
 }
+
+/* Optional: Adjust hover behavior to prevent immediate hiding when moving to the tooltip */
+.question-mark:hover .tooltip,
+.question-mark.clicked .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 .timeline-controls {
     display: flex;
