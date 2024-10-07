@@ -135,7 +135,7 @@
     "texts": [
       ""
     ],
-    "family": "NT Canon",
+    "family": "",
     "location": "Alexandria, Egypt",
     "y": "",
     "eventType": "historical",
@@ -148,7 +148,7 @@
     "texts": [
       ""
     ],
-    "family": "Nicene Christianity",
+    "family": "",
     "location": "Constantinople (Istanbul, Turkey)",
     "y": "",
     "eventType": "historical",
@@ -408,7 +408,7 @@
     "texts": [
       "Translation"
     ],
-    "family": "Latin Bible",
+    "family": "",
     "location": "Roman Empire",
     "y": "",
     "eventType": "historical",
@@ -424,7 +424,7 @@
     "texts": [
       "Translation"
     ],
-    "family": "Latin Bible",
+    "family": "",
     "location": "Roman Empire",
     "y": "",
     "eventType": "historical",
@@ -437,7 +437,7 @@
     "texts": [
       "Translation"
     ],
-    "family": "Syriac Bible",
+    "family": "",
     "location": "Eastern Roman Empire, Syria",
     "y": "",
     "eventType": "historical",
@@ -453,7 +453,7 @@
     "texts": [
       "Translation"
     ],
-    "family": "Armenian Bible",
+    "family": "",
     "location": "Armenia",
     "y": "",
     "eventType": "historical",
@@ -466,7 +466,7 @@
     "texts": [
       "Translation"
     ],
-    "family": "Coptic Bible",
+    "family": "",
     "location": "Egypt",
     "y": "",
     "eventType": "historical",
@@ -479,7 +479,7 @@
     "texts": [
       "Translation"
     ],
-    "family": "Slavonic Bible",
+    "family": "",
     "location": "Moravia, Slavic Lands",
     "y": "",
     "eventType": "historical",
@@ -492,7 +492,7 @@
     "texts": [
       "Translation"
     ],
-    "family": "English Bible",
+    "family": "",
     "location": "England",
     "y": "",
     "eventType": "historical",
@@ -505,7 +505,7 @@
     "texts": [
       "Translation"
     ],
-    "family": "English Bible",
+    "family": "",
     "location": "England",
     "y": "",
     "eventType": "historical",
@@ -518,7 +518,7 @@
     "texts": [
       "Translation"
     ],
-    "family": "English Bible",
+    "family": "",
     "location": "Geneva, Switzerland",
     "y": "",
     "eventType": "historical",
@@ -531,7 +531,7 @@
     "texts": [
       "Translation"
     ],
-    "family": "English Bible",
+    "family": "",
     "location": "England",
     "y": "",
     "eventType": "historical",
@@ -557,7 +557,7 @@
     "texts": [
       ""
     ],
-    "family": "Latter-day Saint Scripture",
+    "family": "",
     "location": "New York, USA",
     "y": "",
     "eventType": "Extrabiblical",
@@ -570,7 +570,7 @@
     "texts": [
       "Translation"
     ],
-    "family": "English Bible",
+    "family": "",
     "location": "England, USA",
     "y": "",
     "eventType": "historical",
@@ -583,10 +583,10 @@
     "texts": [
       "Translation"
     ],
-    "family": "English Bible",
+    "family": "",
     "location": "USA",
     "y": "",
-    "eventType": "Historical",
+    "eventType": "historical",
     "percentage": 195,
     "year": 1946
   },
@@ -596,10 +596,10 @@
     "texts": [
       "Translation"
     ],
-    "family": "English Bible",
+    "family": "",
     "location": "USA, UK",
     "y": "",
-    "eventType": "Historical",
+    "eventType": "historical",
     "percentage": 198,
     "year": 1978
   },
@@ -609,10 +609,10 @@
     "texts": [
       "Translation"
     ],
-    "family": "English Bible",
+    "family": "",
     "location": "France, UK",
     "y": "",
-    "eventType": "Historical",
+    "eventType": "historical",
     "percentage": 199,
     "year": 1985
   },
