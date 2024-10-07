@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuscript Types</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<header>
+    Manuscript Types
+</header>
+
+<div class="content">
+    <p>New Testament manuscripts are categorized by their material, style, and date of writing. The earliest manuscripts are written on papyrus, while later manuscripts are on parchment and use different scripts, such as uncial and minuscule. These manuscripts help scholars trace the transmission of the New Testament over centuries.</p>
+
+    <div class="manuscript-type">
+        <h3>Papyrus</h3>
+        <p>Ancient manuscripts written on papyrus, a plant-based material used primarily during the early centuries of the New Testament period. These manuscripts are among the oldest surviving texts of the New Testament.</p>
+    </div>
+    <div class="manuscript-type">
+        <h3>Uncial</h3>
+        <p>Uncial manuscripts are written in large, capital letters on parchment. These manuscripts are from the 4th to 8th centuries and are considered some of the most valuable sources of the New Testament.</p>
+    </div>
+    <div class="manuscript-type">
+        <h3>Minuscule</h3>
+        <p>Minuscule manuscripts, written in a cursive script, date from the 9th to 15th centuries. These are the most numerous type of New Testament manuscripts, often containing marginal notes and corrections.</p>
+    </div>
+    <div class="manuscript-type">
+        <h3>Lectionary</h3>
+        <p>Lectionaries contain portions of the New Testament organized according to the liturgical calendar. These were used in early Christian worship services and are invaluable for understanding how the New Testament was used in early Christian worship.</p>
+    </div>
+
+    <a href="index.html">Back to Overview</a>
+</div>
+
+</body>
+</html>
