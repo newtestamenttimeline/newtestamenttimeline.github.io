@@ -1,0 +1,301 @@
+[
+  {
+    "title": "Epistle to the Galatians",
+    "description": "Likely written by Paul between 48-55 AD, Galatians defends the doctrine of justification by faith and counters the Judaizers. Early church tradition consistently attributes it to Paul, and internal references support this.",
+    "texts": [
+      "Galatians"
+    ],
+    "family": "",
+    "location": "Corinth or Ephesus",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 5,
+    "year": 50
+  },
+  {
+    "title": "1 Thessalonians",
+    "description": "Traditionally attributed to Paul, written around 50-51 AD. Early Christian writers confirm this authorship. Paul addresses the church in Thessalonica and encourages them in their faith.",
+    "texts": [
+      "1 Thessalonians"
+    ],
+    "family": "",
+    "location": "Corinth",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 5,
+    "year": 51
+  },
+  {
+    "title": "2 Thessalonians",
+    "description": "Likely written shortly after 1 Thessalonians, this letter is traditionally attributed to Paul. Some modern scholars question Pauline authorship due to stylistic differences, but early attributions affirm Paul’s authorship.",
+    "texts": [
+      "2 Thessalonians"
+    ],
+    "family": "",
+    "location": "Corinth",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 5,
+    "year": 52
+  },
+  {
+    "title": "1 Corinthians",
+    "description": "Paul is the undisputed author of 1 Corinthians, written around 54-55 AD. It addresses problems within the Corinthian church, including divisions and moral issues.",
+    "texts": [
+      "1 Corinthians"
+    ],
+    "family": "",
+    "location": "Ephesus",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 6,
+    "year": 55
+  },
+  {
+    "title": "2 Corinthians",
+    "description": "Written around 55-56 AD, 2 Corinthians is universally attributed to Paul and focuses on his ministry and the need for reconciliation in the Corinthian church.",
+    "texts": [
+      "2 Corinthians"
+    ],
+    "family": "",
+    "location": "Macedonia",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 6,
+    "year": 56
+  },
+  {
+    "title": "Epistle to the Romans",
+    "description": "Romans, written by Paul around 57 AD, is his most theologically developed work. The early church unanimously attributes it to Paul, and it is supported by internal references and early manuscript evidence.",
+    "texts": [
+      "Romans"
+    ],
+    "family": "",
+    "location": "Corinth",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 6,
+    "year": 57
+  },
+  {
+    "title": "Epistle to the Philippians",
+    "description": "Written by Paul from prison, around 60-62 AD. The early church attributes it to Paul, and internal references to his imprisonment support this dating.",
+    "texts": [
+      "Philippians"
+    ],
+    "family": "",
+    "location": "Rome",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 6,
+    "year": 60
+  },
+  {
+    "title": "Epistle to the Colossians",
+    "description": "Traditionally attributed to Paul and written around 60-62 AD. Some modern scholars debate Pauline authorship due to its unique style, but early tradition affirms Paul as the author.",
+    "texts": [
+      "Colossians"
+    ],
+    "family": "",
+    "location": "Rome",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 6,
+    "year": 60
+  },
+  {
+    "title": "Epistle to Philemon",
+    "description": "Written by Paul around 60-62 AD from prison. It is universally accepted as Pauline due to both internal evidence and early attributions.",
+    "texts": [
+      "Philemon"
+    ],
+    "family": "",
+    "location": "Rome",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 6,
+    "year": 60
+  },
+  {
+    "title": "Epistle to the Ephesians",
+    "description": "Traditionally attributed to Paul, written around 60-62 AD. Some scholars suggest it may have been written by a disciple of Paul due to stylistic differences.",
+    "texts": [
+      "Ephesians"
+    ],
+    "family": "",
+    "location": "Rome",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 6,
+    "year": 60
+  },
+  {
+    "title": "Epistle to the Hebrews",
+    "description": "The authorship of Hebrews is unknown. Early attributions varied, with some suggesting Paul, but the style and themes differ from his known letters. Likely written between 60-70 AD.",
+    "texts": [
+      "Hebrews"
+    ],
+    "family": "",
+    "location": "Unknown",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 6,
+    "year": 61
+  },
+  {
+    "title": "Epistle of James",
+    "description": "Traditionally attributed to James, the brother of Jesus, and likely written between 60-62 AD. Early church tradition confirms this authorship.",
+    "texts": [
+      "James"
+    ],
+    "family": "",
+    "location": "Jerusalem",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 6,
+    "year": 62
+  },
+  {
+    "title": "1 Peter",
+    "description": "Early tradition attributes this letter to the apostle Peter, written around 60-63 AD. Internal evidence supports this, as the letter refers to Peter’s witness of Christ’s sufferings.",
+    "texts": [
+      "1 Peter"
+    ],
+    "family": "",
+    "location": "Rome",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 6,
+    "year": 63
+  },
+  {
+    "title": "2 Peter",
+    "description": "The authorship of 2 Peter is debated. Early tradition attributes it to the apostle Peter, but some modern scholars suggest it may have been written by a later follower. Likely written around 64-68 AD.",
+    "texts": [
+      "2 Peter"
+    ],
+    "family": "",
+    "location": "Rome",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 6,
+    "year": 64
+  },
+  {
+    "title": "Gospel of Mark",
+    "description": "Traditionally attributed to John Mark, a companion of Peter, and likely written around 65-70 AD. Early church writers, such as Papias, confirm Mark’s authorship based on Peter’s accounts.",
+    "texts": [
+      "Mark"
+    ],
+    "family": "",
+    "location": "Rome",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 7,
+    "year": 65
+  },
+  {
+    "title": "Gospel of Matthew",
+    "description": "Traditionally attributed to the apostle Matthew, this Gospel was likely written between 70-90 AD. Early church tradition confirms this, though some scholars suggest it may have been written by a later community of Matthew’s followers.",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "",
+    "location": "Antioch or Palestine",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 7,
+    "year": 70
+  },
+  {
+    "title": "Gospel of Luke",
+    "description": "Traditionally attributed to Luke, a companion of Paul, and likely written between 70-90 AD. The early church affirms Luke’s authorship, and the close relationship between Luke and Acts supports this.",
+    "texts": [
+      "Luke"
+    ],
+    "family": "",
+    "location": "Greece",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 7,
+    "year": 70
+  },
+  {
+    "title": "Acts of the Apostles",
+    "description": "Written by Luke as a continuation of his Gospel, Acts was likely composed around 70-85 AD. The early church confirms Luke’s authorship, and internal references link it to his Gospel.",
+    "texts": [
+      "Acts"
+    ],
+    "family": "",
+    "location": "Greece",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 9,
+    "year": 85
+  },
+  {
+    "title": "Gospel of John",
+    "description": "Traditionally attributed to the apostle John, this Gospel was likely written between 85-100 AD. Early attributions support Johannine authorship, though some scholars believe it may have been written by a disciple of John.",
+    "texts": [
+      "John"
+    ],
+    "family": "",
+    "location": "Ephesus",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 9,
+    "year": 90
+  },
+  {
+    "title": "1 John",
+    "description": "Traditionally attributed to the apostle John and likely written around 90-100 AD. The themes and style closely resemble the Gospel of John, supporting early attributions.",
+    "texts": [
+      "1 John"
+    ],
+    "family": "",
+    "location": "Ephesus",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 10,
+    "year": 95
+  },
+  {
+    "title": "2 John",
+    "description": "Likely written by the apostle John around 90-100 AD. Early church tradition affirms Johannine authorship, although some suggest it could have been written by a follower of John.",
+    "texts": [
+      "2 John"
+    ],
+    "family": "",
+    "location": "Ephesus",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 10,
+    "year": 95
+  },
+  {
+    "title": "3 John",
+    "description": "Like 1 and 2 John, 3 John is attributed to the apostle John and likely written around 90-100 AD. Early attributions are consistent in affirming Johannine authorship.",
+    "texts": [
+      "3 John"
+    ],
+    "family": "",
+    "location": "Ephesus",
+    "y": "",
+    "eventType": "likely authorship",
+    "percentage": 10,
+    "year": 95
+  },
+  {
+    "title": "Book of Revelation",
+    "description": "Traditionally attributed to the apostle John and written during his exile on Patmos, around 90-96 AD. Early church tradition supports John’s authorship, though some modern scholars debate whether it was written by a different John.",
+    "texts": [
+      "Revelation"
+    ],
+    "family": "",
+    "location": "Patmos",
+    "y": "",
+    "eventType": "likely auth",
+    "percentage": 10,
+    "year": 96
+  }
+]
