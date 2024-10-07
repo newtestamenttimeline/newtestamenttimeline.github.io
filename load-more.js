@@ -39,22 +39,22 @@ function addEventsToTimeline(data) {
         eventDot.style.backgroundColor = eventTypeColors[eventType] || 'yellow';
 
         const yearPercentage = ((event.year - 0) / (1400 - 0)) * 100;
-        eventDot.style.left = `${yearPercentage}%`;
+        eventDot.style.left = \`\${yearPercentage}%\`;
 
         const yOffset = parseFloat(event.y) || 0;
-        eventDot.style.top = `calc(50% + ${yOffset}px)`;
+        eventDot.style.top = \`calc(50% + \${yOffset}px)\`;
 
         // Attach click event listener for showing event details
         eventDot.addEventListener('click', () => {
-            document.getElementById('event-content').innerHTML = `
-                <h2>${event.title || 'Event'}</h2>
-                <p>${event.description || 'No description available.'}</p>
-                <p><strong>Year:</strong> ${event.year}</p>
-                <p><strong>Texts:</strong> ${event.texts.join(', ') || 'N/A'}</p>
-                <p><strong>Family:</strong> ${event.family || 'N/A'}</p>
-                <p><strong>Location:</strong> ${event.location || 'N/A'}</p>
-                <p><strong>Event Type:</strong> ${event.eventType || 'N/A'}</p>
-            `;
+            document.getElementById('event-content').innerHTML = \`
+                <h2>\${event.title || 'Event'}</h2>
+                <p>\${event.description || 'No description available.'}</p>
+                <p><strong>Year:</strong> \${event.year}</p>
+                <p><strong>Texts:</strong> \${event.texts.join(', ') || 'N/A'}</p>
+                <p><strong>Family:</strong> \${event.family || 'N/A'}</p>
+                <p><strong>Location:</strong> \${event.location || 'N/A'}</p>
+                <p><strong>Event Type:</strong> \${event.eventType || 'N/A'}</p>
+            \`;
         });
 
         fragment.appendChild(eventDot);
@@ -86,7 +86,7 @@ function updateFilters(data) {
         event.texts.forEach(text => {
             if (text && !existingTexts.has(text)) {  // Only add if not already in the list
                 const listItem = document.createElement('li');
-                listItem.innerHTML = `<input type="checkbox" checked value="${text}"> ${text}`;
+                listItem.innerHTML = \`<input type="checkbox" checked value="\${text}"> \${text}\`;
                 const checkbox = listItem.querySelector('input');
                 checkbox.addEventListener('change', (e) => {
                     filterEventsByText(e.target.value, e.target.checked);
@@ -99,7 +99,7 @@ function updateFilters(data) {
         // Add unique families
         if (event.family && !existingFamilies.has(event.family)) {
             const listItem = document.createElement('li');
-            listItem.innerHTML = `<input type="checkbox" checked value="${event.family}"> ${event.family}`;
+            listItem.innerHTML = \`<input type="checkbox" checked value="\${event.family}"> \${event.family}\`;
             const checkbox = listItem.querySelector('input');
             checkbox.addEventListener('change', (e) => {
                 filterEventsByFamily(e.target.value, e.target.checked);
@@ -158,6 +158,9 @@ async function loadMoreManuscripts() {
 
     // Update filters after adding events
     updateFilters(allData);
+
+    // Generate legend after loading more events
+    generateLegend(); // Regenerate legend to capture new event types
 
     // Apply active filters to the newly added events
     applyActiveFilters();
