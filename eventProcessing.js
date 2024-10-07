@@ -31,11 +31,11 @@ async function loadEvents() {
 
         // Fetch and process the event data from JSON files
         const eventFiles = [
-            'historical_events.json',
             'manuscripts.json',
             'uncials.json',
+            'historical_events.json',
             'church_fathers.json',
-            'likely-authorship.json',
+            'likely-writing-date.json',
             'extrabiblical.json'
         ];
 
