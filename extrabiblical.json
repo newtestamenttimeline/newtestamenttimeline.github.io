@@ -3,11 +3,7 @@
     "title": "New Testament Apocrypha",
     "description": "The New Testament Apocrypha includes a variety of writings from the 2nd and 3rd centuries AD that were not included in the canonical New Testament. These texts, such as the Gospel of Thomas, Gospel of Peter, Gospel of Mary, and Shepherd of Hermas, offer alternative perspectives on Jesus' life, teachings, and early Christian beliefs. Most of these writings are generally dated later than the canonical books, often in the mid- to late-2nd century, and are considered less reliable regarding authorship. While many are attributed to key figures like Peter, Mary Magdalene, or Barnabas, modern scholars agree that these attributions are unlikely to be authentic, as the actual authors are mostly anonymous or unknown. Unlike the canonical texts, which have earlier and more widespread manuscript support (such as the Codex Sinaiticus and Vaticanus), apocryphal texts often survive in limited manuscripts or fragmented forms, like the Gospel of Thomas from the Nag Hammadi library. These writings were rejected by early church leaders due to theological concerns, particularly their association with Gnosticism or Jewish-Christian sects, and their later dates and less secure transmission further distinguish them from the earlier, more reliably attested New Testament books.",
     "texts": [
-      "Gospel of Thomas",
-      "Gospel of Peter",
-      "Gospel of Mary",
-      "Shepherd of Hermas",
-      "etc."
+      "Gnostic/so-called 'New testament Apocrypha' texts",
     ],
     "family": "",
     "location": "Egypt, Palestine, Syria, Rome",
@@ -23,7 +19,7 @@
     "title": "Marcion's Canon",
     "description": "Marcion of Sinope created one of the earliest known Christian canons around 140 AD. He rejected the Old Testament entirely and included only a modified version of Luke's Gospel and ten Pauline epistles, excluding the Pastoral Epistles. His canon prompted the early Church to define its own canon and highlighted the widespread acceptance of certain New Testament writings before the 2nd century.",
     "texts": [
-      "Marcion's Canon"
+      ""
     ],
     "family": "",
     "location": "Rome",
@@ -36,7 +32,7 @@
     "title": "Antiquities of the Jews by Josephus",
     "description": "Written by the Jewish historian Josephus, this work provides an invaluable historical account of Jewish history, including references to events and figures from the New Testament, such as John the Baptist and Jesus. Josephus' writings help date the Gospel accounts and confirm the historical context of key biblical events.",
     "texts": [
-      "Antiquities of the Jews"
+      ""
     ],
     "family": "",
     "location": "Rome",
@@ -49,7 +45,7 @@
     "title": "Annals by Tacitus",
     "description": "Tacitus, a Roman historian, wrote Annals around 115 AD, which includes a reference to the execution of Jesus under Pontius Pilate during the reign of Tiberius. This Roman record provides external corroboration of the Gospel accounts and helps confirm the historical dating of Jesus' crucifixion.",
     "texts": [
-      "Annals"
+      ""
     ],
     "family": "",
     "location": "Rome",
@@ -62,7 +58,7 @@
     "title": "Letters of Pliny the Younger",
     "description": "In correspondence with Emperor Trajan, Pliny the Younger discusses the treatment of early Christians in the Roman Empire around 112 AD. His letters give insight into the spread of Christianity, early Christian worship practices, and how Roman authorities perceived and dealt with the movement.",
     "texts": [
-      "Pliny's Letters"
+      ""
     ],
     "family": "",
     "location": "Bithynia (Asia Minor)",
@@ -75,7 +71,7 @@
     "title": "Natural History by Pliny the Elder",
     "description": "Written around 79 AD, this work includes references to Jewish customs and provides background information on the Roman world during the time of early Christianity. Although not directly about the New Testament, Pliny’s work helps contextualize the cultural and geographical settings of biblical events.",
     "texts": [
-      "Natural History"
+      ""
     ],
     "family": "",
     "location": "Rome",
@@ -88,7 +84,7 @@
     "title": "The Histories by Tacitus",
     "description": "Tacitus' Histories, written in the early 2nd century, document the period of Roman history around the Great Fire of Rome in 64 AD, during which Nero blamed and persecuted Christians. This Roman source provides important external confirmation of the persecution of early Christians and events described in the Book of Acts.",
     "texts": [
-      "The Histories"
+      ""
     ],
     "family": "",
     "location": "Rome",
@@ -101,7 +97,7 @@
     "title": "Dialogue with Trypho by Justin Martyr",
     "description": "Written around 160 AD, this work by the Christian apologist Justin Martyr debates with a Jewish interlocutor about the messianic prophecies in the Hebrew Bible and their fulfillment in Jesus. This text highlights how early Christians interpreted the Old Testament and helps date the development of Christian theology.",
     "texts": [
-      "Dialogue with Trypho"
+      ""
     ],
     "family": "",
     "location": "Rome",
@@ -114,7 +110,7 @@
     "title": "Lives of the Caesars by Suetonius",
     "description": "Suetonius, a Roman historian, references early Christians in his account of the reign of Claudius, mentioning disturbances caused by followers of \"Chrestus\" (likely Christ). This work provides an external account of the early Christian community in Rome during the 1st century.",
     "texts": [
-      "Lives of the Caesars"
+      ""
     ],
     "family": "",
     "location": "Rome",
@@ -127,7 +123,7 @@
     "title": "Philo of Alexandria",
     "description": "Philo, a Hellenistic Jewish philosopher, wrote extensively about Jewish customs and theology in the early 1st century. His works provide background on Jewish thought during the time of Jesus and the early church, helping to illuminate the cultural and philosophical environment in which the New Testament was written.",
     "texts": [
-      "Works of Philo"
+      ""
     ],
     "family": "",
     "location": "Alexandria, Egypt",
@@ -140,7 +136,7 @@
     "title": "Epistle of Diognetus",
     "description": "An early Christian apologetic work, written around 130 AD, the Epistle of Diognetus defends Christianity to a pagan audience. This text sheds light on how early Christians viewed themselves in relation to Judaism and Roman society, helping to date early Christian theological development.",
     "texts": [
-      "Epistle of Diognetus"
+      ""
     ],
     "family": "",
     "location": "Rome",
@@ -153,7 +149,7 @@
     "title": "The First Apology by Justin Martyr",
     "description": "Written around 165 AD, this early Christian apology defends the faith to Roman authorities and explains early Christian beliefs and practices. It provides valuable insight into how early Christians understood the Bible and defended it against critics.",
     "texts": [
-      "First Apology"
+      ""
     ],
     "family": "",
     "location": "Rome",
