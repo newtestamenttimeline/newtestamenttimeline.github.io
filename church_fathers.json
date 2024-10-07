@@ -404,7 +404,7 @@
   },
   {
     "title": "minuscule 720",
-    "description": "",
+    "description": "description of a minuscule",
     "texts": [
       "Matthew",
       "Mark",
@@ -441,7 +441,7 @@
   },
   {
     "title": "ℓ 1043",
-    "description": "",
+    "description": "description of a lectionary",
     "texts": [
       "Matthew",
       "Mark",
@@ -464,7 +464,7 @@
     "family": "",
     "location": "",
     "y": "45",
-    "eventType": "Church_fathers",
+    "eventType": "Extrabiblical",
     "percentage": 33,
     "year": 325
   }
