@@ -8,7 +8,7 @@
     "family": "",
     "location": "Jerusalem",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 5,
     "year": 50
   },
@@ -21,7 +21,7 @@
     "family": "",
     "location": "Nicaea, in what is now İznik, Turkey",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 33,
     "year": 325
   },
@@ -34,7 +34,7 @@
     "family": "",
     "location": "Bethlehem, Judea, Israel",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 0,
     "year": 1
   },
@@ -47,7 +47,7 @@
     "family": "",
     "location": "Judea and the Jordan River",
     "y": "-15",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 3,
     "year": 28
   },
@@ -60,7 +60,7 @@
     "family": "",
     "location": "Jerusalem, Judea",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 3,
     "year": 30
   },
@@ -73,7 +73,7 @@
     "family": "",
     "location": "Outside to Damascus",
     "y": "15",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 3,
     "year": 34
   },
@@ -86,7 +86,7 @@
     "family": "",
     "location": "Rome, Italy",
     "y": "-15",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 6,
     "year": 64
   },
@@ -99,7 +99,7 @@
     "family": "",
     "location": "Jerusalem, Judea",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 7,
     "year": 70
   },
@@ -112,7 +112,7 @@
     "family": "",
     "location": "Roman Empire",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 9,
     "year": 88
   },
@@ -125,7 +125,7 @@
     "family": "",
     "location": "Roman Empire",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 31,
     "year": 313
   },
@@ -138,7 +138,7 @@
     "family": "NT Canon",
     "location": "Alexandria, Egypt",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 37,
     "year": 367
   },
@@ -151,7 +151,7 @@
     "family": "Nicene Christianity",
     "location": "Constantinople (Istanbul, Turkey)",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 38,
     "year": 381
   },
@@ -164,7 +164,7 @@
     "family": "",
     "location": "Ephesus (Turkey)",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 43,
     "year": 431
   },
@@ -177,7 +177,7 @@
     "family": "",
     "location": "Chalcedon (Turkey)",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 45,
     "year": 451
   },
@@ -190,7 +190,7 @@
     "family": "",
     "location": "Canterbury, England",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 60,
     "year": 597
   },
@@ -203,7 +203,7 @@
     "family": "",
     "location": "Medina, Arabia",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 63,
     "year": 632
   },
@@ -216,7 +216,7 @@
     "family": "",
     "location": "Whitby, England",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 66,
     "year": 664
   },
@@ -229,7 +229,7 @@
     "family": "",
     "location": "Tours, France",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 73,
     "year": 732
   },
@@ -242,7 +242,7 @@
     "family": "",
     "location": "Rome, Italy & Constantinople",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 105,
     "year": 1054
   },
@@ -255,7 +255,7 @@
     "family": "",
     "location": "Jerusalem & Europe",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 110,
     "year": 1095
   },
@@ -268,7 +268,7 @@
     "family": "",
     "location": "Rome, Italy",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 122,
     "year": 1215
   },
@@ -281,7 +281,7 @@
     "family": "",
     "location": "Rome & Avignon",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 138,
     "year": 1378
   },
@@ -294,7 +294,7 @@
     "family": "",
     "location": "Constantinople (Istanbul, Turkey)",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 145,
     "year": 1453
   },
@@ -307,7 +307,7 @@
     "family": "",
     "location": "Wittenberg, Germany",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 152,
     "year": 1517
   },
@@ -320,7 +320,7 @@
     "family": "",
     "location": "England",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 153,
     "year": 1534
   },
@@ -333,7 +333,7 @@
     "family": "",
     "location": "Trent, Italy",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 155,
     "year": 1545
   },
@@ -346,7 +346,7 @@
     "family": "",
     "location": "England",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 161,
     "year": 1611
   },
@@ -359,7 +359,7 @@
     "family": "",
     "location": "Westphalia, Germany",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 165,
     "year": 1648
   },
@@ -372,7 +372,7 @@
     "family": "",
     "location": "London, England",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 174,
     "year": 1738
   },
@@ -385,7 +385,7 @@
     "family": "",
     "location": "United States",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 179,
     "year": 1789
   },
@@ -398,7 +398,7 @@
     "family": "",
     "location": "Mainz, Germany",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 144,
     "year": 1440
   },
@@ -547,7 +547,7 @@
     "family": "",
     "location": "England, Worldwide",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 180,
     "year": 1804
   },
@@ -625,7 +625,7 @@
     "family": "",
     "location": "Constantinople (Istanbul, Turkey)",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 55,
     "year": 553
   },
@@ -638,7 +638,7 @@
     "family": "",
     "location": "Constantinople (Istanbul, Turkey)",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 68,
     "year": 680
   },
@@ -651,7 +651,7 @@
     "family": "",
     "location": "Nicaea (İznik, Turkey)",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 79,
     "year": 787
   },
@@ -664,7 +664,7 @@
     "family": "",
     "location": "Constantinople (Istanbul, Turkey)",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 87,
     "year": 869
   },
@@ -677,7 +677,7 @@
     "family": "",
     "location": "Lateran, Rome",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 112,
     "year": 1123
   },
@@ -690,7 +690,7 @@
     "family": "",
     "location": "Lateran, Rome",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 114,
     "year": 1139
   },
@@ -703,7 +703,7 @@
     "family": "",
     "location": "Lateran, Rome",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 118,
     "year": 1179
   },
@@ -716,7 +716,7 @@
     "family": "",
     "location": "Lateran, Rome",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 122,
     "year": 1215
   },
@@ -729,7 +729,7 @@
     "family": "",
     "location": "Lyon, France",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 127,
     "year": 1274
   },
@@ -742,7 +742,7 @@
     "family": "",
     "location": "Vienne, France",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 131,
     "year": 1311
   },
@@ -755,7 +755,7 @@
     "family": "",
     "location": "Constance, Germany",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 142,
     "yearRange": [
       1414,
@@ -771,7 +771,7 @@
     "family": "",
     "location": "Basel, Ferrara, Florence",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 144,
     "yearRange": [
       1431,
@@ -787,7 +787,7 @@
     "family": "",
     "location": "Trent, Italy",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 155,
     "yearRange": [
       1545,
@@ -819,7 +819,7 @@
     "family": "",
     "location": "Persia, Mesopotamia",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 43,
     "year": 431
   },
@@ -832,7 +832,7 @@
     "family": "",
     "location": "Egypt, Syria, Armenia",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 45,
     "year": 451
   },
@@ -845,7 +845,7 @@
     "family": "",
     "location": "Rome, Constantinople",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 105,
     "year": 1054
   },
@@ -858,7 +858,7 @@
     "family": "",
     "location": "Germany",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 152,
     "year": 1517
   },
@@ -871,7 +871,7 @@
     "family": "",
     "location": "Bohemia (Czech Republic)",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 142,
     "year": 1415
   },
@@ -884,7 +884,7 @@
     "family": "",
     "location": "England",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 153,
     "year": 1534
   },
@@ -897,7 +897,7 @@
     "family": "",
     "location": "Scotland",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 156,
     "year": 1560
   },
@@ -910,7 +910,7 @@
     "family": "",
     "location": "Netherlands",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 157,
     "year": 1571
   },
@@ -923,7 +923,7 @@
     "family": "",
     "location": "England, USA",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 174,
     "year": 1738
   },
@@ -936,7 +936,7 @@
     "family": "",
     "location": "USA",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 185,
     "year": 1845
   },
@@ -949,7 +949,7 @@
     "family": "",
     "location": "USA",
     "y": "",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 186,
     "year": 1860
   }
