@@ -391,4 +391,13 @@ header {
 }
 
 
+.read-more-link {
+    font-size: 12px;
+    color: #3498db;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.read-more-link:hover {
+    text-decoration: underline;
+}
 
