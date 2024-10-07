@@ -1811,5 +1811,70 @@
       525,
       575
     ]
+  },
+  {
+    "title": "Papyrus52",
+    "description": "Papyrus52 features sections of the Gospel of John, paleographically dated to the early 2nd century.",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "15",
+    "eventType": "Papyrus",
+    "percentage": 13,
+    "year": 125
+  },
+  {
+    "title": "Church Father",
+    "description": "Irenaeus of Lyons, an early church father known for his work \"Against Heresies\" written around 180 AD.",
+    "texts": [
+      "N/A"
+    ],
+    "family": "N/A",
+    "location": "Lyon, France",
+    "y": "25",
+    "eventType": "Church Father",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Minuscule 123",
+    "description": "Minuscule 123 is a Greek manuscript of the New Testament, dated to the 9th century, containing the Gospels.",
+    "texts": [
+      "N/A"
+    ],
+    "family": "Byzantine",
+    "location": "Constantinople, Turkey",
+    "y": "10",
+    "eventType": "Minuscule",
+    "percentage": 85,
+    "year": 850
+  },
+  {
+    "title": "Lectionary 1",
+    "description": "A lectionary containing readings from the New Testament, used in the liturgical context around the 11th century.",
+    "texts": [
+      "N/A"
+    ],
+    "family": "N/A",
+    "location": "N/A",
+    "y": "5",
+    "eventType": "Lectionary",
+    "percentage": 110,
+    "year": 1100
+  },
+  {
+    "title": "Pseudo-Clementine Homilies",
+    "description": "A collection of early Christian writings attributed to Clement of Rome, addressing moral and theological issues.",
+    "texts": [
+      "N/A"
+    ],
+    "family": "N/A",
+    "location": "N/A",
+    "y": "20",
+    "eventType": "Extrabiblical",
+    "percentage": 15,
+    "year": 150
   }
 ]
