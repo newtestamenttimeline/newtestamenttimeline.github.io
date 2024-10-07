@@ -137,8 +137,6 @@ async function loadMoreManuscripts() {
     console.log('Loading more manuscripts...');
     const minusculesData = await fetchAndProcessJSON('minuscules.json');
     const lectionariesData = await fetchAndProcessJSON('lectionaries.json');
-    const extrabiblicalData = await fetchAndProcessJSON('extrabiblical.json');
-    const church_fathersData = await fetchAndProcessJSON('church_fathers.json');
 
     if (minusculesData.length === 0 && lectionariesData.length === 0) {
         console.error('No data loaded from JSON files.');
