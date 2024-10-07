@@ -250,7 +250,7 @@ header {
     border-radius: 6px;
     padding: 5px;
     position: absolute;
-    z-index: 9999; /* Ensure the tooltip is above everything else */
+    z-index: 9999; /* Increased z-index to ensure the tooltip is above everything */
     bottom: 125%;
     left: 50%;
     transform: translateX(-50%);
