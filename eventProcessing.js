@@ -34,7 +34,7 @@ async function loadEvents() {
             'historical_events.json',
             'manuscripts.json',
             'uncials.json',
-            'church_fathers.json'
+            'church_fathers.json',
             'likely-authorship.json'
         ];
 
