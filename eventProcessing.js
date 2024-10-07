@@ -34,9 +34,7 @@ async function loadEvents() {
             'manuscripts.json',
             'uncials.json',
             'historical_events.json',
-            'church_fathers.json',
-            'likely-writing-date.json',
-            'extrabiblical.json'
+            'likely-writing-date.json'
         ];
 
         const eventGroups = await Promise.all(
