@@ -1,5 +1,5 @@
 
-// Function to get color for each event type
+// Function to get color for each event type!
 function getColorForEventType(eventType) {
     return eventTypeColors[eventType] || '#000'; // Default to black if no color is found
 }
