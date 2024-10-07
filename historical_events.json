@@ -411,7 +411,7 @@
     "family": "Latin Bible",
     "location": "Roman Empire",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 15,
     "yearRange": [
       100,
@@ -427,7 +427,7 @@
     "family": "Latin Bible",
     "location": "Roman Empire",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 41,
     "year": 405
   },
@@ -440,7 +440,7 @@
     "family": "Syriac Bible",
     "location": "Eastern Roman Empire, Syria",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 23,
     "yearRange": [
       200,
@@ -456,7 +456,7 @@
     "family": "Armenian Bible",
     "location": "Armenia",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 40,
     "year": 400
   },
@@ -469,7 +469,7 @@
     "family": "Coptic Bible",
     "location": "Egypt",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 45,
     "year": 450
   },
@@ -482,7 +482,7 @@
     "family": "Slavonic Bible",
     "location": "Moravia, Slavic Lands",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 80,
     "year": 800
   },
@@ -495,7 +495,7 @@
     "family": "English Bible",
     "location": "England",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 138,
     "year": 1382
   },
@@ -508,7 +508,7 @@
     "family": "English Bible",
     "location": "England",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 153,
     "year": 1526
   },
@@ -521,7 +521,7 @@
     "family": "English Bible",
     "location": "Geneva, Switzerland",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 155,
     "year": 1553
   },
@@ -534,7 +534,7 @@
     "family": "English Bible",
     "location": "England",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 161,
     "year": 1611
   },
@@ -560,7 +560,7 @@
     "family": "Latter-day Saint Scripture",
     "location": "New York, USA",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 183,
     "year": 1830
   },
@@ -573,7 +573,7 @@
     "family": "English Bible",
     "location": "England, USA",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 189,
     "year": 1885
   },
@@ -586,7 +586,7 @@
     "family": "English Bible",
     "location": "USA",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 195,
     "year": 1946
   },
@@ -599,7 +599,7 @@
     "family": "English Bible",
     "location": "USA, UK",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 198,
     "year": 1978
   },
@@ -612,7 +612,7 @@
     "family": "English Bible",
     "location": "France, UK",
     "y": "",
-    "eventType": "textual",
+    "eventType": "Historical",
     "percentage": 199,
     "year": 1985
   },
