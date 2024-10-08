@@ -1,31 +1,5 @@
 [
   {
-    "title": "Council of Jerusalem",
-    "description": "The Council of Jerusalem was a conference of the Christian Apostles that decreed that Gentile Christians did not have to observe Mosaic Law.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Jerusalem",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 5,
-    "year": 50
-  },
-  {
-    "title": "Council of Nicea",
-    "description": "The Council of Nicea was ecumenical council of almost all Christian churches.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Nicaea, in what is now İznik, Turkey",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 33,
-    "year": 325
-  },
-  {
     "title": "Birth of Jesus of Nazareth",
     "description": "The birth of Jesus of Nazareth, who is later recognized as the central figure of Christianity. Although this is the event from which the modern calendar is counted, the exact year is somewhat debated, and likely it happened 3-5 BCE.",
     "texts": [
@@ -33,8 +7,8 @@
     ],
     "family": "",
     "location": "Bethlehem, Judea, Israel",
-    "y": "",
-    "eventType": "historical",
+    "y": "0",
+    "eventType": "Historical",
     "percentage": 0,
     "year": 1
   },
@@ -47,7 +21,7 @@
     "family": "",
     "location": "Judea and the Jordan River",
     "y": "-15",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 3,
     "year": 28
   },
@@ -59,8 +33,8 @@
     ],
     "family": "",
     "location": "Jerusalem, Judea",
-    "y": "",
-    "eventType": "historical",
+    "y": "0",
+    "eventType": "Historical",
     "percentage": 3,
     "year": 30
   },
@@ -73,9 +47,22 @@
     "family": "",
     "location": "Outside to Damascus",
     "y": "15",
-    "eventType": "historical",
+    "eventType": "Historical",
     "percentage": 3,
     "year": 34
+  },
+  {
+    "title": "Council of Jerusalem",
+    "description": "The Council of Jerusalem was a conference of the Christian Apostles that decreed that Gentile Christians did not have to observe Mosaic Law.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Jerusalem",
+    "y": "0",
+    "eventType": "Historical",
+    "percentage": 5,
+    "year": 50
   },
   {
     "title": "Great Fire of Rome",
@@ -85,8 +72,8 @@
     ],
     "family": "",
     "location": "Rome, Italy",
-    "y": "-15",
-    "eventType": "historical",
+    "y": "-60",
+    "eventType": "Historical",
     "percentage": 6,
     "year": 64
   },
@@ -98,8 +85,8 @@
     ],
     "family": "",
     "location": "Jerusalem, Judea",
-    "y": "",
-    "eventType": "historical",
+    "y": "-60",
+    "eventType": "Historical",
     "percentage": 7,
     "year": 70
   },
@@ -111,10 +98,42 @@
     ],
     "family": "",
     "location": "Roman Empire",
-    "y": "",
-    "eventType": "historical",
+    "y": "-30",
+    "eventType": "Historical",
     "percentage": 9,
     "year": 88
+  },
+  {
+    "title": "Old Latin (Vetus Latina) Translation",
+    "description": "The earliest Latin Translation of the Bible, the Vetus Latina, was created in the 2nd century. It was used before the creation of the Vulgate.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "Roman Empire",
+    "y": "30",
+    "eventType": "Historical",
+    "percentage": 15,
+    "yearRange": [
+      100,
+      200
+    ]
+  },
+  {
+    "title": "Syriac Peshitta",
+    "description": "The Peshitta is an early Syriac Translation of the Bible. It became the standard version for Syriac-speaking Christians in the Eastern Churches and is considered one of the oldest Bible Translations.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "Eastern Roman Empire, Syria",
+    "y": "-30",
+    "eventType": "Historical",
+    "percentage": 23,
+    "yearRange": [
+      200,
+      250
+    ]
   },
   {
     "title": "Edict of Milan",
@@ -124,10 +143,23 @@
     ],
     "family": "",
     "location": "Roman Empire",
-    "y": "",
-    "eventType": "historical",
+    "y": "0",
+    "eventType": "Historical",
     "percentage": 31,
     "year": 313
+  },
+  {
+    "title": "Council of Nicea",
+    "description": "The Council of Nicea was ecumenical council of almost all Christian churches.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Nicaea, in what is now İznik, Turkey",
+    "y": "45",
+    "eventType": "Historical",
+    "percentage": 33,
+    "year": 325
   },
   {
     "title": "Easter Letter of Athanasius",
@@ -137,8 +169,8 @@
     ],
     "family": "",
     "location": "Alexandria, Egypt",
-    "y": "",
-    "eventType": "historical",
+    "y": "15",
+    "eventType": "Historical",
     "percentage": 37,
     "year": 367
   },
@@ -150,10 +182,36 @@
     ],
     "family": "",
     "location": "Constantinople (Istanbul, Turkey)",
-    "y": "",
-    "eventType": "historical",
+    "y": "-15",
+    "eventType": "Historical",
     "percentage": 38,
     "year": 381
+  },
+  {
+    "title": "Armenian Bible",
+    "description": "The Armenian Translation of the Bible, known as the Mesropian Bible, was completed by Mesrop Mashtots and his students. It is one of the earliest Translations into a national language.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "Armenia",
+    "y": "90",
+    "eventType": "Historical",
+    "percentage": 40,
+    "year": 400
+  },
+  {
+    "title": "Vulgate Translation",
+    "description": "St. Jerome completed the Latin Vulgate Translation, commissioned by Pope Damasus I. This Translation became the official Bible of the Roman Catholic Church for centuries.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "Roman Empire",
+    "y": "-90",
+    "eventType": "Historical",
+    "percentage": 41,
+    "year": 405
   },
   {
     "title": "Council of Ephesus",
@@ -163,10 +221,36 @@
     ],
     "family": "",
     "location": "Ephesus (Turkey)",
-    "y": "",
-    "eventType": "historical",
+    "y": "30",
+    "eventType": "Historical",
     "percentage": 43,
     "year": 431
+  },
+  {
+    "title": "Nestorian Schism",
+    "description": "The Nestorian Schism followed the Council of Ephesus, with Nestorian Christians rejecting the council's ruling on the nature of Christ. This led to the formation of the Church of the East, which thrived primarily in Persia and Asia.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Persia, Mesopotamia",
+    "y": "-30",
+    "eventType": "Historical",
+    "percentage": 43,
+    "year": 431
+  },
+  {
+    "title": "Coptic Bible",
+    "description": "The Bible was translated into Coptic, the language of early Egyptian Christians. This Translation became foundational for the Coptic Orthodox Church.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "Egypt",
+    "y": "-60",
+    "eventType": "Historical",
+    "percentage": 45,
+    "year": 450
   },
   {
     "title": "Council of Chalcedon",
@@ -176,10 +260,36 @@
     ],
     "family": "",
     "location": "Chalcedon (Turkey)",
-    "y": "",
-    "eventType": "historical",
+    "y": "75",
+    "eventType": "Historical",
     "percentage": 45,
     "year": 451
+  },
+  {
+    "title": "Oriental Orthodox Schism",
+    "description": "The Oriental Orthodox Churches broke away after rejecting the Council of Chalcedon’s definition of Christ's dual nature. This schism created churches such as the Coptic Orthodox, Syriac Orthodox, and Armenian Apostolic Churches.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Egypt, Syria, Armenia",
+    "y": "-75",
+    "eventType": "Historical",
+    "percentage": 45,
+    "year": 451
+  },
+  {
+    "title": "Second Council of Constantinople",
+    "description": "This council was convened to resolve ongoing Christological debates and condemned certain writings associated with Nestorianism. It reaffirmed the decisions of the Council of Chalcedon and sought to clarify the nature of Christ.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Constantinople (Istanbul, Turkey)",
+    "y": "0",
+    "eventType": "Historical",
+    "percentage": 55,
+    "year": 553
   },
   {
     "title": "Christianization of England",
@@ -189,8 +299,8 @@
     ],
     "family": "",
     "location": "Canterbury, England",
-    "y": "",
-    "eventType": "historical",
+    "y": "-15",
+    "eventType": "Historical",
     "percentage": 60,
     "year": 597
   },
@@ -202,8 +312,8 @@
     ],
     "family": "",
     "location": "Medina, Arabia",
-    "y": "",
-    "eventType": "historical",
+    "y": "-15",
+    "eventType": "Historical",
     "percentage": 63,
     "year": 632
   },
@@ -215,10 +325,23 @@
     ],
     "family": "",
     "location": "Whitby, England",
-    "y": "",
-    "eventType": "historical",
+    "y": "75",
+    "eventType": "Historical",
     "percentage": 66,
     "year": 664
+  },
+  {
+    "title": "Third Council of Constantinople",
+    "description": "The third council at Constantinople addressed the heresy of Monothelitism, which taught that Christ had only one will. The council condemned this teaching and affirmed that Christ had both a divine will and a human will.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Constantinople (Istanbul, Turkey)",
+    "y": "-15",
+    "eventType": "Historical",
+    "percentage": 68,
+    "year": 680
   },
   {
     "title": "Battle of Tours",
@@ -228,10 +351,49 @@
     ],
     "family": "",
     "location": "Tours, France",
-    "y": "",
-    "eventType": "historical",
+    "y": "0",
+    "eventType": "Historical",
     "percentage": 73,
     "year": 732
+  },
+  {
+    "title": "Second Council of Nicaea",
+    "description": "The Second Council of Nicaea was called to address the issue of iconoclasm, which was the rejection and destruction of religious images. The council affirmed the veneration of icons, declaring it permissible but distinct from worship.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Nicaea (İznik, Turkey)",
+    "y": "15",
+    "eventType": "Historical",
+    "percentage": 79,
+    "year": 787
+  },
+  {
+    "title": "Slavic Bible",
+    "description": "The Bible was translated into Old Church Slavonic by Saints Cyril and Methodius, marking the beginning of Christian literature in the Slavic languages.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "Moravia, Slavic Lands",
+    "y": "15",
+    "eventType": "Historical",
+    "percentage": 80,
+    "year": 800
+  },
+  {
+    "title": "Fourth Council of Constantinople",
+    "description": "This council was primarily concerned with the Photian schism, a dispute between Eastern and Western Christianity regarding the legitimacy of the Patriarch of Constantinople, Photius. It was the last council recognized by both the East and West before the Great Schism.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Constantinople (Istanbul, Turkey)",
+    "y": "25",
+    "eventType": "Historical",
+    "percentage": 87,
+    "year": 869
   },
   {
     "title": "The Great Schism",
@@ -241,8 +403,21 @@
     ],
     "family": "",
     "location": "Rome, Italy & Constantinople",
-    "y": "",
-    "eventType": "historical",
+    "y": "15",
+    "eventType": "Historical",
+    "percentage": 105,
+    "year": 1054
+  },
+  {
+    "title": "The Great Schism",
+    "description": "The formal division between the Roman Catholic Church and the Eastern Orthodox Church occurred over theological and ecclesiastical disputes, particularly papal authority and the filioque clause. The mutual excommunication solidified the split.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Rome, Constantinople",
+    "y": "15",
+    "eventType": "Historical",
     "percentage": 105,
     "year": 1054
   },
@@ -254,406 +429,10 @@
     ],
     "family": "",
     "location": "Jerusalem & Europe",
-    "y": "",
-    "eventType": "historical",
+    "y": "-195",
+    "eventType": "Historical",
     "percentage": 110,
     "year": 1095
-  },
-  {
-    "title": "Fourth Lateran Council",
-    "description": "The council formalized several important doctrines, including the definition of transubstantiation in the Eucharist and the requirement for annual confession.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Rome, Italy",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 122,
-    "year": 1215
-  },
-  {
-    "title": "The Western Schism",
-    "description": "The Western Schism saw multiple claimants to the papacy, dividing Europe and weakening the authority of the Roman Church. It lasted until the Council of Constance (1417).",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Rome & Avignon",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 138,
-    "year": 1378
-  },
-  {
-    "title": "Fall of Constantinople",
-    "description": "The fall of Constantinople to the Ottoman Empire marked the end of the Byzantine Empire, a major center of Eastern Christianity. It also led to the migration of scholars and texts to the West, contributing to the Renaissance.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Constantinople (Istanbul, Turkey)",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 145,
-    "year": 1453
-  },
-  {
-    "title": "Martin Luther's 95 Theses",
-    "description": "Martin Luther nailed his 95 Theses to the door of the church in Wittenberg, sparking the Protestant Reformation and leading to a major schism within Western Christianity.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Wittenberg, Germany",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 152,
-    "year": 1517
-  },
-  {
-    "title": "Formation of the Church of England",
-    "description": "King Henry VIII declared himself the head of the Church of England, breaking away from the Roman Catholic Church in what is known as the English Reformation.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "England",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 153,
-    "year": 1534
-  },
-  {
-    "title": "Council of Trent",
-    "description": "The Council of Trent was the Roman Catholic Church's response to the Protestant Reformation. It clarified Catholic doctrine and initiated significant reforms in the Church.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Trent, Italy",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 155,
-    "year": 1545
-  },
-  {
-    "title": "King James Bible Published",
-    "description": "The publication of the King James Version of the Bible, commissioned by King James I of England, had a profound impact on the English-speaking world and remains one of the most widely read versions of the Bible.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "England",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 161,
-    "year": 1611
-  },
-  {
-    "title": "Peace of Westphalia",
-    "description": "The Peace of Westphalia ended the Thirty Years' War and marked the beginning of a new order in Europe, with a greater tolerance for Protestantism and a shift away from religiously motivated conflict.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Westphalia, Germany",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 165,
-    "year": 1648
-  },
-  {
-    "title": "John Wesley's Aldersgate Experience",
-    "description": "John Wesley, the founder of Methodism, had a profound spiritual experience at a meeting on Aldersgate Street in London, leading to the Methodist revival within Anglicanism.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "London, England",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 174,
-    "year": 1738
-  },
-  {
-    "title": "Establishment of the Protestant Episcopal Church",
-    "description": "Following the American Revolution, the Protestant Episcopal Church (the American branch of Anglicanism) was formally established, marking the development of a uniquely American form of Anglicanism.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "United States",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 179,
-    "year": 1789
-  },
-  {
-    "title": "Invention of the Printing Press",
-    "description": "Johannes Gutenberg invented the movable type printing press in Mainz, Germany. This revolutionized the production of books, including the Bible, making them more accessible and leading to the spread of literacy and the Reformation. The Gutenberg Bible (1455) was the first major book printed with movable type, dramatically increasing the dissemination of biblical texts and theological ideas.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "Mainz, Germany",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 144,
-    "year": 1440
-  },
-  {
-    "title": "Old Latin (Vetus Latina) Translation",
-    "description": "The earliest Latin Translation of the Bible, the Vetus Latina, was created in the 2nd century. It was used before the creation of the Vulgate.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "Roman Empire",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 15,
-    "yearRange": [
-      100,
-      200
-    ]
-  },
-  {
-    "title": "Vulgate Translation",
-    "description": "St. Jerome completed the Latin Vulgate Translation, commissioned by Pope Damasus I. This Translation became the official Bible of the Roman Catholic Church for centuries.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "Roman Empire",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 41,
-    "year": 405
-  },
-  {
-    "title": "Syriac Peshitta",
-    "description": "The Peshitta is an early Syriac Translation of the Bible. It became the standard version for Syriac-speaking Christians in the Eastern Churches and is considered one of the oldest Bible Translations.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "Eastern Roman Empire, Syria",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 23,
-    "yearRange": [
-      200,
-      250
-    ]
-  },
-  {
-    "title": "Armenian Bible",
-    "description": "The Armenian Translation of the Bible, known as the Mesropian Bible, was completed by Mesrop Mashtots and his students. It is one of the earliest Translations into a national language.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "Armenia",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Coptic Bible",
-    "description": "The Bible was translated into Coptic, the language of early Egyptian Christians. This Translation became foundational for the Coptic Orthodox Church.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "Egypt",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 45,
-    "year": 450
-  },
-  {
-    "title": "Slavic Bible",
-    "description": "The Bible was translated into Old Church Slavonic by Saints Cyril and Methodius, marking the beginning of Christian literature in the Slavic languages.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "Moravia, Slavic Lands",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 80,
-    "year": 800
-  },
-  {
-    "title": "Wycliffe Bible",
-    "description": "John Wycliffe completed the first English Translation of the Bible from the Latin Vulgate. This Translation was considered controversial and was condemned by church authorities.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "England",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 138,
-    "year": 1382
-  },
-  {
-    "title": "Tyndale Bible",
-    "description": "William Tyndale produced the first English Bible translated directly from Hebrew and Greek texts. Tyndale's work had a profound influence on subsequent English Translations, including the King James Version. He was executed for his efforts.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "England",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 153,
-    "year": 1526
-  },
-  {
-    "title": "Geneva Bible",
-    "description": "The Geneva Bible was an English Translation created by Protestant exiles in Geneva. It became highly influential among English-speaking Protestants and was the Bible used by early American settlers, including the Pilgrims.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "Geneva, Switzerland",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 155,
-    "year": 1553
-  },
-  {
-    "title": "King James Bible",
-    "description": "The King James Version (KJV), commissioned by King James I of England, became one of the most significant English Translations of the Bible. It was a revision of earlier Translations and influenced English-speaking Christianity for centuries.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "England",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 161,
-    "year": 1611
-  },
-  {
-    "title": "British and Foreign Bible Society",
-    "description": "The founding of the British and Foreign Bible Society aimed to distribute the Bible in vernacular languages worldwide. This organization supported modern Translations into various languages, marking a global effort to make the Bible more accessible.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "England, Worldwide",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 180,
-    "year": 1804
-  },
-  {
-    "title": "Revised Version",
-    "description": "The Revised Version was the first official revision of the King James Bible. It involved scholars from both Britain and the United States and aimed to correct Translation errors based on older Hebrew and Greek manuscripts.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "England, USA",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 189,
-    "year": 1885
-  },
-  {
-    "title": "Revised Standard Version (RSV)",
-    "description": "The RSV was a revision of the American Standard Version and aimed to provide a modern English Translation based on older manuscripts, including the Dead Sea Scrolls. It became widely used in both Protestant and Catholic churches.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "USA",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 195,
-    "year": 1946
-  },
-  {
-    "title": "New International Version (NIV)",
-    "description": "The NIV is a modern English Translation created by an international team of evangelical scholars. It has become one of the most popular modern Translations, balancing readability and accuracy.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "USA, UK",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 198,
-    "year": 1978
-  },
-  {
-    "title": "New Jerusalem Bible",
-    "description": "The New Jerusalem Bible is an English Translation that includes scholarly notes and is based on the French Jerusalem Bible. It is widely used in Catholic circles.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "France, UK",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 199,
-    "year": 1985
-  },
-  {
-    "title": "Second Council of Constantinople",
-    "description": "This council was convened to resolve ongoing Christological debates and condemned certain writings associated with Nestorianism. It reaffirmed the decisions of the Council of Chalcedon and sought to clarify the nature of Christ.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Constantinople (Istanbul, Turkey)",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 55,
-    "year": 553
-  },
-  {
-    "title": "Third Council of Constantinople",
-    "description": "The third council at Constantinople addressed the heresy of Monothelitism, which taught that Christ had only one will. The council condemned this teaching and affirmed that Christ had both a divine will and a human will.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Constantinople (Istanbul, Turkey)",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 68,
-    "year": 680
-  },
-  {
-    "title": "Second Council of Nicaea",
-    "description": "The Second Council of Nicaea was called to address the issue of iconoclasm, which was the rejection and destruction of religious images. The council affirmed the veneration of icons, declaring it permissible but distinct from worship.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Nicaea (İznik, Turkey)",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 79,
-    "year": 787
-  },
-  {
-    "title": "Fourth Council of Constantinople",
-    "description": "This council was primarily concerned with the Photian schism, a dispute between Eastern and Western Christianity regarding the legitimacy of the Patriarch of Constantinople, Photius. It was the last council recognized by both the East and West before the Great Schism.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Constantinople (Istanbul, Turkey)",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 87,
-    "year": 869
   },
   {
     "title": "First Lateran Council",
@@ -663,8 +442,8 @@
     ],
     "family": "",
     "location": "Lateran, Rome",
-    "y": "",
-    "eventType": "historical",
+    "y": "-75",
+    "eventType": "Historical",
     "percentage": 112,
     "year": 1123
   },
@@ -676,8 +455,8 @@
     ],
     "family": "",
     "location": "Lateran, Rome",
-    "y": "",
-    "eventType": "historical",
+    "y": "165",
+    "eventType": "Historical",
     "percentage": 114,
     "year": 1139
   },
@@ -689,10 +468,23 @@
     ],
     "family": "",
     "location": "Lateran, Rome",
-    "y": "",
-    "eventType": "historical",
+    "y": "120",
+    "eventType": "Historical",
     "percentage": 118,
     "year": 1179
+  },
+  {
+    "title": "Fourth Lateran Council",
+    "description": "The council formalized several important doctrines, including the definition of transubstantiation in the Eucharist and the requirement for annual confession.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Rome, Italy",
+    "y": "15",
+    "eventType": "Historical",
+    "percentage": 122,
+    "year": 1215
   },
   {
     "title": "Fourth Lateran Council",
@@ -702,8 +494,8 @@
     ],
     "family": "",
     "location": "Lateran, Rome",
-    "y": "",
-    "eventType": "historical",
+    "y": "-15",
+    "eventType": "Historical",
     "percentage": 122,
     "year": 1215
   },
@@ -715,8 +507,8 @@
     ],
     "family": "",
     "location": "Lyon, France",
-    "y": "",
-    "eventType": "historical",
+    "y": "150",
+    "eventType": "Historical",
     "percentage": 127,
     "year": 1274
   },
@@ -728,126 +520,36 @@
     ],
     "family": "",
     "location": "Vienne, France",
-    "y": "",
-    "eventType": "historical",
+    "y": "540",
+    "eventType": "Historical",
     "percentage": 131,
     "year": 1311
   },
   {
-    "title": "Council of Constance",
-    "description": "The Council of Constance resolved the Western Schism, in which multiple claimants to the papacy existed. It also condemned and executed the Czech reformer Jan Hus for heresy. The council ended with the election of Pope Martin V, restoring unity in the Church.",
+    "title": "The Western Schism",
+    "description": "The Western Schism saw multiple claimants to the papacy, dividing Europe and weakening the authority of the Roman Church. It lasted until the Council of Constance (1417).",
     "texts": [
       ""
     ],
     "family": "",
-    "location": "Constance, Germany",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 142,
-    "yearRange": [
-      1414,
-      1418
-    ]
+    "location": "Rome & Avignon",
+    "y": "-225",
+    "eventType": "Historical",
+    "percentage": 138,
+    "year": 1378
   },
   {
-    "title": "Council of Basel/Ferrara/Florence",
-    "description": "Initially convened to reform the Church and address various heresies, the council moved from Basel to Ferrara and finally Florence. It attempted to reconcile the Eastern Orthodox and Roman Catholic Churches, though the reunion was short-lived.",
+    "title": "Wycliffe Bible",
+    "description": "John Wycliffe completed the first English Translation of the Bible from the Latin Vulgate. This Translation was considered controversial and was condemned by church authorities.",
     "texts": [
-      ""
+      "Translation"
     ],
     "family": "",
-    "location": "Basel, Ferrara, Florence",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 144,
-    "yearRange": [
-      1431,
-      1449
-    ]
-  },
-  {
-    "title": "Council of Trent",
-    "description": "The Council of Trent was the Roman Catholic Church’s response to the Protestant Reformation. It clarified Catholic doctrine on issues such as the sacraments, salvation, and the authority of the pope, and initiated significant reforms.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Trent, Italy",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 155,
-    "yearRange": [
-      1545,
-      1563
-    ]
-  },
-  {
-    "title": "First Vatican Council",
-    "description": "Convened by Pope Pius IX, this council is most notable for its declaration of papal infallibility, which states that the pope is infallible when pronouncing ex cathedra on matters of faith and morals. The council also addressed issues of modernity and secularism.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Vatican City, Rome",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 187,
-    "yearRange": [
-      1869,
-      1870
-    ]
-  },
-  {
-    "title": "Nestorian Schism",
-    "description": "The Nestorian Schism followed the Council of Ephesus, with Nestorian Christians rejecting the council's ruling on the nature of Christ. This led to the formation of the Church of the East, which thrived primarily in Persia and Asia.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Persia, Mesopotamia",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 43,
-    "year": 431
-  },
-  {
-    "title": "Oriental Orthodox Schism",
-    "description": "The Oriental Orthodox Churches broke away after rejecting the Council of Chalcedon’s definition of Christ's dual nature. This schism created churches such as the Coptic Orthodox, Syriac Orthodox, and Armenian Apostolic Churches.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Egypt, Syria, Armenia",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 45,
-    "year": 451
-  },
-  {
-    "title": "The Great Schism",
-    "description": "The formal division between the Roman Catholic Church and the Eastern Orthodox Church occurred over theological and ecclesiastical disputes, particularly papal authority and the filioque clause. The mutual excommunication solidified the split.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Rome, Constantinople",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 105,
-    "year": 1054
-  },
-  {
-    "title": "Protestant/Lutheran Reformation",
-    "description": "Martin Luther’s posting of the 95 Theses in Wittenberg sparked the Protestant Reformation, protesting against abuses in the Roman Catholic Church, including the sale of indulgences. It led to the creation of Lutheranism and the broader Protestant movement.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Germany",
-    "y": "",
-    "eventType": "historical",
-    "percentage": 152,
-    "year": 1517
+    "location": "England",
+    "y": "-255",
+    "eventType": "Historical",
+    "percentage": 138,
+    "year": 1382
   },
   {
     "title": "Pre-Reformation (Jan Hus)",
@@ -857,10 +559,120 @@
     ],
     "family": "",
     "location": "Bohemia (Czech Republic)",
-    "y": "",
-    "eventType": "historical",
+    "y": "-375",
+    "eventType": "Historical",
     "percentage": 142,
     "year": 1415
+  },
+  {
+    "title": "Council of Constance",
+    "description": "The Council of Constance resolved the Western Schism, in which multiple claimants to the papacy existed. It also condemned and executed the Czech reformer Jan Hus for heresy. The council ended with the election of Pope Martin V, restoring unity in the Church.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Constance, Germany",
+    "y": "-390",
+    "eventType": "Historical",
+    "percentage": 142,
+    "yearRange": [
+      1414,
+      1418
+    ]
+  },
+  {
+    "title": "Invention of the Printing Press",
+    "description": "Johannes Gutenberg invented the movable type printing press in Mainz, Germany. This revolutionized the production of books, including the Bible, making them more accessible and leading to the spread of literacy and the Reformation. The Gutenberg Bible (1455) was the first major book printed with movable type, dramatically increasing the dissemination of biblical texts and theological ideas.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "Mainz, Germany",
+    "y": "-510",
+    "eventType": "Historical",
+    "percentage": 144,
+    "year": 1440
+  },
+  {
+    "title": "Council of Basel/Ferrara/Florence",
+    "description": "Initially convened to reform the Church and address various heresies, the council moved from Basel to Ferrara and finally Florence. It attempted to reconcile the Eastern Orthodox and Roman Catholic Churches, though the reunion was short-lived.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Basel, Ferrara, Florence",
+    "y": "525",
+    "eventType": "Historical",
+    "percentage": 144,
+    "yearRange": [
+      1431,
+      1449
+    ]
+  },
+  {
+    "title": "Fall of Constantinople",
+    "description": "The fall of Constantinople to the Ottoman Empire marked the end of the Byzantine Empire, a major center of Eastern Christianity. It also led to the migration of scholars and texts to the West, contributing to the Renaissance.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Constantinople (Istanbul, Turkey)",
+    "y": "30",
+    "eventType": "Historical",
+    "percentage": 145,
+    "year": 1453
+  },
+  {
+    "title": "Martin Luther's 95 Theses",
+    "description": "Martin Luther nailed his 95 Theses to the door of the church in Wittenberg, sparking the Protestant Reformation and leading to a major schism within Western Christianity.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Wittenberg, Germany",
+    "y": "285",
+    "eventType": "Historical",
+    "percentage": 152,
+    "year": 1517
+  },
+  {
+    "title": "Protestant/Lutheran Reformation",
+    "description": "Martin Luther’s posting of the 95 Theses in Wittenberg sparked the Protestant Reformation, protesting against abuses in the Roman Catholic Church, including the sale of indulgences. It led to the creation of Lutheranism and the broader Protestant movement.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Germany",
+    "y": "-285",
+    "eventType": "Historical",
+    "percentage": 152,
+    "year": 1517
+  },
+  {
+    "title": "Tyndale Bible",
+    "description": "William Tyndale produced the first English Bible translated directly from Hebrew and Greek texts. Tyndale's work had a profound influence on subsequent English Translations, including the King James Version. He was executed for his efforts.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "England",
+    "y": "390",
+    "eventType": "Historical",
+    "percentage": 153,
+    "year": 1526
+  },
+  {
+    "title": "Formation of the Church of England",
+    "description": "King Henry VIII declared himself the head of the Church of England, breaking away from the Roman Catholic Church in what is known as the English Reformation.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "England",
+    "y": "-435",
+    "eventType": "Historical",
+    "percentage": 153,
+    "year": 1534
   },
   {
     "title": "English Reformation",
@@ -870,10 +682,52 @@
     ],
     "family": "",
     "location": "England",
-    "y": "",
-    "eventType": "historical",
+    "y": "450",
+    "eventType": "Historical",
     "percentage": 153,
     "year": 1534
+  },
+  {
+    "title": "Council of Trent",
+    "description": "The Council of Trent was the Roman Catholic Church's response to the Protestant Reformation. It clarified Catholic doctrine and initiated significant reforms in the Church.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Trent, Italy",
+    "y": "-570",
+    "eventType": "Historical",
+    "percentage": 155,
+    "year": 1545
+  },
+  {
+    "title": "Geneva Bible",
+    "description": "The Geneva Bible was an English Translation created by Protestant exiles in Geneva. It became highly influential among English-speaking Protestants and was the Bible used by early American settlers, including the Pilgrims.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "Geneva, Switzerland",
+    "y": "-1035",
+    "eventType": "Historical",
+    "percentage": 155,
+    "year": 1553
+  },
+  {
+    "title": "Council of Trent",
+    "description": "The Council of Trent was the Roman Catholic Church’s response to the Protestant Reformation. It clarified Catholic doctrine on issues such as the sacraments, salvation, and the authority of the pope, and initiated significant reforms.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Trent, Italy",
+    "y": "-1050",
+    "eventType": "Historical",
+    "percentage": 155,
+    "yearRange": [
+      1545,
+      1563
+    ]
   },
   {
     "title": "Scottish Reformation",
@@ -883,8 +737,8 @@
     ],
     "family": "",
     "location": "Scotland",
-    "y": "",
-    "eventType": "historical",
+    "y": "0",
+    "eventType": "Historical",
     "percentage": 156,
     "year": 1560
   },
@@ -896,10 +750,62 @@
     ],
     "family": "",
     "location": "Netherlands",
-    "y": "",
-    "eventType": "historical",
+    "y": "90",
+    "eventType": "Historical",
     "percentage": 157,
     "year": 1571
+  },
+  {
+    "title": "King James Bible Published",
+    "description": "The publication of the King James Version of the Bible, commissioned by King James I of England, had a profound impact on the English-speaking world and remains one of the most widely read versions of the Bible.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "England",
+    "y": "285",
+    "eventType": "Historical",
+    "percentage": 161,
+    "year": 1611
+  },
+  {
+    "title": "King James Bible",
+    "description": "The King James Version (KJV), commissioned by King James I of England, became one of the most significant English Translations of the Bible. It was a revision of earlier Translations and influenced English-speaking Christianity for centuries.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "England",
+    "y": "-285",
+    "eventType": "Historical",
+    "percentage": 161,
+    "year": 1611
+  },
+  {
+    "title": "Peace of Westphalia",
+    "description": "The Peace of Westphalia ended the Thirty Years' War and marked the beginning of a new order in Europe, with a greater tolerance for Protestantism and a shift away from religiously motivated conflict.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Westphalia, Germany",
+    "y": "-465",
+    "eventType": "Historical",
+    "percentage": 165,
+    "year": 1648
+  },
+  {
+    "title": "John Wesley's Aldersgate Experience",
+    "description": "John Wesley, the founder of Methodism, had a profound spiritual experience at a meeting on Aldersgate Street in London, leading to the Methodist revival within Anglicanism.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "London, England",
+    "y": "585",
+    "eventType": "Historical",
+    "percentage": 174,
+    "year": 1738
   },
   {
     "title": "Methodist Movement",
@@ -909,10 +815,36 @@
     ],
     "family": "",
     "location": "England, USA",
-    "y": "",
-    "eventType": "historical",
+    "y": "-585",
+    "eventType": "Historical",
     "percentage": 174,
     "year": 1738
+  },
+  {
+    "title": "Establishment of the Protestant Episcopal Church",
+    "description": "Following the American Revolution, the Protestant Episcopal Church (the American branch of Anglicanism) was formally established, marking the development of a uniquely American form of Anglicanism.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "United States",
+    "y": "-660",
+    "eventType": "Historical",
+    "percentage": 179,
+    "year": 1789
+  },
+  {
+    "title": "British and Foreign Bible Society",
+    "description": "The founding of the British and Foreign Bible Society aimed to distribute the Bible in vernacular languages worldwide. This organization supported modern Translations into various languages, marking a global effort to make the Bible more accessible.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "England, Worldwide",
+    "y": "690",
+    "eventType": "Historical",
+    "percentage": 180,
+    "year": 1804
   },
   {
     "title": "Southern Baptist Convention",
@@ -922,8 +854,8 @@
     ],
     "family": "",
     "location": "USA",
-    "y": "",
-    "eventType": "historical",
+    "y": "-705",
+    "eventType": "Historical",
     "percentage": 185,
     "year": 1845
   },
@@ -935,9 +867,77 @@
     ],
     "family": "",
     "location": "USA",
-    "y": "",
-    "eventType": "historical",
+    "y": "-720",
+    "eventType": "Historical",
     "percentage": 186,
     "year": 1860
+  },
+  {
+    "title": "First Vatican Council",
+    "description": "Convened by Pope Pius IX, this council is most notable for its declaration of papal infallibility, which states that the pope is infallible when pronouncing ex cathedra on matters of faith and morals. The council also addressed issues of modernity and secularism.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Vatican City, Rome",
+    "y": "735",
+    "eventType": "Historical",
+    "percentage": 187,
+    "yearRange": [
+      1869,
+      1870
+    ]
+  },
+  {
+    "title": "Revised Version",
+    "description": "The Revised Version was the first official revision of the King James Bible. It involved scholars from both Britain and the United States and aimed to correct Translation errors based on older Hebrew and Greek manuscripts.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "England, USA",
+    "y": "-735",
+    "eventType": "Historical",
+    "percentage": 189,
+    "year": 1885
+  },
+  {
+    "title": "Revised Standard Version (RSV)",
+    "description": "The RSV was a revision of the American Standard Version and aimed to provide a modern English Translation based on older manuscripts, including the Dead Sea Scrolls. It became widely used in both Protestant and Catholic churches.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "USA",
+    "y": "-750",
+    "eventType": "Historical",
+    "percentage": 195,
+    "year": 1946
+  },
+  {
+    "title": "New International Version (NIV)",
+    "description": "The NIV is a modern English Translation created by an international team of evangelical scholars. It has become one of the most popular modern Translations, balancing readability and accuracy.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "USA, UK",
+    "y": "765",
+    "eventType": "Historical",
+    "percentage": 198,
+    "year": 1978
+  },
+  {
+    "title": "New Jerusalem Bible",
+    "description": "The New Jerusalem Bible is an English Translation that includes scholarly notes and is based on the French Jerusalem Bible. It is widely used in Catholic circles.",
+    "texts": [
+      "Translation"
+    ],
+    "family": "",
+    "location": "France, UK",
+    "y": "-765",
+    "eventType": "Historical",
+    "percentage": 199,
+    "year": 1985
   }
 ]
