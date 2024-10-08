@@ -1,85 +1,16 @@
 [
   {
-    "title": "New Testament Apocrypha",
-    "description": "The New Testament Apocrypha includes a variety of writings from the 2nd and 3rd centuries AD that were not included in the canonical New Testament. These texts, such as the Gospel of Thomas, Gospel of Peter, Gospel of Mary, and Shepherd of Hermas, offer alternative perspectives on Jesus' life, teachings, and early Christian beliefs. Most of these writings are generally dated later than the canonical books, often in the mid- to late-2nd century, and are considered less reliable regarding authorship. While many are attributed to key figures like Peter, Mary Magdalene, or Barnabas, modern scholars agree that these attributions are unlikely to be authentic, as the actual authors are mostly anonymous or unknown. Unlike the canonical texts, which have earlier and more widespread manuscript support (such as the Codex Sinaiticus and Vaticanus), apocryphal texts often survive in limited manuscripts or fragmented forms, like the Gospel of Thomas from the Nag Hammadi library. These writings were rejected by early church leaders due to theological concerns, particularly their association with Gnosticism or Jewish-Christian sects, and their later dates and less secure transmission further distinguish them from the earlier, more reliably attested New Testament books.",
-    "texts": [
-      "Gnostic or so-called New testament Apocrypha texts"
-    ],
-    "family": "",
-    "location": "Egypt, Palestine, Syria, Rome",
-    "y": "",
-    "eventType": "Extrabiblical",
-    "percentage": 15,
-    "yearRange": [
-      100,
-      200
-    ]
-  },
-  {
-    "title": "Marcion's Canon",
-    "description": "Marcion of Sinope created one of the earliest known Christian canons around 140 AD. He rejected the Old Testament entirely and included only a modified version of Luke's Gospel and ten Pauline epistles, excluding the Pastoral Epistles. His canon prompted the early Church to define its own canon and highlighted the widespread acceptance of certain New Testament writings before the 2nd century.",
+    "title": "Philo of Alexandria",
+    "description": "Philo, a Hellenistic Jewish philosopher, wrote extensively about Jewish customs and theology in the early 1st century. His works provide background on Jewish thought during the time of Jesus and the early church, helping to illuminate the cultural and philosophical environment in which the New Testament was written.",
     "texts": [
       ""
     ],
     "family": "",
-    "location": "Rome",
-    "y": "",
+    "location": "Alexandria, Egypt",
+    "y": "30",
     "eventType": "Extrabiblical",
-    "percentage": 14,
-    "year": 140
-  },
-  {
-    "title": "Antiquities of the Jews by Josephus",
-    "description": "Written by the Jewish historian Josephus, this work provides an invaluable historical account of Jewish history, including references to events and figures from the New Testament, such as John the Baptist and Jesus. Josephus' writings help date the Gospel accounts and confirm the historical context of key biblical events.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Rome",
-    "y": "",
-    "eventType": "Extrabiblical",
-    "percentage": 9,
-    "year": 93
-  },
-  {
-    "title": "Annals by Tacitus",
-    "description": "Tacitus, a Roman historian, wrote Annals around 115 AD, which includes a reference to the execution of Jesus under Pontius Pilate during the reign of Tiberius. This Roman record provides external corroboration of the Gospel accounts and helps confirm the historical dating of Jesus' crucifixion.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Rome",
-    "y": "",
-    "eventType": "Extrabiblical",
-    "percentage": 12,
-    "year": 115
-  },
-  {
-    "title": "Letters of Pliny the Younger",
-    "description": "In correspondence with Emperor Trajan, Pliny the Younger discusses the treatment of early Christians in the Roman Empire around 112 AD. His letters give insight into the spread of Christianity, early Christian worship practices, and how Roman authorities perceived and dealt with the movement. In this letter, Pliny the Younger, the governor of Bithynia, seeks guidance from Emperor Trajan on how to handle Christians in his province. He describes their practices, noting their willingness to die for their faith and the growing presence of Christianity in the Roman Empire. This correspondence offers important insights into the early Roman perception of Christians and the legal challenges they faced.",
-
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Bithynia (Asia Minor)",
-    "y": "",
-    "eventType": "Extrabiblical",
-    "percentage": 11,
-    "year": 112
-  },
-  {
-    "title": "Natural History by Pliny the Elder",
-    "description": "Written around 79 AD, this work includes references to Jewish customs and provides background information on the Roman world during the time of early Christianity. Although not directly about the New Testament, Pliny’s work helps contextualize the cultural and geographical settings of biblical events.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Rome",
-    "y": "",
-    "eventType": "Extrabiblical",
-    "percentage": 8,
-    "year": 79
+    "percentage": 4,
+    "year": 40
   },
   {
     "title": "The Histories by Tacitus",
@@ -89,23 +20,36 @@
     ],
     "family": "",
     "location": "Rome",
-    "y": "",
+    "y": "15",
     "eventType": "Extrabiblical",
     "percentage": 6,
     "year": 64
   },
   {
-    "title": "Dialogue with Trypho by Justin Martyr",
-    "description": "Written around 160 AD, this work by the Christian apologist Justin Martyr debates with a Jewish interlocutor about the messianic prophecies in the Hebrew Bible and their fulfillment in Jesus. This text highlights how early Christians interpreted the Old Testament and helps date the development of Christian theology.",
+    "title": "Natural History by Pliny the Elder",
+    "description": "Written around 79 AD, this work includes references to Jewish customs and provides background information on the Roman world during the time of early Christianity. Although not directly about the New Testament, Pliny’s work helps contextualize the cultural and geographical settings of biblical events.",
     "texts": [
       ""
     ],
     "family": "",
     "location": "Rome",
-    "y": "",
+    "y": "-15",
     "eventType": "Extrabiblical",
-    "percentage": 16,
-    "year": 160
+    "percentage": 8,
+    "year": 79
+  },
+  {
+    "title": "Antiquities of the Jews by Josephus",
+    "description": "Written by the Jewish historian Josephus, this work provides an invaluable historical account of Jewish history, including references to events and figures from the New Testament, such as John the Baptist and Jesus. Josephus' writings help date the Gospel accounts and confirm the historical context of key biblical events.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Rome",
+    "y": "-45",
+    "eventType": "Extrabiblical",
+    "percentage": 9,
+    "year": 93
   },
   {
     "title": "Lives of the Caesars by Suetonius",
@@ -115,49 +59,107 @@
     ],
     "family": "",
     "location": "Rome",
-    "y": "",
+    "y": "-75",
     "eventType": "Extrabiblical",
     "percentage": 10,
     "year": 100
   },
   {
-    "title": "Philo of Alexandria",
-    "description": "Philo, a Hellenistic Jewish philosopher, wrote extensively about Jewish customs and theology in the early 1st century. His works provide background on Jewish thought during the time of Jesus and the early church, helping to illuminate the cultural and philosophical environment in which the New Testament was written.",
+    "title": "Letters of Pliny the Younger",
+    "description": "In correspondence with Emperor Trajan, Pliny the Younger discusses the treatment of early Christians in the Roman Empire around 112 AD. His letters give insight into the spread of Christianity, early Christian worship practices, and how Roman authorities perceived and dealt with the movement. In this letter, Pliny the Younger, the governor of Bithynia, seeks guidance from Emperor Trajan on how to handle Christians in his province. He describes their practices, noting their willingness to die for their faith and the growing presence of Christianity in the Roman Empire. This correspondence offers important insights into the early Roman perception of Christians and the legal challenges they faced.",
     "texts": [
       ""
     ],
     "family": "",
-    "location": "Alexandria, Egypt",
-    "y": "",
+    "location": "Bithynia (Asia Minor)",
+    "y": "-60",
     "eventType": "Extrabiblical",
-    "percentage": 4,
-    "year": 40
+    "percentage": 11,
+    "year": 112
   },
   {
-    "title": "Epistle of Diognetus",
+    "title": "Annals by Tacitus",
+    "description": "Tacitus, a Roman historian, wrote Annals around 115 AD, which includes a reference to the execution of Jesus under Pontius Pilate during the reign of Tiberius. This Roman record provides external corroboration of the Gospel accounts and helps confirm the historical dating of Jesus' crucifixion.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Rome",
+    "y": "60",
+    "eventType": "Extrabiblical",
+    "percentage": 12,
+    "year": 115
+  },
+  {
+    "title": "Marcion's Canon",
+    "description": "Marcion of Sinope created one of the earliest known Christian canons around 140 AD. He rejected the Old Testament entirely and included only a modified version of Luke's Gospel and ten Pauline epistles, excluding the Pastoral Epistles. His canon prompted the early Church to define its own canon and highlighted the widespread acceptance of certain New Testament writings before the 2nd century.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Rome",
+    "y": "0",
+    "eventType": "Extrabiblical",
+    "percentage": 14,
+    "year": 140
+  },
+  {
+    "title": "Pseudo-Clementine Homilies",
+    "description": "A collection of early Christian writings attributed to Clement of Rome, addressing moral and theological issues.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-30",
+    "eventType": "Extrabiblical",
+    "percentage": 15,
+    "year": 150
+  },
+  {
+    "title": "New Testament Apocrypha",
+    "description": "The New Testament Apocrypha includes a variety of writings from the 2nd and 3rd centuries AD that were not included in the canonical New Testament. These texts, such as the Gospel of Thomas, Gospel of Peter, Gospel of Mary, and Shepherd of Hermas, offer alternative perspectives on Jesus' life, teachings, and early Christian beliefs. Most of these writings are generally dated later than the canonical books, often in the mid- to late-2nd century, and are considered less reliable regarding authorship. While many are attributed to key figures like Peter, Mary Magdalene, or Barnabas, modern scholars agree that these attributions are unlikely to be authentic, as the actual authors are mostly anonymous or unknown. Unlike the canonical texts, which have earlier and more widespread manuscript support (such as the Codex Sinaiticus and Vaticanus), apocryphal texts often survive in limited manuscripts or fragmented forms, like the Gospel of Thomas from the Nag Hammadi library. These writings were rejected by early church leaders due to theological concerns, particularly their association with Gnosticism or Jewish-Christian sects, and their later dates and less secure transmission further distinguish them from the earlier, more reliably attested New Testament books.",
+    "texts": [
+      "Gnostic or so-called New testament Apocrypha texts"
+    ],
+    "family": "",
+    "location": "Egypt, Palestine, Syria, Rome",
+    "y": "-45",
+    "eventType": "Extrabiblical",
+    "percentage": 15,
+    "yearRange": [
+      100,
+      200
+    ]
+  },
+  {
+    "title": "The Epistle of Mathetes to Diognetus",
     "description": "An early Christian apologetic work, written around 130 AD, the Epistle of Diognetus defends Christianity to a pagan audience. This text sheds light on how early Christians viewed themselves in relation to Judaism and Roman society, helping to date early Christian theological development.",
     "texts": [
       ""
     ],
     "family": "",
     "location": "Rome",
-    "y": "",
+    "y": "45",
     "eventType": "Extrabiblical",
-    "percentage": 13,
-    "year": 130
+    "percentage": 15,
+    "yearRange": [
+      130,
+      175
+    ]
   },
   {
-    "title": "The Book of Mormon",
-    "description": "While not a Bible Translation, The Book of Mormon is a significant religious text in Christianity. Its publication by Joseph Smith marked the beginning of the Latter-day Saint movement, which considers it an additional scriptural witness of Jesus Christ.",
+    "title": "Dialogue with Trypho by Justin Martyr",
+    "description": "Written around 160 AD, this work by the Christian apologist Justin Martyr debates with a Jewish interlocutor about the messianic prophecies in the Hebrew Bible and their fulfillment in Jesus. This text highlights how early Christians interpreted the Old Testament and helps date the development of Christian theology.",
     "texts": [
       ""
     ],
     "family": "",
-    "location": "New York, USA",
-    "y": "",
+    "location": "Rome",
+    "y": "-30",
     "eventType": "Extrabiblical",
-    "percentage": 183,
-    "year": 1830
+    "percentage": 16,
+    "year": 160
   },
   {
     "title": "The First Apology by Justin Martyr",
@@ -167,11 +169,11 @@
     ],
     "family": "",
     "location": "Rome",
-    "y": "",
+    "y": "30",
     "eventType": "Extrabiblical",
     "percentage": 17,
     "year": 165
-  },    
+  },
   {
     "title": "Celsus' True Word",
     "description": "Although primarily a critique of Christianity, Celsus’ work provides insights into the beliefs and practices of early Christians and their interactions with the broader Roman society. His arguments reflect the challenges faced by Christians in defending their faith against pagan critiques during the 2nd century.",
@@ -180,7 +182,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "45",
     "eventType": "Extrabiblical",
     "percentage": 18,
     "year": 178
@@ -193,9 +195,22 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "0",
     "eventType": "Extrabiblical",
     "percentage": 36,
     "year": 360
+  },
+  {
+    "title": "The Book of Mormon",
+    "description": "While not a Bible Translation, The Book of Mormon is a significant religious text in Christianity. Its publication by Joseph Smith marked the beginning of the Latter-day Saint movement, which considers it an additional scriptural witness of Jesus Christ.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "New York, USA",
+    "y": "705",
+    "eventType": "Extrabiblical",
+    "percentage": 183,
+    "year": 1830
   }
 ]
