@@ -8,7 +8,7 @@
     "family": "",
     "location": "Corinth or Ephesus",
     "y": "-15",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 5,
     "year": 50
   },
@@ -21,7 +21,7 @@
     "family": "",
     "location": "Corinth",
     "y": "15",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 5,
     "year": 51
   },
@@ -34,7 +34,7 @@
     "family": "",
     "location": "Corinth",
     "y": "-30",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 5,
     "year": 52
   },
@@ -47,7 +47,7 @@
     "family": "",
     "location": "Ephesus",
     "y": "30",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 6,
     "year": 55
   },
@@ -60,7 +60,7 @@
     "family": "",
     "location": "Macedonia",
     "y": "-45",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 6,
     "year": 56
   },
@@ -73,7 +73,7 @@
     "family": "",
     "location": "Corinth",
     "y": "-30",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 6,
     "year": 57
   },
@@ -86,7 +86,7 @@
     "family": "",
     "location": "Rome",
     "y": "-60",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 6,
     "year": 60
   },
@@ -99,7 +99,7 @@
     "family": "",
     "location": "Rome",
     "y": "-15",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 6,
     "year": 60
   },
@@ -112,7 +112,7 @@
     "family": "",
     "location": "Rome",
     "y": "-45",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 6,
     "year": 60
   },
@@ -125,7 +125,7 @@
     "family": "",
     "location": "Rome",
     "y": "15",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 6,
     "year": 60
   },
@@ -138,7 +138,7 @@
     "family": "",
     "location": "Unknown",
     "y": "-60",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 6,
     "year": 61
   },
@@ -151,7 +151,7 @@
     "family": "",
     "location": "Jerusalem",
     "y": "30",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 6,
     "year": 62
   },
@@ -164,7 +164,7 @@
     "family": "",
     "location": "Rome",
     "y": "-75",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 6,
     "year": 63
   },
@@ -177,7 +177,7 @@
     "family": "",
     "location": "Rome",
     "y": "30",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 6,
     "year": 64
   },
@@ -190,7 +190,7 @@
     "family": "",
     "location": "Rome",
     "y": "-75",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 7,
     "year": 65
   },
@@ -203,7 +203,7 @@
     "family": "",
     "location": "Antioch or Palestine",
     "y": "-75",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 7,
     "year": 70
   },
@@ -215,8 +215,8 @@
     ],
     "family": "",
     "location": "Greece",
-    "y": "0",
-    "eventType": "Likely writing date",
+    "y": "75",
+    "eventType": "Likely_writing_date",
     "percentage": 7,
     "year": 70
   },
@@ -229,7 +229,7 @@
     "family": "",
     "location": "Greece",
     "y": "15",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 9,
     "year": 85
   },
@@ -242,7 +242,7 @@
     "family": "",
     "location": "Ephesus",
     "y": "30",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 9,
     "year": 90
   },
@@ -255,7 +255,7 @@
     "family": "",
     "location": "Ephesus",
     "y": "45",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 10,
     "year": 95
   },
@@ -268,7 +268,7 @@
     "family": "",
     "location": "Ephesus",
     "y": "-60",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 10,
     "year": 95
   },
@@ -281,7 +281,7 @@
     "family": "",
     "location": "Ephesus",
     "y": "60",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 10,
     "year": 95
   },
@@ -294,7 +294,7 @@
     "family": "",
     "location": "Patmos",
     "y": "75",
-    "eventType": "Likely writing date",
+    "eventType": "Likely_writing_date",
     "percentage": 10,
     "year": 96
   }
