@@ -7,7 +7,7 @@
     ],
     "family": "",
     "location": "Corinth or Ephesus",
-    "y": "",
+    "y": "-15",
     "eventType": "Likely writing date",
     "percentage": 5,
     "year": 50
@@ -20,7 +20,7 @@
     ],
     "family": "",
     "location": "Corinth",
-    "y": "",
+    "y": "15",
     "eventType": "Likely writing date",
     "percentage": 5,
     "year": 51
@@ -33,7 +33,7 @@
     ],
     "family": "",
     "location": "Corinth",
-    "y": "",
+    "y": "-30",
     "eventType": "Likely writing date",
     "percentage": 5,
     "year": 52
@@ -46,7 +46,7 @@
     ],
     "family": "",
     "location": "Ephesus",
-    "y": "",
+    "y": "30",
     "eventType": "Likely writing date",
     "percentage": 6,
     "year": 55
@@ -59,7 +59,7 @@
     ],
     "family": "",
     "location": "Macedonia",
-    "y": "",
+    "y": "-45",
     "eventType": "Likely writing date",
     "percentage": 6,
     "year": 56
@@ -72,36 +72,10 @@
     ],
     "family": "",
     "location": "Corinth",
-    "y": "",
+    "y": "-30",
     "eventType": "Likely writing date",
     "percentage": 6,
     "year": 57
-  },
-  {
-    "title": "Epistle to the Philippians",
-    "description": "Written by Paul from prison, around 60-62 AD. The early church attributes it to Paul, and internal references to his imprisonment support this dating.",
-    "texts": [
-      "Philippians"
-    ],
-    "family": "",
-    "location": "Rome",
-    "y": "",
-    "eventType": "Likely writing date",
-    "percentage": 6,
-    "year": 60
-  },
-  {
-    "title": "Epistle to the Colossians",
-    "description": "Traditionally attributed to Paul and written around 60-62 AD. Some modern scholars debate Pauline authorship due to its unique style, but early tradition affirms Paul as the author.",
-    "texts": [
-      "Colossians"
-    ],
-    "family": "",
-    "location": "Rome",
-    "y": "",
-    "eventType": "Likely writing date",
-    "percentage": 6,
-    "year": 60
   },
   {
     "title": "Epistle to Philemon",
@@ -111,7 +85,20 @@
     ],
     "family": "",
     "location": "Rome",
-    "y": "",
+    "y": "-60",
+    "eventType": "Likely writing date",
+    "percentage": 6,
+    "year": 60
+  },
+  {
+    "title": "Epistle to the Philippians",
+    "description": "Written by Paul from prison, around 60-62 AD. The early church attributes it to Paul, and internal references to his imprisonment support this dating.",
+    "texts": [
+      "Philippians"
+    ],
+    "family": "",
+    "location": "Rome",
+    "y": "-15",
     "eventType": "Likely writing date",
     "percentage": 6,
     "year": 60
@@ -124,7 +111,20 @@
     ],
     "family": "",
     "location": "Rome",
-    "y": "",
+    "y": "-45",
+    "eventType": "Likely writing date",
+    "percentage": 6,
+    "year": 60
+  },
+  {
+    "title": "Epistle to the Colossians",
+    "description": "Traditionally attributed to Paul and written around 60-62 AD. Some modern scholars debate Pauline authorship due to its unique style, but early tradition affirms Paul as the author.",
+    "texts": [
+      "Colossians"
+    ],
+    "family": "",
+    "location": "Rome",
+    "y": "15",
     "eventType": "Likely writing date",
     "percentage": 6,
     "year": 60
@@ -137,7 +137,7 @@
     ],
     "family": "",
     "location": "Unknown",
-    "y": "",
+    "y": "-60",
     "eventType": "Likely writing date",
     "percentage": 6,
     "year": 61
@@ -150,7 +150,7 @@
     ],
     "family": "",
     "location": "Jerusalem",
-    "y": "",
+    "y": "30",
     "eventType": "Likely writing date",
     "percentage": 6,
     "year": 62
@@ -163,7 +163,7 @@
     ],
     "family": "",
     "location": "Rome",
-    "y": "",
+    "y": "-75",
     "eventType": "Likely writing date",
     "percentage": 6,
     "year": 63
@@ -176,7 +176,7 @@
     ],
     "family": "",
     "location": "Rome",
-    "y": "",
+    "y": "30",
     "eventType": "Likely writing date",
     "percentage": 6,
     "year": 64
@@ -189,7 +189,7 @@
     ],
     "family": "",
     "location": "Rome",
-    "y": "",
+    "y": "-75",
     "eventType": "Likely writing date",
     "percentage": 7,
     "year": 65
@@ -202,7 +202,7 @@
     ],
     "family": "",
     "location": "Antioch or Palestine",
-    "y": "",
+    "y": "-75",
     "eventType": "Likely writing date",
     "percentage": 7,
     "year": 70
@@ -215,7 +215,7 @@
     ],
     "family": "",
     "location": "Greece",
-    "y": "",
+    "y": "75",
     "eventType": "Likely writing date",
     "percentage": 7,
     "year": 70
@@ -228,7 +228,7 @@
     ],
     "family": "",
     "location": "Greece",
-    "y": "",
+    "y": "15",
     "eventType": "Likely writing date",
     "percentage": 9,
     "year": 85
@@ -241,7 +241,7 @@
     ],
     "family": "",
     "location": "Ephesus",
-    "y": "",
+    "y": "30",
     "eventType": "Likely writing date",
     "percentage": 9,
     "year": 90
@@ -254,7 +254,7 @@
     ],
     "family": "",
     "location": "Ephesus",
-    "y": "",
+    "y": "45",
     "eventType": "Likely writing date",
     "percentage": 10,
     "year": 95
@@ -267,7 +267,7 @@
     ],
     "family": "",
     "location": "Ephesus",
-    "y": "",
+    "y": "-60",
     "eventType": "Likely writing date",
     "percentage": 10,
     "year": 95
@@ -280,7 +280,7 @@
     ],
     "family": "",
     "location": "Ephesus",
-    "y": "",
+    "y": "60",
     "eventType": "Likely writing date",
     "percentage": 10,
     "year": 95
@@ -293,7 +293,7 @@
     ],
     "family": "",
     "location": "Patmos",
-    "y": "",
+    "y": "75",
     "eventType": "Likely writing date",
     "percentage": 10,
     "year": 96
