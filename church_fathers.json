@@ -7,7 +7,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "",
+    "y": "-75",
     "eventType": "Church Father",
     "percentage": 10,
     "year": 96
@@ -20,7 +20,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "15",
+    "y": "-90",
     "eventType": "Church Father",
     "percentage": 10,
     "year": 100
@@ -33,7 +33,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "-15",
+    "y": "90",
     "eventType": "Church Father",
     "percentage": 10,
     "year": 100
@@ -46,7 +46,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "30",
+    "y": "75",
     "eventType": "Church Father",
     "percentage": 11,
     "year": 110
@@ -59,7 +59,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "-30",
+    "y": "-75",
     "eventType": "Church Father",
     "percentage": 12,
     "year": 115
@@ -72,7 +72,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "45",
+    "y": "75",
     "eventType": "Church Father",
     "percentage": 12,
     "year": 115
@@ -104,19 +104,6 @@
     "year": 125
   },
   {
-    "title": "The Writings of Justin Martyr",
-    "description": "Includes the First Apology, Second Apology, and Dialogue with Trypho, addressing Christian beliefs and defending against pagan criticisms. Historical references and apologetic context date these writings to mid-2nd century. Manuscript:Several Greek manuscripts from the 14th century onwards",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "",
-    "y": "15",
-    "eventType": "Church Father",
-    "percentage": 15,
-    "year": 150
-  },
-  {
     "title": "Dionysius of Corinth",
     "description": "Known for letters to various churches. Citations and historical context indicate mid-2nd century. Manuscript:Preserved in quotations by Eusebius and other Church Father.",
     "texts": [
@@ -130,14 +117,40 @@
     "year": 150
   },
   {
-    "title": "The Epistle of Mathetes to Diognetus",
-    "description": "An apologetic work explaining Christianity to a pagan audience. Manuscript:",
+    "title": "The Writings of Justin Martyr",
+    "description": "Includes the First Apology, Second Apology, and Dialogue with Trypho, addressing Christian beliefs and defending against pagan criticisms. Historical references and apologetic context date these writings to mid-2nd century. Manuscript:Several Greek manuscripts from the 14th century onwards",
     "texts": [
       ""
     ],
     "family": "",
     "location": "",
     "y": "15",
+    "eventType": "Church Father",
+    "percentage": 15,
+    "year": 150
+  },
+  {
+    "title": "Polycrates of Ephesus",
+    "description": "Bishop known for letters concerning Easter controversies. Eusebius and others reference him, situating his letters around the late 2nd century. Manuscript:Fragments preserved in Eusebius' Church History.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-45",
+    "eventType": "Church Father",
+    "percentage": 18,
+    "year": 175
+  },
+  {
+    "title": "The Writings of Theophilus of Antioch",
+    "description": "His work, To Autolycus, is an apologetic text defending Christianity and critiquing pagan beliefs. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-30",
     "eventType": "Church Father",
     "percentage": 18,
     "year": 175
@@ -169,8 +182,8 @@
     "year": 175
   },
   {
-    "title": "The Writings of Theophilus of Antioch",
-    "description": "His work, To Autolycus, is an apologetic text defending Christianity and critiquing pagan beliefs. Manuscript:",
+    "title": "Melito of Sardis",
+    "description": "Known for fragments of homilies and apologies, especially a Paschal Homily. Cited by early church historians and contextual references place his works in the late 2nd century. Manuscript:Various fragments preserved in later writings.",
     "texts": [
       ""
     ],
@@ -182,40 +195,27 @@
     "year": 175
   },
   {
-    "title": "Melito of Sardis",
-    "description": "Known for fragments of homilies and apologies, especially a Paschal Homily. Cited by early church historians and contextual references place his works in the late 2nd century. Manuscript:Various fragments preserved in later writings.",
+    "title": "Church Father",
+    "description": "Irenaeus of Lyons, an early church father known for his work \"Against Heresies\" written around 180 AD.",
     "texts": [
       ""
     ],
     "family": "",
-    "location": "",
-    "y": "45",
+    "location": "Lyon, France",
+    "y": "-15",
     "eventType": "Church Father",
-    "percentage": 18,
-    "year": 175
+    "percentage": 20,
+    "year": 200
   },
   {
-    "title": "Polycrates of Ephesus",
-    "description": "Bishop known for letters concerning Easter controversies. Eusebius and others reference him, situating his letters around the late 2nd century. Manuscript:Fragments preserved in Eusebius' Church History.",
+    "title": "Julius Africanus",
+    "description": "Historian known for Chronographiae, a chronicle of world history. Historical context and citations by later historians place him in the early 3rd century. Manuscript:Fragments in later chronicles and citations.",
     "texts": [
       ""
     ],
     "family": "",
     "location": "",
-    "y": "-45",
-    "eventType": "Church Father",
-    "percentage": 18,
-    "year": 175
-  },
-  {
-    "title": "The Writings of Tertullian",
-    "description": "Includes Apology, Against Marcion, and other works addressing heresy, morality, and church practice. Known historical and theological context places them in early 3rd century. Manuscript:Numerous Latin manuscripts from the Middle Ages",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "",
-    "y": "60",
+    "y": "0",
     "eventType": "Church Father",
     "percentage": 23,
     "year": 225
@@ -228,7 +228,20 @@
     ],
     "family": "",
     "location": "",
-    "y": "-60",
+    "y": "45",
+    "eventType": "Church Father",
+    "percentage": 23,
+    "year": 225
+  },
+  {
+    "title": "The Writings of Tertullian",
+    "description": "Includes Apology, Against Marcion, and other works addressing heresy, morality, and church practice. Known historical and theological context places them in early 3rd century. Manuscript:Numerous Latin manuscripts from the Middle Ages",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-15",
     "eventType": "Church Father",
     "percentage": 23,
     "year": 225
@@ -241,23 +254,23 @@
     ],
     "family": "",
     "location": "",
-    "y": "75",
+    "y": "60",
     "eventType": "Church Father",
     "percentage": 23,
     "year": 225
   },
   {
-    "title": "Julius Africanus",
-    "description": "Historian known for Chronographiae, a chronicle of world history. Historical context and citations by later historians place him in the early 3rd century. Manuscript:Fragments in later chronicles and citations.",
+    "title": "The Writings of Hippolytus of Rome",
+    "description": "Includes The Refutation of All Heresies and The Apostolic Tradition, focusing on church order and heresy. Manuscript:",
     "texts": [
       ""
     ],
     "family": "",
     "location": "",
-    "y": "-75",
+    "y": "0",
     "eventType": "Church Father",
-    "percentage": 23,
-    "year": 225
+    "percentage": 24,
+    "year": 235
   },
   {
     "title": "The Writings of Origen",
@@ -273,27 +286,14 @@
     "year": 235
   },
   {
-    "title": "The Writings of Hippolytus of Rome",
-    "description": "Includes The Refutation of All Heresies and The Apostolic Tradition, focusing on church order and heresy. Manuscript:",
+    "title": "Commodianus",
+    "description": "Christian Latin poet, known for Carmen Apologeticum and other works. Linguistic style and thematic content place his works in the mid-3rd century. Manuscript:Latin manuscripts from later periods.",
     "texts": [
       ""
     ],
     "family": "",
     "location": "",
-    "y": "-135",
-    "eventType": "Church Father",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "The Writings of Cyprian of Carthage",
-    "description": "Includes On the Unity of the Church, letters, and treatises on church discipline and unity. Historical context situates these works in mid-3rd century. Manuscript:Latin manuscripts from the 4th century onward",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "",
-    "y": "135",
+    "y": "0",
     "eventType": "Church Father",
     "percentage": 25,
     "year": 250
@@ -301,6 +301,19 @@
   {
     "title": "The Writings of Novatian",
     "description": "Notable for On the Trinity, addressing the nature of God and the Church. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "15",
+    "eventType": "Church Father",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "The Writings of Cyprian of Carthage",
+    "description": "Includes On the Unity of the Church, letters, and treatises on church discipline and unity. Historical context situates these works in mid-3rd century. Manuscript:Latin manuscripts from the 4th century onward",
     "texts": [
       ""
     ],
@@ -319,19 +332,6 @@
     ],
     "family": "",
     "location": "",
-    "y": "150",
-    "eventType": "Church Father",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Commodianus",
-    "description": "Christian Latin poet, known for Carmen Apologeticum and other works. Linguistic style and thematic content place his works in the mid-3rd century. Manuscript:Latin manuscripts from later periods.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "",
     "y": "-150",
     "eventType": "Church Father",
     "percentage": 25,
@@ -345,23 +345,10 @@
     ],
     "family": "",
     "location": "",
-    "y": "-75",
+    "y": "0",
     "eventType": "Church Father",
     "percentage": 27,
     "year": 265
-  },
-  {
-    "title": "The Writings of Methodius of Olympus",
-    "description": "Known for The Banquet of the Ten Virgins, focusing on eschatology and ethics. Manuscript:",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "",
-    "y": "90",
-    "eventType": "Church Father",
-    "percentage": 28,
-    "year": 275
   },
   {
     "title": "Victorinus of Pettau",
@@ -371,27 +358,40 @@
     ],
     "family": "",
     "location": "",
-    "y": "-90",
+    "y": "0",
     "eventType": "Church Father",
     "percentage": 28,
     "year": 275
   },
   {
-    "title": "The Writings of Lactantius",
-    "description": "Includes Divine Institutes, addressing Christian doctrine and philosophy. Manuscript:",
+    "title": "The Writings of Methodius of Olympus",
+    "description": "Known for The Banquet of the Ten Virgins, focusing on eschatology and ethics. Manuscript:",
     "texts": [
       ""
     ],
     "family": "",
     "location": "",
-    "y": "30",
+    "y": "15",
+    "eventType": "Church Father",
+    "percentage": 28,
+    "year": 275
+  },
+  {
+    "title": "The Writings of Arnobius of Sicca",
+    "description": "Includes Against the Heathen, critiquing pagan religion and defending Christianity. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-15",
     "eventType": "Church Father",
     "percentage": 33,
     "year": 325
   },
   {
-    "title": "The Writings of Arnobius of Sicca",
-    "description": "Includes Against the Heathen, critiquing pagan religion and defending Christianity. Manuscript:",
+    "title": "The Writings of Lactantius",
+    "description": "Includes Divine Institutes, addressing Christian doctrine and philosophy. Manuscript:",
     "texts": [
       ""
     ],
