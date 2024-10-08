@@ -1811,5 +1811,37 @@
     "eventType": "Papyrus",
     "percentage": 75,
     "year": 750
+  },
+  {
+    "title": "ℓ 1601",
+    "description": "",
+    "texts": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
+    ],
+    "family": "Byzantine",
+    "location": "Byzantine Empire",
+    "y": "30",
+    "eventType": "Lectionary",
+    "percentage": 45,
+    "year": 450
+  },
+  {
+    "title": "minuscule 461",
+    "description": "",
+    "texts": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
+    ],
+    "family": "Byzantine",
+    "location": "",
+    "y": "165",
+    "eventType": "Minuscule",
+    "percentage": 84,
+    "year": 835
   }
 ]
