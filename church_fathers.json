@@ -13,7 +13,7 @@
     "year": 96
   },
   {
-    "title": "The Didache! (Teaching of the Twelve Apostles)",
+    "title": "The Didache (Teaching of the Twelve Apostles)",
     "description": "A manual of church discipline, including teachings on ethics, rituals, and church organization. The content and style of the text, along with historical references, suggest late 1st or early 2nd century. Manuscript:Codex Hierosolymitanus (or Codex H), dated to 1056 AD",
     "texts": [
       ""
@@ -78,6 +78,19 @@
     "year": 115
   },
   {
+    "title": "Quadratus of Athens",
+    "description": "Apologist known for his defense of Christianity to Emperor Hadrian. Only fragments survive. Referenced by Eusebius",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-15",
+    "eventType": "Church_father",
+    "percentage": 13,
+    "year": 125
+  },
+  {
     "title": "The Epistle of Polycarp to the Philippians",
     "description": "A letter addressing Christian conduct and warning against heresies. Content and external references suggest early 2nd century. Manuscript:Greek and Latin versions",
     "texts": [
@@ -85,7 +98,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "-15",
+    "y": "0",
     "eventType": "Church_father",
     "percentage": 13,
     "year": 125
@@ -104,6 +117,19 @@
     "year": 125
   },
   {
+    "title": "Theophilus of Antioch",
+    "description": "Bishop of Antioch, best known for his work To Autolycus, an apologetic defense of Christianity.",
+    "texts": [
+      "To Autolycus"
+    ],
+    "family": "Antioch",
+    "location": "",
+    "y": "-90",
+    "eventType": "Church_father",
+    "percentage": 15,
+    "year": 150
+  },
+  {
     "title": "Dionysius of Corinth",
     "description": "Known for letters to various churches. Citations and historical context indicate mid-2nd century. Manuscript:Preserved in quotations by Eusebius and other Church Father.",
     "texts": [
@@ -111,7 +137,20 @@
     ],
     "family": "",
     "location": "",
-    "y": "-15",
+    "y": "-60",
+    "eventType": "Church_father",
+    "percentage": 15,
+    "year": 150
+  },
+  {
+    "title": "Hegesippus",
+    "description": "Chronicler of early church history, noted for his efforts to defend orthodoxy against heresy. Fragments preserved by Eusebius",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "75",
     "eventType": "Church_father",
     "percentage": 15,
     "year": 150
@@ -124,20 +163,98 @@
     ],
     "family": "",
     "location": "",
-    "y": "15",
+    "y": "90",
     "eventType": "Church_father",
     "percentage": 15,
     "year": 150
   },
   {
-    "title": "Polycrates of Ephesus",
-    "description": "Bishop known for letters concerning Easter controversies. Eusebius and others reference him, situating his letters around the late 2nd century. Manuscript:Fragments preserved in Eusebius' Church History.",
+    "title": "Abercius of Hierapolis",
+    "description": "Known for the Inscription of Abercius, which describes his Christian faith and travels. He is considered one of the first Christian epitaph writers.",
+    "texts": [
+      "Inscription of Abercius"
+    ],
+    "family": "Hierapolis",
+    "location": "",
+    "y": "105",
+    "eventType": "Church_father",
+    "percentage": 15,
+    "year": 150
+  },
+  {
+    "title": "Maximus of Jerusalem",
+    "description": "Bishop of Jerusalem, known for his defense of orthodox Christianity against Gnostic heresies. His works are referenced by early historians.",
+    "texts": [
+      "Fragments preserved in later works"
+    ],
+    "family": "Jerusalem",
+    "location": "",
+    "y": "-45",
+    "eventType": "Church_father",
+    "percentage": 16,
+    "year": 160
+  },
+  {
+    "title": "Apollinaris of Hierapolis",
+    "description": "Bishop of Hierapolis, known for his apologies defending Christianity under Marcus Aurelius. Referenced by Eusebius and other sources",
     "texts": [
       ""
     ],
     "family": "",
     "location": "",
-    "y": "-45",
+    "y": "45",
+    "eventType": "Church_father",
+    "percentage": 16,
+    "year": 160
+  },
+  {
+    "title": "Apelles",
+    "description": "A disciple of Marcion who later broke away and developed his own theology. While considered heretical by orthodox Christians, he contributed to early theological debates.",
+    "texts": [
+      "Fragments cited by Tertullian and others"
+    ],
+    "family": "Asia Minor",
+    "location": "",
+    "y": "45",
+    "eventType": "Church_father",
+    "percentage": 17,
+    "year": 170
+  },
+  {
+    "title": "Tatian the Assyrian",
+    "description": "Known for Oratio ad Graecos, defending Christianity, and for compiling the Diatessaron. Several manuscripts",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "60",
+    "eventType": "Church_father",
+    "percentage": 17,
+    "year": 170
+  },
+  {
+    "title": "Bardesanes of Edessa",
+    "description": "Syrian Christian writer addressing free will and opposing Gnostic fatalism in Book of the Laws of Countries.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-105",
+    "eventType": "Church_father",
+    "percentage": 18,
+    "year": 175
+  },
+  {
+    "title": "Rhodo",
+    "description": "A student of Tatian, known for his polemic writings against the Marcionites and other heretical groups. His works are cited by Eusebius.",
+    "texts": [
+      "Fragments in Eusebius"
+    ],
+    "family": "Asia Minor",
+    "location": "",
+    "y": "-90",
     "eventType": "Church_father",
     "percentage": 18,
     "year": 175
@@ -150,33 +267,20 @@
     ],
     "family": "",
     "location": "",
-    "y": "-30",
+    "y": "-75",
     "eventType": "Church_father",
     "percentage": 18,
     "year": 175
   },
   {
-    "title": "The Writings of Irenaeus of Lyons",
-    "description": "His major work, Against Heresies, critiques Gnosticism and establishes early Christian doctrine. Historical references to Gnosticism date these writings to late 2nd century. Manuscript:Latin translations and some Greek fragments",
+    "title": "Polycrates of Ephesus",
+    "description": "Bishop known for letters concerning Easter controversies. Eusebius and others reference him, situating his letters around the late 2nd century. Manuscript:Fragments preserved in Eusebius' Church History.",
     "texts": [
       ""
     ],
     "family": "",
     "location": "",
-    "y": "-15",
-    "eventType": "Church_father",
-    "percentage": 18,
-    "year": 175
-  },
-  {
-    "title": "The Writings of Athenagoras of Athens",
-    "description": "Includes A Plea for the Christians and On the Resurrection of the Dead, defending Christian beliefs. Manuscript:",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "",
-    "y": "30",
+    "y": "75",
     "eventType": "Church_father",
     "percentage": 18,
     "year": 175
@@ -189,10 +293,166 @@
     ],
     "family": "",
     "location": "",
-    "y": "-30",
+    "y": "90",
     "eventType": "Church_father",
     "percentage": 18,
     "year": 175
+  },
+  {
+    "title": "The Writings of Irenaeus of Lyons",
+    "description": "His major work, Against Heresies, critiques Gnosticism and establishes early Christian doctrine. Historical references to Gnosticism date these writings to late 2nd century. Manuscript:Latin translations and some Greek fragments",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "105",
+    "eventType": "Church_father",
+    "percentage": 18,
+    "year": 175
+  },
+  {
+    "title": "The Writings of Athenagoras of Athens",
+    "description": "Includes A Plea for the Christians and On the Resurrection of the Dead, defending Christian beliefs. Manuscript:",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "120",
+    "eventType": "Church_father",
+    "percentage": 18,
+    "year": 175
+  },
+  {
+    "title": "Musanus",
+    "description": "Early Christian apologist, known for writing against the Encratites, a sect that promoted extreme asceticism and rejected marriage.",
+    "texts": [
+      "Fragments preserved by Eusebius"
+    ],
+    "family": "Asia Minor",
+    "location": "",
+    "y": "-45",
+    "eventType": "Church_father",
+    "percentage": 18,
+    "year": 180
+  },
+  {
+    "title": "Claudius Apollinaris",
+    "description": "Early Christian apologist and bishop of Hierapolis. His defense of Christianity against Roman persecution influenced later Christian thought.",
+    "texts": [
+      "Fragments in later works"
+    ],
+    "family": "Hierapolis",
+    "location": "",
+    "y": "-30",
+    "eventType": "Church_father",
+    "percentage": 18,
+    "year": 180
+  },
+  {
+    "title": "Apollonius of Ephesus",
+    "description": "Apologist and anti-Montanist writer, known for his Acts of Apollonius, a defense of Christianity and an early account of martyrdom.",
+    "texts": [
+      "Acts of Apollonius"
+    ],
+    "family": "Ephesus",
+    "location": "",
+    "y": "45",
+    "eventType": "Church_father",
+    "percentage": 18,
+    "year": 180
+  },
+  {
+    "title": "Melito of Sardis",
+    "description": "Bishop of Sardis, known for his Peri Pascha (On the Passover) and his defense of Christian orthodoxy.",
+    "texts": [
+      "Peri Pascha and other fragments"
+    ],
+    "family": "Sardis",
+    "location": "",
+    "y": "60",
+    "eventType": "Church_father",
+    "percentage": 18,
+    "year": 180
+  },
+  {
+    "title": "Apollinaris of Hierapolis",
+    "description": "Bishop of Hierapolis, known for writing apologies defending Christianity, particularly addressing the persecution of Christians under Emperor Marcus Aurelius.",
+    "texts": [
+      "Fragments cited by later church fathers"
+    ],
+    "family": "Hierapolis",
+    "location": "",
+    "y": "15",
+    "eventType": "Church_father",
+    "percentage": 19,
+    "year": 190
+  },
+  {
+    "title": "Victor I of Rome",
+    "description": "The first Latin-speaking pope, known for his role in the Easter controversy (Quartodecimanism) and his efforts to assert Roman primacy.",
+    "texts": [
+      "Few surviving fragments"
+    ],
+    "family": "Rome",
+    "location": "",
+    "y": "-120",
+    "eventType": "Church_father",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Serapion of Antioch",
+    "description": "Bishop of Antioch, known for his writings against Montanism and his emphasis on the authority of the canonical Gospels.",
+    "texts": [
+      "Fragments of letters"
+    ],
+    "family": "Antioch",
+    "location": "",
+    "y": "-75",
+    "eventType": "Church_father",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Hermogenes",
+    "description": "Christian philosopher, known for his work on creation and cosmology. His views on eternal matter were opposed by Tertullian in Against Hermogenes.",
+    "texts": [
+      "Fragments preserved in Tertullian's refutation"
+    ],
+    "family": "North Africa",
+    "location": "",
+    "y": "-60",
+    "eventType": "Church_father",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Heraclas of Alexandria",
+    "description": "Bishop of Alexandria, known for his role in the early catechetical school and his influence on Origen.",
+    "texts": [
+      "Ecclesiastical letters"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "-45",
+    "eventType": "Church_father",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Minucius Felix",
+    "description": "Octavius, a dialogue defending Christianity, is an early example of Christian apologetics. Historical context places it in the late 2nd or early 3rd century.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "60",
+    "eventType": "Church_father",
+    "percentage": 20,
+    "year": 200
   },
   {
     "title": "Church Father",
@@ -202,20 +462,72 @@
     ],
     "family": "",
     "location": "Lyon, France",
-    "y": "-15",
+    "y": "75",
+    "eventType": "Church_father",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Hippolytus of Rome",
+    "description": "Early theologian known for his works against heresy, especially Refutation of All Heresies, and his influence on early liturgical practices.",
+    "texts": [
+      "Refutation of All Heresies"
+    ],
+    "family": "Rome",
+    "location": "",
+    "y": "90",
     "eventType": "Church_father",
     "percentage": 20,
     "year": 200
   },
   {
     "title": "Julius Africanus",
-    "description": "Historian known for Chronographiae, a chronicle of world history. Historical context and citations by later historians place him in the early 3rd century. Manuscript:Fragments in later chronicles and citations.",
+    "description": "Early Christian historian, known for his Chronographiae, a world chronicle that attempted to date biblical events.",
+    "texts": [
+      "Chronographiae (fragments)"
+    ],
+    "family": "Edessa",
+    "location": "",
+    "y": "0",
+    "eventType": "Church_father",
+    "percentage": 21,
+    "year": 210
+  },
+  {
+    "title": "Ambrose of Alexandria",
+    "description": "Early Christian presbyter and scholar, known for his mentorship of Origen and influence on Alexandrian Christianity.",
+    "texts": [
+      "Letters preserved in Eusebius"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "-75",
+    "eventType": "Church_father",
+    "percentage": 22,
+    "year": 220
+  },
+  {
+    "title": "Anatolius of Laodicea",
+    "description": "Bishop and philosopher, known for his work on mathematics and astronomy, as well as theological writings.",
+    "texts": [
+      "Fragments preserved in later works"
+    ],
+    "family": "Laodicea",
+    "location": "",
+    "y": "75",
+    "eventType": "Church_father",
+    "percentage": 22,
+    "year": 220
+  },
+  {
+    "title": "Caius of Rome",
+    "description": "Theologian known for fragments against Montanism. Contextual analysis from references in early Christian writings. Manuscript:Fragments preserved in other works by Eusebius.",
     "texts": [
       ""
     ],
     "family": "",
     "location": "",
-    "y": "0",
+    "y": "-45",
     "eventType": "Church_father",
     "percentage": 23,
     "year": 225
@@ -228,7 +540,21 @@
     ],
     "family": "",
     "location": "",
-    "y": "45",
+    "y": "-30",
+    "eventType": "Church_father",
+    "percentage": 23,
+    "year": 225
+  },
+  {
+    "title": "Thascius Caecilius Cyprianus",
+    "description": "Known for his work On the Unity of the Church and numerous letters discussing church discipline and persecution.",
+    "texts": [
+      "On the Unity of the Church",
+      "letters"
+    ],
+    "family": "Carthage",
+    "location": "",
+    "y": "-15",
     "eventType": "Church_father",
     "percentage": 23,
     "year": 225
@@ -241,23 +567,75 @@
     ],
     "family": "",
     "location": "",
-    "y": "-15",
+    "y": "15",
     "eventType": "Church_father",
     "percentage": 23,
     "year": 225
   },
   {
-    "title": "Caius of Rome",
-    "description": "Theologian known for fragments against Montanism. Contextual analysis from references in early Christian writings. Manuscript:Fragments preserved in other works by Eusebius.",
+    "title": "Julius Africanus",
+    "description": "Historian known for Chronographiae, a chronicle of world history. Historical context and citations by later historians place him in the early 3rd century. Manuscript:Fragments in later chronicles and citations.",
     "texts": [
       ""
     ],
     "family": "",
     "location": "",
-    "y": "60",
+    "y": "30",
     "eventType": "Church_father",
     "percentage": 23,
     "year": 225
+  },
+  {
+    "title": "Ammonius of Alexandria",
+    "description": "Christian philosopher, considered one of the founders of the Alexandrian School of theology. He influenced Origen but little of his own work survives.",
+    "texts": [
+      "Fragments in later sources"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "45",
+    "eventType": "Church_father",
+    "percentage": 23,
+    "year": 225
+  },
+  {
+    "title": "Sabellius",
+    "description": "Christian theologian who advanced a non-Trinitarian view later known as Sabellianism (or modalism), which was condemned by the early church as heresy. His works are largely lost.",
+    "texts": [
+      "Fragments preserved in refutations"
+    ],
+    "family": "North Africa",
+    "location": "",
+    "y": "-60",
+    "eventType": "Church_father",
+    "percentage": 23,
+    "year": 230
+  },
+  {
+    "title": "Beryllus of Bostra",
+    "description": "Bishop of Bostra, initially a supporter of a heretical view that denied the pre-existence of Christ. He was corrected by Origen and later accepted orthodox doctrine.",
+    "texts": [
+      "Fragments preserved by Eusebius"
+    ],
+    "family": "Bostra",
+    "location": "",
+    "y": "75",
+    "eventType": "Church_father",
+    "percentage": 23,
+    "year": 230
+  },
+  {
+    "title": "Origen of Alexandria",
+    "description": "Includes On First Principles, Contra Celsum, and extensive biblical commentaries. Well-documented life and works provide precise early to mid-3rd century dating. Manuscript:Greek and Latin manuscripts from the 4th century onward",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "-120",
+    "eventType": "Church_father",
+    "percentage": 24,
+    "year": 235
   },
   {
     "title": "The Writings of Hippolytus of Rome",
@@ -267,33 +645,59 @@
     ],
     "family": "",
     "location": "",
-    "y": "0",
+    "y": "60",
     "eventType": "Church_father",
     "percentage": 24,
     "year": 235
   },
   {
-    "title": "The Writings of Origen",
-    "description": "Includes On First Principles, Contra Celsum, and extensive biblical commentaries. Well-documented life and works provide precise early to mid-3rd century dating. Manuscript:Greek and Latin manuscripts from the 4th century onward",
+    "title": "Phileas of Thmuis",
+    "description": "Bishop of Thmuis, known for his letter defending Christians facing persecution under Diocletian. He was martyred for his faith.",
     "texts": [
-      ""
+      "Letters preserved in Eusebius"
     ],
-    "family": "",
+    "family": "Thmuis",
+    "location": "",
+    "y": "-150",
+    "eventType": "Church_father",
+    "percentage": 24,
+    "year": 240
+  },
+  {
+    "title": "Gregory the Illuminator",
+    "description": "Known for converting Armenia to Christianity and establishing the Armenian Church. Though most of his works are lost, his influence on early Christianity in Armenia was immense.",
+    "texts": [
+      "Biographical accounts"
+    ],
+    "family": "Armenia",
     "location": "",
     "y": "135",
     "eventType": "Church_father",
     "percentage": 24,
-    "year": 235
+    "year": 240
   },
   {
-    "title": "Commodianus",
-    "description": "Christian Latin poet, known for Carmen Apologeticum and other works. Linguistic style and thematic content place his works in the mid-3rd century. Manuscript:Latin manuscripts from later periods.",
+    "title": "Cornelius of Rome",
+    "description": "Bishop of Rome, known for his leadership during the Novatian controversy, defending the possibility of repentance for the lapsed.",
     "texts": [
-      ""
+      "Letters preserved by Cyprian and Eusebius"
     ],
-    "family": "",
+    "family": "Rome",
     "location": "",
-    "y": "0",
+    "y": "-165",
+    "eventType": "Church_father",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Firmilian of Caesarea",
+    "description": "Bishop of Caesarea, known for his correspondence with Cyprian and his role in baptism controversies. His letters, preserved by Cyprian, reveal early ecclesiastical thought.",
+    "texts": [
+      "Letters to Cyprian"
+    ],
+    "family": "Caesarea, Cappadocia",
+    "location": "",
+    "y": "-150",
     "eventType": "Church_father",
     "percentage": 25,
     "year": 250
@@ -306,20 +710,46 @@
     ],
     "family": "",
     "location": "",
-    "y": "15",
+    "y": "-135",
     "eventType": "Church_father",
     "percentage": 25,
     "year": 250
   },
   {
-    "title": "The Writings of Cyprian of Carthage",
-    "description": "Includes On the Unity of the Church, letters, and treatises on church discipline and unity. Historical context situates these works in mid-3rd century. Manuscript:Latin manuscripts from the 4th century onward",
+    "title": "Commodianus",
+    "description": "Christian Latin poet, known for Carmen Apologeticum and other works. Linguistic style and thematic content place his works in the mid-3rd century. Manuscript:Latin manuscripts from later periods.",
     "texts": [
       ""
     ],
     "family": "",
     "location": "",
-    "y": "-135",
+    "y": "-120",
+    "eventType": "Church_father",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Commodianus",
+    "description": "Early Christian Latin poet known for his didactic poetry, especially Carmen Apologeticum, which defended Christian beliefs and addressed pagan critiques.",
+    "texts": [
+      "Carmen Apologeticum"
+    ],
+    "family": "North Africa",
+    "location": "",
+    "y": "-105",
+    "eventType": "Church_father",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Gregory Thaumaturgus",
+    "description": "Bishop known for his work Panegyric to Origen and for his theological writings. He was a student of Origen.",
+    "texts": [
+      "Panegyric to Origen"
+    ],
+    "family": "Neocaesarea",
+    "location": "",
+    "y": "-45",
     "eventType": "Church_father",
     "percentage": 25,
     "year": 250
@@ -332,10 +762,102 @@
     ],
     "family": "",
     "location": "",
-    "y": "-150",
+    "y": "0",
     "eventType": "Church_father",
     "percentage": 25,
     "year": 250
+  },
+  {
+    "title": "The Writings of Cyprian of Carthage",
+    "description": "Includes On the Unity of the Church, letters, and treatises on church discipline and unity. Historical context situates these works in mid-3rd century. Manuscript:Latin manuscripts from the 4th century onward",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "15",
+    "eventType": "Church_father",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Gregory of Neocaesarea (Gregory Thaumaturgus)",
+    "description": "A bishop and theologian known for his miraculous powers and his theological writings, including Panegyric on Origen and Canonical Epistle.",
+    "texts": [
+      "Panegyric on Origen",
+      "Canonical Epistle"
+    ],
+    "family": "Neocaesarea",
+    "location": "",
+    "y": "60",
+    "eventType": "Church_father",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Novatian of Rome",
+    "description": "A presbyter and theologian who wrote on various theological topics, including his treatise On the Trinity. He was later excommunicated for his rigorist stance on lapsed Christians.",
+    "texts": [
+      "On the Trinity"
+    ],
+    "family": "Rome",
+    "location": "",
+    "y": "75",
+    "eventType": "Church_father",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Alexander of Jerusalem",
+    "description": "Bishop of Jerusalem, known for his ecclesiastical letters and influence on Origen. Fragments of his letters are preserved by Eusebius.",
+    "texts": [
+      "Letters"
+    ],
+    "family": "Jerusalem",
+    "location": "",
+    "y": "90",
+    "eventType": "Church_father",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Novatian",
+    "description": "Early Roman presbyter and theologian, known for his schismatic movement and his work On the Trinity, defending the divinity of Christ.",
+    "texts": [
+      "On the Trinity"
+    ],
+    "family": "Rome",
+    "location": "",
+    "y": "105",
+    "eventType": "Church_father",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Dionysius of Alexandria",
+    "description": "Bishop of Alexandria, known for his letters dealing with theological and ecclesiastical issues, including the Novatian controversy and Arianism.",
+    "texts": [
+      "Letters and fragments preserved by Eusebius"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "135",
+    "eventType": "Church_father",
+    "percentage": 25,
+    "year": 250
+  },
+  {
+    "title": "Paul of Samosata",
+    "description": "Bishop of Antioch, known for his heretical views on the nature of Christ (adoptionism) and his role in the early Arian controversy. Condemned at a synod in Antioch.",
+    "texts": [
+      "Fragments of letters"
+    ],
+    "family": "Antioch",
+    "location": "",
+    "y": "0",
+    "eventType": "Church_father",
+    "percentage": 26,
+    "year": 260
   },
   {
     "title": "The Writings of Dionysius of Alexandria",
@@ -345,10 +867,49 @@
     ],
     "family": "",
     "location": "",
-    "y": "0",
+    "y": "45",
     "eventType": "Church_father",
     "percentage": 27,
     "year": 265
+  },
+  {
+    "title": "Malchion of Antioch",
+    "description": "Christian presbyter and scholar, known for his refutation of Paul of Samosata, whose views on Christology were considered heretical.",
+    "texts": [
+      "Fragments preserved in Eusebius"
+    ],
+    "family": "Antioch",
+    "location": "",
+    "y": "0",
+    "eventType": "Church_father",
+    "percentage": 27,
+    "year": 270
+  },
+  {
+    "title": "Archelaus",
+    "description": "Bishop known for Acts of the Disputation with Manes, a polemic against Manichaeism. His writings represent early Christian efforts to refute heresy.",
+    "texts": [
+      "Acts of the Disputation with Manes"
+    ],
+    "family": "Charcara, Mesopotamia",
+    "location": "",
+    "y": "-75",
+    "eventType": "Church_father",
+    "percentage": 28,
+    "year": 275
+  },
+  {
+    "title": "Pierius of Alexandria",
+    "description": "Known as \"Origen Junior\" for his eloquence and theological writings. He was a presbyter in Alexandria and known for his sermons and theological studies.",
+    "texts": [
+      "Sermons and fragments"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "-60",
+    "eventType": "Church_father",
+    "percentage": 28,
+    "year": 275
   },
   {
     "title": "Victorinus of Pettau",
@@ -358,7 +919,72 @@
     ],
     "family": "",
     "location": "",
-    "y": "0",
+    "y": "-45",
+    "eventType": "Church_father",
+    "percentage": 28,
+    "year": 275
+  },
+  {
+    "title": "Malchion of Antioch",
+    "description": "Christian presbyter and philosopher, known for his theological disputes with Paul of Samosata and his defense of orthodox Christology.",
+    "texts": [
+      "Fragments in Eusebius"
+    ],
+    "family": "Antioch",
+    "location": "",
+    "y": "-30",
+    "eventType": "Church_father",
+    "percentage": 28,
+    "year": 275
+  },
+  {
+    "title": "Victorinus of Pettau",
+    "description": "Early Christian bishop and author of one of the earliest commentaries on the Book of Revelation. His views were often considered controversial, and he was later martyred.",
+    "texts": [
+      "Commentary on the Apocalypse"
+    ],
+    "family": "Pettau",
+    "location": "",
+    "y": "-15",
+    "eventType": "Church_father",
+    "percentage": 28,
+    "year": 275
+  },
+  {
+    "title": "Anatolius of Alexandria",
+    "description": "Christian philosopher, bishop, and mathematician. Known for his contributions to the Alexandrian Church and early Christian chronology.",
+    "texts": [
+      "Fragments in later Christian sources"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "15",
+    "eventType": "Church_father",
+    "percentage": 28,
+    "year": 275
+  },
+  {
+    "title": "Silvanus of Gaza",
+    "description": "Early Christian martyr and bishop of Gaza, known for his defense of Christianity during the Diocletian persecution.",
+    "texts": [
+      "Letters and martyrdom accounts"
+    ],
+    "family": "Gaza",
+    "location": "",
+    "y": "45",
+    "eventType": "Church_father",
+    "percentage": 28,
+    "year": 275
+  },
+  {
+    "title": "Methodius of Olympus",
+    "description": "Bishop and anti-Origenist writer, known for Banquet of the Ten Virgins, focusing on eschatology and chastity.",
+    "texts": [
+      "Banquet of the Ten Virgins"
+    ],
+    "family": "Olympus",
+    "location": "",
+    "y": "60",
     "eventType": "Church_father",
     "percentage": 28,
     "year": 275
@@ -371,10 +997,153 @@
     ],
     "family": "",
     "location": "",
-    "y": "15",
+    "y": "75",
     "eventType": "Church_father",
     "percentage": 28,
     "year": 275
+  },
+  {
+    "title": "Theonas of Alexandria",
+    "description": "Bishop of Alexandria, known for his letters and his leadership during the Diocletian persecution.",
+    "texts": [
+      "Letters preserved by Eusebius"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "0",
+    "eventType": "Church_father",
+    "percentage": 28,
+    "year": 280
+  },
+  {
+    "title": "Archelaus of Caschar",
+    "description": "Bishop of Caschar, famous for his Acts of the Disputation with Manes, a refutation of the founder of Manichaeism. His works were instrumental in combating early heresies.",
+    "texts": [
+      "Acts of the Disputation with Manes"
+    ],
+    "family": "Mesopotamia",
+    "location": "",
+    "y": "15",
+    "eventType": "Church_father",
+    "percentage": 28,
+    "year": 280
+  },
+  {
+    "title": "Archelaus of Mesopotamia",
+    "description": "Early Christian bishop known for his disputes with the Manichaean heresy. His polemical work Acts of Archelaus is an important source for understanding early Christian debates with Manichaeism.",
+    "texts": [
+      "Acts of Archelaus"
+    ],
+    "family": "Mesopotamia",
+    "location": "",
+    "y": "-60",
+    "eventType": "Church_father",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Lucian of Antioch",
+    "description": "A presbyter and martyr, known for his work on textual criticism of the Bible and for founding the Antiochene School of theology. His theological positions influenced Arianism.",
+    "texts": [
+      "Letters and fragments"
+    ],
+    "family": "Antioch",
+    "location": "",
+    "y": "30",
+    "eventType": "Church_father",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Narcissus of Jerusalem",
+    "description": "Bishop of Jerusalem, known for his long episcopate and involvement in the Quartodeciman controversy over the date of Easter.",
+    "texts": [
+      "Letters preserved in fragments"
+    ],
+    "family": "Jerusalem",
+    "location": "",
+    "y": "45",
+    "eventType": "Church_father",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Peter of Alexandria",
+    "description": "Bishop and theologian, known for his opposition to Arianism and his writings on church discipline. His Canonical Epistle deals with penance.",
+    "texts": [
+      "Canonical Epistle"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "60",
+    "eventType": "Church_father",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Marcellus of Ancyra",
+    "description": "Bishop of Ancyra, known for his opposition to Arianism. His teachings were controversial and led to his temporary excommunication.",
+    "texts": [
+      "Fragments and letters"
+    ],
+    "family": "Ancyra",
+    "location": "",
+    "y": "90",
+    "eventType": "Church_father",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Gregory of Elvira",
+    "description": "Early Spanish bishop and theologian, known for his contributions to Christological debates and opposition to Arianism.",
+    "texts": [
+      "Fragments preserved in later writings"
+    ],
+    "family": "Elvira (Spain)",
+    "location": "",
+    "y": "105",
+    "eventType": "Church_father",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Aphrahat",
+    "description": "Early Syriac Christian author, known for his collection of writings known as the Demonstrations, which addressed theological and ethical issues.",
+    "texts": [
+      "Demonstrations"
+    ],
+    "family": "Mesopotamia",
+    "location": "",
+    "y": "120",
+    "eventType": "Church_father",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Pamphilus of Caesarea",
+    "description": "Early Christian scholar and martyr, known for his friendship with Eusebius and for his efforts to preserve and promote the writings of Origen.",
+    "texts": [
+      "Apology for Origen"
+    ],
+    "family": "Caesarea",
+    "location": "",
+    "y": "150",
+    "eventType": "Church_father",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Peter of Alexandria",
+    "description": "Bishop of Alexandria known for his opposition to Arianism and his letters on church discipline during times of persecution. He was martyred in 311 AD.",
+    "texts": [
+      "Canonical Epistle and letters"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "0",
+    "eventType": "Church_father",
+    "percentage": 31,
+    "year": 310
   },
   {
     "title": "The Writings of Arnobius of Sicca",
@@ -384,7 +1153,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "-15",
+    "y": "-30",
     "eventType": "Church_father",
     "percentage": 33,
     "year": 325
@@ -397,7 +1166,46 @@
     ],
     "family": "",
     "location": "",
-    "y": "-30",
+    "y": "30",
+    "eventType": "Church_father",
+    "percentage": 33,
+    "year": 325
+  },
+  {
+    "title": "Alexander of Alexandria",
+    "description": "Bishop of Alexandria, a central figure in the early Arian controversy. He is known for his theological defense of the divinity of Christ.",
+    "texts": [
+      "Letters and theological fragments"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "45",
+    "eventType": "Church_father",
+    "percentage": 33,
+    "year": 325
+  },
+  {
+    "title": "Hosius of Cordoba",
+    "description": "An influential bishop and advisor to Emperor Constantine, known for his role in the Council of Nicaea. He was a defender of orthodoxy against Arianism.",
+    "texts": [
+      "Letters and council records"
+    ],
+    "family": "Cordoba",
+    "location": "",
+    "y": "60",
+    "eventType": "Church_father",
+    "percentage": 33,
+    "year": 325
+  },
+  {
+    "title": "Eusebius of Caesarea",
+    "description": "Known for Ecclesiastical History, which documents early Christianity up to his time. He was also involved in the debates leading up to the Council of Nicaea and wrote apologetic works defending the faith. His writings are crucial for preserving early Christian history. Wrote Ecclesiastical History, Life of Constantine, Preparation for the Gospel",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "75",
     "eventType": "Church_father",
     "percentage": 33,
     "year": 325
