@@ -91,19 +91,6 @@
     "year": 60
   },
   {
-    "title": "Epistle to the Philippians",
-    "description": "Written by Paul from prison, around 60-62 AD. The early church attributes it to Paul, and internal references to his imprisonment support this dating.",
-    "texts": [
-      "Philippians"
-    ],
-    "family": "",
-    "location": "Rome",
-    "y": "-15",
-    "eventType": "Likely_writing_date",
-    "percentage": 6,
-    "year": 60
-  },
-  {
     "title": "Epistle to the Ephesians",
     "description": "Traditionally attributed to Paul, written around 60-62 AD. Some scholars suggest it may have been written by a disciple of Paul due to stylistic differences.",
     "texts": [
@@ -112,6 +99,19 @@
     "family": "",
     "location": "Rome",
     "y": "-45",
+    "eventType": "Likely_writing_date",
+    "percentage": 6,
+    "year": 60
+  },
+  {
+    "title": "Epistle to the Philippians",
+    "description": "Written by Paul from prison, around 60-62 AD. The early church attributes it to Paul, and internal references to his imprisonment support this dating.",
+    "texts": [
+      "Philippians"
+    ],
+    "family": "",
+    "location": "Rome",
+    "y": "-15",
     "eventType": "Likely_writing_date",
     "percentage": 6,
     "year": 60
@@ -247,19 +247,6 @@
     "year": 90
   },
   {
-    "title": "1 John",
-    "description": "Traditionally attributed to the apostle John and likely written around 90-100 AD. The themes and style closely resemble the Gospel of John, supporting early attributions.",
-    "texts": [
-      "1 John"
-    ],
-    "family": "",
-    "location": "Ephesus",
-    "y": "45",
-    "eventType": "Likely_writing_date",
-    "percentage": 10,
-    "year": 95
-  },
-  {
     "title": "2 John",
     "description": "Likely written by the apostle John around 90-100 AD. Early church tradition affirms Johannine authorship, although some suggest it could have been written by a follower of John.",
     "texts": [
@@ -268,6 +255,19 @@
     "family": "",
     "location": "Ephesus",
     "y": "-60",
+    "eventType": "Likely_writing_date",
+    "percentage": 10,
+    "year": 95
+  },
+  {
+    "title": "1 John",
+    "description": "Traditionally attributed to the apostle John and likely written around 90-100 AD. The themes and style closely resemble the Gospel of John, supporting early attributions.",
+    "texts": [
+      "1 John"
+    ],
+    "family": "",
+    "location": "Ephesus",
+    "y": "45",
     "eventType": "Likely_writing_date",
     "percentage": 10,
     "year": 95
