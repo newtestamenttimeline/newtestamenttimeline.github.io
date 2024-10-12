@@ -85,7 +85,7 @@
     ],
     "family": "",
     "location": "Jerusalem, Judea",
-    "y": "0",
+    "y": "-60",
     "eventType": "Historical",
     "percentage": 7,
     "year": 70
@@ -111,13 +111,10 @@
     ],
     "family": "",
     "location": "Roman Empire",
-    "y": "30",
+    "y": "-105",
     "eventType": "Historical",
     "percentage": 15,
-    "yearRange": [
-      100,
-      200
-    ]
+    "year": 150
   },
   {
     "title": "Syriac Peshitta",
@@ -127,13 +124,10 @@
     ],
     "family": "",
     "location": "Eastern Roman Empire, Syria",
-    "y": "-30",
+    "y": "0",
     "eventType": "Historical",
     "percentage": 23,
-    "yearRange": [
-      200,
-      250
-    ]
+    "year": 225
   },
   {
     "title": "Edict of Milan",
@@ -143,7 +137,7 @@
     ],
     "family": "",
     "location": "Roman Empire",
-    "y": "0",
+    "y": "15",
     "eventType": "Historical",
     "percentage": 31,
     "year": 313
@@ -156,7 +150,7 @@
     ],
     "family": "",
     "location": "Nicaea, in what is now İznik, Turkey",
-    "y": "45",
+    "y": "-60",
     "eventType": "Historical",
     "percentage": 33,
     "year": 325
@@ -214,19 +208,6 @@
     "year": 405
   },
   {
-    "title": "Council of Ephesus",
-    "description": "The Council of Ephesus declared Mary as \"Theotokos\" (Mother of God) and condemned Nestorianism, which held that Christ had two distinct persons. This council shaped the Christological debates of the early church.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Ephesus (Turkey)",
-    "y": "30",
-    "eventType": "Historical",
-    "percentage": 43,
-    "year": 431
-  },
-  {
     "title": "Nestorian Schism",
     "description": "The Nestorian Schism followed the Council of Ephesus, with Nestorian Christians rejecting the council's ruling on the nature of Christ. This led to the formation of the Church of the East, which thrived primarily in Persia and Asia.",
     "texts": [
@@ -235,6 +216,19 @@
     "family": "",
     "location": "Persia, Mesopotamia",
     "y": "-30",
+    "eventType": "Historical",
+    "percentage": 43,
+    "year": 431
+  },
+  {
+    "title": "Council of Ephesus",
+    "description": "The Council of Ephesus declared Mary as \"Theotokos\" (Mother of God) and condemned Nestorianism, which held that Christ had two distinct persons. This council shaped the Christological debates of the early church.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Ephesus (Turkey)",
+    "y": "30",
     "eventType": "Historical",
     "percentage": 43,
     "year": 431
@@ -253,19 +247,6 @@
     "year": 450
   },
   {
-    "title": "Council of Chalcedon",
-    "description": "The Council of Chalcedon defined the dual nature of Christ as both fully human and fully divine, an important development in Christology. It also caused a schism with the Oriental Orthodox churches.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "Chalcedon (Turkey)",
-    "y": "75",
-    "eventType": "Historical",
-    "percentage": 45,
-    "year": 451
-  },
-  {
     "title": "Oriental Orthodox Schism",
     "description": "The Oriental Orthodox Churches broke away after rejecting the Council of Chalcedon’s definition of Christ's dual nature. This schism created churches such as the Coptic Orthodox, Syriac Orthodox, and Armenian Apostolic Churches.",
     "texts": [
@@ -274,6 +255,19 @@
     "family": "",
     "location": "Egypt, Syria, Armenia",
     "y": "-75",
+    "eventType": "Historical",
+    "percentage": 45,
+    "year": 451
+  },
+  {
+    "title": "Council of Chalcedon",
+    "description": "The Council of Chalcedon defined the dual nature of Christ as both fully human and fully divine, an important development in Christology. It also caused a schism with the Oriental Orthodox churches.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "Chalcedon (Turkey)",
+    "y": "75",
     "eventType": "Historical",
     "percentage": 45,
     "year": 451
@@ -575,10 +569,7 @@
     "y": "0",
     "eventType": "Historical",
     "percentage": 142,
-    "yearRange": [
-      1414,
-      1418
-    ]
+    "year": 1416
   },
   {
     "title": "Invention of the Printing Press",
@@ -604,10 +595,7 @@
     "y": "0",
     "eventType": "Historical",
     "percentage": 144,
-    "yearRange": [
-      1431,
-      1449
-    ]
+    "year": 1440
   },
   {
     "title": "Fall of Constantinople",
@@ -880,10 +868,7 @@
     "y": "0",
     "eventType": "Historical",
     "percentage": 187,
-    "yearRange": [
-      1869,
-      1870
-    ]
+    "year": 1869
   },
   {
     "title": "Revised Version",
