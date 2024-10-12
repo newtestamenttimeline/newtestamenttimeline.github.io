@@ -1,5 +1,551 @@
 [
   {
+    "title": "Marcion of Sinope",
+    "description": "Founder of the Marcionite heresy, which rejected the Old Testament and much of the New Testament, accepting only a modified version of Luke’s Gospel and ten Pauline epistles. His own works are lost, but his teachings are preserved through refutations by church fathers like Tertullian.",
+    "texts": [
+      "Antitheses (lost",
+      "cited by Tertullian)"
+    ],
+    "family": "Sinope, Asia Minor",
+    "location": "",
+    "y": "-30",
+    "eventType": "Extrabiblical",
+    "percentage": 15,
+    "year": 150
+  },
+  {
+    "title": "Ebionites",
+    "description": "A Jewish-Christian sect that rejected the divinity of Christ and adhered to a form of Jewish law. While the sect was not tied to a single founder, the teachings of the Ebionites were refuted by early church fathers.",
+    "texts": [
+      "Fragments cited by Irenaeus",
+      "Eusebius",
+      "Origen"
+    ],
+    "family": "Palestine",
+    "location": "",
+    "y": "-15",
+    "eventType": "Extrabiblical",
+    "percentage": 15,
+    "year": 150
+  },
+  {
+    "title": "Theodotus the Gnostic",
+    "description": "A Gnostic teacher associated with Valentinianism. His teachings are preserved in part through Clement of Alexandria's refutations. He focused on the hidden knowledge (gnosis) of spiritual truths.",
+    "texts": [
+      "Fragments cited by Clement of Alexandria"
+    ],
+    "family": "Asia Minor",
+    "location": "",
+    "y": "15",
+    "eventType": "Extrabiblical",
+    "percentage": 15,
+    "year": 150
+  },
+  {
+    "title": "Simon Magus",
+    "description": "A Samaritan magician and Gnostic figure, considered one of the founders of Gnosticism. He is mentioned in the Acts of the Apostles and refuted by early Christian writers. His teachings survive only in fragments.",
+    "texts": [
+      "Fragments in Acts of the Apostles",
+      "Irenaeus"
+    ],
+    "family": "Samaria",
+    "location": "",
+    "y": "30",
+    "eventType": "Extrabiblical",
+    "percentage": 15,
+    "year": 150
+  },
+  {
+    "title": "Cerinthus",
+    "description": "A Jewish-Christian heretic who taught a form of adoptionism, denying the pre-existence of Christ. His teachings are preserved through refutations by early church fathers like Irenaeus and Hippolytus.",
+    "texts": [
+      "Fragments in Irenaeus"
+    ],
+    "family": "Asia Minor",
+    "location": "",
+    "y": "45",
+    "eventType": "Extrabiblical",
+    "percentage": 15,
+    "year": 150
+  },
+  {
+    "title": "Prodicus",
+    "description": "A Gnostic teacher who denied the resurrection of the body and developed a libertine interpretation of Christian ethics. His teachings are preserved in refutations by church fathers like Clement of Alexandria.",
+    "texts": [
+      "Fragments cited by Clement of Alexandria"
+    ],
+    "family": "Greece",
+    "location": "",
+    "y": "-15",
+    "eventType": "Extrabiblical",
+    "percentage": 16,
+    "year": 160
+  },
+  {
+    "title": "Basilides",
+    "description": "A Gnostic teacher in Alexandria who developed a complex cosmology and theology. His views were later condemned as heretical.",
+    "texts": [
+      "Fragments in Against Heresies by Irenaeus"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "0",
+    "eventType": "Extrabiblical",
+    "percentage": 16,
+    "year": 160
+  },
+  {
+    "title": "Ptolemaeus",
+    "description": "A disciple of Valentinus, known for his Gnostic writings, particularly a letter to Flora, which offers an interpretation of Mosaic Law through a Gnostic lens. His works are preserved in part by Irenaeus and other church fathers.",
+    "texts": [
+      "Letter to Flora (preserved by Epiphanius)"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "15",
+    "eventType": "Extrabiblical",
+    "percentage": 16,
+    "year": 160
+  },
+  {
+    "title": "Montanus",
+    "description": "Founder of Montanism, a movement emphasizing prophecy and asceticism. Though Montanus' own writings are mostly lost, his teachings survive through polemical writings by opponents like Tertullian.",
+    "texts": [
+      "Fragments cited by Eusebius and others"
+    ],
+    "family": "Phrygia",
+    "location": "",
+    "y": "-45",
+    "eventType": "Extrabiblical",
+    "percentage": 17,
+    "year": 170
+  },
+  {
+    "title": "Dositheus",
+    "description": "An early Samaritan sect leader, sometimes associated with Gnosticism, who influenced later Christian thought. He is considered a heretic by the orthodox church but contributed to early religious discourse.",
+    "texts": [
+      "Fragments cited by later writers"
+    ],
+    "family": "Samaria",
+    "location": "",
+    "y": "-30",
+    "eventType": "Extrabiblical",
+    "percentage": 17,
+    "year": 170
+  },
+  {
+    "title": "Saturninus of Antioch",
+    "description": "Gnostic teacher who developed a dualistic system of thought, believing that the material world was created by a lower god (the Demiurge). His teachings are preserved in fragments by Irenaeus and others.",
+    "texts": [
+      "Fragments in Irenaeus and Hippolytus"
+    ],
+    "family": "Antioch",
+    "location": "",
+    "y": "-15",
+    "eventType": "Extrabiblical",
+    "percentage": 17,
+    "year": 170
+  },
+  {
+    "title": "Carpocrates",
+    "description": "Gnostic teacher who founded the Carpocratian sect, which taught radical ideas about reincarnation and the transcendence of social and moral norms. His teachings are preserved by Irenaeus and other critics.",
+    "texts": [
+      "Fragments cited by Irenaeus"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "0",
+    "eventType": "Extrabiblical",
+    "percentage": 17,
+    "year": 170
+  },
+  {
+    "title": "Valentinus",
+    "description": "Gnostic teacher who founded the Valentinian school of Gnosticism, known for his complex cosmology and emphasis on divine emanations. His works are preserved in fragments and through later refutations.",
+    "texts": [
+      "Fragments",
+      "The Gospel of Truth (likely his)"
+    ],
+    "family": "Alexandria, Rome",
+    "location": "",
+    "y": "15",
+    "eventType": "Extrabiblical",
+    "percentage": 17,
+    "year": 170
+  },
+  {
+    "title": "Menander",
+    "description": "A disciple of Simon Magus and a prominent figure in early Gnosticism. He taught that followers could achieve immortality through Gnostic knowledge. His teachings are preserved in part through Irenaeus and other critics.",
+    "texts": [
+      "Fragments cited by Irenaeus"
+    ],
+    "family": "Samaria",
+    "location": "",
+    "y": "30",
+    "eventType": "Extrabiblical",
+    "percentage": 17,
+    "year": 170
+  },
+  {
+    "title": "Marcus the Magician",
+    "description": "A Gnostic teacher associated with Valentinianism, known for his mystical teachings on divine numerology and sacraments. His teachings are preserved mainly through the polemics of Irenaeus.",
+    "texts": [
+      "Fragments cited by Irenaeus"
+    ],
+    "family": "Gaul",
+    "location": "",
+    "y": "-60",
+    "eventType": "Extrabiblical",
+    "percentage": 18,
+    "year": 175
+  },
+  {
+    "title": "Quintus Tertullianus",
+    "description": "Early Christian writer and apologist from Carthage, known for his sharp defenses of Christianity and his later involvement with the Montanist movement.",
+    "texts": [
+      "Numerous writings including Apology",
+      "Against Praxeas"
+    ],
+    "family": "Carthage",
+    "location": "",
+    "y": "-60",
+    "eventType": "Extrabiblical",
+    "percentage": 18,
+    "year": 180
+  },
+  {
+    "title": "Nicolaus",
+    "description": "Considered the founder of the Nicolaitans, a heretical sect mentioned in the Book of Revelation. His teachings, condemned for promoting idolatry and immorality, are preserved only in refutations.",
+    "texts": [
+      "Mentioned in Revelation",
+      "refuted by early church fathers"
+    ],
+    "family": "Asia Minor",
+    "location": "",
+    "y": "-15",
+    "eventType": "Extrabiblical",
+    "percentage": 18,
+    "year": 180
+  },
+  {
+    "title": "Basilides",
+    "description": "A prominent Gnostic teacher in Alexandria, Basilides developed a complex cosmological system. His works survive in fragments, mainly through Clement of Alexandria, Hippolytus, and Irenaeus.",
+    "texts": [
+      "Exegetica (lost",
+      "fragments cited by others)"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "0",
+    "eventType": "Extrabiblical",
+    "percentage": 18,
+    "year": 180
+  },
+  {
+    "title": "Elchasai",
+    "description": "Leader of the Elchasaites, a Jewish-Christian sect with Gnostic elements. He is known for the Book of Elchasai, which taught mystical practices. His teachings are preserved through refutations by church fathers.",
+    "texts": [
+      "Book of Elchasai (fragments in Epiphanius and Hippolytus)"
+    ],
+    "family": "Palestine",
+    "location": "",
+    "y": "15",
+    "eventType": "Extrabiblical",
+    "percentage": 18,
+    "year": 180
+  },
+  {
+    "title": "Florinus",
+    "description": "A presbyter in Rome who fell into heresy by promoting Gnostic views. Irenaeus wrote Against Florinus to refute him.",
+    "texts": [
+      "Lost",
+      "cited in Irenaeus"
+    ],
+    "family": "Rome",
+    "location": "",
+    "y": "30",
+    "eventType": "Extrabiblical",
+    "percentage": 18,
+    "year": 180
+  },
+  {
+    "title": "Bardesanes",
+    "description": "A Syrian Gnostic who wrote extensively on free will and cosmology. His works, including The Book of the Laws of Countries, survive in fragments, especially in Syriac literature.",
+    "texts": [
+      "The Book of the Laws of Countries (fragments)"
+    ],
+    "family": "Edessa, Mesopotamia",
+    "location": "",
+    "y": "0",
+    "eventType": "Extrabiblical",
+    "percentage": 19,
+    "year": 190
+  },
+  {
+    "title": "Noetus of Smyrna",
+    "description": "Early proponent of modalistic monarchianism (the idea that God is one person who appears in different modes), which was condemned as heresy. His teachings were refuted by Hippolytus.",
+    "texts": [
+      "Fragments preserved in Hippolytus' Refutation of All Heresies"
+    ],
+    "family": "Smyrna",
+    "location": "",
+    "y": "-30",
+    "eventType": "Extrabiblical",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Mani",
+    "description": "Founder of Manichaeism, a syncretic religion that blended elements of Christianity, Zoroastrianism, and Buddhism. Though most of his writings are lost, some texts and fragments survive, particularly in the Kephalaia and other Manichaean writings.",
+    "texts": [
+      "Kephalaia",
+      "fragments of letters"
+    ],
+    "family": "Persia",
+    "location": "",
+    "y": "-15",
+    "eventType": "Extrabiblical",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Cerdo",
+    "description": "A Gnostic teacher who influenced Marcion of Sinope. He rejected the Old Testament and taught that the god of the Old Testament was different from the god of the New Testament. His teachings are preserved in refutations by early church fathers.",
+    "texts": [
+      "Fragments cited by Irenaeus and Tertullian"
+    ],
+    "family": "Syria",
+    "location": "",
+    "y": "0",
+    "eventType": "Extrabiblical",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Symmachus the Ebionite",
+    "description": "A translator of the Old Testament into Greek, he was associated with the Ebionite movement, which rejected the divinity of Jesus. His translation of the Old Testament is often quoted by Origen.",
+    "texts": [
+      "Translation of the Old Testament"
+    ],
+    "family": "Palestine",
+    "location": "",
+    "y": "15",
+    "eventType": "Extrabiblical",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Theodotus of Byzantium",
+    "description": "A proponent of adoptionism, the belief that Jesus became divine only after his baptism. He was excommunicated by Pope Victor I for his views.",
+    "texts": [
+      "Fragments preserved by later church fathers"
+    ],
+    "family": "Byzantium",
+    "location": "",
+    "y": "30",
+    "eventType": "Extrabiblical",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Alcibiades of Apamea",
+    "description": "Christian ascetic known for extreme fasting, mentioned by Hippolytus and linked with early monastic practices. His influence was more regional but significant for ascetic traditions.",
+    "texts": [
+      "Fragments in Hippolytus’ writings"
+    ],
+    "family": "Apamea",
+    "location": "",
+    "y": "45",
+    "eventType": "Extrabiblical",
+    "percentage": 20,
+    "year": 200
+  },
+  {
+    "title": "Soter of Rome",
+    "description": "Bishop of Rome known for his pastoral letters and his defense of the faith against various heresies.",
+    "texts": [
+      "Letters preserved in fragments by Eusebius"
+    ],
+    "family": "Rome",
+    "location": "",
+    "y": "-60",
+    "eventType": "Extrabiblical",
+    "percentage": 22,
+    "year": 220
+  },
+  {
+    "title": "Beryllus of Bostra",
+    "description": "Bishop of Bostra in Arabia, initially a proponent of adoptionism, a belief denying the pre-existence of Christ, but later returned to orthodoxy after debate with Origen.",
+    "texts": [
+      "Letters",
+      "fragments preserved by Eusebius"
+    ],
+    "family": "Bostra",
+    "location": "",
+    "y": "60",
+    "eventType": "Extrabiblical",
+    "percentage": 22,
+    "year": 220
+  },
+  {
+    "title": "Theodotus of Byzantium (Theodotus the Cobbler)",
+    "description": "A proponent of adoptionism who taught that Jesus was born a mere man and became divine at his baptism. His teachings were condemned, and he was excommunicated by Pope Victor I.",
+    "texts": [
+      "Fragments preserved by Hippolytus and Eusebius"
+    ],
+    "family": "Byzantium",
+    "location": "",
+    "y": "-90",
+    "eventType": "Extrabiblical",
+    "percentage": 23,
+    "year": 225
+  },
+  {
+    "title": "Secundus",
+    "description": "A Gnostic teacher and prominent disciple of Valentinus, known for his teaching on the division of reality into two basic substances (light and darkness). His teachings survive in part through Irenaeus and other early church fathers.",
+    "texts": [
+      "Fragments preserved by Irenaeus"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "90",
+    "eventType": "Extrabiblical",
+    "percentage": 23,
+    "year": 225
+  },
+  {
+    "title": "Heracleon",
+    "description": "A prominent Gnostic and disciple of Valentinus, Heracleon is known for his commentary on the Gospel of John, which was the first known Christian biblical commentary. His Gnostic interpretations are preserved through Origen’s refutations.",
+    "texts": [
+      "Fragments in Origen’s Commentary on John"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "60",
+    "eventType": "Extrabiblical",
+    "percentage": 23,
+    "year": 230
+  },
+  {
+    "title": "Zephyrinus",
+    "description": "Bishop of Rome, known for his opposition to various heretical movements, including modalism and Gnosticism. His leadership during a time of theological upheaval was significant for early church unity.",
+    "texts": [
+      "Letters and fragments"
+    ],
+    "family": "Rome",
+    "location": "",
+    "y": "-135",
+    "eventType": "Extrabiblical",
+    "percentage": 24,
+    "year": 240
+  },
+  {
+    "title": "Paul of Samosata",
+    "description": "Bishop of Antioch who taught a form of adoptionism, later deemed heretical. He denied the pre-existence of Christ and was condemned at a synod in 268 AD. Some of his letters and teachings are preserved in refutations.",
+    "texts": [
+      "Fragments preserved by Eusebius"
+    ],
+    "family": "Antioch",
+    "location": "",
+    "y": "150",
+    "eventType": "Extrabiblical",
+    "percentage": 24,
+    "year": 240
+  },
+  {
+    "title": "Priscillian of Avila",
+    "description": "Although he lived slightly after the Nicene period, Priscillian was an important figure in early Spanish Christianity who was accused of promoting Gnostic and Manichaean beliefs. He was executed for heresy.",
+    "texts": [
+      "Fragments of letters",
+      "Apology"
+    ],
+    "family": "Avila, Spain",
+    "location": "",
+    "y": "30",
+    "eventType": "Extrabiblical",
+    "percentage": 28,
+    "year": 275
+  },
+  {
+    "title": "Anatolius of Laodicea",
+    "description": "Bishop of Laodicea, known for his work on the Easter controversy and his mathematical treatise On the Calculation of Easter.",
+    "texts": [
+      "Fragments on Easter calculation"
+    ],
+    "family": "Laodicea",
+    "location": "",
+    "y": "-120",
+    "eventType": "Extrabiblical",
+    "percentage": 30,
+    "year": 300
+  },
+  {
+    "title": "Letter of Arius to Eusebius of Nicomedia",
+    "description": "A letter outlining Arius' beliefs that the Son of God was created and not eternal. Preserved through citations by Athanasius.",
+    "texts": [
+      "Fragments in On the Councils of Ariminum and Seleucia by Athanasius"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "0",
+    "eventType": "Extrabiblical",
+    "percentage": 32,
+    "year": 319
+  },
+  {
+    "title": "Thalia",
+    "description": "A theological poem by Arius presenting his views on the nature of Christ, emphasizing that the Son was created by the Father. Survives in fragments.",
+    "texts": [
+      "Fragments in Orations Against the Arians by Athanasius"
+    ],
+    "family": "Alexandria",
+    "location": "",
+    "y": "15",
+    "eventType": "Extrabiblical",
+    "percentage": 32,
+    "year": 320
+  },
+  {
+    "title": "Letters of Arian Bishops (Eusebius of Nicomedia, Ulfilas)",
+    "description": "Letters written by Arian bishops defending Arian theology and spreading the movement, particularly among the Goths.",
+    "texts": [
+      "Fragments in writings of Athanasius",
+      "Socrates Scholasticus"
+    ],
+    "family": "Various",
+    "location": "",
+    "y": "-15",
+    "eventType": "Extrabiblical",
+    "percentage": 33,
+    "year": 325
+  },
+  {
+    "title": "Writings of Aetius",
+    "description": "Writings by Aetius, a key figure in radical Arianism, particularly defending the idea that the Son is unlike (heteroousios) the Father.",
+    "texts": [
+      "Fragments in Against Eunomius by Basil of Caesarea"
+    ],
+    "family": "Antioch",
+    "location": "",
+    "y": "-75",
+    "eventType": "Extrabiblical",
+    "percentage": 33,
+    "year": 330
+  },
+  {
+    "title": "Writings of Eunomius",
+    "description": "Works by Eunomius, a prominent Arian (Anomoean), defending the radical Arian position that the Son is of a completely different essence from the Father.",
+    "texts": [
+      "Fragments in Against Eunomius by Basil of Caesarea"
+    ],
+    "family": "Constantinople",
+    "location": "",
+    "y": "-135",
+    "eventType": "Extrabiblical",
+    "percentage": 36,
+    "year": 360
+  },
+  {
     "title": "Philo of Alexandria",
     "description": "Philo, a Hellenistic Jewish philosopher, wrote extensively about Jewish customs and theology in the early 1st century. His works provide background on Jewish thought during the time of Jesus and the early church, helping to illuminate the cultural and philosophical environment in which the New Testament was written.",
     "texts": [
@@ -59,7 +605,7 @@
     ],
     "family": "",
     "location": "Rome",
-    "y": "0",
+    "y": "-75",
     "eventType": "Extrabiblical",
     "percentage": 10,
     "year": 100
@@ -104,19 +650,6 @@
     "year": 140
   },
   {
-    "title": "Pseudo-Clementine Homilies",
-    "description": "A collection of early Christian writings attributed to Clement of Rome, addressing moral and theological issues.",
-    "texts": [
-      ""
-    ],
-    "family": "",
-    "location": "",
-    "y": "-30",
-    "eventType": "Extrabiblical",
-    "percentage": 15,
-    "year": 150
-  },
-  {
     "title": "New Testament Apocrypha",
     "description": "The New Testament Apocrypha includes a variety of writings from the 2nd and 3rd centuries AD that were not included in the canonical New Testament. These texts, such as the Gospel of Thomas, Gospel of Peter, Gospel of Mary, and Shepherd of Hermas, offer alternative perspectives on Jesus' life, teachings, and early Christian beliefs. Most of these writings are generally dated later than the canonical books, often in the mid- to late-2nd century, and are considered less reliable regarding authorship. While many are attributed to key figures like Peter, Mary Magdalene, or Barnabas, modern scholars agree that these attributions are unlikely to be authentic, as the actual authors are mostly anonymous or unknown. Unlike the canonical texts, which have earlier and more widespread manuscript support (such as the Codex Sinaiticus and Vaticanus), apocryphal texts often survive in limited manuscripts or fragmented forms, like the Gospel of Thomas from the Nag Hammadi library. These writings were rejected by early church leaders due to theological concerns, particularly their association with Gnosticism or Jewish-Christian sects, and their later dates and less secure transmission further distinguish them from the earlier, more reliably attested New Testament books.",
     "texts": [
@@ -127,10 +660,20 @@
     "y": "-45",
     "eventType": "Extrabiblical",
     "percentage": 15,
-    "yearRange": [
-      100,
-      200
-    ]
+    "year": 150
+  },
+  {
+    "title": "Pseudo-Clementine Homilies",
+    "description": "A collection of early Christian writings attributed to Clement of Rome, addressing moral and theological issues.",
+    "texts": [
+      ""
+    ],
+    "family": "",
+    "location": "",
+    "y": "60",
+    "eventType": "Extrabiblical",
+    "percentage": 15,
+    "year": 150
   },
   {
     "title": "The Epistle of Mathetes to Diognetus",
@@ -140,13 +683,10 @@
     ],
     "family": "",
     "location": "Rome",
-    "y": "45",
+    "y": "120",
     "eventType": "Extrabiblical",
     "percentage": 15,
-    "yearRange": [
-      130,
-      175
-    ]
+    "year": 152
   },
   {
     "title": "Dialogue with Trypho by Justin Martyr",
@@ -156,7 +696,7 @@
     ],
     "family": "",
     "location": "Rome",
-    "y": "-30",
+    "y": "30",
     "eventType": "Extrabiblical",
     "percentage": 16,
     "year": 160
@@ -169,7 +709,7 @@
     ],
     "family": "",
     "location": "Rome",
-    "y": "30",
+    "y": "-30",
     "eventType": "Extrabiblical",
     "percentage": 17,
     "year": 165
@@ -182,7 +722,7 @@
     ],
     "family": "",
     "location": "",
-    "y": "45",
+    "y": "-120",
     "eventType": "Extrabiblical",
     "percentage": 18,
     "year": 178
@@ -212,5 +752,31 @@
     "eventType": "Extrabiblical",
     "percentage": 183,
     "year": 1830
+  },
+  {
+    "title": "The Dedication Creed (Council of Antioch)",
+    "description": "A creed produced by an Arian-leaning council, rejecting the consubstantiality of the Son with the Father.",
+    "texts": [
+      "Complete text"
+    ],
+    "family": "Antioch",
+    "location": "",
+    "y": "90",
+    "eventType": "Extrabiblical",
+    "percentage": 34,
+    "year": 341
+  },
+  {
+    "title": "Second Creed of Sirmium",
+    "description": "A key Arian creed, explicitly rejecting the term \"homoousios\" (same substance) to describe the relationship between the Father and the Son.",
+    "texts": [
+      "Complete text"
+    ],
+    "family": "Sirmium",
+    "location": "",
+    "y": "135",
+    "eventType": "Extrabiblical",
+    "percentage": 36,
+    "year": 357
   }
 ]
