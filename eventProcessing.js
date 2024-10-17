@@ -31,12 +31,12 @@ async function loadEvents() {
 
         // Fetch and process the event data from JSON files
         const eventFiles = [
-            'manuscripts.json',
-            'uncials.json',
-            'historical_events.json',
-            'extrabiblical.json',
-            'church_fathers.json',
-            'likely-writing-date.json'
+            '/JSONS/manuscripts.json',
+            '/JSONS/uncials.json',
+            '/JSONS/historical_events.json',
+            '/JSONS/extrabiblical.json',
+            '/JSONS/church_fathers.json',
+            '/JSONS/likely-writing-date.json'
         ];
 
         const eventGroups = await Promise.all(
