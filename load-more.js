@@ -135,8 +135,8 @@ function applyActiveFilters() {
 // Main function to load more manuscripts
 async function loadMoreManuscripts() {
     console.log('Loading more manuscripts...');
-    const minusculesData = await fetchAndProcessJSON('minuscules.json');
-    const lectionariesData = await fetchAndProcessJSON('lectionaries.json');
+    const minusculesData = await fetchAndProcessJSON('/JSONS/minuscules.json');
+    const lectionariesData = await fetchAndProcessJSON('/JSONS/lectionaries.json');
 
     if (minusculesData.length === 0 && lectionariesData.length === 0) {
         console.error('No data loaded from JSON files.');
