@@ -1,4 +1,33 @@
 [
+   {
+    "title": "ℓ 1601",
+    "description": "",
+    "texts": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
+    ],
+    "family": "Byzantine",
+    "location": "Byzantine Empire",
+    "y": "30",
+    "eventType": "Lectionary",
+    "percentage": 45,
+    "year": 450
+  },
+   {
+    "title": "Minuscule 123",
+    "description": "Minuscule 123 is a Greek manuscript of the New Testament, dated to the 9th century, containing the Gospels.",
+    "texts": [
+      ""
+    ],
+    "family": "Byzantine",
+    "location": "Constantinople, Turkey",
+    "y": "420",
+    "eventType": "Minuscule",
+    "percentage": 84,
+    "year": 835
+  },
   {
     "title": "Papyrus52",
     "description": "Papyrus52 features sections of the Gospel of John, paleographically dated to the early 2nd century.",
