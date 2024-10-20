@@ -1,34 +1,4 @@
 [
-   {
-    "title": "Minuscule 123",
-    "description": "Minuscule 123 is a Greek manuscript of the New Testament, dated to the 9th century, containing the Gospels.",
-    "texts": [
-      ""
-    ],
-    "family": "Byzantine",
-    "location": "Constantinople, Turkey",
-    "y": "15",
-    "eventType": "Minuscule",
-    "percentage": 84,
-    "year": 835
-  },
-
- {
-    "title": "ℓ 1601",
-    "description": "",
-    "texts": [
-      "Matthew",
-      "Mark",
-      "Luke",
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Byzantine Empire",
-    "y": "30",
-    "eventType": "Lectionary",
-    "percentage": 45,
-    "year": 450
-  },
   {
     "title": "Papyrus52",
     "description": "Papyrus52 features sections of the Gospel of John, paleographically dated to the early 2nd century.",
@@ -612,10 +582,7 @@
     "y": "225",
     "eventType": "Papyrus",
     "percentage": 25,
-    "yearRange": [
-      225,
-      275
-    ]
+    "year": 250
   },
   {
     "title": "Papyrus20",
@@ -1460,10 +1427,7 @@
     "y": "-120",
     "eventType": "Papyrus",
     "percentage": 55,
-    "yearRange": [
-      525,
-      575
-    ]
+    "year": 550
   },
   {
     "title": "Papyrus96",
