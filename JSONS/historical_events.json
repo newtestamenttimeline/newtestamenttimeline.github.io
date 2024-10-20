@@ -1,4 +1,4 @@
-[ 
+[
   {
     "title": "Birth of Jesus of Nazareth",
     "description": "The birth of Jesus of Nazareth, who is later recognized as the central figure of Christianity. Although this is the event from which the modern calendar is counted, the exact year is somewhat debated, and likely it happened 3-5 BCE.",
@@ -114,7 +114,10 @@
     "y": "-105",
     "eventType": "Historical",
     "percentage": 15,
-    "year": 150
+    "yearRange": [
+      100,
+      200
+    ]
   },
   {
     "title": "Syriac Peshitta",
@@ -127,7 +130,10 @@
     "y": "0",
     "eventType": "Historical",
     "percentage": 23,
-    "year": 225
+    "yearRange": [
+      200,
+      250
+    ]
   },
   {
     "title": "Edict of Milan",
@@ -384,7 +390,7 @@
     ],
     "family": "",
     "location": "Constantinople (Istanbul, Turkey)",
-    "y": "25",
+    "y": "0",
     "eventType": "Historical",
     "percentage": 87,
     "year": 869
@@ -397,7 +403,7 @@
     ],
     "family": "",
     "location": "Rome, Italy & Constantinople",
-    "y": "15",
+    "y": "5130",
     "eventType": "Historical",
     "percentage": 105,
     "year": 1054
@@ -410,7 +416,7 @@
     ],
     "family": "",
     "location": "Rome, Constantinople",
-    "y": "15",
+    "y": "-5130",
     "eventType": "Historical",
     "percentage": 105,
     "year": 1054
@@ -569,7 +575,10 @@
     "y": "0",
     "eventType": "Historical",
     "percentage": 142,
-    "year": 1416
+    "yearRange": [
+      1414,
+      1418
+    ]
   },
   {
     "title": "Invention of the Printing Press",
@@ -595,7 +604,10 @@
     "y": "0",
     "eventType": "Historical",
     "percentage": 144,
-    "year": 1440
+    "yearRange": [
+      1431,
+      1449
+    ]
   },
   {
     "title": "Fall of Constantinople",
@@ -712,7 +724,10 @@
     "y": "0",
     "eventType": "Historical",
     "percentage": 155,
-    "year": 1554
+    "yearRange": [
+      1545,
+      1563
+    ]
   },
   {
     "title": "Scottish Reformation",
@@ -868,7 +883,10 @@
     "y": "0",
     "eventType": "Historical",
     "percentage": 187,
-    "year": 1869
+    "yearRange": [
+      1869,
+      1870
+    ]
   },
   {
     "title": "Revised Version",
