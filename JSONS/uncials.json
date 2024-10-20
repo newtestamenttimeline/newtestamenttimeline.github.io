@@ -7,7 +7,7 @@
     ],
     "family": "Alexandrian",
     "location": "St. Catherine's Monastery, Sinai Peninsula (Codex Sinaiticus)",
-    "y": "-45",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 33,
     "year": 325
@@ -20,7 +20,7 @@
     ],
     "family": "Byzantine",
     "location": "Vatican Library, Rome (Codex Vaticanus)",
-    "y": "0",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 35,
     "year": 350
@@ -33,7 +33,7 @@
     ],
     "family": "Western",
     "location": "Alexandria (likely origin), now in the British Library, London (Codex Alexandrinus)",
-    "y": "0",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 38,
     "year": 375
@@ -46,7 +46,7 @@
     ],
     "family": "Alexandrian",
     "location": "Constantinople (now in the Bibliothèque nationale de France, Paris) (Codex Ephraemi Rescriptus)",
-    "y": "-75",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 40,
     "year": 400
@@ -73,7 +73,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Vaticanus 354)",
-    "y": "0",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 45,
     "year": 450
@@ -86,7 +86,7 @@
     ],
     "family": "Western",
     "location": "Mount Athos, Greece (Codex Athous Lavrensis)",
-    "y": "60",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 45,
     "year": 450
@@ -99,7 +99,7 @@
     ],
     "family": "Alexandrian",
     "location": "Monastery of St. Catherine, Sinai Peninsula (Codex Petropolitanus Purpureus)",
-    "y": "0",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 48,
     "year": 475
@@ -114,7 +114,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Washingtonianus)",
-    "y": "0",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 50,
     "year": 500
@@ -127,7 +127,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Claromontanus, now in Paris)",
-    "y": "45",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 50,
     "year": 500
@@ -140,7 +140,7 @@
     ],
     "family": "Western",
     "location": "Great Lavra Monastery, Mount Athos (Codex Coislinianus)",
-    "y": "15",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 53,
     "year": 525
@@ -154,7 +154,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Vaticanus 2066)",
-    "y": "-135",
+    "y": "0",
     "eventType": "Uncial",
     "percentage": 55,
     "year": 550
@@ -168,7 +168,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 2061)",
-    "y": "-15",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 55,
     "year": 550
@@ -181,7 +181,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 401)",
-    "y": "0",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 55,
     "year": 550
@@ -195,7 +195,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Athous Dionysiou)",
-    "y": "15",
+    "y": "30",
     "eventType": "Uncial",
     "percentage": 55,
     "year": 550
@@ -208,7 +208,7 @@
     ],
     "family": "Alexandrian",
     "location": "Unknown, now in the British Library (Codex Harleianus)",
-    "y": "120",
+    "y": "-30",
     "eventType": "Uncial",
     "percentage": 55,
     "year": 550
@@ -222,7 +222,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Tischendorfianus III)",
-    "y": "135",
+    "y": "45",
     "eventType": "Uncial",
     "percentage": 55,
     "year": 550
@@ -235,7 +235,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 450)",
-    "y": "150",
+    "y": "-45",
     "eventType": "Uncial",
     "percentage": 55,
     "year": 550
@@ -261,7 +261,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Petropolitanus Purpureus)",
-    "y": "-60",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 60,
     "year": 600
@@ -287,7 +287,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Beratinus)",
-    "y": "0",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 65,
     "year": 650
@@ -300,7 +300,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Rossanensis)",
-    "y": "0",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 68,
     "year": 675
@@ -313,7 +313,7 @@
     ],
     "family": "Alexandrian",
     "location": "Unknown (Codex Dublinensis)",
-    "y": "0",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 70,
     "year": 700
@@ -326,7 +326,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Basilensis)",
-    "y": "15",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 73,
     "year": 725
@@ -339,7 +339,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 2067)",
-    "y": "-45",
+    "y": "0",
     "eventType": "Uncial",
     "percentage": 75,
     "year": 750
@@ -352,7 +352,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Boernerianus)",
-    "y": "60",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 75,
     "year": 750
@@ -366,7 +366,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Athous Lavrensis)",
-    "y": "90",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 75,
     "year": 750
@@ -379,7 +379,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Basilensis A. N. III. 12)",
-    "y": "0",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 78,
     "year": 775
@@ -392,7 +392,7 @@
     ],
     "family": "Byzantine",
     "location": "Unknown (Codex Cyprius)",
-    "y": "0",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 80,
     "year": 800
@@ -405,7 +405,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 648)",
-    "y": "-30",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 82,
     "year": 820
@@ -444,7 +444,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Seidelianus I)",
-    "y": "45",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 83,
     "year": 825
@@ -457,7 +457,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Athous Koutloumousiou)",
-    "y": "-510",
+    "y": "0",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -470,7 +470,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 375)",
-    "y": "-510",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -483,7 +483,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Regius)",
-    "y": "-495",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -496,7 +496,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 493)",
-    "y": "-495",
+    "y": "30",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -509,7 +509,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 367)",
-    "y": "-480",
+    "y": "-30",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -522,7 +522,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 492)",
-    "y": "-480",
+    "y": "45",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -535,7 +535,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 405)",
-    "y": "-465",
+    "y": "-45",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -548,7 +548,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Nanianus)",
-    "y": "-60",
+    "y": "60",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -574,7 +574,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Angelicus)",
-    "y": "-45",
+    "y": "75",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -587,7 +587,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 440)",
-    "y": "-45",
+    "y": "-75",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -600,7 +600,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 517)",
-    "y": "-30",
+    "y": "90",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -613,7 +613,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 425)",
-    "y": "0",
+    "y": "-90",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -626,7 +626,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 386)",
-    "y": "15",
+    "y": "105",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -639,7 +639,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Athous Pantokratoros)",
-    "y": "15",
+    "y": "-105",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -652,7 +652,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 511)",
-    "y": "15",
+    "y": "120",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -665,7 +665,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 481)",
-    "y": "15",
+    "y": "-120",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -678,7 +678,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Macedoniensis)",
-    "y": "30",
+    "y": "135",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -691,7 +691,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Seidelianus II)",
-    "y": "30",
+    "y": "-135",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -704,7 +704,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 466)",
-    "y": "30",
+    "y": "150",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -717,7 +717,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 500)",
-    "y": "30",
+    "y": "-150",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -730,7 +730,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Petropolitanus)",
-    "y": "45",
+    "y": "165",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -743,7 +743,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Athous Lavrensis)",
-    "y": "45",
+    "y": "-165",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -756,7 +756,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 526)",
-    "y": "45",
+    "y": "180",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -769,7 +769,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 383)",
-    "y": "60",
+    "y": "-180",
     "eventType": "Uncial",
     "percentage": 84,
     "year": 835
@@ -782,7 +782,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 632)",
-    "y": "-195",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -795,7 +795,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 615)",
-    "y": "-180",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -808,7 +808,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 599)",
-    "y": "-165",
+    "y": "30",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -821,7 +821,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 580)",
-    "y": "-150",
+    "y": "-30",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -834,7 +834,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 564)",
-    "y": "-135",
+    "y": "45",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -847,7 +847,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 548)",
-    "y": "-120",
+    "y": "-45",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -860,7 +860,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 529)",
-    "y": "-105",
+    "y": "60",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -873,7 +873,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 545)",
-    "y": "-90",
+    "y": "-60",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -886,7 +886,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 560)",
-    "y": "-75",
+    "y": "75",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -899,7 +899,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 577)",
-    "y": "-60",
+    "y": "-75",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -912,7 +912,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 593)",
-    "y": "-45",
+    "y": "90",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -925,7 +925,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 611)",
-    "y": "-30",
+    "y": "-90",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -938,7 +938,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 628)",
-    "y": "-15",
+    "y": "105",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -951,7 +951,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 636)",
-    "y": "0",
+    "y": "-105",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -964,7 +964,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 619)",
-    "y": "30",
+    "y": "120",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -977,7 +977,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 603)",
-    "y": "45",
+    "y": "-120",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -990,7 +990,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 586)",
-    "y": "60",
+    "y": "135",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -1003,7 +1003,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 567)",
-    "y": "75",
+    "y": "-135",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -1016,7 +1016,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 553)",
-    "y": "90",
+    "y": "150",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -1029,7 +1029,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 536)",
-    "y": "105",
+    "y": "-150",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -1042,7 +1042,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 540)",
-    "y": "120",
+    "y": "165",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -1055,7 +1055,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 555)",
-    "y": "135",
+    "y": "-165",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -1068,7 +1068,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 571)",
-    "y": "150",
+    "y": "180",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -1081,7 +1081,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 590)",
-    "y": "165",
+    "y": "-180",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -1094,7 +1094,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 607)",
-    "y": "180",
+    "y": "195",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -1107,7 +1107,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 623)",
-    "y": "195",
+    "y": "-195",
     "eventType": "Uncial",
     "percentage": 87,
     "year": 865
@@ -1120,7 +1120,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Guelferbytanus A)",
-    "y": "0",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 88,
     "year": 875
@@ -1159,7 +1159,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 660)",
-    "y": "30",
+    "y": "-30",
     "eventType": "Uncial",
     "percentage": 88,
     "year": 880
@@ -1172,7 +1172,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Guelferbytanus B)",
-    "y": "15",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 90,
     "year": 900
@@ -1185,7 +1185,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Augiensis)",
-    "y": "0",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 93,
     "year": 925
@@ -1198,7 +1198,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-105",
+    "y": "0",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1211,7 +1211,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-105",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1224,7 +1224,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-90",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1237,7 +1237,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-90",
+    "y": "30",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1250,7 +1250,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-75",
+    "y": "-30",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1263,7 +1263,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-75",
+    "y": "45",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1276,7 +1276,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 380)",
-    "y": "-60",
+    "y": "-45",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1289,7 +1289,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-60",
+    "y": "60",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1302,7 +1302,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Vaticanus 420)",
-    "y": "-45",
+    "y": "-60",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1315,7 +1315,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Boernerianus)",
-    "y": "-45",
+    "y": "75",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1328,7 +1328,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-30",
+    "y": "-75",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1341,7 +1341,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-30",
+    "y": "90",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1354,7 +1354,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-15",
+    "y": "-90",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1367,7 +1367,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-15",
+    "y": "105",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1380,7 +1380,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "0",
+    "y": "-105",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1393,7 +1393,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "15",
+    "y": "120",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1406,7 +1406,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "30",
+    "y": "-120",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1419,7 +1419,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "45",
+    "y": "135",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1432,7 +1432,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "60",
+    "y": "-135",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1445,7 +1445,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "75",
+    "y": "150",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1458,7 +1458,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "90",
+    "y": "-150",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1471,7 +1471,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "105",
+    "y": "165",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1484,7 +1484,7 @@
     ],
     "family": "Byzantine",
     "location": "Sinai",
-    "y": "120",
+    "y": "-165",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1497,7 +1497,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Monacensis)",
-    "y": "135",
+    "y": "180",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1510,7 +1510,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Athous Zographou)",
-    "y": "150",
+    "y": "-180",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1523,7 +1523,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "165",
+    "y": "195",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1536,7 +1536,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "180",
+    "y": "-195",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1549,7 +1549,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "195",
+    "y": "210",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1562,7 +1562,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "210",
+    "y": "-210",
     "eventType": "Uncial",
     "percentage": 94,
     "year": 935
@@ -1588,7 +1588,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "0",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 97,
     "year": 965
@@ -1601,7 +1601,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "15",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 97,
     "year": 965
@@ -1614,7 +1614,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "615",
+    "y": "30",
     "eventType": "Uncial",
     "percentage": 97,
     "year": 965
@@ -1627,7 +1627,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Sangallensis)",
-    "y": "-15",
+    "y": "0",
     "eventType": "Uncial",
     "percentage": 98,
     "year": 975
@@ -1640,7 +1640,7 @@
     ],
     "family": "Alexandrian",
     "location": "Egypt (Codex Tischendorfianus IV)",
-    "y": "90",
+    "y": "0",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1000
@@ -1653,7 +1653,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-360",
+    "y": "0",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1666,7 +1666,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-345",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1679,7 +1679,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-330",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1692,7 +1692,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-315",
+    "y": "30",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1705,7 +1705,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-300",
+    "y": "-30",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1718,7 +1718,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-285",
+    "y": "45",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1731,7 +1731,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-270",
+    "y": "-45",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1744,7 +1744,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-255",
+    "y": "60",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1757,7 +1757,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-240",
+    "y": "-60",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1770,7 +1770,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-225",
+    "y": "75",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1783,7 +1783,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-210",
+    "y": "-75",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1796,7 +1796,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-195",
+    "y": "90",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1809,7 +1809,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-180",
+    "y": "-90",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1822,7 +1822,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "180",
+    "y": "105",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1835,7 +1835,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "195",
+    "y": "-105",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1848,7 +1848,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "210",
+    "y": "120",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1861,7 +1861,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "225",
+    "y": "-120",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1874,7 +1874,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "240",
+    "y": "135",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1887,7 +1887,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "255",
+    "y": "-135",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1900,7 +1900,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "270",
+    "y": "150",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1913,7 +1913,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "285",
+    "y": "-150",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1926,7 +1926,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "300",
+    "y": "165",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1939,7 +1939,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "315",
+    "y": "-165",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1952,7 +1952,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "330",
+    "y": "180",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1965,7 +1965,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "345",
+    "y": "-180",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1978,7 +1978,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "360",
+    "y": "195",
     "eventType": "Uncial",
     "percentage": 100,
     "year": 1005
@@ -1991,7 +1991,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-195",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2004,7 +2004,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-180",
+    "y": "30",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2017,7 +2017,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-165",
+    "y": "-30",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2030,7 +2030,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-150",
+    "y": "45",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2043,7 +2043,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-135",
+    "y": "-45",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2056,7 +2056,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-120",
+    "y": "60",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2069,7 +2069,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-105",
+    "y": "-60",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2082,7 +2082,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-90",
+    "y": "75",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2108,7 +2108,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-60",
+    "y": "90",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2121,7 +2121,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-45",
+    "y": "-90",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2134,7 +2134,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-30",
+    "y": "105",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2147,7 +2147,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-15",
+    "y": "-105",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2160,7 +2160,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "15",
+    "y": "120",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2173,7 +2173,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "30",
+    "y": "-120",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2186,7 +2186,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "45",
+    "y": "135",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2199,7 +2199,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "60",
+    "y": "-135",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2212,7 +2212,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "75",
+    "y": "150",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2225,7 +2225,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "90",
+    "y": "-150",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2238,7 +2238,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "105",
+    "y": "165",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2251,7 +2251,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "120",
+    "y": "-165",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2264,7 +2264,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "135",
+    "y": "180",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2277,7 +2277,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "150",
+    "y": "-180",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2290,7 +2290,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "165",
+    "y": "195",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2303,7 +2303,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "180",
+    "y": "-195",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1020
@@ -2329,7 +2329,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt (Codex Tischendorfianus I)",
-    "y": "15",
+    "y": "0",
     "eventType": "Uncial",
     "percentage": 102,
     "year": 1025
@@ -2342,7 +2342,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-210",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2355,7 +2355,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-195",
+    "y": "30",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2368,7 +2368,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-180",
+    "y": "-30",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2381,7 +2381,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-165",
+    "y": "45",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2394,7 +2394,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-150",
+    "y": "-45",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2407,7 +2407,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-135",
+    "y": "60",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2420,7 +2420,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-120",
+    "y": "-60",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2433,7 +2433,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-105",
+    "y": "75",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2446,7 +2446,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-90",
+    "y": "-75",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2459,7 +2459,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-75",
+    "y": "90",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2472,7 +2472,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-60",
+    "y": "-90",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2485,7 +2485,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-45",
+    "y": "105",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2498,7 +2498,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-30",
+    "y": "-105",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2511,7 +2511,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "45",
+    "y": "120",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2524,7 +2524,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "60",
+    "y": "-120",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2537,7 +2537,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "75",
+    "y": "135",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2550,7 +2550,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "90",
+    "y": "-135",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2563,7 +2563,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "105",
+    "y": "150",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2576,7 +2576,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "120",
+    "y": "-150",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2589,7 +2589,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "135",
+    "y": "165",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2602,7 +2602,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "150",
+    "y": "-165",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2615,7 +2615,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "165",
+    "y": "180",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2628,7 +2628,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "180",
+    "y": "-180",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2654,7 +2654,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "210",
+    "y": "-195",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2667,7 +2667,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "225",
+    "y": "210",
     "eventType": "Uncial",
     "percentage": 103,
     "year": 1035
@@ -2680,7 +2680,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "-4935",
+    "y": "15",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2693,7 +2693,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "-4815",
+    "y": "-15",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2706,7 +2706,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "-4785",
+    "y": "30",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2719,7 +2719,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "-4665",
+    "y": "-30",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2732,7 +2732,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "-4515",
+    "y": "45",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2745,7 +2745,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-4365",
+    "y": "-45",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2758,7 +2758,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-4215",
+    "y": "60",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2771,7 +2771,7 @@
     ],
     "family": "Western",
     "location": "Egypt (Codex Tischendorfianus II)",
-    "y": "-2565",
+    "y": "-60",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2784,7 +2784,7 @@
     ],
     "family": "Byzantine",
     "location": "Sinai",
-    "y": "-2415",
+    "y": "75",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2797,7 +2797,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-2265",
+    "y": "-75",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2810,7 +2810,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-2115",
+    "y": "90",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2823,7 +2823,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-915",
+    "y": "-90",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2836,7 +2836,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-765",
+    "y": "105",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2849,7 +2849,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-615",
+    "y": "-105",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2862,7 +2862,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "-465",
+    "y": "120",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2875,7 +2875,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "-315",
+    "y": "-120",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2888,7 +2888,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "-165",
+    "y": "135",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2901,7 +2901,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "-15",
+    "y": "-135",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2914,7 +2914,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "0",
+    "y": "150",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2927,7 +2927,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "15",
+    "y": "-150",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2940,7 +2940,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "1065",
+    "y": "165",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2953,7 +2953,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "1215",
+    "y": "-165",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2966,7 +2966,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "1365",
+    "y": "180",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2979,7 +2979,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "1515",
+    "y": "-180",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -2992,7 +2992,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "1665",
+    "y": "195",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3005,7 +3005,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "1815",
+    "y": "-195",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3018,7 +3018,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "1965",
+    "y": "210",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3031,7 +3031,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "2580",
+    "y": "-210",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3044,7 +3044,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "2730",
+    "y": "225",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3057,7 +3057,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "2880",
+    "y": "-225",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3070,7 +3070,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "3030",
+    "y": "240",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3083,7 +3083,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "3180",
+    "y": "-240",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3096,7 +3096,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "3330",
+    "y": "255",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3109,7 +3109,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "3480",
+    "y": "-255",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3122,7 +3122,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "3630",
+    "y": "270",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3135,7 +3135,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "3780",
+    "y": "-270",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3148,7 +3148,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "3930",
+    "y": "285",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3161,7 +3161,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "4080",
+    "y": "-285",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
@@ -3174,7 +3174,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "4800",
+    "y": "300",
     "eventType": "Uncial",
     "percentage": 105,
     "year": 1050
