@@ -120,7 +120,7 @@
     "title": "Theophilus of Antioch",
     "description": "Bishop of Antioch, best known for his work To Autolycus, an apologetic defense of Christianity.",
     "texts": [
-      "To Autolycus"
+      ""
     ],
     "family": "Antioch",
     "location": "",
@@ -172,7 +172,7 @@
     "title": "Abercius of Hierapolis",
     "description": "Known for the Inscription of Abercius, which describes his Christian faith and travels. He is considered one of the first Christian epitaph writers.",
     "texts": [
-      "Inscription of Abercius"
+      ""
     ],
     "family": "Hierapolis",
     "location": "",
@@ -185,7 +185,7 @@
     "title": "Maximus of Jerusalem",
     "description": "Bishop of Jerusalem, known for his defense of orthodox Christianity against Gnostic heresies. His works are referenced by early historians.",
     "texts": [
-      "Fragments preserved in later works"
+      ""
     ],
     "family": "Jerusalem",
     "location": "",
@@ -211,7 +211,7 @@
     "title": "Apelles",
     "description": "A disciple of Marcion who later broke away and developed his own theology. While considered heretical by orthodox Christians, he contributed to early theological debates.",
     "texts": [
-      "Fragments cited by Tertullian and others"
+      ""
     ],
     "family": "Asia Minor",
     "location": "",
@@ -250,7 +250,7 @@
     "title": "Rhodo",
     "description": "A student of Tatian, known for his polemic writings against the Marcionites and other heretical groups. His works are cited by Eusebius.",
     "texts": [
-      "Fragments in Eusebius"
+      ""
     ],
     "family": "Asia Minor",
     "location": "",
@@ -328,7 +328,7 @@
     "title": "Musanus",
     "description": "Early Christian apologist, known for writing against the Encratites, a sect that promoted extreme asceticism and rejected marriage.",
     "texts": [
-      "Fragments preserved by Eusebius"
+      ""
     ],
     "family": "Asia Minor",
     "location": "",
@@ -341,7 +341,7 @@
     "title": "Claudius Apollinaris",
     "description": "Early Christian apologist and bishop of Hierapolis. His defense of Christianity against Roman persecution influenced later Christian thought.",
     "texts": [
-      "Fragments in later works"
+      ""
     ],
     "family": "Hierapolis",
     "location": "",
@@ -354,7 +354,7 @@
     "title": "Apollonius of Ephesus",
     "description": "Apologist and anti-Montanist writer, known for his Acts of Apollonius, a defense of Christianity and an early account of martyrdom.",
     "texts": [
-      "Acts of Apollonius"
+      ""
     ],
     "family": "Ephesus",
     "location": "",
@@ -367,7 +367,7 @@
     "title": "Melito of Sardis",
     "description": "Bishop of Sardis, known for his Peri Pascha (On the Passover) and his defense of Christian orthodoxy.",
     "texts": [
-      "Peri Pascha and other fragments"
+      ""
     ],
     "family": "Sardis",
     "location": "",
@@ -380,7 +380,7 @@
     "title": "Apollinaris of Hierapolis",
     "description": "Bishop of Hierapolis, known for writing apologies defending Christianity, particularly addressing the persecution of Christians under Emperor Marcus Aurelius.",
     "texts": [
-      "Fragments cited by later church fathers"
+      ""
     ],
     "family": "Hierapolis",
     "location": "",
@@ -393,7 +393,7 @@
     "title": "Victor I of Rome",
     "description": "The first Latin-speaking pope, known for his role in the Easter controversy (Quartodecimanism) and his efforts to assert Roman primacy.",
     "texts": [
-      "Few surviving fragments"
+      ""
     ],
     "family": "Rome",
     "location": "",
@@ -406,7 +406,7 @@
     "title": "Serapion of Antioch",
     "description": "Bishop of Antioch, known for his writings against Montanism and his emphasis on the authority of the canonical Gospels.",
     "texts": [
-      "Fragments of letters"
+      ""
     ],
     "family": "Antioch",
     "location": "",
@@ -419,7 +419,7 @@
     "title": "Hermogenes",
     "description": "Christian philosopher, known for his work on creation and cosmology. His views on eternal matter were opposed by Tertullian in Against Hermogenes.",
     "texts": [
-      "Fragments preserved in Tertullian's refutation"
+      ""
     ],
     "family": "North Africa",
     "location": "",
@@ -432,7 +432,7 @@
     "title": "Heraclas of Alexandria",
     "description": "Bishop of Alexandria, known for his role in the early catechetical school and his influence on Origen.",
     "texts": [
-      "Ecclesiastical letters"
+      ""
     ],
     "family": "Alexandria",
     "location": "",
@@ -471,7 +471,7 @@
     "title": "Hippolytus of Rome",
     "description": "Early theologian known for his works against heresy, especially Refutation of All Heresies, and his influence on early liturgical practices.",
     "texts": [
-      "Refutation of All Heresies"
+      ""
     ],
     "family": "Rome",
     "location": "",
@@ -484,7 +484,7 @@
     "title": "Julius Africanus",
     "description": "Early Christian historian, known for his Chronographiae, a world chronicle that attempted to date biblical events.",
     "texts": [
-      "Chronographiae (fragments)"
+      ""
     ],
     "family": "Edessa",
     "location": "",
@@ -497,7 +497,7 @@
     "title": "Ambrose of Alexandria",
     "description": "Early Christian presbyter and scholar, known for his mentorship of Origen and influence on Alexandrian Christianity.",
     "texts": [
-      "Letters preserved in Eusebius"
+      ""
     ],
     "family": "Alexandria",
     "location": "",
@@ -510,7 +510,7 @@
     "title": "Anatolius of Laodicea",
     "description": "Bishop and philosopher, known for his work on mathematics and astronomy, as well as theological writings.",
     "texts": [
-      "Fragments preserved in later works"
+      ""
     ],
     "family": "Laodicea",
     "location": "",
@@ -549,8 +549,7 @@
     "title": "Thascius Caecilius Cyprianus",
     "description": "Known for his work On the Unity of the Church and numerous letters discussing church discipline and persecution.",
     "texts": [
-      "On the Unity of the Church",
-      "letters"
+      ""
     ],
     "family": "Carthage",
     "location": "",
@@ -589,7 +588,7 @@
     "title": "Ammonius of Alexandria",
     "description": "Christian philosopher, considered one of the founders of the Alexandrian School of theology. He influenced Origen but little of his own work survives.",
     "texts": [
-      "Fragments in later sources"
+      ""
     ],
     "family": "Alexandria",
     "location": "",
@@ -602,7 +601,7 @@
     "title": "Sabellius",
     "description": "Christian theologian who advanced a non-Trinitarian view later known as Sabellianism (or modalism), which was condemned by the early church as heresy. His works are largely lost.",
     "texts": [
-      "Fragments preserved in refutations"
+      ""
     ],
     "family": "North Africa",
     "location": "",
@@ -615,7 +614,7 @@
     "title": "Beryllus of Bostra",
     "description": "Bishop of Bostra, initially a supporter of a heretical view that denied the pre-existence of Christ. He was corrected by Origen and later accepted orthodox doctrine.",
     "texts": [
-      "Fragments preserved by Eusebius"
+      ""
     ],
     "family": "Bostra",
     "location": "",
@@ -654,7 +653,7 @@
     "title": "Phileas of Thmuis",
     "description": "Bishop of Thmuis, known for his letter defending Christians facing persecution under Diocletian. He was martyred for his faith.",
     "texts": [
-      "Letters preserved in Eusebius"
+      ""
     ],
     "family": "Thmuis",
     "location": "",
