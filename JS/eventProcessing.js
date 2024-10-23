@@ -112,6 +112,7 @@ newEvent.style.left = `${newLeft}%`;
 
 
 
+
     let newTop = parseFloat(event.y);
 
     newEvent.style.left = `${newLeft}px`;
