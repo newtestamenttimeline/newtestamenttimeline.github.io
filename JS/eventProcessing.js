@@ -107,8 +107,9 @@ function addEventToTimeline(event) {
     newEvent.setAttribute('data-location', event.location || 'Unknown');
     newEvent.setAttribute('data-event-type', event.eventType);
 
-    let newLeft = ((event.year - 0) / (1400 - 0)) * 100;
-newEvent.style.left = `${newLeft}%`;
+    let newLeft = ((event.year - 0) / 1400) * timeline.offsetWidth;
+newEvent.style.left = `${newLeft}px`;
+
 
     let newTop = parseFloat(event.y);
 
