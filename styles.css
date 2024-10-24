@@ -78,7 +78,7 @@ header {
 }
 
 .timeline {
-    width: 14000px;
+    width: 21000px;
     height: 4px;
     background-color: var(--primary-color);
     position: relative;
