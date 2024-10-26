@@ -38,8 +38,9 @@ function addEventsToTimeline(data) {
         const eventType = event.eventType;
         eventDot.style.backgroundColor = eventTypeColors[eventType] || 'yellow';
 
-        const yearPercentage = ((event.year - 0) / (1400 - 0)) * 100;
-        eventDot.style.left = `${yearPercentage}%`;
+        const yearPercentage = ((event.year - (-100)) / (2100 - (-100))) * 100;
+eventDot.style.left = `${yearPercentage}%`;
+
 
         const yOffset = parseFloat(event.y) || 0;
         eventDot.style.top = `calc(50% + ${yOffset}px)`;

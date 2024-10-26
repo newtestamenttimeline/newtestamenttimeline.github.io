@@ -3187,7 +3187,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-180",
+    "y": "30",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3200,7 +3200,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-165",
+    "y": "-30",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3213,7 +3213,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-150",
+    "y": "30",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3226,7 +3226,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-135",
+    "y": "-45",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3239,7 +3239,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-120",
+    "y": "45",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3252,7 +3252,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-105",
+    "y": "-60",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3265,7 +3265,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-90",
+    "y": "60",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3291,7 +3291,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-60",
+    "y": "75",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3304,7 +3304,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-45",
+    "y": "-90",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3317,7 +3317,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-30",
+    "y": "90",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3330,7 +3330,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-15",
+    "y": "-105",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3343,7 +3343,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "0",
+    "y": "105",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3356,7 +3356,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "30",
+    "y": "-120",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3369,7 +3369,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "45",
+    "y": "120",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3382,7 +3382,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "60",
+    "y": "-135",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3395,7 +3395,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "75",
+    "y": "135",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3408,7 +3408,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "90",
+    "y": "-150",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3421,7 +3421,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "105",
+    "y": "150",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3434,7 +3434,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "120",
+    "y": "-165",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3447,7 +3447,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "135",
+    "y": "165",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3460,7 +3460,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "150",
+    "y": "-180",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3473,7 +3473,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "165",
+    "y": "180",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3486,7 +3486,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "180",
+    "y": "-195",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3512,7 +3512,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "210",
+    "y": "-210",
     "eventType": "Uncial",
     "percentage": 107,
     "year": 1065
@@ -3525,7 +3525,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-225",
+    "y": "-60",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3538,7 +3538,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-210",
+    "y": "75",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3551,7 +3551,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-195",
+    "y": "-75",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3564,7 +3564,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-180",
+    "y": "90",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3577,7 +3577,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-165",
+    "y": "-90",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3590,7 +3590,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-150",
+    "y": "105",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3603,7 +3603,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-135",
+    "y": "-105",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3616,7 +3616,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-120",
+    "y": "120",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3629,7 +3629,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-105",
+    "y": "-120",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3642,7 +3642,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-90",
+    "y": "135",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3655,7 +3655,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-75",
+    "y": "-135",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3668,7 +3668,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-60",
+    "y": "150",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3681,7 +3681,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-45",
+    "y": "-150",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3694,7 +3694,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "60",
+    "y": "165",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3707,7 +3707,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "75",
+    "y": "-165",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3720,7 +3720,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "90",
+    "y": "180",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3733,7 +3733,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "105",
+    "y": "-180",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3746,7 +3746,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "120",
+    "y": "195",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3759,7 +3759,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "135",
+    "y": "-195",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3772,7 +3772,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "150",
+    "y": "210",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3785,7 +3785,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "165",
+    "y": "-210",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3798,7 +3798,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "180",
+    "y": "225",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3811,7 +3811,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "195",
+    "y": "-225",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3824,7 +3824,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "210",
+    "y": "240",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3837,7 +3837,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "225",
+    "y": "-240",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3850,7 +3850,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "240",
+    "y": "255",
     "eventType": "Uncial",
     "percentage": 108,
     "year": 1080
@@ -3863,7 +3863,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "-180",
+    "y": "45",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -3876,7 +3876,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "-165",
+    "y": "-45",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -3889,7 +3889,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-150",
+    "y": "60",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -3902,7 +3902,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-135",
+    "y": "-60",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -3915,7 +3915,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-120",
+    "y": "75",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -3928,7 +3928,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-105",
+    "y": "-75",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -3941,7 +3941,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-90",
+    "y": "90",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -3954,7 +3954,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-75",
+    "y": "-90",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -3967,7 +3967,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-60",
+    "y": "105",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -3980,7 +3980,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "-45",
+    "y": "-105",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -3993,7 +3993,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "-30",
+    "y": "120",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4006,7 +4006,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "-15",
+    "y": "-120",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4019,7 +4019,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "0",
+    "y": "135",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4032,7 +4032,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "15",
+    "y": "-135",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4045,7 +4045,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "30",
+    "y": "150",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4058,7 +4058,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "45",
+    "y": "-150",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4071,7 +4071,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "60",
+    "y": "165",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4084,7 +4084,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "75",
+    "y": "-165",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4097,7 +4097,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "90",
+    "y": "180",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4110,7 +4110,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "105",
+    "y": "-180",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4123,7 +4123,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "120",
+    "y": "195",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4136,7 +4136,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "135",
+    "y": "-195",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4149,7 +4149,7 @@
     ],
     "family": "Byzantine",
     "location": "Egypt",
-    "y": "150",
+    "y": "210",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4162,7 +4162,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "165",
+    "y": "-210",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4175,7 +4175,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "180",
+    "y": "225",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
@@ -4188,7 +4188,7 @@
     ],
     "family": "Byzantine",
     "location": "Mount Athos, Greece",
-    "y": "195",
+    "y": "-225",
     "eventType": "Uncial",
     "percentage": 110,
     "year": 1095
