@@ -120,10 +120,10 @@
     "title": "Theophilus of Antioch",
     "description": "Bishop of Antioch, best known for his work To Autolycus, an apologetic defense of Christianity.",
     "texts": [
-      ""
+      "To Autolycus"
     ],
-    "family": "Antioch",
-    "location": "",
+    "family": "",
+    "location": "Antioch",
     "y": "-90",
     "eventType": "Church_father",
     "percentage": 15,
@@ -172,10 +172,10 @@
     "title": "Abercius of Hierapolis",
     "description": "Known for the Inscription of Abercius, which describes his Christian faith and travels. He is considered one of the first Christian epitaph writers.",
     "texts": [
-      ""
+      "Inscription of Abercius"
     ],
-    "family": "Hierapolis",
-    "location": "",
+    "family": "",
+    "location": "Hierapolis",
     "y": "105",
     "eventType": "Church_father",
     "percentage": 15,
@@ -185,10 +185,10 @@
     "title": "Maximus of Jerusalem",
     "description": "Bishop of Jerusalem, known for his defense of orthodox Christianity against Gnostic heresies. His works are referenced by early historians.",
     "texts": [
-      ""
+      "Fragments preserved in later works"
     ],
-    "family": "Jerusalem",
-    "location": "",
+    "family": "",
+    "location": "Jerusalem",
     "y": "-45",
     "eventType": "Church_father",
     "percentage": 16,
@@ -211,10 +211,10 @@
     "title": "Apelles",
     "description": "A disciple of Marcion who later broke away and developed his own theology. While considered heretical by orthodox Christians, he contributed to early theological debates.",
     "texts": [
-      ""
+      "Fragments cited by Tertullian and others"
     ],
-    "family": "Asia Minor",
-    "location": "",
+    "family": "",
+    "location": "Asia Minor",
     "y": "45",
     "eventType": "Church_father",
     "percentage": 17,
@@ -250,10 +250,10 @@
     "title": "Rhodo",
     "description": "A student of Tatian, known for his polemic writings against the Marcionites and other heretical groups. His works are cited by Eusebius.",
     "texts": [
-      ""
+      "Fragments in Eusebius"
     ],
-    "family": "Asia Minor",
-    "location": "",
+    "family": "",
+    "location": "Asia Minor",
     "y": "-90",
     "eventType": "Church_father",
     "percentage": 18,
@@ -328,10 +328,10 @@
     "title": "Musanus",
     "description": "Early Christian apologist, known for writing against the Encratites, a sect that promoted extreme asceticism and rejected marriage.",
     "texts": [
-      ""
+      "Fragments preserved by Eusebius"
     ],
-    "family": "Asia Minor",
-    "location": "",
+    "family": "",
+    "location": "Asia Minor",
     "y": "-45",
     "eventType": "Church_father",
     "percentage": 18,
@@ -341,10 +341,10 @@
     "title": "Claudius Apollinaris",
     "description": "Early Christian apologist and bishop of Hierapolis. His defense of Christianity against Roman persecution influenced later Christian thought.",
     "texts": [
-      ""
+      "Fragments in later works"
     ],
-    "family": "Hierapolis",
-    "location": "",
+    "family": "",
+    "location": "Hierapolis",
     "y": "-30",
     "eventType": "Church_father",
     "percentage": 18,
@@ -354,10 +354,10 @@
     "title": "Apollonius of Ephesus",
     "description": "Apologist and anti-Montanist writer, known for his Acts of Apollonius, a defense of Christianity and an early account of martyrdom.",
     "texts": [
-      ""
+      "Acts of Apollonius"
     ],
-    "family": "Ephesus",
-    "location": "",
+    "family": "",
+    "location": "Ephesus",
     "y": "45",
     "eventType": "Church_father",
     "percentage": 18,
@@ -367,10 +367,10 @@
     "title": "Melito of Sardis",
     "description": "Bishop of Sardis, known for his Peri Pascha (On the Passover) and his defense of Christian orthodoxy.",
     "texts": [
-      ""
+      "Peri Pascha and other fragments"
     ],
-    "family": "Sardis",
-    "location": "",
+    "family": "",
+    "location": "Sardis",
     "y": "60",
     "eventType": "Church_father",
     "percentage": 18,
@@ -380,10 +380,10 @@
     "title": "Apollinaris of Hierapolis",
     "description": "Bishop of Hierapolis, known for writing apologies defending Christianity, particularly addressing the persecution of Christians under Emperor Marcus Aurelius.",
     "texts": [
-      ""
+      "Fragments cited by later church fathers"
     ],
-    "family": "Hierapolis",
-    "location": "",
+    "family": "",
+    "location": "Hierapolis",
     "y": "15",
     "eventType": "Church_father",
     "percentage": 19,
@@ -393,10 +393,10 @@
     "title": "Victor I of Rome",
     "description": "The first Latin-speaking pope, known for his role in the Easter controversy (Quartodecimanism) and his efforts to assert Roman primacy.",
     "texts": [
-      ""
+      "Few surviving fragments"
     ],
-    "family": "Rome",
-    "location": "",
+    "family": "",
+    "location": "Rome",
     "y": "-120",
     "eventType": "Church_father",
     "percentage": 20,
@@ -406,10 +406,10 @@
     "title": "Serapion of Antioch",
     "description": "Bishop of Antioch, known for his writings against Montanism and his emphasis on the authority of the canonical Gospels.",
     "texts": [
-      ""
+      "Fragments of letters"
     ],
-    "family": "Antioch",
-    "location": "",
+    "family": "",
+    "location": "Antioch",
     "y": "-75",
     "eventType": "Church_father",
     "percentage": 20,
@@ -419,10 +419,10 @@
     "title": "Hermogenes",
     "description": "Christian philosopher, known for his work on creation and cosmology. His views on eternal matter were opposed by Tertullian in Against Hermogenes.",
     "texts": [
-      ""
+      "Fragments preserved in Tertullian's refutation"
     ],
-    "family": "North Africa",
-    "location": "",
+    "family": "",
+    "location": "North Africa",
     "y": "-60",
     "eventType": "Church_father",
     "percentage": 20,
@@ -432,10 +432,10 @@
     "title": "Heraclas of Alexandria",
     "description": "Bishop of Alexandria, known for his role in the early catechetical school and his influence on Origen.",
     "texts": [
-      ""
+      "Ecclesiastical letters"
     ],
-    "family": "Alexandria",
-    "location": "",
+    "family": "",
+    "location": "Alexandria",
     "y": "-45",
     "eventType": "Church_father",
     "percentage": 20,
@@ -471,10 +471,10 @@
     "title": "Hippolytus of Rome",
     "description": "Early theologian known for his works against heresy, especially Refutation of All Heresies, and his influence on early liturgical practices.",
     "texts": [
-      ""
+      "Refutation of All Heresies"
     ],
-    "family": "Rome",
-    "location": "",
+    "family": "",
+    "location": "Rome",
     "y": "90",
     "eventType": "Church_father",
     "percentage": 20,
@@ -484,10 +484,10 @@
     "title": "Julius Africanus",
     "description": "Early Christian historian, known for his Chronographiae, a world chronicle that attempted to date biblical events.",
     "texts": [
-      ""
+      "Chronographiae (fragments)"
     ],
-    "family": "Edessa",
-    "location": "",
+    "family": "",
+    "location": "Edessa",
     "y": "0",
     "eventType": "Church_father",
     "percentage": 21,
@@ -497,10 +497,10 @@
     "title": "Ambrose of Alexandria",
     "description": "Early Christian presbyter and scholar, known for his mentorship of Origen and influence on Alexandrian Christianity.",
     "texts": [
-      ""
+      "Letters preserved in Eusebius"
     ],
-    "family": "Alexandria",
-    "location": "",
+    "family": "",
+    "location": "Alexandria",
     "y": "-75",
     "eventType": "Church_father",
     "percentage": 22,
@@ -510,10 +510,10 @@
     "title": "Anatolius of Laodicea",
     "description": "Bishop and philosopher, known for his work on mathematics and astronomy, as well as theological writings.",
     "texts": [
-      ""
+      "Fragments preserved in later works"
     ],
-    "family": "Laodicea",
-    "location": "",
+    "family": "",
+    "location": "Laodicea",
     "y": "75",
     "eventType": "Church_father",
     "percentage": 22,
@@ -549,10 +549,11 @@
     "title": "Thascius Caecilius Cyprianus",
     "description": "Known for his work On the Unity of the Church and numerous letters discussing church discipline and persecution.",
     "texts": [
-      ""
+      "On the Unity of the Church",
+      "letters"
     ],
-    "family": "Carthage",
-    "location": "",
+    "family": "",
+    "location": "Carthage",
     "y": "-15",
     "eventType": "Church_father",
     "percentage": 23,
@@ -588,10 +589,10 @@
     "title": "Ammonius of Alexandria",
     "description": "Christian philosopher, considered one of the founders of the Alexandrian School of theology. He influenced Origen but little of his own work survives.",
     "texts": [
-      ""
+      "Fragments in later sources"
     ],
-    "family": "Alexandria",
-    "location": "",
+    "family": "",
+    "location": "Alexandria",
     "y": "45",
     "eventType": "Church_father",
     "percentage": 23,
@@ -601,10 +602,10 @@
     "title": "Sabellius",
     "description": "Christian theologian who advanced a non-Trinitarian view later known as Sabellianism (or modalism), which was condemned by the early church as heresy. His works are largely lost.",
     "texts": [
-      ""
+      "Fragments preserved in refutations"
     ],
-    "family": "North Africa",
-    "location": "",
+    "family": "",
+    "location": "North Africa",
     "y": "-60",
     "eventType": "Church_father",
     "percentage": 23,
@@ -614,10 +615,10 @@
     "title": "Beryllus of Bostra",
     "description": "Bishop of Bostra, initially a supporter of a heretical view that denied the pre-existence of Christ. He was corrected by Origen and later accepted orthodox doctrine.",
     "texts": [
-      ""
+      "Fragments preserved by Eusebius"
     ],
-    "family": "Bostra",
-    "location": "",
+    "family": "",
+    "location": "Bostra",
     "y": "75",
     "eventType": "Church_father",
     "percentage": 23,
@@ -653,10 +654,10 @@
     "title": "Phileas of Thmuis",
     "description": "Bishop of Thmuis, known for his letter defending Christians facing persecution under Diocletian. He was martyred for his faith.",
     "texts": [
-      ""
+      "Letters preserved in Eusebius"
     ],
-    "family": "Thmuis",
-    "location": "",
+    "family": "",
+    "location": "Thmuis",
     "y": "-150",
     "eventType": "Church_father",
     "percentage": 24,
@@ -668,8 +669,8 @@
     "texts": [
       "Biographical accounts"
     ],
-    "family": "Armenia",
-    "location": "",
+    "family": "",
+    "location": "Armenia",
     "y": "135",
     "eventType": "Church_father",
     "percentage": 24,
@@ -681,8 +682,8 @@
     "texts": [
       "Letters preserved by Cyprian and Eusebius"
     ],
-    "family": "Rome",
-    "location": "",
+    "family": "",
+    "location": "Rome",
     "y": "-165",
     "eventType": "Church_father",
     "percentage": 25,
@@ -694,8 +695,8 @@
     "texts": [
       "Letters to Cyprian"
     ],
-    "family": "Caesarea, Cappadocia",
-    "location": "",
+    "family": "",
+    "location": "Caesarea, Cappadocia",
     "y": "-150",
     "eventType": "Church_father",
     "percentage": 25,
@@ -733,8 +734,8 @@
     "texts": [
       "Carmen Apologeticum"
     ],
-    "family": "North Africa",
-    "location": "",
+    "family": "",
+    "location": "North Africa",
     "y": "-105",
     "eventType": "Church_father",
     "percentage": 25,
@@ -746,8 +747,8 @@
     "texts": [
       "Panegyric to Origen"
     ],
-    "family": "Neocaesarea",
-    "location": "",
+    "family": "",
+    "location": "Neocaesarea",
     "y": "-45",
     "eventType": "Church_father",
     "percentage": 25,
@@ -786,8 +787,8 @@
       "Panegyric on Origen",
       "Canonical Epistle"
     ],
-    "family": "Neocaesarea",
-    "location": "",
+    "family": "",
+    "location": "Neocaesarea",
     "y": "60",
     "eventType": "Church_father",
     "percentage": 25,
@@ -799,8 +800,8 @@
     "texts": [
       "On the Trinity"
     ],
-    "family": "Rome",
-    "location": "",
+    "family": "",
+    "location": "Rome",
     "y": "75",
     "eventType": "Church_father",
     "percentage": 25,
@@ -812,8 +813,8 @@
     "texts": [
       "Letters"
     ],
-    "family": "Jerusalem",
-    "location": "",
+    "family": "",
+    "location": "Jerusalem",
     "y": "90",
     "eventType": "Church_father",
     "percentage": 25,
@@ -825,8 +826,8 @@
     "texts": [
       "On the Trinity"
     ],
-    "family": "Rome",
-    "location": "",
+    "family": "",
+    "location": "Rome",
     "y": "105",
     "eventType": "Church_father",
     "percentage": 25,
@@ -838,8 +839,8 @@
     "texts": [
       "Letters and fragments preserved by Eusebius"
     ],
-    "family": "Alexandria",
-    "location": "",
+    "family": "",
+    "location": "Alexandria",
     "y": "135",
     "eventType": "Church_father",
     "percentage": 25,
@@ -851,8 +852,8 @@
     "texts": [
       "Fragments of letters"
     ],
-    "family": "Antioch",
-    "location": "",
+    "family": "",
+    "location": "Antioch",
     "y": "0",
     "eventType": "Church_father",
     "percentage": 26,
@@ -877,8 +878,8 @@
     "texts": [
       "Fragments preserved in Eusebius"
     ],
-    "family": "Antioch",
-    "location": "",
+    "family": "",
+    "location": "Antioch",
     "y": "0",
     "eventType": "Church_father",
     "percentage": 27,
@@ -890,8 +891,8 @@
     "texts": [
       "Acts of the Disputation with Manes"
     ],
-    "family": "Charcara, Mesopotamia",
-    "location": "",
+    "family": "",
+    "location": "Charcara, Mesopotamia",
     "y": "-75",
     "eventType": "Church_father",
     "percentage": 28,
@@ -903,8 +904,8 @@
     "texts": [
       "Sermons and fragments"
     ],
-    "family": "Alexandria",
-    "location": "",
+    "family": "",
+    "location": "Alexandria",
     "y": "-60",
     "eventType": "Church_father",
     "percentage": 28,
@@ -929,8 +930,8 @@
     "texts": [
       "Fragments in Eusebius"
     ],
-    "family": "Antioch",
-    "location": "",
+    "family": "",
+    "location": "Antioch",
     "y": "-30",
     "eventType": "Church_father",
     "percentage": 28,
@@ -942,8 +943,8 @@
     "texts": [
       "Commentary on the Apocalypse"
     ],
-    "family": "Pettau",
-    "location": "",
+    "family": "",
+    "location": "Pettau",
     "y": "-15",
     "eventType": "Church_father",
     "percentage": 28,
@@ -955,8 +956,8 @@
     "texts": [
       "Fragments in later Christian sources"
     ],
-    "family": "Alexandria",
-    "location": "",
+    "family": "",
+    "location": "Alexandria",
     "y": "15",
     "eventType": "Church_father",
     "percentage": 28,
@@ -968,8 +969,8 @@
     "texts": [
       "Letters and martyrdom accounts"
     ],
-    "family": "Gaza",
-    "location": "",
+    "family": "",
+    "location": "Gaza",
     "y": "45",
     "eventType": "Church_father",
     "percentage": 28,
@@ -981,8 +982,8 @@
     "texts": [
       "Banquet of the Ten Virgins"
     ],
-    "family": "Olympus",
-    "location": "",
+    "family": "",
+    "location": "Olympus",
     "y": "60",
     "eventType": "Church_father",
     "percentage": 28,
@@ -1007,8 +1008,8 @@
     "texts": [
       "Letters preserved by Eusebius"
     ],
-    "family": "Alexandria",
-    "location": "",
+    "family": "",
+    "location": "Alexandria",
     "y": "0",
     "eventType": "Church_father",
     "percentage": 28,
@@ -1020,8 +1021,8 @@
     "texts": [
       "Acts of the Disputation with Manes"
     ],
-    "family": "Mesopotamia",
-    "location": "",
+    "family": "",
+    "location": "Mesopotamia",
     "y": "15",
     "eventType": "Church_father",
     "percentage": 28,
@@ -1033,8 +1034,8 @@
     "texts": [
       "Acts of Archelaus"
     ],
-    "family": "Mesopotamia",
-    "location": "",
+    "family": "",
+    "location": "Mesopotamia",
     "y": "-60",
     "eventType": "Church_father",
     "percentage": 30,
@@ -1046,8 +1047,8 @@
     "texts": [
       "Letters and fragments"
     ],
-    "family": "Antioch",
-    "location": "",
+    "family": "",
+    "location": "Antioch",
     "y": "30",
     "eventType": "Church_father",
     "percentage": 30,
@@ -1059,8 +1060,8 @@
     "texts": [
       "Letters preserved in fragments"
     ],
-    "family": "Jerusalem",
-    "location": "",
+    "family": "",
+    "location": "Jerusalem",
     "y": "45",
     "eventType": "Church_father",
     "percentage": 30,
@@ -1072,8 +1073,8 @@
     "texts": [
       "Canonical Epistle"
     ],
-    "family": "Alexandria",
-    "location": "",
+    "family": "",
+    "location": "Alexandria",
     "y": "60",
     "eventType": "Church_father",
     "percentage": 30,
@@ -1085,8 +1086,8 @@
     "texts": [
       "Fragments and letters"
     ],
-    "family": "Ancyra",
-    "location": "",
+    "family": "",
+    "location": "Ancyra",
     "y": "90",
     "eventType": "Church_father",
     "percentage": 30,
@@ -1098,8 +1099,8 @@
     "texts": [
       "Fragments preserved in later writings"
     ],
-    "family": "Elvira (Spain)",
-    "location": "",
+    "family": "",
+    "location": "Elvira (Spain)",
     "y": "105",
     "eventType": "Church_father",
     "percentage": 30,
@@ -1111,8 +1112,8 @@
     "texts": [
       "Demonstrations"
     ],
-    "family": "Mesopotamia",
-    "location": "",
+    "family": "",
+    "location": "Mesopotamia",
     "y": "120",
     "eventType": "Church_father",
     "percentage": 30,
@@ -1124,8 +1125,8 @@
     "texts": [
       "Apology for Origen"
     ],
-    "family": "Caesarea",
-    "location": "",
+    "family": "",
+    "location": "Caesarea",
     "y": "150",
     "eventType": "Church_father",
     "percentage": 30,
@@ -1137,8 +1138,8 @@
     "texts": [
       "Canonical Epistle and letters"
     ],
-    "family": "Alexandria",
-    "location": "",
+    "family": "",
+    "location": "Alexandria",
     "y": "0",
     "eventType": "Church_father",
     "percentage": 31,
@@ -1176,8 +1177,8 @@
     "texts": [
       "Letters and theological fragments"
     ],
-    "family": "Alexandria",
-    "location": "",
+    "family": "",
+    "location": "Alexandria",
     "y": "45",
     "eventType": "Church_father",
     "percentage": 33,
@@ -1189,8 +1190,8 @@
     "texts": [
       "Letters and council records"
     ],
-    "family": "Cordoba",
-    "location": "",
+    "family": "",
+    "location": "Cordoba",
     "y": "60",
     "eventType": "Church_father",
     "percentage": 33,
