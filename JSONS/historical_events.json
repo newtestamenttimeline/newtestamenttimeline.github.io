@@ -429,7 +429,7 @@
     ],
     "family": "",
     "location": "Jerusalem & Europe",
-    "y": "-195",
+    "y": "-30",
     "eventType": "Historical",
     "percentage": 110,
     "year": 1095
@@ -455,7 +455,7 @@
     ],
     "family": "",
     "location": "Lateran, Rome",
-    "y": "0",
+    "y": "-15",
     "eventType": "Historical",
     "percentage": 114,
     "year": 1139
@@ -468,7 +468,7 @@
     ],
     "family": "",
     "location": "Lateran, Rome",
-    "y": "0",
+    "y": "2280",
     "eventType": "Historical",
     "percentage": 118,
     "year": 1179
@@ -481,7 +481,7 @@
     ],
     "family": "",
     "location": "Rome, Italy",
-    "y": "0",
+    "y": "-15",
     "eventType": "Historical",
     "percentage": 122,
     "year": 1215
@@ -494,7 +494,7 @@
     ],
     "family": "",
     "location": "Lateran, Rome",
-    "y": "0",
+    "y": "15",
     "eventType": "Historical",
     "percentage": 122,
     "year": 1215
@@ -507,7 +507,7 @@
     ],
     "family": "",
     "location": "Lyon, France",
-    "y": "0",
+    "y": "45",
     "eventType": "Historical",
     "percentage": 127,
     "year": 1274
@@ -533,7 +533,7 @@
     ],
     "family": "",
     "location": "Rome & Avignon",
-    "y": "0",
+    "y": "1095",
     "eventType": "Historical",
     "percentage": 138,
     "year": 1378
@@ -546,7 +546,7 @@
     ],
     "family": "",
     "location": "England",
-    "y": "0",
+    "y": "30",
     "eventType": "Historical",
     "percentage": 138,
     "year": 1382
@@ -572,7 +572,7 @@
     ],
     "family": "",
     "location": "Constance, Germany",
-    "y": "0",
+    "y": "15",
     "eventType": "Historical",
     "percentage": 142,
     "yearRange": [
@@ -588,10 +588,8 @@
     ],
     "family": "",
     "location": "Mainz, Germany",
-    "y": "0",
-    "eventType": "Historical",
-    "percentage": 144,
-    "year": 1440
+    "y": "15",
+    "eventType": "Historical"
   },
   {
     "title": "Council of Basel/Ferrara/Florence",
@@ -601,13 +599,10 @@
     ],
     "family": "",
     "location": "Basel, Ferrara, Florence",
-    "y": "0",
+    "y": "-15",
     "eventType": "Historical",
     "percentage": 144,
-    "yearRange": [
-      1431,
-      1449
-    ]
+    "year": 1440
   },
   {
     "title": "Fall of Constantinople",
@@ -617,7 +612,7 @@
     ],
     "family": "",
     "location": "Constantinople (Istanbul, Turkey)",
-    "y": "0",
+    "y": "1125",
     "eventType": "Historical",
     "percentage": 145,
     "year": 1453
@@ -643,7 +638,7 @@
     ],
     "family": "",
     "location": "Germany",
-    "y": "0",
+    "y": "-15",
     "eventType": "Historical",
     "percentage": 152,
     "year": 1517
@@ -656,7 +651,7 @@
     ],
     "family": "",
     "location": "England",
-    "y": "0",
+    "y": "45",
     "eventType": "Historical",
     "percentage": 153,
     "year": 1526
@@ -669,7 +664,7 @@
     ],
     "family": "",
     "location": "England",
-    "y": "0",
+    "y": "15",
     "eventType": "Historical",
     "percentage": 153,
     "year": 1534
@@ -682,7 +677,7 @@
     ],
     "family": "",
     "location": "England",
-    "y": "0",
+    "y": "-15",
     "eventType": "Historical",
     "percentage": 153,
     "year": 1534
@@ -695,7 +690,7 @@
     ],
     "family": "",
     "location": "Trent, Italy",
-    "y": "0",
+    "y": "-30",
     "eventType": "Historical",
     "percentage": 155,
     "year": 1545
@@ -721,7 +716,7 @@
     ],
     "family": "",
     "location": "Trent, Italy",
-    "y": "0",
+    "y": "15",
     "eventType": "Historical",
     "percentage": 155,
     "yearRange": [
@@ -737,7 +732,7 @@
     ],
     "family": "",
     "location": "Scotland",
-    "y": "0",
+    "y": "-30",
     "eventType": "Historical",
     "percentage": 156,
     "year": 1560
@@ -750,7 +745,7 @@
     ],
     "family": "",
     "location": "Netherlands",
-    "y": "0",
+    "y": "-15",
     "eventType": "Historical",
     "percentage": 157,
     "year": 1571
@@ -763,7 +758,7 @@
     ],
     "family": "",
     "location": "England",
-    "y": "0",
+    "y": "-15",
     "eventType": "Historical",
     "percentage": 161,
     "year": 1611
@@ -776,7 +771,7 @@
     ],
     "family": "",
     "location": "England",
-    "y": "0",
+    "y": "15",
     "eventType": "Historical",
     "percentage": 161,
     "year": 1611
@@ -789,7 +784,7 @@
     ],
     "family": "",
     "location": "Westphalia, Germany",
-    "y": "0",
+    "y": "-15",
     "eventType": "Historical",
     "percentage": 165,
     "year": 1648
@@ -802,7 +797,7 @@
     ],
     "family": "",
     "location": "London, England",
-    "y": "0",
+    "y": "-15",
     "eventType": "Historical",
     "percentage": 174,
     "year": 1738
@@ -815,7 +810,7 @@
     ],
     "family": "",
     "location": "England, USA",
-    "y": "0",
+    "y": "15",
     "eventType": "Historical",
     "percentage": 174,
     "year": 1738
@@ -887,57 +882,5 @@
       1869,
       1870
     ]
-  },
-  {
-    "title": "Revised Version",
-    "description": "The Revised Version was the first official revision of the King James Bible. It involved scholars from both Britain and the United States and aimed to correct Translation errors based on older Hebrew and Greek manuscripts.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "England, USA",
-    "y": "0",
-    "eventType": "Historical",
-    "percentage": 189,
-    "year": 1885
-  },
-  {
-    "title": "Revised Standard Version (RSV)",
-    "description": "The RSV was a revision of the American Standard Version and aimed to provide a modern English Translation based on older manuscripts, including the Dead Sea Scrolls. It became widely used in both Protestant and Catholic churches.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "USA",
-    "y": "0",
-    "eventType": "Historical",
-    "percentage": 195,
-    "year": 1946
-  },
-  {
-    "title": "New International Version (NIV)",
-    "description": "The NIV is a modern English Translation created by an international team of evangelical scholars. It has become one of the most popular modern Translations, balancing readability and accuracy.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "USA, UK",
-    "y": "0",
-    "eventType": "Historical",
-    "percentage": 198,
-    "year": 1978
-  },
-  {
-    "title": "New Jerusalem Bible",
-    "description": "The New Jerusalem Bible is an English Translation that includes scholarly notes and is based on the French Jerusalem Bible. It is widely used in Catholic circles.",
-    "texts": [
-      "Translation"
-    ],
-    "family": "",
-    "location": "France, UK",
-    "y": "0",
-    "eventType": "Historical",
-    "percentage": 199,
-    "year": 1985
   }
 ]
