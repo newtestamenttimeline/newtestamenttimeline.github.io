@@ -38,9 +38,9 @@ function addEventsToTimeline(data) {
         const eventType = event.eventType;
         eventDot.style.backgroundColor = eventTypeColors[eventType] || 'yellow';
 
-        const yearPercentage = ((event.year - (-100)) / (2100 - (-100))) * 100;
-eventDot.style.left = `${yearPercentage}%`;
-
+        // Adjusted position calculation to match initial load exactly
+        const newLeft = ((event.year - 0) / 2100) * 100;
+        eventDot.style.left = `${newLeft}%`;
 
         const yOffset = parseFloat(event.y) || 0;
         eventDot.style.top = `calc(50% + ${yOffset}px)`;
@@ -64,11 +64,12 @@ eventDot.style.left = `${yearPercentage}%`;
     // Append all event dots at once
     timelineContainer.appendChild(fragment);
 
-    // Ensure year labels are visible on the timeline (if they are dynamically added elsewhere)
+    // Ensure year labels are visible on the timeline
     document.querySelectorAll('.year-label').forEach(label => {
         timelineContainer.appendChild(label);
     });
 }
+
 
 // Function to update filters using DocumentFragment for batch updates
 function updateFilters(data) {
