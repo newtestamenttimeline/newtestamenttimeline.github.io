@@ -73,7 +73,7 @@ header {
     display: flex;
     align-items: center;
     padding: 20px;
-    overflow: auto;
+    overflow: visible;
     position: relative;
 }
 
