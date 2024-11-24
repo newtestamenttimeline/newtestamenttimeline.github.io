@@ -169,7 +169,7 @@ header {
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-    overflow-y: visible;
+    overflow-y: auto;
     transition: max-width 0.3s ease;
     max-width: 250px;
     position: absolute;
@@ -310,7 +310,10 @@ header {
     }
 
     .content-container {
-        padding: 10px;
+        position: relative;
+    padding: 10px;
+    overflow-y: auto; /* Allow internal scrolling for content overflow */
+}
     }
 
     .sidebar {
