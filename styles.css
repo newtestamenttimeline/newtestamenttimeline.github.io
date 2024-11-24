@@ -169,7 +169,7 @@ header {
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
+    overflow-y: visible;
     transition: max-width 0.3s ease;
     max-width: 250px;
     position: absolute;
