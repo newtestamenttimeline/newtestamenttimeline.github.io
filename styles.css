@@ -143,7 +143,7 @@ header {
 .bottom-half {
     flex: 1;
     display: flex;
-    overflow: visible;
+    overflow: hidden;
     position: relative;
 }
 
