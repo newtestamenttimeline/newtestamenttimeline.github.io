@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    overflow: visible;
+    overflow: hidden;
 }
 
 header {
@@ -78,7 +78,7 @@ header {
 }
 
 .timeline {
-    width: 21000px;
+    width: 14000px;
     height: 4px;
     background-color: var(--primary-color);
     position: relative;
@@ -150,7 +150,7 @@ header {
 .content-container {
     flex: 1;
     padding: 20px;
-    overflow-y: visible;
+    overflow-y: auto;
 }
 
 #event-content {
@@ -310,10 +310,7 @@ header {
     }
 
     .content-container {
-        position: relative;
-    padding: 10px;
-    overflow-y: auto; /* Allow internal scrolling for content overflow */
-}
+        padding: 10px;
     }
 
     .sidebar {
@@ -403,4 +400,3 @@ header {
 .read-more-link:hover {
     text-decoration: underline;
 }
-
