@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Early Church Fathers</title>
     <link rel="stylesheet" type="text/css" href="styles-infopages.css">
+    <style>
+        .church-fathers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .father-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: calc(33% - 30px); /* Three columns with some spacing */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .father-box:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .father-box {
+                width: calc(50% - 30px); /* Two columns for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .father-box {
+                width: 100%; /* Single column for very small screens */
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -16,50 +48,53 @@
     <p>The Early Church Fathers were theologians, writers, and leaders in early Christianity who profoundly influenced the development of Christian doctrine, liturgy, and church structure. Their works are critical for understanding early Christian beliefs and practices, as well as the transmission of the New Testament text.</p>
 
     <div class="church-fathers">
-        <h3>Significance of the Early Church Fathers</h3>
-        <p>Their writings provide historical insights into the interpretation and usage of the New Testament, textual evidence for its development, and affirmations of traditional authorship and dating. They also shaped key Christian doctrines such as the Trinity and Christology.</p>
+        <div class="father-box">
+            <h4>Clement of Rome (Late 1st Century)</h4>
+            <p>Author of <em>1 Clement</em>, a letter to the Corinthians. He quotes Old Testament texts and echoes New Testament teachings, emphasizing unity and humility.</p>
+            <p><strong>Contribution to Bible Dating:</strong> Clement's references to Paul’s letters and Gospel themes suggest the New Testament books were already widely circulated by the end of the 1st century.</p>
+        </div>
+        <div class="father-box">
+            <h4>Ignatius of Antioch (c. 35–108 CE)</h4>
+            <p>Known for seven letters written on his way to martyrdom, Ignatius advocated for church hierarchy and explicitly referenced the divinity and humanity of Christ.</p>
+            <p><strong>Contribution to Bible Dating:</strong> Ignatius quotes from the Gospels, particularly Matthew and John, showing they were authoritative and recognized by the early 2nd century.</p>
+        </div>
+        <div class="father-box">
+            <h4>Polycarp of Smyrna (c. 69–155 CE)</h4>
+            <p>A disciple of the Apostle John, Polycarp's letter to the Philippians quotes extensively from New Testament texts.</p>
+            <p><strong>Contribution to Bible Text:</strong> His references to Pauline letters and the Gospels confirm their early usage and acceptance as Scripture.</p>
+        </div>
+        <div class="father-box">
+            <h4>Justin Martyr (c. 100–165 CE)</h4>
+            <p>In works like <em>First Apology</em>, Justin defended Christianity to Roman authorities and described early Christian worship practices.</p>
+            <p><strong>Contribution to Bible Text:</strong> Justin explicitly references the Gospels as the "memoirs of the apostles," affirming their use in worship by the mid-2nd century.</p>
+        </div>
+        <div class="father-box">
+            <h4>Irenaeus of Lyons (c. 130–202 CE)</h4>
+            <p>In <em>Against Heresies</em>, Irenaeus refutes Gnosticism and emphasizes apostolic tradition. He supports the fourfold Gospel canon.</p>
+            <p><strong>Contribution to Bible Dating:</strong> Irenaeus asserts that Matthew, Mark, Luke, and John wrote the Gospels, confirming their attribution by the late 2nd century.</p>
+        </div>
+        <div class="father-box">
+            <h4>Origen of Alexandria (c. 185–253 CE)</h4>
+            <p>A prolific writer, Origen produced biblical commentaries and works like <em>Hexapla</em>, a critical edition of the Hebrew Bible.</p>
+            <p><strong>Contribution to Bible Text:</strong> Origen's textual comparisons and interpretations clarified early textual variants, supporting the New Testament's reliability.</p>
+        </div>
+        <div class="father-box">
+            <h4>Tertullian (c. 155–240 CE)</h4>
+            <p>Known for coining terms like <em>Trinitas</em> (Trinity), Tertullian’s works include defenses of Scripture against heretical interpretations.</p>
+            <p><strong>Contribution to Bible Text:</strong> Tertullian frequently quoted Scripture, particularly the Gospels and Pauline letters, demonstrating their authority in North Africa.</p>
+        </div>
+        <div class="father-box">
+            <h4>Cyprian of Carthage (c. 200–258 CE)</h4>
+            <p>In <em>On the Unity of the Church</em>, Cyprian emphasizes the importance of Scripture in addressing heresy and persecution.</p>
+            <p><strong>Contribution to Bible Text:</strong> Cyprian quoted New Testament texts extensively, affirming their use as authoritative Scripture by the 3rd century.</p>
+        </div>
+        <div class="father-box">
+            <h4>Augustine of Hippo (354–430 CE)</h4>
+            <p>One of the most influential Church Fathers, Augustine’s works like <em>Confessions</em> and <em>City of God</em> shaped Western theology.</p>
+            <p><strong>Contribution to Bible Text:</strong> Augustine provided a theological framework for understanding Scripture, including its divine inspiration and authority.</p>
+        </div>
     </div>
-    <div class="church-fathers">
-        <h3>Key Figures and Their Contributions</h3>
-        <ul>
-            <li>
-                <strong>Clement of Rome (Late 1st Century)</strong>
-                <p>Known through his epistle <em>1 Clement</em>, written to the church in Corinth. This work emphasizes unity and humility, echoing teachings found in the New Testament.</p>
-            </li>
-            <li>
-                <strong>Ignatius of Antioch (c. 35–108 CE)</strong>
-                <p>Documented through seven letters written on his way to martyrdom in Rome. Advocated for strong church hierarchy and the role of bishops, and wrote about Christ's divinity and humanity.</p>
-            </li>
-            <li>
-                <strong>Polycarp of Smyrna (c. 69–155 CE)</strong>
-                <p>Wrote a letter to the Philippians, quoting extensively from New Testament texts. His martyrdom is recorded in <em>The Martyrdom of Polycarp</em>.</p>
-            </li>
-            <li>
-                <strong>Justin Martyr (c. 100–165 CE)</strong>
-                <p>Defended Christianity through works like <em>First Apology</em> and <em>Dialogue with Trypho</em>, addressing pagan criticisms and explaining Christian worship.</p>
-            </li>
-            <li>
-                <strong>Irenaeus of Lyons (c. 130–202 CE)</strong>
-                <p>Wrote <em>Against Heresies</em>, refuting Gnosticism and supporting the fourfold Gospel canon. Emphasized apostolic tradition against heretical teachings.</p>
-            </li>
-            <li>
-                <strong>Origen of Alexandria (c. 185–253 CE)</strong>
-                <p>Produced extensive biblical commentaries and works like <em>Hexapla</em>, a critical edition of the Hebrew Bible. His exegetical methods shaped Christian biblical interpretation.</p>
-            </li>
-            <li>
-                <strong>Tertullian (c. 155–240 CE)</strong>
-                <p>Coined terms such as <em>Trinitas</em> (Trinity) and articulated early Trinitarian theology. His works influenced Western Christian thought.</p>
-            </li>
-            <li>
-                <strong>Cyprian of Carthage (c. 200–258 CE)</strong>
-                <p>Wrote <em>On the Unity of the Church</em>, addressing practical issues like persecution and church discipline. Advocated for church unity and the authority of bishops.</p>
-            </li>
-            <li>
-                <strong>Augustine of Hippo (354–430 CE)</strong>
-                <p>His writings, such as <em>Confessions</em> and <em>City of God</em>, profoundly shaped Western theology, especially on grace, free will, and original sin.</p>
-            </li>
-        </ul>
-    </div>
+
     <div class="church-fathers">
         <h3>How Church Fathers Relate to Manuscripts</h3>
         <p>Their extensive quotations from New Testament texts allow comparisons with surviving manuscripts, offering evidence for dating and identifying textual variants in the early centuries.</p>
