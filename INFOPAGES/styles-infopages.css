@@ -87,3 +87,18 @@ a:hover {
     color: white;
     transition: background-color 0.3s;
 }
+
+.church-fathers-container .father-box {
+    border: 2px solid var(--primary-color);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: var(--text-color);
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.church-fathers-container .father-box:hover {
+    transform: scale(1.05);
+    background-color: var(--secondary-color); /* This makes it green on hover */
+    color: white; /* Ensures text remains readable */
+}
