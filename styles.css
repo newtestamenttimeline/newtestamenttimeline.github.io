@@ -420,18 +420,19 @@ header {
 }
 
 #menu-list {
-    list-style-type: none;
-    margin: 0;    
     position: absolute;
     top: 40px;
     left: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    z-index: 1000; /* Ensure it appears above other elements */
-    background-color: white; /* Optional: To make the menu stand out */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: For aesthetics */
-    padding: 10px; /* Optional: To add space inside the menu */
-    border-radius: 5px; /* Optional: To make it look better */
+    z-index: 1000;
+    background-color: #3498db; /* A nice blue background */
+    color: white; /* White text for better contrast */
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-radius: 5px; /* Rounded corners */
+    font-family: Arial, sans-serif; /* Clean font */
+    width: 150px; /* Optional: Fix width */
 }
 
 
@@ -443,15 +444,19 @@ header {
 }
 
 #menu-list li {
-    margin: 5px 0;
+    margin: 5px 0; /* Space between items */
 }
 
 #menu-list li a {
-    color: var(--text-color);
-    text-decoration: none;
+    color: white; /* White text for links */
+    text-decoration: none; /* No underlines */
+    display: block; /* Make links fill their container */
+    padding: 5px 10px; /* Add some padding for clickability */
+    border-radius: 3px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 #menu-list li a:hover {
-    text-decoration: underline;
+    background-color: #2980b9; /* Slightly darker blue on hover */
 }
 
