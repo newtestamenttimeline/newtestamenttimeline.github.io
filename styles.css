@@ -400,3 +400,53 @@ header {
 .read-more-link:hover {
     text-decoration: underline;
 }
+
+#top-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#menu-toggle {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#menu-list {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+#menu-list.hidden {
+    display: none;
+}
+
+#menu-list li {
+    margin: 5px 0;
+}
+
+#menu-list li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#menu-list li a:hover {
+    text-decoration: underline;
+}
+
