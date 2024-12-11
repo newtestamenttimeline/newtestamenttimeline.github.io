@@ -61,15 +61,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menu-toggle');
     const menuList = document.getElementById('menu-list');
 
-    menuToggle.addEventListener('click', () => {
-        menuList.classList.toggle('hidden');
-    });
+    if (menuToggle && menuList) {  // Check if elements exist
+        menuToggle.addEventListener('click', () => {
+            menuList.classList.toggle('hidden');
+        });
 
-    // Optional: Close the menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!menuList.contains(e.target) && e.target !== menuToggle) {
-            menuList.classList.add('hidden');
-        }
-    });
+        // Optional: Close the menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuList.contains(e.target) && e.target !== menuToggle) {
+                menuList.classList.add('hidden');
+            }
+        });
+    } else {
+        console.error('Menu elements not found.');
+    }
 });
-
