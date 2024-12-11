@@ -56,3 +56,20 @@ function toggleEventsByType(eventType, isChecked) {
         event.style.display = isChecked ? 'block' : 'none';
     });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuList = document.getElementById('menu-list');
+
+    menuToggle.addEventListener('click', () => {
+        menuList.classList.toggle('hidden');
+    });
+
+    // Optional: Close the menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!menuList.contains(e.target) && e.target !== menuToggle) {
+            menuList.classList.add('hidden');
+        }
+    });
+});
+
