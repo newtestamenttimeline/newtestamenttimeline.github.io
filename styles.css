@@ -420,18 +420,24 @@ header {
 }
 
 #menu-list {
-    background-color: var(--primary-color);
-    color: var(--text-color);
     list-style-type: none;
-    margin: 0;
-    padding: 10px;
+    margin: 0;    
     position: absolute;
     top: 40px;
     left: 0;
     display: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    z-index: 1000; /* Ensure it appears above other elements */
+    background-color: white; /* Optional: To make the menu stand out */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: For aesthetics */
+    padding: 10px; /* Optional: To add space inside the menu */
+    border-radius: 5px; /* Optional: To make it look better */
 }
+
+
+
+
 
 #menu-list.hidden {
     display: none;
