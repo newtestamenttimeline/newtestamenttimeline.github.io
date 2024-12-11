@@ -433,6 +433,7 @@ header {
     border-radius: 5px; /* Rounded corners */
     font-family: Arial, sans-serif; /* Clean font */
     width: 150px; /* Optional: Fix width */
+    font-size: 16px; /* Adjust the size here */
 }
 
 
@@ -445,6 +446,7 @@ header {
 
 #menu-list li {
     margin: 5px 0; /* Space between items */
+    font-size: 16px; /* Adjust the size here */
 }
 
 #menu-list li a {
