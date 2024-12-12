@@ -409,14 +409,16 @@ header {
     align-items: center;
 }
 
+
 #menu-toggle {
     background-color: var(--primary-color);
     color: var(--text-color);
     border: none;
-    padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
 }
 
 #menu-list {
@@ -471,9 +473,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
 }
 
 .home-icon svg {
     width: 24px;
     height: 24px;
 }
+
+
