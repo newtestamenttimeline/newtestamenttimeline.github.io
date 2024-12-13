@@ -410,6 +410,8 @@ header {
     left: 10px;
     display: flex;
     align-items: center;
+     display: flex; /* Enables inline horizontal alignment */
+    gap: 10px; /* Adds space between the home icon and the menu toggle */
 }
 
 
