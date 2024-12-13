@@ -22,15 +22,18 @@ body {
 }
 
 header {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    text-align: center;
-    padding: 10px 0;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    display: flex; /* Enables Flexbox layout */
+    align-items: center; /* Vertically aligns items */
+    justify-content: space-between; /* Spaces items horizontally */
+    background-color: var(--primary-color); /* Keeps the header background */
+    color: var(--text-color); /* Ensures text is visible */
+    padding: 10px 20px; /* Adds spacing inside the header */
+    font-size: 24px; /* Preserves original text size */
+    font-weight: bold; /* Keeps text bold */
+    text-transform: uppercase; /* Converts text to uppercase */
+    letter-spacing: 2px; /* Adds spacing between letters */
 }
+
 
 /* Add these styles to your CSS file or in a <style> block in your HTML */
 .load-more-container {
@@ -414,12 +417,16 @@ header {
     background-color: var(--primary-color);
     color: var(--text-color);
     border: none;
+    padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 16px;
-    margin: 0; /* Remove any default margins */
-    padding: 0; /* Remove any default padding */
+    font-size: 24px; /* Updated to match yours */
 }
+
+#menu-toggle:hover {
+    color: var(--secondary-color); /* Adds hover effect */
+}
+
 
 #menu-list {
     position: absolute;
@@ -437,6 +444,7 @@ header {
     width: 150px; /* Optional: Fix width */
     font-size: 16px; /* Adjust the size here */
 }
+
 
 
 
@@ -483,3 +491,11 @@ header {
 }
 
 
+.home-icon:hover {
+    transform: scale(1.1);
+}
+
+.header-title {
+    flex-grow: 1;
+    text-align: center;
+}
