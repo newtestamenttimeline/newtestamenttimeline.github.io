@@ -421,7 +421,7 @@ header {
     padding: 5px; /* Adjust padding if needed */
     cursor: pointer;
     border-radius: 5px;
-    font-size: 24px; /* Updated to match yours */
+    font-size: 18px; /* Updated to match yours */
     margin: 0; /* Remove unwanted spacing */
     line-height: 1; /* Ensure consistent vertical alignment */
 }
