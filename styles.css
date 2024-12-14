@@ -408,12 +408,11 @@ header {
     position: absolute;
     top: 10px;
     left: 10px;
-    display: flex;
-    align-items: center;
+    display: flex; /* Enables inline horizontal alignment */
+    align-items: center; /* Vertically centers items */
      display: flex; /* Enables inline horizontal alignment */
     gap: 10px; /* Adds space between the home icon and the menu toggle */
 }
-
 
 #menu-toggle {
     background-color: var(--primary-color);
