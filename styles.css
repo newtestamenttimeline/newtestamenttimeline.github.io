@@ -418,10 +418,12 @@ header {
     background-color: var(--primary-color);
     color: var(--text-color);
     border: none;
-    padding: 5px 10px;
+    padding: 5px; /* Adjust padding if needed */
     cursor: pointer;
     border-radius: 5px;
     font-size: 24px; /* Updated to match yours */
+    margin: 0; /* Remove unwanted spacing */
+    line-height: 1; /* Ensure consistent vertical alignment */
 }
 
 #menu-toggle:hover {
