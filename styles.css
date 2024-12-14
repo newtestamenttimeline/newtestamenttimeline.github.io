@@ -408,21 +408,23 @@ header {
     position: absolute;
     top: 10px;
     left: 10px;
-    display: flex;
-    align-items: center;
+    display: flex; /* Enables inline horizontal alignment */
+    align-items: center; /* Vertically centers items */
      display: flex; /* Enables inline horizontal alignment */
     gap: 10px; /* Adds space between the home icon and the menu toggle */
+    margin-top: -5px; /* Adjust the value to move items up */
 }
-
 
 #menu-toggle {
     background-color: var(--primary-color);
     color: var(--text-color);
     border: none;
-    padding: 5px 10px;
+    padding: 1px; /* Adjust padding if needed */
     cursor: pointer;
     border-radius: 5px;
-    font-size: 24px; /* Updated to match yours */
+    font-size: 18px; /* Updated to match yours */
+    margin: 0; /* Remove unwanted spacing */
+    line-height: 1; /* Ensure consistent vertical alignment */
 }
 
 #menu-toggle:hover {
