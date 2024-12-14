@@ -44,17 +44,28 @@
 
 <body>
     <header>
-    <div id="top-menu">
-        <button id="menu-toggle">☰</button>
-<ul id="menu-list" class="hidden">
-        <li><a href="https://newtestamenttimeline.com/INFOPAGES/about.html" target="_blank">About this site</a></li>
-    <li><a href="https://newtestamenttimeline.com/INFOPAGES/info.html" target="_blank">Read more about manuscripts</a></li>
-    <li><a href="https://forms.gle/r4NSAcT3ZWyEptX9A" target="_blank">Join our Mailing List</a></li>
-</ul>
+        <div id="top-menu">
+            <!-- House Icon -->
+            <div class="home-icon">
+                <a href="https://newtestamenttimeline.com/" aria-label="Back to Timeline">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                </a>
+            </div>
 
-    </div>
+            <!-- Hamburger Menu -->
+            <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul id="menu-list" class="hidden">
+                <li><a href="https://newtestamenttimeline.com/INFOPAGES/about.html" target="_blank">About this site</a></li>
+                <li><a href="https://newtestamenttimeline.com/INFOPAGES/info.html" target="_blank">Read more about manuscripts</a></li>
+                <li><a href="https://forms.gle/r4NSAcT3ZWyEptX9A" target="_blank">Join our Mailing List</a></li>
+            </ul>
+        </div>
 
-        New Testament Manuscripts Timeline</header>
+        <div class="header-title">New Testament Manuscripts Timeline</div>
+    </header>
+
     <div class="main-content">
         <div class="top-half" id="timeline-container">
             <div class="timeline" id="timeline">
