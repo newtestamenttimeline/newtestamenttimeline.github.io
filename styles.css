@@ -412,6 +412,7 @@ header {
     align-items: center; /* Vertically centers items */
      display: flex; /* Enables inline horizontal alignment */
     gap: 10px; /* Adds space between the home icon and the menu toggle */
+    margin-top: -2px; /* Adjust the value to move items up */
 }
 
 #menu-toggle {
