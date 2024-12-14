@@ -418,7 +418,7 @@ header {
     background-color: var(--primary-color);
     color: var(--text-color);
     border: none;
-    padding: 5px; /* Adjust padding if needed */
+    padding: 1px; /* Adjust padding if needed */
     cursor: pointer;
     border-radius: 5px;
     font-size: 18px; /* Updated to match yours */
