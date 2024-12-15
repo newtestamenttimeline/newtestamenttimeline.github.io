@@ -72,7 +72,7 @@ header {
 }
 
 .top-half {
-    height: 50vh; /* Explicitly set to half the viewport height */
+    flex: 1;
     display: flex; /* Keep the flex layout if needed for child alignment */
     align-items: center; /* Vertical centering of children */
     padding: 10px; /* Adjust padding as needed */
