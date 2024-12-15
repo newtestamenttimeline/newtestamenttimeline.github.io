@@ -150,5 +150,5 @@ function updateProgressBar(progress) {
 
 window.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('timeline-container');
-    container.scrollTop = 5000; // Match the static top offset
+    container.scrollTop = 3000; // Match the static top offset
 });
