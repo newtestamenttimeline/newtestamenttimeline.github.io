@@ -147,8 +147,3 @@ function updateProgressBar(progress) {
         console.error('Progress bar element not found.');
     }
 }
-
-window.addEventListener('DOMContentLoaded', () => {
-    const container = document.getElementById('timeline-container');
-    container.scrollTop = 3000; // Match the static top offset
-});
