@@ -109,6 +109,12 @@ header {
     border-left: 10px solid var(--primary-color);
 }
 
+.timeline-content {
+    position: relative;
+    top: 5500px; /* Adjust this value based on your highest point */
+    width: 100%; /* Full width of the timeline */
+}
+
 .event {
     width: 12px;
     height: 12px;
@@ -502,3 +508,5 @@ header {
     flex-grow: 1;
     text-align: center;
 }
+
+
