@@ -111,7 +111,7 @@ header {
 
 .timeline-content {
     position: relative;
-    top: 11000px; /* Adjust this value based on your highest point */
+    top: 11005px; /* Adjust this value based on your highest point */
     width: 100%; /* Full width of the timeline */
 }
 
