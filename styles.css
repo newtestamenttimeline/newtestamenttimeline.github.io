@@ -75,7 +75,7 @@ header {
     flex: 1;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     overflow: auto;
     position: relative;
 }
@@ -315,9 +315,6 @@ header {
         padding: 8px 0;
     }
 
-    .top-half {
-        padding: 10px;
-    }
 
     .content-container {
         padding: 10px;
