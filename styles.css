@@ -72,13 +72,14 @@ header {
 }
 
 .top-half {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    overflow: auto;
+    height: 50vh; /* Explicitly set to half the viewport height */
+    display: flex; /* Keep the flex layout if needed for child alignment */
+    align-items: center; /* Vertical centering of children */
+    padding: 10px; /* Adjust padding as needed */
+    overflow: auto; /* Allow vertical scrolling */
     position: relative;
 }
+
 
 .timeline {
     width: 14000px;
