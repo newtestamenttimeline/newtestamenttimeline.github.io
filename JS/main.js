@@ -147,3 +147,5 @@ function updateProgressBar(progress) {
         console.error('Progress bar element not found.');
     }
 }
+
+document.querySelector('.timeline-content').style.height = '22000px';
