@@ -112,10 +112,11 @@ header {
 
 .timeline-content {
     position: relative;
-    top: 0px; /* Adjust this value based on your highest point */
+    top: 10200px; /* Shift down to include negative y values */
     width: 100%; /* Full width of the timeline */
-    height: 42000px; /* Total height to include all dots */
+    height: 20400px; /* Total height of the range */
 }
+
 
 .event {
     width: 12px;
