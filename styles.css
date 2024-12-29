@@ -502,3 +502,9 @@ header {
     flex-grow: 1;
     text-align: center;
 }
+
+#timeline-container {
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100vh; /* Set a fixed height to create a scrollable area */
+    position: relative;
+}
