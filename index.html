@@ -190,58 +190,60 @@
 <!-- Script to ensure vertical scrolling -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            console.log('DOM fully loaded and parsed');
+    console.log('DOM fully loaded and parsed');
 
-            const timelineContainer = document.getElementById('timeline-container');
-            const timeline = document.getElementById('timeline');
-            const events = document.querySelectorAll('.event');
+    const timelineContainer = document.getElementById('timeline-container');
+    const timeline = document.getElementById('timeline');
+    const events = document.querySelectorAll('.event');
 
-            if (!timelineContainer) {
-                console.error('Timeline container element not found');
-                return;
-            }
+    if (!timelineContainer) {
+        console.error('Timeline container element not found');
+        return;
+    }
 
-            if (!timeline) {
-                console.error('Timeline element not found');
-                return;
-            }
+    if (!timeline) {
+        console.error('Timeline element not found');
+        return;
+    }
 
-            console.log('Timeline container:', timelineContainer);
-            console.log('Timeline element:', timeline);
+    console.log('Timeline container:', timelineContainer);
+    console.log('Timeline element:', timeline);
 
-            if (events.length === 0) {
-                console.warn('No event elements found');
-            }
+    if (events.length === 0) {
+        console.warn('No event elements found');
+    }
 
-            let maxTop = 0;
-            let minTop = 0;
+    let maxTop = 0;
+    let minTop = 0;
 
-            events.forEach(event => {
-                const topValue = parseInt(event.style.top, 10);
-                if (isNaN(topValue)) {
-                    console.warn(`Invalid top value for event: ${event.getAttribute('title')}`);
-                    return;
-                }
+    events.forEach(event => {
+        const topValue = parseInt(event.style.top, 10);
+        if (isNaN(topValue)) {
+            console.warn(`Invalid top value for event: ${event.getAttribute('title')}`);
+            return;
+        }
 
-                if (topValue > maxTop) maxTop = topValue;
-                if (topValue < minTop) minTop = topValue;
+        if (topValue > maxTop) maxTop = topValue;
+        if (topValue < minTop) minTop = topValue;
 
-                console.log(`Event: ${event.getAttribute('title')}, Top: ${topValue}px`);
-            });
+        console.log(`Event: ${event.getAttribute('title')}, Top: ${topValue}px`);
+    });
 
-            console.log(`Max Top Value: ${maxTop}px`);
-            console.log(`Min Top Value: ${minTop}px`);
-            console.log(`Total Height: ${Math.abs(minTop) + maxTop}px`);
+    console.log(`Max Top Value: ${maxTop}px`);
+    console.log(`Min Top Value: ${minTop}px`);
+    console.log(`Total Height: ${Math.abs(minTop) + maxTop}px`);
 
-            const totalHeight = Math.abs(minTop) + maxTop;
-            if (totalHeight > window.innerHeight) {
-                console.log('The content exceeds the viewport height, vertical scrolling should be enabled.');
-                timelineContainer.style.height = `${totalHeight + 100}px`; // Ensure container height exceeds content height
-            } else {
-                console.log('The content does not exceed the viewport height, vertical scrolling will not be triggered.');
-                timelineContainer.style.height = `100vh`; // Set container height to viewport height
-            }
-        });
+    const totalHeight = Math.abs(minTop) + maxTop;
+    if (totalHeight > window.innerHeight) {
+        console.log('The content exceeds the viewport height, vertical scrolling should be enabled.');
+        timelineContainer.style.height = `${totalHeight + 100}px`; // Ensure container height exceeds content height
+    } else {
+        console.log('The content does not exceed the viewport height, vertical scrolling will not be triggered.');
+        timelineContainer.style.height = `100vh`; // Set container height to viewport height
+    }
+
+    console.log('Final timeline container height:', timelineContainer.style.height);
+});
     </script>
     
 </body>
