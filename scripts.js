@@ -1,4 +1,5 @@
 const timeline = document.getElementById('timeline');
+const bigContainer = document.getElementById('big-container');
 const eventContainer = document.getElementById('event-container');
 const timelineContainer = document.getElementById('timeline-container');
 const content = document.getElementById('event-content');
@@ -366,12 +367,14 @@ function toggleSidebar() {
 // Zoom controls
 document.getElementById('zoom-in').addEventListener('click', () => {
     scale *= 1.2;
-    timeline.style.transform = `scale(${scale})`;
+    bigContainer.style.transform = `scale(${scale})`;
+    timeline.scrollIntoView({block: "center"});
 });
 
 document.getElementById('zoom-out').addEventListener('click', () => {
     scale /= 1.2;
-    timeline.style.transform = `scale(${scale})`;
+    bigContainer.style.transform = `scale(${scale})`;
+    timeline.scrollIntoView({block: "center"});
 });
 
 // Double-click to center timeline
