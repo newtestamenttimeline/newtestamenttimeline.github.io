@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Interactive Timeline of New Testament Manuscripts!</title>
-    <link rel="icon" href="/NTTLfavicon.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="NTTLfavicon.png" type="image/png" sizes="32x32">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore the history of New Testament manuscripts with an interactive timeline. Discover manuscripts, historical events, and more with detailed filters and insights.">
@@ -68,18 +68,22 @@
 
     <div class="main-content">
         <div class="top-half" id="timeline-container">
-            <div class="timeline" id="timeline">
-<div class="year-label" style="left: 0%;">1</div>
-<div class="year-label" style="left: 5%;">100</div>
-<div class="year-label" style="left: 12%;">250</div>
-<div class="year-label" style="left: 23%;">500</div>
-<div class="year-label" style="left: 36%;">750</div>
-<div class="year-label" style="left: 48%;">1000</div>
-<div class="year-label" style="left: 60%;">1250</div>
-<div class="year-label" style="left: 73%;">1500</div>
-<div class="year-label" style="left: 87%;">1750</div>
-<div class="year-label" style="left: 99%;">2000</div>
-
+            <div id="big-container">
+                <div id="event-container">
+                </div>
+                <div class="timeline" id="timeline">
+                    <div class="year-label" style="left: 0%;">1</div>
+                    <div class="year-label" style="left: 5%;">100</div>
+                    <div class="year-label" style="left: 12%;">250</div>
+                    <div class="year-label" style="left: 23%;">500</div>
+                    <div class="year-label" style="left: 36%;">750</div>
+                    <div class="year-label" style="left: 48%;">1000</div>
+                    <div class="year-label" style="left: 60%;">1250</div>
+                    <div class="year-label" style="left: 73%;">1500</div>
+                    <div class="year-label" style="left: 87%;">1750</div>
+                    <div class="year-label" style="left: 99%;">2000</div>
+    
+                </div>
             </div>
         </div>
         <div class="bottom-half">
@@ -181,11 +185,11 @@
     </script>
 
     <!-- Separate JS files -->
-<script src="/JS/uiControls.js" defer></script>
-<script src="/JS/filters.js" defer></script>
-<script src="/JS/eventProcessing.js" defer></script>
-<script src="/JS/main.js" defer></script>
-<script src="/JS/load-more.js" defer></script>
+<script src="JS/uiControls.js" defer></script>
+<script src="JS/filters.js" defer></script>
+<script src="JS/eventProcessing.js" defer></script>
+<script src="JS/main.js" defer></script>
+<script src="JS/load-more.js" defer></script>
  <!-- Link to the new JavaScript file -->
 <!-- Script to ensure vertical scrolling -->
     <script>
@@ -243,6 +247,7 @@
     }
 
     console.log('Final timeline container height:', timelineContainer.style.height);
+
 });
     </script>
     

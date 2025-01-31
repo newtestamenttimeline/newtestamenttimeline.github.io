@@ -1,4 +1,5 @@
 const timeline = document.getElementById('timeline');
+const eventContainer = document.getElementById('event-container');
 const timelineContainer = document.getElementById('timeline-container');
 const content = document.getElementById('event-content');
 const sidebar = document.getElementById('sidebar');
