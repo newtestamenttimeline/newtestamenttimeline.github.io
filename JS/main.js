@@ -63,10 +63,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const zoomInButton = document.getElementById('zoom-in');
+    const bigContainer = document.getElementById('big-container');
     if (zoomInButton) {
         zoomInButton.addEventListener('click', () => {
             scale *= 1.2;
-            timeline.style.zoom = scale;
+            bigContainer.style.zoom = scale;
+            timeline.scrollIntoView({block: "center"});
         });
     } else {
         console.error('Zoom In button not found.');
@@ -76,7 +78,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (zoomOutButton) {
         zoomOutButton.addEventListener('click', () => {
             scale /= 1.2;
-            timeline.style.zoom = scale;
+            bigContainer.style.zoom = scale;
+            timeline.scrollIntoView({block: "center"});
         });
     } else {
         console.error('Zoom Out button not found.');

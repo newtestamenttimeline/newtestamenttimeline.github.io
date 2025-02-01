@@ -1,3 +1,4 @@
+const eventContainer = document.getElementById('event-container');
 
 // Function to get color for each event type
 function getColorForEventType(eventType) {
@@ -31,12 +32,12 @@ async function loadEvents() {
 
         // Fetch and process the event data from JSON files
         const eventFiles = [
-            '/JSONS/manuscripts.json',
-            '/JSONS/uncials.json',
-            '/JSONS/historical_events.json',
-            '/JSONS/extrabiblical.json',
-            '/JSONS/church_fathers.json',
-            '/JSONS/likely-writing-date.json'
+            'JSONS/manuscripts.json',
+            'JSONS/uncials.json',
+            'JSONS/historical_events.json',
+            'JSONS/extrabiblical.json',
+            'JSONS/church_fathers.json',
+            'JSONS/likely-writing-date.json'
         ];
 
         const eventGroups = await Promise.all(
@@ -68,12 +69,17 @@ async function loadEvents() {
 
 // Function to process events and add them to the timeline
 function processEvents(...eventGroups) {
+    const year_groups = []
+
     eventGroups.forEach(events => {
         if (!events) return; // Handle case where fetch might fail
         events.forEach(event => {
             processEvent(event);
             addEventToTimeline(event);
-
+            
+            if(!year_groups.includes(event.year)){
+                year_groups.push(event.year)
+            }
             // Add texts and families to the filter sets
             if (event.texts && Array.isArray(event.texts)) {
                 event.texts.forEach(text => {
@@ -90,6 +96,8 @@ function processEvents(...eventGroups) {
             eventTypes.add(event.eventType);
         });
     });
+
+    timeline.scrollIntoView({block: "center"})
 }
 
 // Function to add an event to the timeline
@@ -107,15 +115,28 @@ function addEventToTimeline(event) {
     newEvent.setAttribute('data-location', event.location || 'Unknown');
     newEvent.setAttribute('data-event-type', event.eventType);
 
-    let newLeft = ((event.year - 0) / 2100) * 100;
-newEvent.style.left = `${newLeft}%`;
-
-    let newTop = parseFloat(event.y);
-
-    newEvent.style.top = `${newTop}px`;
     newEvent.style.backgroundColor = getColorForEventType(event.eventType);
+    
+    const yearContainer = document.querySelector(`.year-container[data-year="${event.year}"]`);
+    if(yearContainer){
+        yearContainer.appendChild(newEvent);
+    }
+    else{
+        const newYearContainer = document.createElement('div');
+        newYearContainer.className = 'year-container';
+        newYearContainer.setAttribute('data-year', event.year);
+        
+        let newLeft = ((event.year - 0) / 2100) * 100;
+        newYearContainer.style.left = `${newLeft}%`;
+        eventContainer.appendChild(newYearContainer);
+    }
 
-    timeline.appendChild(newEvent);
+
+
+    // let newTop = parseFloat(event.y);
+
+    // newEvent.style.top = `${newTop}px`;
+
 
     // Ensure year labels are visible
     document.querySelectorAll('.year-label').forEach(label => {

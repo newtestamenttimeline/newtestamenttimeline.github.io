@@ -27,26 +27,55 @@ function addEventsToTimeline(data) {
     const fragment = document.createDocumentFragment();
 
     data.forEach(event => {
-        const eventDot = document.createElement('div');
-        eventDot.className = 'event';
-        eventDot.title = event.title || 'Event';
+        // const eventDot = document.createElement('div');
+        // eventDot.className = 'event';
+        // eventDot.title = event.title || 'Event';
 
-        eventDot.setAttribute('data-event-type', event.eventType || '');
-        eventDot.setAttribute('data-texts', JSON.stringify(event.texts || []));
-        eventDot.setAttribute('data-family', event.family || '');
+        // eventDot.setAttribute('data-event-type', event.eventType || '');
+        // eventDot.setAttribute('data-texts', JSON.stringify(event.texts || []));
+        // eventDot.setAttribute('data-family', event.family || '');
 
-        const eventType = event.eventType;
-        eventDot.style.backgroundColor = eventTypeColors[eventType] || 'yellow';
+        // const eventType = event.eventType;
+        // eventDot.style.backgroundColor = eventTypeColors[eventType] || 'yellow';
 
-        // Adjusted position calculation to match initial load exactly
-        const newLeft = ((event.year - 0) / 2100) * 100;
-        eventDot.style.left = `${newLeft}%`;
+        // // Adjusted position calculation to match initial load exactly
+        // const newLeft = ((event.year - 0) / 2100) * 100;
+        // eventDot.style.left = `${newLeft}%`;
 
-        const yOffset = parseFloat(event.y) || 0;
-        eventDot.style.top = `calc(50% + ${yOffset}px)`;
+        // const yOffset = parseFloat(event.y) || 0;
+        // eventDot.style.top = `calc(50% + ${yOffset}px)`;
 
-        // Attach click event listener for showing event details
-        eventDot.addEventListener('click', () => {
+        // // Attach click event listener for showing event details
+        // eventDot.addEventListener('click', () => {
+        //     document.getElementById('event-content').innerHTML = `
+        //         <h2>${event.title || 'Event'}</h2>
+        //         <p>${event.description || 'No description available.'}</p>
+        //         <p><strong>Year:</strong> ${event.year}</p>
+        //         <p><strong>Texts:</strong> ${event.texts.join(', ') || 'N/A'}</p>
+        //         <p><strong>Family:</strong> ${event.family || 'N/A'}</p>
+        //         <p><strong>Location:</strong> ${event.location || 'N/A'}</p>
+        //         <p><strong>Event Type:</strong> ${event.eventType || 'N/A'}</p>
+        //     `;
+        // });
+
+        // fragment.appendChild(eventDot);
+
+        console.log('Adding event to timeline:', event);
+        if (document.querySelector(`.event[title="${event.title}"]`)) return;
+
+        const newEvent = document.createElement('div');
+        newEvent.className = 'event';
+        newEvent.setAttribute('data-year', event.year || '');
+        newEvent.setAttribute('title', event.title);
+        newEvent.setAttribute('data-description', event.description);
+        newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
+        newEvent.setAttribute('data-family', event.family || '');
+        newEvent.setAttribute('data-location', event.location || 'Unknown');
+        newEvent.setAttribute('data-event-type', event.eventType);
+
+        newEvent.style.backgroundColor = getColorForEventType(event.eventType);
+        
+        newEvent.addEventListener('click', () => {
             document.getElementById('event-content').innerHTML = `
                 <h2>${event.title || 'Event'}</h2>
                 <p>${event.description || 'No description available.'}</p>
@@ -57,8 +86,31 @@ function addEventsToTimeline(data) {
                 <p><strong>Event Type:</strong> ${event.eventType || 'N/A'}</p>
             `;
         });
+        const yearContainer = document.querySelector(`.year-container[data-year="${event.year}"]`);
+        if(yearContainer){
+            yearContainer.appendChild(newEvent);
+        }
+        else{
+            const newYearContainer = document.createElement('div');
+            newYearContainer.className = 'year-container';
+            newYearContainer.setAttribute('data-year', event.year);
+            
+            let newLeft = ((event.year - 0) / 2100) * 100;
+            newYearContainer.style.left = `${newLeft}%`;
+            eventContainer.appendChild(newYearContainer);
+        }
 
-        fragment.appendChild(eventDot);
+
+
+        // let newTop = parseFloat(event.y);
+
+        // newEvent.style.top = `${newTop}px`;
+
+
+        // Ensure year labels are visible
+        document.querySelectorAll('.year-label').forEach(label => {
+            timeline.appendChild(label);
+        });
     });
 
     // Append all event dots at once
@@ -137,8 +189,8 @@ function applyActiveFilters() {
 // Main function to load more manuscripts
 async function loadMoreManuscripts() {
     console.log('Loading more manuscripts...');
-    const minusculesData = await fetchAndProcessJSON('/JSONS/minuscules.json');
-    const lectionariesData = await fetchAndProcessJSON('/JSONS/lectionaries.json');
+    const minusculesData = await fetchAndProcessJSON('JSONS/minuscules.json');
+    const lectionariesData = await fetchAndProcessJSON('JSONS/lectionaries.json');
 
     if (minusculesData.length === 0 && lectionariesData.length === 0) {
         console.error('No data loaded from JSON files.');
