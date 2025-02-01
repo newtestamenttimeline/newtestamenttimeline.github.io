@@ -29,24 +29,20 @@ function getColorForEventType(eventType) {
     return eventTypeColors[eventType];
 }
 
-function addYearLabels() {
-    const yearLabels = [
-        { year: 0, left: '0%' },
-        { year: 100, left: '7%' },
-        { year: 150, left: '11%' },
-        { year: 300, left: '22%' },
-        { year: 500, left: '32%' },
-        { year: 750, left: '53%' },
-        { year: 1000, left: '71%' },
-        { year: 1250, left: '90%' },
-        { year: 1400, left: '100%' }
-    ];
 
-    yearLabels.forEach(label => {
+function addYearLabels() {
+    const yearLabels = [1, 100, 300, 500, 750, 1000, 1250, 1500, 1750, 2000]; // Define year markers
+
+    yearLabels.forEach(year => {
         const yearLabel = document.createElement('div');
         yearLabel.className = 'year-label';
-        yearLabel.style.left = label.left;
-        yearLabel.innerText = label.year;
+        yearLabel.innerText = year;
+
+        // Dynamically calculate the position so the center of the label aligns with the event dots
+        let newLeft = ((year - 1) / 1999) * 100;
+        yearLabel.style.left = `calc(${newLeft}% - 15px)`; // Adjust by half the label width
+
         timeline.appendChild(yearLabel);
     });
 }
+
