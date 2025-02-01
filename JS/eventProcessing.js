@@ -126,7 +126,7 @@ function addEventToTimeline(event) {
         newYearContainer.className = 'year-container';
         newYearContainer.setAttribute('data-year', event.year);
         
-        let newLeft = ((event.year - 0) / 2100) * 100;
+let newLeft = ((event.year - 0) / 2100) * 100;
         newYearContainer.style.left = `${newLeft}%`;
         eventContainer.appendChild(newYearContainer);
     }
