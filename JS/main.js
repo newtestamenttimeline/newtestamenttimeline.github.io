@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize progress bar and event loading
     setUpProgressBar();
     loadEvents(); // This function is now called from eventProcessing.js
+    // Ensure year labels are generated after events load
+    addYearLabels();
 
     // Event listener for "Load More Events" button
     const loadMoreButton = document.getElementById('load-more-event-types');
