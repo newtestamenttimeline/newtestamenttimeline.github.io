@@ -154,25 +154,32 @@ function updateProgressBar(progress) {
 }
 
 function addYearLabels() {
-    console.log("addYearLabels() is running..."); // Debugging output
+    console.log("addYearLabels() is running...");
 
-    const yearLabels = [1, 100, 300, 500, 750, 1000, 1250, 1500, 1750, 2000]; // Define year markers
+    const yearLabels = [1, 100, 300, 500, 750, 1000, 1250, 1500, 1750, 2000];
+    const timeline = document.getElementById("timeline");
+
+    if (!timeline) {
+        console.error("❌ Error: Timeline element not found.");
+        return;
+    }
 
     yearLabels.forEach(year => {
         const yearLabel = document.createElement('div');
         yearLabel.className = 'year-label';
         yearLabel.innerText = year;
 
-        // Dynamically position year labels
+        // ✅ Use the exact same formula as the dots
         let newLeft = ((year - 1) / 1999) * 100;
-        yearLabel.style.position = "absolute"; // Ensure it is positioned within the timeline
-        yearLabel.style.left = `${newLeft}%`; // Place at the correct percentage
-        yearLabel.style.transform = "translateX(-50%)"; // Shift left by half its width to center it
 
-        console.log(`✅ Adding year label: ${year} at ${newLeft}%`); // Debugging output
+        // ✅ Apply correct positioning
+        yearLabel.style.position = "absolute"; // Ensures alignment within the timeline
+        yearLabel.style.left = `${newLeft}%`; // Uses the exact formula as dots
+        yearLabel.style.transform = "translateX(-50%)"; // Centers it on the year
 
-        // Append to timeline
-        document.getElementById("timeline").appendChild(yearLabel);
+        console.log(`✅ Adding year label: ${year} at ${newLeft}%`);
+
+        // Append label to the timeline
+        timeline.appendChild(yearLabel);
     });
 }
-
