@@ -165,12 +165,12 @@ function addYearLabels() {
 
         // Dynamically position year labels
         let newLeft = ((year - 1) / 1999) * 100;
-        yearLabel.style.left = `calc(${newLeft}% - 15px)`; // Adjust by half the label width
+        yearLabel.style.left = `${newLeft}%`; // Position label at correct percentage
+        yearLabel.style.transform = "translateX(-50%)"; // Center the label
 
-        console.log(`Adding year label: ${year} at ${newLeft}%`); // Debugging output
+        console.log(`✅ Adding year label: ${year} at ${newLeft}%`); // Debugging output
 
         // Append to timeline
         document.getElementById("timeline").appendChild(yearLabel);
     });
 }
-
