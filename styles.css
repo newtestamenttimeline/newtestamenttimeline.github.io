@@ -527,3 +527,21 @@ header {
     height: 200vh; /* Set a fixed height to create a scrollable area */
     position: relative;
 }
+
+.year-label {
+    position: absolute;
+    bottom: -20px; /* Ensures labels are not inside the timeline line */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Adjust width for proper text alignment */
+    text-align: center;
+    transform: translateX(-50%); /* ✅ Now properly centers text */
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    z-index: 10;
+}
+

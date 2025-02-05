@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize progress bar and event loading
     setUpProgressBar();
     loadEvents(); // This function is now called from eventProcessing.js
+    // Ensure year labels are generated after events load
+    addYearLabels();
 
     // Event listener for "Load More Events" button
     const loadMoreButton = document.getElementById('load-more-event-types');
@@ -149,4 +151,35 @@ function updateProgressBar(progress) {
     } else {
         console.error('Progress bar element not found.');
     }
+}
+
+function addYearLabels() {
+    console.log("addYearLabels() is running...");
+
+    const yearLabels = [1, 100, 300, 500, 750, 1000, 1250, 1500, 1750, 2000];
+    const timeline = document.getElementById("timeline");
+
+    if (!timeline) {
+        console.error("❌ Error: Timeline element not found.");
+        return;
+    }
+
+    yearLabels.forEach(year => {
+        const yearLabel = document.createElement('div');
+        yearLabel.className = 'year-label';
+        yearLabel.innerText = year;
+
+        // ✅ Use the exact same formula as the dots
+        let newLeft = ((year - 1) / 1999) * 100;
+
+        // ✅ Apply correct positioning
+        yearLabel.style.position = "absolute"; // Ensures alignment within the timeline
+        yearLabel.style.left = `${newLeft}%`; // Uses the exact formula as dots
+        yearLabel.style.transform = "translateX(-50%)"; // Centers it on the year
+
+        console.log(`✅ Adding year label: ${year} at ${newLeft}%`);
+
+        // Append label to the timeline
+        timeline.appendChild(yearLabel);
+    });
 }
