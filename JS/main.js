@@ -169,17 +169,17 @@ function addYearLabels() {
         yearLabel.className = 'year-label';
         yearLabel.innerText = year;
 
-        // ✅ Use the exact same formula as the dots
+        // ✅ Exact same formula as event dots
         let newLeft = ((year - 1) / 1999) * 100;
 
-        // ✅ Apply correct positioning
-        yearLabel.style.position = "absolute"; // Ensures alignment within the timeline
-        yearLabel.style.left = `${newLeft}%`; // Uses the exact formula as dots
-        yearLabel.style.transform = "translateX(-50%)"; // Centers it on the year
+        // ✅ Ensure correct positioning and centering
+        yearLabel.style.position = "absolute";
+        yearLabel.style.left = `${newLeft}%`;
+        yearLabel.style.transform = "translateX(-50%)"; // Shift left by half its own width
 
         console.log(`✅ Adding year label: ${year} at ${newLeft}%`);
 
-        // Append label to the timeline
         timeline.appendChild(yearLabel);
     });
 }
+
