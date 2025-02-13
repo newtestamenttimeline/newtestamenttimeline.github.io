@@ -565,29 +565,61 @@ header {
     z-index: 10;
 }
 
-/* Mobile adjustments for sidebar when expanded (not collapsed) */
+/* Prevent horizontal overflow globally */
+html, body {
+  overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
+  /* Reduce the overall size of the sidebar (legend/filters box) */
+  .sidebar {
+    max-width: 150px; /* Reduced from 250px */
+    padding: 5px;     /* Reduced padding */
+    font-size: 12px;  /* Smaller text */
+  }
+  
+  /* When the sidebar is expanded (not collapsed), apply a smaller shift */
   .sidebar:not(.collapsed) {
-      transform: translateX(50%);
-      transition: transform 0.3s ease;
+    transform: translateX(20%);
+    transition: transform 0.3s ease;
   }
 }
+
 
 /* Landscape orientation adjustments */
 @media (orientation: landscape) {
-  /* Ensure the timeline container fills the full viewport width */
+  /* Ensure the timeline container fills the viewport width */
   #timeline-container {
-      width: 100vw;
-      overflow-x: hidden;
+    width: 100vw;
+    overflow-x: hidden;
   }
-  
+
   /* Fix the "Load More" button at the bottom center */
   .load-more-container {
-      position: fixed;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 5; /* Make sure it stays above other elements */
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+  
+  /* Fix the header to remain visible at the top */
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  /* Add a top margin to main content so it doesn't hide under the fixed header */
+  .main-content {
+    margin-top: 60px; /* Adjust this value to match your header's height */
+  }
+  
+  /* Reduce font sizes for infobox and timeline content */
+  .content-container,
+  #timeline-container {
+    font-size: 0.9rem; /* Tweak this value as needed */
   }
 }
-
