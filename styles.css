@@ -564,3 +564,30 @@ header {
     border: 1px solid #ccc;
     z-index: 10;
 }
+
+/* Mobile adjustments for sidebar when expanded (not collapsed) */
+@media (max-width: 768px) {
+  .sidebar:not(.collapsed) {
+      transform: translateX(50%);
+      transition: transform 0.3s ease;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (orientation: landscape) {
+  /* Ensure the timeline container fills the full viewport width */
+  #timeline-container {
+      width: 100vw;
+      overflow-x: hidden;
+  }
+  
+  /* Fix the "Load More" button at the bottom center */
+  .load-more-container {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5; /* Make sure it stays above other elements */
+  }
+}
+
