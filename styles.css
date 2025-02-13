@@ -22,20 +22,18 @@ body {
 }
 
 header {
-    display: flex; /* Enables Flexbox layout */
-    align-items: center; /* Vertically aligns items */
-    justify-content: space-between; /* Spaces items horizontally */
-    background-color: var(--primary-color); /* Keeps the header background */
-    color: var(--text-color); /* Ensures text is visible */
-    padding: 10px 20px; /* Adds spacing inside the header */
-    font-size: 24px; /* Preserves original text size */
-    font-weight: bold; /* Keeps text bold */
-    text-transform: uppercase; /* Converts text to uppercase */
-    letter-spacing: 2px; /* Adds spacing between letters */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-
-/* Add these styles to your CSS file or in a <style> block in your HTML */
 .load-more-container {
     text-align: center;
     margin-top: 20px;
@@ -46,12 +44,11 @@ header {
     font-size: 16px;
     cursor: pointer;
     border: none;
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
+    background-color: #4CAF50;
+    color: white;
     border-radius: 5px;
     display: inline-block;
 }
-
 
 #progress-bar {
     position: absolute;
@@ -85,7 +82,7 @@ header {
     background-color: var(--primary-color);
     position: absolute;
     align-self: center;
-    z-index: 1; /* Ensure timeline is below dots and legend */
+    z-index: 1;
 }
 
 .timeline::before,
@@ -110,14 +107,14 @@ header {
 }
 
 #big-container {
-    display:flex;
+    display: flex;
     position: absolute;
-    width:100%;
+    width: 100%;
     height: 16000px;
 }
 
-#event-container{
-    /* display:flex; */
+#event-container {
+    /* Adjust as needed when events are loaded */
 }
 
 .year-container {
@@ -135,7 +132,7 @@ header {
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
-    z-index: 2; /* Ensure dots are above the timeline and year labels */
+    z-index: 2;
 }
 
 .event:hover {
@@ -186,7 +183,7 @@ header {
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 3; /* Ensure sidebar is above everything else */
+    z-index: 3;
 }
 
 .sidebar.collapsed {
@@ -231,7 +228,7 @@ header {
     align-items: center;
     margin-bottom: 5px;
     position: relative;
-    z-index: 2; /* Ensure legend items are above the timeline and year labels */
+    z-index: 2;
 }
 
 .legend-color {
@@ -260,7 +257,7 @@ header {
     border-radius: 6px;
     padding: 5px;
     position: absolute;
-    z-index: 9999; /* Increased z-index to ensure the tooltip is above everything */
+    z-index: 9999;
     bottom: 125%;
     left: 50%;
     transform: translateX(-50%);
@@ -273,7 +270,6 @@ header {
     visibility: visible;
     opacity: 1;
 }
-
 
 .timeline-controls {
     display: flex;
@@ -309,10 +305,11 @@ header {
     transform: rotate(45deg);
 }
 
+/* Mobile-friendly adjustments for devices under 768px */
 @media (max-width: 768px) {
     header {
         font-size: 20px;
-        padding: 8px 0;
+        padding: 8px 10px;
     }
 
     .top-half {
@@ -324,29 +321,75 @@ header {
     }
 
     .sidebar {
-        flex: none;
-        height: 100%;
-        transition: max-width 0.3s ease;
         max-width: 100%;
-    }
-
-    .sidebar.collapsed {
-        max-width: 40px;
-        overflow: hidden;
+        height: 100%;
+        padding: 8px;
     }
 
     .toggle-sidebar {
+        position: absolute;
         top: 10px;
         right: 10px;
     }
 
     .timeline-controls {
+        gap: 5px;
         top: 5px;
         right: 5px;
-        gap: 5px;
     }
 }
 
+/* Additional tweaks for very small screens (e.g., smartphones) */
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
+        padding: 6px 8px;
+    }
+
+    .header-title {
+        font-size: 16px;
+    }
+
+    #top-menu {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .home-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .top-half {
+        padding: 5px;
+    }
+
+    .content-container {
+        padding: 5px;
+    }
+
+    .sidebar {
+        max-width: 80%;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    #menu-list {
+        width: 120px;
+        font-size: 14px;
+    }
+
+    #load-more-manuscripts {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #timeline-container {
+        padding: 5px;
+    }
+}
+
+/* Scrollbar styling */
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
@@ -390,16 +433,15 @@ header {
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: yellow; /* Change color as needed */
+    background-color: yellow;
     border-radius: 50%;
     cursor: pointer;
 }
 
 /* Default state of collapsible content */
 #instructions, #legend {
-    display: block; /* Show by default */
+    display: block;
 }
-
 
 .read-more-link {
     font-size: 12px;
@@ -407,6 +449,7 @@ header {
     text-decoration: none;
     margin-left: 5px;
 }
+
 .read-more-link:hover {
     text-decoration: underline;
 }
@@ -415,72 +458,65 @@ header {
     position: absolute;
     top: 10px;
     left: 10px;
-    display: flex; /* Enables inline horizontal alignment */
-    align-items: center; /* Vertically centers items */
-     display: flex; /* Enables inline horizontal alignment */
-    gap: 10px; /* Adds space between the home icon and the menu toggle */
-    margin-top: -5px; /* Adjust the value to move items up */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -5px;
 }
 
 #menu-toggle {
     background-color: var(--primary-color);
     color: var(--text-color);
     border: none;
-    padding: 1px; /* Adjust padding if needed */
+    padding: 1px;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 18px; /* Updated to match yours */
-    margin: 0; /* Remove unwanted spacing */
-    line-height: 1; /* Ensure consistent vertical alignment */
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
 }
 
 #menu-toggle:hover {
-    color: var(--secondary-color); /* Adds hover effect */
+    color: var(--secondary-color);
 }
-
 
 #menu-list {
     position: absolute;
     top: 40px;
     left: 0;
     z-index: 1000;
-    background-color: #3498db; /* A nice blue background */
-    color: white; /* White text for better contrast */
+    background-color: #3498db;
+    color: white;
     list-style-type: none;
     margin: 0;
     padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    border-radius: 5px; /* Rounded corners */
-    font-family: Arial, sans-serif; /* Clean font */
-    width: 150px; /* Optional: Fix width */
-    font-size: 16px; /* Adjust the size here */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    width: 150px;
+    font-size: 16px;
 }
-
-
-
-
-
 
 #menu-list.hidden {
     display: none;
 }
 
 #menu-list li {
-    margin: 5px 0; /* Space between items */
-    font-size: 16px; /* Adjust the size here */
+    margin: 5px 0;
+    font-size: 16px;
 }
 
 #menu-list li a {
-    color: white; /* White text for links */
-    text-decoration: none; /* No underlines */
-    display: block; /* Make links fill their container */
-    padding: 5px 10px; /* Add some padding for clickability */
-    border-radius: 3px; /* Rounded corners for links */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
 }
 
 #menu-list li a:hover {
-    background-color: #2980b9; /* Slightly darker blue on hover */
+    background-color: #2980b9;
 }
 
 .home-icon {
@@ -491,15 +527,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0; /* Remove any default margins */
-    padding: 0; /* Remove any default padding */
+    margin: 0;
+    padding: 0;
 }
 
 .home-icon svg {
     width: 24px;
     height: 24px;
 }
-
 
 .home-icon:hover {
     transform: scale(1.1);
@@ -511,17 +546,17 @@ header {
 }
 
 #timeline-container {
-    overflow-y: auto; /* Enable vertical scrolling */
-    height: 200vh; /* Set a fixed height to create a scrollable area */
+    overflow-y: auto;
+    height: 200vh;
     position: relative;
 }
 
 .year-label {
     position: absolute;
-    bottom: -20px; /* Moves labels below the timeline */
-    width: 40px; /* Adjust to match average text width */
+    bottom: -20px;
+    width: 40px;
     text-align: center;
-    transform: translateX(-50%); /* ✅ Centers the label exactly over its year */
+    transform: translateX(-50%);
     background: black;
     color: white;
     font-size: 12px;
@@ -529,4 +564,3 @@ header {
     border: 1px solid #ccc;
     z-index: 10;
 }
-
