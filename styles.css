@@ -580,3 +580,18 @@ header {
     padding: 5px;
   }
 }
+@media (orientation: landscape) {
+  /* Reposition the "Load More" button so it sits in the bottom–right of the bottom–half */
+  .load-more-container {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    transform: none;
+    z-index: 1200;
+  }
+
+  /* Reserve space on the right of the details box so the button doesn't overlap */
+  .content-container {
+    margin-right: 170px; /* Adjust as needed for your button's width plus some padding */
+  }
+}
