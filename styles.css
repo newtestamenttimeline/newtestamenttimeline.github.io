@@ -412,14 +412,16 @@ header {
   z-index: 10;
 }
 
-/* Fixed "Load More" button at bottom center */
-.load-more-container {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1200;
+/* Load More Button inside Sidebar */
+.sidebar .load-more-container {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: inherit;
   text-align: center;
+  z-index: 1200;
 }
 
 #load-more-manuscripts {
