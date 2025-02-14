@@ -585,9 +585,16 @@ header {
 }
 
 @media (orientation: landscape) {
+  /* Override timeline container’s fixed height */
+  #timeline-container {
+    height: 100%;
+  }
+
+  /* Let flex distribute the remaining height equally */
   .top-half,
   .bottom-half {
-    height: calc((100vh - 60px) / 2); /* Each takes half of the remaining viewport height */
+    flex: 1;
   }
 }
+
 
