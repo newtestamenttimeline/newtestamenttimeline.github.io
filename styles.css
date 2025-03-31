@@ -45,12 +45,13 @@ header {
 /* Reserve space for header and sidebar */
 .main-content {
   margin-top: 60px;          /* Adjust to your header's height */
-  margin-right: 150px;       /* Reserve space for the fixed sidebar */
+  /* Removed margin-right so main content spans full width */
   height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
+
 
 /* Timeline (top-half) area */
 .top-half {
@@ -582,3 +583,18 @@ header {
     padding: 5px;
   }
 }
+
+@media (orientation: landscape) {
+  /* Override timeline container’s fixed height */
+  #timeline-container {
+    height: 100%;
+  }
+
+  /* Let flex distribute the remaining height equally */
+  .top-half,
+  .bottom-half {
+    flex: 1;
+  }
+}
+
+
