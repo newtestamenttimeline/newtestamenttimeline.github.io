@@ -1,191 +1,169 @@
 // --- START OF FILE load-more.js ---
 
-// Helper function to fetch and process JSON data
+// Helper function to fetch JSON (no changes)
 async function fetchAndProcessJSON(url) {
     try {
         const response = await fetch(url);
         if (!response.ok) {
             console.error(`Failed to fetch data from ${url}: ${response.statusText} (${response.status})`);
-            return []; // Return empty array on fetch error
+            return [];
         }
-        // Check content type before parsing
         const contentType = response.headers.get("content-type");
         if (contentType && contentType.indexOf("application/json") !== -1) {
             return await response.json();
         } else {
-             console.error(`Received non-JSON response from ${url}. Content-Type: ${contentType}`);
-             const text = await response.text();
-             console.error("Response text:", text); // Log the actual response
-             return [];
+            console.error(`Received non-JSON response from ${url}. Content-Type: ${contentType}`);
+            return [];
         }
     } catch (error) {
         console.error(`Error fetching or parsing data from ${url}:`, error);
-        return []; // Return empty array on network or parsing error
+        return [];
     }
 }
 
-// Function to add newly loaded events to the timeline display
-// Assumes addEventToTimeline function exists (likely in eventProcessing.js)
-// and handles creating/finding year containers and appending events.
+// Function to add newly loaded events to the timeline display (no changes)
 function addEventsToTimelineDisplay(data) {
     if (typeof addEventToTimeline !== 'function') {
-        console.error("Function addEventToTimeline is not defined. Cannot add events.");
-        return;
+        console.error("Function addEventToTimeline is not defined."); return;
     }
     if (!Array.isArray(data)) {
-        console.error("Data passed to addEventsToTimelineDisplay is not an array.");
-        return;
+        console.error("Invalid data passed to addEventsToTimelineDisplay."); return;
     }
-
     console.log(`Adding ${data.length} new events to the timeline display.`);
     data.forEach(event => {
-        // Optional: Process event if needed (e.g., calculate year from range)
-        // This might be better handled within addEventToTimeline or processEvent if structure is consistent
-        if (typeof processEvent === 'function') {
-             processEvent(event); // Ensure year/percentage is set if needed by addEventToTimeline
-        }
-        // Call the function (likely from eventProcessing.js) that handles adding a single event visually
+        if (typeof processEvent === 'function') processEvent(event);
         addEventToTimeline(event);
     });
-     console.log("Finished adding new events to display.");
+    console.log("Finished adding new events to display.");
 
-     // We also need to add click listeners to the newly added events
-     // updateEvents (from eventProcessing.js) might need adjustment or re-running
-     // Option 1: Re-run updateEvents (might be slightly inefficient if many events exist)
-      if (typeof updateEvents === 'function') {
-         console.log("Updating event listeners for all events...");
-         updateEvents();
-      }
-     // Option 2: Modify updateEvents to only add listeners to new events (more complex)
-     // Option 3: Add listener directly in addEventToTimeline (requires modification there)
-
+    // Re-run updateEvents to add click listeners to new AND old events (simplest way)
+    if (typeof updateEvents === 'function') {
+        console.log("Updating event listeners for all events after load more...");
+        updateEvents();
+    }
 }
 
-// Function to update filter lists (Texts, Families) with new unique items from loaded data
-// Assumes createFilterList function exists (in filters.js) and handles adding items.
+// Function to update filter lists with new unique items from loaded data
 function updateFiltersWithNewData(data) {
-     if (!Array.isArray(data)) {
-        console.error("Data passed to updateFiltersWithNewData is not an array.");
-        return;
+    if (!Array.isArray(data)) {
+        console.error("Invalid data passed to updateFiltersWithNewData."); return;
     }
-    if (!(typeof texts === 'object' && texts instanceof Set) || !(typeof families === 'object' && families instanceof Set)) {
-         console.error("Global 'texts' or 'families' Set not available for updating filters.");
-         return;
+    // Ensure global Sets exist
+    if (!(typeof texts === 'object' && texts instanceof Set) ||
+        !(typeof families === 'object' && families instanceof Set) ||
+        !(typeof locations === 'object' && locations instanceof Set) || // *** NEW: Check locations Set ***
+        !(typeof eventTypes === 'object' && eventTypes instanceof Set)) {
+        console.error("Global filter Sets (texts, families, locations, eventTypes) not available.");
+        return;
     }
 
     let newTextsAdded = false;
     let newFamiliesAdded = false;
+    let newLocationsAdded = false; // *** NEW: Track new locations ***
+    let newEventTypesAdded = false; // Track new types
 
     console.log("Checking for new filter options in loaded data...");
     data.forEach(event => {
-        // Update Texts Set
+        // Update Texts
         if (event.texts && Array.isArray(event.texts)) {
             event.texts.forEach(text => {
                 if (text && text.trim() !== '' && !texts.has(text)) {
-                    texts.add(text);
-                    newTextsAdded = true;
+                    texts.add(text.trim()); newTextsAdded = true;
                 }
             });
         }
-        // Update Families Set
+        // Update Families
         if (event.family && event.family.trim() !== '' && !families.has(event.family)) {
-            families.add(event.family);
-            newFamiliesAdded = true;
+            families.add(event.family.trim()); newFamiliesAdded = true;
         }
-        // Update Event Types Set (though less common to add types dynamically here)
-         if (event.eventType && !(typeof eventTypes === 'object' && eventTypes instanceof Set && eventTypes.has(event.eventType))) {
-            if (typeof eventTypes === 'object' && eventTypes instanceof Set) {
-                eventTypes.add(event.eventType);
-                // Consider regenerating legend if new types are added, or handle dynamically
-                console.warn(`New event type "${event.eventType}" added. Legend might need update.`);
-            }
-         }
+        // *** NEW: Update Locations ***
+        if (event.location && event.location.trim() !== '' && !locations.has(event.location)) {
+            locations.add(event.location.trim()); newLocationsAdded = true;
+        }
+        // Update Event Types
+        if (event.eventType && event.eventType.trim() !== '' && !eventTypes.has(event.eventType)) {
+             eventTypes.add(event.eventType.trim()); newEventTypesAdded = true;
+             console.warn(`New event type "${event.eventType}" added dynamically. Ensure color exists.`);
+             // Optionally regenerate legend or colors here if needed
+        }
     });
 
-    // Re-render filter lists IF new items were actually added
-    if (newTextsAdded && typeof initializeFilters === 'function') {
-        console.log("New texts found, re-initializing text filters...");
-         const textList = document.getElementById('text-list');
-         if (textList) createFilterList(textList, texts, 'text'); // Re-render only text list
+    // Re-render filter lists ONLY IF new items were added
+    if (newTextsAdded && typeof createFilterList === 'function') {
+        const textList = document.getElementById('text-list');
+        if (textList) {
+            console.log("New texts found, re-rendering text filter list...");
+            createFilterList(textList, texts, 'text');
+        }
     }
-     if (newFamiliesAdded && typeof initializeFilters === 'function') {
-        console.log("New families found, re-initializing family filters...");
+    if (newFamiliesAdded && typeof createFilterList === 'function') {
         const familyList = document.getElementById('family-list');
-         if (familyList) createFilterList(familyList, families, 'family'); // Re-render only family list
+        if (familyList) {
+            console.log("New families found, re-rendering family filter list...");
+            createFilterList(familyList, families, 'family');
+        }
     }
-
-     if (!newTextsAdded && !newFamiliesAdded) {
-        console.log("No new filter options found in loaded data.");
+    // *** NEW: Re-render Location list ***
+    if (newLocationsAdded && typeof createFilterList === 'function') {
+        const locationList = document.getElementById('location-list');
+        if (locationList) {
+            console.log("New locations found, re-rendering location filter list...");
+            createFilterList(locationList, locations, 'location');
+        }
+    }
+     if (newEventTypesAdded && typeof generateLegend === 'function') {
+         console.log("New event types found, re-generating legend...");
+         generateLegend(); // Regenerate legend to include new type(s)
      }
+
+    if (!newTextsAdded && !newFamiliesAdded && !newLocationsAdded && !newEventTypesAdded) {
+        console.log("No new filter options found in loaded data.");
+    }
 }
 
-// Main function to load more manuscripts (Minuscules, Lectionaries)
+
+// Main function to load more manuscripts
 async function loadMoreManuscripts() {
     const loadButton = document.getElementById('load-more-manuscripts');
-    if (loadButton) loadButton.disabled = true; // Prevent multiple clicks
+    if (loadButton && loadButton.disabled) return; // Prevent multiple loads
+    if (loadButton) loadButton.disabled = true;
     console.log('Loading more manuscripts (Minuscules and Lectionaries)...');
 
-    // Fetch data from the JSON files
     const minusculesData = await fetchAndProcessJSON('JSONS/minuscules.json');
     const lectionariesData = await fetchAndProcessJSON('JSONS/lectionaries.json');
 
     if (minusculesData.length === 0 && lectionariesData.length === 0) {
-        console.warn('No additional manuscript data loaded from JSON files.');
-         if (loadButton) {
-             loadButton.textContent = "No More Data"; // Update button text
-             // Keep disabled or hide it
-         }
-        return; // Exit if no data
+        console.warn('No additional manuscript data loaded.');
+        if (loadButton) loadButton.textContent = "No More Data";
+        return;
     }
 
-    console.log('Additional data loaded successfully:', {
-        minuscules: minusculesData.length,
-        lectionaries: lectionariesData.length
-    });
-
-    // Combine both data sets
+    console.log('Additional data loaded:', { minuscules: minusculesData.length, lectionaries: lectionariesData.length });
     const allNewData = [...minusculesData, ...lectionariesData];
 
-    // 1. Add the new events to the timeline display
+    // 1. Add events visually
     addEventsToTimelineDisplay(allNewData);
 
-    // 2. Update the global filter sets (texts, families) and re-render filter lists if needed
+    // 2. Update filter sets and sidebar lists
     updateFiltersWithNewData(allNewData);
 
-    // 3. Apply the central filter logic to ALL events (old and new)
-    // *** MODIFICATION: Call the central filter function ***
+    // 3. Apply central filter logic to the entire dataset
     if (typeof applyAllFilters === 'function') {
-        console.log("Applying all filters to the combined dataset...");
+        console.log("Applying all filters to the combined dataset after load more...");
         applyAllFilters();
-    } else {
-        console.error("applyAllFilters function is not defined. Cannot apply filters.");
-    }
-
+    } else { console.error("applyAllFilters function is not defined."); }
 
     console.log('Finished processing loaded manuscripts.');
     if (loadButton) {
-         // Optional: Update button text or hide it after loading
-         loadButton.textContent = "Manuscripts Loaded";
-         // Or hide: loadButton.style.display = 'none';
+        loadButton.textContent = "Manuscripts Loaded";
+        // Optionally hide completely: loadButton.style.display = 'none';
     }
 }
 
-// --- Deprecated Function (Remove or comment out) ---
-/*
-function applyActiveFilters() {
-    // This logic is now handled by applyAllFilters in filters.js
-    console.log("applyActiveFilters function deprecated.");
-    // const activeTextFilters = document.querySelectorAll('#text-list input[type="checkbox"]:checked');
-    // ... rest of old logic ...
-}
-*/
-
-
-// Ensure the DOM is fully loaded before adding event listeners
+// Event listener for the load more button
 document.addEventListener('DOMContentLoaded', () => {
     const loadMoreButton = document.getElementById('load-more-manuscripts');
     if (loadMoreButton) {
-        // Attach the main loading function to the button's click event
         loadMoreButton.addEventListener('click', loadMoreManuscripts);
     } else {
         console.error('Load More Manuscripts button (#load-more-manuscripts) not found.');
