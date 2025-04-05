@@ -1,265 +1,186 @@
-// --- START OF FILE eventProcessing.js ---
+// --- START OF FILE uiControls.js ---
 
-const eventContainer = document.getElementById('event-container');
-const timeline = document.getElementById('timeline');
-const content = document.getElementById('event-content');
-let selectedEvent = null;
+const legendContainer = document.getElementById('legend');
+const sidebar = document.getElementById('sidebar');
 
-// Global sets for filter options
-let texts = new Set();
-let families = new Set();
-let eventTypes = new Set();
-let locations = new Set(); // *** NEW: Added Set for locations ***
-
-// Assumes eventTypeColors is defined globally
-
-// Function to get color for event type
-function getColorForEventType(eventType) {
-    if (typeof eventTypeColors === 'object' && eventTypeColors !== null && eventTypeColors.hasOwnProperty(eventType)) {
-        return eventTypeColors[eventType];
+// Function to toggle the main sidebar visibility
+function toggleSidebar() {
+    if (sidebar) {
+        sidebar.classList.toggle('collapsed');
+        const arrow = document.querySelector('#toggle-sidebar .arrow-reverse');
+        if (arrow) {
+            arrow.classList.toggle('collapsed');
+        }
+    } else {
+        console.error("Sidebar element not found for toggling.");
     }
-    console.warn(`Color not found for event type: ${eventType}. Defaulting to grey.`);
-    return '#808080';
 }
 
-// Function to generate colors if needed (no changes)
-function generateColorsForEventTypes() {
-    if (!(typeof eventTypes === 'object' && eventTypes instanceof Set)) return;
-    if (typeof eventTypeColors !== 'object' || eventTypeColors === null) {
-        eventTypeColors = {};
-        console.warn("eventTypeColors object was not defined globally, initializing.");
+// Function to generate the legend with specific order, tooltips, and collapse functionality
+function generateLegend() {
+    if (!legendContainer) {
+        console.error("Legend container element (#legend) not found.");
+        return;
     }
-    eventTypes.forEach(eventType => {
-        if (!eventTypeColors.hasOwnProperty(eventType)) {
-            const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
-            eventTypeColors[eventType] = randomColor;
-            console.log(`Generated random color for ${eventType}: ${randomColor}`);
+    // Ensure eventTypes is a populated Set before proceeding
+    if (!(typeof eventTypes === 'object' && eventTypes instanceof Set && eventTypes.size > 0)) {
+        console.error("Cannot generate legend: eventTypes Set is not defined, not a Set, or is empty.");
+        legendContainer.innerHTML = '<h3>Manuscript Types</h3><p>No types found.</p>'; // Provide feedback
+        return;
+    }
+
+    legendContainer.innerHTML = ''; // Clear previous content
+
+    // --- Define Custom Order and Tooltips ---
+    const legendOrder = [
+        'Papyrus', 'Uncial', 'Minuscule', 'Lectionary',
+        'Church_father', 'Historical', 'Extrabiblical', 'Likely_writing_date'
+    ];
+    const legendTooltips = {
+        'Papyrus': 'Early manuscript fragments written on papyrus material.',
+        'Uncial': 'Manuscripts written in large, capital Greek letters (uncials), typically on parchment.',
+        'Minuscule': 'Manuscripts written in smaller, cursive Greek letters (minuscules), common later.',
+        'Lectionary': 'Manuscripts containing Scripture readings arranged for liturgical use.',
+        'Church_father': 'Writings or significant events related to early Church Fathers.',
+        'Historical': 'Broader historical events relevant to the context of the manuscripts.',
+        'Extrabiblical': 'Significant non-canonical texts or writings from the period.',
+        'Likely_writing_date': 'Estimated date range for the original composition of a New Testament book.'
+    };
+    // --- End Definitions ---
+
+    // --- Create Header and Toggle Button ---
+    const headerDiv = document.createElement('div');
+    headerDiv.style.display = 'flex';
+    headerDiv.style.alignItems = 'center';
+    headerDiv.style.justifyContent = 'space-between';
+    headerDiv.style.marginBottom = '5px'; // Consistent spacing
+
+    const legendHeader = document.createElement('h3');
+    legendHeader.textContent = 'Manuscript Types '; // Add space for tooltip icon
+    const headerTooltipSpan = document.createElement('span');
+    headerTooltipSpan.className = 'question-mark';
+    headerTooltipSpan.innerHTML = `? <span class="tooltip">Filter events by their general category (Papyrus, Uncial, Historical, etc.).</span>`;
+    // Append tooltip directly to h3
+    legendHeader.appendChild(headerTooltipSpan);
+
+
+    const toggleButton = document.createElement('button');
+    toggleButton.id = 'toggle-legend-button'; // More specific ID
+    toggleButton.setAttribute('aria-label', 'Toggle Manuscript Types visibility');
+    toggleButton.className = 'toggle-legend'; // Use existing styles if available
+    toggleButton.style.background = 'none'; // Reset styles
+    toggleButton.style.border = 'none';
+    toggleButton.style.padding = '0 5px';
+    toggleButton.style.cursor = 'pointer';
+    toggleButton.innerHTML = '<div class="arrow"></div>'; // Arrow indicates state
+
+    headerDiv.appendChild(legendHeader);
+    headerDiv.appendChild(toggleButton);
+    legendContainer.appendChild(headerDiv); // Add header section first
+    // --- End Header ---
+
+
+    // --- Create and Populate List ---
+    const legendList = document.createElement('ul');
+    legendList.id = 'legend-list-items'; // ID for targeting
+    legendList.style.paddingLeft = '0';
+    legendList.style.listStyle = 'none';
+    legendList.style.margin = '0'; // Reset margin
+    legendList.style.display = 'block'; // Start expanded
+
+    const sortedEventTypes = Array.from(eventTypes)
+        .filter(type => legendOrder.includes(type))
+        .sort((a, b) => legendOrder.indexOf(a) - legendOrder.indexOf(b));
+
+    Array.from(eventTypes).forEach(type => {
+        if (!legendOrder.includes(type)) {
+            sortedEventTypes.push(type);
+            if (!legendTooltips[type]) legendTooltips[type] = `Events categorized as ${type}.`;
         }
     });
-}
 
-// Function to update progress bar (no changes)
-function updateProgressBar(progress) {
-    const progressBar = document.getElementById('progress-bar');
-    if (progressBar) {
-        progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
-        // progressBar.textContent = `${Math.round(progress)}%`; // Optional text
-    }
-    if (progress >= 100 && progressBar) {
-        setTimeout(() => { progressBar.style.display = 'none'; }, 500);
-    }
-}
+    sortedEventTypes.forEach(eventType => {
+        const legendItem = document.createElement('li');
+        legendItem.className = 'legend-item'; // Use existing class
 
-// Processing an individual event object
-function processEvent(event) {
-    if (!event) return;
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.className = 'legend-checkbox';
+        checkbox.checked = true;
+        checkbox.id = `legend-checkbox-${eventType}`;
+        checkbox.dataset.eventType = eventType;
+        checkbox.addEventListener('change', applyAllFilters); // Central filter listener
 
-    // Handle yearRange
-    if (!event.year && event.yearRange && Array.isArray(event.yearRange) && event.yearRange.length === 2) {
-        event.year = Math.round((event.yearRange[0] + event.yearRange[1]) / 2);
-    } else if (!event.year) {
-        console.warn('Event has no year or valid yearRange:', event.title || 'Untitled Event');
-        event.year = 0;
-    }
+        const legendColor = document.createElement('div');
+        legendColor.className = 'legend-color';
+        legendColor.style.backgroundColor = typeof getColorForEventType === 'function' ? getColorForEventType(eventType) : '#ccc';
 
-    // Populate global filter sets
-    if (event.texts && Array.isArray(event.texts)) {
-        event.texts.forEach(text => {
-            if (text && text.trim() !== '') texts.add(text.trim());
-        });
-    }
-    if (event.family && event.family.trim() !== '') {
-        families.add(event.family.trim());
-    }
-    if (event.eventType && event.eventType.trim() !== '') {
-        eventTypes.add(event.eventType.trim());
-    }
-    // *** NEW: Populate locations Set ***
-    if (event.location && event.location.trim() !== '') {
-        locations.add(event.location.trim());
-    }
-}
+        const label = document.createElement('label');
+        label.htmlFor = checkbox.id;
+        const labelText = eventType.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+        label.textContent = ` ${labelText}`;
 
-// Function to add a single event visually to the timeline (no changes)
-function addEventToTimeline(event) {
-    if (!event || !event.year || !event.title) {
-        console.warn("Skipping event due to missing data:", event);
-        return;
-    }
-    if (!eventContainer) {
-        console.error("Cannot add event: eventContainer not found.");
-        return;
-    }
-    if (eventContainer.querySelector(`.event[title="${event.title}"]`)) {
-        return; // Skip duplicates
-    }
+        const questionMark = document.createElement('span');
+        questionMark.className = 'question-mark';
+        questionMark.textContent = '?';
+        const tooltip = document.createElement('span');
+        tooltip.className = 'tooltip';
+        tooltip.textContent = legendTooltips[eventType] || `Information about ${labelText}.`;
+        questionMark.appendChild(tooltip);
 
-    let yearContainer = eventContainer.querySelector(`.year-container[data-year="${event.year}"]`);
-    if (!yearContainer) {
-        yearContainer = document.createElement('div');
-        yearContainer.className = 'year-container';
-        yearContainer.setAttribute('data-year', event.year);
-
-        const minYear = 1;
-        const maxYear = 2000;
-        let leftPercent = ((event.year - minYear) / (maxYear - minYear)) * 100;
-        leftPercent = Math.max(0, Math.min(100, leftPercent));
-        yearContainer.style.left = `${leftPercent}%`;
-        eventContainer.appendChild(yearContainer);
-    }
-
-    const newEventDot = document.createElement('div');
-    newEventDot.className = 'event';
-    newEventDot.setAttribute('title', event.title);
-    newEventDot.setAttribute('data-year', event.year);
-    newEventDot.setAttribute('data-description', event.description || 'No description available.');
-    newEventDot.setAttribute('data-texts', JSON.stringify(event.texts || []));
-    newEventDot.setAttribute('data-family', event.family || '');
-    newEventDot.setAttribute('data-location', event.location || ''); // Store location, empty if missing
-    newEventDot.setAttribute('data-event-type', event.eventType || 'Unknown');
-    newEventDot.style.backgroundColor = getColorForEventType(event.eventType);
-
-    yearContainer.appendChild(newEventDot);
-}
-
-
-// Function to add click listeners to ALL event dots (no changes)
-function updateEvents() {
-    if (!content) {
-        console.error("Event content display area not found.");
-        return;
-    }
-    const events = document.querySelectorAll('.event');
-    console.log(`Adding/Updating click listeners for ${events.length} event dots.`);
-
-    events.forEach(eventDot => {
-        const clone = eventDot.cloneNode(true);
-        eventDot.parentNode.replaceChild(clone, eventDot);
-
-        clone.addEventListener('click', () => {
-            if (selectedEvent && selectedEvent !== clone) {
-                selectedEvent.classList.remove('selected');
-            }
-            clone.classList.add('selected');
-            selectedEvent = clone;
-
-            const year = clone.getAttribute('data-year');
-            const title = clone.getAttribute('title');
-            const description = clone.getAttribute('data-description');
-            let textsDisplay = 'N/A';
-            try {
-                const textsArray = JSON.parse(clone.getAttribute('data-texts') || '[]');
-                if (Array.isArray(textsArray) && textsArray.length > 0) {
-                    textsDisplay = textsArray.join(', ');
-                }
-            } catch (e) { console.error("Error parsing texts data on click:", e); }
-
-            const family = clone.getAttribute('data-family') || 'N/A';
-            const location = clone.getAttribute('data-location') || 'N/A'; // Get location
-            const eventType = clone.getAttribute('data-event-type') || 'N/A';
-
-            content.innerHTML = `
-                <h2>${title} (${year ? `Year ${year}` : 'Year Unknown'})</h2>
-                <p>${description}</p>
-                <p><strong>Location:</strong> ${location}</p> <!-- Display location -->
-                <p><strong>Texts:</strong> ${textsDisplay}</p>
-                <p><strong>Family:</strong> ${family}</p>
-                <p><strong>Type:</strong> ${eventType}</p>
-            `;
-            content.scrollTop = 0;
-        });
+        legendItem.appendChild(checkbox);
+        legendItem.appendChild(legendColor);
+        legendItem.appendChild(label);
+        legendItem.appendChild(questionMark);
+        legendList.appendChild(legendItem); // Append item to the UL
     });
+
+    legendContainer.appendChild(legendList); // Add the populated list
+    // --- End List ---
+
+
+    // --- Add Toggle Functionality ---
+    toggleButton.addEventListener('click', () => {
+        const list = document.getElementById('legend-list-items'); // Target the list directly
+        if (list) {
+            const isCollapsed = list.style.display === 'none';
+            list.style.display = isCollapsed ? 'block' : 'none';
+            toggleButton.querySelector('.arrow').classList.toggle('collapsed', !isCollapsed);
+        } else {
+            console.error("Could not find legend list to toggle.");
+        }
+    });
+    // --- End Toggle ---
+
+    console.log("Legend generated successfully.");
 }
 
 
-// Consolidated function to load INITIAL events
-async function loadEvents() {
-    console.log("Starting initial event loading...");
-    updateProgressBar(0);
+// Event listener for the top hamburger menu (no changes)
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuList = document.getElementById('menu-list');
 
-    try {
-        const eventFiles = [
-            'JSONS/manuscripts.json', 'JSONS/uncials.json',
-            'JSONS/historical_events.json', 'JSONS/extrabiblical.json',
-            'JSONS/church_fathers.json', 'JSONS/likely-writing-date.json'
-        ];
-        const totalFiles = eventFiles.length;
-        let filesLoaded = 0;
-
-        const fetchPromises = eventFiles.map(file =>
-            fetch(file)
-                .then(response => {
-                    if (!response.ok) throw new Error(`HTTP error ${response.status} for ${file}`);
-                    const contentType = response.headers.get("content-type");
-                    if (contentType && contentType.indexOf("application/json") !== -1) return response.json();
-                    throw new Error(`Received non-JSON response from ${file}`);
-                })
-                .then(data => {
-                    filesLoaded++;
-                    updateProgressBar((filesLoaded / totalFiles) * 100);
-                    console.log(`Loaded ${file}`);
-                    return data;
-                })
-                .catch(error => {
-                    console.error(`Error loading or parsing ${file}:`, error);
-                    return null;
-                })
-        );
-
-        const eventGroups = await Promise.all(fetchPromises);
-        console.log("All initial files fetched. Processing data...");
-
-        // Clear existing global sets before processing
-        texts.clear();
-        families.clear();
-        eventTypes.clear();
-        locations.clear(); // *** NEW: Clear locations Set ***
-
-        eventGroups.forEach(events => {
-            if (events && Array.isArray(events)) {
-                events.forEach(event => {
-                    processEvent(event); // Populate ALL filter sets
-                    addEventToTimeline(event);
-                });
+    if (menuToggle && menuList) {
+        menuToggle.addEventListener('click', (event) => {
+            event.stopPropagation();
+            menuList.classList.toggle('hidden');
+        });
+        document.addEventListener('click', (e) => {
+            if (!menuList.contains(e.target) && e.target !== menuToggle && !menuList.classList.contains('hidden')) {
+                menuList.classList.add('hidden');
             }
         });
-
-        console.log("Finished processing initial events.");
-        console.log("Unique Event Types found:", Array.from(eventTypes));
-        console.log("Unique Texts found:", Array.from(texts));
-        console.log("Unique Families found:", Array.from(families));
-        console.log("Unique Locations found:", Array.from(locations)); // *** NEW: Log locations ***
-
-        // Post-processing steps
-        generateColorsForEventTypes();
-        updateEvents();
-
-        if (typeof initializeFilters === 'function') {
-            initializeFilters(); // Populate ALL sidebar filter lists
-        } else { console.error("initializeFilters function not found."); }
-
-        if (typeof generateLegend === 'function') {
-            generateLegend(); // Create the legend
-        } else { console.error("generateLegend function not found."); }
-
-        if (typeof applyAllFilters === 'function') {
-            console.log("Applying initial filter state...");
-            applyAllFilters();
-        } else { console.error("applyAllFilters function not found."); }
-
-        if (timeline) {
-            // Scroll to middle-ish initially
-             const scrollWidth = eventContainer.scrollWidth || 2000; // Estimate if needed
-             eventContainer.scrollLeft = scrollWidth / 4; // Start partway in
-            // timeline.scrollIntoView({ block: "center", inline: "center", behavior: "smooth" });
-        }
-
-    } catch (error) {
-        console.error('FATAL Error during initial event loading:', error);
-        if(content) content.innerHTML = "<h2>Error Loading Timeline Data</h2><p>Could not load the necessary data. Please try refreshing the page.</p>";
-    } finally {
-        updateProgressBar(100);
-        console.log("Initial event loading process complete.");
+    } else {
+        console.error('Menu toggle button or menu list element not found.');
     }
-}
-// --- END OF FILE eventProcessing.js ---
+
+    // Add listener for the main sidebar toggle button
+    const sidebarToggle = document.getElementById('toggle-sidebar');
+    if (sidebarToggle) {
+         sidebarToggle.addEventListener('click', toggleSidebar);
+    } else {
+        console.error("Sidebar toggle button (#toggle-sidebar) not found.");
+    }
+});
+// --- END OF FILE uiControls.js ---
