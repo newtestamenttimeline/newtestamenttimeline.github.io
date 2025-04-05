@@ -1,228 +1,195 @@
-// JavaScript to load events from JSON files and update the UI!
+// --- START OF FILE load-more.js ---
 
-// Function to fetch and process JSON data
+// Helper function to fetch and process JSON data
 async function fetchAndProcessJSON(url) {
     try {
         const response = await fetch(url);
         if (!response.ok) {
-            console.error(`Failed to fetch data from ${url}: ${response.statusText}`);
-            return [];
+            console.error(`Failed to fetch data from ${url}: ${response.statusText} (${response.status})`);
+            return []; // Return empty array on fetch error
         }
-        return await response.json();
+        // Check content type before parsing
+        const contentType = response.headers.get("content-type");
+        if (contentType && contentType.indexOf("application/json") !== -1) {
+            return await response.json();
+        } else {
+             console.error(`Received non-JSON response from ${url}. Content-Type: ${contentType}`);
+             const text = await response.text();
+             console.error("Response text:", text); // Log the actual response
+             return [];
+        }
     } catch (error) {
-        console.error(`Error fetching data from ${url}: ${error}`);
-        return [];
+        console.error(`Error fetching or parsing data from ${url}:`, error);
+        return []; // Return empty array on network or parsing error
     }
 }
 
-// Function to add events to the timeline using DocumentFragment for batch updates
-function addEventsToTimeline(data) {
-    const timelineContainer = document.getElementById('timeline');
-    if (!timelineContainer) {
-        console.error('Timeline container not found.');
+// Function to add newly loaded events to the timeline display
+// Assumes addEventToTimeline function exists (likely in eventProcessing.js)
+// and handles creating/finding year containers and appending events.
+function addEventsToTimelineDisplay(data) {
+    if (typeof addEventToTimeline !== 'function') {
+        console.error("Function addEventToTimeline is not defined. Cannot add events.");
+        return;
+    }
+    if (!Array.isArray(data)) {
+        console.error("Data passed to addEventsToTimelineDisplay is not an array.");
         return;
     }
 
-    // Use a DocumentFragment to batch event dot creation and appending
-    const fragment = document.createDocumentFragment();
-
+    console.log(`Adding ${data.length} new events to the timeline display.`);
     data.forEach(event => {
-        // const eventDot = document.createElement('div');
-        // eventDot.className = 'event';
-        // eventDot.title = event.title || 'Event';
-
-        // eventDot.setAttribute('data-event-type', event.eventType || '');
-        // eventDot.setAttribute('data-texts', JSON.stringify(event.texts || []));
-        // eventDot.setAttribute('data-family', event.family || '');
-
-        // const eventType = event.eventType;
-        // eventDot.style.backgroundColor = eventTypeColors[eventType] || 'yellow';
-
-        // // Adjusted position calculation to match initial load exactly
-        // const newLeft = ((event.year - 0) / 2100) * 100;
-        // eventDot.style.left = `${newLeft}%`;
-
-        // const yOffset = parseFloat(event.y) || 0;
-        // eventDot.style.top = `calc(50% + ${yOffset}px)`;
-
-        // // Attach click event listener for showing event details
-        // eventDot.addEventListener('click', () => {
-        //     document.getElementById('event-content').innerHTML = `
-        //         <h2>${event.title || 'Event'}</h2>
-        //         <p>${event.description || 'No description available.'}</p>
-        //         <p><strong>Year:</strong> ${event.year}</p>
-        //         <p><strong>Texts:</strong> ${event.texts.join(', ') || 'N/A'}</p>
-        //         <p><strong>Family:</strong> ${event.family || 'N/A'}</p>
-        //         <p><strong>Location:</strong> ${event.location || 'N/A'}</p>
-        //         <p><strong>Event Type:</strong> ${event.eventType || 'N/A'}</p>
-        //     `;
-        // });
-
-        // fragment.appendChild(eventDot);
-
-        console.log('Adding event to timeline:', event);
-        if (document.querySelector(`.event[title="${event.title}"]`)) return;
-
-        const newEvent = document.createElement('div');
-        newEvent.className = 'event';
-        newEvent.setAttribute('data-year', event.year || '');
-        newEvent.setAttribute('title', event.title);
-        newEvent.setAttribute('data-description', event.description);
-        newEvent.setAttribute('data-texts', JSON.stringify(event.texts || []));
-        newEvent.setAttribute('data-family', event.family || '');
-        newEvent.setAttribute('data-location', event.location || 'Unknown');
-        newEvent.setAttribute('data-event-type', event.eventType);
-
-        newEvent.style.backgroundColor = getColorForEventType(event.eventType);
-        
-        newEvent.addEventListener('click', () => {
-            document.getElementById('event-content').innerHTML = `
-                <h2>${event.title || 'Event'}</h2>
-                <p>${event.description || 'No description available.'}</p>
-                <p><strong>Year:</strong> ${event.year}</p>
-                <p><strong>Texts:</strong> ${event.texts.join(', ') || 'N/A'}</p>
-                <p><strong>Family:</strong> ${event.family || 'N/A'}</p>
-                <p><strong>Location:</strong> ${event.location || 'N/A'}</p>
-                <p><strong>Event Type:</strong> ${event.eventType || 'N/A'}</p>
-            `;
-        });
-        const yearContainer = document.querySelector(`.year-container[data-year="${event.year}"]`);
-        if(yearContainer){
-            yearContainer.appendChild(newEvent);
+        // Optional: Process event if needed (e.g., calculate year from range)
+        // This might be better handled within addEventToTimeline or processEvent if structure is consistent
+        if (typeof processEvent === 'function') {
+             processEvent(event); // Ensure year/percentage is set if needed by addEventToTimeline
         }
-        else{
-            const newYearContainer = document.createElement('div');
-            newYearContainer.className = 'year-container';
-            newYearContainer.setAttribute('data-year', event.year);
-            
-            let newLeft = ((event.year - 0) / 2100) * 100;
-            newYearContainer.style.left = `${newLeft}%`;
-            eventContainer.appendChild(newYearContainer);
-        }
-
-
-
-        // let newTop = parseFloat(event.y);
-
-        // newEvent.style.top = `${newTop}px`;
-
-
-        // Ensure year labels are visible
-        document.querySelectorAll('.year-label').forEach(label => {
-            timeline.appendChild(label);
-        });
+        // Call the function (likely from eventProcessing.js) that handles adding a single event visually
+        addEventToTimeline(event);
     });
+     console.log("Finished adding new events to display.");
 
-    // Append all event dots at once
-    timelineContainer.appendChild(fragment);
+     // We also need to add click listeners to the newly added events
+     // updateEvents (from eventProcessing.js) might need adjustment or re-running
+     // Option 1: Re-run updateEvents (might be slightly inefficient if many events exist)
+      if (typeof updateEvents === 'function') {
+         console.log("Updating event listeners for all events...");
+         updateEvents();
+      }
+     // Option 2: Modify updateEvents to only add listeners to new events (more complex)
+     // Option 3: Add listener directly in addEventToTimeline (requires modification there)
 
-    // Ensure year labels are visible on the timeline
-    document.querySelectorAll('.year-label').forEach(label => {
-        timelineContainer.appendChild(label);
-    });
 }
 
+// Function to update filter lists (Texts, Families) with new unique items from loaded data
+// Assumes createFilterList function exists (in filters.js) and handles adding items.
+function updateFiltersWithNewData(data) {
+     if (!Array.isArray(data)) {
+        console.error("Data passed to updateFiltersWithNewData is not an array.");
+        return;
+    }
+    if (!(typeof texts === 'object' && texts instanceof Set) || !(typeof families === 'object' && families instanceof Set)) {
+         console.error("Global 'texts' or 'families' Set not available for updating filters.");
+         return;
+    }
 
-// Function to update filters using DocumentFragment for batch updates
-function updateFilters(data) {
-    const textList = document.getElementById('text-list');
-    const familyList = document.getElementById('family-list');
+    let newTextsAdded = false;
+    let newFamiliesAdded = false;
 
-    // Store existing filters to avoid duplication
-    const existingTexts = new Set(Array.from(textList.querySelectorAll('li')).map(li => li.textContent.trim()));
-    const existingFamilies = new Set(Array.from(familyList.querySelectorAll('li')).map(li => li.textContent.trim()));
-
-    const textFragment = document.createDocumentFragment();
-    const familyFragment = document.createDocumentFragment();
-
+    console.log("Checking for new filter options in loaded data...");
     data.forEach(event => {
-        // Add unique texts
-        event.texts.forEach(text => {
-            if (text && !existingTexts.has(text)) {  // Only add if not already in the list
-                const listItem = document.createElement('li');
-                listItem.innerHTML = `<input type="checkbox" checked value="${text}"> ${text}`;
-                const checkbox = listItem.querySelector('input');
-                checkbox.addEventListener('change', (e) => {
-                    filterEventsByText(e.target.value, e.target.checked);
-                });
-                textFragment.appendChild(listItem);
-                existingTexts.add(text);  // Mark as added
-            }
-        });
-
-        // Add unique families
-        if (event.family && !existingFamilies.has(event.family)) {
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `<input type="checkbox" checked value="${event.family}"> ${event.family}`;
-            const checkbox = listItem.querySelector('input');
-            checkbox.addEventListener('change', (e) => {
-                filterEventsByFamily(e.target.value, e.target.checked);
+        // Update Texts Set
+        if (event.texts && Array.isArray(event.texts)) {
+            event.texts.forEach(text => {
+                if (text && text.trim() !== '' && !texts.has(text)) {
+                    texts.add(text);
+                    newTextsAdded = true;
+                }
             });
-            familyFragment.appendChild(listItem);
-            existingFamilies.add(event.family);  // Mark as added
         }
+        // Update Families Set
+        if (event.family && event.family.trim() !== '' && !families.has(event.family)) {
+            families.add(event.family);
+            newFamiliesAdded = true;
+        }
+        // Update Event Types Set (though less common to add types dynamically here)
+         if (event.eventType && !(typeof eventTypes === 'object' && eventTypes instanceof Set && eventTypes.has(event.eventType))) {
+            if (typeof eventTypes === 'object' && eventTypes instanceof Set) {
+                eventTypes.add(event.eventType);
+                // Consider regenerating legend if new types are added, or handle dynamically
+                console.warn(`New event type "${event.eventType}" added. Legend might need update.`);
+            }
+         }
     });
 
-    // Append all list items at once
-    textList.appendChild(textFragment);
-    familyList.appendChild(familyFragment);
+    // Re-render filter lists IF new items were actually added
+    if (newTextsAdded && typeof initializeFilters === 'function') {
+        console.log("New texts found, re-initializing text filters...");
+         const textList = document.getElementById('text-list');
+         if (textList) createFilterList(textList, texts, 'text'); // Re-render only text list
+    }
+     if (newFamiliesAdded && typeof initializeFilters === 'function') {
+        console.log("New families found, re-initializing family filters...");
+        const familyList = document.getElementById('family-list');
+         if (familyList) createFilterList(familyList, families, 'family'); // Re-render only family list
+    }
+
+     if (!newTextsAdded && !newFamiliesAdded) {
+        console.log("No new filter options found in loaded data.");
+     }
 }
 
-// Function to apply active filters selectively based on the current state
-function applyActiveFilters() {
-    const activeTextFilters = document.querySelectorAll('#text-list input[type="checkbox"]:checked');
-    activeTextFilters.forEach(checkbox => {
-        filterEventsByText(checkbox.value, checkbox.checked);
-    });
-
-    const activeFamilyFilters = document.querySelectorAll('#family-list input[type="checkbox"]:checked');
-    activeFamilyFilters.forEach(checkbox => {
-        filterEventsByFamily(checkbox.value, checkbox.checked);
-    });
-
-    const activeEventTypeFilters = document.querySelectorAll('#event-type-list input[type="checkbox"]:checked');
-    activeEventTypeFilters.forEach(checkbox => {
-        toggleEventsByType(checkbox.value, checkbox.checked);
-    });
-}
-
-// Main function to load more manuscripts
+// Main function to load more manuscripts (Minuscules, Lectionaries)
 async function loadMoreManuscripts() {
-    console.log('Loading more manuscripts...');
+    const loadButton = document.getElementById('load-more-manuscripts');
+    if (loadButton) loadButton.disabled = true; // Prevent multiple clicks
+    console.log('Loading more manuscripts (Minuscules and Lectionaries)...');
+
+    // Fetch data from the JSON files
     const minusculesData = await fetchAndProcessJSON('JSONS/minuscules.json');
     const lectionariesData = await fetchAndProcessJSON('JSONS/lectionaries.json');
 
     if (minusculesData.length === 0 && lectionariesData.length === 0) {
-        console.error('No data loaded from JSON files.');
-        return;
+        console.warn('No additional manuscript data loaded from JSON files.');
+         if (loadButton) {
+             loadButton.textContent = "No More Data"; // Update button text
+             // Keep disabled or hide it
+         }
+        return; // Exit if no data
     }
 
-    console.log('Data loaded successfully:', {
+    console.log('Additional data loaded successfully:', {
         minuscules: minusculesData.length,
         lectionaries: lectionariesData.length
     });
 
     // Combine both data sets
-    const allData = [...minusculesData, ...lectionariesData];
+    const allNewData = [...minusculesData, ...lectionariesData];
 
-    // Add events to the timeline
-    addEventsToTimeline(allData);
+    // 1. Add the new events to the timeline display
+    addEventsToTimelineDisplay(allNewData);
 
-    // Update filters after adding events
-    updateFilters(allData);
+    // 2. Update the global filter sets (texts, families) and re-render filter lists if needed
+    updateFiltersWithNewData(allNewData);
 
-    // Apply active filters to the newly added events
-    applyActiveFilters();
+    // 3. Apply the central filter logic to ALL events (old and new)
+    // *** MODIFICATION: Call the central filter function ***
+    if (typeof applyAllFilters === 'function') {
+        console.log("Applying all filters to the combined dataset...");
+        applyAllFilters();
+    } else {
+        console.error("applyAllFilters function is not defined. Cannot apply filters.");
+    }
 
-    console.log('Filters updated and events added to the timeline.');
+
+    console.log('Finished processing loaded manuscripts.');
+    if (loadButton) {
+         // Optional: Update button text or hide it after loading
+         loadButton.textContent = "Manuscripts Loaded";
+         // Or hide: loadButton.style.display = 'none';
+    }
 }
+
+// --- Deprecated Function (Remove or comment out) ---
+/*
+function applyActiveFilters() {
+    // This logic is now handled by applyAllFilters in filters.js
+    console.log("applyActiveFilters function deprecated.");
+    // const activeTextFilters = document.querySelectorAll('#text-list input[type="checkbox"]:checked');
+    // ... rest of old logic ...
+}
+*/
+
 
 // Ensure the DOM is fully loaded before adding event listeners
 document.addEventListener('DOMContentLoaded', () => {
     const loadMoreButton = document.getElementById('load-more-manuscripts');
     if (loadMoreButton) {
+        // Attach the main loading function to the button's click event
         loadMoreButton.addEventListener('click', loadMoreManuscripts);
     } else {
-        console.error('Load More Manuscripts button not found.');
+        console.error('Load More Manuscripts button (#load-more-manuscripts) not found.');
     }
 });
+
+// --- END OF FILE load-more.js ---
