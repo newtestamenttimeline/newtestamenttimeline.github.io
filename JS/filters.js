@@ -23,13 +23,14 @@ function applyAllFilters() {
         textFilterActive = document.querySelectorAll('#text-list input[type="checkbox"]').length > 0;
     } catch (e) { console.error("Error getting text filters:", e); }
 
+        // filters.js - Problem Area (Lines ~29-34 in previous code)
 
-    let uncheckedFamilies = new Set();
-    let familyFilterActive = false;
-    try {
-        document.querySelectorAll('#family-list input[type="checkbox']:not(:checked)').forEach(cb => uncheckedFamilies.add(cb.value));
-        familyFilterActive = document.querySelectorAll('#family-list input[type="checkbox"]').length > 0;
-    } catch (e) { console.error("Error getting family filters:", e); }
+    let uncheckedFamilies = new Set(); // Line ~29
+    let familyFilterActive = false; // Line ~30 <-- Error Reported Here
+    try { // Line ~31
+        document.querySelectorAll('#family-list input[type="checkbox"]:not(:checked)').forEach(cb => uncheckedFamilies.add(cb.value)); // Line 32
+        familyFilterActive = document.querySelectorAll('#family-list input[type="checkbox"]').length > 0; // Line 33
+    } catch (e) { console.error("Error getting family filters:", e); } // Line 34
 
 
     let uncheckedLocations = new Set();
