@@ -1,160 +1,265 @@
-// --- START OF FILE uiControls.js ---
+// --- START OF FILE eventProcessing.js ---
 
-const legendContainer = document.getElementById('legend'); // Ensure this is defined
-const sidebar = document.getElementById('sidebar'); // Define sidebar if not already global
+const eventContainer = document.getElementById('event-container');
+const timeline = document.getElementById('timeline');
+const content = document.getElementById('event-content');
+let selectedEvent = null;
 
-// Function to toggle the sidebar visibility (assuming sidebar variable is accessible)
-function toggleSidebar() {
-    if (sidebar) {
-        sidebar.classList.toggle('collapsed');
-    } else {
-        console.error("Sidebar element not found for toggling.");
+// Global sets for filter options
+let texts = new Set();
+let families = new Set();
+let eventTypes = new Set();
+let locations = new Set(); // *** NEW: Added Set for locations ***
+
+// Assumes eventTypeColors is defined globally
+
+// Function to get color for event type
+function getColorForEventType(eventType) {
+    if (typeof eventTypeColors === 'object' && eventTypeColors !== null && eventTypeColors.hasOwnProperty(eventType)) {
+        return eventTypeColors[eventType];
+    }
+    console.warn(`Color not found for event type: ${eventType}. Defaulting to grey.`);
+    return '#808080';
+}
+
+// Function to generate colors if needed (no changes)
+function generateColorsForEventTypes() {
+    if (!(typeof eventTypes === 'object' && eventTypes instanceof Set)) return;
+    if (typeof eventTypeColors !== 'object' || eventTypeColors === null) {
+        eventTypeColors = {};
+        console.warn("eventTypeColors object was not defined globally, initializing.");
+    }
+    eventTypes.forEach(eventType => {
+        if (!eventTypeColors.hasOwnProperty(eventType)) {
+            const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
+            eventTypeColors[eventType] = randomColor;
+            console.log(`Generated random color for ${eventType}: ${randomColor}`);
+        }
+    });
+}
+
+// Function to update progress bar (no changes)
+function updateProgressBar(progress) {
+    const progressBar = document.getElementById('progress-bar');
+    if (progressBar) {
+        progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+        // progressBar.textContent = `${Math.round(progress)}%`; // Optional text
+    }
+    if (progress >= 100 && progressBar) {
+        setTimeout(() => { progressBar.style.display = 'none'; }, 500);
     }
 }
 
-// Function to generate the legend with checkboxes that trigger the central filter function
-function generateLegend() {
-    if (!legendContainer) {
-        console.error("Legend container not found.");
+// Processing an individual event object
+function processEvent(event) {
+    if (!event) return;
+
+    // Handle yearRange
+    if (!event.year && event.yearRange && Array.isArray(event.yearRange) && event.yearRange.length === 2) {
+        event.year = Math.round((event.yearRange[0] + event.yearRange[1]) / 2);
+    } else if (!event.year) {
+        console.warn('Event has no year or valid yearRange:', event.title || 'Untitled Event');
+        event.year = 0;
+    }
+
+    // Populate global filter sets
+    if (event.texts && Array.isArray(event.texts)) {
+        event.texts.forEach(text => {
+            if (text && text.trim() !== '') texts.add(text.trim());
+        });
+    }
+    if (event.family && event.family.trim() !== '') {
+        families.add(event.family.trim());
+    }
+    if (event.eventType && event.eventType.trim() !== '') {
+        eventTypes.add(event.eventType.trim());
+    }
+    // *** NEW: Populate locations Set ***
+    if (event.location && event.location.trim() !== '') {
+        locations.add(event.location.trim());
+    }
+}
+
+// Function to add a single event visually to the timeline (no changes)
+function addEventToTimeline(event) {
+    if (!event || !event.year || !event.title) {
+        console.warn("Skipping event due to missing data:", event);
         return;
     }
-    if (!(eventTypes instanceof Set)) {
-         console.error("eventTypes Set is not defined or not a Set.");
-         return;
+    if (!eventContainer) {
+        console.error("Cannot add event: eventContainer not found.");
+        return;
+    }
+    if (eventContainer.querySelector(`.event[title="${event.title}"]`)) {
+        return; // Skip duplicates
     }
 
-    legendContainer.innerHTML = ''; // Clear previous legend items
+    let yearContainer = eventContainer.querySelector(`.year-container[data-year="${event.year}"]`);
+    if (!yearContainer) {
+        yearContainer = document.createElement('div');
+        yearContainer.className = 'year-container';
+        yearContainer.setAttribute('data-year', event.year);
 
-    // Create the toggle button for the legend section itself if needed
-    // Example: Adding a header and toggle button structure
-    const legendHeader = document.createElement('h3');
-    legendHeader.textContent = 'Legend';
-    const toggleButton = document.createElement('button');
-    toggleButton.id = 'toggle-legend';
-    toggleButton.setAttribute('aria-label', 'Toggle legend');
-    toggleButton.className = 'toggle-legend'; // Use existing class if styled
-    toggleButton.innerHTML = '<div class="arrow"></div>'; // Assuming arrow styling exists
-    toggleButton.addEventListener('click', () => {
-        // Add logic to collapse/expand the list below if desired
-        const list = legendContainer.querySelector('ul'); // Assuming items are in a UL
-        if (list) list.style.display = list.style.display === 'none' ? 'block' : 'none';
-         toggleButton.querySelector('.arrow').classList.toggle('collapsed');
-    });
+        const minYear = 1;
+        const maxYear = 2000;
+        let leftPercent = ((event.year - minYear) / (maxYear - minYear)) * 100;
+        leftPercent = Math.max(0, Math.min(100, leftPercent));
+        yearContainer.style.left = `${leftPercent}%`;
+        eventContainer.appendChild(yearContainer);
+    }
 
-    const headerDiv = document.createElement('div'); // Wrapper for H3 and button if needed
-     headerDiv.style.display = 'flex'; // Example layout
-     headerDiv.style.alignItems = 'center';
-     headerDiv.style.justifyContent = 'space-between';
-     headerDiv.appendChild(legendHeader);
-     headerDiv.appendChild(toggleButton);
-     legendContainer.appendChild(headerDiv);
+    const newEventDot = document.createElement('div');
+    newEventDot.className = 'event';
+    newEventDot.setAttribute('title', event.title);
+    newEventDot.setAttribute('data-year', event.year);
+    newEventDot.setAttribute('data-description', event.description || 'No description available.');
+    newEventDot.setAttribute('data-texts', JSON.stringify(event.texts || []));
+    newEventDot.setAttribute('data-family', event.family || '');
+    newEventDot.setAttribute('data-location', event.location || ''); // Store location, empty if missing
+    newEventDot.setAttribute('data-event-type', event.eventType || 'Unknown');
+    newEventDot.style.backgroundColor = getColorForEventType(event.eventType);
 
-
-    const legendList = document.createElement('ul'); // Container for the actual items
-
-    // Sort event types alphabetically for consistent order
-    const sortedEventTypes = Array.from(eventTypes).sort();
-
-    sortedEventTypes.forEach(eventType => {
-        const legendItem = document.createElement('li'); // Use list items for semantics
-        legendItem.className = 'legend-item'; // Use existing class if styled
-
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.className = 'legend-checkbox';
-        checkbox.checked = true; // Start checked
-        checkbox.id = `legend-checkbox-${eventType}`; // Unique ID
-        // *** MODIFICATION: Add data attribute and change listener ***
-        checkbox.dataset.eventType = eventType; // Store event type directly on the element
-        checkbox.addEventListener('change', applyAllFilters); // Call the central filter function from filters.js
-
-        const legendColor = document.createElement('div');
-        legendColor.className = 'legend-color';
-        // Ensure getColorForEventType is available (defined in eventProcessing.js or globally)
-        legendColor.style.backgroundColor = typeof getColorForEventType === 'function' ? getColorForEventType(eventType) : '#ccc'; // Default color fallback
-
-        const label = document.createElement('label'); // Use label associated with checkbox
-        label.htmlFor = checkbox.id;
-        // Capitalize first letter for display
-        const labelText = eventType.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-        label.textContent = ` ${labelText}`; // Add space for visual separation
-
-        // Optional: Re-add question mark and tooltip if desired
-        const questionMark = document.createElement('span');
-        questionMark.className = 'question-mark';
-        questionMark.textContent = '?';
-        const tooltip = document.createElement('span');
-        tooltip.className = 'tooltip';
-        // Adjust tooltip text and link as needed
-        tooltip.innerHTML = `Show/Hide ${labelText} events. <a href="https://newtestamenttimeline.com/INFOPAGES/manuscript-types.html" target="_blank" rel="noopener noreferrer">Read more</a>`; // Added rel attribute
-        questionMark.appendChild(tooltip);
-
-        legendItem.appendChild(checkbox);
-        legendItem.appendChild(legendColor);
-        legendItem.appendChild(label);
-        legendItem.appendChild(questionMark); // Append question mark if using
-
-        legendList.appendChild(legendItem); // Append item to the list
-    });
-
-     legendContainer.appendChild(legendList); // Append the list to the main container
-
-    console.log("Legend generated.");
-
-    // Optional: Re-apply colors to existing event dots if needed (though initial load should handle this)
-    // const events = document.querySelectorAll('.event');
-    // events.forEach(event => {
-    //     const type = event.getAttribute('data-event-type');
-    //     if (typeof getColorForEventType === 'function' && type) {
-    //         event.style.backgroundColor = getColorForEventType(type);
-    //     }
-    // });
+    yearContainer.appendChild(newEventDot);
 }
 
 
-// --- Deprecated Function (Remove or comment out) ---
-/*
-function toggleEventsByType(eventType, isChecked) {
-    // This logic is now handled by applyAllFilters in filters.js
-    console.log(`Toggling ${eventType}: ${isChecked} - Function deprecated.`);
-    // const events = document.querySelectorAll(`.event[data-event-type="${eventType}"]`);
-    // events.forEach(event => {
-    //     event.style.display = isChecked ? 'block' : 'none';
-    // });
-}
-*/
+// Function to add click listeners to ALL event dots (no changes)
+function updateEvents() {
+    if (!content) {
+        console.error("Event content display area not found.");
+        return;
+    }
+    const events = document.querySelectorAll('.event');
+    console.log(`Adding/Updating click listeners for ${events.length} event dots.`);
 
+    events.forEach(eventDot => {
+        const clone = eventDot.cloneNode(true);
+        eventDot.parentNode.replaceChild(clone, eventDot);
 
-// Event listener for the top hamburger menu
-document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.getElementById('menu-toggle');
-    const menuList = document.getElementById('menu-list');
+        clone.addEventListener('click', () => {
+            if (selectedEvent && selectedEvent !== clone) {
+                selectedEvent.classList.remove('selected');
+            }
+            clone.classList.add('selected');
+            selectedEvent = clone;
 
-    if (menuToggle && menuList) {
-        menuToggle.addEventListener('click', (event) => {
-            event.stopPropagation(); // Prevent click from immediately closing menu via document listener
-            menuList.classList.toggle('hidden');
+            const year = clone.getAttribute('data-year');
+            const title = clone.getAttribute('title');
+            const description = clone.getAttribute('data-description');
+            let textsDisplay = 'N/A';
+            try {
+                const textsArray = JSON.parse(clone.getAttribute('data-texts') || '[]');
+                if (Array.isArray(textsArray) && textsArray.length > 0) {
+                    textsDisplay = textsArray.join(', ');
+                }
+            } catch (e) { console.error("Error parsing texts data on click:", e); }
+
+            const family = clone.getAttribute('data-family') || 'N/A';
+            const location = clone.getAttribute('data-location') || 'N/A'; // Get location
+            const eventType = clone.getAttribute('data-event-type') || 'N/A';
+
+            content.innerHTML = `
+                <h2>${title} (${year ? `Year ${year}` : 'Year Unknown'})</h2>
+                <p>${description}</p>
+                <p><strong>Location:</strong> ${location}</p> <!-- Display location -->
+                <p><strong>Texts:</strong> ${textsDisplay}</p>
+                <p><strong>Family:</strong> ${family}</p>
+                <p><strong>Type:</strong> ${eventType}</p>
+            `;
+            content.scrollTop = 0;
         });
+    });
+}
 
-        // Close the menu when clicking outside of it
-        document.addEventListener('click', (e) => {
-            // Check if the click is outside the menu AND outside the toggle button
-            if (!menuList.contains(e.target) && e.target !== menuToggle && !menuList.classList.contains('hidden')) {
-                menuList.classList.add('hidden');
+
+// Consolidated function to load INITIAL events
+async function loadEvents() {
+    console.log("Starting initial event loading...");
+    updateProgressBar(0);
+
+    try {
+        const eventFiles = [
+            'JSONS/manuscripts.json', 'JSONS/uncials.json',
+            'JSONS/historical_events.json', 'JSONS/extrabiblical.json',
+            'JSONS/church_fathers.json', 'JSONS/likely-writing-date.json'
+        ];
+        const totalFiles = eventFiles.length;
+        let filesLoaded = 0;
+
+        const fetchPromises = eventFiles.map(file =>
+            fetch(file)
+                .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error ${response.status} for ${file}`);
+                    const contentType = response.headers.get("content-type");
+                    if (contentType && contentType.indexOf("application/json") !== -1) return response.json();
+                    throw new Error(`Received non-JSON response from ${file}`);
+                })
+                .then(data => {
+                    filesLoaded++;
+                    updateProgressBar((filesLoaded / totalFiles) * 100);
+                    console.log(`Loaded ${file}`);
+                    return data;
+                })
+                .catch(error => {
+                    console.error(`Error loading or parsing ${file}:`, error);
+                    return null;
+                })
+        );
+
+        const eventGroups = await Promise.all(fetchPromises);
+        console.log("All initial files fetched. Processing data...");
+
+        // Clear existing global sets before processing
+        texts.clear();
+        families.clear();
+        eventTypes.clear();
+        locations.clear(); // *** NEW: Clear locations Set ***
+
+        eventGroups.forEach(events => {
+            if (events && Array.isArray(events)) {
+                events.forEach(event => {
+                    processEvent(event); // Populate ALL filter sets
+                    addEventToTimeline(event);
+                });
             }
         });
-    } else {
-        console.error('Menu toggle button or menu list element not found.');
+
+        console.log("Finished processing initial events.");
+        console.log("Unique Event Types found:", Array.from(eventTypes));
+        console.log("Unique Texts found:", Array.from(texts));
+        console.log("Unique Families found:", Array.from(families));
+        console.log("Unique Locations found:", Array.from(locations)); // *** NEW: Log locations ***
+
+        // Post-processing steps
+        generateColorsForEventTypes();
+        updateEvents();
+
+        if (typeof initializeFilters === 'function') {
+            initializeFilters(); // Populate ALL sidebar filter lists
+        } else { console.error("initializeFilters function not found."); }
+
+        if (typeof generateLegend === 'function') {
+            generateLegend(); // Create the legend
+        } else { console.error("generateLegend function not found."); }
+
+        if (typeof applyAllFilters === 'function') {
+            console.log("Applying initial filter state...");
+            applyAllFilters();
+        } else { console.error("applyAllFilters function not found."); }
+
+        if (timeline) {
+            // Scroll to middle-ish initially
+             const scrollWidth = eventContainer.scrollWidth || 2000; // Estimate if needed
+             eventContainer.scrollLeft = scrollWidth / 4; // Start partway in
+            // timeline.scrollIntoView({ block: "center", inline: "center", behavior: "smooth" });
+        }
+
+    } catch (error) {
+        console.error('FATAL Error during initial event loading:', error);
+        if(content) content.innerHTML = "<h2>Error Loading Timeline Data</h2><p>Could not load the necessary data. Please try refreshing the page.</p>";
+    } finally {
+        updateProgressBar(100);
+        console.log("Initial event loading process complete.");
     }
-
-    // Add listener for the main sidebar toggle button if it exists
-    const sidebarToggle = document.getElementById('toggle-sidebar');
-    if (sidebarToggle && typeof toggleSidebar === 'function') {
-         sidebarToggle.addEventListener('click', toggleSidebar);
-    } else if (!sidebarToggle) {
-        console.error("Sidebar toggle button not found.");
-    }
-
-});
-
-// --- END OF FILE uiControls.js ---
+}
+// --- END OF FILE eventProcessing.js ---
