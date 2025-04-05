@@ -1,78 +1,69 @@
 // --- START OF FILE eventProcessing.js ---
 
 const eventContainer = document.getElementById('event-container');
-const timeline = document.getElementById('timeline'); // Get timeline element reference
-const content = document.getElementById('event-content'); // Content display area
-let selectedEvent = null; // Track the currently selected event dot
+const timeline = document.getElementById('timeline');
+const content = document.getElementById('event-content');
+let selectedEvent = null;
 
 // Global sets for filter options - populated during event processing
 let texts = new Set();
 let families = new Set();
-let eventTypes = new Set(); // Holds unique event types found
+let eventTypes = new Set();
+let locations = new Set(); // <<<====== ADDED THIS LINE
 
-// Assumes eventTypeColors is defined globally (e.g., in index.html <script> tag)
-// let eventTypeColors = { ... }; // Defined elsewhere
+// Assumes eventTypeColors is defined globally
 
-// Function to get color for each event type
+// Function to get color for event type
 function getColorForEventType(eventType) {
-    // Check if eventTypeColors is defined and has the type
     if (typeof eventTypeColors === 'object' && eventTypeColors !== null && eventTypeColors.hasOwnProperty(eventType)) {
         return eventTypeColors[eventType];
     }
-    console.warn(`Color not found for event type: ${eventType}. Defaulting to grey.`);
-    return '#808080'; // Default to grey if color is missing
+    // console.warn(`Color not found for event type: ${eventType}. Defaulting to grey.`); // Less noisy
+    return '#808080'; // Default grey
 }
 
-// Optional: Generate random colors for event types if not predefined
+// Optional: Generate random colors if needed
 function generateColorsForEventTypes() {
+    // ...(no changes needed here)...
     if (!(typeof eventTypes === 'object' && eventTypes instanceof Set)) return;
     if (typeof eventTypeColors !== 'object' || eventTypeColors === null) {
-         eventTypeColors = {}; // Initialize if not defined
+         eventTypeColors = {};
          console.warn("eventTypeColors object was not defined globally, initializing.");
     }
-
     eventTypes.forEach(eventType => {
         if (!eventTypeColors.hasOwnProperty(eventType)) {
-            // Simple random color generator - might produce similar/ugly colors
             const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
             eventTypeColors[eventType] = randomColor;
-            console.log(`Generated random color for ${eventType}: ${randomColor}`);
+            // console.log(`Generated random color for ${eventType}: ${randomColor}`); // Less noisy
         }
     });
 }
 
-// Function to set up and update the progress bar during initial load
+// Function to update progress bar
 function updateProgressBar(progress) {
-    const progressBar = document.getElementById('progress-bar'); // Assuming element exists
+    // ...(no changes needed here)...
+    const progressBar = document.getElementById('progress-bar');
     if (progressBar) {
-        progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`; // Clamp between 0 and 100
-        progressBar.textContent = `${Math.round(progress)}%`; // Optional: Show percentage text
+        progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+        // progressBar.textContent = `${Math.round(progress)}%`; // Optional text
     }
-    // Hide progress bar when done
     if (progress >= 100 && progressBar) {
-        setTimeout(() => { progressBar.style.display = 'none'; }, 500); // Hide after a short delay
+        setTimeout(() => { if(progressBar) progressBar.style.display = 'none'; }, 500);
     }
 }
 
 
-// Processing an individual event object - Calculate year/percentage if needed
+// Processing an individual event object
 function processEvent(event) {
     if (!event) return;
 
-    // Handle yearRange by calculating midpoint
+    // Handle yearRange
     if (!event.year && event.yearRange && Array.isArray(event.yearRange) && event.yearRange.length === 2) {
-        const midPoint = Math.round((event.yearRange[0] + event.yearRange[1]) / 2);
-        event.year = midPoint; // Assign calculated midpoint as the primary year
-        console.log(`Calculated midpoint year ${event.year} for "${event.title}" from range ${event.yearRange}`);
+        event.year = Math.round((event.yearRange[0] + event.yearRange[1]) / 2);
     } else if (!event.year) {
-         console.warn('Event has no year or valid yearRange:', event.title || 'Untitled Event');
-         event.year = 0; // Default to year 0 if missing? Or handle differently?
+        // console.warn('Event has no year or valid yearRange:', event.title || 'Untitled Event'); // Less noisy
+        event.year = 0;
     }
-
-    // Optional: Calculate percentage if needed for positioning (though CSS now uses year directly)
-    // const minYear = 1; // Define timeline start year
-    // const maxYear = 2000; // Define timeline end year
-    // event.percentage = ((event.year - minYear) / (maxYear - minYear)) * 100;
 
     // Populate global filter sets
     if (event.texts && Array.isArray(event.texts)) {
@@ -86,92 +77,85 @@ function processEvent(event) {
     if (event.eventType && event.eventType.trim() !== '') {
         eventTypes.add(event.eventType.trim());
     }
+    // *** ENSURE LOCATION IS ADDED ***
+    if (event.location && event.location.trim() !== '') {
+        // Check if locations Set exists before adding (defensive coding)
+        if (typeof locations === 'object' && locations instanceof Set) {
+            locations.add(event.location.trim());
+        } else {
+             console.warn(`Global 'locations' Set not available when processing event: ${event.title}`);
+        }
+    }
 }
 
 
-// Function to add a single event visually to the timeline
+// Function to add a single event visually (no changes needed here)
 function addEventToTimeline(event) {
+    // ...(no changes needed here)...
     if (!event || !event.year || !event.title) {
-        console.warn("Skipping event due to missing data:", event);
+        // console.warn("Skipping event due to missing data:", event);
         return;
     }
     if (!eventContainer) {
          console.error("Cannot add event: eventContainer not found.");
          return;
     }
-     // Prevent adding duplicates based on title (simple check)
     if (eventContainer.querySelector(`.event[title="${event.title}"]`)) {
-        // console.log(`Skipping duplicate event: ${event.title}`);
-        return;
+        return; // Skip duplicates
     }
-
-    // Find or create the container for this specific year
     let yearContainer = eventContainer.querySelector(`.year-container[data-year="${event.year}"]`);
     if (!yearContainer) {
         yearContainer = document.createElement('div');
         yearContainer.className = 'year-container';
         yearContainer.setAttribute('data-year', event.year);
-
-        // Calculate horizontal position based on year range (e.g., 1 to 2000)
-        const minYear = 1;    // Adjust as needed
-        const maxYear = 2000; // Adjust as needed
+        const minYear = 1;
+        const maxYear = 2000;
         let leftPercent = ((event.year - minYear) / (maxYear - minYear)) * 100;
-        leftPercent = Math.max(0, Math.min(100, leftPercent)); // Clamp between 0% and 100%
+        leftPercent = Math.max(0, Math.min(100, leftPercent));
         yearContainer.style.left = `${leftPercent}%`;
-
         eventContainer.appendChild(yearContainer);
     }
-
-    // Create the event dot element
     const newEventDot = document.createElement('div');
-    newEventDot.className = 'event'; // Base class for styling
-    newEventDot.setAttribute('title', event.title); // Tooltip on hover
-
-    // Store all relevant data on the element for easy access on click
+    newEventDot.className = 'event';
+    newEventDot.setAttribute('title', event.title);
     newEventDot.setAttribute('data-year', event.year);
     newEventDot.setAttribute('data-description', event.description || 'No description available.');
-    newEventDot.setAttribute('data-texts', JSON.stringify(event.texts || [])); // Store as JSON string
-    newEventDot.setAttribute('data-family', event.family || ''); // Empty string if no family
-    newEventDot.setAttribute('data-location', event.location || 'Unknown');
-    newEventDot.setAttribute('data-event-type', event.eventType || 'Unknown'); // Default if missing
-
-    // Set background color based on event type
+    newEventDot.setAttribute('data-texts', JSON.stringify(event.texts || []));
+    newEventDot.setAttribute('data-family', event.family || '');
+    newEventDot.setAttribute('data-location', event.location || ''); // Store empty string if missing
+    newEventDot.setAttribute('data-event-type', event.eventType || 'Unknown');
     newEventDot.style.backgroundColor = getColorForEventType(event.eventType);
-
-    // Append the dot to its year container
     yearContainer.appendChild(newEventDot);
-
-     // Note: Click listener is added by updateEvents() after all initial events are loaded,
-     // or needs to be handled dynamically for 'load more'.
 }
 
 
-// Function to add click listeners to ALL event dots currently in the DOM
+// Function to add click listeners (no changes needed here)
 function updateEvents() {
-     if (!content) {
+    // ...(no changes needed here)...
+    if (!content) {
          console.error("Event content display area not found.");
          return;
      }
     const events = document.querySelectorAll('.event');
-    console.log(`Adding/Updating click listeners for ${events.length} event dots.`);
+    // console.log(`Adding/Updating click listeners for ${events.length} event dots.`); // Less noisy
 
     events.forEach(eventDot => {
-        // Remove existing listener to prevent duplicates if function is called multiple times
-         // This requires storing the listener function reference, or using a simpler approach:
-         const clone = eventDot.cloneNode(true); // Clone to remove old listeners
-         eventDot.parentNode.replaceChild(clone, eventDot); // Replace original with clone
-         // Now add the listener to the clone
+         const clone = eventDot.cloneNode(true);
+         // Check if parentNode exists before replacing - handles edge cases
+         if(eventDot.parentNode) {
+            eventDot.parentNode.replaceChild(clone, eventDot);
+         } else {
+            console.warn("Event dot had no parent node during listener update:", eventDot);
+            return; // Skip this dot if it's somehow detached
+         }
 
         clone.addEventListener('click', () => {
-            // Deselect previously selected dot (if any)
             if (selectedEvent && selectedEvent !== clone) {
                 selectedEvent.classList.remove('selected');
             }
-            // Select the current dot
             clone.classList.add('selected');
-            selectedEvent = clone; // Update tracked selected event
+            selectedEvent = clone;
 
-            // Get data from the clicked dot's attributes
             const year = clone.getAttribute('data-year');
             const title = clone.getAttribute('title');
             const description = clone.getAttribute('data-description');
@@ -181,13 +165,12 @@ function updateEvents() {
                  if (Array.isArray(textsArray) && textsArray.length > 0) {
                      textsDisplay = textsArray.join(', ');
                  }
-             } catch (e) { console.error("Error parsing texts data on click:", e); }
+             } catch (e) { /* Ignore parse error on click */ }
 
             const family = clone.getAttribute('data-family') || 'N/A';
             const location = clone.getAttribute('data-location') || 'N/A';
             const eventType = clone.getAttribute('data-event-type') || 'N/A';
 
-            // Update the bottom content area
             content.innerHTML = `
                 <h2>${title} (${year ? `Year ${year}` : 'Year Unknown'})</h2>
                 <p>${description}</p>
@@ -196,27 +179,22 @@ function updateEvents() {
                 <p><strong>Family:</strong> ${family}</p>
                 <p><strong>Type:</strong> ${eventType}</p>
             `;
-             // Optional: Scroll content area to top
-             content.scrollTop = 0;
+            content.scrollTop = 0;
         });
     });
 }
 
 
-// Consolidated function to load INITIAL events from multiple JSON files
+// Consolidated function to load INITIAL events
 async function loadEvents() {
     console.log("Starting initial event loading...");
-    updateProgressBar(0); // Initialize progress bar
+    updateProgressBar(0);
 
     try {
         const eventFiles = [
-            'JSONS/manuscripts.json',        // Papyri typically
-            'JSONS/uncials.json',
-            'JSONS/historical_events.json',
-            'JSONS/extrabiblical.json',
-            'JSONS/church_fathers.json',
-            'JSONS/likely-writing-date.json'
-            // Add more initial files here if needed
+            'JSONS/manuscripts.json', 'JSONS/uncials.json',
+            'JSONS/historical_events.json', 'JSONS/extrabiblical.json',
+            'JSONS/church_fathers.json', 'JSONS/likely-writing-date.json'
         ];
         const totalFiles = eventFiles.length;
         let filesLoaded = 0;
@@ -225,94 +203,78 @@ async function loadEvents() {
         const fetchPromises = eventFiles.map(file =>
             fetch(file)
                 .then(response => {
-                    if (!response.ok) {
-                         throw new Error(`HTTP error ${response.status} for ${file}`);
-                    }
-                     const contentType = response.headers.get("content-type");
-                     if (contentType && contentType.indexOf("application/json") !== -1) {
-                        return response.json();
-                     } else {
-                         throw new Error(`Received non-JSON response from ${file}`);
-                     }
+                    if (!response.ok) throw new Error(`HTTP ${response.status} for ${file}`);
+                    const contentType = response.headers.get("content-type");
+                    if (contentType && contentType.includes("application/json")) return response.json();
+                    throw new Error(`Non-JSON response from ${file}`);
                 })
                 .then(data => {
                     filesLoaded++;
                     updateProgressBar((filesLoaded / totalFiles) * 100);
-                    console.log(`Loaded ${file}`);
-                    return data; // Return the parsed JSON data
+                    // console.log(`Loaded ${file}`); // Less noisy
+                    return data;
                 })
                 .catch(error => {
-                    console.error(`Error loading or parsing ${file}:`, error);
-                    // Decide how to handle errors: return null, empty array, or rethrow
-                    return null; // Return null for failed files
+                    console.error(`Error loading/parsing ${file}:`, error);
+                    return null; // Allow Promise.all to complete
                 })
         );
 
-        // Wait for all fetch promises to settle
         const eventGroups = await Promise.all(fetchPromises);
-
-        console.log("All initial files fetched (some might have failed). Processing data...");
+        console.log("Initial file fetching complete. Processing data...");
 
         // Clear existing global sets before processing
         texts.clear();
         families.clear();
         eventTypes.clear();
+        locations.clear(); // *** ENSURE locations is cleared ***
 
         // Process the data from successfully loaded files
         eventGroups.forEach(events => {
-            if (events && Array.isArray(events)) { // Check if data is valid array
-                 events.forEach(event => {
-                     processEvent(event); // Populate filter sets and process year/range
-                     addEventToTimeline(event); // Add event visually
-                 });
+            if (events && Array.isArray(events)) {
+                events.forEach(event => {
+                    processEvent(event); // Populate ALL filter sets
+                    addEventToTimeline(event);
+                });
             }
         });
 
         console.log("Finished processing initial events.");
-        console.log("Unique Event Types found:", Array.from(eventTypes));
-        console.log("Unique Texts found:", Array.from(texts));
-        console.log("Unique Families found:", Array.from(families));
+        console.log(`Unique Event Types: ${eventTypes.size}, Texts: ${texts.size}, Families: ${families.size}, Locations: ${locations.size}`);
 
         // Post-processing steps
-        generateColorsForEventTypes(); // Ensure all types have colors
-        updateEvents(); // Add click listeners to the newly added event dots
+        generateColorsForEventTypes();
+        updateEvents(); // Add click listeners
 
         // Initialize UI elements that depend on the loaded data
-         if (typeof initializeFilters === 'function') {
-            initializeFilters(); // Populate sidebar filter lists (Texts, Families)
-        } else { console.error("initializeFilters function not found."); }
+        // Ensure functions are defined before calling
+        if (typeof initializeFilters === 'function') {
+            initializeFilters(); // Populate sidebar filter lists
+        } else { console.error("initializeFilters function is not defined when loadEvents calls it."); }
 
         if (typeof generateLegend === 'function') {
-            generateLegend(); // Create the legend based on found eventTypes
-        } else { console.error("generateLegend function not found."); }
+            generateLegend(); // Create the legend
+        } else { console.error("generateLegend function is not defined when loadEvents calls it."); }
 
-
-        // *** MODIFICATION: Apply all filters initially ***
+        // Apply initial filter state
         if (typeof applyAllFilters === 'function') {
-             console.log("Applying initial filter state...");
-             applyAllFilters();
-        } else { console.error("applyAllFilters function not found."); }
+            console.log("Applying initial filter state...");
+            applyAllFilters();
+        } else { console.error("applyAllFilters function is not defined when loadEvents calls it."); }
 
-        // Optional: Scroll timeline to a default position
-        if (timeline) {
-             timeline.scrollIntoView({ block: "center", inline: "center", behavior: "smooth" });
+        // Optional: Scroll timeline
+        if (eventContainer) { // Scroll the container, not the bar
+            const scrollWidth = eventContainer.scrollWidth || 2000;
+            eventContainer.scrollLeft = scrollWidth / 4; // Start ~25% in
         }
 
-
     } catch (error) {
-        // Catch any critical error during the process
         console.error('FATAL Error during initial event loading:', error);
-        updateProgressBar(100); // Hide progress bar even on error
-         // Display error message to user?
-         if(content) content.innerHTML = "<h2>Error Loading Timeline Data</h2><p>Could not load the necessary data. Please try refreshing the page.</p>";
+        updateProgressBar(100);
+        if(content) content.innerHTML = `<h2>Error Loading Timeline Data</h2><p>Could not load the necessary data. Error: ${error.message}. Please try refreshing the page.</p>`;
     } finally {
-         updateProgressBar(100); // Ensure progress bar hides
-         console.log("Initial event loading process complete.");
+        updateProgressBar(100); // Ensure progress bar hides
+        console.log("Initial event loading process complete.");
     }
 }
-
-// Expose loadEvents globally if it needs to be called from elsewhere (e.g., main.js)
-// However, it's better practice to call it from within a DOMContentLoaded listener in main.js or here.
-// window.loadEvents = loadEvents; // Avoid if possible
-
 // --- END OF FILE eventProcessing.js ---
