@@ -1,158 +1,166 @@
 // --- START OF FILE filters.js ---
 
-// Central function to apply ALL active filters to ALL events
 function applyAllFilters() {
     // console.log("Applying all filters...");
 
-    // --- 1. Get the state of all active filters ---
-    // Use try-catch blocks for robustness in case elements don't exist yet
-
+    // ...(Get filter states - no changes needed here)...
     let checkedEventTypes = new Set();
+    let checkedTexts = new Set();
+    let uncheckedTexts = new Set();
+    let uncheckedFamilies = new Set();
+    let uncheckedLocations = new Set();
+    let textFilterActive = false;
+    let familyFilterActive = false;
+    let locationFilterActive = false;
+    let eventTypeFilterActive = false;
+
     try {
         document.querySelectorAll('#legend .legend-checkbox:checked').forEach(cb => {
             if (cb.dataset.eventType) checkedEventTypes.add(cb.dataset.eventType);
         });
-    } catch (e) { console.error("Error getting checked event types:", e); }
-
-    let checkedTexts = new Set();
-    let uncheckedTexts = new Set();
-    let textFilterActive = false;
-    try {
+        eventTypeFilterActive = document.querySelectorAll('#legend .legend-checkbox').length > 0;
         document.querySelectorAll('#text-list input[type="checkbox"]:checked').forEach(cb => checkedTexts.add(cb.value));
         document.querySelectorAll('#text-list input[type="checkbox]:not(:checked)').forEach(cb => uncheckedTexts.add(cb.value));
         textFilterActive = document.querySelectorAll('#text-list input[type="checkbox"]').length > 0;
-    } catch (e) { console.error("Error getting text filters:", e); }
-
-        // filters.js - Problem Area (Lines ~29-34 in previous code)
-
-    let uncheckedFamilies = new Set(); // Line ~29
-    let familyFilterActive = false; // Line ~30 <-- Error Reported Here
-    try { // Line ~31
-        document.querySelectorAll('#family-list input[type="checkbox"]:not(:checked)').forEach(cb => uncheckedFamilies.add(cb.value)); // Line 32
-        familyFilterActive = document.querySelectorAll('#family-list input[type="checkbox"]').length > 0; // Line 33
-    } catch (e) { console.error("Error getting family filters:", e); } // Line 34
-
-
-    let uncheckedLocations = new Set();
-    let locationFilterActive = false;
-    try {
-        document.querySelectorAll('#location-list input[type="checkbox]:not(:checked)').forEach(cb => uncheckedLocations.add(cb.value));
+        document.querySelectorAll('#family-list input[type="checkbox"]:not(:checked)').forEach(cb => uncheckedFamilies.add(cb.value));
+        familyFilterActive = document.querySelectorAll('#family-list input[type="checkbox"]').length > 0;
+        document.querySelectorAll('#location-list input[type="checkbox"]:not(:checked)').forEach(cb => uncheckedLocations.add(cb.value));
         locationFilterActive = document.querySelectorAll('#location-list input[type="checkbox"]').length > 0;
-    } catch (e) { console.error("Error getting location filters:", e); }
+    } catch (error) {
+        console.error("Error reading filter states:", error);
+        return;
+    }
 
 
-    // --- 2. Iterate through each event dot ---
     const allEvents = document.querySelectorAll('.event');
-    // console.log(`Filtering ${allEvents.length} events. Checked types: ${checkedEventTypes.size}`); // Debugging
-
     allEvents.forEach(event => {
-        let isVisible = true; // Start assuming visible
+        let isVisible = true;
+        const eventTitle = event.getAttribute('title') || 'Untitled'; // For logging
 
-        // Get event data attributes safely
         const eventType = event.getAttribute('data-event-type') || '';
         const eventFamily = event.getAttribute('data-family') || '';
         const eventLocation = event.getAttribute('data-location') || '';
         let eventTexts = [];
         try {
             const textsAttr = event.getAttribute('data-texts');
-            if (textsAttr) {
-                eventTexts = JSON.parse(textsAttr);
-                if (!Array.isArray(eventTexts)) eventTexts = [];
-            }
-        } catch (e) { eventTexts = []; /* Default to empty on error */ }
+            eventTexts = textsAttr ? JSON.parse(textsAttr) : [];
+            if (!Array.isArray(eventTexts)) eventTexts = [];
+        } catch (e) { eventTexts = []; }
 
+        // --- Apply filters ---
 
-        // --- 3. Apply filters sequentially (AND logic) ---
-
-        // Filter 1: Event Type (MUST be in the set of checked types)
-        // Only apply if the legend checkboxes have been generated
-        if (document.querySelectorAll('#legend .legend-checkbox').length > 0 && !checkedEventTypes.has(eventType)) {
+        // Event Type
+        if (eventTypeFilterActive && !checkedEventTypes.has(eventType)) {
             isVisible = false;
         }
 
-        // Filter 2: Manuscript Family (Hide if family exists AND is in the unchecked set)
+        // Family
         if (isVisible && familyFilterActive && eventFamily && uncheckedFamilies.has(eventFamily)) {
             isVisible = false;
         }
 
-        // Filter 3: Texts (Hide if event contains ANY text from the unchecked set)
+        // *** MODIFIED: Text Filter with Debugging ***
         if (isVisible && textFilterActive && eventTexts.length > 0) {
-            let containsUnchecked = false;
-            for (const text of eventTexts) {
-                if (uncheckedTexts.has(text)) {
-                    containsUnchecked = true;
-                    break;
-                }
-            }
-            if (containsUnchecked) {
-                isVisible = false;
+            const hasUnchecked = eventTexts.some(text => uncheckedTexts.has(text));
+            // --- Debugging Lines ---
+            // Uncomment below to log detailed info for ONE specific event when testing texts
+            // if (eventTitle === "Papyrus46") { // Or pick another event title
+            //     console.log(`--- Text Filter Debug (${eventTitle}) ---`);
+            //     console.log(`  isVisible Before: ${isVisible}`);
+            //     console.log(`  textFilterActive: ${textFilterActive}`);
+            //     console.log(`  eventTexts: [${eventTexts.join(', ')}]`);
+            //     console.log(`  uncheckedTexts:`, uncheckedTexts);
+            //     console.log(`  hasUnchecked: ${hasUnchecked}`);
+            // }
+            // --- End Debugging ---
+            if (hasUnchecked) {
+                isVisible = false; // Hide if it contains an unchecked text
             }
         }
 
-        // Filter 4: Location (Hide if location exists AND is in the unchecked set)
+
+        // Location
         if (isVisible && locationFilterActive && eventLocation && uncheckedLocations.has(eventLocation)) {
             isVisible = false;
         }
 
-
-        // --- 4. Set visibility ---
+        // Set visibility
         event.style.display = isVisible ? 'block' : 'none';
     });
-
     // console.log("Filtering complete.");
 }
 
 
-// Central function to create and append filters to a list container (no changes needed from previous version)
+// createFilterList (No changes needed from previous version)
 function createFilterList(filterContainer, filterSet, filterType) {
+    // ... (previous correct code) ...
     if (!filterContainer) {
-        console.error(`Filter container not found for type: ${filterType}`); return;
+        console.error(`Filter container element not found for type: ${filterType}`); return;
     }
     if (!(filterSet instanceof Set)) {
-        console.error(`Invalid filterSet provided for type: ${filterType}`); return;
+        console.error(`Invalid filterSet (not a Set) provided for type: ${filterType}`); return;
     }
     filterContainer.innerHTML = '';
     const sortedFilterValues = Array.from(filterSet).sort((a, b) => a.localeCompare(b));
+    if (sortedFilterValues.length === 0) { return; }
     sortedFilterValues.forEach(filterValue => {
         const listItem = document.createElement('li');
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.checked = true;
         checkbox.value = filterValue;
-        const safeValue = String(filterValue).replace(/[^a-zA-Z0-9-_]/g, ''); // Ensure value is safe
-        checkbox.id = `filter-${filterType}-${safeValue || 'empty'}`; // Handle empty strings
-
+        const safeValue = String(filterValue).replace(/[^a-zA-Z0-9-_]/g, '') || 'empty';
+        checkbox.id = `filter-${filterType}-${safeValue}`;
         const label = document.createElement('label');
         label.htmlFor = checkbox.id;
         label.textContent = ` ${filterValue}`;
-
-        checkbox.addEventListener('change', applyAllFilters); // Central listener
-
+        checkbox.addEventListener('change', applyAllFilters);
         listItem.appendChild(checkbox);
         listItem.appendChild(label);
         filterContainer.appendChild(listItem);
     });
 }
 
-// Initialize all sidebar filter lists (no changes needed from previous version)
+// initializeFilters (No changes needed from previous version with logging)
 function initializeFilters() {
+    // ... (previous correct code with logging) ...
+    console.log("Initializing sidebar filters...");
     const textList = document.getElementById('text-list');
     const familyList = document.getElementById('family-list');
     const locationList = document.getElementById('location-list');
 
+    const setsReady =
+        typeof texts === 'object' && texts instanceof Set &&
+        typeof families === 'object' && families instanceof Set &&
+        typeof locations === 'object' && locations instanceof Set;
+
+    if (!setsReady) {
+         console.error("One or more global filter Sets (texts, families, locations) are not ready during initialization.");
+    }
+
     if (textList && typeof texts === 'object' && texts instanceof Set) {
+        console.log(`Initializing Texts (${texts.size} items)`);
         createFilterList(textList, texts, 'text');
-    } else { console.error("Could not initialize text filters."); }
+    } else {
+        console.error("Could not initialize text filters. List Element:", textList, "Set:", texts);
+    }
 
     if (familyList && typeof families === 'object' && families instanceof Set) {
+        console.log(`Initializing Families (${families.size} items)`);
         createFilterList(familyList, families, 'family');
-    } else { console.error("Could not initialize family filters."); }
+    } else {
+        console.error("Could not initialize family filters. List Element:", familyList, "Set:", families);
+    }
 
     if (locationList && typeof locations === 'object' && locations instanceof Set) {
+        console.log(`Initializing Locations (${locations.size} items)`);
         createFilterList(locationList, locations, 'location');
-    } else { console.error("Could not initialize location filters."); }
-
-    console.log('Sidebar filters initialized (Texts, Families, Locations).');
+    } else {
+        if (!locationList) console.error("Location list container (#location-list) not found.");
+        if (!(typeof locations === 'object' && locations instanceof Set)) console.error("Global 'locations' Set is not ready or not a Set:", locations);
+        console.error("Could not initialize location filters.");
+    }
+    console.log('Sidebar filters initialization attempt complete.');
 }
 
 // --- END OF FILE filters.js ---
