@@ -1,204 +1,166 @@
 // --- START OF FILE filters.js ---
 
-// Central function to apply ALL active filters to ALL events
 function applyAllFilters() {
-    console.log("Applying all filters..."); // For debugging
+    // console.log("Applying all filters...");
 
-    // --- 1. Get the state of all active filters ---
+    // ...(Get filter states - no changes needed here)...
+    let checkedEventTypes = new Set();
+    let checkedTexts = new Set();
+    let uncheckedTexts = new Set();
+    let uncheckedFamilies = new Set();
+    let uncheckedLocations = new Set();
+    let textFilterActive = false;
+    let familyFilterActive = false;
+    let locationFilterActive = false;
+    let eventTypeFilterActive = false;
 
-    // Event Types (from Legend Checkboxes)
-    const checkedEventTypes = new Set();
-    // Ensure legend checkboxes have 'data-event-type' attribute set in uiControls.js -> generateLegend
-    document.querySelectorAll('#legend .legend-checkbox:checked').forEach(cb => {
-        if (cb.dataset.eventType) {
-            checkedEventTypes.add(cb.dataset.eventType);
-        } else {
-            console.warn("Legend checkbox missing data-event-type:", cb);
-        }
-    });
-    const eventTypeFilterActive = document.querySelectorAll('#legend .legend-checkbox').length > 0;
-
-
-    // Texts (from Text List Checkboxes)
-    const checkedTexts = new Set();
-    document.querySelectorAll('#text-list input[type="checkbox"]:checked').forEach(cb => {
-        checkedTexts.add(cb.value);
-    });
-    // Also get unchecked texts to correctly handle "hide if it contains this unchecked text" logic
-    const uncheckedTexts = new Set();
-    document.querySelectorAll('#text-list input[type="checkbox"]:not(:checked)').forEach(cb => {
-       uncheckedTexts.add(cb.value);
-   });
-    const textFilterActive = document.querySelectorAll('#text-list input[type="checkbox"]').length > 0;
-
-
-    // Families (from Family List Checkboxes)
-    const checkedFamilies = new Set();
-    document.querySelectorAll('#family-list input[type="checkbox"]:checked').forEach(cb => {
-        checkedFamilies.add(cb.value);
-    });
-    // Get unchecked families if needed for specific logic (e.g., hide if unchecked)
-     const uncheckedFamilies = new Set();
-     document.querySelectorAll('#family-list input[type="checkbox"]:not(:checked)').forEach(cb => {
-         uncheckedFamilies.add(cb.value);
-     });
-    const familyFilterActive = document.querySelectorAll('#family-list input[type="checkbox"]').length > 0;
+    try {
+        document.querySelectorAll('#legend .legend-checkbox:checked').forEach(cb => {
+            if (cb.dataset.eventType) checkedEventTypes.add(cb.dataset.eventType);
+        });
+        eventTypeFilterActive = document.querySelectorAll('#legend .legend-checkbox').length > 0;
+        document.querySelectorAll('#text-list input[type="checkbox"]:checked').forEach(cb => checkedTexts.add(cb.value));
+        document.querySelectorAll('#text-list input[type="checkbox]:not(:checked)').forEach(cb => uncheckedTexts.add(cb.value));
+        textFilterActive = document.querySelectorAll('#text-list input[type="checkbox"]').length > 0;
+        document.querySelectorAll('#family-list input[type="checkbox"]:not(:checked)').forEach(cb => uncheckedFamilies.add(cb.value));
+        familyFilterActive = document.querySelectorAll('#family-list input[type="checkbox"]').length > 0;
+        document.querySelectorAll('#location-list input[type="checkbox"]:not(:checked)').forEach(cb => uncheckedLocations.add(cb.value));
+        locationFilterActive = document.querySelectorAll('#location-list input[type="checkbox"]').length > 0;
+    } catch (error) {
+        console.error("Error reading filter states:", error);
+        return;
+    }
 
 
-    // --- 2. Iterate through each event dot ---
     const allEvents = document.querySelectorAll('.event');
     allEvents.forEach(event => {
-        let isVisible = true; // Assume visible by default, then set to false if any filter fails
+        let isVisible = true;
+        const eventTitle = event.getAttribute('title') || 'Untitled'; // For logging
 
-        // Get event data attributes
-        const eventType = event.getAttribute('data-event-type');
-        const eventFamily = event.getAttribute('data-family') || ''; // Handle events possibly lacking a family
+        const eventType = event.getAttribute('data-event-type') || '';
+        const eventFamily = event.getAttribute('data-family') || '';
+        const eventLocation = event.getAttribute('data-location') || '';
         let eventTexts = [];
         try {
-            // Ensure texts are parsed correctly, default to empty array if attribute is missing or invalid
-            eventTexts = JSON.parse(event.getAttribute('data-texts') || '[]');
-            if (!Array.isArray(eventTexts)) eventTexts = []; // Ensure it's an array
-        } catch (e) {
-            console.warn(`Could not parse texts for event: ${event.title || 'Untitled Event'}`, e);
-            eventTexts = []; // Default to empty on error
-        }
+            const textsAttr = event.getAttribute('data-texts');
+            eventTexts = textsAttr ? JSON.parse(textsAttr) : [];
+            if (!Array.isArray(eventTexts)) eventTexts = [];
+        } catch (e) { eventTexts = []; }
 
-        // --- 3. Apply filters sequentially (AND logic - all conditions must pass) ---
+        // --- Apply filters ---
 
-        // Filter 1: Event Type
-        // If event type filters are active AND this event's type is NOT in the set of checked types
+        // Event Type
         if (eventTypeFilterActive && !checkedEventTypes.has(eventType)) {
             isVisible = false;
         }
 
-        // Filter 2: Manuscript Family
-        // If still visible AND family filters are active AND this event HAS a family AND that family is NOT in the set of checked families
-        // if (isVisible && familyFilterActive && eventFamily && !checkedFamilies.has(eventFamily)) {
-        //    isVisible = false;
-        // }
-        // Alternative/Better Logic: Hide if family is unchecked
-         if (isVisible && familyFilterActive && eventFamily && uncheckedFamilies.has(eventFamily)) {
-             isVisible = false;
-         }
+        // Family
+        if (isVisible && familyFilterActive && eventFamily && uncheckedFamilies.has(eventFamily)) {
+            isVisible = false;
+        }
 
-
-        // Filter 3: Texts
-        // If still visible AND text filters are active
-        if (isVisible && textFilterActive) {
-             let containsUnchecked = false;
-             // Check if the event contains *any* text that is currently *unchecked*
-             for (const text of eventTexts) {
-                 if (uncheckedTexts.has(text)) {
-                     containsUnchecked = true;
-                     break; // Found an unchecked text, no need to check further
-                 }
-             }
-
-             if (containsUnchecked) {
-                 // If it contains any unchecked text, it should be hidden
-                 isVisible = false;
-             } else {
-                 // If it contains NO unchecked texts, then check if it meets the *checked* criteria
-                 // (Only relevant if there are actually some texts checked)
-                 if (checkedTexts.size > 0 && eventTexts.length > 0) {
-                     let matchesChecked = false;
-                     // Does it contain at least one of the *checked* texts?
-                     for (const text of eventTexts) {
-                         if (checkedTexts.has(text)) {
-                             matchesChecked = true;
-                             break;
-                         }
-                     }
-                     // If it has texts, but none match the currently checked texts, hide it
-                     if (!matchesChecked) {
-                         isVisible = false;
-                     }
-                 }
-                 // If checkedTexts.size is 0 (meaning all texts are unchecked or no text filters exist),
-                 // and it passed the 'containsUnchecked' check, it remains visible.
-                 // Also remains visible if eventTexts.length is 0 (event has no texts associated).
-             }
+        // *** MODIFIED: Text Filter with Debugging ***
+        if (isVisible && textFilterActive && eventTexts.length > 0) {
+            const hasUnchecked = eventTexts.some(text => uncheckedTexts.has(text));
+            // --- Debugging Lines ---
+            // Uncomment below to log detailed info for ONE specific event when testing texts
+            // if (eventTitle === "Papyrus46") { // Or pick another event title
+            //     console.log(`--- Text Filter Debug (${eventTitle}) ---`);
+            //     console.log(`  isVisible Before: ${isVisible}`);
+            //     console.log(`  textFilterActive: ${textFilterActive}`);
+            //     console.log(`  eventTexts: [${eventTexts.join(', ')}]`);
+            //     console.log(`  uncheckedTexts:`, uncheckedTexts);
+            //     console.log(`  hasUnchecked: ${hasUnchecked}`);
+            // }
+            // --- End Debugging ---
+            if (hasUnchecked) {
+                isVisible = false; // Hide if it contains an unchecked text
+            }
         }
 
 
-        // --- 4. Set visibility based on the final result ---
+        // Location
+        if (isVisible && locationFilterActive && eventLocation && uncheckedLocations.has(eventLocation)) {
+            isVisible = false;
+        }
+
+        // Set visibility
         event.style.display = isVisible ? 'block' : 'none';
     });
-
-    console.log("Filtering complete.");
+    // console.log("Filtering complete.");
 }
 
 
-// Central function to create and append filters to the filter list
-// MODIFIED: The callback now always calls applyAllFilters
-function createFilterList(filterContainer, filterSet, filterType) { // Added filterType for clarity
-    filterContainer.innerHTML = ''; // Clear existing filters
-
-    // Convert Set to Array and sort for consistent order
-    const sortedFilterValues = Array.from(filterSet).sort();
-
+// createFilterList (No changes needed from previous version)
+function createFilterList(filterContainer, filterSet, filterType) {
+    // ... (previous correct code) ...
+    if (!filterContainer) {
+        console.error(`Filter container element not found for type: ${filterType}`); return;
+    }
+    if (!(filterSet instanceof Set)) {
+        console.error(`Invalid filterSet (not a Set) provided for type: ${filterType}`); return;
+    }
+    filterContainer.innerHTML = '';
+    const sortedFilterValues = Array.from(filterSet).sort((a, b) => a.localeCompare(b));
+    if (sortedFilterValues.length === 0) { return; }
     sortedFilterValues.forEach(filterValue => {
         const listItem = document.createElement('li');
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-        checkbox.checked = true; // Start checked
+        checkbox.checked = true;
         checkbox.value = filterValue;
-        checkbox.id = `${filterType}-${filterValue.replace(/\s+/g, '-')}`; // Create unique ID
-
+        const safeValue = String(filterValue).replace(/[^a-zA-Z0-9-_]/g, '') || 'empty';
+        checkbox.id = `filter-${filterType}-${safeValue}`;
         const label = document.createElement('label');
         label.htmlFor = checkbox.id;
-        label.textContent = ` ${filterValue}`; // Add space before label text
-
-        // Attach the single event listener to call the central filter function
+        label.textContent = ` ${filterValue}`;
         checkbox.addEventListener('change', applyAllFilters);
-
         listItem.appendChild(checkbox);
         listItem.appendChild(label);
         filterContainer.appendChild(listItem);
     });
 }
 
-// Initialize all filters (texts, families)
-// This function stays largely the same but uses the modified createFilterList
+// initializeFilters (No changes needed from previous version with logging)
 function initializeFilters() {
+    // ... (previous correct code with logging) ...
+    console.log("Initializing sidebar filters...");
     const textList = document.getElementById('text-list');
     const familyList = document.getElementById('family-list');
-    // Note: eventTypeList initialization is removed as legend handles Event Types
+    const locationList = document.getElementById('location-list');
 
-    // Make sure the global sets `texts` and `families` are populated before calling this
-    // (Should happen in eventProcessing.js)
-    if (textList && texts instanceof Set) {
-        createFilterList(textList, texts, 'text'); // Pass 'text' as filterType
-    } else {
-         console.error("Could not initialize text filters. Element or Set missing.");
+    const setsReady =
+        typeof texts === 'object' && texts instanceof Set &&
+        typeof families === 'object' && families instanceof Set &&
+        typeof locations === 'object' && locations instanceof Set;
+
+    if (!setsReady) {
+         console.error("One or more global filter Sets (texts, families, locations) are not ready during initialization.");
     }
 
-    if (familyList && families instanceof Set) {
-        createFilterList(familyList, families, 'family'); // Pass 'family' as filterType
+    if (textList && typeof texts === 'object' && texts instanceof Set) {
+        console.log(`Initializing Texts (${texts.size} items)`);
+        createFilterList(textList, texts, 'text');
     } else {
-        console.error("Could not initialize family filters. Element or Set missing.");
+        console.error("Could not initialize text filters. List Element:", textList, "Set:", texts);
     }
 
-    console.log('Filters initialized using createFilterList, listeners point to applyAllFilters.');
-}
+    if (familyList && typeof families === 'object' && families instanceof Set) {
+        console.log(`Initializing Families (${families.size} items)`);
+        createFilterList(familyList, families, 'family');
+    } else {
+        console.error("Could not initialize family filters. List Element:", familyList, "Set:", families);
+    }
 
-
-// --- Deprecated Functions (Keep commented out or remove) ---
-/*
-// Filter events by text - NO LONGER USED DIRECTLY
-function filterEventsByText(text, isChecked) {
-    // Logic moved to applyAllFilters
+    if (locationList && typeof locations === 'object' && locations instanceof Set) {
+        console.log(`Initializing Locations (${locations.size} items)`);
+        createFilterList(locationList, locations, 'location');
+    } else {
+        if (!locationList) console.error("Location list container (#location-list) not found.");
+        if (!(typeof locations === 'object' && locations instanceof Set)) console.error("Global 'locations' Set is not ready or not a Set:", locations);
+        console.error("Could not initialize location filters.");
+    }
+    console.log('Sidebar filters initialization attempt complete.');
 }
-
-// Filter events by family - NO LONGER USED DIRECTLY
-function filterEventsByFamily(family, isChecked) {
-    // Logic moved to applyAllFilters
-}
-
-// Filter events by event type - NO LONGER USED DIRECTLY
-function filterEventsByEventType(eventType, isChecked) {
-    // Logic moved to applyAllFilters and handled by legend checkboxes
-}
-*/
 
 // --- END OF FILE filters.js ---
