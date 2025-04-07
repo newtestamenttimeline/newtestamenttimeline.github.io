@@ -52,13 +52,13 @@ document.addEventListener('DOMContentLoaded', function () {
     if (zoomInButton && zoomOutButton && bigContainer) {
         zoomInButton.addEventListener('click', () => {
             scale *= 1.2;
-            bigContainer.style.transform = `scaleX(${scale})`; // Apply zoom using transform
+            bigContainer.style.transform = `scale(${scale})`; // Apply zoom using transform
             bigContainer.style.transformOrigin = 'left'; // Zoom from the left edge
              // Maybe re-center view or adjust scroll after zoom?
         });
         zoomOutButton.addEventListener('click', () => {
             scale /= 1.2;
-            bigContainer.style.transform = `scaleX(${scale})`;
+            bigContainer.style.transform = `scale(${scale})`;
             bigContainer.style.transformOrigin = 'left';
         });
     } else {
