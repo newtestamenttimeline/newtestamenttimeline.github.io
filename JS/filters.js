@@ -1,7 +1,7 @@
 // --- START filters.js -> applyAllFilters ---
 
 function applyAllFilters() {
-    // console.log("Applying all filters..."); // Optional general log
+    console.log("Applying all filters..."); // Optional general log
 
     // 1. Get Filter States
     let checkedEventTypes = new Set();
@@ -26,7 +26,7 @@ function applyAllFilters() {
         document.querySelectorAll('#text-list input[type="checkbox]:not(:checked)').forEach(cb => uncheckedTexts.add(cb.value)); // Populate uncheckedTexts
         textFilterActive = document.querySelectorAll('#text-list input[type="checkbox"]').length > 0;
         // *** DEBUG LOG 1: Check the UNCHECKED Texts Set ***
-        // console.log("Debug - Unchecked Texts Set:", uncheckedTexts);
+        console.log("Debug - Unchecked Texts Set:", uncheckedTexts);
         // *** END LOG 1 ***
 
         document.querySelectorAll('#family-list input[type="checkbox"]:not(:checked)').forEach(cb => uncheckedFamilies.add(cb.value));
@@ -121,7 +121,7 @@ function applyAllFilters() {
             }
         } else if (isVisible && parseError) {
              // Optional: Decide how to handle events where data-texts failed parsing
-             // console.log(`Event ${eventTitle} kept visible despite text filter activity due to parse error.`);
+             console.log(`Event ${eventTitle} kept visible despite text filter activity due to parse error.`);
         }
         // --- End Text Filter ---
 
@@ -142,7 +142,7 @@ function applyAllFilters() {
 
     }); // End event loop
 
-    // console.log("Filtering complete."); // Optional overall log
+    console.log("Filtering complete."); // Optional overall log
 }
 
 // --- Rest of filters.js (createFilterList, initializeFilters) ---
