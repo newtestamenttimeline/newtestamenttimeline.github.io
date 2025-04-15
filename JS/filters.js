@@ -1,12 +1,12 @@
-// --- START filters.js -> applyAllFilters ---
+// --- START filters.js ---
 
 function applyAllFilters() {
-    console.log("Applying all filters..."); // Optional general log
+    // console.log("Applying all filters..."); // Optional
 
     // 1. Get Filter States
     let checkedEventTypes = new Set();
-    let checkedTexts = new Set();
-    let uncheckedTexts = new Set(); // <--- We need this Set
+    let checkedTexts = new Set(); // Keep track of checked ones too, just in case
+    let uncheckedTexts = new Set();
     let uncheckedFamilies = new Set();
     let uncheckedLocations = new Set();
     let textFilterActive = false;
@@ -14,33 +14,61 @@ function applyAllFilters() {
     let locationFilterActive = false;
     let eventTypeFilterActive = false;
 
+    // --- REPLACED TRY BLOCK START ---
     try {
-        // ... (Get states for Event Types, Families, Locations - no changes needed here) ...
+        // Get Event Type State (remains the same)
+        checkedEventTypes.clear(); // Clear at start
         document.querySelectorAll('#legend .legend-checkbox:checked').forEach(cb => {
             if (cb.dataset.eventType) checkedEventTypes.add(cb.dataset.eventType);
         });
         eventTypeFilterActive = document.querySelectorAll('#legend .legend-checkbox').length > 0;
 
-        // --- Get Text Filter State ---
-        document.querySelectorAll('#text-list input[type="checkbox"]:checked').forEach(cb => checkedTexts.add(cb.value));
-        document.querySelectorAll('#text-list input[type="checkbox]:not(:checked)').forEach(cb => uncheckedTexts.add(cb.value)); // Populate uncheckedTexts
-        textFilterActive = document.querySelectorAll('#text-list input[type="checkbox"]').length > 0;
-        // *** DEBUG LOG 1: Check the UNCHECKED Texts Set ***
-        console.log("Debug - Unchecked Texts Set:", uncheckedTexts);
+        // --- Get Text Filter State with More Logging ---
+        checkedTexts.clear(); // Clear sets at the start of the function run
+        uncheckedTexts.clear();
+
+        const allTextBoxes = document.querySelectorAll('#text-list input[type="checkbox"]'); // Get ALL text boxes
+        console.log(`Debug - Found ${allTextBoxes.length} total text checkboxes.`); // Log how many were found
+
+        if (allTextBoxes.length > 0) { // Only iterate if checkboxes were found
+            allTextBoxes.forEach(cb => {
+                // For EACH checkbox, log its state and value
+                console.log(`   Checkbox Value: "${cb.value}", Checked State: ${cb.checked}`);
+                if (cb.checked) {
+                    checkedTexts.add(cb.value);
+                } else {
+                    uncheckedTexts.add(cb.value); // Add to unchecked set if not checked
+                }
+            });
+            textFilterActive = true; // Set active flag if checkboxes exist
+        } else {
+            console.log("Debug - No text checkboxes found in #text-list.");
+            textFilterActive = false;
+        }
+
+        // *** DEBUG LOG 1 (Now after loop): Check the UNCHECKED Texts Set ***
+        console.log("Debug - Populated Unchecked Texts Set:", uncheckedTexts);
         // *** END LOG 1 ***
 
+        // Get Family Filter State (remains the same)
+        uncheckedFamilies.clear(); // Clear at start
         document.querySelectorAll('#family-list input[type="checkbox"]:not(:checked)').forEach(cb => uncheckedFamilies.add(cb.value));
         familyFilterActive = document.querySelectorAll('#family-list input[type="checkbox"]').length > 0;
+
+        // Get Location Filter State (remains the same)
+        uncheckedLocations.clear(); // Clear at start
         document.querySelectorAll('#location-list input[type="checkbox"]:not(:checked)').forEach(cb => uncheckedLocations.add(cb.value));
         locationFilterActive = document.querySelectorAll('#location-list input[type="checkbox"]').length > 0;
 
     } catch (error) {
         console.error("Error reading filter states:", error);
+        // Consider stopping execution if filter state reading fails
         return;
     }
+    // --- REPLACED TRY BLOCK END ---
 
 
-    // 2. Iterate Through Events
+    // 2. Iterate Through Events (No changes needed in this part from previous version)
     const allEvents = document.querySelectorAll('.event');
     allEvents.forEach(event => {
         let isVisible = true;
@@ -49,104 +77,43 @@ function applyAllFilters() {
         const eventType = event.getAttribute('data-event-type') || '';
         const eventFamily = event.getAttribute('data-family') || '';
         const eventLocation = event.getAttribute('data-location') || '';
-        let eventTexts = []; // Array to hold texts for this specific event dot
+        let eventTexts = [];
 
-        // --- Parse data-texts ---
+        // --- Parse data-texts --- (No changes needed here)
         let parseError = false;
         try {
             const textsAttr = event.getAttribute('data-texts');
-            // *** DEBUG LOG 2: Check raw data-texts attribute ***
-            // if (eventTitle === "Papyrus4") { // Target specific event
-            //     console.log(`Debug (${eventTitle}) - Raw data-texts attribute:`, textsAttr);
-            // }
-             // *** END LOG 2 ***
             eventTexts = textsAttr ? JSON.parse(textsAttr) : [];
             if (!Array.isArray(eventTexts)) {
-                 // If parse result isn't an array, treat as error/empty
-                 console.warn(`Parsed data-texts for ${eventTitle} is not an array:`, eventTexts);
-                 eventTexts = [];
-                 parseError = true;
+                 eventTexts = []; parseError = true; // Treat non-array as error
             }
-             // *** DEBUG LOG 3: Check parsed eventTexts array ***
-            // if (eventTitle === "Papyrus4") {
-            //     console.log(`Debug (${eventTitle}) - Parsed eventTexts array:`, eventTexts);
-            // }
-            // *** END LOG 3 ***
-        } catch (e) {
-             console.error(`*** DEBUG: Failed to parse data-texts for event: ${eventTitle}`, e, "Attribute was:", event.getAttribute('data-texts'));
-             eventTexts = [];
-             parseError = true;
-        }
+        } catch (e) { eventTexts = []; parseError = true; }
         // --- End Parse ---
 
-
-        // --- Apply Filters Sequentially ---
-
-        // Event Type (no changes needed)
-        if (eventTypeFilterActive && !checkedEventTypes.has(eventType)) {
-            isVisible = false;
-        }
-
-        // Family (no changes needed)
-        if (isVisible && familyFilterActive && eventFamily && uncheckedFamilies.has(eventFamily)) {
-            isVisible = false;
-        }
-
-        // --- Apply Text Filter ---
+        // --- Apply Filters Sequentially --- (No changes needed here)
+        // Event Type
+        if (eventTypeFilterActive && !checkedEventTypes.has(eventType)) { isVisible = false; }
+        // Family
+        if (isVisible && familyFilterActive && eventFamily && uncheckedFamilies.has(eventFamily)) { isVisible = false; }
+        // Texts
         if (isVisible && textFilterActive && eventTexts.length > 0 && !parseError) {
-             // *** DEBUG LOG 4: Check BEFORE the .some() comparison ***
-            // if (eventTitle === "Papyrus4") {
-            //     console.log(`Debug (${eventTitle}) - Entering .some() check. isVisible: ${isVisible}, eventTexts:`, eventTexts, `uncheckedTexts:`, uncheckedTexts);
-            // }
-            // *** END LOG 4 ***
-
-            const hasUnchecked = eventTexts.some(textFromArray => {
-                const isUnchecked = uncheckedTexts.has(textFromArray);
-                 // *** DEBUG LOG 5: Check EACH comparison inside .some() ***
-                // if (eventTitle === "Papyrus4") {
-                //     console.log(`   ...Comparing textFromArray: "${textFromArray}" with uncheckedTexts. Result: ${isUnchecked}`);
-                // }
-                // *** END LOG 5 ***
-                return isUnchecked;
-            });
-
-             // *** DEBUG LOG 6: Check the RESULT of the .some() comparison ***
-            // if (eventTitle === "Papyrus4") {
-            //     console.log(`Debug (${eventTitle}) - Result of .some() check (hasUnchecked): ${hasUnchecked}`);
-            // }
-            // *** END LOG 6 ***
-
-            if (hasUnchecked) {
-                isVisible = false; // Hide if any text matches an unchecked one
-            }
-        } else if (isVisible && parseError) {
-             // Optional: Decide how to handle events where data-texts failed parsing
-             console.log(`Event ${eventTitle} kept visible despite text filter activity due to parse error.`);
+            const hasUnchecked = eventTexts.some(textFromArray => uncheckedTexts.has(textFromArray));
+            if (hasUnchecked) { isVisible = false; }
         }
-        // --- End Text Filter ---
+        // Location
+        if (isVisible && locationFilterActive && eventLocation && uncheckedLocations.has(eventLocation)) { isVisible = false; }
+        // --- End Apply Filters ---
 
-
-        // Location (no changes needed)
-        if (isVisible && locationFilterActive && eventLocation && uncheckedLocations.has(eventLocation)) {
-            isVisible = false;
-        }
-
-
-        // 3. Set Final Visibility
-        // *** DEBUG LOG 7: Final decision for the event ***
-        // if (eventTitle === "Papyrus4") {
-        //     console.log(`Debug (${eventTitle}) - Final isVisible: ${isVisible}. Setting display to: ${isVisible ? 'block' : 'none'}`);
-        // }
-        // *** END LOG 7 ***
+        // 3. Set Final Visibility (No changes needed here)
         event.style.display = isVisible ? 'block' : 'none';
 
     }); // End event loop
 
-    console.log("Filtering complete."); // Optional overall log
-}
+    // console.log("Filtering complete."); // Optional overall log
+} // --- End applyAllFilters ---
 
-// --- Rest of filters.js (createFilterList, initializeFilters) ---
-// ...(No changes needed in these functions from the previous correct version)...
+
+// --- Rest of filters.js (createFilterList, initializeFilters - no changes) ---
 function createFilterList(filterContainer, filterSet, filterType) {
     if (!filterContainer) {
         console.error(`Filter container element not found for type: ${filterType}`); return;
