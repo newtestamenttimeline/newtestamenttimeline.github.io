@@ -135,7 +135,14 @@ function generateLegend() {
         checkbox.type = 'checkbox';
         checkbox.className = 'legend-checkbox'; // Class for styling/selection
         // *** THIS IS THE KEY CHANGE FOR DEFAULT STATE ***
-        checkbox.checked = (eventType === 'Papyrus' || eventType === 'Uncial'); // Default checked logic
+                // *** THIS IS THE MODIFIED LINE ***
+        checkbox.checked = (
+            eventType === 'Papyrus' ||
+            eventType === 'Uncial' ||
+            eventType === 'Minuscule' ||    // Added
+            eventType === 'Lectionary' ||   // Added
+            eventType === 'Historical'      // Added
+        ); // Check these types by default
         // *** END KEY CHANGE ***
         checkbox.id = `legend-checkbox-${eventType}`; // Unique ID for label association
         checkbox.dataset.eventType = eventType; // Store type for filtering logic
