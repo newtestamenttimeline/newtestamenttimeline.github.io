@@ -778,7 +778,7 @@
     "texts": [
       ""
     ],
-    "family": "",
+    "family": "Caeserian",
     "location": "-",
     "y": "0",
     "eventType": "Lectionary",
@@ -794,7 +794,7 @@
       "Luke",
       "John"
     ],
-    "family": "Byzantine",
+    "family": "Mixed",
     "location": "Byzantine empire",
     "y": "510",
     "eventType": "Minuscule",
