@@ -771,5 +771,34 @@
     "eventType": "Extrabiblical",
     "percentage": 36,
     "year": 360
+   },
+  {
+    "title": "Lectionary 1",
+    "description": "A lectionary containing readings from the New Testament, used in the liturgical context around the 11th century.",
+    "texts": [
+      ""
+    ],
+    "family": "Caeserian",
+    "location": "-",
+    "y": "0",
+    "eventType": "Lectionary",
+    "percentage": 110,
+    "year": 1100
+  },
+  {
+    "title": "minuscule 29",
+    "description": "",
+    "texts": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
+    ],
+    "family": "Mixed",
+    "location": "Byzantine empire",
+    "y": "510",
+    "eventType": "Minuscule",
+    "percentage": 94,
+    "year": 935
   }
 ]
