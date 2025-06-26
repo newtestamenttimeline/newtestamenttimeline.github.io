@@ -156,7 +156,10 @@
     "y": "",
     "eventType": "uncial",
     "percentage": 32,
-    "year": 316
+     "yearRange": [
+      300,
+      330
+    ]
   },
   {
     "title": "Papyrus11",
