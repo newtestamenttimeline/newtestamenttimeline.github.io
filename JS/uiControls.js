@@ -17,19 +17,37 @@ function toggleSidebar() {
 }
 
 // Function to generate the legend with specific order, tooltips, and collapse functionality
+// --- START uiControls.js -> generateLegend Function ---
+
+// Function to generate the legend with specific order, tooltips, and collapse functionality
 function generateLegend() {
+    const legendContainer = document.getElementById('legend'); // Target the container div
+
+    // --- Pre-checks ---
     if (!legendContainer) {
         console.error("Legend container element (#legend) not found.");
-        return;
+        return; // Cannot proceed without the container
     }
-    // Ensure eventTypes is a populated Set before proceeding
+    // Ensure eventTypes Set is populated before proceeding
     if (!(typeof eventTypes === 'object' && eventTypes instanceof Set && eventTypes.size > 0)) {
         console.error("Cannot generate legend: eventTypes Set is not defined, not a Set, or is empty.");
-        legendContainer.innerHTML = '<h3>Manuscript Types</h3><p>No types found.</p>'; // Provide feedback
+        legendContainer.innerHTML = '<h3>Manuscript Types</h3><p>No types available to display.</p>'; // Provide feedback
         return;
     }
+    // Ensure required filtering function exists globally
+    if (typeof applyAllFilters !== 'function') {
+        console.error("Cannot generate legend: applyAllFilters function is not defined.");
+        return;
+    }
+     // Ensure required color function exists globally
+    if (typeof getColorForEventType !== 'function') {
+        console.error("Cannot generate legend: getColorForEventType function is not defined.");
+        // We can proceed but colors might default to grey
+    }
+    // --- End Pre-checks ---
 
-    legendContainer.innerHTML = ''; // Clear previous content
+
+    legendContainer.innerHTML = ''; // Clear previous content safely
 
     // --- Define Custom Order and Tooltips ---
     const legendOrder = [
@@ -45,115 +63,148 @@ function generateLegend() {
         'Historical': 'Broader historical events relevant to the context of the manuscripts.',
         'Extrabiblical': 'Significant non-canonical texts or writings from the period.',
         'Likely_writing_date': 'Estimated date range for the original composition of a New Testament book.'
+        // Add default tooltip for unexpected types later if needed
     };
     // --- End Definitions ---
 
-    // --- Create Header and Toggle Button ---
+
+    // --- Filter and Sort eventTypes based on custom order ---
+    const sortedEventTypes = Array.from(eventTypes)
+        .filter(type => legendOrder.includes(type)) // Include only types in our defined order
+        .sort((a, b) => legendOrder.indexOf(a) - legendOrder.indexOf(b)); // Sort by index in legendOrder
+
+     // Add any types found in the data but not in our explicit order to the end
+     Array.from(eventTypes).forEach(type => {
+         if (!legendOrder.includes(type)) {
+             sortedEventTypes.push(type);
+             console.warn(`Event type "${type}" found but not in custom legend order. Added to end.`);
+             // Add a default tooltip if one doesn't exist
+             if (!legendTooltips[type]) legendTooltips[type] = `Events categorized as ${type}.`;
+         }
+     });
+    // --- End Sorting ---
+
+
+    // --- Create Header and Toggle Button for Legend Section ---
     const headerDiv = document.createElement('div');
     headerDiv.style.display = 'flex';
     headerDiv.style.alignItems = 'center';
     headerDiv.style.justifyContent = 'space-between';
-    headerDiv.style.marginBottom = '5px'; // Consistent spacing
+    headerDiv.style.marginBottom = '5px';
 
     const legendHeader = document.createElement('h3');
-    legendHeader.textContent = 'Manuscript Types '; // Add space for tooltip icon
-    const headerTooltipSpan = document.createElement('span');
+    legendHeader.textContent = 'Manuscript Types '; // Header text
+    const headerTooltipSpan = document.createElement('span'); // Tooltip for the header itself
     headerTooltipSpan.className = 'question-mark';
-    headerTooltipSpan.innerHTML = `? <span class="tooltip">Filter events by their general category (Papyrus, Uncial, Historical, etc.).</span>`;
-    // Append tooltip directly to h3
-    legendHeader.appendChild(headerTooltipSpan);
+    headerTooltipSpan.innerHTML = `? <span class="tooltip">Filter events by their general category.</span>`;
+    legendHeader.appendChild(headerTooltipSpan); // Add tooltip icon to header
 
-
-    const toggleButton = document.createElement('button');
-    toggleButton.id = 'toggle-legend-button'; // More specific ID
+    const toggleButton = document.createElement('button'); // Button to collapse/expand
+    toggleButton.id = 'toggle-legend-button'; // Specific ID
     toggleButton.setAttribute('aria-label', 'Toggle Manuscript Types visibility');
-    toggleButton.className = 'toggle-legend'; // Use existing styles if available
-    toggleButton.style.background = 'none'; // Reset styles
+    toggleButton.className = 'toggle-legend'; // Class for styling
+    toggleButton.style.background = 'none'; // Basic styling reset
     toggleButton.style.border = 'none';
     toggleButton.style.padding = '0 5px';
     toggleButton.style.cursor = 'pointer';
-    toggleButton.innerHTML = '<div class="arrow"></div>'; // Arrow indicates state
+    toggleButton.innerHTML = '<div class="arrow"></div>'; // Arrow for visual state
 
     headerDiv.appendChild(legendHeader);
     headerDiv.appendChild(toggleButton);
-    legendContainer.appendChild(headerDiv); // Add header section first
+    legendContainer.appendChild(headerDiv); // Add header/toggle container first
     // --- End Header ---
 
 
-    // --- Create and Populate List ---
-    const legendList = document.createElement('ul');
-    legendList.id = 'legend-list-items'; // ID for targeting
-    legendList.style.paddingLeft = '0';
-    legendList.style.listStyle = 'none';
+    // --- Create List Container for Legend Items ---
+    const legendList = document.createElement('ul'); // UL to hold the list items
+    legendList.id = 'legend-list-items'; // Assign ID for easy targeting by toggle button
+    legendList.style.paddingLeft = '0'; // Remove default browser padding
+    legendList.style.listStyle = 'none'; // Remove default bullets
     legendList.style.margin = '0'; // Reset margin
     legendList.style.display = 'block'; // Start expanded
+    // --- End List Container ---
 
-    const sortedEventTypes = Array.from(eventTypes)
-        .filter(type => legendOrder.includes(type))
-        .sort((a, b) => legendOrder.indexOf(a) - legendOrder.indexOf(b));
 
-    Array.from(eventTypes).forEach(type => {
-        if (!legendOrder.includes(type)) {
-            sortedEventTypes.push(type);
-            if (!legendTooltips[type]) legendTooltips[type] = `Events categorized as ${type}.`;
-        }
-    });
-
+    // --- Populate List with Legend Items ---
     sortedEventTypes.forEach(eventType => {
-        const legendItem = document.createElement('li');
-        legendItem.className = 'legend-item'; // Use existing class
+        const legendItem = document.createElement('li'); // Create list item
+        legendItem.className = 'legend-item'; // Assign class for styling
 
+        // Checkbox
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-        checkbox.className = 'legend-checkbox';
-        checkbox.checked = true;
-        checkbox.id = `legend-checkbox-${eventType}`;
-        checkbox.dataset.eventType = eventType;
-        checkbox.addEventListener('change', applyAllFilters); // Central filter listener
+        checkbox.className = 'legend-checkbox'; // Class for styling/selection
+        // *** THIS IS THE KEY CHANGE FOR DEFAULT STATE ***
+                // *** THIS IS THE MODIFIED LINE ***
+        checkbox.checked = (
+            eventType === 'Papyrus' ||
+            eventType === 'Uncial' ||
+            eventType === 'Minuscule' ||    // Added
+            eventType === 'Lectionary' ||   // Added
+            eventType === 'Historical'      // Added
+        ); // Check these types by default
+        // *** END KEY CHANGE ***
+        checkbox.id = `legend-checkbox-${eventType}`; // Unique ID for label association
+        checkbox.dataset.eventType = eventType; // Store type for filtering logic
+        checkbox.addEventListener('change', applyAllFilters); // Trigger central filter on change
 
+        // Color Swatch
         const legendColor = document.createElement('div');
-        legendColor.className = 'legend-color';
-        legendColor.style.backgroundColor = typeof getColorForEventType === 'function' ? getColorForEventType(eventType) : '#ccc';
+        legendColor.className = 'legend-color'; // Class for styling
+        legendColor.style.backgroundColor = getColorForEventType(eventType); // Get color using helper function
 
+        // Label
         const label = document.createElement('label');
-        label.htmlFor = checkbox.id;
+        label.htmlFor = checkbox.id; // Associate label with checkbox
+        // Format label text nicely (replace underscores, capitalize words)
         const labelText = eventType.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-        label.textContent = ` ${labelText}`;
+        label.textContent = ` ${labelText}`; // Add leading space
 
+        // Tooltip
         const questionMark = document.createElement('span');
-        questionMark.className = 'question-mark';
+        questionMark.className = 'question-mark'; // Class for styling
         questionMark.textContent = '?';
         const tooltip = document.createElement('span');
-        tooltip.className = 'tooltip';
+        tooltip.className = 'tooltip'; // Class for styling/visibility
+        // Use specific tooltip from object, or generate a default one
         tooltip.textContent = legendTooltips[eventType] || `Information about ${labelText}.`;
-        questionMark.appendChild(tooltip);
+        questionMark.appendChild(tooltip); // Add tooltip text to the question mark span
 
+        // Append elements to the list item in order
         legendItem.appendChild(checkbox);
         legendItem.appendChild(legendColor);
         legendItem.appendChild(label);
         legendItem.appendChild(questionMark);
-        legendList.appendChild(legendItem); // Append item to the UL
+
+        // Append the complete list item to the UL
+        legendList.appendChild(legendItem);
     });
+    // --- End List Population ---
 
-    legendContainer.appendChild(legendList); // Add the populated list
-    // --- End List ---
+    // Append the populated list to the main legend container
+    legendContainer.appendChild(legendList);
 
-
-    // --- Add Toggle Functionality ---
+    // --- Add Toggle Functionality to the Button ---
     toggleButton.addEventListener('click', () => {
-        const list = document.getElementById('legend-list-items'); // Target the list directly
+        const list = document.getElementById('legend-list-items'); // Find the list by ID
         if (list) {
-            const isCollapsed = list.style.display === 'none';
-            list.style.display = isCollapsed ? 'block' : 'none';
-            toggleButton.querySelector('.arrow').classList.toggle('collapsed', !isCollapsed);
+            const isCollapsed = list.style.display === 'none'; // Check current state
+            list.style.display = isCollapsed ? 'block' : 'none'; // Toggle display
+            // Update arrow direction based on new state
+            const arrowDiv = toggleButton.querySelector('.arrow');
+            if (arrowDiv) {
+                arrowDiv.classList.toggle('collapsed', !isCollapsed);
+            }
         } else {
-            console.error("Could not find legend list to toggle.");
+            console.error("Could not find legend list (#legend-list-items) to toggle.");
         }
     });
     // --- End Toggle ---
 
-    console.log("Legend generated successfully.");
+    console.log("Legend generated successfully with default states and custom order.");
 }
+
+// --- END uiControls.js -> generateLegend Function ---
 
 
 // Event listener for the top hamburger menu (no changes)

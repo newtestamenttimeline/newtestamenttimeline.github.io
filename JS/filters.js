@@ -1,4 +1,23 @@
-// --- START filters.js ---
+// --- START OF FILE filters.js ---
+
+// Define New Testament canonical order for sorting text filters
+const ntOrder = [
+    "Matthew", "Mark", "Luke", "John", "Acts",
+    "Romans", "1 Corinthians", "2 Corinthians", "Galatians", "Ephesians",
+    "Philippians", "Colossians", "1 Thessalonians", "2 Thessalonians",
+    "1 Timothy", "2 Timothy", "Titus", "Philemon", "Hebrews", "James",
+    "1 Peter", "2 Peter", "1 John", "2 John", "3 John", "Jude", "Revelation",
+    // Add any other expected non-canonical categories here if you want them ordered specifically
+    "Translation", // Example
+    "Gnostic or so-called New testament Apocrypha texts", // Example
+    "Preserved in later works" // Example
+    // Any text not in this list will be sorted alphabetically at the end
+];
+
+// Function applyAllFilters()... (keep existing code)
+function applyAllFilters() {
+    // ... existing code ...
+}
 
 function applyAllFilters() {
     // console.log("Applying all filters..."); // Optional
@@ -113,34 +132,57 @@ function applyAllFilters() {
 } // --- End applyAllFilters ---
 
 
-// --- Rest of filters.js (createFilterList, initializeFilters - no changes) ---
+// Inside filters.js
+
 function createFilterList(filterContainer, filterSet, filterType) {
-    if (!filterContainer) {
-        console.error(`Filter container element not found for type: ${filterType}`); return;
-    }
-    if (!(filterSet instanceof Set)) {
-        console.error(`Invalid filterSet (not a Set) provided for type: ${filterType}`); return;
-    }
+    // ... (checks for container and set) ...
     filterContainer.innerHTML = '';
-    const sortedFilterValues = Array.from(filterSet).sort((a, b) => a.localeCompare(b));
+
+    // --- MODIFIED SORTING ---
+    let sortedFilterValues;
+    if (filterType === 'text') { // <<< Apply custom sort ONLY for texts
+        sortedFilterValues = Array.from(filterSet).sort((a, b) => {
+            const indexA = ntOrder.indexOf(a);
+            const indexB = ntOrder.indexOf(b);
+
+            if (indexA === -1 && indexB === -1) { // Both not in ntOrder, sort alphabetically
+                return a.localeCompare(b);
+            } else if (indexA === -1) { // a is not in list, put it after b
+                return 1;
+            } else if (indexB === -1) { // b is not in list, put it before a
+                return -1;
+            } else { // Both are in the list, sort by index
+                return indexA - indexB;
+            }
+        });
+        console.log("Applied NT order sort to Texts filter list."); // For confirmation
+    } else { // <<< Use default alphabetical sort for other types
+        sortedFilterValues = Array.from(filterSet).sort((a, b) => a.localeCompare(b));
+    }
+    // --- END MODIFIED SORTING ---
+
+
     if (sortedFilterValues.length === 0) { return; }
+
     sortedFilterValues.forEach(filterValue => {
-        const listItem = document.createElement('li');
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.checked = true;
-        checkbox.value = filterValue;
-        const safeValue = String(filterValue).replace(/[^a-zA-Z0-9-_]/g, '') || 'empty';
-        checkbox.id = `filter-${filterType}-${safeValue}`;
-        const label = document.createElement('label');
-        label.htmlFor = checkbox.id;
-        label.textContent = ` ${filterValue}`;
-        checkbox.addEventListener('change', applyAllFilters);
-        listItem.appendChild(checkbox);
-        listItem.appendChild(label);
-        filterContainer.appendChild(listItem);
+        // ... (rest of the function creating li, checkbox, label remains the same) ...
+         const listItem = document.createElement('li');
+         const checkbox = document.createElement('input');
+         checkbox.type = 'checkbox';
+         checkbox.checked = true; // Keep default checked for list generation
+         checkbox.value = filterValue;
+         const safeValue = String(filterValue).replace(/[^a-zA-Z0-9-_]/g, '') || 'empty';
+         checkbox.id = `filter-${filterType}-${safeValue}`;
+         const label = document.createElement('label');
+         label.htmlFor = checkbox.id;
+         label.textContent = ` ${filterValue}`;
+         checkbox.addEventListener('change', applyAllFilters);
+         listItem.appendChild(checkbox);
+         listItem.appendChild(label);
+         filterContainer.appendChild(listItem);
     });
 }
+
 function initializeFilters() {
     console.log("Initializing sidebar filters...");
     const textList = document.getElementById('text-list');

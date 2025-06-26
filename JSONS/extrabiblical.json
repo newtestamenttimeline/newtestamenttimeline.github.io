@@ -771,14 +771,14 @@
     "eventType": "Extrabiblical",
     "percentage": 36,
     "year": 360
-  },
+   },
   {
     "title": "Lectionary 1",
     "description": "A lectionary containing readings from the New Testament, used in the liturgical context around the 11th century.",
     "texts": [
       ""
     ],
-    "family": "",
+    "family": "Caeserian",
     "location": "-",
     "y": "0",
     "eventType": "Lectionary",
@@ -794,7 +794,7 @@
       "Luke",
       "John"
     ],
-    "family": "Byzantine",
+    "family": "Mixed",
     "location": "Byzantine empire",
     "y": "510",
     "eventType": "Minuscule",
