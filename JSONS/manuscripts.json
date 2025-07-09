@@ -1,1815 +1,2249 @@
 [
   {
-    "title": "Papyrus4",
-    "description": "Papyrus4 contains sections of the Gospel of Mark. It is dated to the late 3rd century.",
-    "texts": [
-      "Mark"
-    ],
-    "family": "Byzantine",
-    "location": "Capernaum, Israel",
-    "y": "-150",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus46",
-    "description": "Papyrus46 features sections of the Gospel of John, dated to the early 3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Fayum, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 22,
-    "year": 215
-  },
-  {
-    "title": "Papyrus47",
-    "description": "Papyrus47 includes fragments of the Gospel of Luke, dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Fayum, Egypt",
-    "y": "-150",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus45",
-    "description": "Papyrus45 contains text from the Gospel of Matthew, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Fayum, Egypt",
-    "y": "240",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus66",
-    "description": "Papyrus66 includes fragments of the Gospel of Luke, dated to the early 3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Jabal Abu Mana, Egypt",
-    "y": "-90",
-    "eventType": "Papyrus",
-    "percentage": 22,
-    "year": 215
-  },
-  {
-    "title": "Papyrus75",
-    "description": "Papyrus75 features sections of the Gospel of Matthew, paleographically dated to the early 3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Jabal Abu Mana, Egypt",
-    "y": "60",
-    "eventType": "Papyrus",
-    "percentage": 22,
-    "year": 215
-  },
-  {
-    "title": "Papyrus72",
-    "description": "Papyrus72 features sections of the Gospel of John, paleographically dated to the early 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Jabal Abu Mana, Egypt",
-    "y": "0",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus52",
-    "description": "Papyrus52 features sections of the Gospel of John, paleographically dated to the early 2nd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 13,
-    "year": 125
-  },
-  {
-    "title": "Papyrus90",
-    "description": "Papyrus90 features sections of the Gospel of John, paleographically dated to the mid-2nd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-150",
-    "eventType": "Papyrus",
-    "percentage": 15,
-    "year": 150
-  },
-  {
-    "title": "Papyrus103",
-    "description": "Papyrus103 includes fragments of the Gospel of Luke, dated to the early 3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-210",
-    "eventType": "Papyrus",
-    "percentage": 20,
-    "year": 200
-  },
-  {
-    "title": "Papyrus98",
-    "description": "Papyrus98 contains text from the Gospel of John, dated paleographically to the early 3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-180",
-    "eventType": "Papyrus",
-    "percentage": 20,
-    "year": 200
-  },
-  {
-    "title": "Papyrus137",
-    "description": "Papyrus137 contains text from the Gospel of Luke, paleographically dated to the early 3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "210",
-    "eventType": "Papyrus",
-    "percentage": 20,
-    "year": 200
-  },
-  {
-    "title": "Papyrus77",
-    "description": "Papyrus77 contains text from the Gospel of John, paleographically dated to the early 3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "240",
-    "eventType": "Papyrus",
-    "percentage": 20,
-    "year": 200
-  },
-  {
-    "title": "Papyrus64",
-    "description": "Papyrus64 contains text from the Gospel of Matthew, dated to the early 3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-60",
-    "eventType": "Papyrus",
-    "percentage": 22,
-    "year": 215
-  },
-  {
-    "title": "Papyrus32",
-    "description": "Papyrus32 includes fragments of the Gospel of Luke, dated to the early 3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-30",
-    "eventType": "Papyrus",
-    "percentage": 22,
-    "year": 215
-  },
-  {
-    "title": "Papyrus23",
-    "description": "Papyrus23 includes fragments of the Gospel of Matthew, dated to the early 3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "90",
-    "eventType": "Papyrus",
-    "percentage": 22,
-    "year": 215
-  },
-  {
-    "title": "Papyrus53",
-    "description": "Papyrus53 includes fragments of the Gospel of Luke, dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-210",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus107",
-    "description": "Papyrus107 contains text from the Gospel of Matthew, dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-180",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus40",
-    "description": "Papyrus40 features sections of the Gospel of John, dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-120",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus30",
-    "description": "Papyrus30 contains text from the Gospel of Matthew, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-90",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus70",
-    "description": "Papyrus70 includes fragments of the Gospel of Luke, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-60",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus28",
-    "description": "Papyrus28 features sections of the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-30",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus91",
-    "description": "Papyrus91 includes fragments of the Gospel of Luke, dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "0",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus80",
-    "description": "Papyrus80 contains text from the Gospel of Luke, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus108",
-    "description": "Papyrus108 features sections of the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "60",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus87",
-    "description": "Papyrus87 features sections of the Gospel of Luke, dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "90",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus22",
-    "description": "Papyrus22 features sections of the Gospel of John, dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "150",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus65",
-    "description": "Papyrus65 features sections of the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "180",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus69",
-    "description": "Papyrus69 features sections of the Gospel of John, dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "210",
-    "eventType": "Papyrus",
-    "percentage": 24,
-    "year": 235
-  },
-  {
-    "title": "Papyrus9",
-    "description": "Papyrus9 contains text from the Gospel of Matthew, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-420",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus121",
-    "description": "Papyrus121 includes fragments of the Gospel of Luke, dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-390",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus111",
-    "description": "Papyrus111 features sections of the Gospel of John, dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-360",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus141",
-    "description": "Papyrus141 features sections of the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-180",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus129",
-    "description": "Papyrus129 features sections of the Gospel of Matthew, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-150",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus114",
-    "description": "Papyrus114 features sections of the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-120",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus118",
-    "description": "Papyrus118 includes fragments of the Gospel of Luke, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-60",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus5",
-    "description": "Papyrus5 includes parts of the Gospel of John, dated to the 3rd century through paleographic methods.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-30",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus131",
-    "description": "Papyrus131 contains text from the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "60",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus109",
-    "description": "Papyrus109 includes fragments of the Gospel of Luke, dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "90",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus15",
-    "description": "Papyrus15 contains sections of the Gospel of Luke, dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "240",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus29",
-    "description": "Papyrus29 includes fragments of the Gospel of Luke, dated to the mid-3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "300",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus133",
-    "description": "Papyrus133 includes fragments of the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "330",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus119",
-    "description": "Papyrus119 contains text from the Gospel of John, dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "360",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus113",
-    "description": "Papyrus113 contains text from the Gospel of Matthew, dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "390",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
-    "title": "Papyrus138",
-    "description": "Papyrus138 features sections of the Gospel of John, dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "420",
-    "eventType": "Papyrus",
-    "percentage": 25,
-    "year": 250
-  },
-  {
     "title": "Papyrus1",
-    "description": "Papyrus1 contains portions of the Gospel of Matthew. It is dated paleographically to the 3rd century.",
+    "description": "Papyrus1 contains portions of the Gospel of Matthew. Discovered by Bernard Pyne Grenfell and Arthur Surridge Hunt at Oxyrhynchus, Egypt, in January 1897. Their findings were published in the first volume of The Oxyrhynchus Papyri in 1898. It is dated paleographically to the 3rd century. Contains: Matthew 1:1-9, 12-13, Matthew 1:14-20, 23",
     "texts": [
       "Matthew"
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "450",
+    "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus2",
+    "description": "Papyrus2 is a fragment containing text from the Gospel of John in Greek on one side, and Luke in Coptic on the other side of the leaf. It is dated to the 6th century based on handwriting analysis. Contains: John 12:12-15",
+    "texts": [
+      "John"
+    ],
+    "family": "Mixed",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 55,
+    "yearRange": [
+      500,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus3",
+    "description": "Papyrus 3 is a small fragment of fifteen verses from the Gospel of Luke paleographically dated to the 6th/7th century. It formed part of a lectionary. The Greek text-type of this codex is mixed. The text of the manuscript was published by Karl Wessely in 1882. Contains: Luke 7:36-45, 10:38-42",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Mixed",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 60,
+    "yearRange": [
+      500,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus4",
+    "description": "Papyrus4 contains sections of the Gospel of Luke, and contains extensive sections of its first six chapters. Opinions differ as to its age - It has been dated anywhere from the late second century to the fourth century. The Greek is representative of the Alexandrian text type.There is agreement with 𝔓75 in 93%. Some early accounts stated that 𝔓4 was used as stuffing for the binding of a codex of Philo, written in the late third century and found walled up in a house at Coptos. Apparently this account was incorrect, however, as the fragments were actually found stashed between pages of the codex of Philo, not in the binding. Philip Comfort and David Barret in their book Text of the Earliest NT Greek Manuscripts argue that 𝔓4 came from the same codex as 𝔓64+67, the Magdalen papyrus, and date the texts to 150-175.[8] Contains: Luke 1:58-59, 1:62-2:1, 2:6-7, 3:8-4:2, 4:29-32, 34-35, 5:3-8, 5:30-6:16",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Alexandrian",
+    "location": "Coptos, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 28,
+    "yearRange": [
+      150,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus5",
+    "description": "Papyrus 5 is an early copy of the New Testament in Greek. It is a papyrus manuscript of the Gospel of John, assigned to the early 3rd century. It has survived in a fragmentary condition, which has resulted in differing ways of transcribing the text. Contains: John 1:23-31, 33-40 16:14-22, 16:22-30, John 20:19-20, 22-25",
+    "texts": [
+      "John"
+    ],
+    "family": "Western",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus6",
+    "description": "Papyrus 6 is a fragmentary early papyrus manuscript containing part of the Gospel of John in Greek and Coptic (Akhmimic). The manuscript also contains text of the First Epistle of Clement, which is treated as a canonical book of the New Testament by the Coptic Church. The Greek text of the codex has several unusual textual variants. The codex contains text of the First Epistle of Clement in Coptic (Akhmimic dialect) on the first 26 pages of the manuscript, Coptic Epistle of James on the pages 91–99, and Greek and Coptic Gospel of John on the page 100. Pages 27–90 have not survived. About 25 pages contained the rest of the text of the First Epistle of Clement and one page of text of James 1:1-12, but there were about 28 pages with unknown content. The manuscript was discovered in Egypt. It was the second manuscript with translation 1 Epistle of Clement into Coptic and the first in Akhmimic dialect. The Greek text of the codex was published by Gregory in 1908. Friedrich Rösch published the text of the whole manuscript Coptic and Greek in 1910. Contains: John 10:1-2, 11:1-8, 45-52",
+    "texts": [
+      "John",
+      "1 Clement",
+      "James"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus7",
+    "description": "Papyrus7 is a fragment containing portions of the Gospel of Luke. The manuscript had been difficult to date palaeographically, because of its fragmentary condition. It had been assigned to the 4th–6th century (or even the 3rd century). The Greek text of this codex is too brief to classify (possibly it is a representative of the Alexandrian text-type). C. R. Gregory examined the manuscript in 1903 in Kiev. Contains: Luke 4:1-3",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 40,
+    "yearRange": [
+      300,
+      500
+    ]
+  },
+  {
+    "title": "Papyrus8",
+    "description": "Papyrus 8 is an early copy of the New Testament in Greek. It is a papyrus manuscript of the Acts of the Apostles, paleographically dated to the 4th century. The Greek text of this codex is a representative of the Alexandrian text-type.The text is written in two columns per page, 25 lines per page. The text of the codex was published by Salonius in 1927. Contains: Acts 4:31-37, 5:2-9, 6:1-6, 8-15",
+    "texts": [
+      "Acts"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus9",
+    "description": "Papyrus 9 (in the Gregory-Aland numbering), signed by 𝔓9, and named Oxyrhynchus papyri 402, is an early copy of the New Testament in Greek. It is a papyrus manuscript of the First Epistle of John, dating paleographically to the early 3rd century. Papyrus 𝔓9 was discovered by Bernard Pyne Grenfell and Arthur Surridge Hunt in Oxyrhynchus, Egypt. The surviving text is a fragment of one leaf containing verses 4:11-12,14-17, written in one column per page. The original codex had 16 lines per page. The text on the manuscript was written very carelessly, evidenced by the crude and irregular handwriting, and the manuscript contains some unintelligible spellings. Text: The Greek text of this codex is representative of the Alexandrian text-type. The manuscript is too brief for certainty. Contains: 1 John 4:11-12, 14-17",
+    "texts": [
+      "1 John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus10",
+    "description": "Papyrus 10,(a.k.a. Oxyrhynchus papyri 209), is an early copy of part of the New Testament content in Greek. It is a papyrus manuscript of the Epistle to the Romans, dating paleographically to the early 4th century. The manuscript is a fragment of one leaf, written in one column per page. The manuscript was written very carelessly. The handwriting is crude and irregular, and the copy contains some irregular spellings. The Greek text of this codex is a representative of the Alexandrian text-type. The manuscript is too brief for certainty. The papyrus was found tied up with a contract dated in 316 A.D., and other documents of the same period. It was discovered in Oxyrhynchus, Egypt. Contains: Romans 1:1-7",
+    "texts": [
+      "Romans"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 32,
+    "year": 316
+  },
+  {
+    "title": "Papyrus11",
+    "description": "Papyrus 11 signed by 𝔓11, is a copy of a part of the New Testament in Greek. It is a papyrus manuscript of the First Epistle to the Corinthians. The manuscript palaeographically had been assigned to the 7th century.[2] The Greek text of this codex is a representative of the Alexandrian text-type. The manuscript was discovered by Tischendorf in 1862. Contains: 1 Corinthians 1:17-22; 2:9-12.14; 3:1-3,5-6; 4:3; 5:5-5.7-8; 6:5-9.11-18; 7:3-6.10-11.12-14.",
+    "texts": [
+      "1 Corinthinans"
+    ],
+    "family": "Alexandrian",
+    "location": "-",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 65,
+    "yearRange": [
+      600,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus12",
+    "description": "Papyrus 12 is an early papyrus manuscript copy of the first verse of the Epistle to the Hebrews. It may have been a writing exercise or an amulet.The verse has been written at the top of the second column by another (likely later) writer in three lines. It has been written in a small uncial hand. On the verso of this manuscript another writer has penned Genesis 1:1-5 according to the Greek Septuagint. The Greek text of this small portion of Hebrews is probably a representative of the Alexandrian text-type, but its text is too brief for certainty. The manuscript was discovered in 1897 by papyrologists Bernard Grenfell and Arthur Hunt in the Fayum, Egypt. Contains: Hebrews 1:1",
+    "texts": [
+      "Hebrews"
+    ],
+    "family": "Alexandrian",
+    "location": "Fayum, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 29,
+    "yearRange": [
+      275,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus13",
+    "description": "Papyrus 13 is a fragmentary manuscript of the epistle to the Hebrews. It was copied on papyrus in the 3rd century at approximately 225-250 CE. It was discovered by Bernard Grenfell and Arthur Hunt in Oxyrhynchus, Egypt. The surviving text is twelve columns, of 23 to 27 lines each, from a scroll. Its presence of pagination 47-50 means that Hebrews was preceded by only one book in the original scroll, likely the Epistle to the Romans as in Papyrus 46. It is the largest papyrus manuscript of the New Testament outside the Chester Beatty Papyri. It was written on the back of a papyrus containing part of Livy's History of Rome (dated to around 200 AD), and some scholars think the manuscript was possibly brought to Egypt by a Roman official and left behind when he left his post. 𝔓13 is a representative of the Alexandrian text-type. It bears strong textual affinity with Codex Vaticanus, and also has an 80% agreement with Papyrus 46. It has numerous distinctive readings. Contains: Hebrews 2:14-5:5, 10:8-22, 10:29-11:14, 11:28-12:17",
+    "texts": [
+      "Hebrews"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 24,
+    "yearRange": [
       225,
-      275
+      250
+    ]
+  },
+  {
+    "title": "Papyrus14",
+    "description": "Papyrus 14 is an early copy of the New Testament in Greek. It is a papyrus manuscript written in form of codex. The manuscript palaeographically has been assigned to the 5th century. The manuscript contains the text of the First Epistle to the Corinthians. The manuscript is written in 1 column per page. The Greek text of this codex is a representative of the Alexandrian text-type.\nIt was discovered in Saint Catherine's Monastery on Mount Sinai in Egypt by J. Rendel Harris, who published its text in 1890. It was also examined by Schofield. Contains: 1 Corinthians 1:25-27; 2:6-8; 3:8-10; 3:19-20",
+    "texts": [
+      "1 Corinthians"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt (Mt. Sinai)",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 55,
+    "yearRange": [
+      500,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus15",
+    "description": "Papyrus 15 was originally a papyrus manuscript of the Pauline Corpus of letters, but now only contains 1 Corinthians. The manuscript has been palaeographically assigned to the 3rd century. The manuscript is written in a documentary hand.There are about 37-38 lines per page. Grenfeld and Hunt conjectured that 𝔓15 and 𝔓16 might have been part of the same manuscript. Both manuscripts have the same formation of letters, line space, and punctuation. The Greek text of this codex is probably a representative of the Alexandrian text-type, however the text is too brief to determine this exactly. It was the last papyrus classified by Gregory, in 1915. Contains: 1 Corinthians 7:18-32, 7:33-8:4",
+    "texts": [
+      "1 Corinthians"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus16",
+    "description": "Papyrus 16, or 𝔓16, is an early copy of the New Testament in Greek. Originally, it may have been part of a papyrus manuscript of the Pauline letters, but now only contains part of the letter to the Philippians The manuscript has been paleographically assigned to the late 3rd century.Grenfeld and Hunt conjectured that 𝔓15 and 𝔓16 might have been part of the same manuscript. Both manuscripts have the same formation of letters, line space, and punctuation. The Greek text of this codex is a representative of the Alexandrian text-type (rather proto-Alexandrian). Contains: Philippians 3:10-17, 4:2-8",
+    "texts": [
+      "Philippians"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "yearRange": [
+      200,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus17",
+    "description": "Papyrus 17 is a papyrus fragment of the Epistle to the Hebrews. The manuscript has been paleographically assigned to the 4th century. Though some date it earlier. The leaf was originally 19 by 25 cm. The Greek text of this codex is representative of the Alexandrian text-type. It was discovered by Lord Crawford in Egypt. The text was edited in 1911 by Grenfell and Hunt. Contains: Hebrews 9:2-14, 9:15-19",
+    "texts": [
+      "Hebrews"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus18",
+    "description": "Papyrus 18 is a papyrus manuscript fragment containing the beginning of the Book of Revelation. It is written against the fibres of the papyrus. On the other side of the papyrus is the ending of the book of Exodus. It is unclear whether the papyrus was a scroll of Exodus later reused for a copy of Revelation or a leaf from a codex with miscellaneous contents. The two sides of the papyrus were copied in different hands, but the original editor of the papyrus did not think there was a great interval of time between the copying of the two sides. He assigned the Exodus to the third century and the Revelation to the third or early fourth century. The Greek text of this manuscript is a representative of the Alexandrian text-type. Contains: Revelation 1:4-7",
+    "texts": [
+      "Revelation"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "yearRange": [
+      200,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus19",
+    "description": "Papyrus 19 is a manuscript fragment of the Gospel of Matthew. The manuscript paleographically has been assigned to the 4th or 5th century. The leaf is complete at the top and bottom, but broken at the sides. The Greek text of this codex is a representative of the Alexandrian text-type. Contains: Matthew 10:32-40, 10:41-11:5",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 40,
+    "yearRange": [
+      300,
+      500
     ]
   },
   {
     "title": "Papyrus20",
-    "description": "Papyrus20 includes fragments of the Gospel of Matthew, dated to the mid-3rd century.",
+    "description": "Papyrus20 is a papyrus manuscript of the Epistle of James. The manuscript has been paleographically assigned to the early 3rd century. The original size of the leaves was 17 by 12 cm. The text is neatly written in upright semi-cursive letters. The Greek text of this codex is representative of the Alexandrian text-type (rather proto-Alexandrian). Philip Comfort has conjectured that the scribe who wrote 𝔓20 was also the same scribe who wrote 𝔓27, Contains: James 2:19-3:2, 3:3-9",
     "texts": [
-      "Matthew"
+      "Epistle of James"
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "-150",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 27,
-    "year": 265
-  },
-  {
-    "title": "Papyrus48",
-    "description": "Papyrus48 contains text from the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-120",
-    "eventType": "Papyrus",
-    "percentage": 27,
-    "year": 265
-  },
-  {
-    "title": "Papyrus106",
-    "description": "Papyrus106 includes fragments of the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-90",
-    "eventType": "Papyrus",
-    "percentage": 27,
-    "year": 265
-  },
-  {
-    "title": "Papyrus39",
-    "description": "Papyrus39 contains text from the Gospel of Matthew, dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-60",
-    "eventType": "Papyrus",
-    "percentage": 27,
-    "year": 265
-  },
-  {
-    "title": "Papyrus104",
-    "description": "Papyrus104 contains text from the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-30",
-    "eventType": "Papyrus",
-    "percentage": 27,
-    "year": 265
-  },
-  {
-    "title": "Papyrus95",
-    "description": "Papyrus95 contains text from the Gospel of Matthew, dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 27,
-    "year": 265
-  },
-  {
-    "title": "Papyrus101",
-    "description": "Papyrus101 contains text from the Gospel of Matthew, dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "60",
-    "eventType": "Papyrus",
-    "percentage": 27,
-    "year": 265
-  },
-  {
-    "title": "Papyrus104",
-    "description": "Papyrus104 contains text from the Gospel of John, paleographically dated to the mid-3rd century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "120",
-    "eventType": "Papyrus",
-    "percentage": 27,
-    "year": 265
-  },
-  {
-    "title": "Papyrus27",
-    "description": "Papyrus27 contains text from the Gospel of Matthew, dated to the mid-3rd century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "150",
-    "eventType": "Papyrus",
-    "percentage": 27,
-    "year": 265
-  },
-  {
-    "title": "Papyrus49",
-    "description": "Papyrus49 features sections of the Gospel of Luke, dated to the late 3rd century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "0",
-    "eventType": "Papyrus",
-    "percentage": 29,
-    "year": 287
-  },
-  {
-    "title": "Papyrus12",
-    "description": "Papyrus12 contains portions of the Gospel of Mark, paleographically dated to the late 3rd century.",
-    "texts": [
-      "Mark"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 29,
-    "year": 287
-  },
-  {
-    "title": "Papyrus92",
-    "description": "Papyrus92 contains text from the Gospel of John, paleographically dated to the early 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-330",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus130",
-    "description": "Papyrus130 includes fragments of the Gospel of Luke, dated to the early 4th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-300",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus100",
-    "description": "Papyrus100 includes fragments of the Gospel of John, paleographically dated to the early 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-270",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus16",
-    "description": "Papyrus16 features parts of the Gospel of Matthew, paleographically dated to the early 4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-210",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus78",
-    "description": "Papyrus78 features sections of the Gospel of Luke, dated to the early 4th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-180",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus13",
-    "description": "Papyrus13 features text from the Gospel of John, dated to the early 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-150",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus132",
-    "description": "Papyrus132 features sections of the Gospel of Luke, dated to the early 4th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-90",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus102",
-    "description": "Papyrus102 features sections of the Gospel of John, paleographically dated to the early 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-60",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus115",
-    "description": "Papyrus115 includes fragments of the Gospel of Luke, dated to the early 4th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-30",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus134",
-    "description": "Papyrus134 contains text from the Gospel of Matthew, dated to the early 4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus37",
-    "description": "Papyrus37 features sections of the Gospel of Luke, dated to the early 4th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "150",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus125",
-    "description": "Papyrus125 contains text from the Gospel of John, paleographically dated to the early 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "270",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus18",
-    "description": "Papyrus18 contains text from the Gospel of Luke, dated to the early 4th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "330",
-    "eventType": "Papyrus",
-    "percentage": 30,
-    "year": 300
-  },
-  {
-    "title": "Papyrus38",
-    "description": "Papyrus38 includes fragments of the Gospel of John, paleographically dated to the early 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-30",
-    "eventType": "Papyrus",
-    "percentage": 32,
-    "year": 315
-  },
-  {
-    "title": "Papyrus89",
-    "description": "Papyrus89 contains text from the Gospel of Matthew, dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-240",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus17",
-    "description": "Papyrus17 includes fragments of the Gospel of John, dated to the mid-4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-210",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus110",
-    "description": "Papyrus110 contains text from the Gospel of Matthew, paleographically dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-180",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus71",
-    "description": "Papyrus71 contains text from the Gospel of Matthew, dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-150",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus24",
-    "description": "Papyrus24 contains text from the Gospel of Luke, paleographically dated to the mid-4th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-120",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus6",
-    "description": "Papyrus6 features fragments of the Gospel of Matthew, paleographically dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-90",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus10",
-    "description": "Papyrus10 features parts of the Gospel of John, dated to the mid-4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-60",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus62",
-    "description": "Papyrus62 features sections of the Gospel of Luke, dated to the mid-4th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-30",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus86",
-    "description": "Papyrus86 contains text from the Gospel of John, paleographically dated to the mid-4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus126",
-    "description": "Papyrus126 features sections of the Gospel of Matthew, dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "60",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus123",
-    "description": "Papyrus123 features sections of the Gospel of Matthew, paleographically dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "90",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus81",
-    "description": "Papyrus81 features sections of the Gospel of Matthew, dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "120",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus88",
-    "description": "Papyrus88 includes fragments of the Gospel of John, paleographically dated to the mid-4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "150",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus139",
-    "description": "Papyrus139 includes fragments of the Gospel of Matthew, paleographically dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "180",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus120",
-    "description": "Papyrus120 features sections of the Gospel of Matthew, paleographically dated to the mid-4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "210",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus8",
-    "description": "Papyrus8 includes sections of the Gospel of Luke, dated to the mid-4th century based on paleography.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "240",
-    "eventType": "Papyrus",
-    "percentage": 35,
-    "year": 350
-  },
-  {
-    "title": "Papyrus25",
-    "description": "Papyrus25 features parts of the Gospel of John, dated to the late 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 39,
-    "year": 387
-  },
-  {
-    "title": "Papyrus57",
-    "description": "Papyrus57 contains text from the Gospel of Matthew, dated to the 4th century.",
-    "texts": [
-      "Matthew"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-120",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Papyrus135",
-    "description": "Papyrus135 features sections of the Gospel of Luke, paleographically dated to the 5th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-90",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Papyrus122",
-    "description": "Papyrus122 contains portions of the Gospel of John, dated to the 5th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-60",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Papyrus50",
-    "description": "Papyrus50 includes fragments of the Gospel of John, paleographically dated to the 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-30",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Papyrus85",
-    "description": "Papyrus85 includes fragments of the Gospel of Luke, dated to the 4th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "0",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Papyrus7",
-    "description": "Papyrus7 contains portions of the Gospel of John, dated to the 4th century by handwriting analysis.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Papyrus19",
-    "description": "Papyrus19 features parts of the Gospel of John, dated to the 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "60",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Papyrus117",
-    "description": "Papyrus117 contains portions of the Gospel of John, dated to the 5th century through paleographic methods.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "90",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
   },
   {
     "title": "Papyrus21",
-    "description": "Papyrus21 contains text from the Gospel of Luke, paleographically dated to the 4th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "120",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Papyrus82",
-    "description": "Papyrus82 includes fragments of the Gospel of John, paleographically dated to the 4th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "150",
-    "eventType": "Papyrus",
-    "percentage": 40,
-    "year": 400
-  },
-  {
-    "title": "Papyrus99",
-    "description": "Papyrus99 features sections of the Gospel of Matthew, dated to the early 5th century.",
+    "description": "Papyrus 21 is a papyrus manuscript of the Gospel of Matthew. The manuscript paleographically has been assigned to the early 4th century. he manuscript is written in large upright uncial letters. The Greek text of this codex probably is a mixture of text-types. Contains: Matthew 12:24-26, 12:32-33",
     "texts": [
       "Matthew"
     ],
-    "family": "Byzantine",
+    "family": "Mixed",
     "location": "Oxyrhynchus, Egypt",
-    "y": "0",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 42,
-    "year": 417
+    "percentage": 40,
+    "yearRange": [
+      300,
+      500
+    ]
   },
   {
-    "title": "Papyrus51",
-    "description": "Papyrus51 contains text from the Gospel of Luke, dated to the early 5th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 42,
-    "year": 417
-  },
-  {
-    "title": "Papyrus140",
-    "description": "Papyrus140 contains text from the Gospel of Luke, dated to the mid-5th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-90",
-    "eventType": "Papyrus",
-    "percentage": 45,
-    "year": 450
-  },
-  {
-    "title": "Papyrus112",
-    "description": "Papyrus112 includes fragments of the Gospel of Luke, paleographically dated to the mid-5th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-60",
-    "eventType": "Papyrus",
-    "percentage": 45,
-    "year": 450
-  },
-  {
-    "title": "Papyrus127",
-    "description": "Papyrus127 includes fragments of the Gospel of Luke, paleographically dated to the mid-5th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-30",
-    "eventType": "Papyrus",
-    "percentage": 45,
-    "year": 450
-  },
-  {
-    "title": "Papyrus93",
-    "description": "Papyrus93 features sections of the Gospel of Luke, dated to the mid-5th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 45,
-    "year": 450
-  },
-  {
-    "title": "Papyrus54",
-    "description": "Papyrus54 contains text from the Gospel of John, paleographically dated to the 5th century.",
+    "title": "Papyrus22",
+    "description": "Papyrus 22 is a papyrus manuscript containing text from the Gospel of John, dated to the early 3rd century CE. It is the only identified New Testament papyrus to have been written originally as a roll; not a codex or re-using the back of a scroll. The text is written in two consecutive columns, with the reverse side of the roll being blank. The Greek text of this codex is considered a representative of the Alexandrian text-type.The papyrus was found in Oxyrhynchus, Egypt, and was originally published by Papyrologists Bernard Grenfell and Arthur Hunt in the Oxyrhynchus Papyri, Volume 10, designated as P. Oxy. 1228. To determine its palaeographical dating, Grenfell and Hunt compared the graphical writing style to P. Oxy 654, which according to papyrologist Philip Comfort \"can be dated confidently to the mid-third century.\" Comfort states that though the writing style of 𝔓22 is \"a bit heavier\", it should be dated to the same time period. Contains: John 15:25-16:3, 16:21-32",
     "texts": [
       "John"
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "-60",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 50,
-    "year": 500
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
   },
   {
-    "title": "Papyrus35",
-    "description": "Papyrus35 includes fragments of the Gospel of Matthew, paleographically dated to the 5th century.",
+    "title": "Papyrus23",
+    "description": "Papyrus23 is a papyrus manuscript of the Epistle of James, surviving in a fragmentary condition. Using the study of comparative writing styles (palaeography), it has been assigned to the early 3rd century. The Greek text of this codex is considered a representative of the Alexandrian text-type (or rather proto-Alexandrian). Contains: James 1:10-12, 1:15-18",
+    "texts": [
+      "James"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 21,
+    "yearRange": [
+      200,
+      225
+    ]
+  },
+  {
+    "title": "Papyrus24",
+    "description": "Papyrus24 a papyrus manuscript of part of the Book of Revelation. Originally it was written on a large leaf (approximately 19 by 28 cm). It is the earliest manuscript which has survived to the present day with the text of Rev. 5–6. The Greek text of this codex is a representative of the Alexandrian text-type (rather proto-Alexandrian). Contains: Revelation 5:5-8, -6:5-8",
+    "texts": [
+      "Revelation"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus25",
+    "description": "Papyrus25 features parts of the Gospel of Matthew, dated to the late 4th century. The Greek text of this codex is unclassifiable because of the Diatessaric character of text (like Dura Parchment 24 (Uncial 0212) Contains: Matthew 18:32-34, 19:1-3, 5-7, 9-10",
     "texts": [
       "Matthew"
     ],
-    "family": "Byzantine",
+    "family": "Diatesaric",
     "location": "Oxyrhynchus, Egypt",
-    "y": "-30",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 50,
-    "year": 500
+    "percentage": 39,
+    "yearRange": [
+      375,
+      400
+    ]
   },
   {
-    "title": "Papyrus94",
-    "description": "Papyrus94 includes fragments of the Gospel of John, paleographically dated to the 5th century.",
+    "title": "Papyrus26",
+    "description": "Papyrus26 includes fragments of the Epistle to the Romans, dated to the 7th century. The Greek text of this codex is a representative of the Alexandrian text-type. Contains: Romans 1:1-9, 1:9-16",
+    "texts": [
+      "Romans"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 61,
+    "yearRange": [
+      600,
+      625
+    ]
+  },
+  {
+    "title": "Papyrus27",
+    "description": "Papyrus27 contains text from the Gospel of Romans, dated to the 3rd century. It is written in 43 lines per page. The scribe of this manuscript may have also written 𝔓20. The Greek text of this codex is a representative of the Alexandrian text-type. Contains: Romans 8:12-22, 24-27, 8:33--9:3, 5-9",
+    "texts": [
+      "Romans"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus28",
+    "description": "Papyrus28 features sections of the Gospel of John, paleographically dated to the mid-3rd century. The text is written in medium-sized semi-uncial. It is a single leaf, written in 12 lines per page (originally 25 lines). The handwriting is quite similar to P. Oxy. 1358. Originally it had 13 cm by 20 cm. Text is written in 25 lines per page. The Greek text of this codex is a representative of the Alexandrian text-type (rather proto-Alexandrian). Grenfell and Hunt noted that text is not \"very correctly spelled\". The manuscript was found together with 3rd-4th century documents. Contains: John 6:8-12, 6:17-22",
     "texts": [
       "John"
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "30",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 50,
-    "year": 500
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
   },
   {
-    "title": "Papyrus105",
-    "description": "Papyrus105 features sections of the Gospel of Luke, dated to the 5th century.",
+    "title": "Papyrus29",
+    "description": "Papyrus29 is a papyrus manuscript of the Acts of the Apostles. The manuscript paleographically has been assigned to the early 3rd century. The Greek text of this codex is too short to put in a family. Contains: Acts 26:7-8, 26:20",
     "texts": [
-      "Luke"
+      "Acts"
     ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "60",
+    "family": "Mixed/inconclusive",
+    "location": "Egypt",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 50,
-    "year": 500
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
   },
   {
-    "title": "Papyrus63",
-    "description": "Papyrus63 includes fragments of the Gospel of John, paleographically dated to the early 6th century.",
+    "title": "Papyrus30",
+    "description": "Papyrus30 contains text from the is a papyrus manuscript of the Pauline epistles, it contains fragments of 1 Thessalonians and 2 Thessalonians The manuscript paleographically has been assigned to the 3rd century. The manuscript is written in large uncial letters. The Greek text of this codex is a representative of the Alexandrian text-type (rather proto-Alexandrian). Contains: 1 Thessalonians 4:12-13, 16-17, 5:3, 8-10, 12-18; 2 Thessalonians 1:1-2",
     "texts": [
-      "John"
+      "1 Thessalonians",
+      "2 Thessalonians"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "0",
+    "location": "Egypt",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 52,
-    "year": 517
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
   },
   {
-    "title": "Papyrus2",
-    "description": "Papyrus2 includes text from the Gospel of John. It is dated to the 6th century based on handwriting analysis.",
+    "title": "Papyrus31",
+    "description": "Papyrus31 is a papyrus manuscript of the Epistle to the Romans, paleographically dated to the 7th century. The reverse side is blank. It is possible that it was used as a talisman. Hunt suggested it was a lectionary. Written in medium-sized sloping uncial letters. It seems to have been copied for reading in church. The Greek text of this codex is a representative of the Alexandrian text-type. Contains: Romans 12:3-8",
     "texts": [
-      "John"
+      "Romans"
     ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-240",
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 65,
+    "yearRange": [
+      600,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus32",
+    "description": "Papyrus32 is a papyrus manuscript of the Epistle to Titus. On the basis of paleography, the manuscript has been assigned a date around A.D. 200. The Greek text of this codex, with the exception of one singular reading, agrees with the common readings of the Alexandrian text-type and Byzantine text-type.The papyrus is written on both sides. The characters that are in bold style are the ones that can be seen in 𝔓32. Contains: Titus 1:11-15, 2:3-8",
+    "texts": [
+      "Titus"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 21,
+    "yearRange": [
+      200,
+      225
+    ]
+  },
+  {
+    "title": "Papyrus33",
+    "description": "Papyrus33 is a papyrus manuscript of the Acts of the Apostles. The manuscript paleographically has been assigned to the sixth century. 𝔓58 was a part of the same codex to which 𝔓33 belonged. The Greek text of this codex is a representative of the Alexandrian text-type. Contains: Acts 7:6-10, 7:13-18, 15:21-24, 15:26-32",
+    "texts": [
+      "Acts"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
     "eventType": "Papyrus",
     "percentage": 55,
     "yearRange": [
-      525,
-      575
+      500,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus34",
+    "description": "Papyrus34 f is a papyrus manuscript of the Pauline epistles, dated to the 7th century. The Greek text of this codex is a representative of the Alexandrian text-type. Contains: 1 Corinthians 16:4-7, 10; 2 Corinthians 5:18-21, 10:13-14, -11:2, 4, 6-7",
+    "texts": [
+      "1 Corinthians",
+      "2 Corinthians"
+    ],
+    "family": "Alexandrian",
+    "location": "Faiyum",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 65,
+    "yearRange": [
+      600,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus35",
+    "description": "Papyrus35 includes fragments of the Gospel of Matthew, paleographically dated to the 3rd or 4th century. The Greek text of this codex is a representative of the Alexandrian text-type. Aland dated the manuscript to the 4th century, Roberts and T. C. Skeat dated it to the 3rd century. Contains: Matthew 25:12-15, 25:20-23",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 50,
+    "yearRange": [
+      400,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus36",
+    "description": "Papyrus36 contains text from the Gospel of John, dated to the 6th century Contains: John 3:14-17, 3:17-18, 3:31-32, 3:34-35",
+    "texts": [
+      "John"
+    ],
+    "family": "Mixed",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 55,
+    "yearRange": [
+      500,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus37",
+    "description": "Papyrus37 is a papyrus manuscript of the Gospel of Matthew dated to the 3rd century, about 250–260 CE, because of its affinities with 𝔓53 (dated to 260 CE), The correspondence of Heroninos (dated shortly before or after 260 CE) and a letter by Kopres (P. Greco-Egizi 208, dated 256 CE). It was purchased in Cairo, Egypt, in 1924. Its origin is unknown, but it probably came from Egypt. The manuscript is a fragment of a single leaf, consisting of one column of 33 lines (40 to 50 characters per line), about 12.1 cm by 22.4 cm. The fragment is damaged on all sides, with considerable lacunae, and probably was originally 15 cm by 25.5 cm. The papyrus uses a legible, cursive-like script with irregular character linking. The cursive letters resemble the cursive that was common between the years 200 and 350. There are many variations in the letters, which makes a precise dating based on paleography difficult. The writer was most likely literate and educated because the letters do not appear crude or imitative, but the irregularities suggest the writer was not an experienced scribe. The handwriting is similar to personal letters and documents from the mid 3rd century. Based on the reading variations, the text most likely originated in Egypt. Contains: Matthew 26:19-37, 26:37-52",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Western",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "yearRange": [
+      200,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus38",
+    "description": "Papyrus38 includes fragments of Acts, paleographically dated to the early 3rd century. Although the text is quite short, the Greek text of this codex has been called a representative of the Western text-type. The text of this manuscript is related to Codex Bezae. The manuscript was purchased in Cairo in 1924. Contains: Acts 18:27-19:6, 19:12-16",
+    "texts": [
+      "Acts"
+    ],
+    "family": "Western",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 21,
+    "yearRange": [
+      200,
+      225
+    ]
+  },
+  {
+    "title": "Papyrus39",
+    "description": "Papyrus39 contains text from the Gospel of John, dated to the mid-3rd century. The manuscript was likely written by professional scribe, in 25 lines per page, in large, beautiful letters. It has numbered pages. Biblical scholar Don Barker proposes a wider and earlier range of dates for Papyrus 39, along with Uncial 0232, Papyrus 88 and Uncial 0206; and states that all four could be dated as early as the late second century or as late as the end of the fourth century. The Greek text of this codex is considered a representative of the Alexandrian text-type (or more likely proto-Alexandrian). Papyrologist Guglielmo Cavallo published a facsimile of 𝔓39 in 1967. Contains: John 8:14-18, 8:18-21",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus40",
+    "description": "Papyrus40 features sections of the Gospel of John, dated to the 3rd century. The Greek text of this codex is a representative of the Alexandrian text-type, rather proto-Alexandrian Contains: Romans 1:24-27, 31-2:3, 3:21-4:8, 6:4-5, 16, 9:16-17, 27",
+    "texts": [
+      "Romans"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus41",
+    "description": "Papyrus41 includes fragments of Acts dated to the 8th century. It is a diglot(a manuscript in two languages), in Greek and Coptic.The Greek text of this codex is a representative of the Western text-type. Contains: Acts 17:28-31, 17:34-18:2",
+    "texts": [
+      "Acts"
+    ],
+    "family": "Westerm",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 75,
+    "yearRange": [
+      700,
+      800
+    ]
+  },
+  {
+    "title": "Papyrus42",
+    "description": "Papyrus42 is a fragment from the Gospel of Luke dating to the 6th/7th century, in Greek and Coptic. The Greek text of this manuscript is a representative of the Alexandrian text-type with some Byzantine readings. paleographically dated to the 7th century. Contains: Luke 1:54-55, 2:29-32",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Mixed",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 70,
+    "yearRange": [
+      600,
+      800
+    ]
+  },
+  {
+    "title": "Papyrus43",
+    "description": "Papyrus43 is a papyrus manuscript containing text from the Book of Revelation, dated to the 6th or 7th century. Scholars W. E. Crum, and H. I. Bell describe 𝔓43 as \"a small scrap of light-coloured papyrus... [written] in two, rough, inelegant sloping hands.\" Though the lines on each side are long, it is likely the papyrus only had extracts from Revelation on it, as it is hardly possible to have text from chapters 2 and 15 if the text was continuous. The text on the reverse side (known as the verso) being the opposite way around to the text on the front side (known as the recto) supports this conclusion. The Greek text of this codex is considered a representative of the Alexandrian text-type. Contains: Revelation 2:12-13, 15:8-16:2",
+    "texts": [
+      "Revelation"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 60,
+    "yearRange": [
+      500,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus44",
+    "description": "Papyrus44 is a papyrus manuscript of the Gospel of Matthew and Gospel of John. Fragments of the Gospel of John formerly known as Papyrus 44b (containing 9:3-4; 12:16-18) have been reclassified as Papyrus 128. The manuscript paleographically has been assigned to the 6th or 7th century. The Greek text of this codex is a representative of the Alexandrian text-type. Contains: Matthew 17:1-3, 6-7, 18:15-17, 19, 25:8-10; John 10:8-14",
+    "texts": [
+      "Matthew",
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 60,
+    "yearRange": [
+      500,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus45",
+    "description": "Papyrus 45 (P. Chester Beatty I) is an early Greek New Testament manuscript written on papyrus, and is one of the manuscripts comprising the Chester Beatty Papyri, a group of early Christian manuscripts discovered in the 1930s, and purchased by business man and philanthropist, Alfred Chester Beatty. Beatty purchased the manuscript in the 1930s from an Egyptian book dealer, and it was subsequently published in The Chester Beatty Biblical Papyri, Descriptions and Texts of Twelve Manuscripts on Papyrus of the Greek Bible by palaeographer, biblical and classical scholar Frederic G. Kenyon in 1933. Manuscripts among the Chester Beatty Papyri have had several places of discovery associated with them, the most likely being the Faiyum in Egypt (the dry sands of Egypt have been a haven for finding very early manuscripts since the late 1800s). Using the study of comparative writing styles (palaeography), it has been dated to the early 3rd century CE. This therefore makes it the earliest example of not only the four Gospels contained in one volume, but also the Acts of the Apostles. It contains verses in fragmentary form from all 4 Gospels, as well as from Acts. The manuscript is heavily damaged and fragmented. The papyrus was bound in a codex (the forerunner to the modern book), which may have consisted of 220 pages, however only 30 survive (two of Matthew, six of Mark, seven of Luke, two of John, and thirteen of Acts). It was made up of quires of two leaves (four pages) only, which were formed by folding a single sheet of papyrus in half. The original pages were roughly 10 inches by 8 inches.  Unlike many of the other surviving manuscripts from the 3rd century which usually contained just the Gospels, or a grouping of letters such as the Pauline Epistles, this manuscript possibly contained more than one grouping of New Testament texts. This hypothesis is attributed to the use of gatherings of two leaves, known as a single-quire, whereas most other codices were made from multiple pages in a single quire (all pages put on top of each other, then folded in the middle to make a single block), or of multiple pages split into several quires (groups of 8–10 pages laid on top of each other, then folded in half to make separate blocks), which were then stitched together to make a full volume. Because of the extent of the damage, determining the text's relationship to the standard text-type groups has been difficult. It has been described as Caeserians, while others point out that due to the manuscript predating the distinctive texts for each type from the 4th and 5th centuries. This is due to the definition of a \"text-type\" being based on readings found in manuscripts dating to after the Edict of Milan (313) by the Emperor Constantine, which stopped the persecution of Christians in the Roman Empire, thus allowing them to make copies of the New and Old Testaments freely, under the auspices of an official copying process.  Therefore, these manuscripts were made under a controlled setting, whereas the early papyri weren't, hence the specific text-type groups could be established. E. C. Colwell comments: \"As an editor the scribe of 𝔓45 wielded a sharp axe. The most striking aspect of his style is its conciseness. The dispensable word is dispensed with. He omits adverbs, adjectives, nouns, participles, verbs, personal pronouns—without any compensating habit of addition. He frequently omits phrases and clauses. He prefers the simple to the compound word. In short, he favors brevity. He shortens the text in at least fifty places in singular readings alone. But he does not drop syllables or letters. His shortened text is readable.\" Contains: Matthew 20:24-32, 21:13-19, Mark 4:36-40, 5:15-26, 5:38-6:3, 16-25, 36-50, 7:3-15, 7:25-8:1, 10-26, 8:34-9:9, 18-31, 11:27-12:1, 5-8, 13-19, 24-28, Luke 6:31-41, 6:45-7:7, 9:26-41, 9:45-10:1, 6-22, 10:26-11:1, 6-25, 28-46, 11:50-12:12, 18-37, 12:42-13:1, 6-24; 13:29-14:10, 17-33, John 4:51, 54, 5:21, 24, 10:7-25, 10:30-11:10, 18-36, 42-57, Acts 4:27-36, 5:10-21, 30-39, 6:7-7:2, 10-21, 32-41, 7:52-8:1, 14-25, 8:34-9:6, 16-27, 9:35-10:2, 10-23, 31-41, 11:2-14, 11:24-12:5, 13-22, 13:6-16, 25-36, 13:46-14:3, 15-23, 15:2-7, 19-27, 15:38-16:4, 15-22, 32-40; 17:9-17",
+    "texts": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts"
+    ],
+    "family": "Mixed",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus46",
+    "description": "Papyrus46, also known as P. Chester Beatty II, is an early papyrus manuscript of the New Testament letters, and is one of the manuscripts comprising the Chester Beatty Papyri. Manuscripts among the Chester Beatty Papyri have had several provenances associated with them, the most likely being the Faiyum. It has been dated to between 175 and 225, or to the early 3rd century CE. The manuscript is a codex (the precursor to the modern book format) made from papyrus in single quire (this being the papyrus leaves placed on top of each other, and folded in half), with the folio size approximately 28 by 16 centimetres (11.0 in × 6.3 in). The text is written in single column. Lines containing text at the bottom of each page are damaged (known as lacunose), with between 1–2 lines non-extant in the first quarter of the codex, 2–3 lines non-extant in the central half, and up to seven lines non-extant in the final quarter. Though unusual for ancient manuscripts, 𝔓46 has each page numbered. Throughout Romans, Hebrews, and the latter chapters of 1 Corinthians, small and thick strokes or dots are found, usually agreed to be from the hand of a reader rather than the initial copyist, since the ink is always much paler than that of the text itself.: 17  They appear to mark sense divisions (similar to verse numbering found in Bibles), and are also found in portions of 𝔓45, possibly evidence of reading in the community which held both codices. Edgar Ebojo made a case that these \"reading marks\" with or without space-intervals were an aid to readers, most likely in a liturgical context. The contents of the seven missing leaves from the end is uncertain as they are lost. Kenyon calculated that 2 Thessalonians would require two leaves, leaving only five remaining leaves (10 pages) for the remaining canonical Pauline literature — 1 Timothy (estimated 8.25 pages), 2 Timothy (6 pages), Titus (3.5 pages) and Philemon (1.5 pages) — requiring ten leaves in total (19.25 pages). Thus Kenyon concluded 𝔓46 as originally constructed did not include the pastoral epistles. Overall, Kenyon was open to different possibilities regarding the contents of the lost leaves at the end of the codex. He entertained the idea that the last five leaves could have been left blank or that additional leaves could have been added to the quire to create space for the pastoral letters.[13] In 1998, Jeremy Duff vigorously argued in favor of Kenyon's second suggestion, emphasizing that the scribe of 𝔓46 was increasing the number of letters per page in the second half of the codex. Duff argued that this indicated that the scribe intended to include all of the traditional 14-letter collection and would most likely have added extra leaves if the original quire lacked sufficient space. Duff also pointed to several ancient codices that he considered as good evidence for the attachment of additional leaves to codices to allow for the inclusion of more material. The relevance of the ancient evidence that Duff presented has been challenged, but a survey of surviving examples of ancient single-quire codices does show evidence for the practice of leaving some blank pages at the end of a codex. However, this survey also showed that single-quire codices sometimes had more inscribed pages in the second half of the codex than in the first half (due to, for example, blank front fly-leaves). This leaves open the possibility that the original quire may have contained the traditional 14-letter collection after all. Provenance: The provenance of the papyrus is unknown. Kenyon believed this codex and the other Beatty Biblical Papyri came from the region of the Fayyum. The coptologist Carl Schmidt was told that the books were found in \"‘Alâlme, a village on the east bank of the Nile in the area of Aṭfiḥ, ancient Aphroditopolis.\" However, the archaeologists who bought the University of Michigan's portion of the codex believed that it had come from Asyut (ancient Lykopolis). Thus, there is no consensus on the precise find spot. In November 2020, the Center for the Study of New Testament Manuscripts (CSNTM) in conjunction with Hendrickson Publishers released a new 1:1 high-resolution imaged facsimile edition of 𝔓46 on black and white backgrounds, along with 𝔓45 and 𝔓47. The text of the codex is considered a representative of the Alexandrian text-type. Date: H. A. Sanders, the first editor of parts of the papyrus, proposed a date possibly as late as the second half of the 3rd century. F. G. Kenyon, editor of the complete editio princeps, preferred a date in the first half of the 3rd century.  The manuscript is now sometimes dated to about 200. Griffin placed the 'most probable date' between 175 and 225, with a '95% confidence interval' for a date between 150 and 250. Comfort and Barrett have claimed 𝔓46 shares palaeographical affinities with the following: P. Oxy. 8, P. Oxy. 841, P. Oxy. 1622, P. Oxy. 2337, P. Oxy. 3721, P. Rylands III, P. Berol. 9810. They conclude this points to a date during the middle of the 2nd century for 𝔓46. More recently, in a wide-ranging survey of the dates of New Testament papyri, P. Orsini and W. Clarysse have assigned 𝔓46 \"to the early third century,\" specifically \"excluding dates in the first or the first half of the second century.\" Contains: Romans 5:17–6:14, 8:15–11:35, 14:9–15:11, Hebrews 8:9–9:10, 9:26 end 1 Corinthians 1:1-2:3, 3:6–end, 2 Corinthians 1:1-9:7, Galatians 6:10–end, Philippians, Colossians, 1 Thessalonians 1:1–2:3, 5:5, 23–28",
+    "texts": [
+      "Romans",
+      "Hebrews",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians"
+    ],
+    "family": "Alexandrian",
+    "location": "Fayum, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 20,
+    "yearRange": [
+      175,
+      225
+    ]
+  },
+  {
+    "title": "Papyrus47",
+    "description": "Chester Beatty Papyrus III. Acquired by Alfred Chester Beatty in the 1930s. Part of a codex containing Revelation. One of the three most important early witnesses to Revelation (with P18 & P115). Housed at the Chester Beatty Library, Dublin. The manuscript is a codex (precursor to the modern book format), written with black ink on papyrus. The manuscript is quite fragmented, the extant part of the manuscript comprises 10 leaves arranged as a single quire. The original size of the pages was 24x14cm, with around 23-30 lines each page[6] The writing column was quite small, comprising 19x10cm, with 1-4 lines lost at the top of each page. Due to the first five leaves facing back to front (also known as verso to recto), and the last five leaves facing front to back (recto to verso), this is evidence the extant leaves are from the middle portion, and likely that only the book of Revelation was included in the manuscript. It is calculated that the manuscript likely had 30-32 leaves in total to house the text. Biblical scholar Frederic Kenyon describes the writing as \"rather rough in character, thick in formation, and with no pretensions to calligraphy.\"[7]: xii  Based on the graphic style, he dated the manuscript to the 3rd century CE. The Greek text of this codex is considered a representative of the Alexandrian text-type. Contains: Revelation 9:10-11:3, 11:5-16:15, 16:17-17:2",
+    "texts": [
+      "Revelation"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt (Chester Beatty)",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus48",
+    "description": "Fragment from a papyrus codex. Significant early witness (3rd C.) to Acts 23. Although the text of this codex is small, the Greek text of this codex has been called a representative of the Western text-type. Contains: Acts 23:11-17, 23:25-29",
+    "texts": [
+      "Acts"
+    ],
+    "family": "Western",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus49",
+    "description": "A.k.a. P. Yale 415. Important early witness to Ephesians. It was probably a part of the same manuscript as Papyrus 65. It came from Egypt and was purchased for the Yale University Library. The original size of the leaf was 18 centimetres (7.1 in) in height by 25 centimetres (9.8 in) in width. The leaf is damaged at the top, and six lines of its text have been lost. At the present time the leaf measures 20.3 by 13.3 cm (8.0 by 5.2 in). The lower and outer margins are 3 centimetres (1.2 in); the upper and inner margins were lost. According to Comfort, 𝔓49 and 𝔓65 came from the same manuscript. Both manuscripts have the same measurements, and the same number of lines per page. Both were written by a documentary hand, both manifest the same formation of certain letters, such as titled lambda, titled sigma, extended iota, and toiled ypsilon. The nomina sacra and abbreviations are written in the same rather unusual way. Bradford Welles remarks that \"there is not a single case of difference in the letter shapes in the two papyri\".[2] Neither use ligatures. The only difference is in the number of letters per line: 𝔓65 has more letters per line (42). The same situation exists in Papyrus 75. The scribe of 𝔓75 appears to have realized that he was running out of room in his codex and added three letters in each line and even added extra lines.[2] The manuscript may be one of the earliest manuscripts to display a complete Pauline codex, along with Papyrus 13, Papyrus 15/Papyrus 16, Papyrus 30, Papyrus 46, and Papyrus 92. The handwriting of the manuscript displays many third-century features. Comfort dated the manuscript to the middle of the third century. It is presently assigned to the third century on palaeographic grounds by the Institute for New Testament Textual Research (INTF). It was probably written in Egypt, but it cannot be assigned to any particular locality. The manuscript was purchased in Cairo for Yale University in February 1931. Its provenance prior to Cairo is not known. Currently it is housed at the Yale University Library (P. Yale 415) in New Haven. The text of the codex was published by William Hatch and Bradford Welles in 1958 (editio princeps). Kurt Aland catalogued the manuscript on the list of the New Testament papyri under the number 49.[13] Susan Stephens gave a new and complete transcription of the codex in 1985.[8] Comfort and Barrett again gave a new reconstruction in 1999. Vittorio Bartoletti (1920–1990) was the first to note that Papyrus 49 and Papyrus 65 were produced by the same scribe.This conclusion was confirmed by Bradford Welles, Comfort and Barrett, and other palaeographers.[2] They are still catalogued as separate manuscripts on the INTF's list. Contains: Ephesians 4:16-29, 4:32-5:13",
+    "texts": [
+      "Ephesians"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus50",
+    "description": "Fragment from a papyrus codex containing parts of Acts 8 and 10. Dated to the 4th century. Contains: Acts 8:26-30, 8:30-32, 10:26-27, 10:27-30, 10:30-31",
+    "texts": [
+      "Acts"
+    ],
+    "family": "Mixed",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "yearRange": [
+      200,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus51",
+    "description": "P. Oxy. 2157. Discovered at Oxyrhynchus. Fragment from a papyrus codex, dated to the 4th or 5th century. Contains: Galatians 1:2-10, 13, 16-20",
+    "texts": [
+      "Galatians"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 41,
+    "yearRange": [
+      400,
+      425
+    ]
+  },
+  {
+    "title": "Papyrus52",
+    "description": "\"St John's Fragment\" or Rylands Library Papyrus P52. A very small fragment (3.5x2.5 inches) from a papyrus codex. Generally accepted as the earliest extant record of a canonical NT text. Acquired in Egypt in 1920 by Bernard Grenfell, published by Colin H. Roberts in 1935. Writing is large, clear, possibly for congregational reading. Written carefully but not by a professional scribe (\"reformed documentary\" hand). Significance lies in its early date and geographical distance from presumed origin (Ephesus), supporting an early composition date for John's Gospel. Text agrees with Alexandrian base with minor variations. Contains: John 18:31-33, 18:37-38",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 15,
+    "yearRange": [
+      125,
+      175
+    ]
+  },
+  {
+    "title": "Papyrus53",
+    "description": "An early papyrus manuscript containing parts of Matthew and Acts. The two fragments were found together and were part of a codex originally containing either the four Gospels and Acts, or Matthew and Acts. Paleographically dated to the 3rd C. Contains: Matthew 26:29-40; Acts 9:33-10:1",
+    "texts": [
+      "Matthew",
+      "Acts"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus54",
+    "description": "An early papyrus manuscript containing fragments of James (designated P. Princeton). Measures 8.7 x 6.5 cm. Assigned paleographically to the 5th or 6th century. Contains: James 2:16-18, 3:2-4",
+    "texts": [
+      "James"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 50,
+    "yearRange": [
+      400,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus55",
+    "description": "A papyrus manuscript containing verses from John chapter 1 (designated Pap. Vindobonensis Gr. 26214). Assigned paleographically to the 6th or 7th century. Contains: John 1:31-33, 35-38",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 60,
+    "yearRange": [
+      500,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus56",
+    "description": "Papyrus manuscript (Pap. Vindob. G. 19918) found in Egypt, containing verses from Acts. Dated paleographically to the 5th/6th century. Contains: Acts 1:1-5, 7-11",
+    "texts": [
+      "Acts"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 55,
+    "yearRange": [
+      500,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus57",
+    "description": "Papyrus manuscript (Pap. Vindob. G. 26020) found in Egypt, containing verses from Acts. Dated paleographically to the 4th/5th century. Published by Peter Sanz. Contains: Acts 4:36-5:2, 8-10",
+    "texts": [
+      "Acts"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 40,
+    "yearRange": [
+      300,
+      500
+    ]
+  },
+  {
+    "title": "Papyrus59",
+    "description": "Papyrus manuscript (P. Colt 3) found in Egypt, containing verses from several chapters of John. Dated paleographically to the 7th century. Contains: John 1:26, 28, 48, 51, 2:15-16, 11:40-52, 12:25-29, 31, 35, 17:24-26, 18:1-2, 16-17, 22, 21:7, 12-13, 15, 17-20, 23",
+    "texts": [
+      "John"
+    ],
+    "family": "Mixed",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 65,
+    "yearRange": [
+      600,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus60",
+    "description": "Papyrus manuscript (P. Colt 4) found in Egypt, containing John chapters 16 through 19. Dated paleographically to the 6th or 7th century (ca. 700 CE). Contains: John 16:29-30, 16:32-17:6, 8-9, 11-15, 18-25, 18:1-2, 4-5, 7-16, 18-20, 23-29, 31-37, 39-40, 19:2-3, 5-8, 10-18, 20, 23-26",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 65,
+    "yearRange": [
+      600,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus61",
+    "description": "Papyrus manuscript (P. Colt 5) containing fragments of several Pauline epistles (Romans, 1 Cor, Philippians, 1 Thess, Titus, Philemon). Found at Nessana, Palestina. Measures 25x17 cm. Dated paleographically to the 8th century. Contains: Romans 16:23-27 1 Corinthians 1:1-2, 4-6 5:1-3, 5-6, 9-13 Philippians 3:5-9, 12-16 Colossians 1:3-7, 9-13, 4:15 1 Thessalonians 1:2-3 Titus 3:1-5, 8-11 Philemon 4-7",
+    "texts": [
+      "Pauline Epistles"
+    ],
+    "family": "Alexandrian",
+    "location": "Nessana, Palestina",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 71,
+    "yearRange": [
+      700,
+      725
+    ]
+  },
+  {
+    "title": "Papyrus62",
+    "description": "Papyrus manuscript (Papyrus Osloensis 1661) found in Egypt. A Greek-Coptic diglot from a 4th-century codex. Contains fragments of Matthew 11 (Greek/Coptic), Daniel 3 (Septuagint, Papyrus 994 Rahlfs), and the Book of Odes. Measures 6.5x5.6 cm. Uses nomina sacra. Published by Leiv Amundsen in 1945. Contains: Matthew 11:25-30",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus63",
+    "description": "Papyrus manuscript (Inv. 11914, Staatliche Museen zu Berlin) found in Egypt, containing verses from John chapters 3 and 4. Measures 18.5x15 cm. Assigned paleographically to the 4th/5th century (ca. 500 CE in info box). The text shows some Byzantine readings. Contains the variant 'υιον αυτου' in John 3:16. Contains: John 3:14-18, 4:9-10",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 51,
+    "yearRange": [
+      500,
+      525
+    ]
+  },
+  {
+    "title": "The Magdalen Papyrus",
+    "description": "Magdalen Papyrus (Gr. 17). Acquired in Luxor, Egypt in 1901 by Reverend Charles Bousfield Huleatt. Three fragments held at Magdalen College, Oxford. Often grouped with P67 (Barcelona) and potentially P4 (Paris) as originating from the same early codex (late 2nd/early 3rd C.). P67 was identified as part of the same manuscript. When the fragments were published by Colin Henderson Roberts in 1953, illustrated with a photograph, the hand was characterized as \"an early predecessor of the so-called 'Biblical Uncial'\" which began to emerge towards the end of the 2nd century. The uncial style is epitomised by the later biblical Codex Vaticanus and Codex Sinaiticus. Comparative paleographical analysis has remained the methodological key for dating the manuscript, but there is no consensus on the dating of the papyrus. Estimates have ranged from the 1st century to the 4th century AD. The fragments are written on both sides, indicating they came from a codex rather than a scroll. More fragments, published in 1956 by Ramon Roca-Puig, cataloged as P. Barc. Inv. 1 (Gregory-Aland 𝔓67), were determined by Roca-Puig and Roberts to come from the same codex as the Magdalen fragments, a view which has remained the scholarly consensus. Contains: Matthew 3:9, 15, 5:20-22, 25-28, 26:7-8, 10, 14-15, 22-23, 31-33",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Coptos, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 21,
+    "yearRange": [
+      200,
+      225
+    ]
+  },
+  {
+    "title": "Papyrus65",
+    "description": "Papyrus manuscript (PSI 1373) found in Egypt, containing verses from 1 Thessalonians chapters 1 and 2. Dated paleographically to the 3rd century. Possibly from the same manuscript as 𝔓49 (Comfort). Contains: 1 Thessalonians 1:3-2:1, 6-13",
+    "texts": [
+      "1 Thessalonians"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus66",
+    "description": "A near-complete papyrus codex of John (P. Bodmer II), found 1952 at Jabal Abu Mana, Egypt. One of the oldest well-preserved NT MSS. Contains most of John 1-21. Dating is debated (c. 200 AD to early/mid 4th C.). Does not contain the pericope of the adulteress (John 7:53-8:11). Uses Nomina Sacra & staurograms. Work of correctors debated. 39 folios, 14.2x16.2 cm. Published 1956. Housed at Bodmer Library. Contains: John 1:1-6:11, 6:35b-14:26, 29-30; 15:2-26; 16:2-4, 6-7; 16:10-20:20, 22-23; 20:25-21:9, 12, 17",
+    "texts": [
+      "John"
+    ],
+    "family": "Free",
+    "location": "Jabal Abu Mana, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 21,
+    "yearRange": [
+      200,
+      225
+    ]
+  },
+  {
+    "title": "Papyrus68",
+    "description": "Papyrus manuscript (Gr. 258B) found in Egypt, containing verses from 1 Corinthians chapters 4 and 5. Dated paleographically to the 7th century. Housed at Russian National Library. Contains: 1 Corinthians 4:12-17, 19-5:3",
+    "texts": [
+      "1 Corinthians"
+    ],
+    "family": "Mixed",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 60,
+    "yearRange": [
+      500,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus69",
+    "description": "Small papyrus fragment (P. Oxy 2383) found at Oxyrhynchus, Egypt, containing parts of Luke 22. Dated to the 3rd century. Measures 8.5 x 5 cm. Debated whether it witnesses Marcion's Gospel or canonical Luke due to omission of Luke 22:42–45a (Jesus' agony, angel, bloody sweat). Classified as very free. Contains: Luke 22:41, 45-48, 58-61",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Western",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus70",
+    "description": "Papyrus manuscript (P. Oxy. 2384 & PSI 3407) found in Egypt, containing verses from Matthew chapters 2, 3, 11, 12, and 24. Dated paleographically to the late 3rd century. Described as carelessly written but with a fairly reliable text. Contains: Matthew 11:26-27, 12:4-5",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus71",
+    "description": "Papyrus manuscript (P. Oxy. 2385) found in Egypt, containing verses from Matthew chapter 19. Dated paleographically to the 4th century. Housed at the Ashmolean Museum. Contains: Matthew 19:10-11, 17-18",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus72",
+    "description": "Papyrus codex (Papyrus Bodmer VII-VIII) containing the entirety of Jude, 1 Peter, and 2 Peter. Earliest known MS of these epistles in their entirety. Dated to 3rd/4th century. Part of the Bodmer Miscellaneous Codex bought by Martin Bodmer, originating from Egypt. Contains usual and some non-standard nomina sacra. P.Bodmer VIII (1-2 Peter) was donated to the Vatican. Text in 1-2 Peter is \"normal,\" Jude is \"free.\" Contains: 1 Peter; 2 Peter",
+    "texts": [
+      "1 Peter",
+      "2 Peter",
+      "Jude"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "yearRange": [
+      200,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus73",
+    "description": "Papyrus manuscript (P. Bodmer L) found in Egypt, containing verses from Matthew chapters 25 and 26. Dated paleographically to the 7th century. Housed at Bibliotheca Bodmeriana. Contains: Matthew 25:43, 26:2-3",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Byzantine",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 65,
+    "yearRange": [
+      600,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus74",
+    "description": "Papyrus manuscript (P. Bodmer XVII) found in Egypt, containing Acts and Catholic epistles (James, 1 & 2 Peter, 1, 2, & 3 John, Jude) with lacunae. Measures 33x21 cm. Dated paleographically to 7th C. (c. 600-700 CE). An important and excellent witness for Acts. Housed at Bibliotheca Bodmeriana. Contains: Acts 1:2-5, 7-11, 13-15, 18-19, 22-25, 2:2-4, 2:6-28:31, James, 1 Peter 1:1-2, 7-8, 13, 19-20, 25, 2:6-7, 11-12, 18, 24, 3:4-5, 2 Peter 2:21, 3:4, 11, 16, 1 John 1:1, 6, 2:1-2, 7, 13-14, 18-19, 25-26, 3:1-2, 8, 14, 19-20, 4:1, 6-7, 12, 16-17, 5:3-4, 9-10, 17, 2 John 1, 6-7, 13 3 John 6, 12, Jude 3, 7, 12, 18, 24",
+    "texts": [
+      "Acts",
+      "Catholic Epistles"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 65,
+    "yearRange": [
+      600,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus75",
+    "description": "Early papyrus codex (formerly P. Bodmer XIV–XV, now Hanna Papyrus 1) found in Pabau, Egypt. Contains Luke 3:18–24:53 and John 1:1–15:8. Measures 26x13 cm. Dated to the 3rd C. (175-225 CE) though this is debated. \"Most significant\" NT papyrus due to early date and close resemblance to Codex Vaticanus. Lacks Pericope of Adulteress. Uses staurograms. Originally ~144 pages, 102 survive. Luke ends and John begins on the same page. Housed at Vatican Library. Provenance: The codex was discovered in the 1950s and once belonged to the Swiss book collector Martin Bodmer (thus its original designation, P. Bodmer XIV–XV). It was sold in 2006 and donated to the Vatican Library, which now refers to the manuscript as \"Hanna Papyrus 1 (Mater Verbi)\". The history before its discovery is unknown, but it is generally agreed the codex was originally made and used in Egypt. Evidence for this comes from a piece of papyrus stuck to the back of the codex's leather case, on which there was Coptic writing. Its writing appearance and use of paragraphos to indicate a change of speaker, also points towards an Egyptian provenance.  Date: The codex was originally assigned palaeographically to 175–225 CE by Victor Martin and Rodolphe Kasser.  They compared the handwriting to manuscripts P.Oxy. XXI 2293, P.Oxy. XXII 2322, P.Oxy. XXIII 2362, P.Oxy. XXIII 2363, and P.Oxy. XXII 2370.  However, in 2016 Brent Nongbri pointed out that all of these manuscripts had themselves been dated by means of comparative handwriting analysis and thus were not useful for establishing a date for P75. Martin and Kasser also drew attention to two more objectively dated manuscripts (P.Flor. I 61 and P.FuadUniv. 19), but Nongbri pointed out that the scripts of these two pieces do not actually resemble the appearance of the script of P75. He argued that the closest dated comparisons for the script of P75 were P.Herm. 4 and 5, which are from a fourth-century archive. Nongbri also pointed out codicological features of P75 which accorded with manuscripts firmly dated to the fourth century. An alternative dating of 225–275 was suggested by Eric G. Turner, however he does not appear to have provided any palaeographical parallels for this dating.  It is currently dated by the INTF to 200–225 CE. The Leuven Database of Ancient Books, however, assigns P75 to a date of \"AD 275-325.\" Contains: Luke 3:18-4:2, 4:34-5:10, 5:37-18:18, 22:4-24:53, John 1:1-11:45, 48-57, 12:3-13:19, 14:8-15:10",
+    "texts": [
+      "Luke",
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Pabau, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 21,
+    "yearRange": [
+      200,
+      225
+    ]
+  },
+  {
+    "title": "Papyrus76",
+    "description": "Papyrus manuscript (Pap. Vindob. G. 36102) found in Egypt, containing John 4:9,12. Measures 13.8x11 cm. Dated paleographically to the 6th century. Housed at Österreichische Nationalbibliothek. Contains: John 4:9, 12",
+    "texts": [
+      "John"
+    ],
+    "family": "Mixed",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 55,
+    "yearRange": [
+      500,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus77",
+    "description": "Papyrus manuscript (P. Oxy. 2683 and 4405) found in Egypt, containing Matthew 23:30-39. Measures 4.6x7 cm. Dated paleographically from mid-2nd to early 3rd century (c. 150-225 CE). Possibly from the same codex as 𝔓103. Closest affinity with Codex Sinaiticus. Housed at Sackler Library. Contains: Matthew 23:30-39",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 20,
+    "yearRange": [
+      100,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus78",
+    "description": "Papyrus manuscript (P. Oxy. XXXVI 2684) found in Egypt, containing Jude verses 4-5 & 7-8. Written in an elegant hand. Dated paleographically to the 3rd or 4th century (c. 200-400 CE). Displays a free text with several textual variants. Housed at Sackler Library. Contains: Jude 4-5, 7-8",
+    "texts": [
+      "Jude"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "yearRange": [
+      200,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus79",
+    "description": "Papyrus manuscript (Inv. no. 6774) found in Egypt, containing Hebrews 10:10-12,28-30. Measures 2.9x5.3 cm. Dated paleographically to the 7th century. Text was not corrected; letters have Coptic shape. Housed at Staatliche Museen zu Berlin. Contains: Hebrews 10:10-12, 28-30",
+    "texts": [
+      "Hebrews"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 65,
+    "yearRange": [
+      600,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus80",
+    "description": "Papyrus manuscript (Inv. no. 83) found in Egypt. Measures 10.4x10.6 cm. Dated paleographically to the 3rd century. Text too brief to determine character definitively, but probably Alexandrian. Housed at Fundación Sant Lluc Evangelista, Barcelona. Contains: John 3:34",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus81",
+    "description": "Papyrus manuscript (No. 20) found in Egypt. Measures 22x12.5 cm. Dated paleographically to the 4th century. Housed at the Property S. Daris, Trieste. Probably Alexandrian text-type. Contains: 1 Peter 2:20-3:1, 4-12",
+    "texts": [
+      "1 Peter"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus82",
+    "description": "Papyrus manuscript (P. Gr. 2677) found in Egypt. Measures 6.6x3.2 cm. Dated paleographically to the 4th/5th century. Housed at Bibliothèque nationale et universitaire, Strasbourg. Probably Alexandrian. Contains: Luke 7:32-34, 37-38",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 40,
+    "yearRange": [
+      300,
+      500
+    ]
+  },
+  {
+    "title": "Papyrus83",
+    "description": "Papyrus manuscript (P. A. M. Khirbet Mird 16, 29) found at Khirbet Mird (Judean desert), containing Matthew 20:23-25,30-31; 23:39-24:1,6. Measures 28x21.5 cm. Dated paleographically to 6th C. One of few NT papyri recovered outside Egypt. Housed at Katholieke Universiteit Leuven Library. Contains: Matthew 20:23-25, 30-31, 23:39-24:1, 6",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Mixed",
+    "location": "Khirbet Mird",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 55,
+    "yearRange": [
+      500,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus84",
+    "description": "Papyrus manuscript (P. A. M. Khirbet Mird, Greek 1–3) found in Egypt, containing verses from Mark (2:2-5,8-9; 6:30-31,33-34,36-37,39-41) and John (5:5; 17:3,7-8). Dated paleographically to the 6th century (c. 500-600 CE). Housed at Katholieke Universiteit Leuven Library. Text probably mixed with strong Byzantine element. Contains: Mark 2:2-5, 8-9, 6:30-31, 33-34, 36-37, 39-41; John 5:5, 17:3, 7-8",
+    "texts": [
+      "Mark",
+      "John"
+    ],
+    "family": "Mixed",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 55,
+    "yearRange": [
+      500,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus85",
+    "description": "Papyrus manuscript (P. Gr. 1028) found in Egypt, containing parts of Revelation. Dated paleographically to the 4th or 5th century. Housed at Bibliothèque nationale et universitaire, Strasbourg. Contains: Revelation 9:19-10:1, 5-9",
+    "texts": [
+      "Revelation"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 40,
+    "yearRange": [
+      300,
+      500
+    ]
+  },
+  {
+    "title": "Papyrus86",
+    "description": "Papyrus manuscript (P. Col. theol. 5516) found in Egypt, containing parts of Matthew chapter 5. Dated paleographically to the 4th century. Housed at the University of Cologne. Text has some alien readings. Contains: Matthew 5:13-16, 22-25",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus87",
+    "description": "The earliest known papyrus manuscript of Philemon, (P. Col. theol. 12). Dated paleographically to early 3rd C. (or late 2nd C.). Housed at the University of Cologne. Described as \"Normal text\". Contains: Philemon 13-15, 24-25",
+    "texts": [
+      "Philemon"
+    ],
+    "family": "Alexandrian",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus88",
+    "description": "Single leaf papyrus manuscript (P. Med. Inv. no. 69.24) found in Egypt, containing parts of Mark chapter 2. Dated paleographically to the 4th century. Don Barker suggests a wider date range (late 2nd to end of 4th C.). Housed at Università Cattolica del Sacro Cuore, Milan. Contains: Mark 2:1-26",
+    "texts": [
+      "Mark"
+    ],
+    "family": "Mixed",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus89",
+    "description": "Papyrus manuscript (PL III/292) found in Egypt, containing parts of Hebrews chapter 6. Dated paleographically to the 4th century. Text too brief for classification. Housed at Laurentian Library, Florence. Contains: Hebrews 6:7-9, 15-17",
+    "texts": [
+      "Hebrews"
+    ],
+    "family": "Unknown",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus90",
+    "description": "Small papyrus fragment from a codex (P. Oxy L 3523) found at Oxyrhynchus, Egypt, containing John 18:36-19:7. Measures 16x12 cm. Dated paleographically to the late 2nd century CE (c. 150-200). Has close textual affinity with 𝔓66 and some with Codex Sinaiticus. Housed at Sackler Library, Oxford. Contains: John 18:36-19:1; 19:1-7",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 15,
+    "yearRange": [
+      100,
+      200
+    ]
+  },
+  {
+    "title": "Papyrus91",
+    "description": "Papyrus manuscript (P. Mil. Vogl. Inv. 1224 & Macquarie Inv. 360) of Acts. Contains verses from chapters 2 and 3. Measures 16x12 cm. Dated paleographically to mid-3rd C. Comfort ascribed it as proto-Alexandrian (fragmentary). Housed at Universita Degli Studi di Milano and Macquarie University. Contains: Acts 2:30-37, 2:46-3:2",
+    "texts": [
+      "Acts"
+    ],
+    "family": "Alexandrian",
+    "location": "Provenance unknown",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus92",
+    "description": "Papyrus manuscript (PNarmuthis 69.39a/229a) found at Faiyum, Egypt. Contains Ephesians 1 and 2 Thessalonians 1. Measures 14.5x21.5 cm; 27 lines/page. Dated c. 300 CE. Shows strong affinity with 𝔓46, Sinaiticus, Vaticanus. Housed at Egyptian Museum, Cairo. Contains: Ephesians 1:11-13, 19-21; 2 Thessalonians 1:4-5, 11-12",
+    "texts": [
+      "Ephesians",
+      "2 Thess"
+    ],
+    "family": "Alexandrian",
+    "location": "Faiyum, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "yearRange": [
+      200,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus93",
+    "description": "Papyrus manuscript (PSI Inv. 108) of John, containing verses 13:15-17. Dated paleographically to mid-5th C. Housed at Girolamo Vitelli Papyrological Institute, National Archaeological Museum, Florence. Not yet placed in Aland's Categories. Contains: John 13:15-17",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Unknown",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 45,
+    "yearRange": [
+      400,
+      500
+    ]
+  },
+  {
+    "title": "Papyrus94",
+    "description": "Papyrus fragments (P. Cair. 10730) of Romans chapter 6. Dated paleographically to the 5th/6th C. Not yet placed in Aland's Categories. Housed at the Egyptian Museum, Cairo. Contains: Romans 6:10-13, 19-22",
+    "texts": [
+      "Romans"
+    ],
+    "family": "Alexandrian",
+    "location": "Unknown",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 50,
+    "yearRange": [
+      400,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus95",
+    "description": "Papyrus manuscript (PL II/31) of John in fragmentary condition, containing verses from chapter 5. Writing is 35 lines/page. Dated paleographically to early 3rd C. Comfort describes it as proto-Alexandrian (fragmentary). Housed at Biblioteca Medicea Laurenziana, Florence. Not yet placed in Aland's Categories. Contains: John 5:26-29, 36-38",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Unknown",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
     ]
   },
   {
     "title": "Papyrus96",
-    "description": "Papyrus96 features sections of the Gospel of John, dated to the 6th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-210",
-    "eventType": "Papyrus",
-    "percentage": 55,
-    "year": 550
-  },
-  {
-    "title": "Papyrus33",
-    "description": "Papyrus33 contains text from the Gospel of John, dated to the 6th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-150",
-    "eventType": "Papyrus",
-    "percentage": 55,
-    "year": 550
-  },
-  {
-    "title": "Papyrus136",
-    "description": "Papyrus136 includes fragments of the Gospel of John, dated to the 6th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-120",
-    "eventType": "Papyrus",
-    "percentage": 55,
-    "year": 550
-  },
-  {
-    "title": "Papyrus84",
-    "description": "Papyrus84 features sections of the Gospel of John, paleographically dated to the 6th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-60",
-    "eventType": "Papyrus",
-    "percentage": 55,
-    "year": 550
-  },
-  {
-    "title": "Papyrus11",
-    "description": "Papyrus11 includes fragments of the Gospel of Luke, dated to the 6th century based on handwriting analysis.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "60",
-    "eventType": "Papyrus",
-    "percentage": 55,
-    "year": 550
-  },
-  {
-    "title": "Papyrus76",
-    "description": "Papyrus76 includes fragments of the Gospel of Luke, dated to the 6th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "90",
-    "eventType": "Papyrus",
-    "percentage": 55,
-    "year": 550
-  },
-  {
-    "title": "Papyrus36",
-    "description": "Papyrus36 contains text from the Gospel of John, dated to the 6th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "120",
-    "eventType": "Papyrus",
-    "percentage": 55,
-    "year": 550
-  },
-  {
-    "title": "Papyrus124",
-    "description": "Papyrus124 includes fragments of the Gospel of Luke, dated to the 6th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "150",
-    "eventType": "Papyrus",
-    "percentage": 55,
-    "year": 550
-  },
-  {
-    "title": "Papyrus56",
-    "description": "Papyrus56 includes fragments of the Gospel of John, dated to the 6th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "180",
-    "eventType": "Papyrus",
-    "percentage": 55,
-    "year": 550
-  },
-  {
-    "title": "Papyrus83",
-    "description": "Papyrus83 contains text from the Gospel of Luke, dated to the 6th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "210",
-    "eventType": "Papyrus",
-    "percentage": 55,
-    "year": 550
-  },
-  {
-    "title": "Papyrus44",
-    "description": "Papyrus44 includes fragments of the Gospel of John, dated to the 7th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-90",
-    "eventType": "Papyrus",
-    "percentage": 60,
-    "year": 600
-  },
-  {
-    "title": "Papyrus116",
-    "description": "Papyrus116 features text from the Gospel of Matthew, dated paleographically to the 7th century.",
+    "description": "Diglot (Greek-Coptic) papyrus manuscript (Pap. K. 7244) of Matthew. The surviving texts of Matthew are verses 3:10-12 (Coptic), 3:13-15 (Greek). Dated to 6th C. Text too fragmentary for certainty, but probably Alexandrian. Not assigned to Aland's Categories. Housed at Österreichische Nationalbibliothek, Vienna. Contains: Matthew 3:10-12",
     "texts": [
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-60",
+    "location": "Unknown",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 60,
-    "year": 600
-  },
-  {
-    "title": "Papyrus43",
-    "description": "Papyrus43 features sections of the Gospel of Luke, dated to the 7th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-30",
-    "eventType": "Papyrus",
-    "percentage": 60,
-    "year": 600
+    "percentage": 55,
+    "yearRange": [
+      500,
+      600
+    ]
   },
   {
     "title": "Papyrus97",
-    "description": "Papyrus97 includes fragments of the Gospel of Luke, dated paleographically to the 7th century.",
+    "description": "Papyrus manuscript (P. Chester Beatty XVII) of Luke in fragmentary condition, containing verses from chapter 14. Dated paleographically to 6th/7th C. (ca. 600 CE). Not placed in Aland's Categories. Housed at Chester Beatty Library, Dublin. Contains: Luke 14:7-14",
     "texts": [
       "Luke"
     ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "0",
+    "family": "Alexandrian",
+    "location": "Unknown",
+    "y": "",
     "eventType": "Papyrus",
     "percentage": 60,
-    "year": 600
+    "yearRange": [
+      500,
+      700
+    ]
   },
   {
-    "title": "Papyrus55",
-    "description": "Papyrus55 features sections of the Gospel of Luke, dated to the 7th century.",
+    "title": "Papyrus98",
+    "description": "Papyrus scroll fragment (P. IFAO inv. 237b [+a]). On one side of the leaf, (the verso) is the biblical text, dated to the end of the 2nd century. On the other side, (the recto) is another documentary text dated to the end of the 1st century or the beginning of the 2nd century. Measures 15x16 cm. Script is well-formed and large. The first publisher was Wagner in 1971, who did not know that it was a biblical text. Hagedorn discovered that it was the text of Revelation. Housed at French Institute of Oriental Archeology, Cairo. Contains: Revelation 1:13-20",
+    "texts": [
+      "Revelation"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 20,
+    "yearRange": [
+      150,
+      250
+    ]
+  },
+  {
+    "title": "Papyrus99",
+    "description": "Four papyrus leaves (P. Chester Beatty 1499, fol 11–14) with Greek-Latin quotations (single words/phrases) from Pauline epistles (Romans, 2 Corinthians, Galatians, Ephesians). Dated ca. 400 CE. Measures 16.8x13.6 cm. Possibly a glossary or school exercise. Also contains Latin lexicon & Greek grammar. Housed at Chester Beatty Library, Dublin. Contains: Glossary, words and phrases from: Romans 1:1; 2 Corinthians 1:3-17, 20-24, 2:1-8:22; 9:2-11:23, 26-13:11; Galatians 1:4-11, 18-6:15, 1:14-4:9 and Ephesians 1:4-2:21, 3:8-6:24",
+    "texts": [
+      "Romans",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians"
+    ],
+    "family": "Unknown",
+    "location": "Unknown",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 41,
+    "yearRange": [
+      400,
+      425
+    ]
+  },
+  {
+    "title": "Papyrus100",
+    "description": "Papyrus manuscript (P. Oxy. LXV 4449) of James in fragmentary condition, found at Oxyrhynchus, Egypt. Measures 19x7.5 cm. Dated paleographically to late 3rd/early 4th C. Generally concurs with Alexandrian witnesses (𝔓74, א, A, B). Housed at Ashmolean Museum. Contains: James 3:13-4:4, 4:9-5:1",
+    "texts": [
+      "James"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "yearRange": [
+      200,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus101",
+    "description": "Papyrus manuscript (P. Oxy. 4401) of Matthew, found at Oxyrhynchus, Egypt. Measures 19x7.5 cm. Dated paleographically to the 3rd century. Housed at Sackler Library. Contains: Matthew 3:10-12, 16-4:3",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus102",
+    "description": "Papyrus manuscript (P. Oxy. 4402) of Matthew, found at Oxyrhynchus, Egypt. Dated paleographically to the 3rd century. Housed at Sackler Library. Contains: Matthew 4:11-12, 22-23",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "yearRange": [
+      200,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus103",
+    "description": "Papyrus manuscript (P. Oxy. 4403) of Matthew, found at Oxyrhynchus, Egypt. Dated paleographically to late 2nd/early 3rd C (c. 150-235 CE). Probably belonged to the same codex as 𝔓77. Housed at Sackler Library. Contains: Matthew 13:55-56-14:3-5",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 20,
+    "yearRange": [
+      100,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus104",
+    "description": "Papyrus codex fragment (P.Oxy.LXIV 4404) found in Egypt, one of the earliest Matthew texts. Contains Matthew 21. Measures 6.35x9.5 cm. Dated early to late 2nd C. (100-200 CE). Scribe used rough breathings. Notable for omitting Matthew 21:44, an early witness to this Western non-interpolation. Conserved at Bodleian Art Library, Oxford. Contains: Matthew 21:34-37, 43-45?",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Western",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 15,
+    "yearRange": [
+      100,
+      200
+    ]
+  },
+  {
+    "title": "Papyrus105",
+    "description": "Papyrus manuscript (P. Oxy. 4406) of Matthew, found at Oxyrhynchus, Egypt. Contains verses from chapters 27 and 28 in fragmentary condition. Dated paleographically to 5th/6th C. Housed at Sackler Library. Contains: Matthew 27:62-64, 28:2-5",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 50,
+    "yearRange": [
+      400,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus106",
+    "description": "Fragmentary papyrus manuscript (P. Oxy. 4445) of John, found at Oxyrhynchus, Egypt. Contains verses from chapter 1. Original size ~12.5x23 cm, ~35 lines/page. Dated paleographically to early 3rd C. Pagination (Γ/Δ) indicates it was a codex of John or John at the beginning of a collection. Housed at Sackler Library. Contains: John 1:29-35, 40-46",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus107",
+    "description": "Papyrus manuscript (P. Oxy. LXV 4446) of John, found at Oxyrhynchus, Egypt. In fragmentary condition. Measures 13x8.8 cm. Original had ~33 lines/page. Dated paleographically to early 3rd C. Script is documentary/common. Text is erratic, most resembling Codex Washingtonianus (W). Housed at Sackler Library. Contains: John 17:1-2, 11",
+    "texts": [
+      "John"
+    ],
+    "family": "Unknown",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus108",
+    "description": "Papyrus manuscript (P. Oxy. 4447) of John, found at Oxyrhynchus, Egypt. In fragmentary condition. Measures 10.5x6.2 cm. Original ~14.5x18.5 cm, 23 lines/page. Dated paleographically to late 2nd/early 3rd C. Script is reformed Documentary. Concurs with Codex Sinaiticus. Housed at Sackler Library. Contains: John 17:23-24, 18:1-5",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus109",
+    "description": "Papyrus manuscript (P. Oxy. 4448) of John, found at Oxyrhynchus, Egypt. In fragmentary condition. Measures 7.9x4.1 cm. Original ~12x24 cm, 26 lines/page. Dated by INTF to early 3rd C. CE; Comfort dates mid-late 2nd C. CE. Script is reformed Documentary. Housed at Sackler Library. Contains: John 21:18-20, 23-25",
+    "texts": [
+      "John"
+    ],
+    "family": "Unknown",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus110",
+    "description": "Papyrus manuscript codex fragment (P. Oxy. 4494) of Matthew, found at Oxyrhynchus, Egypt. Contains verses from chapter 10. Original size ~12x22 cm, 40-43 lines/page. Dated by INTF to early 4th C. CE; Comfort dates middle-late 3rd C. CE. Script is Reformed Documentary/Professional (Severe Style). Has unique readings. Housed at Sackler Library. Contains: Matthew 10:13-15, 25-27",
+    "texts": [
+      "Matthew"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus111",
+    "description": "Papyrus manuscript (P. Oxy. 4495) of Luke, found at Oxyrhynchus, Egypt. Contains verses from chapter 17 in fragmentary condition. Estimated ~21-22 lines/page. Dated by INTF to 3rd C. CE; Comfort dates first half of 3rd C. CE. Extant text conforms with 𝔓75. Script is Documentary style. Housed at Sackler Library. Contains: Luke 17:11-13, 22-23",
     "texts": [
       "Luke"
     ],
-    "family": "Byzantine",
+    "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "30",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus112",
+    "description": "Papyrus manuscript fragment (P. Oxy. 4496) of Acts, found at Oxyrhynchus, Egypt. Contains parts of chapters 26 and 27. Written in uniform uncials, no diacritics or word spacing. Uses Nomen Sacrum (ὁ ἄνος for ὁ ἄνθρωπος). Dated by INTF to 5th C. Has some unique textual variants and omissions. Housed at Sackler Library. Contains: Acts 26:31-32, 27:6-7",
+    "texts": [
+      "Acts"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 45,
+    "yearRange": [
+      400,
+      500
+    ]
+  },
+  {
+    "title": "Papyrus113",
+    "description": "Papyrus manuscript fragment (P. Oxy. 4497) of Romans, found at Oxyrhynchus, Egypt. Contains parts of chapter 2. Dated by INTF to 3rd C.; Comfort dates first half of 3rd C. Word-spacing suggests Alexandrian omission of 'του' in v. 13. Housed at Sackler Library. Contains: Romans 2:12-13, 29",
+    "texts": [
+      "Romans"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus114",
+    "description": "Papyrus manuscript (P. Oxy. 4498) of Hebrews, found at Oxyrhynchus, Egypt. Contains verses from chapter 1 in fragmentary condition. Original ~15x25cm, 27 lines/page. Dated by INTF to 3rd C. CE; Comfort dates middle-late 3rd C. CE. Script is Reformed Documentary. Text too small to determine character. Housed at Sackler Library. Contains: Hebrews 1:7-12",
+    "texts": [
+      "Hebrews"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus115",
+    "description": "Fragmented papyrus codex (P. Oxy. 4499) of Revelation, discovered by Grenfell & Hunt at Oxyrhynchus, Egypt. Consists of 26 fragments. Dated c. 225-275 AD. Original size ~15.5x22cm, 33-36 lines/page. Contains parts of Rev 2-3, 5-6, 8-15. Notable for giving the number of the beast as 616 (ΧΙϚ) or possibly [χξϛ] η χιϛ (666 or 616). Uses nomina sacra. Deciphered/published 2011. Housed at Ashmolean Museum. Contains: Revelation 2:1-3, 13-15, 27-29, 3:10-12, 5:8-9, 6:4-6, 8:3-8, 8:11-9:5, 9:7-16, 9:18-10:4, 8, 11:5, 8-15, 11:18-12:6, 9-10, 12-17, 13:1-3, 6-12, 13-16, 17-14:3, 5-7, 10-11, 14-16, 14:18-15:1, 5-7",
+    "texts": [
+      "Revelation"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 24,
+    "yearRange": [
+      200,
+      275
+    ]
+  },
+  {
+    "title": "Papyrus116",
+    "description": "Papyrus manuscript (P. Vindob. G 42417) of Hebrews. Contains verses from chapters 2 and 3 in fragmentary condition. Dated by INTF to 6th/7th C. Text edited by A. Papathomas (2000). Text too small to determine character. Housed at Austrian National Library, Vienna. Contains: Hebrews 2:9-11, 3:3-6",
+    "texts": [
+      "Hebrews"
+    ],
+    "family": "Unknown",
+    "location": "Unknown",
+    "y": "",
     "eventType": "Papyrus",
     "percentage": 60,
-    "year": 600
+    "yearRange": [
+      500,
+      700
+    ]
+  },
+  {
+    "title": "Papyrus117",
+    "description": "Papyrus manuscript of 2 Corinthians. Contains verses from chapter 7 in fragmentary condition. Written one column/page, 11 lines/page. Measures 15x11 cm. Dated by INTF to 4th/5th C. Housed at University of Hamburg. Contains: 2 Corinthians 7:6-11",
+    "texts": [
+      "2 Corinthians"
+    ],
+    "family": "Unknown",
+    "location": "Unknown",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 40,
+    "yearRange": [
+      300,
+      500
+    ]
+  },
+  {
+    "title": "Papyrus118",
+    "description": "Small papyrus codex manuscript (Inv. No. 10311) of Romans. Contains verses from chapters 15 and 16 in fragmentary condition. Measures 29x26 cm. Written two columns/page. Dated by INTF to 3rd C. CE. Text runs directly from Rom 15:33 to 16:1 (unlike 𝔓46). Text too small to determine character. The early history of the manuscript is unknown., now housed at University of Cologne. Contains: Romans 15:26-27, 32-33, 16:1, 4-7, 11-12",
+    "texts": [
+      "Romans"
+    ],
+    "family": "Unknown",
+    "location": "Unknown",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus119",
+    "description": "Papyrus manuscript (P. Oxy. 4803) of John, found at Oxyrhynchus, Egypt. Contains verses from chapter 1 in fragmentary condition. One column/page, 16 lines/page (40 reconstructed). Dated paleographically by INTF to early 3rd C. Housed at Ashmolean Museum. Contains: John 1:21-28, 38-44",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus120",
+    "description": "Papyrus codex manuscript (P.Oxy. LXXI 4804) of John, found at Oxyrhynchus, Egypt. Three fragments from one leaf survive, containing verses from chapter 1. Original codex size ~11x20.5cm, ~95 pages. One column/page, 27 lines/page, 27-28 letters/line. Dated by INTF to 4th C. CE. Script is Biblical Majuscule. Housed at Sackler Library. Contains: John 1:25-28, 33-38, 42-44",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus121",
+    "description": "Papyrus manuscript (P. Oxy. LXXI 4805) of John, found at Oxyrhynchus, Egypt. Contains verses from chapter 19 in fragmentary condition. Dated by INTF to 3rd C. Text very small. Writing irregular, uses nomina sacra (ΙΣ, ΜΗΙ) and diaeresis. Has possible scribal error (και to κα). Housed at Sackler Library. Contains: John 19:17-18, 25-26",
+    "texts": [
+      "John"
+    ],
+    "family": "Unknown",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus122",
+    "description": "Papyrus codex manuscript (P.Oxy. LXXI 4806) of John, found at Oxyrhynchus, Egypt. Two fragments from one leaf survive, containing verses from chapter 21. Original codex ~10x24cm writing area, ~32 leaves. Dated by INTF to 4th/5th C. CE. Published 2007. Written by inexperienced scribe in \"poor attempt at 'Biblical Uncial'\". Uses nomina sacra (ΙΗΣ for Jesus) and Greek numerals (ΡΝΓ for 153). Housed at Sackler Library. Contains: John 21:11-14.22-24",
+    "texts": [
+      "John"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 40,
+    "yearRange": [
+      300,
+      500
+    ]
+  },
+  {
+    "title": "Papyrus123",
+    "description": "Papyrus manuscript (P. Oxy. 4844) of 1 Corinthians, found at Oxyrhynchus, Egypt. Fragments from one leaf survive, containing verses from chapters 14 and 15. Measures 7.5x6.5 cm. Dated paleographically by INTF to 4th C. Published by J. David Thomas (2008). Housed at Sackler Library. Contains: 1 Corinthians 14:31-34, -15:3-6",
+    "texts": [
+      "1 Corinthians"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus124",
+    "description": "Papyrus manuscript (P. Oxy. 4845) of 2 Corinthians, found at Oxyrhynchus, Egypt. Fragments from one leaf survive, containing verses from chapter 11. Measures 14.5x13.5 cm. One column/page, 14 lines/page. Dated paleographically by INTF to 6th C. Published by J. David Thomas (2008). Housed at Sackler Library. Contains: 2 Corinthians 11:1-4, 6-9",
+    "texts": [
+      "2 Corinthians"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 55,
+    "yearRange": [
+      500,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus125",
+    "description": "Papyrus codex manuscript (P. Oxy. 4934) of 1 Peter, found at Oxyrhynchus, Egypt. Fragments from one leaf survive. Contains verses from chapters 1 and 2. One column/page, 30 lines/page. Measures 15x8.5 cm. Dated by INTF to 3rd/4th C. Published by Dirk Obbink (2009). Housed at Sackler Library. Contains: 1 Peter 1:23-2:5; 2:7-12",
+    "texts": [
+      "1 Peter"
+    ],
+    "family": "Alexandrian (?)",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 30,
+    "yearRange": [
+      200,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus126",
+    "description": "Papyrus manuscript (PSI inv. 1479) of Hebrews. Fragment from one leaf survives, containing verses from chapter 13. Original size 30x16 cm, fragment 3.7x9.1 cm. One column/page, originally 20 lines/page. Dated by INTF to 4th C. Announced 2003, published 2008. Contains unique reading in Heb 13:12. Housed at Istituto Papirologico \"G. Vitelli\", Florence. Contains: Hebrews 13:12-13.19-20",
+    "texts": [
+      "Hebrews"
+    ],
+    "family": "Unknown",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus127",
+    "description": "Papyrus manuscript (P. Oxy. 4968) of Acts. Contains verses from chapters 10-12, 15-17 in fragmentary condition. Written two columns/page, 22-26 lines/page. Original size 16.5x21.5 cm. Dated paleographically by INTF to 5th C. Contains Acts 15:34. Housed at Sackler Library. Contains: Acts 10:32-35, 40-45, 11:2-5, 11:30-12:3, 5, 7-9, 15:29-30, 34-41, 16:1-4, 13-40, 17:1-10",
+    "texts": [
+      "Acts"
+    ],
+    "family": "Unknown",
+    "location": "Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 45,
+    "yearRange": [
+      400,
+      500
+    ]
   },
   {
     "title": "Papyrus128",
-    "description": "Papyrus128 contains text from the Gospel of John, dated paleographically to the 7th century.",
+    "description": "Papyrus manuscript of John, containing verses from chapters 9 and 12. Dated paleographically to 6th/7th C. CE. Found at the Monastery of Saint Epiphanius, Egypt. Formerly listed as part of 𝔓44. Housed at Metropolitan Museum of Art (Inv. 14. 1. 527), New York. Contains: John 9:3-4, 12:16-18[92]",
     "texts": [
       "John"
     ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "60",
+    "family": "Unknown",
+    "location": "Monastery of Saint Epiphanius, Egypt",
+    "y": "",
     "eventType": "Papyrus",
     "percentage": 60,
-    "year": 600
+    "yearRange": [
+      500,
+      700
+    ]
   },
   {
-    "title": "Papyrus3",
-    "description": "Papyrus3 features excerpts from the Gospel of Luke. Paleographic dating suggests it originates from the 6th century.",
+    "title": "Papyrus129",
+    "description": "Two papyrus codex fragments of 1 Corinthians, containing verses from chapters 7, 8, 9, and 10. Dated to mid-2nd C. AD. Fragments were previously held at Museum of the Bible and Stimer Collection (California) but were claimed by Egypt Exploration Society (EES) as removed without authorization. Both returned to EES and now at Sackler Library, Oxford. Contains: 1 Corinthians 7:34-37; 8:10-9:3; 9:27-10:6",
     "texts": [
-      "Luke"
+      "1 Corinthians"
     ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "90",
+    "family": "Unknown",
+    "location": "Egypt",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 60,
-    "year": 600
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
   },
   {
-    "title": "Papyrus68",
-    "description": "Papyrus68 contains text from the Gospel of Matthew, paleographically dated to the 7th century.",
+    "title": "Papyrus130",
+    "description": "More recent discovery, provenance not entirely clear, and little information online. Contains: Hebrews 9:9-12, 19-23[92]",
     "texts": [
-      "Matthew"
+      "Hebrews"
     ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "120",
+    "family": "Unknown",
+    "location": "Unknown",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 60,
-    "year": 600
+    "percentage": 30,
+    "yearRange": [
+      200,
+      400
+    ]
   },
   {
-    "title": "Papyrus26",
-    "description": "Papyrus26 includes fragments of the Gospel of Luke, dated to the 7th century.",
+    "title": "Papyrus131",
+    "description": "More recent discovery, provenance not entirely clear, and little information online. Contains: Romans 9:18-23, 10:3-4, 33-10:2",
     "texts": [
-      "Luke"
+      "Romans"
     ],
-    "family": "Alexandrian",
+    "family": "Unknown",
     "location": "Oxyrhynchus, Egypt",
-    "y": "0",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 62,
-    "year": 615
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
   },
   {
-    "title": "Papyrus73",
-    "description": "Papyrus73 includes fragments of the Gospel of Luke, dated to the 7th century.",
+    "title": "Papyrus132",
+    "description": "Papyrus manuscript (P. Oxy. 81 5258) of Ephesians, found at Oxyrhynchus. Single fragment with parts of chapters 3 and 4. Measures 20x13.5 cm. Dated paleographically to 3rd/4th C. The text is very fragmented, but several textual variants can nonetheless be identified by reconstructing the text in comparison with other ancient manuscripts of Ephesians, and by utilizing letter-spacing to identify character sequences which are likely missing. Housed at Sackler Library. Contains: Ephesians 3:21-4:2, 14-16",
     "texts": [
-      "Luke"
+      "Ephesians"
     ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-90",
+    "family": "Mixed",
+    "location": "Oxyrhynchus",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 65,
-    "year": 650
+    "percentage": 30,
+    "yearRange": [
+      200,
+      400
+    ]
   },
   {
-    "title": "Papyrus31",
-    "description": "Papyrus31 features sections of the Gospel of John, dated to the 7th century.",
+    "title": "Papyrus133",
+    "description": "Papyrus manuscript (P. Oxy. 81 5259) of 1 Timothy, found at Oxyrhynchus. Several fragments of a single leaf survive, containing parts of chapters 3 and 4. Measures 16.3x4.5 in (stated as 27x13 cm in info box). Dated paleographically to middle of 3rd C. Housed at Sackler Library. Contains: 1 Timothy 3:13-4:8",
     "texts": [
-      "John"
+      "1 Timothy"
     ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-60",
+    "family": "Mixed",
+    "location": "Oxyrhynchus",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 65,
-    "year": 650
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
   },
   {
-    "title": "Papyrus60",
-    "description": "Papyrus60 includes fragments of the Gospel of John, dated to the 7th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "-30",
-    "eventType": "Papyrus",
-    "percentage": 65,
-    "year": 650
-  },
-  {
-    "title": "Papyrus74",
-    "description": "Papyrus74 contains text from the Gospel of John, dated to the 7th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
-    "eventType": "Papyrus",
-    "percentage": 65,
-    "year": 650
-  },
-  {
-    "title": "Papyrus34",
-    "description": "Papyrus34 features sections of the Gospel of Luke, dated to the 7th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "60",
-    "eventType": "Papyrus",
-    "percentage": 65,
-    "year": 650
-  },
-  {
-    "title": "Papyrus59",
-    "description": "Papyrus59 features sections of the Gospel of Luke, dated to the 7th century.",
-    "texts": [
-      "Luke"
-    ],
-    "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "90",
-    "eventType": "Papyrus",
-    "percentage": 65,
-    "year": 650
-  },
-  {
-    "title": "Papyrus79",
-    "description": "Papyrus79 includes fragments of the Gospel of John, dated to the 7th century.",
-    "texts": [
-      "John"
-    ],
-    "family": "Byzantine",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "120",
-    "eventType": "Papyrus",
-    "percentage": 65,
-    "year": 650
-  },
-  {
-    "title": "Papyrus42",
-    "description": "Papyrus42 contains text from the Gospel of John, paleographically dated to the 7th century.",
+    "title": "Papyrus134",
+    "description": "Willoughby Papyrus. Papyrus scroll fragment of John. Contains verses from chapters 1 and 2. Dated paleographically to 3rd/4th C. (c. 200-400 CE). Purchased on antiquities market by Harold R. Willoughby before 1962; sold on eBay 2015, acquired by University of Texas. First NT continuous text found on the back of a scroll (recto has unidentified Christian text). Housed at Harry Ransom Center, Austin. Contains: John 1:49-2:1",
     "texts": [
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
-    "y": "30",
+    "location": "Antiquities Market (purchased)",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 70,
-    "year": 700
+    "percentage": 30,
+    "yearRange": [
+      200,
+      400
+    ]
   },
   {
-    "title": "Papyrus61",
-    "description": "Papyrus61 contains text from the Gospel of Matthew, paleographically dated to the early 8th century.",
+    "title": "Papyrus135",
+    "description": "Papyrus fragment (P.Oxy. 5343) of Galatians, found at Oxyrhynchus, Egypt. Dated 4th/5th C. More recent publication. Not much info readily online. Contains: Galatians 3:21-22, 28-29, 4:31-5:6, 10-15",
     "texts": [
-      "Matthew"
+      "Galatians"
     ],
     "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "0",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 72,
-    "year": 717
+    "percentage": 40,
+    "yearRange": [
+      300,
+      500
+    ]
   },
   {
-    "title": "Papyrus41",
-    "description": "Papyrus41 includes fragments of the Gospel of Luke, dated to the 8th century.",
+    "title": "Papyrus136",
+    "description": "Papyrus rotulus fragment (P. Duke Inv. 1377) of Acts. Contains verses from chapters 4 (recto) and 7 (verso, upside-down relative to recto). Dated paleographically to 6th C. Housed at David M. Rubenstein Library, Duke University. Textual variants noted in Acts 4 and 7. Abbreviates 'forty' as overlined μ. Contains: Acts 4:27-31; 7:26-30",
+    "texts": [
+      "Acts"
+    ],
+    "family": "Alexandrian",
+    "location": "Antiquities Market (purchased)",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 55,
+    "yearRange": [
+      500,
+      600
+    ]
+  },
+  {
+    "title": "Papyrus137",
+    "description": "Papyrus codex fragment (P.Oxy. LXXXIII 5345) of Mark, the earliest surviving MS of this gospel. Contains verses from chapter 1. Measures 4.4x4.0 cm. Excavated by Grenfell & Hunt at Oxyrhynchus (likely 1903). Dated late 2nd/early 3rd C. (c. 150-250 CE). Published 2018. Subject of \"First-Century Mark\" rumors (2012 onwards), which were later clarified by EES regarding its actual identification and provenance. Housed at Sackler Library. Contains: Mark 1:7-9, 16-18",
+    "texts": [
+      "Mark"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 20,
+    "yearRange": [
+      150,
+      250
+    ]
+  },
+  {
+    "title": "Papyrus138",
+    "description": "Papyrus manuscript (P. Oxy 5346) of Luke, found at Oxyrhynchus. Fragments from one edge of a single leaf survive, containing parts of chapter 13. Dated paleographically to 3rd C. Housed at Sackler Library. Contains: Luke 13:13–17, 25–30",
     "texts": [
       "Luke"
     ],
-    "family": "Byzantine",
+    "family": "Alexandrian",
     "location": "Oxyrhynchus, Egypt",
-    "y": "150",
+    "y": "",
     "eventType": "Papyrus",
-    "percentage": 75,
-    "year": 750
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
+  },
+  {
+    "title": "Papyrus139",
+    "description": "Papyrus codex fragment (P. Oxy. 83 5347) of Philemon, found at Oxyrhynchus. Contains parts of verses 6-8 (recto) and 18-20 (verso) on a single fragment. Measures 13.2x21 cm. Dated paleographically to 4th C. Housed at Sackler Library. Contains: Philemon 1:6-8, 18-20",
+    "texts": [
+      "Philemon"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 35,
+    "yearRange": [
+      300,
+      400
+    ]
+  },
+  {
+    "title": "Papyrus140",
+    "description": "Papyrus codex fragment (PSI inv. 1971) of Acts, possibly from Oxyrhynchus. Measures 2.8x4.3 cm. Dated paleographically to 5th C. Housed at Papyrological Institute, Florence. Contains: Acts 7:54-55, 57-58",
+    "texts": [
+      "Acts"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 45,
+    "yearRange": [
+      400,
+      500
+    ]
+  },
+  {
+    "title": "Papyrus141",
+    "description": "Papyrus codex manuscript (P. Oxy 5478) of Luke, found at Oxyrhynchus. Two disparate fragments from the same codex survive, containing parts of chapters 2 and 24. Dated paleographically to 3rd C. (c. 200-300 CE). Textual variants noted. Housed at Sackler Library. Contains: Luke 2:32-34, 40-42; 24:22-28, 30-38",
+    "texts": [
+      "Luke"
+    ],
+    "family": "Alexandrian",
+    "location": "Oxyrhynchus, Egypt",
+    "y": "",
+    "eventType": "Papyrus",
+    "percentage": 25,
+    "yearRange": [
+      200,
+      300
+    ]
   }
 ]
