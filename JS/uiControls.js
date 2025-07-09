@@ -139,8 +139,6 @@ function generateLegend() {
         checkbox.checked = (
             eventType === 'Papyrus' ||
             eventType === 'Uncial' ||
-            eventType === 'Minuscule' ||    // Added
-            eventType === 'Lectionary' ||   // Added
             eventType === 'Historical'      // Added
         ); // Check these types by default
         // *** END KEY CHANGE ***
