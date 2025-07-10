@@ -413,29 +413,6 @@ header {
   z-index: 10;
 }
 
-/* Load More Button inside Sidebar */
-.sidebar .load-more-container {
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: inherit;
-  text-align: center;
-  z-index: 1200;
-}
-
-#load-more-manuscripts {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 5px;
-  display: inline-block;
-}
-
 /* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 12px;
