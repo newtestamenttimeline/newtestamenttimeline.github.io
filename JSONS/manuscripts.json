@@ -6,14 +6,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus2",
@@ -22,14 +24,16 @@
       "John"
     ],
     "family": "Mixed",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 55,
     "yearRange": [
       500,
       600
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus3",
@@ -38,14 +42,16 @@
       "Luke"
     ],
     "family": "Mixed",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 60,
     "yearRange": [
       500,
       700
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus4",
@@ -54,14 +60,16 @@
       "Luke"
     ],
     "family": "Alexandrian",
-    "location": "Coptos, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 28,
     "yearRange": [
       150,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Coptos",
+    "historical": ""
   },
   {
     "title": "Papyrus5",
@@ -70,14 +78,16 @@
       "John"
     ],
     "family": "Western",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus6",
@@ -88,14 +98,16 @@
       "James"
     ],
     "family": "Byzantine",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus7",
@@ -104,14 +116,16 @@
       "Luke"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 40,
     "yearRange": [
       300,
       500
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus8",
@@ -120,14 +134,16 @@
       "Acts"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus9",
@@ -136,14 +152,16 @@
       "1 John"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus10",
@@ -152,11 +170,13 @@
       "Romans"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 32,
-    "year": 316
+    "year": 316,
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus11",
@@ -165,14 +185,16 @@
       "1 Corinthinans"
     ],
     "family": "Alexandrian",
-    "location": "-",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 65,
     "yearRange": [
       600,
       700
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Unknown",
+    "historical": ""
   },
   {
     "title": "Papyrus12",
@@ -181,14 +203,16 @@
       "Hebrews"
     ],
     "family": "Alexandrian",
-    "location": "Fayum, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 29,
     "yearRange": [
       275,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Faiyum",
+    "historical": ""
   },
   {
     "title": "Papyrus13",
@@ -197,14 +221,16 @@
       "Hebrews"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 24,
     "yearRange": [
       225,
       250
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus14",
@@ -213,14 +239,16 @@
       "1 Corinthians"
     ],
     "family": "Alexandrian",
-    "location": "Egypt (Mt. Sinai)",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 55,
     "yearRange": [
       500,
       600
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Sinai",
+    "historical": ""
   },
   {
     "title": "Papyrus15",
@@ -229,14 +257,16 @@
       "1 Corinthians"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus16",
@@ -245,14 +275,16 @@
       "Philippians"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 30,
     "yearRange": [
       200,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus17",
@@ -261,14 +293,16 @@
       "Hebrews"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus18",
@@ -277,14 +311,16 @@
       "Revelation"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 30,
     "yearRange": [
       200,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus19",
@@ -293,14 +329,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 40,
     "yearRange": [
       300,
       500
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus20",
@@ -309,14 +347,16 @@
       "Epistle of James"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus21",
@@ -325,14 +365,16 @@
       "Matthew"
     ],
     "family": "Mixed",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 40,
     "yearRange": [
       300,
       500
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus22",
@@ -341,14 +383,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus23",
@@ -357,14 +401,16 @@
       "James"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 21,
     "yearRange": [
       200,
       225
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus24",
@@ -373,14 +419,16 @@
       "Revelation"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus25",
@@ -389,14 +437,16 @@
       "Matthew"
     ],
     "family": "Diatesaric",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 39,
     "yearRange": [
       375,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus26",
@@ -405,14 +455,16 @@
       "Romans"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 61,
     "yearRange": [
       600,
       625
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus27",
@@ -421,14 +473,16 @@
       "Romans"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus28",
@@ -437,14 +491,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus29",
@@ -453,14 +509,16 @@
       "Acts"
     ],
     "family": "Mixed/inconclusive",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus30",
@@ -470,14 +528,16 @@
       "2 Thessalonians"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus31",
@@ -486,14 +546,16 @@
       "Romans"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 65,
     "yearRange": [
       600,
       700
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus32",
@@ -502,14 +564,16 @@
       "Titus"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 21,
     "yearRange": [
       200,
       225
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus33",
@@ -518,14 +582,16 @@
       "Acts"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 55,
     "yearRange": [
       500,
       600
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus34",
@@ -535,14 +601,16 @@
       "2 Corinthians"
     ],
     "family": "Alexandrian",
-    "location": "Faiyum",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 65,
     "yearRange": [
       600,
       700
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Faiyum",
+    "historical": ""
   },
   {
     "title": "Papyrus35",
@@ -551,14 +619,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 50,
     "yearRange": [
       400,
       600
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus36",
@@ -567,14 +637,16 @@
       "John"
     ],
     "family": "Mixed",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 55,
     "yearRange": [
       500,
       600
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus37",
@@ -583,14 +655,16 @@
       "Matthew"
     ],
     "family": "Western",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 30,
     "yearRange": [
       200,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus38",
@@ -599,14 +673,16 @@
       "Acts"
     ],
     "family": "Western",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 21,
     "yearRange": [
       200,
       225
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus39",
@@ -615,14 +691,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus40",
@@ -631,14 +709,16 @@
       "Romans"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus41",
@@ -647,14 +727,16 @@
       "Acts"
     ],
     "family": "Westerm",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 75,
     "yearRange": [
       700,
       800
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus42",
@@ -663,14 +745,16 @@
       "Luke"
     ],
     "family": "Mixed",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 70,
     "yearRange": [
       600,
       800
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus43",
@@ -679,14 +763,16 @@
       "Revelation"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 60,
     "yearRange": [
       500,
       700
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus44",
@@ -696,14 +782,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 60,
     "yearRange": [
       500,
       700
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus45",
@@ -716,14 +804,16 @@
       "Acts"
     ],
     "family": "Mixed",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus46",
@@ -739,14 +829,16 @@
       "1 Thessalonians"
     ],
     "family": "Alexandrian",
-    "location": "Fayum, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 20,
     "yearRange": [
       175,
       225
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Faiyum",
+    "historical": ""
   },
   {
     "title": "Papyrus47",
@@ -755,14 +847,16 @@
       "Revelation"
     ],
     "family": "Alexandrian",
-    "location": "Egypt (Chester Beatty)",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus48",
@@ -771,14 +865,16 @@
       "Acts"
     ],
     "family": "Western",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus49",
@@ -787,14 +883,16 @@
       "Ephesians"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus50",
@@ -803,14 +901,16 @@
       "Acts"
     ],
     "family": "Mixed",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 30,
     "yearRange": [
       200,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus51",
@@ -819,14 +919,16 @@
       "Galatians"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 41,
     "yearRange": [
       400,
       425
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus52",
@@ -835,14 +937,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 12,
     "yearRange": [
       100,
       150
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus53",
@@ -852,14 +956,16 @@
       "Acts"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus54",
@@ -868,14 +974,16 @@
       "James"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 50,
     "yearRange": [
       400,
       600
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus55",
@@ -884,14 +992,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 60,
     "yearRange": [
       500,
       700
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus56",
@@ -900,14 +1010,16 @@
       "Acts"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 55,
     "yearRange": [
       500,
       600
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus57",
@@ -916,14 +1028,16 @@
       "Acts"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 40,
     "yearRange": [
       300,
       500
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus59",
@@ -932,14 +1046,16 @@
       "John"
     ],
     "family": "Mixed",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 65,
     "yearRange": [
       600,
       700
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus60",
@@ -948,14 +1064,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 65,
     "yearRange": [
       600,
       700
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus61",
@@ -964,14 +1082,16 @@
       "Pauline Epistles"
     ],
     "family": "Alexandrian",
-    "location": "Nessana, Palestina",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 71,
     "yearRange": [
       700,
       725
-    ]
+    ],
+    "region": "Israel",
+    "location": "Nessana",
+    "historical": "Palaestina Tertia"
   },
   {
     "title": "Papyrus62",
@@ -980,14 +1100,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus63",
@@ -996,14 +1118,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 51,
     "yearRange": [
       500,
       525
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "The Magdalen Papyrus",
@@ -1012,14 +1136,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Coptos, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 21,
     "yearRange": [
       200,
       225
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Coptos",
+    "historical": ""
   },
   {
     "title": "Papyrus65",
@@ -1028,14 +1154,16 @@
       "1 Thessalonians"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus66",
@@ -1044,14 +1172,16 @@
       "John"
     ],
     "family": "Free",
-    "location": "Jabal Abu Mana, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 21,
     "yearRange": [
       200,
       225
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Jabal Abu Mana",
+    "historical": ""
   },
   {
     "title": "Papyrus68",
@@ -1060,14 +1190,16 @@
       "1 Corinthians"
     ],
     "family": "Mixed",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 60,
     "yearRange": [
       500,
       700
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus69",
@@ -1076,14 +1208,16 @@
       "Luke"
     ],
     "family": "Western",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus70",
@@ -1092,14 +1226,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus71",
@@ -1108,14 +1244,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus72",
@@ -1126,14 +1264,16 @@
       "Jude"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 30,
     "yearRange": [
       200,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus73",
@@ -1142,14 +1282,16 @@
       "Matthew"
     ],
     "family": "Byzantine",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 65,
     "yearRange": [
       600,
       700
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus74",
@@ -1159,14 +1301,16 @@
       "Catholic Epistles"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 65,
     "yearRange": [
       600,
       700
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus75",
@@ -1176,14 +1320,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Pabau, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 21,
     "yearRange": [
       200,
       225
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Pabau",
+    "historical": ""
   },
   {
     "title": "Papyrus76",
@@ -1192,14 +1338,16 @@
       "John"
     ],
     "family": "Mixed",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 55,
     "yearRange": [
       500,
       600
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus77",
@@ -1208,14 +1356,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 20,
     "yearRange": [
       100,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus78",
@@ -1224,14 +1374,16 @@
       "Jude"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 30,
     "yearRange": [
       200,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus79",
@@ -1240,14 +1392,16 @@
       "Hebrews"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 65,
     "yearRange": [
       600,
       700
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus80",
@@ -1256,14 +1410,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus81",
@@ -1272,14 +1428,16 @@
       "1 Peter"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus82",
@@ -1288,14 +1446,16 @@
       "Luke"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 40,
     "yearRange": [
       300,
       500
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus83",
@@ -1304,14 +1464,16 @@
       "Matthew"
     ],
     "family": "Mixed",
-    "location": "Khirbet Mird",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 55,
     "yearRange": [
       500,
       600
-    ]
+    ],
+    "region": "Palestine",
+    "location": "Khirbet Mird",
+    "historical": "Palaestina Prima"
   },
   {
     "title": "Papyrus84",
@@ -1321,14 +1483,16 @@
       "John"
     ],
     "family": "Mixed",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 55,
     "yearRange": [
       500,
       600
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus85",
@@ -1337,14 +1501,16 @@
       "Revelation"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 40,
     "yearRange": [
       300,
       500
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus86",
@@ -1353,14 +1519,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus87",
@@ -1369,14 +1537,16 @@
       "Philemon"
     ],
     "family": "Alexandrian",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus88",
@@ -1385,14 +1555,16 @@
       "Mark"
     ],
     "family": "Mixed",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus89",
@@ -1401,14 +1573,16 @@
       "Hebrews"
     ],
     "family": "Unknown",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus90",
@@ -1417,14 +1591,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 15,
     "yearRange": [
       100,
       200
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus91",
@@ -1433,14 +1609,16 @@
       "Acts"
     ],
     "family": "Alexandrian",
-    "location": "Provenance unknown",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Unknown",
+    "historical": ""
   },
   {
     "title": "Papyrus92",
@@ -1450,14 +1628,16 @@
       "2 Thess"
     ],
     "family": "Alexandrian",
-    "location": "Faiyum, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 30,
     "yearRange": [
       200,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Faiyum",
+    "historical": ""
   },
   {
     "title": "Papyrus93",
@@ -1466,14 +1646,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Unknown",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 45,
     "yearRange": [
       400,
       500
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Unknown",
+    "historical": ""
   },
   {
     "title": "Papyrus94",
@@ -1482,14 +1664,16 @@
       "Romans"
     ],
     "family": "Alexandrian",
-    "location": "Unknown",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 50,
     "yearRange": [
       400,
       600
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Unknown",
+    "historical": ""
   },
   {
     "title": "Papyrus95",
@@ -1498,14 +1682,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Unknown",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Unknown",
+    "historical": ""
   },
   {
     "title": "Papyrus96",
@@ -1514,14 +1700,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Unknown",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 55,
     "yearRange": [
       500,
       600
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Unknown",
+    "historical": ""
   },
   {
     "title": "Papyrus97",
@@ -1530,14 +1718,16 @@
       "Luke"
     ],
     "family": "Alexandrian",
-    "location": "Unknown",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 60,
     "yearRange": [
       500,
       700
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Unknown",
+    "historical": ""
   },
   {
     "title": "Papyrus98",
@@ -1546,14 +1736,16 @@
       "Revelation"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 20,
     "yearRange": [
       150,
       250
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus99",
@@ -1565,14 +1757,16 @@
       "Ephesians"
     ],
     "family": "Unknown",
-    "location": "Unknown",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 41,
     "yearRange": [
       400,
       425
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Unknown",
+    "historical": ""
   },
   {
     "title": "Papyrus100",
@@ -1581,14 +1775,16 @@
       "James"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 30,
     "yearRange": [
       200,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus101",
@@ -1597,14 +1793,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus102",
@@ -1613,14 +1811,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 30,
     "yearRange": [
       200,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus103",
@@ -1629,14 +1829,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 20,
     "yearRange": [
       100,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus104",
@@ -1645,14 +1847,16 @@
       "Matthew"
     ],
     "family": "Western",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 15,
     "yearRange": [
       100,
       200
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus105",
@@ -1661,14 +1865,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 50,
     "yearRange": [
       400,
       600
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus106",
@@ -1677,14 +1883,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus107",
@@ -1693,14 +1901,16 @@
       "John"
     ],
     "family": "Unknown",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus108",
@@ -1709,14 +1919,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus109",
@@ -1725,14 +1937,16 @@
       "John"
     ],
     "family": "Unknown",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus110",
@@ -1741,14 +1955,16 @@
       "Matthew"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus111",
@@ -1757,14 +1973,16 @@
       "Luke"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus112",
@@ -1773,14 +1991,16 @@
       "Acts"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 45,
     "yearRange": [
       400,
       500
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus113",
@@ -1789,14 +2009,16 @@
       "Romans"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus114",
@@ -1805,14 +2027,16 @@
       "Hebrews"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus115",
@@ -1821,14 +2045,16 @@
       "Revelation"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 24,
     "yearRange": [
       200,
       275
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus116",
@@ -1837,14 +2063,16 @@
       "Hebrews"
     ],
     "family": "Unknown",
-    "location": "Unknown",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 60,
     "yearRange": [
       500,
       700
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Unknown",
+    "historical": ""
   },
   {
     "title": "Papyrus117",
@@ -1853,14 +2081,16 @@
       "2 Corinthians"
     ],
     "family": "Unknown",
-    "location": "Unknown",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 40,
     "yearRange": [
       300,
       500
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Unknown",
+    "historical": ""
   },
   {
     "title": "Papyrus118",
@@ -1869,14 +2099,16 @@
       "Romans"
     ],
     "family": "Unknown",
-    "location": "Unknown",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Unknown",
+    "historical": ""
   },
   {
     "title": "Papyrus119",
@@ -1885,14 +2117,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus120",
@@ -1901,14 +2135,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus121",
@@ -1917,14 +2153,16 @@
       "John"
     ],
     "family": "Unknown",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus122",
@@ -1933,14 +2171,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 40,
     "yearRange": [
       300,
       500
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus123",
@@ -1949,14 +2189,16 @@
       "1 Corinthians"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus124",
@@ -1965,14 +2207,16 @@
       "2 Corinthians"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 55,
     "yearRange": [
       500,
       600
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus125",
@@ -1981,14 +2225,16 @@
       "1 Peter"
     ],
     "family": "Alexandrian (?)",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 30,
     "yearRange": [
       200,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus126",
@@ -1997,14 +2243,16 @@
       "Hebrews"
     ],
     "family": "Unknown",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus127",
@@ -2013,14 +2261,16 @@
       "Acts"
     ],
     "family": "Unknown",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 45,
     "yearRange": [
       400,
       500
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus128",
@@ -2029,14 +2279,16 @@
       "John"
     ],
     "family": "Unknown",
-    "location": "Monastery of Saint Epiphanius, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 60,
     "yearRange": [
       500,
       700
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Monastery of St Epiphanius",
+    "historical": ""
   },
   {
     "title": "Papyrus129",
@@ -2045,14 +2297,16 @@
       "1 Corinthians"
     ],
     "family": "Unknown",
-    "location": "Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Egypt (unspecified)",
+    "historical": ""
   },
   {
     "title": "Papyrus130",
@@ -2061,14 +2315,16 @@
       "Hebrews"
     ],
     "family": "Unknown",
-    "location": "Unknown",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 30,
     "yearRange": [
       200,
       400
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Unknown",
+    "historical": ""
   },
   {
     "title": "Papyrus131",
@@ -2077,14 +2333,16 @@
       "Romans"
     ],
     "family": "Unknown",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus132",
@@ -2093,14 +2351,16 @@
       "Ephesians"
     ],
     "family": "Mixed",
-    "location": "Oxyrhynchus",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 30,
     "yearRange": [
       200,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus133",
@@ -2109,14 +2369,16 @@
       "1 Timothy"
     ],
     "family": "Mixed",
-    "location": "Oxyrhynchus",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus134",
@@ -2125,14 +2387,16 @@
       "John"
     ],
     "family": "Alexandrian",
-    "location": "Antiquities Market (purchased)",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 30,
     "yearRange": [
       200,
       400
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Antiquities market (purchased)",
+    "historical": ""
   },
   {
     "title": "Papyrus135",
@@ -2141,14 +2405,16 @@
       "Galatians"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 40,
     "yearRange": [
       300,
       500
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus136",
@@ -2157,14 +2423,16 @@
       "Acts"
     ],
     "family": "Alexandrian",
-    "location": "Antiquities Market (purchased)",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 55,
     "yearRange": [
       500,
       600
-    ]
+    ],
+    "region": "Unknown",
+    "location": "Antiquities market (purchased)",
+    "historical": ""
   },
   {
     "title": "Papyrus137",
@@ -2173,14 +2441,16 @@
       "Mark"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 20,
     "yearRange": [
       150,
       250
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus138",
@@ -2189,14 +2459,16 @@
       "Luke"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus139",
@@ -2205,14 +2477,16 @@
       "Philemon"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 35,
     "yearRange": [
       300,
       400
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus140",
@@ -2221,14 +2495,16 @@
       "Acts"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 45,
     "yearRange": [
       400,
       500
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   },
   {
     "title": "Papyrus141",
@@ -2237,13 +2513,15 @@
       "Luke"
     ],
     "family": "Alexandrian",
-    "location": "Oxyrhynchus, Egypt",
     "y": "",
     "eventType": "Papyrus",
     "percentage": 25,
     "yearRange": [
       200,
       300
-    ]
+    ],
+    "region": "Egypt",
+    "location": "Oxyrhynchus",
+    "historical": ""
   }
 ]
